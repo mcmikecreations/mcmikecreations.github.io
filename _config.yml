@@ -34,9 +34,15 @@ additional_links:
   - title: Mastodon
     icon: fab fa-mastodon
     url: https://mastodon.social/@mykolamor
+  - title: Telegram
+    icon: fab fa-telegram
+    url: https://t.me/mcmikecreations
   - title: Scholar
     icon: fas fa-graduation-cap
     url: https://scholar.google.com/citations?user=MwdhZtkAAAAJ&hl=en
+  - title: ResearchGate
+    icon: fab fa-researchgate
+    url: https://www.researchgate.net/profile/Mykola_Morozov3
 
 # Google Analytics and Tag Manager
 # Using more than one of these may cause issues with reporting
