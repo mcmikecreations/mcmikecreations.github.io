@@ -63,6 +63,15 @@ content:
     layout: list
     content:
       - layout: top-middle
+        title: PlanetoidGen
+        link: 
+        link_text: NII/PlanetoidGen
+        additional_links:
+        quote: >
+          A highly parallel distributed system for pipeline-oriented geographic data processing.
+        description: |
+          The system was developed to use cloud computing to provide near real time generation of large-scale 3D models of eastern Ukraine during the full-scale russian invasion for news coverage and education purposes with a storytelling aspect. The result is similar to a dynamic timeline-based version of Cesium Ion or Google Earth with a small web client using limited pre-generated data and full desktop client displaying landscapes with streamed models. The system uses <mark>REST</mark> and <mark>gRPC</mark> for communication through the <mark>API</mark>, <mark>PostgreSQL</mark> for temporary map data and metadata storage, <mark>MongoDB</mark> for 3D model, satellite image, texture, and description storage, <mark>Kafka</mark> for processing request querying and distribution among multiple worker <mark>Software Agents</mark> through a load balancer, and <mark>Overpass</mark> as the cartographic data source. <mark>Parallel computing</mark> and <mark>asynchronous execution</mark> is utilized where possible, database information serialization routines are generated through runtime bytecode <mark>JIT-compilation</mark>, and dynamic <mark>SQL stored procedure generation</mark> is used for query optimization. The system supports extensions through runtime plugin loading using <mark>Dynamic Link Libraries</mark>. <mark>Kubernetes</mark> are used for component container management. Monitoring, reliability, scalability and other aspects are considered. The system can be hosted independently or through AWS/Azure/Google.
+      - layout: top-middle
         title: Crosslight
         link: https://github.com/Evenfall-Tech/Crosslight
         link_text: Evenfall-Tech/Crosslight
