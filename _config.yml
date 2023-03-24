@@ -240,6 +240,20 @@ content:
       -	3rd place [certificate](https://drive.google.com/open?id=1aGHcZptHTN4oF0vuSKzDDmNcjNZUN8nO) in BEST::HACKathon 2017 by BEST Lviv, Lviv, Ukraine (October 2017)
       -	[Award](https://drive.google.com/open?id=1GMJX9oUpWpfB8Ty0dk3Hii53igvp4lM5) for high achievements in education, significant achievements during the EIT, Lviv Regional State Administration of the Lviv Regional Council: Lviv, Ukraine (July 2017)
 
+  - title: Main Publications
+    layout: text
+    content: |
+      -	Y. Levus, R. Westermann, M. Morozov, R. Moravskyi and P. Pustelnyk, "Using Software Agents in a Distributed Computing System for Procedural Planetoid Terrain Generation," 2022 IEEE 17th International Conference on Computer Sciences and Information Technologies (CSIT), Lviv, Ukraine, 2022, pp. 446-449, doi: [https://doi.org/10.1109/CSIT56902.2022.10000868](https://doi.org/10.1109/CSIT56902.2022.10000868).
+      - M. Y. Morozov, R. O. Moravskyi, P. Y. Pustelnyk, and Y. V. Levus, “Algorithms and Architecture of the Software System of Automated Natural and Anthropogenic Landscape Generation,” Radio Electronics, Computer Science, Control, vol. 61, no. 2, pp. 154–164, 2022, doi: [https://doi.org/10.15588/1607-3274-2022-2-15](https://doi.org/10.15588/1607-3274-2022-2-15).
+      - S. Kundys, B. Havano, M. Morozov, “Software System for Monitoring the Situation in the Settlement,” Advances in Cyber-Physical Systems, vol. 7, no. 1, pp. 37–43, 2022, doi: [https://doi.org/10.23939/acps2022.01.037](https://doi.org/10.23939/acps2022.01.037).
+      - B. Havano, M.Y. Morozov, “Assessing the Human Condition in Medical Cyber-Physical System Based on Microservices Architecture,” Advances in Cyber-Physical Systems, vol. 6, no. 2, pp. 112–120, 2021, doi: [https://doi.org/10.23939/acps2021.02.112](https://doi.org/10.23939/acps2021.02.112).
+      - V. Bielik, Y.V. Morozov, M.Y. Morozov, “Sensors in Cyber-Physical Systems Based on Android Operating System,” Advances in Cyber-Physical Systems, vol. 6, no. 2, pp. 83–89, 2021, doi: [https://doi.org/10.23939/acps2021.02.083](https://doi.org/10.23939/acps2021.02.083).
+      - M. Y. Morozov, R. O. Moravskyi, P. Y. Pustelnyk, and Y. V. Levus, “Containerization method for visualization of natural and anthropogenic landscapes,” Scientific Bulletin of UNFU, vol. 31, no. 5, pp. 90–95, 2021, doi: [https://doi.org/10.36930/40310514](https://doi.org/10.36930/40310514).
+      - M. Y. Morozov, R. O. Moravskyi, P. Y. Pustelnyk, and Y. V. Levus, “Landscape Generation for Spherical Surfaces: Problem Analysis and Solution,” Scientific Bulletin of UNFU, vol. 30, no. 1, pp. 136–141, 2020, doi: [https://doi.org/10.36930/40300124](https://doi.org/10.36930/40300124).
+      - M. Y. Morozov, “Чужомовні слова в українській комп’ютерній термінології: проблема походження” [Foreign words in Ukrainian computer terminology: the problem of origin], Proceedings of the All-Ukrainian student scientific-practical conference “Українська мова в просторі й часі” [Ukrainian language in space and time], pp. 118–121, Apr. 2019.
+      - M. Y. Morozov, “Можливі сценарії розвитку співпраці між групою 5+1 та Іраном в контексті виходу США з ядерної угоди” [Possible scenarios for the development of cooperation between the 5+1 Group and Iran in the context of the US withdrawal from the nuclear agreement], Proceedings of the international scientific-practical conference “Суспільні науки: проблеми та досягнення сучасних наукових досліджень” [Social sciences: problems and achievements of modern scientific research], pp. 102–106, Dec. 2018.
+      - M. Y. Morozov, “Неотрайбалізм в епоху глобалізації” [Neo-tribalism in the era of globalization], 6th Student Scientific and Technical Conference: a collection of abstracts, pp. 418–420, Nov. 2018.
+
 # Footer
 footer_show_references: true
 references_title: References through <a href="https://www.linkedin.com/in/mykola-mor/">LinkedIn</a>
