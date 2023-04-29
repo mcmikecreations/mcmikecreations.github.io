@@ -122,7 +122,7 @@ content:
         link: israelit.pro
         # link_text: israelit.pro
         sub_title: Senior Software Engineer
-        caption: June 2022 - September 2022
+        caption: June 2022 - March 2023
         quote: >
           Banking backends, microfrontends, e-commerce solutions, CRM platforms
         description: |
@@ -165,6 +165,18 @@ content:
   - title: Education
     layout: list
     content:
+      - layout: left
+        title: National Institute of Informatics 
+        caption: Oct 2022 - Mar 2023
+        sub_title: "Master's Thesis in Digital Humanities"
+        quote: >
+          Future Value Creation through Informatics by Advancing Research and Operations in Tandem.
+        description: |
+          Grade: A, 1.0/1.0
+          
+          The thesis was written on the topic "An Extensible System for Large Scale Cultural Heritage Data Visualization". It focuses on providing a flexible, extensible, versatile, and performant architecture for big data processing. The target application for the system is large-scale 3D landscape visualization in a before/after comparison app using interactive storytelling in educational and news coverage context for the destruction in Eastern Ukraine due to the ongoing war.
+
+          As part of the research, several scholarly publications were made and presentations at Google Japan, University of Tokyo, Yomiuri Shimbun and others were given.
       - layout: left
         title: Technical University of Munich
         caption: Oct 2021 - Apr 2023
