@@ -255,6 +255,7 @@ content:
   - title: Main Publications
     layout: text
     content: |
+      -	Y. Levus, P. Pustelnyk, R. Moravskyi and M. Morozov, "Architecture of a Distributed Software System for Procedural Planetoid Terrain Generation," Ukrainian Journal of Information Technology, vol. 5, no. 1, 2023, doi: [https://doi.org/10.23939/ujit2023.01](https://doi.org/10.23939/ujit2023.01)
       -	Y. Levus, R. Westermann, M. Morozov, R. Moravskyi and P. Pustelnyk, "Using Software Agents in a Distributed Computing System for Procedural Planetoid Terrain Generation," 2022 IEEE 17th International Conference on Computer Sciences and Information Technologies (CSIT), Lviv, Ukraine, 2022, pp. 446-449, doi: [https://doi.org/10.1109/CSIT56902.2022.10000868](https://doi.org/10.1109/CSIT56902.2022.10000868).
       - M. Y. Morozov, R. O. Moravskyi, P. Y. Pustelnyk, and Y. V. Levus, “Algorithms and Architecture of the Software System of Automated Natural and Anthropogenic Landscape Generation,” Radio Electronics, Computer Science, Control, vol. 61, no. 2, pp. 154–164, 2022, doi: [https://doi.org/10.15588/1607-3274-2022-2-15](https://doi.org/10.15588/1607-3274-2022-2-15).
       - S. Kundys, B. Havano, M. Morozov, “Software System for Monitoring the Situation in the Settlement,” Advances in Cyber-Physical Systems, vol. 7, no. 1, pp. 37–43, 2022, doi: [https://doi.org/10.23939/acps2022.01.037](https://doi.org/10.23939/acps2022.01.037).
