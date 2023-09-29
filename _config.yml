@@ -64,9 +64,12 @@ content:
     content:
       - layout: top-middle
         title: PlanetoidGen
-        link: 
+        link: https://github.com/mcmikecreations/PlanetoidGen
         link_text: NII/PlanetoidGen
         additional_links:
+          - title: Geo Tools
+            icon: fab fa-github
+            url: https://github.com/mcmikecreations/PlanetoidGen
         quote: >
           A highly parallel distributed system for pipeline-oriented geographic data processing.
         description: |
@@ -265,6 +268,8 @@ content:
   - title: Main Publications
     layout: text
     content: |
+      - M. Morozov, A. Kitamoto, "Interactive Storytelling with 3D Visualization for Illuminating the Impact of War in Ukraine," Proceedings of the 12th Conference of the Japanese Association for Digital Humanities, vol. 2023, 2023, ISSN: [2432-3144](https://drive.google.com/file/d/19WDvhoB8icaOTJj-Ub05z6Rjbi8V90LF/view?usp=sharing)
+      - Y. Levus, P. Pustelnyk, R. Moravskyi and M. Morozov, "Cloud-Based Distributed Approach for Procedural Terrain Generation with Enhanced Performance," IEEE 18th International Conference on Computer Science and Information Technologies, 2023, ISSN: 2766-3639
       -	Y. Levus, P. Pustelnyk, R. Moravskyi and M. Morozov, "Architecture of a Distributed Software System for Procedural Planetoid Terrain Generation," Ukrainian Journal of Information Technology, vol. 5, no. 1, 2023, doi: [https://doi.org/10.23939/ujit2023.01](https://doi.org/10.23939/ujit2023.01)
       -	Y. Levus, R. Westermann, M. Morozov, R. Moravskyi and P. Pustelnyk, "Using Software Agents in a Distributed Computing System for Procedural Planetoid Terrain Generation," 2022 IEEE 17th International Conference on Computer Sciences and Information Technologies (CSIT), Lviv, Ukraine, 2022, pp. 446-449, doi: [https://doi.org/10.1109/CSIT56902.2022.10000868](https://doi.org/10.1109/CSIT56902.2022.10000868).
       - M. Y. Morozov, R. O. Moravskyi, P. Y. Pustelnyk, and Y. V. Levus, “Algorithms and Architecture of the Software System of Automated Natural and Anthropogenic Landscape Generation,” Radio Electronics, Computer Science, Control, vol. 61, no. 2, pp. 154–164, 2022, doi: [https://doi.org/10.15588/1607-3274-2022-2-15](https://doi.org/10.15588/1607-3274-2022-2-15).
