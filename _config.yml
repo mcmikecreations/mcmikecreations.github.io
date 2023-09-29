@@ -122,11 +122,20 @@ content:
         link: israelit.pro
         # link_text: israelit.pro
         sub_title: Senior Software Engineer
-        caption: June 2022 - March 2023
+        caption: June 2022 - September 2023
         quote: >
           Banking backends, microfrontends, e-commerce solutions, CRM platforms
         description: |
             Architecture and Development of Enterprise-Level Software Systems. Relevant Skills: <mark>Software Development</mark>, <mark>Machine Learning</mark>, <mark>Microservices</mark>, <mark>Kubernetes</mark>, <mark>Amazon Web Services (AWS)</mark>, <mark>Microsoft Azure</mark>
+      - layout: left
+        title: National Institute of Informatics
+        link: www.nii.ac.jp
+        sub_title: Intern Research Assistant
+        caption: October 2022 - March 2023
+        quote: >
+          System architecture design, cloud computing, large-scale 3D visualization, machine learning
+        description: |
+            Digital Humanities research, including cultural heritage Big Data 3D visualization, processing, and restoration. Relevant Skills: <mark>System Architecture</mark>, <mark>Machine Learning</mark>, <mark>Microservices</mark>, <mark>Kubernetes</mark>, <mark>Google Cloud Platform</mark>, <mark>Unity 3D</mark>
       - layout: left
         title: IsraelIT
         link: israelit.pro
@@ -217,6 +226,7 @@ content:
   - title: Projects, Conferences, Seminars
     layout: text
     content: |
+      - Participation in the “Trailblazor: A Deep Dive Into Blazor, .NET MAUI, and Oqtane” webinar by Shaun Walker and devspiration, Munich, Germany (September 2023)
       -	Participation in the “IT NonStop Conference” by DataArt, Ukraine (Nov. 2022 – Dec. 2022)
       -	Completion of 5-day Unreal Engine 5 internship "Learning for Tomorrow – EMEA Initiative 2022" ([with certificate](https://drive.google.com/file/d/1qXNUGVgYOu4-4CxzNn5vbrJAnwtN9y5I/view?usp=sharing)), delivered by INCAS Training und Projekte GmbH & Co. KG, Munich, Germany (September 2022)
       -	Participation in the “India's AI Ecosystem: An overview” webinar by Deutschland Alumniportal, Germany (September 2022)
