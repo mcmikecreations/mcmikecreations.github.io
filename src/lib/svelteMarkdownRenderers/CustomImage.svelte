@@ -1,0 +1,9 @@
+<script>
+	import { Img } from 'flowbite-svelte';
+
+	export let href = '';
+	export let title = undefined;
+	export let text = '';
+</script>
+
+<Img src={href} {title} alt={text} size="max-w-md" />
