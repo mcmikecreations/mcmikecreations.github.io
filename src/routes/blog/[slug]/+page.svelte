@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import SvelteMarkdown from 'svelte-markdown';
-	import { P, Hr, A } from 'flowbite-svelte';
+	import { Hr, A } from 'flowbite-svelte';
 	import {
 		CustomParagraph,
 		CustomBlockquote,
@@ -16,7 +16,7 @@
 		CustomHeading,
 		CustomCodeSpan,
 		CustomCode
-	} from '$lib/svelteMarkdownRenderers/CustomElements';
+	} from '$lib/svelteMarkdownRenderers/custom-elements';
 	import 'highlight.js/styles/stackoverflow-light.min.css';
 
 	// text, em <em>, strong <strong><b>, del <del>, <html> kept as-is.
