@@ -16,7 +16,7 @@
 		CustomHeading,
 		CustomCodeSpan,
 		CustomCode
-	} from '$lib/svelteMarkdownRenderers/custom-elements';
+	} from '$lib/renderers';
 	import 'highlight.js/styles/stackoverflow-light.min.css';
 
 	// text, em <em>, strong <strong><b>, del <del>, <html> kept as-is.
