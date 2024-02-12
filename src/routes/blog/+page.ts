@@ -1,38 +1,33 @@
 import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
 
-export const load: PageLoad = async () => {
+export const load: PageLoad = async ({ fetch, params }) => {
 	try {
-		// Get blog posts.
-		const prefix = '/static/_blog/';
-		const postRegex = /\/static\/_blog\/(\d{4})-(\d{2})-(\d{2})-(.+)\.md/;
-		const currentDate = new Date();
+		// Get the post list.
+		const url = '/_blog/blogs.json';
+		const res = await fetch(url);
 
-		const posts = Object.keys(
-			import.meta.glob('/static/_blog/*.md', { as: 'url' })
-		).map(
+		if (!res.ok) {
+			console.log(`Failed to fetch ${url} with return code ${res.status}.`);
+			error(500);
+		}
+
+		const blogs = await res.json();
+
+		const posts = blogs.map(
 			k => {
-				const url = '/blog/' + k.slice(prefix.length, k.length - 3);
-				const match = postRegex.exec(k);
+				const url = '/blog/' + k.path.substring(0, k.path.length - 3);
+				const date = new Date(k.date);
 
-				if (match == null) {
-					return {
-						year: currentDate.getFullYear(),
-						month: currentDate.getMonth(),
-						day: currentDate.getDate(),
-						title: 'Unnamed post',
-						url: url,
-					};
-				} else {
-					const title = match[4].replaceAll('-', ' ');
-					return ({
-						year: match[1],
-						month: match[2],
-						day: match[3],
-						title: title.charAt(0).toUpperCase() + title.slice(1),
-						url: url,
-					});
-				}
+				return ({
+					year: date.getFullYear(),
+					month: date.getMonth(),
+					day: date.getDate(),
+					title: k.title,
+					url: url,
+					image: k.image,
+					description: k.description,
+				});
 			}
 		);
 
