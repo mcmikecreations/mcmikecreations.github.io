@@ -8,6 +8,9 @@ const config = {
 
 	theme: {
 		extend: {
+			aspectRatio: {
+				'crt': '4 / 3',
+			},
 			colors: {
 				// flowbite-svelte
 				// primary: {

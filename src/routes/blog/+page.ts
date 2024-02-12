@@ -1,19 +1,9 @@
 import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
+import blogs from '$lib/data/blogs.json';
 
-export const load: PageLoad = async ({ fetch, params }) => {
+export const load: PageLoad = async ({ params }) => {
 	try {
-		// Get the post list.
-		const url = '/_blog/blogs.json';
-		const res = await fetch(url);
-
-		if (!res.ok) {
-			console.log(`Failed to fetch ${url} with return code ${res.status}.`);
-			error(500);
-		}
-
-		const blogs = await res.json();
-
 		const posts = blogs.map(
 			k => {
 				const url = '/blog/' + k.path.substring(0, k.path.length - 3);

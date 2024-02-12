@@ -25,7 +25,7 @@
 		MastodonSolid,
 		OrcidSolid,
 		ResearchGateSolid,
-		TelegramSolid,
+		TelegramSolid
 	} from '$lib/icons';
 
 	import * as socials from '$lib/data/social.json';
@@ -87,7 +87,7 @@
 			<FooterIcon href={socials.researchgate} class="ms-6 mt-4 md:mt-0">
 				<ResearchGateSolid class="w-4 h-4 text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white" />
 			</FooterIcon>
-			<FooterIcon href={socials.researchemail} class="ms-6 mt-4 md:mt-0">
+			<FooterIcon href={socials.researchemail} class="ms-6 mt-4 md:mt-0" aria-label="email solid">
 				<EnvelopeSolid class="w-4 h-4 text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white" />
 			</FooterIcon>
 		</div>
