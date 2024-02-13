@@ -11,12 +11,13 @@ export const load: PageLoad = async () => {
 
 				return ({
 					year: date.getFullYear(),
-					month: date.getMonth(),
+					month: date.getMonth() + 1,
 					day: date.getDate(),
 					title: k.title,
 					url: url,
 					image: k.image,
 					description: k.description,
+					tags: k.tags,
 				});
 			}
 		);

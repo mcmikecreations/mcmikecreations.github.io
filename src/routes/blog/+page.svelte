@@ -1,8 +1,10 @@
 <script lang="ts">
+	/* eslint-disable svelte/no-at-html-tags */
 	import type { PageData } from './$types';
-	import { List, Li, A, AccordionItem, Accordion, Button } from 'flowbite-svelte';
+	import { A, AccordionItem, Accordion, Button, Heading, Span, Img } from 'flowbite-svelte';
 	import { tags } from '$lib/data/blogInfo';
 	import { onMount } from 'svelte';
+	import { CalendarMonthSolid, ImageSolid } from 'flowbite-svelte-icons';
 
 	export let data: PageData;
 
@@ -15,13 +17,37 @@
 	let selectedTags : string[];
 	let selectedYear : string | null;
 
+	function filterPosts() : void {
+		posts = data.posts.filter(x => {
+			if (selectedTags.length !== 0 && selectedTags.filter(y => x.tags.includes(y)).length !== selectedTags.length) {
+				return false;
+			}
+
+			return !(selectedYear !== null && x.year.toString() !== selectedYear);
+		});
+	}
+
 	onMount(() => {
-		const url = window.location;
-		const params = new URLSearchParams(url.search);
 		const selectedTagsKey = 'tags';
 		const selectedYearKey = 'year';
-		selectedTags = params.getAll(selectedTagsKey);
-		selectedYear = params.get(selectedYearKey);
+		let params : URLSearchParams;
+
+		function updatePage() {
+			const location = new URL(window.location.toString());
+			location.search = params.toString();
+			window.document.title = location.toString();
+
+			window.history.pushState({}, window.document.title, location.toString());
+
+			selectedTags = params.getAll(selectedTagsKey);
+			selectedYear = params.get(selectedYearKey);
+
+			filterPosts();
+		}
+
+		const url = window.location;
+		params = new URLSearchParams(url.search);
+		updatePage();
 
 		toggleTag = function (tag : string) : void {
 			if (params.has(selectedTagsKey)) {
@@ -34,7 +60,7 @@
 				params.set(selectedTagsKey, tag);
 			}
 
-			window.location.search = params.toString();
+			updatePage();
 		};
 
 		toggleYear = function (year : string) : void {
@@ -48,7 +74,7 @@
 				params.set(selectedYearKey, year);
 			}
 
-			window.location.search = params.toString();
+			updatePage();
 		};
 	});
 </script>
@@ -84,13 +110,33 @@
 	</div>
 
 <!-- Actual posts	-->
-	<div class="col-span-3">
-		<List tag="ul" list="none">
-			{#each posts as post}
-				<Li>
-					<A href={post.url}>{post.title}</A>
-				</Li>
+	<div class="col-span-2">
+		<div class="flex flex-col gap-4">
+			{#each posts as p}
+				<a
+					class="flex w-full flex-col md:flex-row rounded-lg shadow-lg bg-white dark:bg-gray-800"
+					href={p.url}
+				>
+					<div class="relative block h-full aspect-crt object-cover">
+						<div class="h-full aspect-crt flex justify-center items-center">
+							<ImageSolid class="w-16 h-16 text-gray-500 dark:text-gray-500" />
+						</div>
+						{#if p.image}
+							<div class="absolute top-0 left-0 bottom-0 right-0">
+								<Img src={p.image ?? undefined} class="w-full h-full aspect-crt rounded-t-lg object-cover object-center" />
+							</div>
+						{/if}
+					</div>
+					<div class="flex-grow flex flex-col p-4">
+						<Heading tag="h3">{p.title}</Heading>
+						<Span class="flex-grow pt-4">{@html p.description}</Span>
+						<div class="pt-4 w-full">
+							<CalendarMonthSolid class="inline-block w-4 h-4 text-gray-900 dark:text-white align-middle" />
+							<Span class="align-text-top">{`${p.year.toString().padStart(4,'0')}/${p.month.toString().padStart(2,'0')}/${p.day.toString().padStart(2,'0')}`}</Span>
+						</div>
+					</div>
+				</a>
 			{/each}
-		</List>
+		</div>
 	</div>
 </div>

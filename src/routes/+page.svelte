@@ -1,4 +1,5 @@
 <script lang="ts">
+	/* eslint-disable svelte/no-at-html-tags */
 	import { A, Heading, Hr, Img, P, Span } from 'flowbite-svelte';
 	import blogs from '$lib/data/blogs.json';
 	import { CalendarMonthSolid, ImageSolid } from 'flowbite-svelte-icons';
@@ -47,7 +48,7 @@
 						<Span class="flex-grow pt-4">{@html p.description}</Span>
 						<div class="pt-4 w-full">
 							<CalendarMonthSolid class="inline-block w-4 h-4 text-gray-900 dark:text-white align-middle" />
-							<Span class="align-text-top">{d.getFullYear()}/{d.getMonth()}/{d.getDate()}</Span>
+							<Span class="align-text-top">{`${d.getFullYear().toString().padStart(4,'0')}/${(d.getMonth() + 1).toString().padStart(2,'0')}/${d.getDate().toString().padStart(2,'0')}`}</Span>
 						</div>
 					</div>
 				</a>
