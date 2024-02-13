@@ -11,6 +11,7 @@ import CustomTableHead from '$lib/renderers/CustomTableHead.svelte';
 import CustomTableBody from '$lib/renderers/CustomTableBody.svelte';
 import CustomTableRow from '$lib/renderers/CustomTableRow.svelte';
 import CustomTableCell from '$lib/renderers/CustomTableCell.svelte';
+import DarkModeLinker from '$lib/renderers/DarkModeLinker.svelte';
 
 export {
 	CustomBlockquote,
@@ -26,4 +27,5 @@ export {
 	CustomTableBody,
 	CustomTableRow,
 	CustomTableCell,
+	DarkModeLinker,
 };

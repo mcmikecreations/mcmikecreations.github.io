@@ -5,7 +5,7 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/3/34/Spruce_forest_at_Holma.jpg",
     "description": "A short three-line description containing text and other symbols, potentially <b>bold</b> items.",
     "path": "2024-02-01-welcome.md",
-    "tags": []
+    "tags": [ "Frontend" ]
   },
   {
     "title": "Welcome 2",
@@ -13,7 +13,7 @@
     "image": "https://example.com/a.png",
     "description": "",
     "path": "2024-02-01-welcome.md",
-    "tags": []
+    "tags": [ "Frontend", "Backend" ]
   },
   {
     "title": "Welcome",
@@ -21,7 +21,7 @@
     "image": null,
     "description": "",
     "path": "2024-02-01-welcome.md",
-    "tags": []
+    "tags": [ "Backend" ]
   },
   {
     "title": "Markdown test",

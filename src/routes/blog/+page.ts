@@ -2,7 +2,7 @@ import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
 import blogs from '$lib/data/blogs.json';
 
-export const load: PageLoad = async ({ params }) => {
+export const load: PageLoad = async () => {
 	try {
 		const posts = blogs.map(
 			k => {

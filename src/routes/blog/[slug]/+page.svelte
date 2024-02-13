@@ -15,15 +15,17 @@
 		CustomListItem,
 		CustomHeading,
 		CustomCodeSpan,
-		CustomCode
+		CustomCode,
+		DarkModeLinker
 	} from '$lib/renderers';
-	import 'highlight.js/styles/stackoverflow-light.min.css';
 
 	// text, em <em>, strong <strong><b>, del <del>, <html> kept as-is.
 	// https://github.com/pablo-abc/svelte-markdown/blob/main/src/renderers/Html.svelte
 
 	export let data: PageData;
 </script>
+
+<DarkModeLinker />
 
 <article>
 	<SvelteMarkdown
