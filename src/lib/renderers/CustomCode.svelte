@@ -1,4 +1,5 @@
 <script>
+	/* eslint-disable svelte/no-at-html-tags */
 	import hljs from 'highlight.js';
 
 	export let text = '';

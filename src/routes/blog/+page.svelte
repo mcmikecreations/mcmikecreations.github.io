@@ -1,35 +1,51 @@
 <script lang="ts">
 	/* eslint-disable svelte/no-at-html-tags */
 	import type { PageData } from './$types';
-	import { A, AccordionItem, Accordion, Button, Heading, Span, Img } from 'flowbite-svelte';
+	import { A, AccordionItem, Accordion, Button, Heading, Span, Img, Pagination, type LinkType } from 'flowbite-svelte';
 	import { tags } from '$lib/data/blogInfo';
 	import { onMount } from 'svelte';
-	import { CalendarMonthSolid, ImageSolid } from 'flowbite-svelte-icons';
+	import { CalendarMonthSolid, ChevronLeftOutline, ChevronRightOutline, ImageSolid } from 'flowbite-svelte-icons';
 
 	export let data: PageData;
 
 	let posts = data.posts;
 
+	const postsPerPage = 5;
 	const years = new Set(data.posts.map(p => p.year.toString()));
 	type ToggleParam = (value : string) => void;
 	let toggleTag : ToggleParam;
 	let toggleYear : ToggleParam;
+	let togglePage : (e : CustomEvent) => void;
+	let clickPage : (e : MouseEvent) => void;
 	let selectedTags : string[];
 	let selectedYear : string | null;
+	let selectedPage : number = 1;
+	let pageCount = Math.ceil(posts.length / postsPerPage);
+	let pages : LinkType[];
 
 	function filterPosts() : void {
-		posts = data.posts.filter(x => {
+		const newPosts = data.posts.filter(x => {
 			if (selectedTags.length !== 0 && selectedTags.filter(y => x.tags.includes(y)).length !== selectedTags.length) {
 				return false;
 			}
 
 			return !(selectedYear !== null && x.year.toString() !== selectedYear);
 		});
+
+		pageCount = Math.ceil(newPosts.length / postsPerPage);
+		pages = [...Array(pageCount).keys()].map(x => {
+			return {
+				name: (x + 1).toString(),
+				active: (x + 1) === selectedPage,
+			};
+		});
+		posts = newPosts.slice((selectedPage - 1) * postsPerPage, selectedPage * postsPerPage);
 	}
 
 	onMount(() => {
 		const selectedTagsKey = 'tags';
 		const selectedYearKey = 'year';
+		const selectedPageKey = 'page';
 		let params : URLSearchParams;
 
 		function updatePage() {
@@ -41,6 +57,7 @@
 
 			selectedTags = params.getAll(selectedTagsKey);
 			selectedYear = params.get(selectedYearKey);
+			selectedPage = parseInt(params.get(selectedPageKey) ?? '1');
 
 			filterPosts();
 		}
@@ -76,11 +93,29 @@
 
 			updatePage();
 		};
+
+		togglePage = function (e : CustomEvent) : void {
+			const page = e.type === 'previous' ? selectedPage - 1 : selectedPage + 1;
+
+			if (page >= 1 && page <= pageCount) {
+				params.set(selectedPageKey, page.toString());
+				updatePage();
+			}
+		}
+
+		clickPage = function (e : MouseEvent) : void {
+			const page = parseInt((e.target as HTMLElement).innerText);
+
+			if (page !== selectedPage) {
+				params.set(selectedPageKey, page.toString());
+				updatePage();
+			}
+		}
 	});
 </script>
 
-<div class="grid grid-cols-4 gap-4">
-	<div>
+<div class="grid grid-cols-1 sm:grid-cols-4 gap-4 mx-4 2xl:mx-0">
+	<div class="ms-4 sm:ms-0">
 		<Accordion multiple>
 			<AccordionItem open>
 				<span slot="header">By Year</span>
@@ -110,20 +145,20 @@
 	</div>
 
 <!-- Actual posts	-->
-	<div class="col-span-2">
+	<div class="col-span-2 md:col-span-3 lg:col-span-2">
 		<div class="flex flex-col gap-4">
 			{#each posts as p}
 				<a
-					class="flex w-full flex-col md:flex-row rounded-lg shadow-lg bg-white dark:bg-gray-800"
+					class="flex flex-col md:flex-row w-full md:min-h-48 rounded-lg shadow-lg bg-white dark:bg-gray-800"
 					href={p.url}
 				>
-					<div class="relative block h-full aspect-crt object-cover">
-						<div class="h-full aspect-crt flex justify-center items-center">
+					<div class="relative block md:max-h-48 md:min-h-48 md:min-w-64 !aspect-crt overflow-hidden">
+						<div class="w-full md:w-auto md:h-full aspect-crt flex justify-center items-center">
 							<ImageSolid class="w-16 h-16 text-gray-500 dark:text-gray-500" />
 						</div>
 						{#if p.image}
 							<div class="absolute top-0 left-0 bottom-0 right-0">
-								<Img src={p.image ?? undefined} class="w-full h-full aspect-crt rounded-t-lg object-cover object-center" />
+								<Img src={p.image ?? undefined} class="w-full h-full aspect-crt rounded-lg object-cover object-center" />
 							</div>
 						{/if}
 					</div>
@@ -139,4 +174,25 @@
 			{/each}
 		</div>
 	</div>
+</div>
+
+<div class="flex flex-col justify-center items-center mt-4">
+	<Pagination
+		{pages}
+		class="mx-auto"
+		large
+		icon
+		on:previous={togglePage}
+		on:next={togglePage}
+		on:click={clickPage}
+	>
+		<svelte:fragment slot="prev">
+			<span class="sr-only">Previous</span>
+			<ChevronLeftOutline class="size-4" />
+		</svelte:fragment>
+		<svelte:fragment slot="next">
+			<span class="sr-only">Next</span>
+			<ChevronRightOutline class="size-4" />
+		</svelte:fragment>
+	</Pagination>
 </div>
