@@ -4,27 +4,31 @@
     "date": "2024-02-03",
     "image": "https://upload.wikimedia.org/wikipedia/commons/3/34/Spruce_forest_at_Holma.jpg",
     "description": "A short three-line description containing text and other symbols, potentially <b>bold</b> items.",
-    "path": "2024-02-01-welcome.md"
+    "path": "2024-02-01-welcome.md",
+    "tags": []
   },
   {
     "title": "Welcome 2",
     "date": "2024-02-02",
     "image": "https://example.com/a.png",
     "description": "",
-    "path": "2024-02-01-welcome.md"
+    "path": "2024-02-01-welcome.md",
+    "tags": []
   },
   {
     "title": "Welcome",
     "date": "2024-02-01",
     "image": null,
     "description": "",
-    "path": "2024-02-01-welcome.md"
+    "path": "2024-02-01-welcome.md",
+    "tags": []
   },
   {
     "title": "Markdown test",
     "date": "2024-01-30",
     "image": null,
     "description": "",
-    "path": "2024-01-30-markdown-test.md"
+    "path": "2024-01-30-markdown-test.md",
+    "tags": []
   }
 ]
