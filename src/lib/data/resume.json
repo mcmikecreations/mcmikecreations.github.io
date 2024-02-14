@@ -1,0 +1,199 @@
+{
+  "basics": {
+    "name": "Mykola Morozov",
+    "label": "Senior Software Engineer",
+    "image": "/images/profile.png",
+    "email": "mykola.morozov.2000@gmail.com",
+    "phone": "",
+    "url": "https://mcmikecreations.github.io",
+    "summary": "Hi, my name's Mykola and I'm an NII intern and an ex senior software engineer at IsraelIT. As well as enterprise systems I also have experience making software and cross-platform apps. Detail-oriented, responsible and committed developer, with a get-it-done, on-time and high-quality product spirit. I quickly learn new skills and programming languages. I educate, refine and drive myself to be a better person.",
+    "location": {
+      "city": "Munich",
+      "countryCode": "DE",
+      "region": "Bavaria"
+    },
+    "profiles": [
+      {
+        "network": "TUM",
+        "username": "ge95loh",
+        "url": "mailto:mykola.morozov@tum.de"
+      },
+      {
+        "network": "Group107",
+        "username": "mykola",
+        "url": "mailto:mykola@group107.com"
+      },
+      {
+        "network": "GitHub",
+        "username": "mcmikecreations",
+        "url": "https://github.com/mcmikecreations"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "mykola-mor",
+        "url": "https://www.linkedin.com/in/mykola-mor"
+      },
+      {
+        "network": "Telegram",
+        "username": "mcmikecreations",
+        "url": "https://t.me/mcmikecreations"
+      },
+      {
+        "network": "Google Scholar",
+        "username": "MwdhZtkAAAAJ",
+        "url": "https://scholar.google.com/citations?user=MwdhZtkAAAAJ&hl=en"
+      },
+      {
+        "network": "ResearchGate",
+        "username": "Mykola_Morozov3",
+        "url": "https://www.researchgate.net/profile/Mykola_Morozov3"
+      },
+      {
+        "network": "Orcid",
+        "username": "0000-0002-5892-6936",
+        "url": "https://orcid.org/0000-0002-5892-6936"
+      },
+      {
+        "network": "Mastodon",
+        "username": "mykolamor",
+        "url": "https://mastodon.social/@mykolamor"
+      },
+      {
+        "network": "Facebook",
+        "username": "mykolamor",
+        "url": "https://www.facebook.com/mykolamor"
+      },
+      {
+        "network": "Instagram",
+        "username": "nickolas_morozov",
+        "url": "https://www.instagram.com/nickolas_morozov"
+      },
+      {
+        "network": "X",
+        "username": "MykolaMor",
+        "url": "https://twitter.com/MykolaMor"
+      }
+    ]
+  },
+  "languages": [
+    {
+      "language": "Ukrainian",
+      "fluency": "Native Speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "CEFR C1+"
+    },
+    {
+      "language": "German",
+      "fluency": "CEFR B1+"
+    },
+    {
+      "language": "Russian",
+      "fluency": "B1+"
+    }
+  ],
+  "publications": [
+    {
+      "url": "http://dx.doi.org/10.1109/CSIT61576.2023.10324223",
+      "name": "Y. Levus, P. Pustelnyk, R. Moravskyi and M. Morozov, \"Cloud-Based Distributed Approach for Procedural Terrain Generation with Enhanced Performance,\"",
+      "publisher": "IEEE 18th International Conference on Computer Science and Information Technologies",
+      "releaseDate": "2023-11-27",
+      "summary": "ISSN: 2766-3639"
+    },
+    {
+      "url": "https://drive.google.com/file/d/19WDvhoB8icaOTJj-Ub05z6Rjbi8V90LF/view?usp=sharing",
+      "name": "M. Morozov, A. Kitamoto, \"Interactive Storytelling with 3D Visualization for Illuminating the Impact of War in Ukraine,\"",
+      "publisher": "Proceedings of the 12th Conference of the Japanese Association for Digital Humanities",
+      "releaseDate": "2023-09-20",
+      "summary": "vol. 2023, ISSN: 2432-3187"
+    },
+    {
+      "url": "https://doi.org/10.23939/ujit2023.01.001",
+      "name": "Y. Levus, P. Pustelnyk, R. Moravskyi and M. Morozov, \"Architecture of a Distributed Software System for Procedural Planetoid Terrain Generation,\"",
+      "publisher": "Ukrainian Journal of Information Technology",
+      "releaseDate": "2023-05-02",
+      "summary": "vol. 5, no. 1, pp. 1-8, ISSN: 2707-1898"
+    },
+    {
+      "url": "https://doi.org/10.1109/CSIT56902.2022.10000868",
+      "name": "Y. Levus, R. Westermann, M. Morozov, R. Moravskyi and P. Pustelnyk, \"Using Software Agents in a Distributed Computing System for Procedural Planetoid Terrain Generation,\"",
+      "publisher": "2022 IEEE 17th International Conference on Computer Sciences and Information Technologies (CSIT)",
+      "releaseDate": "2023-01-02",
+      "summary": "pp. 446-449, ISSN: 2766-3655"
+    },
+    {
+      "url": "https://doi.org/10.15588/1607-3274-2022-2-15",
+      "name": "M. Y. Morozov, R. O. Moravskyi, P. Y. Pustelnyk, and Y. V. Levus, \"Algorithms and Architecture of the Software System of Automated Natural and Anthropogenic Landscape Generation,\"",
+      "publisher": "Radio Electronics, Computer Science, Control",
+      "releaseDate": "2022-07-01",
+      "summary": "vol. 61, no. 2, pp. 154–164, ISSN: 1607-3274"
+    },
+    {
+      "url": "https://doi.org/10.23939/acps2022.01.038",
+      "name": "S. Kundys, B. Havano, M. Morozov, \"Software System for Monitoring the Situation in the Settlement,\"",
+      "publisher": "Advances in Cyber-Physical Systems",
+      "releaseDate": "2022-06-30",
+      "summary": "vol. 7, no. 1, pp. 38–45, ISSN: 2524-0382"
+    },
+    {
+      "url": "https://doi.org/10.23939/acps2021.02.112",
+      "name": "B. Havano, M.Y. Morozov, \"Assessing the Human Condition in Medical Cyber-Physical System Based on Microservices Architecture,\"",
+      "publisher": "Advances in Cyber-Physical Systems",
+      "releaseDate": "2021-12-30",
+      "summary": "vol. 6, no. 2, pp. 112–120, ISSN: 2524-0382"
+    },
+    {
+      "url": "https://doi.org/10.23939/acps2021.02.083",
+      "name": "V. Bielik, Y.V. Morozov, M.Y. Morozov, \"Sensors in Cyber-Physical Systems Based on Android Operating System,\"",
+      "publisher": "Advances in Cyber-Physical Systems",
+      "releaseDate": "2021-12-30",
+      "summary": "vol. 6, no. 2, pp. 83–89, ISSN: 2524-0382"
+    },
+    {
+      "url": "https://doi.org/10.36930/40310514",
+      "name": "M. Y. Morozov, R. O. Moravskyi, P. Y. Pustelnyk, and Y. V. Levus, \"Containerization method for visualization of natural and anthropogenic landscapes,\"",
+      "publisher": "Scientific Bulletin of UNFU",
+      "releaseDate": "2021-11-25",
+      "summary": "vol. 31, no. 5, pp. 90–95, ISSN: 1994-7836"
+    },
+    {
+      "url": "https://doi.org/10.36930/40300124",
+      "name": "M. Y. Morozov, R. O. Moravskyi, P. Y. Pustelnyk, and Y. V. Levus, \"Landscape Generation for Spherical Surfaces: Problem Analysis and Solution,\"",
+      "publisher": "Scientific Bulletin of UNFU",
+      "releaseDate": "2020-02-27",
+      "summary": "vol. 30, no. 1, pp. 136–141, ISSN: 1994-7836"
+    },
+    {
+      "url": "https://drive.google.com/open?id=1faA2TsLMxeOa-nSN0-z1pgH54bZDN5Ni",
+      "name": "M. Y. Morozov, \"Чужомовні слова в українській комп’ютерній термінології: проблема походження\" [Foreign words in Ukrainian computer terminology: the problem of origin],",
+      "publisher": "Proceedings of the All-Ukrainian student scientific-practical conference \"Українська мова в просторі й часі\" [Ukrainian language in space and time]",
+      "releaseDate": "2019-04-19",
+      "summary": "pp. 118–121, ISBN: 978-966-941-324-6"
+    },
+    {
+      "url": "https://drive.google.com/open?id=1m-YbJSZyWnz2jBhtTd29ezo8TVN1qjTQ",
+      "name": "M. Y. Morozov, \"Можливі сценарії розвитку співпраці між групою 5+1 та Іраном в контексті виходу США з ядерної угоди\" [Possible scenarios for the development of cooperation between the 5+1 Group and Iran in the context of the US withdrawal from the nuclear agreement],",
+      "publisher": "roceedings of the international scientific-practical conference \"Суспільні науки: проблеми та досягнення сучасних наукових досліджень\" [Social sciences: problems and achievements of modern scientific research]",
+      "releaseDate": "2018-12-01",
+      "summary": "pp. 102–106, UDC 30:001.8(063)"
+    },
+    {
+      "url": "https://drive.google.com/open?id=1XUDnZUhfqzSJsFfTT7-nVmixbHB6pAxx",
+      "name": "M. Y. Morozov, \"Неотрайбалізм в епоху глобалізації\" [Neo-tribalism in the era of globalization]",
+      "publisher": "76th Student Scientific and Technical Conference: a collection of abstracts",
+      "releaseDate": "2018-11-28",
+      "summary": "pp. 418–420"
+    }
+  ],
+  "education": [],
+  "projects": [],
+  "references": [],
+  "work": [],
+  "skills": [],
+  "volunteer": [],
+  "certificates": [],
+  "awards": [],
+  "meta": {},
+  "interests": []
+}
