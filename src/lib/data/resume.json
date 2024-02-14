@@ -186,14 +186,199 @@
       "summary": "pp. 418–420"
     }
   ],
-  "education": [],
+  "awards": [
+    {
+      "title": "DAAD scholar \"Master Studies for All Academic Disciplines, 2021/22\"",
+      "awarder": "Deutscher Akademischer Austauschdienst",
+      "date": "2021-05-18",
+      "summary": "Kyiv, Ukraine"
+    },
+    {
+      "title": "Certificate of Participation in Global Game Jam 2021 Ukraine",
+      "awarder": "Global Game Jam Ukraine",
+      "date": "2021-01-31",
+      "summary": "Kirovohrad, Ukraine"
+    },
+    {
+      "title": "Member of Ternopil GameDev Community",
+      "date": "2019-04-12",
+      "summary": "Ternopil, Ukraine"
+    },
+    {
+      "title": "2nd degree diploma in 2nd stage of the all-Ukrainian student olympiad in the discipline \"Team Algorithmic Programming\"",
+      "awarder": "Lviv Polytechnic National University",
+      "date": "2019-04-03",
+      "summary": "Lviv, Ukraine"
+    },
+    {
+      "title": "Representative of Ukrainian Game Development Community",
+      "awarder": "White Nights Conference",
+      "date": "2019-02-12",
+      "summary": "Berlin, Germany"
+    },
+    {
+      "title": "1st place award in Global Game Jam 2019 Ukraine",
+      "awarder": "Global Game Jam Ukraine",
+      "date": "2019-01-07",
+      "summary": "Lviv, Ukraine"
+    },
+    {
+      "title": "2nd degree diploma in 2nd stage of the all-Ukrainian student olympiad in the discipline \"English Language\"",
+      "awarder": "Lviv Polytechnic National University",
+      "date": "2018-04-21",
+      "summary": "Lviv, Ukraine"
+    },
+    {
+      "title": "3rd place certificate in BEST::HACKathon 2017",
+      "awarder": "BEST Lviv",
+      "date": "2017-10-20",
+      "summary": "Lviv, Ukraine"
+    },
+    {
+      "title": "State scholarship award for students with exceptional academic achievements",
+      "awarder": "Ministry of Education and Science of Ukraine",
+      "date": "2017-09-01",
+      "summary": "Lviv, Ukraine"
+    },
+    {
+      "title": "Award for high achievements in education, significant achievements during the EIT",
+      "awarder": "Lviv Regional State Administration of the Lviv Regional Council",
+      "date": "2017-07-12",
+      "summary": "Lviv, Ukraine"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Learning for Tomorrow – EMEA Initiative 2022 workshop certificate",
+      "issuer": "INCAS Training und Projekte GmbH & Co. KG",
+      "date": "2022-10-07",
+      "url": "https://drive.google.com/file/d/1qXNUGVgYOu4-4CxzNn5vbrJAnwtN9y5I/view?usp=sharing"
+    },
+    {
+      "name": "Bescheinigung über Kursteilnahme im ‚Online-Deutschkurs kompakt‘",
+      "issuer": "Carl Duisberg Centren",
+      "date": "2021-10-01",
+      "url": "https://drive.google.com/file/d/1FmNG8IXbU_ddM7iJubDrBrLH5RIntkai/view?usp=sharing"
+    },
+    {
+      "name": "C/C++ BaseCamp certificate",
+      "issuer": "Global Logic Education",
+      "date": "2021-05-29",
+      "url": "https://drive.google.com/file/d/1QX0Q6L-sdbtzkLzREmdmrmrlCb_pL2H9/view?usp=sharing"
+    },
+    {
+      "name": "TOEFL iBT C1+ Test Taker Score Report",
+      "issuer": "ETS",
+      "date": "2020-11-07",
+      "url": "https://drive.google.com/file/d/1XL6SUxIYBzqoSwck5ZSPzK3rQbgAqewI/view?usp=sharing"
+    },
+    {
+      "name": "Standardkurs B2.2 Zertifikat",
+      "issuer": "Sprachlernzentrum Lwiw",
+      "date": "2020-07-10",
+      "url": "https://drive.google.com/file/d/1RlLSvM_3e2ge_CuGSYeGQfTOlzlmEYdH/view?usp=sharing"
+    },
+    {
+      "name": "Agile practice certificate",
+      "issuer": "Sigma Software University",
+      "date": "2020-02-28",
+      "url": "https://drive.google.com/file/d/1LTYpV6Q1HNzGcMxh6HO4tlEtwELc0Pta/view?usp=sharing"
+    },
+    {
+      "name": "Standardkurs B2.1 Zertifikat",
+      "issuer": "Sprachlernzentrum Lwiw",
+      "date": "2020-01-05",
+      "url": "https://drive.google.com/open?id=17kmCOkC1snH8HCPZ8kAo2MOrqXi1my6P"
+    },
+    {
+      "name": "Standardkurs A2 Zertifikat",
+      "issuer": "Sprachlernzentrum Lwiw",
+      "date": "2019-06-12"
+    },
+    {
+      "name": "Standardkurs A1 Zertifikat",
+      "issuer": "Sprachlernzentrum Lwiw",
+      "date": "2019-01-06"
+    },
+    {
+      "name": "Cambridge English: First Level 2 Certificate in ESOL International (First)",
+      "issuer": "UK Office of Qualifications and Examinations Regulation",
+      "date": "2017-05-05",
+      "url": "https://drive.google.com/file/d/1qcIYSFNIVZ2rZL4G9o46xJTBmrIXxtuM/view?usp=sharing"
+    }
+  ],
+  "references": [
+    {
+      "name": "Serhii Ivanenko, Scientific Assistant, Oracle Labs and INESC-ID, serhii.ivanenko@tecnico.ulisboa.pt, 2021-12-17",
+      "reference": "I have had a pleasure of working with Mykola on various projects since September 2017. We have been collaborating in several project teams together. During our cooperation he has always shown strong knowledge and interest in different fields of Software Engineering. His technology bandwidth is being extended thanks to his proactive approach.\nBesides immense technical expertise, especially in such areas as Game Development, Mobile, Embedded, and Programming Languages, Mykola also has great self-organization, management, decision-making and problem-solving skills. He always performs all tasks assigned to him in a timely manner and in a good quality, looking for ways how to overcome obstacles on the implementation path.\nIt's without hesitation that I would continue working with Mykola on our projects in the future. He is a great person to collaborate with on different kinds of projects, including research ones."
+    },
+    {
+      "name": "Roman Moravskyi, Software Engineer, Conscensia, 2021-09-06",
+      "reference": "Our collaboration with Mykola started in September 2017 with the first uni group projects. From the beginning, he showed immense knowledge in various academic disciplines and excellent theoretical and practical skills in computer science and programming.\n\nWhile working on group projects with a different tech stack and goals, I have noticed Mykola's strong hard, soft and managerial skills. I want to highlight his most outstanding ones:\n- Communication skills, excellent English (both written and verbal)\n- Project and time management\n- Wide variety of tech skills in different proficiencies (Game Development, Web Development, Mobile, Embedded, and more)\n- Problem-solving\n\nI would work with Mykola in other roles in the future. He is outstanding to work with because of his reliability and determination, which are key to success."
+    },
+    {
+      "name": "Yevheniia Levus, Associate Professor, Lviv Polytechnic National University, yevheniia.v.levus@lpnu.ua, 2020-11-03",
+      "reference": "I was a professor teaching Mykola since the beginning of his second semester in February 2018. We also communicated on workshops and other activities outside the main study process.\n\nFirstly, Mykola completed all of my subjects with excellent grades. He was able to reach to 5% in grades among students in his field of study. I believe he has great potential in learning new information while deepening his expertise in his area of study. He approaches his tasks creatively, often thinking outside the box. Moreover, he sometimes comes up with additional challenges to become more familiar with the subject at matter when solving them.\n\nSecondly, it was noted that Mykola does stand out among other students in personal terms and soft skills. Not only is he adaptable with his problem solving, but he is also communicative, helpful and outgoing. He values teamwork and would often reserve his time to help others, showing both his friendliness towards other students and his leadership skills. He is hard-working, persistent and curious about material, relevant to his field of expertise outside of his work."
+    },
+    {
+      "name": "Andrii Fechan, Full Professor, Lviv Polytechnic National University, afechan@gmail.com, 2020-11-02",
+      "reference": "I have known Mykola since the beginning of his fourth semester in February 2019 as a professor teaching him.\nI put special care into allowing students to use creative and original solutions to problems during our classes, in which Mykola excelled. He not only showed his personal skill during the studies, but also helped others with more complicated tasks. He also worked with others on research in the field of Electronics and Microcontrollers. His strongest soft skills are communication, teamwork, adaptability, flexibility and problem solving. During team exercises he also showed himself as a great team leader. I think Mykola has potential to become a great researcher and have a successful career."
+    },
+    {
+      "name": "Vitalii Yakovyna, Full Professor, Lviv Polytechnic National University, vitaliy.s.yakovyna@lpnu.ua, 2020-10-30",
+      "reference": "From 2015 until August 2020 I was Head of Software Dpt. at LPNU and was a professor teaching Mykola Morozov and communicating with him during extracurricular activities. I'd like to note his independent thinking, flexibility and creativity in solving different kinds of non-trivial tasks, his diligence and politeness and his soft-skills in general. He was communicative and helpful both to his peers and to professors. He also has scored highly on students' contests of different kinds. I believe Mykola has prominent potential to become a highly valued researcher and build a successful career path."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Technical University of Munich",
+      "studyType": "PhD Informatics",
+      "startDate": "2021-10-09",
+      "area": "Data Science and Engineering",
+      "url": "https://db.cit.tum.de/",
+      "courses": []
+    },
+    {
+      "institution": "National Institute of Informatics",
+      "studyType": "Master's Thesis",
+      "startDate": "2022-10-17",
+      "endDate": "2023-03-17",
+      "score": "A, 1.0/1.0",
+      "area": "Digital Humanities",
+      "url": "https://www.nii.ac.jp/",
+      "courses": []
+    },
+    {
+      "institution": "Technical University of Munich",
+      "studyType": "MSc Informatics",
+      "startDate": "2021-10-18",
+      "endDate": "2023-04-16",
+      "score": "1.2/1.0",
+      "area": "Games Engineering",
+      "url": "https://www.tum.de/",
+      "courses": [ "Machine Learning", "3D Geometry Processing", "Visual Data Analytics", "Enterprise System Design", "Augmented Reality" ]
+    },
+    {
+      "institution": "Lviv Polytechnic National University",
+      "studyType": "BSc Computer Software Engineering",
+      "startDate": "2017-09-01",
+      "endDate": "2021-07-31",
+      "score": "98/100",
+      "area": "Embedded Systems",
+      "url": "https://lpnu.ua/",
+      "courses": [ "Computer Graphics", "Internet of Things", "Philosophy", "Political Science", "International Relations" ]
+    },
+    {
+      "institution": "Lviv Physics and Mathematics Lyceum",
+      "studyType": "Full Secondary Education",
+      "startDate": "2013-09-01",
+      "endDate": "2017-07-31",
+      "score": "11.4/12",
+      "area": "Mathematics",
+      "url": "https://www.lpml.com.ua/",
+      "courses": [ "Mathematics", "Informatics", "Physics" ]
+    }
+  ],
   "projects": [],
-  "references": [],
-  "work": [],
-  "skills": [],
-  "volunteer": [],
-  "certificates": [],
-  "awards": [],
-  "meta": {},
-  "interests": []
+  "work": []
 }
