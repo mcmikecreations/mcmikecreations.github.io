@@ -6,4 +6,4 @@
 	export let text = '';
 </script>
 
-<Img src={href} {title} alt={text} size="max-w-md" />
+<Img src={href} {title} alt={text} size="max-w-md" figClass="mx-auto" imgClass="mx-auto" />

@@ -1,7 +1,18 @@
 <script lang="ts">
 	/* eslint-disable svelte/no-at-html-tags */
 	import type { PageData } from './$types';
-	import { A, AccordionItem, Accordion, Button, Heading, Span, Img, Pagination, type LinkType } from 'flowbite-svelte';
+	import {
+		A,
+		AccordionItem,
+		Accordion,
+		Button,
+		Heading,
+		Span,
+		Img,
+		Pagination,
+		type LinkType,
+		Badge
+	} from 'flowbite-svelte';
 	import { tags } from '$lib/data/blogInfo';
 	import { onMount } from 'svelte';
 	import { CalendarMonthSolid, ChevronLeftOutline, ChevronRightOutline, ImageSolid } from 'flowbite-svelte-icons';
@@ -165,9 +176,14 @@
 					<div class="flex-grow flex flex-col p-4">
 						<Heading tag="h3">{p.title}</Heading>
 						<Span class="flex-grow pt-4">{@html p.description}</Span>
-						<div class="pt-4 w-full">
-							<CalendarMonthSolid class="inline-block w-4 h-4 text-gray-900 dark:text-white align-middle" />
-							<Span class="align-text-top">{`${p.year.toString().padStart(4,'0')}/${p.month.toString().padStart(2,'0')}/${p.day.toString().padStart(2,'0')}`}</Span>
+						<div class="pt-4 w-full flex flex-row">
+							<CalendarMonthSolid class="self-center w-4 h-4 text-gray-900 dark:text-white" />
+							<Span class="align-middle">{`${p.year.toString().padStart(4,'0')}/${p.month.toString().padStart(2,'0')}/${p.day.toString().padStart(2,'0')}`}</Span>
+							<div class="flex-grow flex flex-row justify-end gap-2">
+								{#each p.tags as t}
+									<Badge>{t}</Badge>
+								{/each}
+							</div>
 						</div>
 					</div>
 				</a>
