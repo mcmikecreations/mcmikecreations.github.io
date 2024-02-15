@@ -9,6 +9,7 @@
 	const hasPosts = blogs.length > 0;
 </script>
 
+<!-- Picture -->
 <section class="relative isolate flex flex-wrap justify-center min-h-[calc(100vh-3.75rem)]">
 	<div class="absolute w-full h-full -z-10 overflow-hidden bg-white dark:bg-black" aria-hidden="true">
 		<Img class="w-full h-full object-cover object-center blur-sm grayscale opacity-50" src="/images/profile.png" alt="Portrait of Mykola Morozov"/>
@@ -21,6 +22,7 @@
 	</div>
 </section>
 
+<!-- Blogs -->
 {#if hasPosts}
 	<section class="container mx-auto">
 		<Heading tag="h2" class="text-center mt-8">Latest <A href="/blog">Blog</A> Posts</Heading>

@@ -1,5 +1,6 @@
 import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
+import type { HttpError } from '@sveltejs/kit'
 
 export const load: PageLoad = async ({ fetch, params }) => {
 	try {
@@ -9,7 +10,7 @@ export const load: PageLoad = async ({ fetch, params }) => {
 
 		if (!res.ok) {
 			console.log(`Failed to fetch ${url} with return code ${res.status}.`);
-			error(500);
+			error(404, { message: `Failed to fetch "${params.slug}"` });
 		}
 
 		// Find all headers. The first one will be the page title.
@@ -21,7 +22,11 @@ export const load: PageLoad = async ({ fetch, params }) => {
 			content: post,
 		};
 	} catch (ex) {
-		console.log(ex);
-		error(404);
+		if ((ex as HttpError) !== undefined) {
+			throw ex;
+		} else {
+			console.log(ex);
+			error(500);
+		}
 	}
 };

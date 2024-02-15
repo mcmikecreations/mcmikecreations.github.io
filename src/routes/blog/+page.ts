@@ -27,6 +27,6 @@ export const load: PageLoad = async () => {
 		};
 	} catch (ex) {
 		console.log(ex);
-		error(404);
+		error(500);
 	}
 };
