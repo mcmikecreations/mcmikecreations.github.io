@@ -5,7 +5,7 @@ type Tag = typeof TagFrontend | typeof TagBackend;
 interface BlogInfo {
 	title: string;
 	date: string;
-	image?: string;
+	image: string | null;
 	description?: string;
 	path: string;
 	tags: Tag[];
