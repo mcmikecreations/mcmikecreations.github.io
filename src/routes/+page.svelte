@@ -2,7 +2,7 @@
 	/* eslint-disable svelte/no-at-html-tags */
 	import { Heading, Img, P } from 'flowbite-svelte';
 	import BlogSection from './home/BlogSection.svelte';
-	import ResumeSection from './home/RezumeSection.svelte';
+	import ResumeSection from './home/ResumeSection.svelte';
 	import AppFooter from '$lib/components/AppFooter.svelte';
 	import AppTitle from '$lib/components/AppTitle.svelte';
 </script>

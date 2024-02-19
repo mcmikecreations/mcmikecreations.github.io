@@ -17,6 +17,7 @@
 	import { onMount } from 'svelte';
 	import { CalendarMonthSolid, ChevronLeftOutline, ChevronRightOutline, ImageSolid } from 'flowbite-svelte-icons';
 	import AppTitle from '$lib/components/AppTitle.svelte';
+	import DateBadge from '$lib/components/DateBadge.svelte';
 
 	export let data: PageData;
 
@@ -187,8 +188,7 @@
 						<Heading tag="h3">{p.title}</Heading>
 						<Span class="flex-grow pt-4">{@html p.description}</Span>
 						<div class="pt-4 w-full flex flex-row">
-							<CalendarMonthSolid class="self-center w-4 h-4 text-gray-900 dark:text-white" />
-							<Span class="align-middle">{`${p.year.toString().padStart(4,'0')}/${p.month.toString().padStart(2,'0')}/${p.day.toString().padStart(2,'0')}`}</Span>
+							<DateBadge date={p.date} />
 							<div class="flex-grow flex flex-row justify-end gap-2">
 								{#each p.tags as t}
 									<Badge>{t}</Badge>

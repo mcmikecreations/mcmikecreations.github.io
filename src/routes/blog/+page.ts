@@ -13,6 +13,7 @@ export const load: PageLoad = async () => {
 					year: date.getFullYear(),
 					month: date.getMonth() + 1,
 					day: date.getDate(),
+					date: date,
 					title: k.title,
 					url: url,
 					image: k.image,

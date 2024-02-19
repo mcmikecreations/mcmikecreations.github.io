@@ -336,7 +336,8 @@
       "startDate": "2021-10-09",
       "area": "Data Science and Engineering",
       "url": "https://db.cit.tum.de/",
-      "courses": [ "Programming Database Web Applications" ]
+      "courses": [ "Programming Database Web Applications" ],
+      "quote": "TUM Graduate School encourages an environment in which academic knowledge and professional qualification are perfectly interwoven."
     },
     {
       "institution": "National Institute of Informatics",
@@ -346,7 +347,9 @@
       "score": "A, 1.0/1.0",
       "area": "Digital Humanities",
       "url": "https://www.nii.ac.jp/",
-      "courses": []
+      "courses": [],
+      "description": "The thesis was written on the topic “An Extensible System for Large Scale Cultural Heritage Data Visualization”. It focuses on providing a flexible, extensible, versatile, and performant architecture for big data processing. The target application for the system is large-scale 3D landscape visualization in a before/after comparison app using interactive storytelling in educational and news coverage context for the destruction in Eastern Ukraine due to the ongoing war.\n\nAs part of the research, several scholarly publications were made and presentations at Google Japan, University of Tokyo, Yomiuri Shimbun and others were given.",
+      "quote": "Future Value Creation through Informatics by Advancing Research and Operations in Tandem."
     },
     {
       "institution": "Technical University of Munich",
@@ -356,7 +359,9 @@
       "score": "1.2/1.0",
       "area": "Games Engineering",
       "url": "https://www.tum.de/",
-      "courses": [ "Machine Learning", "3D Geometry Processing", "Visual Data Analytics", "Enterprise System Design", "Augmented Reality" ]
+      "courses": [ "Machine Learning", "3D Geometry Processing", "Visual Data Analytics", "Enterprise System Design", "Augmented Reality" ],
+      "description": "During my time at TUM I focused on select areas of Machine Learning, 3D Geometry Processing, Visual Data Analytics, and Enterprise System Design.\n\nIn my free time I wrote scholarly papers together with students and professors from various universities on the topics of health tracking systems, procedural 3D content generation, and cloud systems.",
+      "quote": "Talent. Excellence. Responsibility. TUM Agenda 2030 is readying the university for the future and turning it into an innovative force shaping societal change."
     },
     {
       "institution": "Lviv Polytechnic National University",
@@ -366,7 +371,9 @@
       "score": "98/100",
       "area": "Embedded Systems",
       "url": "https://lpnu.ua/",
-      "courses": [ "Computer Graphics", "Internet of Things", "Philosophy", "Political Science", "International Relations" ]
+      "courses": [ "Computer Graphics", "Internet of Things", "Philosophy", "Political Science", "International Relations" ],
+      "description": "At NULP I focused on Computer Graphics and Internet of Things domains, hosting game development workshops, representing Ukraine at international conferences, and taking part in international scientific competitions and olympiads.\n\nIn my free time I attended various seminars and webinars, doing interdisciplinary research with departments of Philosophy, Ukrainian Language as well as Political Science and International Relations.",
+      "quote": "Lviv Polytechnic National University is the oldest technical higher educational institution in Ukraine and East Europe. It was founded in 1816. University consists of 17 institutes, more than 100 departments; autonomous, additional and general subdivisions."
     },
     {
       "institution": "Lviv Physics and Mathematics Lyceum",
@@ -376,7 +383,9 @@
       "score": "11.4/12",
       "area": "Mathematics",
       "url": "https://www.lpml.com.ua/",
-      "courses": [ "Mathematics", "Informatics", "Physics" ]
+      "courses": [ "Mathematics", "Informatics", "Physics" ],
+      "description": "At LPML I targeted my interest in Mathematics, Informatics, and Physics to improve my knowledge and attend state-level and international competitions, scoring highly in each.\n\nIn my free time I studied microcontrollers and other emerging IoT technologies, also doing some freelance work.",
+      "quote": "The Lviv Physics and Mathematics Lyceum at the Ivan Franko Lviv National University is a comprehensive educational institution with an in-depth study of natural sciences, which provides an opportunity to obtain an education above the state educational minimum, carries out scientific and practical training of capable, gifted student youth."
     }
   ],
   "work": [
