@@ -16,10 +16,14 @@
 	import { tags } from '$lib/data/blogInfo';
 	import { onMount } from 'svelte';
 	import { CalendarMonthSolid, ChevronLeftOutline, ChevronRightOutline, ImageSolid } from 'flowbite-svelte-icons';
+	import AppTitle from '$lib/components/AppTitle.svelte';
 
 	export let data: PageData;
 
 	let posts = data.posts;
+
+	const baseTitle = 'Blog';
+	let title = baseTitle;
 
 	const postsPerPage = 5;
 	const years = new Set(data.posts.map(p => p.year.toString()));
@@ -60,11 +64,15 @@
 		let params : URLSearchParams;
 
 		function updatePage() {
-			const location = new URL(window.location.toString());
+			const oldLocationString = window.location.toString();
+			const location = new URL(oldLocationString);
 			location.search = params.toString();
-			window.document.title = location.toString();
+			const newLocationString = location.toString();
+			title = baseTitle + ` ${location.search}`;
 
-			window.history.pushState({}, window.document.title, location.toString());
+			if (oldLocationString !== newLocationString) {
+				window.history.pushState({}, window.document.title, newLocationString);
+			}
 
 			selectedTags = params.getAll(selectedTagsKey);
 			selectedYear = params.get(selectedYearKey);
@@ -125,8 +133,10 @@
 	});
 </script>
 
+<AppTitle {title} />
+
 <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 mx-4 2xl:mx-0">
-	<div class="ms-4 sm:ms-0">
+	<aside class="ms-4 sm:ms-0">
 		<Accordion multiple>
 			<AccordionItem open>
 				<span slot="header">By Year</span>
@@ -153,10 +163,10 @@
 				</div>
 			</AccordionItem>
 		</Accordion>
-	</div>
+	</aside>
 
 <!-- Actual posts	-->
-	<div class="col-span-2 md:col-span-3 lg:col-span-2">
+	<main class="col-span-2 md:col-span-3 lg:col-span-2">
 		<div class="flex flex-col gap-4">
 			{#each posts as p}
 				<a
@@ -189,7 +199,7 @@
 				</a>
 			{/each}
 		</div>
-	</div>
+	</main>
 </div>
 
 <div class="flex flex-col justify-center items-center mt-4">

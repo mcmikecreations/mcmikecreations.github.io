@@ -18,6 +18,7 @@
 		CustomCode,
 		DarkModeLinker
 	} from '$lib/renderers';
+	import AppTitle from '$lib/components/AppTitle.svelte';
 
 	// text, em <em>, strong <strong><b>, del <del>, <html> kept as-is.
 	// https://github.com/pablo-abc/svelte-markdown/blob/main/src/renderers/Html.svelte
@@ -25,11 +26,13 @@
 	export let data: PageData;
 </script>
 
+<AppTitle title={data.post.title} />
+
 <DarkModeLinker />
 
 <article>
 	<SvelteMarkdown
-		source={data.content}
+		source={data.post.content}
 		renderers={{
 			paragraph: CustomParagraph,
 			hr: Hr,

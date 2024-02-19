@@ -18,8 +18,10 @@ export const load: PageLoad = async ({ fetch, params }) => {
 		const headerRegex = /#{1,6} (.*)\r?\n/g;
 		const headers = Array.from(post.matchAll(headerRegex), x => x[1]);
 		return {
-			title: headers[0],
-			content: post,
+			post: {
+				title: headers[0],
+				content: post,
+			},
 		};
 	} catch (ex) {
 		if ((ex as HttpError) !== undefined) {

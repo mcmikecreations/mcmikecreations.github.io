@@ -3,7 +3,11 @@
 	import { Heading, Img, P } from 'flowbite-svelte';
 	import BlogSection from './home/BlogSection.svelte';
 	import ResumeSection from './home/RezumeSection.svelte';
+	import AppFooter from '$lib/components/AppFooter.svelte';
+	import AppTitle from '$lib/components/AppTitle.svelte';
 </script>
+
+<AppTitle title="Home" />
 
 <!-- Picture -->
 <section class="relative isolate flex flex-wrap justify-center min-h-[calc(100vh-3.75rem)]">
@@ -23,3 +27,5 @@
 <BlogSection />
 
 <div class="mt-8"></div>
+
+<AppFooter />
