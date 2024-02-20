@@ -2,7 +2,7 @@
 	/* eslint-disable svelte/no-at-html-tags */
 	import { A, Badge, Heading, Hr, Img, Span } from 'flowbite-svelte';
 	import blogs from '$lib/data/blogs.json';
-	import { CalendarMonthSolid, ImageSolid } from 'flowbite-svelte-icons';
+	import { ImageSolid } from 'flowbite-svelte-icons';
 	import DateBadge from '$lib/components/DateBadge.svelte';
 
 	const posts = blogs.slice(0, 3);
@@ -10,7 +10,7 @@
 </script>
 
 {#if hasPosts}
-	<section class="container mx-auto">
+	<section id="blog" class="container mx-auto">
 		<Heading tag="h2" class="text-center mt-8">Latest <A href="/blog">Blog</A> Posts</Heading>
 		<div class="grid grid-cols-[repeat(auto-fit,_minmax(20rem,_1fr))] grid-flow-row gap-4 mt-8 mx-4 2xl:mx-0">
 			{#each posts as p}

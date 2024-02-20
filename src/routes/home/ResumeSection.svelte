@@ -1,5 +1,5 @@
 <script>
-	import { A, Card, Heading } from 'flowbite-svelte';
+	import { A, Button, Card, Heading, Img, P } from 'flowbite-svelte';
 	import resume from '$lib/data/resume.json';
 	import DateBadge from '$lib/components/DateBadge.svelte';
 
@@ -7,7 +7,7 @@
 	const experience = resume.work.slice(0, 3);
 </script>
 
-<section class="container mx-auto">
+<section id="resume" class="container mx-auto md:px-16">
 	<Heading tag="h2" class="text-center mt-8">Latest <A href="/resume">Resume</A> Highlights</Heading>
 	<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 mx-4 2xl:mx-0">
 		<Heading tag="h3">Education</Heading>
@@ -20,7 +20,11 @@
 				<Heading tag="h4" class="text-xl">{item.studyType + ' in ' + item.area}</Heading>
 				{#if item.description}<p class="line-clamp-3">{item.description}</p>{/if}
 				<div class="flex-grow" />
-				<A href={item.url} class="text-sm pt-4 sm:pt-6">{item.institution}</A>
+				<span>
+						<A href={item.url} class="text-sm pt-4 sm:pt-6">{item.institution}</A>
+						<span>·</span>
+						<span class="text-sm">{item.location}</span>
+					</span>
 			</Card>
 		{/each}
 		<Heading tag="h3" class="block sm:hidden">Experience</Heading>
@@ -37,5 +41,27 @@
 					</span>
 			</Card>
 		{/each}
+	</div>
+
+	<div class="mx-auto mt-8 columns-2 flex flex-wrap justify-center">
+		<div
+			class="relative min-w-sm max-w-md p-2
+			before:content-[''] before:bg-[url('/images/profile.png')]
+			before:h-full before:w-full before:absolute before:-z-10 before:top-0 before:left-0
+			before:bg-cover before:bg-center before:bg-origin-border
+			before:transition-all before:duration-200
+			before:blur-xl before:contrast-200 before:opacity-0 before:hover:opacity-25"
+		>
+			<Img src="/images/profile.png" imgClass="aspect-crt object-cover object-center" />
+		</div>
+		<div class="ps-8 py-4 min-w-sm max-w-md flex flex-col">
+			<Heading tag="h3">About Me</Heading>
+			<P class="py-2">{resume.basics.summary}</P>
+			<div class="flex-grow" />
+			<div class="flex flex-row">
+				<Button href="#contact" class="uppercase" pill>Contact me</Button>
+				<Button href="/resume" color="alternative" class="uppercase ms-2" pill>Resume</Button>
+			</div>
+		</div>
 	</div>
 </section>
