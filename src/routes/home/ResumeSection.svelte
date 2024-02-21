@@ -7,11 +7,11 @@
 	const experience = resume.work.slice(0, 3);
 </script>
 
-<section id="resume" class="container mx-auto md:px-16">
+<section id="resume">
 	<Heading tag="h2" class="text-center mt-8">Latest <A href="/resume">Resume</A> Highlights</Heading>
 	<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 mx-4 2xl:mx-0">
-		<Heading tag="h3">Education</Heading>
-		<Heading tag="h3" class="hidden sm:block">Experience</Heading>
+		<Heading tag="h3" class="ps-4 sm:ps-6">Education</Heading>
+		<Heading tag="h3" class="hidden sm:block ps-4 sm:ps-6">Experience</Heading>
 	</div>
 	<div class="flex flex-col sm:grid grid-flow-col grid-rows-6 sm:grid-rows-3 gap-4 mt-4 mx-4 2xl:mx-0">
 		{#each education as item}
@@ -27,7 +27,7 @@
 					</span>
 			</Card>
 		{/each}
-		<Heading tag="h3" class="block sm:hidden">Experience</Heading>
+		<Heading tag="h3" class="block sm:hidden ps-4 sm:ps-6">Experience</Heading>
 		{#each experience as item}
 			<Card class="max-w-none">
 				<DateBadge date={new Date(item.startDate)} dateEnd={item.endDate ? new Date(item.endDate) : 'present'} />
@@ -43,18 +43,18 @@
 		{/each}
 	</div>
 
-	<div class="mx-auto mt-8 columns-2 flex flex-wrap justify-center">
+	<div class="mx-auto mt-8 columns-2 flex flex-wrap justify-center gap-4">
 		<div
-			class="relative min-w-sm max-w-md p-2
-			before:content-[''] before:bg-[url('/images/profile.png')]
+			class="relative min-w-sm max-w-md p-4
+			before:content-[''] before:bg-[url('{resume.basics.image}')]
 			before:h-full before:w-full before:absolute before:-z-10 before:top-0 before:left-0
 			before:bg-cover before:bg-center before:bg-origin-border
 			before:transition-all before:duration-200
 			before:blur-xl before:contrast-200 before:opacity-0 before:hover:opacity-25"
 		>
-			<Img src="/images/profile.png" imgClass="aspect-crt object-cover object-center" />
+			<Img src={resume.basics.image} imgClass="aspect-crt object-cover object-center" />
 		</div>
-		<div class="ps-8 py-4 min-w-sm max-w-md flex flex-col">
+		<div class="min-w-sm max-w-md flex flex-col p-4">
 			<Heading tag="h3">About Me</Heading>
 			<P class="py-2">{resume.basics.summary}</P>
 			<div class="flex-grow" />
