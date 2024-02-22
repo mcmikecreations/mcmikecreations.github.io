@@ -9,7 +9,6 @@
 		NavLi,
 		DarkMode,
 	} from 'flowbite-svelte';
-	import AppFooter from '$lib/components/AppFooter.svelte';
 
 	$: activeUrl = $page.url.pathname;
 </script>
@@ -26,7 +25,7 @@
 		<NavLi href="/resume">Resume</NavLi>
 		<NavLi href="/projects">Projects</NavLi>
 		<NavLi href="/blog">Blog</NavLi>
-<!--		<NavLi href="/contact">Contact</NavLi>-->
+		<NavLi href="/#contact">Contact</NavLi>
 	</NavUl>
 </Navbar>
 

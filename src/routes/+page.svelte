@@ -5,6 +5,7 @@
 	import AppTitle from '$lib/components/AppTitle.svelte';
 	import HeroSection from './home/HeroSection.svelte';
 	import ContactSection from './home/ContactSection.svelte';
+	import ReferenceSection from './home/ReferenceSection.svelte';
 </script>
 
 <AppTitle title="Home" />
@@ -13,6 +14,7 @@
 
 <div class="container mx-auto md:px-16">
 	<ResumeSection />
+	<ReferenceSection />
 	<BlogSection />
 	<ContactSection />
 </div>
