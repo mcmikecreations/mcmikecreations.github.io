@@ -8,8 +8,13 @@
 
 <section id="references">
 	<Heading tag="h2" class="text-center mt-8">References and Testimonials</Heading>
-	<div class="mt-8 mx-4 2xl:mx-0">
-		<Carousel images={references} let:Controls let:Indicators class="h-auto sm:h-auto xl:h-auto 2xl:h-auto">
+	<div class="max-w-screen-lg mt-8 mx-auto px-4 2xl:px-0">
+		<Carousel
+			images={references}
+			let:Controls
+			let:Indicators
+			class="min-h-[36rem] relative"
+		>
 			<Controls
 				class="text-gray-700 dark:text-gray-300"
 			/>
