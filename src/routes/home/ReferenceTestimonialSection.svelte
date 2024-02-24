@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Quotes from '$lib/icons/Quotes.svelte';
 	import { fly } from 'svelte/transition';
-	import { twMerge } from 'tailwind-merge';
 	import { getContext } from 'svelte';
 	const state = getContext('state');
 

@@ -6,13 +6,15 @@
 	import HeroSection from './home/HeroSection.svelte';
 	import ContactSection from './home/ContactSection.svelte';
 	import ReferenceSection from './home/ReferenceSection.svelte';
+	import ProjectsSection from './home/ProjectsSection.svelte';
 </script>
 
 <AppTitle title="Home" />
 
 <HeroSection />
 
-<div class="container mx-auto md:px-16">
+<div class="container mx-auto md:px-24">
+	<ProjectsSection />
 	<ResumeSection />
 	<ReferenceSection />
 	<BlogSection />

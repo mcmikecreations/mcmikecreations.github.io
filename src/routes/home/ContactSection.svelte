@@ -1,5 +1,5 @@
 <script>
-	import { A, Heading, P, Span } from 'flowbite-svelte';
+	import { A, Heading, Span } from 'flowbite-svelte';
 	import SocialBadge from '$lib/components/SocialBadge.svelte';
 	import { EnvelopeSolid, FacebookSolid, GithubSolid, LinkedinSolid, XCompanySolid } from 'flowbite-svelte-icons';
 	import {
