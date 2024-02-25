@@ -33,11 +33,11 @@
 <svelte:head>
 	{#if dark}
 		<style>
-        @import 'highlight.js/styles/stackoverflow-dark.min.css';
+        @import 'highlight.js/styles/github-dark-dimmed.min.css';
 		</style>
 	{:else}
 		<style>
-        @import 'highlight.js/styles/stackoverflow-light.min.css';
+        @import 'highlight.js/styles/github.min.css';
 		</style>
 	{/if}
 </svelte:head>

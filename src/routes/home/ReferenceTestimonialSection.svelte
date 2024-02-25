@@ -29,7 +29,7 @@
 </script>
 
 {#key reference}
-	<figure class="absolute block !w-full !h-full object-cover px-16 mb-[1.625rem]" out:fly={transitionSlideOut} in:fly={transitionSlideIn}>
+	<figure class="absolute block !w-full !h-full object-cover px-12 mb-[1.625rem]" out:fly={transitionSlideOut} in:fly={transitionSlideIn}>
 		<Quotes class="size-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" />
 		<blockquote>
 			<p class="max-h-96 overflow-y-auto text-base md:text-xl font-medium text-gray-900 dark:text-white">"{reference.reference}"</p>
