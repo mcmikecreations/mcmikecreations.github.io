@@ -25,11 +25,11 @@
 	{/if}
 </svelte:head>
 
-<div class={twMerge(containerClass, $$props.class)}>
+<div class={twMerge(containerClass, $$props.class)} {...$$restProps}>
 	<div
 		style={p.image ? `--pimg-url: url('${p.image}'); --pimg-url-dark: url('${p.imageDark ?? p.image}');` : ""}
 		class="w-full h-full flex justify-center items-center bg-center bg-cover bg-[image:var(--pimg-url)] dark:bg-[image:var(--pimg-url-dark)]"
 	>
-		{#if !(p.imageDark ?? p.image)}<ImageSolid class="size-16 text-gray-900 dark:text-white" />{/if}
+		{#if !(p.imageDark ?? p.image)}<ImageSolid aria-hidden="true" class="size-16 text-gray-900 dark:text-white" />{/if}
 	</div>
 </div>

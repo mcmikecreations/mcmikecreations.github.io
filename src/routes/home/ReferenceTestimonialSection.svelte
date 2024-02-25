@@ -28,12 +28,11 @@
 	};
 </script>
 
+<!-- TODO: doesn't work with narrator. -->
 {#key reference}
 	<figure class="absolute block !w-full !h-full object-cover px-12 mb-[1.625rem]" out:fly={transitionSlideOut} in:fly={transitionSlideIn}>
 		<Quotes class="size-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" />
-		<blockquote>
-			<p class="max-h-96 overflow-y-auto text-base md:text-xl font-medium text-gray-900 dark:text-white">"{reference.reference}"</p>
-		</blockquote>
+		<p class="max-h-96 overflow-y-auto text-base md:text-xl font-medium text-gray-900 dark:text-white">"{reference.reference}"</p>
 		<figcaption class="flex items-center justify-center mt-6 space-x-3">
 			<div class="flex items-center mb-6 divide-x-2 divide-gray-300 dark:divide-gray-700">
 				<div class="pe-3 text-base font-medium text-gray-900 dark:text-white">{reference.name}</div>

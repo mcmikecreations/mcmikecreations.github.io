@@ -22,6 +22,6 @@
 </script>
 
 <span class="whitespace-nowrap">
-	<CalendarMonthSolid class={twMerge('inline w-4 h-4 text-gray-900 dark:text-white', iconClass)} />
+	<CalendarMonthSolid ariaLabel="date" class={twMerge('inline w-4 h-4 text-gray-900 dark:text-white', iconClass)} />
 	<Span dir="ltr" {...$$restProps} class={twMerge('align-middle', $$props.class)}>{formatDate(date) + (dateEnd ? (splitter + formatDate(dateEnd)) : '')}</Span>
 </span>

@@ -14,6 +14,7 @@
 			let:Controls
 			let:Indicators
 			class="min-h-[36rem] relative"
+			ariaLabel={null}
 		>
 			<Controls
 				class="text-gray-700 dark:text-gray-300"

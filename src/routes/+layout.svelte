@@ -22,7 +22,7 @@
 	</div>
 	<NavUl {activeUrl}>
 		<NavLi href="/">Home</NavLi>
-		<NavLi href="/resume">Resume</NavLi>
+		<NavLi href="/resume">Résumé</NavLi>
 		<NavLi href="/projects">Projects</NavLi>
 		<NavLi href="/blog">Blog</NavLi>
 		<NavLi href="/#contact">Contact</NavLi>

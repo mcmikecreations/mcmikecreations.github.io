@@ -20,40 +20,40 @@ export let showSocials = $page.data.footer?.showSocials ?? true;
 	<div class="mx-auto flex flex-wrap {showSocials ? 'justify-between' : 'justify-center'} items-center container overflow-hidden">
 		<FooterCopyright href="/" by={resume.basics.name} year={new Date().getFullYear()} />
 		{#if showSocials}
-			<div class="flex flex-wrap -ms-6 md:justify-center mt-0">
+			<div class="flex flex-wrap -ms-6 md:justify-center mt-0 [&_svg]:w-4 [&_svg]:h-4 [&_svg]:text-gray-500 [&_svg]:dark:text-gray-500 [&_svg:hover]:text-gray-900 [&_svg:hover]:dark:text-white">
 				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'TUM')?.url} class="ms-6 mt-4 md:mt-0" aria-label="email solid">
-					<EnvelopeSolid class="w-4 h-4 text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white" />
+					<EnvelopeSolid ariaLabel="email" />
 				</FooterIcon>
 				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'GitHub')?.url} class="ms-6 mt-4 md:mt-0">
-					<GithubSolid class="w-4 h-4 text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white" />
+					<GithubSolid ariaLabel="github" />
 				</FooterIcon>
 				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'LinkedIn')?.url} class="ms-6 mt-4 md:mt-0">
-					<LinkedinSolid class="w-4 h-4 text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white" />
+					<LinkedinSolid ariaLabel="linkedin" />
 				</FooterIcon>
 				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'Telegram')?.url} class="ms-6 mt-4 md:mt-0">
-					<TelegramSolid class="w-4 h-4 text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white" />
+					<TelegramSolid ariaLabel="telegram" />
 				</FooterIcon>
 				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'Google Scholar')?.url} class="ms-6 mt-4 md:mt-0">
-					<GoogleScholarSolid class="w-4 h-4 text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white" />
+					<GoogleScholarSolid ariaLabel="google scholar" />
 				</FooterIcon>
 				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'ResearchGate')?.url} class="ms-6 mt-4 md:mt-0">
-					<ResearchGateSolid class="w-4 h-4 text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white" />
+					<ResearchGateSolid ariaLabel="research gate" />
 				</FooterIcon>
 				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'Orcid')?.url} class="ms-6 mt-4 md:mt-0">
-					<OrcidSolid class="w-4 h-4 text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white" />
+					<OrcidSolid ariaLabel="orcid" />
 				</FooterIcon>
 				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'Mastodon')?.url} class="ms-6 mt-4 md:mt-0">
-					<MastodonSolid class="w-4 h-4 text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white" />
+					<MastodonSolid ariaLabel="mastodon" />
 				</FooterIcon>
 				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'Facebook')?.url} class="ms-6 mt-4 md:mt-0">
-					<FacebookSolid class="w-4 h-4 text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white" />
+					<FacebookSolid ariaLabel="facebook" />
 				</FooterIcon>
 				<Tooltip>Facebook</Tooltip>
 				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'Instagram')?.url} class="ms-6 mt-4 md:mt-0">
-					<InstagramSolid class="w-4 h-4 text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white" />
+					<InstagramSolid ariaLabel="instagram" />
 				</FooterIcon>
 				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'X')?.url} class="ms-6 mt-4 md:mt-0">
-					<XCompanySolid class="w-4 h-4 text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white" />
+					<XCompanySolid ariaLabel="x" />
 				</FooterIcon>
 			</div>
 		{/if}

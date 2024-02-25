@@ -1,8 +1,7 @@
 <script lang="ts">
 	/* eslint-disable svelte/no-at-html-tags */
-	import { A, Badge, Card, Heading, Hr, Img, Span } from 'flowbite-svelte';
+	import { A, Badge, Card, Heading, Span } from 'flowbite-svelte';
 	import blogs from '$lib/data/blogs.json';
-	import { ImageSolid } from 'flowbite-svelte-icons';
 	import DateBadge from '$lib/components/DateBadge.svelte';
 
 	const posts = blogs.slice(0, 3);
@@ -25,7 +24,8 @@
 					<Span class="pt-4 flex-grow">{@html p.description}</Span>
 					<div class="pt-4 w-full flex flex-row">
 						<DateBadge date={date} dateEnd={undefined} />
-						<div class="flex-grow flex flex-row flex-wrap justify-end gap-2 ps-2">
+						<div class="flex-grow flex flex-row flex-wrap justify-end gap-2 ps-2" aria-details="tags">
+							<span aria-label="tags" class="sr-only"/>
 							{#each p.tags as t}
 								<Badge>{t}</Badge>
 							{/each}

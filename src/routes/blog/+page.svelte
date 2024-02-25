@@ -15,7 +15,7 @@
 	} from 'flowbite-svelte';
 	import { tags } from '$lib/data/blogInfo';
 	import { onMount } from 'svelte';
-	import { CalendarMonthSolid, ChevronLeftOutline, ChevronRightOutline, ImageSolid } from 'flowbite-svelte-icons';
+	import { ChevronLeftOutline, ChevronRightOutline, ImageSolid } from 'flowbite-svelte-icons';
 	import AppTitle from '$lib/components/AppTitle.svelte';
 	import DateBadge from '$lib/components/DateBadge.svelte';
 
@@ -176,7 +176,7 @@
 				>
 					<div class="relative block md:max-h-48 md:min-h-48 md:min-w-64 !aspect-crt overflow-hidden">
 						<div class="w-full md:w-auto md:h-full aspect-crt flex justify-center items-center">
-							<ImageSolid class="w-16 h-16 text-gray-500 dark:text-gray-500" />
+							<ImageSolid aria-hidden="true" class="w-16 h-16 text-gray-500 dark:text-gray-500" />
 						</div>
 						{#if p.image}
 							<div class="absolute top-0 left-0 bottom-0 right-0">
@@ -188,8 +188,9 @@
 						<Heading tag="h3">{p.title}</Heading>
 						<Span class="flex-grow pt-4">{@html p.description}</Span>
 						<div class="pt-4 w-full flex flex-row">
-							<DateBadge date={p.date} />
-							<div class="flex-grow flex flex-row justify-end gap-2">
+							<DateBadge date={p.date} dateEnd={undefined} />
+							<div class="flex-grow flex flex-row justify-end gap-2" aria-details="tags">
+								<span aria-label="tags" class="sr-only"/>
 								{#each p.tags as t}
 									<Badge>{t}</Badge>
 								{/each}
@@ -214,11 +215,11 @@
 	>
 		<svelte:fragment slot="prev">
 			<span class="sr-only">Previous</span>
-			<ChevronLeftOutline class="size-4" />
+			<ChevronLeftOutline aria-hidden="true" class="size-4" />
 		</svelte:fragment>
 		<svelte:fragment slot="next">
 			<span class="sr-only">Next</span>
-			<ChevronRightOutline class="size-4" />
+			<ChevronRightOutline aria-hidden="true" class="size-4" />
 		</svelte:fragment>
 	</Pagination>
 </div>
