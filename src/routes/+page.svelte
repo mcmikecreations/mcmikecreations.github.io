@@ -13,13 +13,13 @@
 
 <HeroSection />
 
-<div class="container mx-auto md:px-24">
+<main class="container mx-auto md:px-24">
 	<ProjectsSection />
 	<ResumeSection />
 	<ReferenceSection />
 	<BlogSection />
 	<ContactSection />
-</div>
+</main>
 
 <div class="mt-8"></div>
 

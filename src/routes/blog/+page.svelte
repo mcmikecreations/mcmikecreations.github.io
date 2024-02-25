@@ -166,7 +166,7 @@
 		</Accordion>
 	</aside>
 
-<!-- Actual posts	-->
+	<!-- Actual posts	-->
 	<main class="col-span-2 md:col-span-3 lg:col-span-2">
 		<div class="flex flex-col gap-4">
 			{#each posts as p}

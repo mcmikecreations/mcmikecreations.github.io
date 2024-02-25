@@ -492,6 +492,8 @@
   "projects": [
     {
       "name": "PlanetoidGen",
+      "image": "/images/projects/planetoid-gen/coords-cubic.svg",
+      "imageDark": "/images/projects/planetoid-gen/coords-cubic-dark.svg",
       "quote": "A highly parallel distributed system for pipeline-oriented geographic data processing.",
       "url": "https://github.com/mcmikecreations/PlanetoidGen",
       "route": "/projects/planetoid-gen",
@@ -513,7 +515,7 @@
     },
     {
       "name": "Nanoid C++",
-      "image": "/images/projects/nanoid-cpp/logo.png",
+      "image": "/images/projects/nanoid-cpp/logo.svg",
       "imageDark": null,
       "quote": "A tiny, URL-friendly, unique string ID generator for C++, implementation of <a href=\"https://github.com/ai/nanoid\">ai's nanoid</a>.",
       "url": "https://github.com/mcmikecreations/nanoid_cpp",
@@ -522,12 +524,20 @@
     },
     {
       "name": "TUM Info",
-      "image": "/images/projects/tum-info/plot.png",
-      "imageDark": "/images/projects/tum-info/plotDark.png",
+      "image": "/images/projects/tum-info/plot.svg",
+      "imageDark": "/images/projects/tum-info/plot-dark.svg",
       "quote": "A bunch of useful exam-related information I've collected while studying at the Technical University of Munich.",
       "url": "https://mcmikecreations.github.io/tum_info/",
       "route": "/projects/tum-info",
-      "description": "A relatively big dataset of TUM exam statistics and course reviews. The data is collected anonymously and distributed across schools. The website uses <code>Jekyll</code>, <code>Ruby</code>, and <code>GitHub Actions</code> to statically compile the data and make it available in HTML and JSON formats for further usage or analysis."
+      "description": "A relatively big dataset of TUM exam statistics and course reviews. The data is collected anonymously and distributed across schools. The website uses <code>Jekyll</code>, <code>Ruby</code>, and <code>GitHub Actions</code> to statically compile the data and make it available in HTML and JSON formats for further usage or analysis.\n\nThe project uses a custom <code>Python</code> web scraper to collect courses for a specific student using their login and password."
+    },
+    {
+      "name": "Data Viz",
+      "image": "/images/projects/data-viz/map.svg",
+      "imageDark": "/images/projects/data-viz/map-dark.svg",
+      "quote": "A set of small data visualization projects.",
+      "route": "/projects/data-viz",
+      "description": "An assortment of different data visualization toy project I have been working on. These include hiking routes with Digital Elevation Maps, profiling statistics and more."
     }
   ],
   "skills": [],

@@ -3,6 +3,10 @@
 	import resume from '$lib/data/resume.json';
 </script>
 
+<svelte:head>
+	<link rel="preload" href={resume.basics.image} as="image" />
+</svelte:head>
+
 <section class="relative isolate flex flex-wrap justify-center min-h-[calc(100vh-3.75rem)]">
 	<div class="absolute w-full h-full -z-10 overflow-hidden bg-white dark:bg-black" aria-hidden="true">
 		<Img class="w-full h-full object-cover object-center blur-sm grayscale opacity-50" src={resume.basics.image} alt="Portrait of Mykola Morozov"/>

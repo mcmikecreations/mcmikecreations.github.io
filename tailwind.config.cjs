@@ -4,6 +4,7 @@ const config = {
 
 	plugins: [
 		require('flowbite/plugin'),
+		require('@tailwindcss/typography'),
 		require('tailwind-children'),
 	],
 
