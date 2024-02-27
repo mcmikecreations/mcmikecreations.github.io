@@ -1,15 +1,5 @@
 <script>
 	import { A, Heading, Span } from 'flowbite-svelte';
-	import SocialBadge from '$lib/components/SocialBadge.svelte';
-	import { FacebookSolid, GithubSolid, LinkedinSolid, XCompanySolid } from 'flowbite-svelte-icons';
-	import {
-		GoogleScholarSolid,
-		InstagramSolid,
-		MastodonSolid,
-		OrcidSolid,
-		ResearchGateSolid,
-		TelegramSolid
-	} from '$lib/icons';
 	import resume from '$lib/data/resume.json';
 	import SocialBadgeList from '$lib/components/SocialBadgeList.svelte';
 

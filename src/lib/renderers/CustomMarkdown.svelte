@@ -4,7 +4,7 @@
 		CustomImage, CustomList, CustomListItem,
 		CustomParagraph,
 		CustomTable, CustomTableBody, CustomTableCell,
-		CustomTableHead, CustomTableRow, DarkModeLinker
+		CustomTableHead, CustomTableRow
 	} from '$lib/renderers/index.js';
 	import { A, Hr } from 'flowbite-svelte';
 	import SvelteMarkdown from 'svelte-markdown';
