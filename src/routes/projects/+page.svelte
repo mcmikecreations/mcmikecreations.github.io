@@ -3,9 +3,12 @@
 	import resume from '$lib/data/resume.json';
 	import { GlobeSolid } from 'flowbite-svelte-icons';
 	import ProjectImage from '$lib/components/ProjectImage.svelte';
+	import AppTitle from '$lib/components/AppTitle.svelte';
 
 const projects = resume.projects;
 </script>
+
+<AppTitle title="Projects" />
 
 <main class="md:px-24">
 	{#each projects as p}

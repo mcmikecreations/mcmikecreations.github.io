@@ -1,33 +1,17 @@
 [
   {
-    "title": "Welcome 3",
-    "date": "2024-02-03",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/3/34/Spruce_forest_at_Holma.jpg",
-    "description": "A short three-line description containing text and other symbols, potentially <b>bold</b> items.",
-    "path": "2024-02-01-welcome.md",
+    "title": "Jekyll to Flowbite Svelte",
+    "date": "2024-02-26",
+    "image": "/images/blog/migration.png",
+    "description": "How I migrated from Ruby and Jekyll to Vite, Svelte, SvelteKit and Flowbite.",
+    "path": "2024-02-26-migration.md",
     "tags": [ "Frontend" ]
-  },
-  {
-    "title": "Welcome 2",
-    "date": "2024-02-02",
-    "image": "https://example.com/a.png",
-    "description": "",
-    "path": "2024-02-01-welcome.md",
-    "tags": [ "Frontend", "Backend" ]
-  },
-  {
-    "title": "Welcome",
-    "date": "2024-01-30",
-    "image": null,
-    "description": "",
-    "path": "2024-02-01-welcome.md",
-    "tags": [ "Backend" ]
   },
   {
     "title": "Markdown test",
     "date": "2023-12-30",
-    "image": null,
-    "description": "",
+    "image": "/images/blog/markdown-test.png",
+    "description": "A test of common markdown components used in blogs.",
     "path": "2023-12-30-markdown-test.md",
     "tags": []
   }
