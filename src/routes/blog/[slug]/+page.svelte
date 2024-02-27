@@ -21,6 +21,15 @@
 			<span>{data.post.time}</span>
 			·
 			<span>{data.post.date}</span>
+			{#if data.post.tags?.length}
+				·
+				<div class="flex flex-row justify-end gap-2" aria-details="tags">
+					<span aria-label="tags" class="sr-only"/>
+					{#each data.post.tags as t}
+						<span>{t}</span>
+					{/each}
+				</div>
+			{/if}
 		</div>
 		<SvelteMarkdown source={data.post.content} renderers={{ code: DefaultCode, }} />
 	</div>
