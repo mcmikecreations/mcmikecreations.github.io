@@ -35,10 +35,10 @@
 				{#if item.description}<p class="line-clamp-3">{item.description}</p>{/if}
 				<div class="flex-grow" />
 				<span>
-						<A href={item.url} class="text-sm pt-4 sm:pt-6">{item.name}</A>
-						<span>·</span>
-						<span class="text-sm">{item.location}</span>
-					</span>
+					<A href={item.url} class="text-sm pt-4 sm:pt-6">{item.name}</A>
+					<span>·</span>
+					<span class="text-sm">{item.location}</span>
+				</span>
 			</Card>
 		{/each}
 	</div>
