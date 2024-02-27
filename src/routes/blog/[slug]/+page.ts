@@ -1,11 +1,14 @@
 import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
 import type { HttpError } from '@sveltejs/kit'
+import blogs from '$lib/data/blogs.json';
+import { readingTime } from 'reading-time-estimator';
 
 export const load: PageLoad = async ({ fetch, params }) => {
 	try {
 		// Get the post.
-		const url = `/_blog/${params.slug}.md`;
+		const fileName = `${params.slug}.md`;
+		const url = `/_blog/${fileName}`;
 		const res = await fetch(url);
 
 		if (!res.ok) {
@@ -13,14 +16,27 @@ export const load: PageLoad = async ({ fetch, params }) => {
 			error(404, { message: `Failed to fetch "${params.slug}"` });
 		}
 
-		// Find all headers. The first one will be the page title.
+		const meta = blogs.find((x) => x.path === fileName);
+
+		if (!meta) {
+			console.log(`Failed to fetch ${fileName} metadata.`);
+			error(404, { message: `Failed to fetch "${params.slug}"` });
+		}
+
+		// Find all headers.
 		const post = await res.text();
-		const headerRegex = /#{1,6} (.*)\r?\n/g;
+		const headerRegex = /#{2} (.*)\r?\n/g;
 		const headers = Array.from(post.matchAll(headerRegex), x => x[1]);
+		const stats = readingTime(post);
 		return {
 			post: {
-				title: headers[0],
+				title: meta.title,
 				content: post,
+				headers: headers,
+				time: stats.text,
+				date: new Date(meta.date).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"}),
+				tags: meta.tags,
+				author: meta.author,
 			},
 		};
 	} catch (ex) {
