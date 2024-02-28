@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Seekarkreuz",
+    "route": "/projects/data-viz/maps/seekarkreuz",
+    "height": 512,
+    "features": [
+      {
+        "type": "origin",
+        "source": "https://www.openstreetmap.org/",
+        "data": {
+          "lat": 47.6677,
+          "lon": 11.6126
+        }
+      }
+    ]
+  }
+]
