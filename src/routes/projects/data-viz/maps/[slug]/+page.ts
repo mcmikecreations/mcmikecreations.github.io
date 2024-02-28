@@ -12,7 +12,7 @@ export const load: PageLoad = async ({ params }) => {
 			error(404, { message: `Failed to fetch "${params.slug}"` });
 		}
 
-		const origin = meta.features.find((x) => x.type === 'origin');
+		const origin = meta.features.find((x) => x.type === 'Origin');
 
 		if (!origin) {
 			console.log(`Failed to find origin for /maps/${params.slug}.`);

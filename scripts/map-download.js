@@ -4,12 +4,11 @@ import maps from '../src/lib/data/maps.json' assert { type: "json" };
 import { existsSync } from 'fs';
 import { mkdir, writeFile } from 'fs/promises';
 import { resolve } from 'path';
-import { providers } from './map-providers.js';
+import { providers, providerFolder, providerFile } from '../src/lib/data/map-providers.js';
 
 // Load map based on name and mapbox key. E.g. node map-download.js seekarkreuz pk.eya79cwhrfa9we
 
-const mapFolder = '../static/_projects/data-viz/maps';
-const file = (x,y,z,type,format) => `${type}/${z}_${x}_${y}.${format}`;
+const mapFolder = `../static/${providerFolder}`;
 
 const verifyFolder = async (path) => {
 	if (!existsSync(path)) {
@@ -36,7 +35,7 @@ if (!meta) {
 	console.error(`Failed to fetch /maps/${slug} metadata.`);
 }
 
-const origin = meta.features.find((x) => x.type === 'origin');
+const origin = meta.features.find((x) => x.type === 'Origin');
 
 if (!origin) {
 	console.error(`Failed to find origin for /maps/${slug}.`);
@@ -56,13 +55,18 @@ const tiles = tileFunc();
 
 await verifyFolder(resolve(mapFolder, `${providers.mapboxDEM.tileset}/`));
 await verifyFolder(resolve(mapFolder, `${providers.nextzenTerrariumDEM.tileset}/`));
+await verifyFolder(resolve(mapFolder, `${providers.osm.tileset}/`));
 tiles.map(async ([x, y, z], i, {translate: [tx, ty], scale: k}) => {
-	await downloadFile(
+	/*await downloadFile(
 		providers.mapboxDEM.url(x, y, z, `sku=${sku}&access_token=${tokenMapboxDEM}`),
-		file(x, y, z, providers.mapboxDEM.tileset, providers.mapboxDEM.format)
+		providerFile(x, y, z, providers.mapboxDEM.tileset, providers.mapboxDEM.format)
 	);
 	await downloadFile(
 		providers.nextzenTerrariumDEM.url(x, y, z, `api_key=${tokenNextzen}`),
-		file(x, y, z, providers.nextzenTerrariumDEM.tileset, providers.nextzenTerrariumDEM.format)
+		providerFile(x, y, z, providers.nextzenTerrariumDEM.tileset, providers.nextzenTerrariumDEM.format)
+	);*/
+	await downloadFile(
+		providers.osm.url(x, y, z),
+		providerFile(x, y, z, providers.osm.tileset, providers.osm.format)
 	);
 });

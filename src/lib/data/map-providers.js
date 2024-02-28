@@ -1,3 +1,9 @@
+// @ts-nocheck
+// @ts-ignore
+
+export const providerFolder = '_projects/data-viz/maps';
+export const providerFile = (x, y, z, type, format) => `${type}/${z}_${x}_${y}.${format}`;
+
 export const providers = {
 	osm: {
 		format: 'png',

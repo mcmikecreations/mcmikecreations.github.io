@@ -1,15 +1,30 @@
 [
   {
-    "title": "Seekarkreuz",
+    "name": "Seekarkreuz",
     "route": "/projects/data-viz/maps/seekarkreuz",
     "height": 512,
     "features": [
       {
-        "type": "origin",
+        "type": "Origin",
         "source": "https://www.openstreetmap.org/",
         "data": {
           "lat": 47.6677,
           "lon": 11.6126
+        }
+      },
+      {
+        "type": "Tiles",
+        "source": "https://www.openstreetmap.org/",
+        "data": {
+          "provider": "osm"
+        }
+      },
+      {
+        "type": "Geometry",
+        "source": "https://maps.openrouteservice.org/",
+        "data": {
+          "provider": "geojson",
+          "path": "seekarkreuz.json#/features/0"
         }
       }
     ]
