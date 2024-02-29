@@ -1,28 +1,54 @@
 <script lang="ts">
+	/* eslint-disable @typescript-eslint/ban-ts-comment */
+	/* eslint-disable svelte/no-at-html-tags */
 	import type { PageData } from './$types';
 	import AppTitle from '$lib/components/AppTitle.svelte';
-	import { P, Tabs, TabItem } from 'flowbite-svelte';
+	import { Tabs, TabItem, Img } from 'flowbite-svelte';
 	import Attribution from './Attribution.svelte';
 	import { onMount } from 'svelte';
 	import * as THREE from 'three';
 	import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 	import { providerFile, providerFolder, providers } from '$lib/data/map-providers';
-	import type { TilesData } from '$lib/data/map-info';
+	import type { MapProvider, TilesData } from '$lib/data/map-info';
 
 	export let data: PageData;
 
-	const attributionHeight = 18;
 	const scale3d = 0.2;
-	const scale3dVertical = 2.0;
+	const scale3dVertical = 0.4;
 
 	const attrMapbox = data.map.features.some((x) => x.type === 'Tiles' && (x.data as TilesData)!.provider!.includes('mapbox'));
 	const attrOSM = data.map.features.some((x) => x.type === 'Tiles' && (x.data as TilesData)!.provider!.includes('osm')) && !attrMapbox;
 
 	let renderer : THREE.WebGLRenderer;
+	let camera : THREE.PerspectiveCamera;
+	let scene : THREE.Scene;
+
+	function render() {
+		if (renderer && scene && camera) {
+			renderer.render(scene, camera);
+		}
+	}
 
 	function attach3d() : void {
-		const container = document.getElementById('container-3d')!;
-		container.appendChild(renderer.domElement);
+		if (renderer) {
+			const container = document.getElementById('container-3d')!;
+			container.appendChild(renderer.domElement);
+		}
+
+		onWindowResize();
+	}
+
+	function onWindowResize() {
+		if (camera && renderer) {
+			const container = document.getElementById('container-3d')!;
+			const containerSize = container.offsetWidth;
+			camera.aspect = containerSize / containerSize;
+			camera.updateProjectionMatrix();
+
+			renderer.setSize(containerSize, containerSize);
+		}
+
+		render();
 	}
 
 	async function init3d() : Promise<void> {
@@ -66,30 +92,25 @@
 		}
 
 		const container = document.getElementById('container-3d')!;
+		const containerSize = container.offsetWidth;
 
-		const camera = new THREE.PerspectiveCamera(50, container.offsetWidth / container.offsetHeight, 1, 1000);
-		camera.position.set( 200, 200, 200 );
+		camera = new THREE.PerspectiveCamera(45, 1.0 /* w/h */, 1, 1000);
+		const cameraPos = data.map.height * 0.25;
+		camera.position.set(-cameraPos, cameraPos, cameraPos);
 
 		renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
 		renderer.setPixelRatio(window.devicePixelRatio);
-		renderer.setSize(container.offsetWidth, container.offsetHeight);
+		renderer.setSize(containerSize, containerSize);
 
 		const controls = new OrbitControls(camera, renderer.domElement);
 		controls.addEventListener('change', render);
 		controls.screenSpacePanning = true;
 		window.addEventListener('resize', onWindowResize);
 
-		const scene = new THREE.Scene();
+		scene = new THREE.Scene();
 
-		const helper = new THREE.GridHelper(160, 10, 0x8d8d8d, 0xc1c1c1);
-		scene.add(helper);
-
-		const axesHelper = new THREE.AxesHelper(500);
-		scene.add(axesHelper);
-
-		//const light = new THREE.DirectionalLight('white', 8);
-		//light.position.set(100, 100, 100);
-		//scene.add(light);
+		// const helper = new THREE.GridHelper(160, 10, 0x8d8d8d, 0xc1c1c1);
+		// scene.add(helper);
 
 		if (data.data3d.length > 0) {
 			const group = new THREE.Group();
@@ -111,7 +132,8 @@
 				const imagePixels = o.imagePixels;
 				if (mesh && imageMaps && imageCoordinates && imageScale && imagePixels) {
 					for (const [key, value] of Object.entries(imageMaps)) {
-						const provider = providers[value as string];
+						// @ts-ignore
+						const provider = (providers as unknown)[value as string] as MapProvider;
 						const url = (x : number, y : number, z : number) => `/${providerFolder}/` + providerFile(x, y, z, provider.tileset, provider.format);
 						const texture = textureLoader.load(url(imageCoordinates[0], imageCoordinates[1], imageCoordinates[2]));
 						images.set(key, texture);
@@ -124,7 +146,7 @@
 
 					mesh.material = getMaterial(
 						images,
-						pixelsPerMeter * scale3dVertical,
+						pixelsPerMeter,
 						imageProvider
 					);
 				}
@@ -133,20 +155,8 @@
 			const center = data.projection([data.origin.lon, data.origin.lat])!;
 			group.position.set(-center[0] * scale3d * 0.5, 0.0, -center[1] * scale3d * 0.5); // 0.5 since planes are centered.
 			group.rotation.x = -Math.PI * 0.5;
-			group.scale.set(scale3d, scale3d, scale3d);
+			group.scale.set(scale3d, scale3d, scale3dVertical);
 			scene.add(group);
-		}
-
-		function onWindowResize() {
-			camera.aspect = container.offsetWidth / container.offsetHeight;
-			camera.updateProjectionMatrix();
-
-			renderer.setSize(container.offsetWidth, container.offsetHeight);
-			render();
-		}
-
-		function render() {
-			renderer.render(scene, camera);
 		}
 
 		THREE.DefaultLoadingManager.onLoad = function () {
@@ -166,8 +176,9 @@
 
 <main class="md:px-24 mx-4 2xl:mx-0">
 	<div class="flex flex-row flex-wrap gap-4">
-		<article class="flex-1 w-full flex flex-row sm:flex-col flex-wrap p-4 bg-gray-50 rounded-lg dark:bg-gray-800 min-w-40">
-
+		<article class="flex-1 w-full flex flex-row sm:flex-col flex-wrap gap-4 p-4 bg-gray-50 rounded-lg dark:bg-gray-800 min-w-40">
+			<Img src={data.map.image} alt="Original map photo" class="w-full h-auto rounded-lg object-center object-cover" />
+			<div class="prose dark:prose-invert prose-a:text-primary-600 dark:prose-a:text-primary-500">{@html data.map.description}</div>
 		</article>
 		<div class="flex-[2] min-w-80">
 			<Tabs>

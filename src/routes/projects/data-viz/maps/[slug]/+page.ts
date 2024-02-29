@@ -1,13 +1,53 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
 import type { HttpError } from '@sveltejs/kit'
 import maps from '$lib/data/maps.json';
 import { providerFile, providerFolder, providers } from '$lib/data/map-providers';
 import { geoMercator, geoPath } from 'd3-geo';
+// @ts-ignore
 import { tile } from 'd3-tile';
 import * as THREE from 'three';
-import { SVGLoader } from 'three/addons/loaders/SVGLoader.js';
-import type { GeometryData, Map, OriginData, TilesData } from '$lib/data/map-info';
+import type { GeometryData, Map, MapProvider, OriginData, TilesData } from '$lib/data/map-info';
+
+class ThreePathContext {
+	paths: THREE.Path[];
+	currentPath?: THREE.Path;
+
+	constructor() {
+		this.paths = [];
+	}
+
+	initPath() {
+		if (this.currentPath === undefined) {
+			this.currentPath = new THREE.Path();
+			this.paths.push(this.currentPath);
+		}
+	}
+	arc(x: number, y: number, radius: number, startAngle: number, endAngle: number, anticlockwise?: boolean): void {
+		this.initPath();
+		// Since we flip y, we keep anticlockwise.
+		this.currentPath?.arc(x, y, radius, startAngle, endAngle, !(anticlockwise ?? false));
+	}
+
+	beginPath(): void {
+		this.initPath();
+	}
+
+	closePath(): void {
+		this.currentPath = undefined;
+	}
+
+	lineTo(x: number, y: number): void {
+		this.initPath();
+		this.currentPath?.lineTo(x, y);
+	}
+
+	moveTo(x: number, y: number): void {
+		this.initPath();
+		this.currentPath?.moveTo(x, y);
+	}
+}
 
 export const load: PageLoad = async ({ fetch, params }) => {
 	try {
@@ -33,21 +73,26 @@ export const load: PageLoad = async ({ fetch, params }) => {
 			.scale(Math.pow(2, 21) / (2 * Math.PI))
 			.translate([height / 2, height / 2]);
 
+		const center = projection([originData.lon, originData.lat])!;
+		const tileFunc = tile()
+			.size([height, height])
+			.scale(projection.scale() * 2 * Math.PI)
+			.translate(projection([0, 0]));
+		const tiles = tileFunc();
+		const pixelsPerMeter = (Math.cos((originData.lat ?? 0.0) * Math.PI / 180) *
+				2 * Math.PI * 6378137
+			)
+			/ (tiles.scale * tileFunc.scale()());
+
 		const layers2d : Array<string> = [];
 		const layers3d : Array<THREE.Object3D> = [];
 
-		const loaderSVG = new SVGLoader();
-
 		for (const layer of meta.features) {
 			if (layer.type === 'Tiles') {
-				const tileFunc = tile()
-					.size([height, height])
-					.scale(projection.scale() * 2 * Math.PI)
-					.translate(projection([0, 0]));
 
 				const layerData : TilesData = layer.data as TilesData;
-				const tiles = tileFunc();
-				const provider = providers[layerData?.provider ?? ''];
+				// @ts-ignore
+				const provider = (providers as unknown)[layerData?.provider ?? ''] as MapProvider;
 				const url = (x : number, y : number, z : number) => `/${providerFolder}/` + providerFile(x, y, z, provider.tileset, provider.format);
 
 				if (layerData.modes.includes('2d')) {
@@ -68,7 +113,6 @@ export const load: PageLoad = async ({ fetch, params }) => {
 
 						const plane = new THREE.Mesh(geometry);
 						plane.position.set(x3, y3, 0);
-						console.log(plane.position);
 						// @ts-ignore
 						plane.image = imageUrl;
 						// @ts-ignore
@@ -112,34 +156,33 @@ export const load: PageLoad = async ({ fetch, params }) => {
 					layers2d.push(`<g><path fill="none" stroke="red" d="${path(geometry)}" /></g>`);
 				}
 				if (layerData.modes.includes('3d')) {
-					const path = geoPath(projection);
-					const svg = `<svg viewBox="0 0 ${height} ${height}" class="w-full aspect-square">
-						<g><path fill="none" stroke="red" d="${path(geometry)}" /></g>
-					</svg>`;
-					/*const obj = loaderSVG.parse(svg);
-
 					const group = new THREE.Group();
+					const context = new ThreePathContext();
+					const path = geoPath(projection, context);
+					path(geometry);
 
-					for ( let i = 0; i < obj.paths.length; ++i) {
-						const path = obj.paths[i];
+					for (const p of context.paths) {
+						const points2d = p.getPoints();
+						const coordinates : Array<number>[] = geometry.coordinates ?? geometry.geometry?.coordinates ?? [];
+						const points = points2d.length === coordinates.length
+							? points2d.map((v, i) => new THREE.Vector3(
+								v.x - center[0] * 0.5,
+								-v.y + center[1] * 0.5,
+								coordinates[i][2] * pixelsPerMeter + 1.0))
+							: points2d.map((v) => new THREE.Vector3(v.x - center[0] * 0.5, -v.y + center[1] * 0.5, 0.0));
 
-						const material = new THREE.MeshBasicMaterial({
-							color: path.color,
-							side: THREE.DoubleSide,
-							depthWrite: false
+						const buffer = new THREE.BufferGeometry().setFromPoints( points );
+						const material = new THREE.LineBasicMaterial({
+							color: 'red',
+							depthTest: false,
 						});
 
-						const shapes = SVGLoader.createShapes(path);
-
-						for ( let j = 0; j < shapes.length; j ++ ) {
-							const shape = shapes[ j ];
-							const geometry = new THREE.ShapeGeometry(shape);
-							const mesh = new THREE.Mesh(geometry, material);
-							group.add(mesh);
-						}
+						const line = new THREE.Line( buffer, material );
+						line.renderOrder = 999;
+						group.add(line);
 					}
 
-					layers3d.push(group);*/
+					layers3d.push(group);
 				}
 			}
 		}
