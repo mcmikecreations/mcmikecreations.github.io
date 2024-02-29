@@ -13,7 +13,7 @@
 		type LinkType,
 		Badge
 	} from 'flowbite-svelte';
-	import { tags } from '$lib/data/blogInfo';
+	import { tags } from '$lib/data/blog-info';
 	import { onMount } from 'svelte';
 	import { ChevronLeftOutline, ChevronRightOutline, ImageSolid } from 'flowbite-svelte-icons';
 	import AppTitle from '$lib/components/AppTitle.svelte';

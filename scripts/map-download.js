@@ -26,9 +26,11 @@ const downloadFile = async (address, fileName) => {
 };
 
 const slug = process.argv[2];
-const sku = process.argv[3];
-const tokenMapboxDEM = process.argv[4];
-const tokenNextzen = process.argv[5];
+const skuMapboxDEM = process.env.mapboxDEMSKU;
+const tokenMapboxDEM = process.env.mapboxDEMAccess;
+const skuMapboxSatellite = process.env.mapboxSatelliteSKU;
+const tokenMapboxSatellite = process.env.mapboxSatelliteAccess;
+const tokenNextzen = process.env.nextzenAccess;
 const meta = maps.find((x) => x.route.endsWith(slug));
 
 if (!meta) {
@@ -54,19 +56,24 @@ const tileFunc = tile()
 const tiles = tileFunc();
 
 await verifyFolder(resolve(mapFolder, `${providers.mapboxDEM.tileset}/`));
+await verifyFolder(resolve(mapFolder, `${providers.mapboxSatellite.tileset}/`));
 await verifyFolder(resolve(mapFolder, `${providers.nextzenTerrariumDEM.tileset}/`));
 await verifyFolder(resolve(mapFolder, `${providers.osm.tileset}/`));
 tiles.map(async ([x, y, z], i, {translate: [tx, ty], scale: k}) => {
 	/*await downloadFile(
-		providers.mapboxDEM.url(x, y, z, `sku=${sku}&access_token=${tokenMapboxDEM}`),
+		providers.mapboxDEM.url(x, y, z, `sku=${skuMapboxDEM}&access_token=${tokenMapboxDEM}`),
 		providerFile(x, y, z, providers.mapboxDEM.tileset, providers.mapboxDEM.format)
 	);
 	await downloadFile(
 		providers.nextzenTerrariumDEM.url(x, y, z, `api_key=${tokenNextzen}`),
 		providerFile(x, y, z, providers.nextzenTerrariumDEM.tileset, providers.nextzenTerrariumDEM.format)
-	);*/
+	);
 	await downloadFile(
 		providers.osm.url(x, y, z),
 		providerFile(x, y, z, providers.osm.tileset, providers.osm.format)
+	);*/
+	await downloadFile(
+		providers.mapboxSatellite.url(x, y, z, `sku=${skuMapboxSatellite}&access_token=${tokenMapboxSatellite}`),
+		providerFile(x, y, z, providers.mapboxSatellite.tileset, providers.mapboxSatellite.format)
 	);
 });

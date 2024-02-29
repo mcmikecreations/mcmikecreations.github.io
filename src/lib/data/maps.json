@@ -16,7 +16,20 @@
         "type": "Tiles",
         "source": "https://www.openstreetmap.org/",
         "data": {
-          "provider": "osm"
+          "provider": "osm",
+          "modes": [ "2d" ]
+        }
+      },
+      {
+        "type": "Tiles",
+        "source": "https://www.openstreetmap.org/",
+        "data": {
+          "provider": "mapboxDEM",
+          "modes": [ "3d" ],
+          "maps": {
+            "displacement": "mapboxDEM",
+            "diffuse": "osm"
+          }
         }
       },
       {
@@ -24,6 +37,7 @@
         "source": "https://maps.openrouteservice.org/",
         "data": {
           "provider": "geojson",
+          "modes": [ "2d", "3d" ],
           "path": "seekarkreuz.json#/features/0"
         }
       }
