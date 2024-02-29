@@ -7,6 +7,7 @@
 	import * as THREE from 'three';
 	import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 	import { providerFile, providerFolder, providers } from '$lib/data/map-providers';
+	import type { TilesData } from '$lib/data/map-info';
 
 	export let data: PageData;
 
@@ -14,8 +15,8 @@
 	const scale3d = 0.2;
 	const scale3dVertical = 2.0;
 
-	const attrMapbox = data.map.features.some((x) => x.type === 'Tiles' && x.data!.provider!.includes('mapbox'));
-	const attrOSM = data.map.features.some((x) => x.type === 'Tiles' && x.data!.provider!.includes('osm')) && !attrMapbox;
+	const attrMapbox = data.map.features.some((x) => x.type === 'Tiles' && (x.data as TilesData)!.provider!.includes('mapbox'));
+	const attrOSM = data.map.features.some((x) => x.type === 'Tiles' && (x.data as TilesData)!.provider!.includes('osm')) && !attrMapbox;
 
 	let renderer : THREE.WebGLRenderer;
 

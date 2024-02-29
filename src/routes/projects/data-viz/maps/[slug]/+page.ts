@@ -6,6 +6,7 @@ import { providerFile, providerFolder, providers } from '$lib/data/map-providers
 import { geoMercator, geoPath } from 'd3-geo';
 import { tile } from 'd3-tile';
 import * as THREE from 'three';
+import { SVGLoader } from 'three/addons/loaders/SVGLoader.js';
 import type { GeometryData, Map, OriginData, TilesData } from '$lib/data/map-info';
 
 export const load: PageLoad = async ({ fetch, params }) => {
@@ -34,6 +35,8 @@ export const load: PageLoad = async ({ fetch, params }) => {
 
 		const layers2d : Array<string> = [];
 		const layers3d : Array<THREE.Object3D> = [];
+
+		const loaderSVG = new SVGLoader();
 
 		for (const layer of meta.features) {
 			if (layer.type === 'Tiles') {
@@ -107,6 +110,36 @@ export const load: PageLoad = async ({ fetch, params }) => {
 				if (layerData.modes.includes('2d')) {
 					const path = geoPath(projection);
 					layers2d.push(`<g><path fill="none" stroke="red" d="${path(geometry)}" /></g>`);
+				}
+				if (layerData.modes.includes('3d')) {
+					const path = geoPath(projection);
+					const svg = `<svg viewBox="0 0 ${height} ${height}" class="w-full aspect-square">
+						<g><path fill="none" stroke="red" d="${path(geometry)}" /></g>
+					</svg>`;
+					/*const obj = loaderSVG.parse(svg);
+
+					const group = new THREE.Group();
+
+					for ( let i = 0; i < obj.paths.length; ++i) {
+						const path = obj.paths[i];
+
+						const material = new THREE.MeshBasicMaterial({
+							color: path.color,
+							side: THREE.DoubleSide,
+							depthWrite: false
+						});
+
+						const shapes = SVGLoader.createShapes(path);
+
+						for ( let j = 0; j < shapes.length; j ++ ) {
+							const shape = shapes[ j ];
+							const geometry = new THREE.ShapeGeometry(shape);
+							const mesh = new THREE.Mesh(geometry, material);
+							group.add(mesh);
+						}
+					}
+
+					layers3d.push(group);*/
 				}
 			}
 		}
