@@ -2,7 +2,7 @@
   {
     "name": "Seekarkreuz",
     "image": "/images/projects/data-viz/maps/seekarkreuz.jpg",
-    "description": "<p>Hike from Lenggries to Seekarkreuz (1601 m).</p> <ul><li>Distance: 17.1 km</li><li>Duration: 4 hours 58 min</li><li>Ascent: 831 m</li><li>Descent: 900 m</li><li>Origin: 47°40'03.7\"N 11°36'45.4\"E</li></ul><p>Route: <a href='/_projects/data-viz/maps/geojson/seekarkreuz.json'>GeoJSON</a></p>",
+    "description": "<p>Hike from Lenggries to Seekarkreuz (1601 m).</p> <ul><li>Distance: 17.1 km</li><li>Duration: 4 hours 58 min</li><li>Ascent: 831 m</li><li>Descent: 900 m</li><li>Dates: 18 Feb 2024</li><li>Origin: 47°40'03.7\"N 11°36'45.4\"E</li></ul><p>Route: <a href='/_projects/data-viz/maps/geojson/seekarkreuz.json'>GeoJSON</a></p>",
     "route": "/projects/data-viz/maps/seekarkreuz",
     "height": 512,
     "features": [
@@ -41,6 +41,52 @@
           "provider": "geojson",
           "modes": [ "2d", "3d" ],
           "path": "seekarkreuz.json#/features/0"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Wendelstein",
+    "image": "/images/projects/data-viz/maps/wendelstein.jpg",
+    "description": "<p>Hike from Osterhofen to Bayrischzell via Wendelstein (1838 m).</p> <ul><li>Distance: 12.4 km</li><li>Duration: 3 hours 47 min</li><li>Ascent: 984 m</li><li>Descent: 1008 m</li><li>Dates: 03 Jan 2024</li><li>Origin: 47°41'23.6\"N 12°00'24.1\"E</li></ul><p>Route: <a href='/_projects/data-viz/maps/geojson/wendelstein.json'>GeoJSON</a></p>",
+    "route": "/projects/data-viz/maps/wendelstein",
+    "height": 512,
+    "features": [
+      {
+        "type": "Origin",
+        "source": "https://www.openstreetmap.org/",
+        "data": {
+          "lat": 47.689890272830304,
+          "lon": 12.00668417765189
+        }
+      },
+      {
+        "type": "Tiles",
+        "source": "https://www.openstreetmap.org/",
+        "data": {
+          "provider": "osm",
+          "modes": [ "2d" ]
+        }
+      },
+      {
+        "type": "Tiles",
+        "source": "https://www.openstreetmap.org/",
+        "data": {
+          "provider": "mapboxDEM",
+          "modes": [ "3d" ],
+          "maps": {
+            "displacement": "mapboxDEM",
+            "diffuse": "mapboxSatellite"
+          }
+        }
+      },
+      {
+        "type": "Geometry",
+        "source": "https://maps.openrouteservice.org/",
+        "data": {
+          "provider": "geojson",
+          "modes": [ "2d", "3d" ],
+          "path": "wendelstein.json#/features/0"
         }
       }
     ]

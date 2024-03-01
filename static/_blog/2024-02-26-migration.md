@@ -134,6 +134,8 @@ of digging, I eventually stumbled upon [this](https://stackoverflow.com/a/708106
 All I needed to do was to move the URL into a separate css variable that will
 be substituted for the actual URL by the client browser.
 
+### Other points of importance
+
 Another issue I faced was having a different footer for different pages. While
 it was easy to move the footer to a separate parameterised component, the issue
 was with determining the parameters consistently for each page. For some
@@ -146,5 +148,25 @@ because most pages didn't contain a `<title>` tag in the head section. Instead
 of fixing it with a `store` variable as in the official examples, I decided
 to move it to a separate component and make it more static.
 
-After solving all these issues, I think the website came together nicely. I
+### Framework Components
+
+One of the biggest hurdles I had to overcome was learning the names for all
+provided components. While similar, they often differed.
+
+
+| Flowbite  | Flutter MaterialUI        |
+|-----------|---------------------------|
+| Accordion | ExpansionPanel            |
+| Carousel  | CarouselSlider            |
+| SpeedDial | FloatingActionButton      |
+| Spinner   | CircularProgressIndicator |
+| Tabs      | TabBarView                |
+
+And coming from a back-end position, I kept confusing similar elements. Drawers
+are just Sidebars with hidden logic.  AppBars are just NavigationBars with some
+styling and preset child element types. A Gallery is just a pre-made grid or
+a nested list. A Footer with links is an enhanced bottom Navbar. A BottomNav is
+a Navbar with icons. The list goes on and on.
+
+Regardless, I think the website came together nicely in the end. I
 thank you for getting this far in the post and wish you all the best.

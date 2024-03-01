@@ -1,5 +1,14 @@
 [
   {
+    "title": "Reinventing the Wheel with ECS",
+    "date": "2024-03-01",
+    "image": "/images/blog/ecs.jpg",
+    "description": "ECS is the new hit. But how new is it?",
+    "path": "2024-03-01-ecs.md",
+    "author": "Mykola Morozov",
+    "tags": [ "Backend", "Gamedev" ]
+  },
+  {
     "title": "Jekyll to Flowbite Svelte",
     "date": "2024-02-26",
     "image": "/images/blog/migration.png",

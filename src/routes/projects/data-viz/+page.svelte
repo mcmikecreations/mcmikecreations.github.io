@@ -1,5 +1,5 @@
 <script>
-	import { Card, Heading, Img } from 'flowbite-svelte';
+	import { Card, Heading } from 'flowbite-svelte';
 	import AppTitle from '$lib/components/AppTitle.svelte';
 	import maps from '$lib/data/maps.json';
 </script>
