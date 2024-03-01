@@ -31,16 +31,16 @@
 
 	function attach3d() : void {
 		if (renderer) {
-			const container = document.getElementById('container-3d')!;
-			container.appendChild(renderer.domElement);
+			const container = document.getElementById('container-3d');
+			container?.appendChild(renderer.domElement);
 		}
 
 		onWindowResize();
 	}
 
 	function onWindowResize() {
-		if (camera && renderer) {
-			const container = document.getElementById('container-3d')!;
+		const container = document.getElementById('container-3d');
+		if (camera && renderer && container) {
 			const containerSize = container.offsetWidth;
 			camera.aspect = containerSize / containerSize;
 			camera.updateProjectionMatrix();

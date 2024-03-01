@@ -2,7 +2,7 @@
   {
     "name": "Seekarkreuz",
     "image": "/images/projects/data-viz/maps/seekarkreuz.jpg",
-    "description": "<p>Hike from Lenggries to Seekarkreuz (1601 m).</p> <ul><li>Distance: 17.1 km</li><li>Duration: 4 hours 58 min</li><li>Ascent: 831 m</li><li>Descent: 900 m</li></ul>",
+    "description": "<p>Hike from Lenggries to Seekarkreuz (1601 m).</p> <ul><li>Distance: 17.1 km</li><li>Duration: 4 hours 58 min</li><li>Ascent: 831 m</li><li>Descent: 900 m</li><li>Origin: 47°40'03.7\"N 11°36'45.4\"E</li></ul><p>Route: <a href='/_projects/data-viz/maps/geojson/seekarkreuz.json'>GeoJSON</a></p>",
     "route": "/projects/data-viz/maps/seekarkreuz",
     "height": 512,
     "features": [
