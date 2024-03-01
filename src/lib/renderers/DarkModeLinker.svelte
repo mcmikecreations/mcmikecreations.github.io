@@ -24,7 +24,7 @@
 			// explicit preference - overrides author's choice
 			dark = localStorage.getItem('color-theme') === 'dark';
 		} else {
-			// browser preference - does not overrides
+			// browser preference - does not override
 			dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 		}
 	});

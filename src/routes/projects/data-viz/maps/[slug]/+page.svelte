@@ -16,12 +16,15 @@
 	const scale3d = 0.2;
 	const scale3dVertical = 0.4;
 
+	const center = data.projection([data.origin.lon, data.origin.lat])!;
 	const attrMapbox = data.map.features.some((x) => x.type === 'Tiles' && (x.data as TilesData)!.provider!.includes('mapbox'));
 	const attrOSM = data.map.features.some((x) => x.type === 'Tiles' && (x.data as TilesData)!.provider!.includes('osm')) && !attrMapbox;
 
 	let renderer : THREE.WebGLRenderer;
 	let camera : THREE.PerspectiveCamera;
 	let scene : THREE.Scene;
+	let statsIndicator3d : THREE.Object3D;
+	let lastStatsIndicatorTarget : HTMLElement;
 
 	function render() {
 		if (renderer && scene && camera) {
@@ -36,6 +39,7 @@
 		}
 
 		onWindowResize();
+		onUpdateStatistics(lastStatsIndicatorTarget);
 	}
 
 	function onWindowResize() {
@@ -49,6 +53,65 @@
 		}
 
 		render();
+	}
+
+	function onUpdateStatistics(target : HTMLElement) : void {
+		if (!target) {
+			return;
+		}
+
+		lastStatsIndicatorTarget = target;
+		const statsIndicator = document.getElementById('statsIndicator') as (SVGCircleElement | null);
+		const x = parseFloat(target.getAttribute('data-x') ?? '0');
+		const y = parseFloat(target.getAttribute('data-y') ?? '0');
+		const z = parseFloat(target.getAttribute('data-z') ?? '0');
+		const h = parseFloat(target.getAttribute('data-h') ?? '0');
+		const projected = data.projection([x, y])!;
+		const elemX = target.getAttribute('x') ?? '0';
+		if (statsIndicator) {
+			statsIndicator.classList.remove('hidden');
+			statsIndicator.setAttribute('cx', elemX);
+			statsIndicator.setAttribute('cy', h.toString());
+		}
+
+		const statsHeightIndicator = document.getElementById('statsHeightIndicator');
+		if (statsHeightIndicator) {
+			statsHeightIndicator.innerHTML = `${z} m`;
+		}
+
+		const statsIndicator2d = document.getElementById('statsIndicator2d') as (SVGCircleElement | null);
+		if (statsIndicator2d) {
+			statsIndicator2d.classList.remove('hidden');
+			statsIndicator2d.setAttribute('cx', projected[0].toString());
+			statsIndicator2d.setAttribute('cy', projected[1].toString());
+		}
+
+		if (statsIndicator3d) {
+			statsIndicator3d.position.set(projected[0] - center[0] * 0.5, -projected[1] + center[1] * 0.5, z * data.pixelsPerMeter);
+			statsIndicator3d.visible = true;
+			render();
+		}
+	}
+
+	function initStatistics() : void {
+		const statsElement = document.getElementById('stats');
+
+		if (!statsElement) {
+			return;
+		}
+
+		for (const group of statsElement.children) {
+			for (const el of group.children) {
+				if (el.tagName === 'rect') {
+					el.addEventListener('click', (event) => {
+						onUpdateStatistics(event.target as HTMLElement);
+					});
+					el.addEventListener('mouseover', (event) => {
+						onUpdateStatistics(event.target as HTMLElement);
+					});
+				}
+			}
+		}
 	}
 
 	async function init3d() : Promise<void> {
@@ -139,20 +202,24 @@
 						images.set(key, texture);
 					}
 
-					const pixelsPerMeter = (Math.cos((data.origin.lat ?? 0.0) * Math.PI / 180) *
-							2 * Math.PI * 6378137
-						)
-						/ (imagePixels * imageScale);
-
 					mesh.material = getMaterial(
 						images,
-						pixelsPerMeter,
+						data.pixelsPerMeter,
 						imageProvider
 					);
 				}
 			});
 
-			const center = data.projection([data.origin.lon, data.origin.lat])!;
+			const sphere = new THREE.SphereGeometry(4);
+			statsIndicator3d = new THREE.Mesh(sphere, new THREE.MeshBasicMaterial({
+				color: 0xB00000,
+				depthTest: false,
+			}));
+			statsIndicator3d.renderOrder = 900;
+			statsIndicator3d.scale.set(1., 1., scale3dVertical);
+			statsIndicator3d.visible = false;
+			group.add(statsIndicator3d);
+
 			group.position.set(-center[0] * scale3d * 0.5, 0.0, -center[1] * scale3d * 0.5); // 0.5 since planes are centered.
 			group.rotation.x = -Math.PI * 0.5;
 			group.scale.set(scale3d, scale3d, scale3dVertical);
@@ -169,6 +236,7 @@
 	onMount(async () => {
 		await init3d();
 		attach3d();
+		initStatistics();
 	});
 </script>
 
@@ -176,9 +244,19 @@
 
 <main class="md:px-24 mx-4 2xl:mx-0">
 	<div class="flex flex-row flex-wrap gap-4">
-		<article class="flex-1 w-full flex flex-row sm:flex-col flex-wrap gap-4 p-4 bg-gray-50 rounded-lg dark:bg-gray-800 min-w-40">
-			<Img src={data.map.image} alt="Original map photo" class="w-full h-auto rounded-lg object-center object-cover" />
-			<div class="prose dark:prose-invert prose-a:text-primary-600 dark:prose-a:text-primary-500">{@html data.map.description}</div>
+		<article class="flex-1 w-full p-4 bg-gray-50 rounded-lg dark:bg-gray-800 min-w-40">
+			<div class="flex flex-row sm:flex-col flex-wrap gap-4">
+				<Img src={data.map.image} alt="Original map photo" class="w-full h-auto rounded-lg object-center object-cover" />
+				<div class="prose dark:prose-invert prose-a:text-primary-600 dark:prose-a:text-primary-500">{@html data.map.description}</div>
+			</div>
+			{#if data.statistics}
+				<div class="flex-1 mt-4">
+					<svg id="stats" viewBox="0 0 {data.map.height * 0.5} {data.map.height * 0.125}" class="w-full overflow-visible prose dark:prose-invert max-w-none">
+						{@html data.statistics}
+						<circle id="statsIndicator" r={data.map.height * 0.125 * 0.125 * 0.25} fill="#B00000" class="hidden" />
+					</svg>
+				</div>
+			{/if}
 		</article>
 		<div class="flex-[2] min-w-80">
 			<Tabs>
@@ -186,9 +264,10 @@
 					<div id="container-3d" class="w-full aspect-square" />
 					<Attribution {attrMapbox} {attrOSM} />
 				</TabItem>
-				<TabItem title="2D">
+				<TabItem title="2D" on:click={() => onUpdateStatistics(lastStatsIndicatorTarget)}>
 					<svg viewBox="0 0 {data.map.height} {data.map.height}" class="w-full aspect-square">
 						{@html data.data2d}
+						<circle id="statsIndicator2d" r={data.map.height * 0.125 * 0.125 * 0.25} fill="#B00000" class="hidden" />
 					</svg>
 					<Attribution {attrMapbox} {attrOSM} />
 				</TabItem>

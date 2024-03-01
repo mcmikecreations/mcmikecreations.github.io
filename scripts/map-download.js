@@ -1,9 +1,12 @@
+// noinspection JSUnusedLocalSymbols
+
 import { geoMercator } from 'd3-geo';
 import { tile } from 'd3-tile';
 import maps from '../src/lib/data/maps.json' assert { type: "json" };
 import { existsSync } from 'fs';
 import { mkdir, writeFile } from 'fs/promises';
 import { resolve } from 'path';
+// noinspection ES6PreferShortImport
 import { providers, providerFolder, providerFile } from '../src/lib/data/map-providers.js';
 
 // Load map based on name and mapbox key. E.g. node map-download.js seekarkreuz pk.eya79cwhrfa9we
@@ -59,8 +62,10 @@ await verifyFolder(resolve(mapFolder, `${providers.mapboxDEM.tileset}/`));
 await verifyFolder(resolve(mapFolder, `${providers.mapboxSatellite.tileset}/`));
 await verifyFolder(resolve(mapFolder, `${providers.nextzenTerrariumDEM.tileset}/`));
 await verifyFolder(resolve(mapFolder, `${providers.osm.tileset}/`));
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 tiles.map(async ([x, y, z], i, {translate: [tx, ty], scale: k}) => {
-	/*await downloadFile(
+	await downloadFile(
 		providers.mapboxDEM.url(x, y, z, `sku=${skuMapboxDEM}&access_token=${tokenMapboxDEM}`),
 		providerFile(x, y, z, providers.mapboxDEM.tileset, providers.mapboxDEM.format)
 	);
@@ -71,7 +76,7 @@ tiles.map(async ([x, y, z], i, {translate: [tx, ty], scale: k}) => {
 	await downloadFile(
 		providers.osm.url(x, y, z),
 		providerFile(x, y, z, providers.osm.tileset, providers.osm.format)
-	);*/
+	);
 	await downloadFile(
 		providers.mapboxSatellite.url(x, y, z, `sku=${skuMapboxSatellite}&access_token=${tokenMapboxSatellite}`),
 		providerFile(x, y, z, providers.mapboxSatellite.tileset, providers.mapboxSatellite.format)

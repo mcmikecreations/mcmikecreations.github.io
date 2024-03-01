@@ -42,6 +42,15 @@
           "modes": [ "2d", "3d" ],
           "path": "seekarkreuz.json#/features/0"
         }
+      },
+      {
+        "type": "Statistics",
+        "source": "https://maps.openrouteservice.org/",
+        "data": {
+          "provider": "geojson",
+          "modes": [ "2d", "3d" ],
+          "path": "seekarkreuz.json#/features/0"
+        }
       }
     ]
   },
@@ -82,6 +91,15 @@
       },
       {
         "type": "Geometry",
+        "source": "https://maps.openrouteservice.org/",
+        "data": {
+          "provider": "geojson",
+          "modes": [ "2d", "3d" ],
+          "path": "wendelstein.json#/features/0"
+        }
+      },
+      {
+        "type": "Statistics",
         "source": "https://maps.openrouteservice.org/",
         "data": {
           "provider": "geojson",
