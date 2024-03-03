@@ -7,7 +7,7 @@
     "phone": "",
     "url": "https://mcmikecreations.github.io",
     "quote": "Detail-oriented, responsible and committed developer, with a get-it-done, on-time and high-quality product spirit.",
-    "summary": "Hi, my name's Mykola and I'm an NII intern and an ex senior software engineer at IsraelIT. As well as enterprise systems I also have experience making software and cross-platform apps. Detail-oriented, responsible and committed developer, with a get-it-done, on-time and high-quality product spirit. I quickly learn new skills and programming languages. I educate, refine and drive myself to be a better person.",
+    "summary": "Hi, my name's Mykola and I'm a TUM PhD and an ex senior software engineer at IsraelIT. As well as enterprise systems I also have experience making software and cross-platform apps. Detail-oriented, responsible and committed developer, with a get-it-done, on-time and high-quality product spirit. I quickly learn new skills and programming languages. I educate, refine and drive myself to be a better person.",
     "location": {
       "city": "Munich",
       "countryCode": "DE",
@@ -255,7 +255,7 @@
   "certificates": [
     {
       "name": "Learning for Tomorrow – EMEA Initiative 2022 workshop certificate",
-      "issuer": "INCAS Training und Projekte GmbH & Co. KG",
+      "issuer": "INCAS Training und Projekte GmbH and Co. KG",
       "date": "2022-10-07",
       "url": "https://drive.google.com/file/d/1qXNUGVgYOu4-4CxzNn5vbrJAnwtN9y5I/view?usp=sharing"
     },
@@ -470,7 +470,7 @@
       "summary": "Short-term competitions with real-world prizes in a recognizable form",
       "description": "Development of Cross-Platform Skill-Based Asynchronous Multiplayer Games.",
       "location": "Tel Aviv District, Israel",
-      "highlights": [ "Project Management", "Multiplayer", "Web3", "C#", ".NET", "Unity 3D" ]
+      "highlights": [ "Project Management", "Multiplayer", "Web3", "CSharp", ".NET", "Unity 3D" ]
     },
     {
       "name": "FreeTbl",
@@ -488,9 +488,9 @@
       "startDate": "2017-08",
       "endDate": "2018-11",
       "summary": "Casual and hypercasual mobile games, desktop simulators and social platforms",
-      "description": "Development of Desktop & Mobile Demo and Vertical Slice Projects.",
+      "description": "Development of Desktop and Mobile Demo and Vertical Slice Projects.",
       "location": "Lviv, Ukraine",
-      "highlights": [ "Git", "C#", ".NET Framework", "Unity 3D" ]
+      "highlights": [ "Git", "CSharp", ".NET Framework", "Unity 3D" ]
     }
   ],
   "projects": [

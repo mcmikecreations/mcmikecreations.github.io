@@ -5,6 +5,8 @@
 	import ResumeExperience from './ResumeExperience.svelte';
 	import ResumePublications from './ResumePublications.svelte';
 	import ResumeAwards from './ResumeAwards.svelte';
+	import { PrinterSolid } from 'flowbite-svelte-icons';
+	import { Button } from 'flowbite-svelte';
 </script>
 
 <AppTitle title="Résumé" />
@@ -17,3 +19,7 @@
 </section>
 
 <AppFooter />
+
+<Button href="/cv.pdf" pill={true} class="fixed bottom-6 right-6 !p-2">
+	<PrinterSolid class="w-4 h-4" />
+</Button>

@@ -1,0 +1,503 @@
+
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+% Resume in Latex
+% Author : Shubham Mazumder
+% Owner : Mykola Morozov
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+
+\documentclass[letterpaper,10pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{soul}
+%\input{glyphtounicode}
+\usepackage[margin=0.5in]{geometry}
+
+%----------FONT OPTIONS----------
+% Sans-serif Fonts
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault,light]{inter}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage{roboto}
+% \usepackage[sfdefault,medium]{InriaSans}
+\usepackage[default]{sourcesanspro}
+
+% Serif Fonts
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% -------------------------------------
+%----------PAGE SETUP------------------
+% -------------------------------------
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+% \addtolength{\oddsidemargin}{0.5pt}
+% \addtolength{\evensidemargin}{0.5pt}
+% \addtolength{\textwidth}{0.9in}
+% \addtolength{\topmargin}{-0.6in}
+% \addtolength{\textheight}{1.6in}
+
+% \addtolength{\oddsidemargin}{-.875in}
+% \addtolength{\evensidemargin}{-.875in}
+% \addtolength{\textwidth}{1.75in}
+% \addtolength{\topmargin}{-.875in}
+% \addtolength{\textheight}{1.75in}
+
+% URL style
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\footskip}{3.60004pt}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+%\pdfgentounicode=1
+
+% ----------- Definitions -----------------------
+\def\spaceforrole{ }
+\definecolor{lightyellow}{cmyk}{0.00, 0.05, 0.20, 0.00} % Highlights
+\sethlcolor{lightyellow} % Highlights
+
+%--------------- Custom commands -----------------------
+
+\newcommand{\sectionspace}{
+\vspace{-20pt}
+}
+
+\newcommand{\subheadingtitlevspace}{
+\vspace{-3pt}
+}
+
+
+% Resume Item
+\newcommand{\resumeItem}[1]{
+  \item{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+% Titles
+\newcommand{\titleItem}[1]{
+  % \textsl{\textbf{#1}}
+  \textbf{#1}
+}
+
+
+% Highlighting
+\newcommand{\highlight}[1]{
+  \textsl{\textbf{#1}}
+  % \hl{\textsl{\textbf{#1}}}
+  % \textbf{#1}
+  % \textsl{\hl{#1}}
+}
+
+% Resume Subheading
+\newcommand{\resumeSubheading}[5]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+      \multicolumn{2}{c}{\parbox{\linewidth}{#5}} \\\vspace{-2pt}
+    \end{tabular*}\vspace{-8pt}
+}
+
+
+
+% Resume Sub-sub heading
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{#1} & \textit{#2} \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+% Resume Project Heading
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \parbox{0.85\linewidth}{#1} & \textit{ #2} \\
+    \end{tabular*}\vspace{-9pt}
+}
+
+% Resume Publication Heading
+\newcommand{\resumePublicationHeading}[3]{
+    \item #1\href{#3}{{#2}} \vspace{-9pt}
+}
+
+%Resume Subheading List
+\newcommand{\resumeSubHeadingListStart}{\subheadingtitlevspace\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeSubHeadingNumberedListStart}{\subheadingtitlevspace\begin{enumerate}[leftmargin=0.15in]}
+\newcommand{\resumeSubHeadingNumberedListEnd}{\end{enumerate}}
+
+%Resume Item List
+\newcommand{\resumeItemListStart}{
+% \vspace{-1pt}
+\begin{itemize}}
+\newcommand{\resumeItemListEnd}{
+% \vspace{-6pt}
+\end{itemize}\vspace{-8pt}}
+
+%-------------------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------------------------------------------
+
+\begin{document}
+	
+% -------------------------------------
+%----------HEADING---------------------
+% -------------------------------------
+
+\begin{flushleft}
+    \textbf{\large Mykola Morozov, Senior Software Engineer} \\    
+    \textit{Munich, Bavaria, DE} $|$ 
+    \href{mailto:mykola.morozov@tum.de}{{\textit{@TUM}}} $|$
+    \href{mailto:mykola@group107.com}{{\textit{@Group107}}} $|$
+    \href{https://github.com/mcmikecreations}{{\textit{@GitHub}}} $|$
+    \href{https://www.linkedin.com/in/mykola-mor}{{\textit{@LinkedIn}}} $|$
+    \href{https://t.me/mcmikecreations}{{\textit{@Telegram}}} $|$
+    \href{https://scholar.google.com/citations?user=MwdhZtkAAAAJ&hl=en}{{\textit{@Google Scholar}}} $|$
+    \href{https://www.researchgate.net/profile/Mykola_Morozov3}{{\textit{@ResearchGate}}} $|$
+    \href{https://orcid.org/0000-0002-5892-6936}{{\textit{@Orcid}}} $|$
+    \href{https://mastodon.social/@mykolamor}{{\textit{@Mastodon}}} $|$
+    \href{https://www.facebook.com/mykolamor}{{\textit{@Facebook}}} $|$
+    \href{https://www.instagram.com/nickolas_morozov}{{\textit{@Instagram}}} $|$
+    \href{https://twitter.com/MykolaMor}{{\textit{@X}}}
+    \vspace{-8pt}
+\end{flushleft}
+	
+% -------------------------------------
+%---------- PROFESSIONAL SUMMARY ------
+% -------------------------------------
+
+\section{Professional Summary}
+\vspace{-3pt}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    {\item{
+     {Hi, my name's Mykola and I'm a TUM PhD and an ex senior software engineer at IsraelIT. As well as enterprise systems I also have experience making software and cross-platform apps. Detail-oriented, responsible and committed developer, with a get-it-done, on-time and high-quality product spirit. I quickly learn new skills and programming languages. I educate, refine and drive myself to be a better person.} \\      
+    }}
+ \end{itemize}
+ \sectionspace
+	
+% -------------------------------------
+%----------EXPERIENCE------------------
+% -------------------------------------
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+           {\titleItem{{Scientific Assistant}} $|$ \href{https://www.tum.de/}{{\emph{Technical University of Munich, Munich, Germany}}}}{2023-10 -- Present}
+      \resumeItemListStart
+
+        \resumeItem{Database engine modules, gpu-cpu parallel execution, distributed computing orchestration}
+        \resumeItem{Creation and Optimization of Highest-Performance Database Backends.}
+        \resumeItem{C++, Database Development, WebAssembly, Cloud Computing, Data Visualization}
+		
+      \resumeItemListEnd
+		
+      \resumeProjectHeading
+           {\titleItem{{Senior Software Engineer}} $|$ \href{https://group107.com/}{{\emph{IsraelIT/Group107, Munich, Germany}}}}{2022-06 -- Present}
+      \resumeItemListStart
+
+        \resumeItem{Banking backends, microfrontends, e-commerce solutions, CRM platforms}
+        \resumeItem{Architecture and Development of Enterprise-Level Software Systems.}
+        \resumeItem{Software Development, Machine Learning, Microservices, Kubernetes, Amazon Web Services (AWS), Microsoft Azure}
+		
+      \resumeItemListEnd
+		
+      \resumeProjectHeading
+           {\titleItem{{Intern Research Assistant}} $|$ \href{https://www.nii.ac.jp/}{{\emph{National Institute of Informatics, Tokyo, Japan}}}}{2022-10 -- 2023-03}
+      \resumeItemListStart
+
+        \resumeItem{System architecture design, cloud computing, large-scale 3D visualization, machine learning}
+        \resumeItem{Digital Humanities research, including cultural heritage Big Data 3D visualization, processing, and restoration.}
+        \resumeItem{System Architecture, Machine Learning, Microservices, Kubernetes, Google Cloud Platform, Unity 3D}
+		
+      \resumeItemListEnd
+		
+      \resumeProjectHeading
+           {\titleItem{{Flutter Developer}} $|$ \href{https://group107.com/}{{\emph{IsraelIT/Group107, Lviv, Ukraine}}}}{2021-02 -- 2022-06}
+      \resumeItemListStart
+
+        \resumeItem{Zero-code website and app development, deep customization, social integration}
+        \resumeItem{Development of Cross-Platform Dynamic Server-UI Applications.}
+        \resumeItem{Flutter, Swift (Programming Language), Kotlin, JavaScript, User Interface Design}
+		
+      \resumeItemListEnd
+		
+      \resumeProjectHeading
+           {\titleItem{{Lead Unity 3D Developer}} $|$ \href{https://group107.com/}{{\emph{IsraelIT/Group107, Tel Aviv District, Israel}}}}{2019-08 -- 2022-03}
+      \resumeItemListStart
+
+        \resumeItem{Short-term competitions with real-world prizes in a recognizable form}
+        \resumeItem{Development of Cross-Platform Skill-Based Asynchronous Multiplayer Games.}
+        \resumeItem{Project Management, Multiplayer, Web3, CSharp, .NET, Unity 3D}
+		
+      \resumeItemListEnd
+		
+      \resumeProjectHeading
+           {\titleItem{{Mobile Application Developer}} $|$ \href{undefined}{{\emph{FreeTbl, Lviv, Ukraine}}}}{2018-11 -- 2019-03}
+      \resumeItemListStart
+
+        \resumeItem{Online platform for restaurant booking with crowd density and table availability tracking}
+        \resumeItem{Creation of interactive mobile applications using Xamarin; UI/UX design; backend development.}
+        \resumeItem{User Interface Design, Android, Xamarin, ASP.NET, Kotlin}
+		
+      \resumeItemListEnd
+		
+      \resumeProjectHeading
+           {\titleItem{{Unity 3D Developer}} $|$ \href{undefined}{{\emph{Freelance, Lviv, Ukraine}}}}{2017-08 -- 2018-11}
+      \resumeItemListStart
+
+        \resumeItem{Casual and hypercasual mobile games, desktop simulators and social platforms}
+        \resumeItem{Development of Desktop and Mobile Demo and Vertical Slice Projects.}
+        \resumeItem{Git, CSharp, .NET Framework, Unity 3D}
+		
+      \resumeItemListEnd
+		
+  \resumeSubHeadingListEnd
+	
+% -------------------------------------
+%----------EDUCATION-------------------
+% -------------------------------------
+
+\section{Education}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {PhD Informatics in Data Science and Engineering}{GPA : TBA}
+      {\href{https://db.cit.tum.de/}{{Technical University of Munich}} | Munich, Germany}{2021-10-09 -- Present} 
+      {}
+		
+    \resumeSubheading
+      {Master's Thesis in Digital Humanities}{GPA : A, 1.0/1.0}
+      {\href{https://www.nii.ac.jp/}{{National Institute of Informatics}} | Tokyo, Japan}{2022-10-17 -- 2023-03-17} 
+      {The thesis was written on the topic “An Extensible System for Large Scale Cultural Heritage Data Visualization”. It focuses on providing a flexible, extensible, versatile, and performant architecture for big data processing. The target application for the system is large-scale 3D landscape visualization in a before/after comparison app using interactive storytelling in educational and news coverage context for the destruction in Eastern Ukraine due to the ongoing war.
+
+As part of the research, several scholarly publications were made and presentations at Google Japan, University of Tokyo, Yomiuri Shimbun and others were given.}
+		
+    \resumeSubheading
+      {MSc Informatics in Games Engineering}{GPA : 1.2/1.0}
+      {\href{https://www.tum.de/}{{Technical University of Munich}} | Munich, Germany}{2021-10-18 -- 2023-04-16} 
+      {During my time at TUM I focused on select areas of Machine Learning, 3D Geometry Processing, Visual Data Analytics, and Enterprise System Design.
+
+In my free time I wrote scholarly papers together with students and professors from various universities on the topics of health tracking systems, procedural 3D content generation, and cloud systems.}
+		
+    \resumeSubheading
+      {BSc Computer Software Engineering in Embedded Systems}{GPA : 98/100}
+      {\href{https://lpnu.ua/}{{Lviv Polytechnic National University}} | Lviv, Ukraine}{2017-09-01 -- 2021-07-31} 
+      {At NULP I focused on Computer Graphics and Internet of Things domains, hosting game development workshops, representing Ukraine at international conferences, and taking part in international scientific competitions and olympiads.
+
+In my free time I attended various seminars and webinars, doing interdisciplinary research with departments of Philosophy, Ukrainian Language as well as Political Science and International Relations.}
+		
+    \resumeSubheading
+      {Full Secondary Education in Mathematics}{GPA : 11.4/12}
+      {\href{https://www.lpml.com.ua/}{{Lviv Physics and Mathematics Lyceum}} | Lviv, Ukraine}{2013-09-01 -- 2017-07-31} 
+      {At LPML I targeted my interest in Mathematics, Informatics, and Physics to improve my knowledge and attend state-level and international competitions, scoring highly in each.
+
+In my free time I studied microcontrollers and other emerging IoT technologies, also doing some freelance work.}
+		
+  \resumeSubHeadingListEnd
+\vspace{-8pt}
+	
+% -------------------------------------
+%----------PUBLICATIONS----------------
+% -------------------------------------
+
+\section{Publications}
+  \resumeSubHeadingNumberedListStart
+
+    \resumePublicationHeading
+      {Y. Levus, P. Pustelnyk, R. Moravskyi and M. Morozov, "Cloud-Based Distributed Approach for Procedural Terrain Generation with Enhanced Performance," IEEE 18th International Conference on Computer Science and Information Technologies, Nov 2023, }
+      {ISSN: 2766-3639} 
+      {https://dx.doi.org/10.1109/CSIT61576.2023.10324223}
+		
+    \resumePublicationHeading
+      {M. Morozov, A. Kitamoto, "Interactive Storytelling with 3D Visualization for Illuminating the Impact of War in Ukraine," Proceedings of the 12th Conference of the Japanese Association for Digital Humanities, Sep 2023, }
+      {vol. 2023, ISSN: 2432-3187} 
+      {https://drive.google.com/file/d/19WDvhoB8icaOTJj-Ub05z6Rjbi8V90LF/view?usp=sharing}
+		
+    \resumePublicationHeading
+      {Y. Levus, P. Pustelnyk, R. Moravskyi and M. Morozov, "Architecture of a Distributed Software System for Procedural Planetoid Terrain Generation," Ukrainian Journal of Information Technology, May 2023, }
+      {vol. 5, no. 1, pp. 1-8, ISSN: 2707-1898} 
+      {https://doi.org/10.23939/ujit2023.01.001}
+		
+    \resumePublicationHeading
+      {Y. Levus, R. Westermann, M. Morozov, R. Moravskyi and P. Pustelnyk, "Using Software Agents in a Distributed Computing System for Procedural Planetoid Terrain Generation," 2022 IEEE 17th International Conference on Computer Sciences and Information Technologies (CSIT), Jan 2023, }
+      {pp. 446-449, ISSN: 2766-3655} 
+      {https://doi.org/10.1109/CSIT56902.2022.10000868}
+		
+    \resumePublicationHeading
+      {M. Y. Morozov, R. O. Moravskyi, P. Y. Pustelnyk, and Y. V. Levus, "Algorithms and Architecture of the Software System of Automated Natural and Anthropogenic Landscape Generation," Radio Electronics, Computer Science, Control, Jul 2022, }
+      {vol. 61, no. 2, pp. 154–164, ISSN: 1607-3274} 
+      {https://doi.org/10.15588/1607-3274-2022-2-15}
+		
+    \resumePublicationHeading
+      {S. Kundys, B. Havano, M. Morozov, "Software System for Monitoring the Situation in the Settlement," Advances in Cyber-Physical Systems, Jun 2022, }
+      {vol. 7, no. 1, pp. 38–45, ISSN: 2524-0382} 
+      {https://doi.org/10.23939/acps2022.01.038}
+		
+    \resumePublicationHeading
+      {B. Havano, M.Y. Morozov, "Assessing the Human Condition in Medical Cyber-Physical System Based on Microservices Architecture," Advances in Cyber-Physical Systems, Dec 2021, }
+      {vol. 6, no. 2, pp. 112–120, ISSN: 2524-0382} 
+      {https://doi.org/10.23939/acps2021.02.112}
+		
+    \resumePublicationHeading
+      {V. Bielik, Y.V. Morozov, M.Y. Morozov, "Sensors in Cyber-Physical Systems Based on Android Operating System," Advances in Cyber-Physical Systems, Dec 2021, }
+      {vol. 6, no. 2, pp. 83–89, ISSN: 2524-0382} 
+      {https://doi.org/10.23939/acps2021.02.083}
+		
+    \resumePublicationHeading
+      {M. Y. Morozov, R. O. Moravskyi, P. Y. Pustelnyk, and Y. V. Levus, "Containerization method for visualization of natural and anthropogenic landscapes," Scientific Bulletin of UNFU, Nov 2021, }
+      {vol. 31, no. 5, pp. 90–95, ISSN: 1994-7836} 
+      {https://doi.org/10.36930/40310514}
+		
+    \resumePublicationHeading
+      {M. Y. Morozov, R. O. Moravskyi, P. Y. Pustelnyk, and Y. V. Levus, "Landscape Generation for Spherical Surfaces: Problem Analysis and Solution," Scientific Bulletin of UNFU, Feb 2020, }
+      {vol. 30, no. 1, pp. 136–141, ISSN: 1994-7836} 
+      {https://doi.org/10.36930/40300124}
+		
+    \resumePublicationHeading
+      {M. Y. Morozov, "Чужомовні слова в українській комп’ютерній термінології: проблема походження" [Foreign words in Ukrainian computer terminology: the problem of origin], Proceedings of the All-Ukrainian student scientific-practical conference "Українська мова в просторі й часі" [Ukrainian language in space and time], Apr 2019, }
+      {pp. 118–121, ISBN: 978-966-941-324-6} 
+      {https://drive.google.com/open?id=1faA2TsLMxeOa-nSN0-z1pgH54bZDN5Ni}
+		
+    \resumePublicationHeading
+      {M. Y. Morozov, "Можливі сценарії розвитку співпраці між групою 5+1 та Іраном в контексті виходу США з ядерної угоди" [Possible scenarios for the development of cooperation between the 5+1 Group and Iran in the context of the US withdrawal from the nuclear agreement], roceedings of the international scientific-practical conference "Суспільні науки: проблеми та досягнення сучасних наукових досліджень" [Social sciences: problems and achievements of modern scientific research], Dec 2018, }
+      {pp. 102–106, UDC 30:001.8(063)} 
+      {https://drive.google.com/open?id=1m-YbJSZyWnz2jBhtTd29ezo8TVN1qjTQ}
+		
+    \resumePublicationHeading
+      {M. Y. Morozov, "Неотрайбалізм в епоху глобалізації" [Neo-tribalism in the era of globalization] 76th Student Scientific and Technical Conference: a collection of abstracts, Nov 2018, }
+      {pp. 418–420} 
+      {https://drive.google.com/open?id=1XUDnZUhfqzSJsFfTT7-nVmixbHB6pAxx}
+		
+  \resumeSubHeadingNumberedListEnd
+\vspace{-8pt}
+	
+% -------------------------------------
+%-----------AWARDS---------------------
+% -------------------------------------
+
+\section{Awards and Certifications}
+    \subheadingtitlevspace\begin{itemize}[leftmargin=0.15in, label={}]
+
+    \item
+			\titleItem{\href{https://drive.google.com/file/d/1qXNUGVgYOu4-4CxzNn5vbrJAnwtN9y5I/view?usp=sharing}{{Learning for Tomorrow – EMEA Initiative 2022 workshop certificate}}}, \emph{INCAS Training und Projekte GmbH and Co. KG}, Oct 2022
+			\vspace{-9pt}
+		
+    \item
+			\titleItem{\href{https://drive.google.com/file/d/1FmNG8IXbU_ddM7iJubDrBrLH5RIntkai/view?usp=sharing}{{Bescheinigung über Kursteilnahme im ‚Online-Deutschkurs kompakt‘}}}, \emph{Carl Duisberg Centren}, Oct 2021
+			\vspace{-9pt}
+		
+    \item
+			\titleItem{\href{https://drive.google.com/file/d/1QX0Q6L-sdbtzkLzREmdmrmrlCb_pL2H9/view?usp=sharing}{{C/C++ BaseCamp certificate}}}, \emph{Global Logic Education}, May 2021
+			\vspace{-9pt}
+		
+    \item
+			\titleItem{\href{https://drive.google.com/file/d/1XL6SUxIYBzqoSwck5ZSPzK3rQbgAqewI/view?usp=sharing}{{TOEFL iBT C1+ Test Taker Score Report}}}, \emph{ETS}, Nov 2020
+			\vspace{-9pt}
+		
+    \item
+			\titleItem{\href{https://drive.google.com/file/d/1RlLSvM_3e2ge_CuGSYeGQfTOlzlmEYdH/view?usp=sharing}{{Standardkurs B2.2 Zertifikat}}}, \emph{Sprachlernzentrum Lwiw}, Jul 2020
+			\vspace{-9pt}
+		
+    \item
+			\titleItem{\href{https://drive.google.com/file/d/1LTYpV6Q1HNzGcMxh6HO4tlEtwELc0Pta/view?usp=sharing}{{Agile practice certificate}}}, \emph{Sigma Software University}, Feb 2020
+			\vspace{-9pt}
+		
+    \item
+			\titleItem{\href{https://drive.google.com/open?id=17kmCOkC1snH8HCPZ8kAo2MOrqXi1my6P}{{Standardkurs B2.1 Zertifikat}}}, \emph{Sprachlernzentrum Lwiw}, Jan 2020
+			\vspace{-9pt}
+		
+    \item
+			\titleItem{Standardkurs A2 Zertifikat}, \emph{Sprachlernzentrum Lwiw}, Jun 2019
+			\vspace{-9pt}
+		
+    \item
+			\titleItem{Standardkurs A1 Zertifikat}, \emph{Sprachlernzentrum Lwiw}, Jan 2019
+			\vspace{-9pt}
+		
+    \item
+			\titleItem{\href{https://drive.google.com/file/d/1qcIYSFNIVZ2rZL4G9o46xJTBmrIXxtuM/view?usp=sharing}{{Cambridge English: First Level 2 Certificate in ESOL International (First)}}}, \emph{UK Office of Qualifications and Examinations Regulation}, May 2017
+			\vspace{-9pt}
+		
+\par\hrulefill
+
+    \item
+			\titleItem{DAAD scholar "Master Studies for All Academic Disciplines, 2021/22"}, \emph{Deutscher Akademischer Austauschdienst}, {Kyiv, Ukraine}, May 2021
+			\vspace{-9pt}
+		
+    \item
+			\titleItem{Certificate of Participation in Global Game Jam 2021 Ukraine}, \emph{Global Game Jam Ukraine}, {Kirovohrad, Ukraine}, Jan 2021
+			\vspace{-9pt}
+		
+    \item
+			\titleItem{Member of Ternopil GameDev Community}, \emph{undefined}, {Ternopil, Ukraine}, Apr 2019
+			\vspace{-9pt}
+		
+    \item
+			\titleItem{2nd degree diploma in 2nd stage of the all-Ukrainian student olympiad in the discipline "Team Algorithmic Programming"}, \emph{Lviv Polytechnic National University}, {Lviv, Ukraine}, Apr 2019
+			\vspace{-9pt}
+		
+    \item
+			\titleItem{Representative of Ukrainian Game Development Community}, \emph{White Nights Conference}, {Berlin, Germany}, Feb 2019
+			\vspace{-9pt}
+		
+    \item
+			\titleItem{1st place award in Global Game Jam 2019 Ukraine}, \emph{Global Game Jam Ukraine}, {Lviv, Ukraine}, Jan 2019
+			\vspace{-9pt}
+		
+    \item
+			\titleItem{2nd degree diploma in 2nd stage of the all-Ukrainian student olympiad in the discipline "English Language"}, \emph{Lviv Polytechnic National University}, {Lviv, Ukraine}, Apr 2018
+			\vspace{-9pt}
+		
+    \item
+			\titleItem{3rd place certificate in BEST::HACKathon 2017}, \emph{BEST Lviv}, {Lviv, Ukraine}, Oct 2017
+			\vspace{-9pt}
+		
+    \item
+			\titleItem{State scholarship award for students with exceptional academic achievements}, \emph{Ministry of Education and Science of Ukraine}, {Lviv, Ukraine}, Sep 2017
+			\vspace{-9pt}
+		
+    \item
+			\titleItem{Award for high achievements in education, significant achievements during the EIT}, \emph{Lviv Regional State Administration of the Lviv Regional Council}, {Lviv, Ukraine}, Jul 2017
+			\vspace{-9pt}
+		
+    \end{itemize}
+	
+
+%-------------------------------------------
+\end{document}
+
+	
