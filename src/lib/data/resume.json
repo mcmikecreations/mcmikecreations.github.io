@@ -381,8 +381,8 @@
     {
       "institution": "Technical University of Munich",
       "studyType": "MSc Informatics",
-      "startDate": "2021-10-18",
-      "endDate": "2023-04-16",
+      "startDate": "2021-08-01",
+      "endDate": "2023-09-31",
       "score": "1.2/1.0",
       "area": "Games Engineering",
       "url": "https://www.tum.de/",
@@ -394,7 +394,7 @@
     {
       "institution": "Lviv Polytechnic National University",
       "studyType": "BSc Computer Software Engineering",
-      "startDate": "2017-09-01",
+      "startDate": "2017-08-01",
       "endDate": "2021-07-31",
       "score": "98/100",
       "area": "Embedded Systems",
@@ -434,6 +434,7 @@
       "position": "Senior Software Engineer",
       "url": "https://group107.com/",
       "startDate": "2022-06",
+      "endDate": "2023-09",
       "summary": "Banking backends, microfrontends, e-commerce solutions, CRM platforms",
       "description": "Architecture and Development of Enterprise-Level Software Systems.",
       "location": "Munich, Germany",
