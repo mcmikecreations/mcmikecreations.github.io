@@ -163,5 +163,60 @@
         }
       }
     ]
+  },
+  {
+    "name": "Furnas",
+    "image": "/images/projects/data-viz/maps/furnas.jpg",
+    "description": "<p>Hike from Furnas and back via Parque da Grená.</p> <ul><li>Distance: 8.8 km</li><li>Duration: 1 hour 46 min</li><li>Ascent: 317 m</li><li>Descent: 380 m</li><li>Dates: 09 Mar 2024</li><li>Origin: 37°46'14.2\"N 25°19'21.1\"W</li></ul><p>Route: <a href='/_projects/data-viz/maps/geojson/furnas.json'>GeoJSON</a></p>",
+    "route": "/projects/data-viz/maps/furnas",
+    "height": 256,
+    "features": [
+      {
+        "type": "Origin",
+        "source": "https://www.openstreetmap.org/",
+        "data": {
+          "lat": 37.77060760698926,
+          "lon": -25.3225223579699
+        }
+      },
+      {
+        "type": "Tiles",
+        "source": "https://www.openstreetmap.org/",
+        "data": {
+          "provider": "osm",
+          "modes": [ "2d" ]
+        }
+      },
+      {
+        "type": "Tiles",
+        "source": "https://www.openstreetmap.org/",
+        "data": {
+          "provider": "mapboxDEM",
+          "modes": [ "3d" ],
+          "maps": {
+            "displacement": "mapboxDEM",
+            "diffuse": "mapboxSatellite"
+          }
+        }
+      },
+      {
+        "type": "Geometry",
+        "source": "https://maps.openrouteservice.org/",
+        "data": {
+          "provider": "geojson",
+          "modes": [ "2d", "3d" ],
+          "path": "furnas.json#/features/0"
+        }
+      },
+      {
+        "type": "Statistics",
+        "source": "https://maps.openrouteservice.org/",
+        "data": {
+          "provider": "geojson",
+          "modes": [ "2d", "3d" ],
+          "path": "furnas.json#/features/0"
+        }
+      }
+    ]
   }
 ]

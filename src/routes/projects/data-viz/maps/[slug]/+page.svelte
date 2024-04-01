@@ -87,7 +87,8 @@
 		}
 
 		if (statsIndicator3d) {
-			statsIndicator3d.position.set(projected[0] - center[0] * 0.5, -projected[1] + center[1] * 0.5, z * data.pixelsPerMeter);
+			const scale = data.tileScale;
+			statsIndicator3d.position.set(projected[0] - scale * 0.5, -projected[1] + scale * 0.5, z * data.pixelsPerMeter);
 			statsIndicator3d.visible = true;
 			render();
 		}
@@ -210,7 +211,7 @@
 				}
 			});
 
-			const sphere = new THREE.SphereGeometry(4);
+			const sphere = new THREE.SphereGeometry(2.0 * data.map.height / data.tileScale);
 			statsIndicator3d = new THREE.Mesh(sphere, new THREE.MeshBasicMaterial({
 				color: 0xB00000,
 				depthTest: false,

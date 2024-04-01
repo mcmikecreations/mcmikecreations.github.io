@@ -96,6 +96,7 @@ export const load: PageLoad = async ({ fetch, params }) => {
 				? ((await buildStatistics(fetch, statistics, projection, height))?.layers2d?.join(''))
 				: undefined,
 			projection: projection,
+			tileScale: tiles.scale,
 			pixelsPerMeter: pixelsPerMeter,
 			data2d: layers2d.join(''),
 			data3d: layers3d,
