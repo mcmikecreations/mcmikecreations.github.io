@@ -61,7 +61,6 @@ export const load: PageLoad = async ({ fetch, params }) => {
 			.scale(Math.pow(2, 21) / (2 * Math.PI))
 			.translate([height / 2, height / 2]);
 
-		const center = projection([originData.lon, originData.lat])!;
 		const tileFunc = tile()
 			.size([height, height])
 			.scale(projection.scale() * 2 * Math.PI)
@@ -77,7 +76,7 @@ export const load: PageLoad = async ({ fetch, params }) => {
 			if (layer.type === 'Tiles') {
 				data = await buildTiles(fetch, layer, tiles, tileFunc);
 			} else if (layer.type === 'Geometry') {
-				data = await buildGeometry(fetch, layer, projection, center, pixelsPerMeter);
+				data = await buildGeometry(fetch, layer, projection, pixelsPerMeter, tiles.scale);
 			}
 
 			if (data) {

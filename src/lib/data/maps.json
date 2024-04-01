@@ -108,5 +108,60 @@
         }
       }
     ]
+  },
+  {
+    "name": "Bad Tölz - Lenggries",
+    "image": "/images/projects/data-viz/maps/bad_tolz_lenggries.jpg",
+    "description": "<p>Hike from Bad Tölz to Lenggries via Isar.</p> <ul><li>Distance: 12.6 km</li><li>Duration: 2 hours 31 min</li><li>Ascent: 64 m</li><li>Descent: 74 m</li><li>Dates: 31 Mar 2024</li><li>Origin: 47°43'19.1\"N 11°33'27.9\"E</li></ul><p>Route: <a href='/_projects/data-viz/maps/geojson/bad_tolz_lenggries.json'>GeoJSON</a></p>",
+    "route": "/projects/data-viz/maps/bad-tolz-lenggries",
+    "height": 768,
+    "features": [
+      {
+        "type": "Origin",
+        "source": "https://www.openstreetmap.org/",
+        "data": {
+          "lat": 47.72196955175255,
+          "lon": 11.557750768074579
+        }
+      },
+      {
+        "type": "Tiles",
+        "source": "https://www.openstreetmap.org/",
+        "data": {
+          "provider": "osm",
+          "modes": [ "2d" ]
+        }
+      },
+      {
+        "type": "Tiles",
+        "source": "https://www.openstreetmap.org/",
+        "data": {
+          "provider": "mapboxDEM",
+          "modes": [ "3d" ],
+          "maps": {
+            "displacement": "mapboxDEM",
+            "diffuse": "mapboxSatellite"
+          }
+        }
+      },
+      {
+        "type": "Geometry",
+        "source": "https://maps.openrouteservice.org/",
+        "data": {
+          "provider": "geojson",
+          "modes": [ "2d", "3d" ],
+          "path": "bad_tolz_lenggries.json#/features/0"
+        }
+      },
+      {
+        "type": "Statistics",
+        "source": "https://maps.openrouteservice.org/",
+        "data": {
+          "provider": "geojson",
+          "modes": [ "2d", "3d" ],
+          "path": "bad_tolz_lenggries.json#/features/0"
+        }
+      }
+    ]
   }
 ]

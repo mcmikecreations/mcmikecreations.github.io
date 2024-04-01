@@ -67,8 +67,8 @@ export async function buildGeometry(
 	fetch : (input: (RequestInfo | URL), init?: (RequestInit | undefined)) => Promise<Response>,
 	layer : Feature,
 	projection : GeoProjection,
-	center : Array<number>,
-	pixelsPerMeter : number
+	pixelsPerMeter : number,
+	scale : number
 ) {
 	const result : {
 		layers2d: Array<string>,
@@ -98,10 +98,10 @@ export async function buildGeometry(
 			const coordinates : Array<number>[] = geometry.coordinates ?? geometry.geometry?.coordinates ?? [];
 			const points = points2d.length === coordinates.length
 				? points2d.map((v, i) => new THREE.Vector3(
-					v.x - center[0] * 0.5,
-					-v.y + center[1] * 0.5,
+					v.x - scale * 0.5,
+					-v.y + scale * 0.5,
 					coordinates[i][2] * pixelsPerMeter))
-				: points2d.map((v) => new THREE.Vector3(v.x - center[0] * 0.5, -v.y + center[1] * 0.5, 0.0));
+				: points2d.map((v) => new THREE.Vector3(v.x - scale * 0.5, -v.y + scale * 0.5, 0.0));
 
 			const buffer = new THREE.BufferGeometry().setFromPoints( points );
 			const material = new THREE.LineBasicMaterial({

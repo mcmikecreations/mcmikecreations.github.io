@@ -3,7 +3,7 @@
 	/* eslint-disable svelte/no-at-html-tags */
 	import type { PageData } from './$types';
 	import AppTitle from '$lib/components/AppTitle.svelte';
-	import { Tabs, TabItem, Img } from 'flowbite-svelte';
+	import { Tabs, TabItem, Img, Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
 	import Attribution from './Attribution.svelte';
 	import { onMount } from 'svelte';
 	import * as THREE from 'three';
@@ -243,6 +243,13 @@
 <AppTitle title={data.map.name} />
 
 <main class="md:px-24 mx-4 2xl:mx-0">
+	<Breadcrumb class="mb-4" aria-label="Route" solid>
+		<BreadcrumbItem href="/" home>Home</BreadcrumbItem>
+		<BreadcrumbItem href="/projects">Projects</BreadcrumbItem>
+		<BreadcrumbItem href="/projects/data-viz">Data Viz</BreadcrumbItem>
+		<BreadcrumbItem href="/projects/data-viz#maps">Maps</BreadcrumbItem>
+		<BreadcrumbItem>{data.map.name}</BreadcrumbItem>
+	</Breadcrumb>
 	<div class="flex flex-row flex-wrap gap-4">
 		<article class="flex-1 w-full p-4 bg-gray-50 rounded-lg dark:bg-gray-800 min-w-40">
 			<div class="flex flex-row sm:flex-col flex-wrap gap-4">
