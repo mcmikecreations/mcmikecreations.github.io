@@ -57,7 +57,7 @@
   {
     "name": "Wendelstein",
     "image": "/images/projects/data-viz/maps/wendelstein.jpg",
-    "description": "<p>Hike from Osterhofen to Bayrischzell via Wendelstein (1838 m).</p> <ul><li>Distance: 12.4 km</li><li>Duration: 3 hours 47 min</li><li>Ascent: 984 m</li><li>Descent: 1008 m</li><li>Dates: 03 Jan 2024</li><li>Origin: 47°41'23.6\"N 12°00'24.1\"E</li></ul><p>Route: <a href='/_projects/data-viz/maps/geojson/wendelstein.json'>GeoJSON</a></p>",
+    "description": "<p>Hike from Osterhofen to Bayrischzell via Wendelstein (1838 m).</p> <ul><li>Distance: 12.4 km</li><li>Duration: 3 hours 47 min</li><li>Ascent: 984 m</li><li>Descent: 1008 m</li><li>Dates: 03 Jan 2024, 02 Sep 2023</li><li>Origin: 47°41'23.6\"N 12°00'24.1\"E</li></ul><p>Route: <a href='/_projects/data-viz/maps/geojson/wendelstein.json'>GeoJSON</a></p>",
     "route": "/projects/data-viz/maps/wendelstein",
     "height": 512,
     "features": [
@@ -215,6 +215,116 @@
           "provider": "geojson",
           "modes": [ "2d", "3d" ],
           "path": "furnas.json#/features/0"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Seebergkopf",
+    "image": "/images/projects/data-viz/maps/seebergkopf.jpg",
+    "description": "<p>Hike from Osterhofen to Bayrischzell via Seebergkopf (1538 m).</p> <ul><li>Distance: 12.6 km</li><li>Duration: 4 hours 32 min</li><li>Ascent: 705 m</li><li>Descent: 720 m</li><li>Dates: 06 Apr 2024, 26 Aug 2023</li><li>Origin: 47°40'10.2\"N 11°59'35.9\"E</li></ul><p>Route: <a href='/_projects/data-viz/maps/geojson/seebergkopf.json'>GeoJSON</a></p>",
+    "route": "/projects/data-viz/maps/seebergkopf",
+    "height": 512,
+    "features": [
+      {
+        "type": "Origin",
+        "source": "https://www.openstreetmap.org/",
+        "data": {
+          "lat": 47.669499369611074,
+          "lon": 11.99330612552111
+        }
+      },
+      {
+        "type": "Tiles",
+        "source": "https://www.openstreetmap.org/",
+        "data": {
+          "provider": "osm",
+          "modes": [ "2d" ]
+        }
+      },
+      {
+        "type": "Tiles",
+        "source": "https://www.openstreetmap.org/",
+        "data": {
+          "provider": "mapboxDEM",
+          "modes": [ "3d" ],
+          "maps": {
+            "displacement": "mapboxDEM",
+            "diffuse": "mapboxSatellite"
+          }
+        }
+      },
+      {
+        "type": "Geometry",
+        "source": "https://maps.openrouteservice.org/",
+        "data": {
+          "provider": "geojson",
+          "modes": [ "2d", "3d" ],
+          "path": "seebergkopf.json#/features/0"
+        }
+      },
+      {
+        "type": "Statistics",
+        "source": "https://maps.openrouteservice.org/",
+        "data": {
+          "provider": "geojson",
+          "modes": [ "2d", "3d" ],
+          "path": "seebergkopf.json#/features/0"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Tegernsee",
+    "image": "/images/projects/data-viz/maps/tegernsee.jpg",
+    "description": "<p>Hike from Tegernsee to Gmund (am Tegernsee) via Bad Wiessee.</p> <ul><li>Distance: 19.6 km</li><li>Duration: 3 hours 55 min</li><li>Ascent: 299 m</li><li>Descent: 348 m</li><li>Dates: 03 Feb 2024</li><li>Origin: 47°43'21.6\"N 11°44'14.2\"E</li></ul><p>Route: <a href='/_projects/data-viz/maps/geojson/tegernsee.json'>GeoJSON</a></p>",
+    "route": "/projects/data-viz/maps/tegernsee",
+    "height": 576,
+    "features": [
+      {
+        "type": "Origin",
+        "source": "https://www.openstreetmap.org/",
+        "data": {
+          "lat": 47.722673178149414,
+          "lon": 11.737263344577908
+        }
+      },
+      {
+        "type": "Tiles",
+        "source": "https://www.openstreetmap.org/",
+        "data": {
+          "provider": "osm",
+          "modes": [ "2d" ]
+        }
+      },
+      {
+        "type": "Tiles",
+        "source": "https://www.openstreetmap.org/",
+        "data": {
+          "provider": "mapboxDEM",
+          "modes": [ "3d" ],
+          "maps": {
+            "displacement": "mapboxDEM",
+            "diffuse": "mapboxSatellite"
+          }
+        }
+      },
+      {
+        "type": "Geometry",
+        "source": "https://maps.openrouteservice.org/",
+        "data": {
+          "provider": "geojson",
+          "modes": [ "2d", "3d" ],
+          "path": "tegernsee.json#/features/0"
+        }
+      },
+      {
+        "type": "Statistics",
+        "source": "https://maps.openrouteservice.org/",
+        "data": {
+          "provider": "geojson",
+          "modes": [ "2d", "3d" ],
+          "path": "tegernsee.json#/features/0"
         }
       }
     ]
