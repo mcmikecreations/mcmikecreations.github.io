@@ -2,7 +2,7 @@
 import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
 import type { HttpError } from '@sveltejs/kit'
-import maps from '$lib/data/maps.json';
+import maps from '$lib/data/hikes.json';
 import { geoMercator } from 'd3-geo';
 // @ts-ignore
 import { tile } from 'd3-tile';

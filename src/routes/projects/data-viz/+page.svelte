@@ -1,7 +1,7 @@
 <script>
 	import { Card, Heading } from 'flowbite-svelte';
 	import AppTitle from '$lib/components/AppTitle.svelte';
-	import maps from '$lib/data/maps.json';
+	import maps from '$lib/data/hikes.json';
 </script>
 
 <AppTitle title="Data Viz" />

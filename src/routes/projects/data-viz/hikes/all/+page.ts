@@ -1,6 +1,6 @@
 import type { PageLoad } from './$types';
 import { type Feature, type GeometryData, getMapFeatures } from '$lib/data/map-info';
-import maps from '$lib/data/maps.json';
+import maps from '$lib/data/hikes.json';
 import { error, type HttpError } from '@sveltejs/kit';
 import { loadGeometry, loadProperties } from '../[slug]/build-geometry';
 
