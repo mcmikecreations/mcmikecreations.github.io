@@ -1,4 +1,4 @@
-export const providerFolder = '_projects/data-viz/maps';
+export const providerFolder = '_projects/data-viz';
 export const providerFile = (/** @type {number} */ x, /** @type {number} */ y, /** @type {number} */ z, /** @type {string} */ type, /** @type {string} */ format) => `${type}/${z}_${x}_${y}.${format}`;
 
 export const providers = {

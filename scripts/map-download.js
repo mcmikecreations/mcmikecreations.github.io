@@ -11,7 +11,7 @@ import { providers, providerFolder, providerFile } from '../src/lib/data/map-pro
 
 // Load map based on name and mapbox key. E.g. node map-download.js seekarkreuz pk.eya79cwhrfa9we
 
-const mapFolder = `../static/${providerFolder}`;
+const mapFolder = `../static/${providerFolder}/maps`;
 
 const verifyFolder = async (path) => {
 	if (!existsSync(path)) {

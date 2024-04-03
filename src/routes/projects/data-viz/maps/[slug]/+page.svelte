@@ -198,7 +198,7 @@
 					for (const [key, value] of Object.entries(imageMaps)) {
 						// @ts-ignore
 						const provider = (providers as unknown)[value as string] as MapProvider;
-						const url = (x : number, y : number, z : number) => `/${providerFolder}/` + providerFile(x, y, z, provider.tileset, provider.format);
+						const url = (x : number, y : number, z : number) => `/${providerFolder}/maps/` + providerFile(x, y, z, provider.tileset, provider.format);
 						const texture = textureLoader.load(url(imageCoordinates[0], imageCoordinates[1], imageCoordinates[2]));
 						images.set(key, texture);
 					}

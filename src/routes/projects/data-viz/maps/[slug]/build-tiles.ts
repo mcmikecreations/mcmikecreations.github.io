@@ -27,7 +27,7 @@ export async function buildTiles(
 	const layerData : TilesData = layer.data as TilesData;
 	// @ts-ignore
 	const provider = (providers as unknown)[layerData?.provider ?? ''] as MapProvider;
-	const url = (x : number, y : number, z : number) => `/${providerFolder}/` + providerFile(x, y, z, provider.tileset, provider.format);
+	const url = (x : number, y : number, z : number) => `/${providerFolder}/maps/` + providerFile(x, y, z, provider.tileset, provider.format);
 
 	if (layerData.modes.includes('2d')) {
 		// noinspection HtmlUnknownAttribute
