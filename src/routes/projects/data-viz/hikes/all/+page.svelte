@@ -6,7 +6,7 @@
 	import 'leaflet/dist/leaflet.css';
 	import { getDistance, getTime } from '../[slug]/build-statistics';
 	import type { Layer } from 'leaflet';
-	import type { Feature } from 'geojson';
+	import type { Feature, GeoJsonObject } from 'geojson';
 
 	export let data: PageData;
 
@@ -19,7 +19,7 @@
 			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 		}).addTo(map);
 
-		L.geoJSON(data.features, {
+		L.geoJSON(data.features as GeoJsonObject[], {
 			style: function(feature) {
 				return { color: '#' + ((feature?.properties?.id ?? 0) & 0x00FFFFFF).toString(16).padStart(6, '0') }
 			},

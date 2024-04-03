@@ -9,7 +9,7 @@
 	import * as THREE from 'three';
 	import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 	import { providerFile, providerFolder, providers } from '$lib/data/map-providers';
-	import type { MapProvider, TilesData } from '$lib/data/map-info';
+	import { type MapProvider, type TilesData } from '$lib/data/map-info';
 	import { getDistance, getTime } from './build-statistics';
 
 	export let data: PageData;

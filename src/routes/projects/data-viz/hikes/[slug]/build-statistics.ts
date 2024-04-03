@@ -19,7 +19,6 @@ export function getTime(m : number) {
 export async function buildStatistics(
 	fetch : (input: (RequestInfo | URL), init?: (RequestInit | undefined)) => Promise<Response>,
 	layer : Feature,
-	projection : GeoProjection,
 	height : number
 ) {
 	const result : {

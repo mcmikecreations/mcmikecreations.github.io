@@ -1,5 +1,4 @@
 // noinspection JSUnusedLocalSymbols
-
 import { geoMercator } from 'd3-geo';
 import { tile } from 'd3-tile';
 import maps from '../src/lib/data/maps.json' assert { type: "json" };
@@ -8,6 +7,8 @@ import { mkdir, writeFile } from 'fs/promises';
 import { resolve } from 'path';
 // noinspection ES6PreferShortImport
 import { providers, providerFolder, providerFile } from '../src/lib/data/map-providers.js';
+// noinspection ES6PreferShortImport
+import { getMapFeatures } from '../src/lib/data/map-info.js';
 
 // Load map based on name and mapbox key. E.g. node map-download.js seekarkreuz pk.eya79cwhrfa9we
 
@@ -40,7 +41,8 @@ if (!meta) {
 	console.error(`Failed to fetch /maps/${slug} metadata.`);
 }
 
-const origin = meta.features.find((x) => x.type === 'Origin');
+const features = getMapFeatures(meta);
+const origin = features.find((x) => x.type === 'Origin');
 
 if (!origin) {
 	console.error(`Failed to find origin for /maps/${slug}.`);

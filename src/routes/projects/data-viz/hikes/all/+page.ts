@@ -1,5 +1,5 @@
 import type { PageLoad } from './$types';
-import type { Feature, GeometryData } from '$lib/data/map-info';
+import { type Feature, type GeometryData, getMapFeatures } from '$lib/data/map-info';
 import maps from '$lib/data/maps.json';
 import { error, type HttpError } from '@sveltejs/kit';
 import { loadGeometry, loadProperties } from '../[slug]/build-geometry';
@@ -28,7 +28,7 @@ export const load: PageLoad = async ({ fetch }) => {
 		};
 
 		for (const map of maps) {
-			const layer = map.features.find((x) => x.type === 'Geometry') as Feature;
+			const layer = getMapFeatures(map).find((x) => x.type === 'Geometry') as Feature;
 			const geometryData = layer.data as GeometryData;
 			const geometry = await loadGeometry(fetch, geometryData);
 

@@ -7,7 +7,7 @@ import { geoMercator } from 'd3-geo';
 // @ts-ignore
 import { tile } from 'd3-tile';
 import * as THREE from 'three';
-import type { GeometryData, Map, OriginData } from '$lib/data/map-info';
+import { type GeometryData, getMapFeatures, type Map, type OriginData } from '$lib/data/map-info';
 import { buildGeometry, loadGeometry, loadProperties } from './build-geometry';
 import { buildTiles, getPixelsPerMeter } from './build-tiles';
 import { buildStatistics } from './build-statistics';
@@ -21,8 +21,10 @@ export const load: PageLoad = async ({ fetch, params }) => {
 			error(404, { message: `Failed to fetch "${params.slug}"` });
 		}
 
-		const statistics = meta.features.find((x) => x.type === 'Statistics');
-		const origin = meta.features.find((x) => x.type === 'Origin');
+		const features = getMapFeatures(meta);
+
+		const statistics = features.find((x) => x.type === 'Statistics');
+		const origin = features.find((x) => x.type === 'Origin');
 
 		if (!origin) {
 			console.log(`Failed to find origin for /maps/${params.slug}.`);
@@ -48,7 +50,7 @@ export const load: PageLoad = async ({ fetch, params }) => {
 		const layers3d : Array<THREE.Object3D> = [];
 		let properties = meta.properties;
 
-		for (const layer of meta.features) {
+		for (const layer of features) {
 			let data;
 			if (layer.type === 'Tiles') {
 				data = await buildTiles(fetch, layer, tiles, tileFunc);
@@ -68,12 +70,14 @@ export const load: PageLoad = async ({ fetch, params }) => {
 			}
 		}
 
+		meta.features = features;
+
 		return {
 			map: meta,
 			properties: properties,
 			origin: originData,
 			statistics: statistics
-				? ((await buildStatistics(fetch, statistics, projection, height))?.layers2d?.join(''))
+				? ((await buildStatistics(fetch, statistics, height))?.layers2d?.join(''))
 				: undefined,
 			projection: projection,
 			tileScale: tiles.scale,

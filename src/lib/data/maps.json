@@ -14,54 +14,22 @@
     "description": "Hike from Lenggries to Seekarkreuz (1601 m).",
     "route": "/projects/data-viz/hikes/seekarkreuz",
     "height": 512,
-    "features": [
-      {
-        "type": "Origin",
-        "source": "https://www.openstreetmap.org/",
-        "data": {
-          "lat": 47.6677,
-          "lon": 11.6126
-        }
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.6677,
+        "lon": 11.6126
       },
-      {
-        "type": "Tiles",
-        "source": "https://www.openstreetmap.org/",
-        "data": {
-          "provider": "osm",
-          "modes": [ "2d" ]
-        }
-      },
-      {
-        "type": "Tiles",
-        "source": "https://www.openstreetmap.org/",
-        "data": {
-          "provider": "mapboxDEM",
-          "modes": [ "3d" ],
-          "maps": {
-            "displacement": "mapboxDEM",
-            "diffuse": "mapboxSatellite"
-          }
-        }
-      },
-      {
-        "type": "Geometry",
-        "source": "https://maps.openrouteservice.org/",
-        "data": {
-          "provider": "hikes/geojson",
-          "modes": [ "2d", "3d" ],
-          "path": "seekarkreuz.json#/features/0"
-        }
-      },
-      {
-        "type": "Statistics",
-        "source": "https://maps.openrouteservice.org/",
-        "data": {
-          "provider": "hikes/geojson",
-          "modes": [ "2d", "3d" ],
-          "path": "seekarkreuz.json#/features/0"
-        }
-      }
-    ]
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "seekarkreuz.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   },
   {
     "name": "Wendelstein",
@@ -78,54 +46,22 @@
     "description": "Hike from Osterhofen to Bayrischzell via Wendelstein (1838 m).",
     "route": "/projects/data-viz/hikes/wendelstein",
     "height": 512,
-    "features": [
-      {
-        "type": "Origin",
-        "source": "https://www.openstreetmap.org/",
-        "data": {
-          "lat": 47.689890272830304,
-          "lon": 12.00668417765189
-        }
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.689890272830304,
+        "lon": 12.00668417765189
       },
-      {
-        "type": "Tiles",
-        "source": "https://www.openstreetmap.org/",
-        "data": {
-          "provider": "osm",
-          "modes": [ "2d" ]
-        }
-      },
-      {
-        "type": "Tiles",
-        "source": "https://www.openstreetmap.org/",
-        "data": {
-          "provider": "mapboxDEM",
-          "modes": [ "3d" ],
-          "maps": {
-            "displacement": "mapboxDEM",
-            "diffuse": "mapboxSatellite"
-          }
-        }
-      },
-      {
-        "type": "Geometry",
-        "source": "https://maps.openrouteservice.org/",
-        "data": {
-          "provider": "hikes/geojson",
-          "modes": [ "2d", "3d" ],
-          "path": "wendelstein.json#/features/0"
-        }
-      },
-      {
-        "type": "Statistics",
-        "source": "https://maps.openrouteservice.org/",
-        "data": {
-          "provider": "hikes/geojson",
-          "modes": [ "2d", "3d" ],
-          "path": "wendelstein.json#/features/0"
-        }
-      }
-    ]
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "wendelstein.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   },
   {
     "name": "Bad Tölz - Lenggries",
@@ -142,54 +78,22 @@
     "description": "Hike from Bad Tölz to Lenggries via Isar.",
     "route": "/projects/data-viz/hikes/bad-tolz-lenggries",
     "height": 768,
-    "features": [
-      {
-        "type": "Origin",
-        "source": "https://www.openstreetmap.org/",
-        "data": {
-          "lat": 47.72196955175255,
-          "lon": 11.557750768074579
-        }
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.72196955175255,
+        "lon": 11.557750768074579
       },
-      {
-        "type": "Tiles",
-        "source": "https://www.openstreetmap.org/",
-        "data": {
-          "provider": "osm",
-          "modes": [ "2d" ]
-        }
-      },
-      {
-        "type": "Tiles",
-        "source": "https://www.openstreetmap.org/",
-        "data": {
-          "provider": "mapboxDEM",
-          "modes": [ "3d" ],
-          "maps": {
-            "displacement": "mapboxDEM",
-            "diffuse": "mapboxSatellite"
-          }
-        }
-      },
-      {
-        "type": "Geometry",
-        "source": "https://maps.openrouteservice.org/",
-        "data": {
-          "provider": "hikes/geojson",
-          "modes": [ "2d", "3d" ],
-          "path": "bad_tolz_lenggries.json#/features/0"
-        }
-      },
-      {
-        "type": "Statistics",
-        "source": "https://maps.openrouteservice.org/",
-        "data": {
-          "provider": "hikes/geojson",
-          "modes": [ "2d", "3d" ],
-          "path": "bad_tolz_lenggries.json#/features/0"
-        }
-      }
-    ]
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "bad_tolz_lenggries.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   },
   {
     "name": "Furnas",
@@ -206,54 +110,22 @@
     "description": "Hike from Furnas and back via Parque da Grená.",
     "route": "/projects/data-viz/hikes/furnas",
     "height": 256,
-    "features": [
-      {
-        "type": "Origin",
-        "source": "https://www.openstreetmap.org/",
-        "data": {
-          "lat": 37.77060760698926,
-          "lon": -25.3225223579699
-        }
+    "standardFeatures": {
+      "origin": {
+        "lat": 37.77060760698926,
+        "lon": -25.3225223579699
       },
-      {
-        "type": "Tiles",
-        "source": "https://www.openstreetmap.org/",
-        "data": {
-          "provider": "osm",
-          "modes": [ "2d" ]
-        }
-      },
-      {
-        "type": "Tiles",
-        "source": "https://www.openstreetmap.org/",
-        "data": {
-          "provider": "mapboxDEM",
-          "modes": [ "3d" ],
-          "maps": {
-            "displacement": "mapboxDEM",
-            "diffuse": "mapboxSatellite"
-          }
-        }
-      },
-      {
-        "type": "Geometry",
-        "source": "https://maps.openrouteservice.org/",
-        "data": {
-          "provider": "hikes/geojson",
-          "modes": [ "2d", "3d" ],
-          "path": "furnas.json#/features/0"
-        }
-      },
-      {
-        "type": "Statistics",
-        "source": "https://maps.openrouteservice.org/",
-        "data": {
-          "provider": "hikes/geojson",
-          "modes": [ "2d", "3d" ],
-          "path": "furnas.json#/features/0"
-        }
-      }
-    ]
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "furnas.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   },
   {
     "name": "Seebergkopf",
@@ -270,54 +142,22 @@
     "description": "Hike from Osterhofen to Bayrischzell via Seebergkopf (1538 m).",
     "route": "/projects/data-viz/hikes/seebergkopf",
     "height": 512,
-    "features": [
-      {
-        "type": "Origin",
-        "source": "https://www.openstreetmap.org/",
-        "data": {
-          "lat": 47.669499369611074,
-          "lon": 11.99330612552111
-        }
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.669499369611074,
+        "lon": 11.99330612552111
       },
-      {
-        "type": "Tiles",
-        "source": "https://www.openstreetmap.org/",
-        "data": {
-          "provider": "osm",
-          "modes": [ "2d" ]
-        }
-      },
-      {
-        "type": "Tiles",
-        "source": "https://www.openstreetmap.org/",
-        "data": {
-          "provider": "mapboxDEM",
-          "modes": [ "3d" ],
-          "maps": {
-            "displacement": "mapboxDEM",
-            "diffuse": "mapboxSatellite"
-          }
-        }
-      },
-      {
-        "type": "Geometry",
-        "source": "https://maps.openrouteservice.org/",
-        "data": {
-          "provider": "hikes/geojson",
-          "modes": [ "2d", "3d" ],
-          "path": "seebergkopf.json#/features/0"
-        }
-      },
-      {
-        "type": "Statistics",
-        "source": "https://maps.openrouteservice.org/",
-        "data": {
-          "provider": "hikes/geojson",
-          "modes": [ "2d", "3d" ],
-          "path": "seebergkopf.json#/features/0"
-        }
-      }
-    ]
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "seebergkopf.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   },
   {
     "name": "Tegernsee Panoramaweg",
@@ -334,54 +174,22 @@
     "description": "Hike from Tegernsee to Gmund (am Tegernsee) via Bad Wiessee.",
     "route": "/projects/data-viz/hikes/tegernsee",
     "height": 576,
-    "features": [
-      {
-        "type": "Origin",
-        "source": "https://www.openstreetmap.org/",
-        "data": {
-          "lat": 47.722673178149414,
-          "lon": 11.737263344577908
-        }
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.722673178149414,
+        "lon": 11.737263344577908
       },
-      {
-        "type": "Tiles",
-        "source": "https://www.openstreetmap.org/",
-        "data": {
-          "provider": "osm",
-          "modes": [ "2d" ]
-        }
-      },
-      {
-        "type": "Tiles",
-        "source": "https://www.openstreetmap.org/",
-        "data": {
-          "provider": "mapboxDEM",
-          "modes": [ "3d" ],
-          "maps": {
-            "displacement": "mapboxDEM",
-            "diffuse": "mapboxSatellite"
-          }
-        }
-      },
-      {
-        "type": "Geometry",
-        "source": "https://maps.openrouteservice.org/",
-        "data": {
-          "provider": "hikes/geojson",
-          "modes": [ "2d", "3d" ],
-          "path": "tegernsee.json#/features/0"
-        }
-      },
-      {
-        "type": "Statistics",
-        "source": "https://maps.openrouteservice.org/",
-        "data": {
-          "provider": "hikes/geojson",
-          "modes": [ "2d", "3d" ],
-          "path": "tegernsee.json#/features/0"
-        }
-      }
-    ]
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "tegernsee.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   },
   {
     "name": "Gindelalmschneid",
@@ -398,53 +206,21 @@
     "description": "Hike from Schliersee to Tegernsee via Gindelalmschneid (1335 m).",
     "route": "/projects/data-viz/hikes/gindelalmschneid",
     "height": 640,
-    "features": [
-      {
-        "type": "Origin",
-        "source": "https://www.openstreetmap.org/",
-        "data": {
-          "lat": 47.72427308309646,
-          "lon": 11.806826779744757
-        }
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.72427308309646,
+        "lon": 11.806826779744757
       },
-      {
-        "type": "Tiles",
-        "source": "https://www.openstreetmap.org/",
-        "data": {
-          "provider": "osm",
-          "modes": [ "2d" ]
-        }
-      },
-      {
-        "type": "Tiles",
-        "source": "https://www.openstreetmap.org/",
-        "data": {
-          "provider": "mapboxDEM",
-          "modes": [ "3d" ],
-          "maps": {
-            "displacement": "mapboxDEM",
-            "diffuse": "mapboxSatellite"
-          }
-        }
-      },
-      {
-        "type": "Geometry",
-        "source": "https://maps.openrouteservice.org/",
-        "data": {
-          "provider": "hikes/geojson",
-          "modes": [ "2d", "3d" ],
-          "path": "gindelalmschneid.json#/features/0"
-        }
-      },
-      {
-        "type": "Statistics",
-        "source": "https://maps.openrouteservice.org/",
-        "data": {
-          "provider": "hikes/geojson",
-          "modes": [ "2d", "3d" ],
-          "path": "gindelalmschneid.json#/features/0"
-        }
-      }
-    ]
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "gindelalmschneid.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
