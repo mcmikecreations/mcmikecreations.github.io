@@ -268,11 +268,11 @@
 		</article>
 		<div class="flex-[2] min-w-80">
 			<Tabs>
-				<TabItem open title="3D" on:click={() => attach3d()}>
+				<TabItem title="3D" on:click={() => attach3d()}>
 					<div id="container-3d" class="w-full aspect-square" />
 					<Attribution {attrMapbox} {attrOSM} />
 				</TabItem>
-				<TabItem title="2D" on:click={() => onUpdateStatistics(lastStatsIndicatorTarget)}>
+				<TabItem open title="2D" on:click={() => onUpdateStatistics(lastStatsIndicatorTarget)}>
 					<svg viewBox="0 0 {data.map.height} {data.map.height}" class="w-full aspect-square">
 						{@html data.data2d}
 						<circle id="statsIndicator2d" r={data.map.height * 0.125 * 0.125 * 0.25} fill="#B00000" class="hidden" />
