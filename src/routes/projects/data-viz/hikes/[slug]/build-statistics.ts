@@ -3,6 +3,19 @@ import { type GeoProjection } from 'd3-geo';
 import * as THREE from 'three';
 import { loadGeometry } from './build-geometry';
 
+export function getDistance(m : number) {
+	const km = Math.floor(m / 1000);
+	const lm = Math.floor(m - 1000 * km);
+	return ((km == 0 ? '' : `${km} km `) + (lm == 0 ? '' : `${lm} m`)).trimEnd();
+}
+
+export function getTime(m : number) {
+	const days = Math.floor(m / 60 / 24);
+	const hours = Math.floor(m / 60 - days * 24);
+	const lm = Math.round(m - days * 60 * 24 - hours * 60);
+	return ((days == 0 ? '' : `${days} days `) + (hours == 0 ? '' : `${hours} hours `) + (lm == 0 ? '' : `${lm} min`)).trimEnd();
+}
+
 export async function buildStatistics(
 	fetch : (input: (RequestInfo | URL), init?: (RequestInit | undefined)) => Promise<Response>,
 	layer : Feature,

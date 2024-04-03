@@ -39,6 +39,16 @@ interface Feature {
 	data: OriginData | TilesData | GeometryData;
 }
 
+interface MapProperties {
+	distance: number | null;
+	duration: number | null;
+	ascent: number | null;
+	descent: number | null;
+	dates: Array<string>;
+	filePath: string;
+	fileType: string;
+}
+
 interface Map {
 	name: string;
 	image?: string;
@@ -46,8 +56,9 @@ interface Map {
 	route: string;
 	height: number;
 	features: Feature[];
+	properties: MapProperties;
 }
 
 export type {
-	MapProvider, Map, Feature, GeometryData, TilesData, TilesMapsData, OriginData, Mode
+	MapProvider, Map, MapProperties, Feature, GeometryData, TilesData, TilesMapsData, OriginData, Mode
 };

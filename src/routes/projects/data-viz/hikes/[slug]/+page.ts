@@ -3,13 +3,12 @@ import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
 import type { HttpError } from '@sveltejs/kit'
 import maps from '$lib/data/maps.json';
-import { providerFolder } from '$lib/data/map-providers';
 import { geoMercator } from 'd3-geo';
 // @ts-ignore
 import { tile } from 'd3-tile';
 import * as THREE from 'three';
 import type { GeometryData, Map, OriginData } from '$lib/data/map-info';
-import { buildGeometry } from './build-geometry';
+import { buildGeometry, loadGeometry, loadProperties } from './build-geometry';
 import { buildTiles, getPixelsPerMeter } from './build-tiles';
 import { buildStatistics } from './build-statistics';
 
@@ -23,29 +22,6 @@ export const load: PageLoad = async ({ fetch, params }) => {
 		}
 
 		const statistics = meta.features.find((x) => x.type === 'Statistics');
-		await (async () => {
-			if (!statistics) {
-				return undefined;
-			}
-
-			const layerData : GeometryData = statistics.data as GeometryData;
-
-			if (layerData.path) {
-				const jsonPathIndex = layerData.path.indexOf('#');
-				const filePath = layerData.path.slice(0, jsonPathIndex);
-				const file = await fetch(`/${providerFolder}/${layerData.provider}/${filePath}`);
-				const text = await file.json();
-				const jsonPath = layerData.path.slice(jsonPathIndex + 2) // We always have #/
-					.split('/');
-				return jsonPath.reduce((prev, curr) => prev[curr], text);
-			} else if (layerData.feature) {
-				return layerData.feature;
-			} else {
-				console.error('Wrong Geometry data:', layerData);
-				return undefined;
-			}
-		})();
-
 		const origin = meta.features.find((x) => x.type === 'Origin');
 
 		if (!origin) {
@@ -70,13 +46,16 @@ export const load: PageLoad = async ({ fetch, params }) => {
 
 		const layers2d : Array<string> = [];
 		const layers3d : Array<THREE.Object3D> = [];
+		let properties = meta.properties;
 
 		for (const layer of meta.features) {
 			let data;
 			if (layer.type === 'Tiles') {
 				data = await buildTiles(fetch, layer, tiles, tileFunc);
 			} else if (layer.type === 'Geometry') {
-				data = await buildGeometry(fetch, layer, projection, pixelsPerMeter, tiles.scale);
+				const geometry = await loadGeometry(fetch, layer.data as GeometryData);
+				properties = loadProperties(meta, geometry);
+				data = await buildGeometry(fetch, layer, geometry, projection, pixelsPerMeter, tiles.scale);
 			}
 
 			if (data) {
@@ -91,6 +70,7 @@ export const load: PageLoad = async ({ fetch, params }) => {
 
 		return {
 			map: meta,
+			properties: properties,
 			origin: originData,
 			statistics: statistics
 				? ((await buildStatistics(fetch, statistics, projection, height))?.layers2d?.join(''))

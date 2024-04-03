@@ -10,6 +10,7 @@
 	import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 	import { providerFile, providerFolder, providers } from '$lib/data/map-providers';
 	import type { MapProvider, TilesData } from '$lib/data/map-info';
+	import { getDistance, getTime } from './build-statistics';
 
 	export let data: PageData;
 
@@ -248,14 +249,24 @@
 		<BreadcrumbItem href="/" home>Home</BreadcrumbItem>
 		<BreadcrumbItem href="/projects">Projects</BreadcrumbItem>
 		<BreadcrumbItem href="/projects/data-viz">Data Viz</BreadcrumbItem>
-		<BreadcrumbItem href="/projects/data-viz#maps">Maps</BreadcrumbItem>
+		<BreadcrumbItem href="/projects/data-viz#maps">Hikes</BreadcrumbItem>
 		<BreadcrumbItem>{data.map.name}</BreadcrumbItem>
 	</Breadcrumb>
 	<div class="flex flex-row flex-wrap gap-4">
 		<article class="flex-1 w-full p-4 bg-gray-50 rounded-lg dark:bg-gray-800 min-w-40">
 			<div class="flex flex-row sm:flex-col flex-wrap gap-4">
 				<Img src={data.map.image} alt="Original map photo" class="w-full h-auto rounded-lg object-center object-cover" />
-				<div class="prose dark:prose-invert prose-a:text-primary-600 dark:prose-a:text-primary-500">{@html data.map.description}</div>
+				<div class="prose dark:prose-invert prose-a:text-primary-600 dark:prose-a:text-primary-500">
+					<p>{@html data.map.description}</p>
+					<ul>
+						<li>Distance: {getDistance(data.properties.distance ?? 0)}</li>
+						<li>Duration: {getTime(data.properties.duration ?? 0)}</li>
+						<li>Ascent: {getDistance(data.properties.ascent ?? 0)}</li>
+						<li>Descent: {getDistance(data.properties.descent ?? 0)}</li>
+						<li>Dates: {data.properties.dates.map((x) => new Date(x).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"})).join('; ')}</li>
+						<li><a href={data.properties.filePath}>{data.properties.fileType}</a></li>
+					</ul>
+				</div>
 			</div>
 			{#if data.statistics}
 				<div class="flex-1 mt-4">
@@ -268,11 +279,11 @@
 		</article>
 		<div class="flex-[2] min-w-80">
 			<Tabs>
-				<TabItem title="3D" on:click={() => attach3d()}>
+				<TabItem open title="3D" on:click={() => attach3d()}>
 					<div id="container-3d" class="w-full aspect-square" />
 					<Attribution {attrMapbox} {attrOSM} />
 				</TabItem>
-				<TabItem open title="2D" on:click={() => onUpdateStatistics(lastStatsIndicatorTarget)}>
+				<TabItem title="2D" on:click={() => onUpdateStatistics(lastStatsIndicatorTarget)}>
 					<svg viewBox="0 0 {data.map.height} {data.map.height}" class="w-full aspect-square">
 						{@html data.data2d}
 						<circle id="statsIndicator2d" r={data.map.height * 0.125 * 0.125 * 0.25} fill="#B00000" class="hidden" />

@@ -2,7 +2,16 @@
   {
     "name": "Seekarkreuz",
     "image": "/images/projects/data-viz/hikes/seekarkreuz.jpg",
-    "description": "<p>Hike from Lenggries to Seekarkreuz (1601 m).</p> <ul><li>Distance: 17.1 km</li><li>Duration: 4 hours 58 min</li><li>Ascent: 831 m</li><li>Descent: 900 m</li><li>Dates: 18 Feb 2024</li><li>Origin: 47°40'03.7\"N 11°36'45.4\"E</li></ul><p>Route: <a href='/_projects/data-viz/hikes/geojson/seekarkreuz.json'>GeoJSON</a></p>",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-02-18"],
+      "filePath": "/_projects/data-viz/hikes/geojson/seekarkreuz.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Lenggries to Seekarkreuz (1601 m).",
     "route": "/projects/data-viz/hikes/seekarkreuz",
     "height": 512,
     "features": [
@@ -57,7 +66,16 @@
   {
     "name": "Wendelstein",
     "image": "/images/projects/data-viz/hikes/wendelstein.jpg",
-    "description": "<p>Hike from Osterhofen to Bayrischzell via Wendelstein (1838 m).</p> <ul><li>Distance: 12.4 km</li><li>Duration: 3 hours 47 min</li><li>Ascent: 984 m</li><li>Descent: 1008 m</li><li>Dates: 03 Jan 2024, 02 Sep 2023</li><li>Origin: 47°41'23.6\"N 12°00'24.1\"E</li></ul><p>Route: <a href='/_projects/data-viz/hikes/geojson/wendelstein.json'>GeoJSON</a></p>",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-01-03","2023-09-02"],
+      "filePath": "/_projects/data-viz/hikes/geojson/wendelstein.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Osterhofen to Bayrischzell via Wendelstein (1838 m).",
     "route": "/projects/data-viz/hikes/wendelstein",
     "height": 512,
     "features": [
@@ -112,7 +130,16 @@
   {
     "name": "Bad Tölz - Lenggries",
     "image": "/images/projects/data-viz/hikes/bad_tolz_lenggries.jpg",
-    "description": "<p>Hike from Bad Tölz to Lenggries via Isar.</p> <ul><li>Distance: 12.6 km</li><li>Duration: 2 hours 31 min</li><li>Ascent: 64 m</li><li>Descent: 74 m</li><li>Dates: 31 Mar 2024</li><li>Origin: 47°43'19.1\"N 11°33'27.9\"E</li></ul><p>Route: <a href='/_projects/data-viz/hikes/geojson/bad_tolz_lenggries.json'>GeoJSON</a></p>",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-03-31"],
+      "filePath": "/_projects/data-viz/hikes/geojson/bad_tolz_lenggries.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Bad Tölz to Lenggries via Isar.",
     "route": "/projects/data-viz/hikes/bad-tolz-lenggries",
     "height": 768,
     "features": [
@@ -167,7 +194,16 @@
   {
     "name": "Furnas",
     "image": "/images/projects/data-viz/hikes/furnas.jpg",
-    "description": "<p>Hike from Furnas and back via Parque da Grená.</p> <ul><li>Distance: 8.8 km</li><li>Duration: 1 hour 46 min</li><li>Ascent: 317 m</li><li>Descent: 380 m</li><li>Dates: 09 Mar 2024</li><li>Origin: 37°46'14.2\"N 25°19'21.1\"W</li></ul><p>Route: <a href='/_projects/data-viz/hikes/geojson/furnas.json'>GeoJSON</a></p>",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-03-09"],
+      "filePath": "/_projects/data-viz/hikes/geojson/furnas.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Furnas and back via Parque da Grená.",
     "route": "/projects/data-viz/hikes/furnas",
     "height": 256,
     "features": [
@@ -222,7 +258,16 @@
   {
     "name": "Seebergkopf",
     "image": "/images/projects/data-viz/hikes/seebergkopf.jpg",
-    "description": "<p>Hike from Osterhofen to Bayrischzell via Seebergkopf (1538 m).</p> <ul><li>Distance: 12.6 km</li><li>Duration: 4 hours 32 min</li><li>Ascent: 705 m</li><li>Descent: 720 m</li><li>Dates: 06 Apr 2024, 26 Aug 2023</li><li>Origin: 47°40'10.2\"N 11°59'35.9\"E</li></ul><p>Route: <a href='/_projects/data-viz/hikes/geojson/seebergkopf.json'>GeoJSON</a></p>",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-04-06","2023-08-26"],
+      "filePath": "/_projects/data-viz/hikes/geojson/seebergkopf.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Osterhofen to Bayrischzell via Seebergkopf (1538 m).",
     "route": "/projects/data-viz/hikes/seebergkopf",
     "height": 512,
     "features": [
@@ -275,9 +320,18 @@
     ]
   },
   {
-    "name": "Tegernsee",
+    "name": "Tegernsee Panoramaweg",
     "image": "/images/projects/data-viz/hikes/tegernsee.jpg",
-    "description": "<p>Hike from Tegernsee to Gmund (am Tegernsee) via Bad Wiessee.</p> <ul><li>Distance: 19.6 km</li><li>Duration: 3 hours 55 min</li><li>Ascent: 299 m</li><li>Descent: 348 m</li><li>Dates: 03 Feb 2024</li><li>Origin: 47°43'21.6\"N 11°44'14.2\"E</li></ul><p>Route: <a href='/_projects/data-viz/hikes/geojson/tegernsee.json'>GeoJSON</a></p>",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-02-03"],
+      "filePath": "/_projects/data-viz/hikes/geojson/tegernsee.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Tegernsee to Gmund (am Tegernsee) via Bad Wiessee.",
     "route": "/projects/data-viz/hikes/tegernsee",
     "height": 576,
     "features": [
@@ -332,7 +386,16 @@
   {
     "name": "Gindelalmschneid",
     "image": "/images/projects/data-viz/hikes/gindelalmschneid.jpg",
-    "description": "<p>Hike from Schliersee to Tegernsee via Gindelalmschneid (1335 m).</p> <ul><li>Distance: 13.1 km</li><li>Duration: 3 hours 8 min</li><li>Ascent: 614 m</li><li>Descent: 579 m</li><li>Dates: 01 Jan 2024, 18 Nov 2023, 07 Jun 2023, 06 Jun 2022, 10 Apr 2022</li><li>Origin: 47°43'27.4\"N 11°48'24.6\"E</li></ul><p>Route: <a href='/_projects/data-viz/hikes/geojson/gindelalmschneid.json'>GeoJSON</a></p>",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-01-01","2023-11-18","2023-06-07","2022-06-06","2022-04-10"],
+      "filePath": "/_projects/data-viz/hikes/geojson/gindelalmschneid.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Schliersee to Tegernsee via Gindelalmschneid (1335 m).",
     "route": "/projects/data-viz/hikes/gindelalmschneid",
     "height": 640,
     "features": [

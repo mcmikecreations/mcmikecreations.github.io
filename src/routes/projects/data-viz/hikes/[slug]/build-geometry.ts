@@ -1,6 +1,6 @@
-import type { Feature, GeometryData } from '$lib/data/map-info';
+import type { Feature, GeometryData, Map } from '$lib/data/map-info';
 import { providerFolder } from '$lib/data/map-providers';
-import { geoPath, type GeoProjection } from 'd3-geo';
+import { geoPath, type GeoPermissibleObjects, type GeoProjection } from 'd3-geo';
 import * as THREE from 'three';
 
 // noinspection JSUnusedGlobalSymbols
@@ -63,9 +63,38 @@ export async function loadGeometry(
 	}
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function loadProperties(map : Map, geometry : any) {
+	const properties = map.properties;
+
+	if (properties.distance == null) {
+		properties.distance = geometry.properties?.summary?.distance
+			? geometry.properties.summary.distance * 1000
+			: null;
+	}
+	if (properties.duration == null) {
+		properties.duration = geometry.properties?.summary?.duration
+			? geometry.properties.summary.duration / 60
+			: null;
+	}
+	if (properties.ascent == null) {
+		properties.ascent = geometry.properties?.ascent
+		  ? geometry.properties.ascent
+			: null;
+	}
+	if (properties.descent == null) {
+		properties.descent = geometry.properties?.descent
+			? geometry.properties.descent
+			: null;
+	}
+
+	return properties;
+}
+
 export async function buildGeometry(
 	fetch : (input: (RequestInfo | URL), init?: (RequestInit | undefined)) => Promise<Response>,
 	layer : Feature,
+	geometry : object,
 	projection : GeoProjection,
 	pixelsPerMeter : number,
 	tileScale : number
@@ -79,22 +108,21 @@ export async function buildGeometry(
 	};
 
 	const layerData : GeometryData = layer.data as GeometryData;
-	const geometry = await loadGeometry(fetch, layerData);
 	const color = 'red';
-
 
 	if (layerData.modes.includes('2d')) {
 		const path = geoPath(projection);
-		result.layers2d.push(`<g><path fill="none" stroke="${color}" d="${path(geometry)}" /></g>`);
+		result.layers2d.push(`<g><path fill="none" stroke="${color}" d="${path(geometry as GeoPermissibleObjects)}" /></g>`);
 	}
 	if (layerData.modes.includes('3d')) {
 		const group = new THREE.Group();
 		const context = new ThreePathContext();
 		const path = geoPath(projection, context);
-		path(geometry);
+		path(geometry as GeoPermissibleObjects);
 
 		for (const p of context.paths) {
 			const points2d = p.getPoints();
+			// @ts-expect-error Erasing geometry type above
 			const coordinates : Array<number>[] = geometry.coordinates ?? geometry.geometry?.coordinates ?? [];
 			const points = points2d.length === coordinates.length
 				? points2d.map((v, i) => new THREE.Vector3(
