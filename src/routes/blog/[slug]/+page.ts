@@ -6,21 +6,24 @@ import { readingTime } from 'reading-time-estimator';
 
 export const load: PageLoad = async ({ fetch, params }) => {
 	try {
+		const slug = params.slug.endsWith('.html')
+			? params.slug.substring(0, params.slug.length - '.hmtl'.length)
+			: params.slug;
 		// Get the post.
-		const fileName = `${params.slug}.md`;
+		const fileName = `${slug}.md`;
 		const url = `/_blog/${fileName}`;
 		const res = await fetch(url);
 
 		if (!res.ok) {
 			console.log(`Failed to fetch ${url} with return code ${res.status}.`);
-			error(404, { message: `Failed to fetch "${params.slug}"` });
+			error(404, { message: `Failed to fetch "${slug}"` });
 		}
 
 		const meta = blogs.find((x) => x.path === fileName);
 
 		if (!meta) {
 			console.log(`Failed to fetch ${fileName} metadata.`);
-			error(404, { message: `Failed to fetch "${params.slug}"` });
+			error(404, { message: `Failed to fetch "${slug}"` });
 		}
 
 		// Find all headers.
