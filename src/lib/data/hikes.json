@@ -295,7 +295,7 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2023-06-10"],
+      "dates": ["2023-06-10", "2022-09-08"],
       "filePath": "/_projects/data-viz/hikes/geojson/nebelhorn.json",
       "fileType": "GeoJSON"
     },
