@@ -222,5 +222,37 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Laimbachfall",
+    "image": "/images/projects/data-viz/hikes/laimbachfall.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2023-08-19"],
+      "filePath": "/_projects/data-viz/hikes/geojson/laimbachfall.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Kochel am See to Lainbach Wasserfall and back to lake Kochel. <a href=\"https://www.dav-neuland.de/2023/08/zu-den-lainbachwasserfaellen/\">Photo by Helga</a>",
+    "route": "/projects/data-viz/hikes/laimbachfall",
+    "height": 256,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.65376837021519,
+        "lon": 11.365191215057575
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "laimbachfall.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]

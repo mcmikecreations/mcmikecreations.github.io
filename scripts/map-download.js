@@ -9,7 +9,7 @@ import { resolve } from 'path';
 // noinspection ES6PreferShortImport
 import { providers, providerFolder, providerFile } from '../src/lib/data/map-providers.js';
 // noinspection ES6PreferShortImport
-import { getMapFeatures } from '../src/lib/data/map-info.js';
+import { getMapFeatures } from '../src/lib/data/map-get-features.js';
 
 // Load map based on name and mapbox key. E.g. node map-download.js seekarkreuz pk.eya79cwhrfa9we
 
