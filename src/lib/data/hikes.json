@@ -894,5 +894,133 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Sonnenspitz & Jochberg",
+    "image": "/images/projects/data-viz/hikes/jochberg.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2023-09-09"],
+      "filePath": "/_projects/data-viz/hikes/geojson/jochberg.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Kochel am See and back via Sonnenspitz (1269 m) and Jochberg (1565 m). Shorter route was closed.",
+    "route": "/projects/data-viz/hikes/jochberg",
+    "height": 512,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.63977413918012,
+        "lon": 11.365787921240647
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "jochberg.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Riefenkopf & Hahnenköpfle",
+    "image": "/images/projects/data-viz/hikes/riefenkopf.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2023-09-30"],
+      "filePath": "/_projects/data-viz/hikes/geojson/riefenkopf.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Oberstdorf and back via Riefenkopf (1749 m) and Hahnenköpfle (1735 m).",
+    "route": "/projects/data-viz/hikes/riefenkopf",
+    "height": 512,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.39439835079049,
+        "lon": 10.303271768206532
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "riefenkopf.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Neuschwanstein & Tegelberg",
+    "image": "/images/projects/data-viz/hikes/tegelberg.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2023-07-06"],
+      "filePath": "/_projects/data-viz/hikes/geojson/tegelberg.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Neuschwanstein to Füssen via Tegelberg (1700 m).",
+    "route": "/projects/data-viz/hikes/tegelberg",
+    "height": 576,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.56760807710435,
+        "lon": 10.741207474493931
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "tegelberg.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Partnachklamm",
+    "image": "/images/projects/data-viz/hikes/partnachklamm.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2022-08-22"],
+      "filePath": "/_projects/data-viz/hikes/geojson/partnachklamm.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Garmisch and back via Partnachklamm.",
+    "route": "/projects/data-viz/hikes/partnachklamm",
+    "height": 384,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.47916032149417,
+        "lon": 11.109043243049138
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "partnachklamm.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
