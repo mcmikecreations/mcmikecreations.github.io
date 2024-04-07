@@ -9,7 +9,7 @@
 	import * as THREE from 'three';
 	import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 	import { providerFile, providerFolder, providers } from '$lib/data/map-providers';
-	import { type MapProvider, type TilesData } from '$lib/data/map-info';
+	import { type Feature, getMapFeatures, type MapProvider, type TilesData } from '$lib/data/map-info';
 	import { getDistance, getTime } from './build-statistics';
 
 	export let data: PageData;
@@ -18,8 +18,9 @@
 	const scale3dVertical = 0.4;
 
 	const center = data.projection([data.origin.lon, data.origin.lat])!;
-	const attrMapbox = data.map.features.some((x) => x.type === 'Tiles' && (x.data as TilesData)!.provider!.includes('mapbox'));
-	const attrOSM = data.map.features.some((x) => x.type === 'Tiles' && (x.data as TilesData)!.provider!.includes('osm')) && !attrMapbox;
+	const features = getMapFeatures(data.map) as Feature[];
+	const attrMapbox = features.some((x) => x.type === 'Tiles' && (x.data as TilesData)!.provider!.includes('mapbox'));
+	const attrOSM = features.some((x) => x.type === 'Tiles' && (x.data as TilesData)!.provider!.includes('osm')) && !attrMapbox;
 
 	let renderer : THREE.WebGLRenderer;
 	let camera : THREE.PerspectiveCamera;
@@ -255,7 +256,7 @@
 	<div class="flex flex-row flex-wrap gap-4">
 		<article class="flex-1 w-full p-4 bg-gray-50 rounded-lg dark:bg-gray-800 min-w-40">
 			<div class="flex flex-row sm:flex-col flex-wrap gap-4">
-				<Img src={data.map.image} alt="Original map photo" class="w-full h-auto rounded-lg object-center object-cover" />
+				<Img src={data.map.image} alt="Original map photo" class="w-full aspect-crt rounded-lg object-center object-cover" />
 				<div class="prose dark:prose-invert prose-a:text-primary-600 dark:prose-a:text-primary-500">
 					<p>{@html data.map.description}</p>
 					<ul>

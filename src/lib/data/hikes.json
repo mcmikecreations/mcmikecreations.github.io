@@ -235,7 +235,7 @@
       "filePath": "/_projects/data-viz/hikes/geojson/laimbachfall.json",
       "fileType": "GeoJSON"
     },
-    "description": "Hike from Kochel am See to Lainbach Wasserfall and back to lake Kochel. <a href=\"https://www.dav-neuland.de/2023/08/zu-den-lainbachwasserfaellen/\">Photo by Helga</a>",
+    "description": "Hike from Kochel am See to Lainbach Wasserfall and back to lake Kochel. <a href=\"https://www.dav-neuland.de/2023/08/zu-den-lainbachwasserfaellen/\">Photo by Helga.</a>",
     "route": "/projects/data-viz/hikes/laimbachfall",
     "height": 256,
     "standardFeatures": {
@@ -249,6 +249,102 @@
         "provider": "hikes/geojson",
         "modes": [ "2d", "3d" ],
         "path": "laimbachfall.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Herzogstand",
+    "image": "/images/projects/data-viz/hikes/herzogstand.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2023-07-16"],
+      "filePath": "/_projects/data-viz/hikes/geojson/herzogstand.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Walchensee to Kochel via Herzogstand (1731 m).",
+    "route": "/projects/data-viz/hikes/herzogstand",
+    "height": 320,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.60945578486503,
+        "lon": 11.324014154941546
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "herzogstand.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Nebelhorn",
+    "image": "/images/projects/data-viz/hikes/nebelhorn.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2023-06-10"],
+      "filePath": "/_projects/data-viz/hikes/geojson/nebelhorn.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Oberstdorf and back via Nebelhorn (2224 m).",
+    "route": "/projects/data-viz/hikes/nebelhorn",
+    "height": 512,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.4038754027396,
+        "lon": 10.316559709977405
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "nebelhorn.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Jenner",
+    "image": "/images/projects/data-viz/hikes/jenner.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2023-06-28"],
+      "filePath": "/_projects/data-viz/hikes/geojson/jenner.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Königssee and back via Jenner (1874 m).",
+    "route": "/projects/data-viz/hikes/jenner",
+    "height": 512,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.580462888194106,
+        "lon": 13.01320715137937
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "jenner.json#/features/0"
       }],
       "geometrySource": "https://maps.openrouteservice.org/",
       "statistics": true
