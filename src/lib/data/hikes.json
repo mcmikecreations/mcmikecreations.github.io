@@ -830,5 +830,69 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Kramerspitz",
+    "image": "/images/projects/data-viz/hikes/kramerspitz.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2023-10-28"],
+      "filePath": "/_projects/data-viz/hikes/geojson/kramerspitz.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Garmisch and back via Kramerspitz (1985 m).",
+    "route": "/projects/data-viz/hikes/kramerspitz",
+    "height": 512,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.501663142150775,
+        "lon": 11.058738178106545
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "kramerspitz.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Eibsee",
+    "image": "/images/projects/data-viz/hikes/eibsee.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2023-10-29"],
+      "filePath": "/_projects/data-viz/hikes/geojson/eibsee.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike around Eibsee.",
+    "route": "/projects/data-viz/hikes/eibsee",
+    "height": 256,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.45766344816063,
+        "lon": 10.974007578406415
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "eibsee.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
