@@ -702,5 +702,69 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Josefsthaler Wasserfälle",
+    "image": "/images/projects/data-viz/hikes/josefsthaler_wasserfall.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2023-12-09"],
+      "filePath": "/_projects/data-viz/hikes/geojson/josefsthaler_wasserfall.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Schliersee to Neuhaus via the Josefstaler Wasserfall.",
+    "route": "/projects/data-viz/hikes/josefsthaler_wasserfall",
+    "height": 512,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.71391968715959,
+        "lon": 11.865221937477509
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "josefsthaler_wasserfall.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Tegernsee Rottachfall",
+    "image": "/images/projects/data-viz/hikes/tegernsee_rottachfall.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2023-11-25"],
+      "filePath": "/_projects/data-viz/hikes/geojson/tegernsee_rottachfall.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Tegernsee and back via Rottach Wasserfall.",
+    "route": "/projects/data-viz/hikes/tegernsee_rottachfall",
+    "height": 512,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.69324119219487,
+        "lon": 11.784385533537876
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "tegernsee_rottachfall.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
