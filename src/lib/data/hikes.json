@@ -350,5 +350,37 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Bayrischzell Hohenweg",
+    "image": "/images/projects/data-viz/hikes/bayrischzell_hohenweg.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2023-06-17"],
+      "filePath": "/_projects/data-viz/hikes/geojson/bayrischzell_hohenweg.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Bayrischzell and back along the Hohenweg.",
+    "route": "/projects/data-viz/hikes/bayrischzell_hohenweg",
+    "height": 512,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.65694736788036,
+        "lon": 12.000585321656944
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "bayrischzell_hohenweg.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
