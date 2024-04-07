@@ -382,5 +382,101 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Starnberg - Tutzing",
+    "image": "/images/projects/data-viz/hikes/starnberg_tutzing.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-03-30", "2023-04-22"],
+      "filePath": "/_projects/data-viz/hikes/geojson/starnberg_tutzing.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Starnberg to Tutzing along Starnberger See.",
+    "route": "/projects/data-viz/hikes/starnberg_tutzing",
+    "height": 896,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.95257010612972,
+        "lon": 11.306729134521248
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "starnberg_tutzing.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Feldafing - Tutzing",
+    "image": "/images/projects/data-viz/hikes/feldafing_tutzing.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2022-05-19"],
+      "filePath": "/_projects/data-viz/hikes/geojson/feldafing_tutzing.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Feldafing to Tutzing along the hillside.",
+    "route": "/projects/data-viz/hikes/feldafing_tutzing",
+    "height": 384,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.930261220288685,
+        "lon": 11.284581867948528
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "feldafing_tutzing.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Starnberg - Munsing",
+    "image": "/images/projects/data-viz/hikes/starnberg_munsing.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2023-04-29"],
+      "filePath": "/_projects/data-viz/hikes/geojson/starnberg_munsing.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Starnberg to Munsing along Starnberger See.",
+    "route": "/projects/data-viz/hikes/starnberg_munsing",
+    "height": 1024,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.95475447940952,
+        "lon": 11.347819695655469
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "starnberg_munsing.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
