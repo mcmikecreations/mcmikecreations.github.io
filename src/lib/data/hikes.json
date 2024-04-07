@@ -766,5 +766,69 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Himmelschrofen",
+    "image": "/images/projects/data-viz/hikes/himmelschrofen.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2023-10-07"],
+      "filePath": "/_projects/data-viz/hikes/geojson/himmelschrofen.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Oberstdorf and back via Himmelschrofen (1790 m).",
+    "route": "/projects/data-viz/hikes/himmelschrofen",
+    "height": 576,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.38242779259871,
+        "lon": 10.288262200337856
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "himmelschrofen.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Wank",
+    "image": "/images/projects/data-viz/hikes/wank.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2023-10-21"],
+      "filePath": "/_projects/data-viz/hikes/geojson/wank.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Garmisch and back via Wank (1780 m).",
+    "route": "/projects/data-viz/hikes/wank",
+    "height": 512,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.50560594251366,
+        "lon": 11.125975251052337
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "wank.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
