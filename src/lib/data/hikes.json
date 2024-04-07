@@ -478,5 +478,229 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Kegon falls",
+    "image": "/images/projects/data-viz/hikes/kegon.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2023-03-04"],
+      "filePath": "/_projects/data-viz/hikes/geojson/kegon.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Okunikko Yumoto Onsen source (奥日光湯元温泉源泉) to the Kegon Waterfall (華厳滝) via Lake Chūzenji (中禅寺湖).",
+    "route": "/projects/data-viz/hikes/kegon",
+    "height": 768,
+    "standardFeatures": {
+      "origin": {
+        "lat": 36.77532999484222,
+        "lon": 139.45267791539462
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "kegon.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Kloster Andechs",
+    "image": "/images/projects/data-viz/hikes/herrsching_andechs.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2023-03-25"],
+      "filePath": "/_projects/data-viz/hikes/geojson/herrsching_andechs.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Herrsching to Kloster Andechs.",
+    "route": "/projects/data-viz/hikes/herrsching_andechs",
+    "height": 384,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.986417515729,
+        "lon": 11.17686189390908
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "herrsching_andechs.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Takao",
+    "image": "/images/projects/data-viz/hikes/takao.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2023-02-18"],
+      "filePath": "/_projects/data-viz/hikes/geojson/takao.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Takaosanguchi Station (高尾山口駅) and back via Takao (高尾山) (599 m).",
+    "route": "/projects/data-viz/hikes/takao",
+    "height": 256,
+    "standardFeatures": {
+      "origin": {
+        "lat": 35.62768655665466,
+        "lon": 139.2574978803166
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "takao.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Nokogiri",
+    "image": "/images/projects/data-viz/hikes/nokogiri.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2023-02-26"],
+      "filePath": "/_projects/data-viz/hikes/geojson/nokogiri.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Nokogiriyama Ropeway Mountain peak station (鋸山山頂駅) to Hota Station (保田駅) via the seaside.",
+    "route": "/projects/data-viz/hikes/nokogiri",
+    "height": 256,
+    "standardFeatures": {
+      "origin": {
+        "lat": 35.15040701873966,
+        "lon": 139.83286494716577
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "nokogiri.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Oyama",
+    "image": "/images/projects/data-viz/hikes/oyama.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2022-12-02"],
+      "filePath": "/_projects/data-viz/hikes/geojson/oyama.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Ryoben falls (良弁滝) and back via Oyama (大山).",
+    "route": "/projects/data-viz/hikes/oyama",
+    "height": 256,
+    "standardFeatures": {
+      "origin": {
+        "lat": 35.43231633328529,
+        "lon": 139.24084817830578
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "oyama.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Miura",
+    "image": "/images/projects/data-viz/hikes/miura.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2022-12-07"],
+      "filePath": "/_projects/data-viz/hikes/geojson/miura.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Misakiguchi Station (三崎口駅) to Jogashima Lighthouse (城ヶ島灯台) via the Miura (三浦市) seaside.",
+    "route": "/projects/data-viz/hikes/miura",
+    "height": 512,
+    "standardFeatures": {
+      "origin": {
+        "lat": 35.164055671241385,
+        "lon": 139.61941165704067
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "miura.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Fujisan",
+    "image": "/images/projects/data-viz/hikes/fuji.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2022-11-04"],
+      "filePath": "/_projects/data-viz/hikes/geojson/fuji.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Fujisan 5th Station (富士山五合目) to the public toilet near the toll gate (料金所下公衆トイレ), because the road was closed for the night, via Fujisan (富士山) (3776 m) 8.5th Station Goraikokan (御来光館) (3450 m).",
+    "route": "/projects/data-viz/hikes/fuji",
+    "height": 768,
+    "standardFeatures": {
+      "origin": {
+        "lat": 35.40823878609355,
+        "lon": 138.7219919858139
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "fuji.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
