@@ -871,7 +871,7 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2023-10-29"],
+      "dates": ["2023-10-29", "2022-08-16"],
       "filePath": "/_projects/data-viz/hikes/geojson/eibsee.json",
       "fileType": "GeoJSON"
     },
@@ -1017,6 +1017,38 @@
         "provider": "hikes/geojson",
         "modes": [ "2d", "3d" ],
         "path": "partnachklamm.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Miyagase Dam",
+    "image": "/images/projects/data-viz/hikes/miyagase.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2022-11-30"],
+      "filePath": "/_projects/data-viz/hikes/geojson/miyagase.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Aikawa Bridge (愛川大橋) and back via the Miyagase Dam (宮ヶ瀬ダム).",
+    "route": "/projects/data-viz/hikes/miyagase",
+    "height": 256,
+    "standardFeatures": {
+      "origin": {
+        "lat": 35.54106151953002,
+        "lon": 139.2542738052721
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "miyagase.json#/features/0"
       }],
       "geometrySource": "https://maps.openrouteservice.org/",
       "statistics": true
