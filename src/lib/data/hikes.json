@@ -1054,5 +1054,69 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Murnau",
+    "image": "/images/projects/data-viz/hikes/murnau.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2022-06-18"],
+      "filePath": "/_projects/data-viz/hikes/geojson/murnau.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Murnau am Staffelsee and back via the Münter-Haus museum.",
+    "route": "/projects/data-viz/hikes/murnau",
+    "height": 256,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.67899829787426,
+        "lon": 11.194680276275825
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "murnau.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Lisboa Monsanto",
+    "image": "/images/projects/data-viz/hikes/monsanto.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2022-03-22"],
+      "filePath": "/_projects/data-viz/hikes/geojson/monsanto.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from downtown Lisbon to Belem via Panorâmico de Monsanto.",
+    "route": "/projects/data-viz/hikes/monsanto",
+    "height": 576,
+    "standardFeatures": {
+      "origin": {
+        "lat": 38.72636714120497,
+        "lon": -9.17257057910392
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "monsanto.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
