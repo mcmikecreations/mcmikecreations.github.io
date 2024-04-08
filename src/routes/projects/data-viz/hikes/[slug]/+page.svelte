@@ -250,7 +250,6 @@
 		<BreadcrumbItem href="/" home>Home</BreadcrumbItem>
 		<BreadcrumbItem href="/projects">Projects</BreadcrumbItem>
 		<BreadcrumbItem href="/projects/data-viz">Data Viz</BreadcrumbItem>
-		<BreadcrumbItem href="/projects/data-viz#maps">Hikes</BreadcrumbItem>
 		<BreadcrumbItem>{data.map.name}</BreadcrumbItem>
 	</Breadcrumb>
 	<div class="flex flex-row flex-wrap gap-4">

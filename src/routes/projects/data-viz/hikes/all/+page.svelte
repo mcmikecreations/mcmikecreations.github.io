@@ -1,4 +1,5 @@
 <script lang="ts">
+	/* eslint-disable @typescript-eslint/no-explicit-any */
 	import type { PageData } from './$types';
 	import AppTitle from '$lib/components/AppTitle.svelte';
 	import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
@@ -51,7 +52,6 @@
 		<BreadcrumbItem href="/" home>Home</BreadcrumbItem>
 		<BreadcrumbItem href="/projects">Projects</BreadcrumbItem>
 		<BreadcrumbItem href="/projects/data-viz">Data Viz</BreadcrumbItem>
-		<BreadcrumbItem href="/projects/data-viz#maps">Hikes</BreadcrumbItem>
 		<BreadcrumbItem>All</BreadcrumbItem>
 	</Breadcrumb>
 	<div class="flex flex-row flex-wrap gap-4">
