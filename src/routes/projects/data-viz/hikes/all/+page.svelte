@@ -8,6 +8,7 @@
 	import { getDistance, getTime } from '../[slug]/build-statistics';
 	import type { Layer } from 'leaflet';
 	import type { Feature, GeoJsonObject } from 'geojson';
+	import Timeline from './Timeline.svelte';
 
 	export let data: PageData;
 
@@ -43,10 +44,6 @@
 
 <AppTitle title="All hikes" />
 
-<svelte:head>
-
-</svelte:head>
-
 <main class="md:px-24 mx-4 2xl:mx-0">
 	<Breadcrumb class="mb-4" aria-label="Route" solid>
 		<BreadcrumbItem href="/" home>Home</BreadcrumbItem>
@@ -56,8 +53,8 @@
 	</Breadcrumb>
 	<div class="flex flex-row flex-wrap gap-4">
 		<article class="flex-1 w-full p-4 bg-gray-50 rounded-lg dark:bg-gray-800 min-w-40">
-			<div class="flex flex-row sm:flex-col flex-wrap gap-4">
-				<div class="prose dark:prose-invert prose-a:text-primary-600 dark:prose-a:text-primary-500">
+			<div class="flex flex-row sm:flex-col flex-wrap gap-4 prose dark:prose-invert prose-a:text-primary-600 dark:prose-a:text-primary-500">
+				<div class="w-full">
 					<ul>
 						<li>Total hikes: {data.totalHikes}</li>
 						<li>Total time: {getTime(data.totalTime)}</li>
@@ -66,6 +63,7 @@
 						<li>Total descent: {getDistance(data.totalDescent)}</li>
 					</ul>
 				</div>
+				<Timeline />
 			</div>
 		</article>
 		<div class="flex-[2] bg-gray-50 rounded-lg overflow-hidden dark:bg-gray-800 min-w-80">
