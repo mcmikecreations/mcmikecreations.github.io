@@ -7,7 +7,7 @@
 	import 'leaflet/dist/leaflet.css';
 	import { getDistance, getTime } from '../[slug]/build-statistics';
 	import type { Layer } from 'leaflet';
-	import type { Feature, GeoJsonObject } from 'geojson';
+	import type { Feature, GeoJsonObject, Geometry } from 'geojson';
 	import Timeline from './Timeline.svelte';
 
 	export let data: PageData;
@@ -16,15 +16,24 @@
 		const L = await import('leaflet');
 		const map = L.map('map').setView([47.694653017305036, 11.799241670256336], 10);
 
+		const isStatic = {
+			isStatic: true,
+			toggle: function() { this.isStatic = !this.isStatic; return this.isStatic; }
+		}
+
 		L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 			maxZoom: 19,
-			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 		}).addTo(map);
+		const randomColor = function(feature : Feature<Geometry, any> | undefined) {
+			return { color: '#' + ((feature?.properties?.id ?? 0) & 0x00FFFFFF).toString(16).padStart(6, '0') }
+		};
+		const staticColor = function() {
+			return { color: '#000', };
+		}
 
-		L.geoJSON(data.features as GeoJsonObject[], {
-			style: function(feature) {
-				return { color: '#' + ((feature?.properties?.id ?? 0) & 0x00FFFFFF).toString(16).padStart(6, '0') }
-			},
+		const hikesLayer = L.geoJSON(data.features as GeoJsonObject[], {
+			style: staticColor,
 			onEachFeature: function(feature: Feature<any, any>, layer: Layer) {
 				if (feature.properties) {
 					layer.bindPopup(
@@ -39,6 +48,31 @@
 				}
 			}
 		}).addTo(map);
+
+		const info = new L.Control({position: 'topright'});
+
+		info.onAdd = function () {
+			const divElement = L.DomUtil.create('div', 'leaflet-control-zoom leaflet-bar');
+
+			const anchorElement = L.DomUtil.create('a', 'text-[22px]', divElement);
+			anchorElement.href = '#';
+			anchorElement.title = 'Toggle colors';
+			anchorElement.role = 'button';
+			anchorElement.ariaLabel = anchorElement.title;
+			anchorElement.ariaDisabled = 'false';
+			anchorElement.onclick = () => {
+				hikesLayer.setStyle(isStatic.toggle() ? staticColor : randomColor);
+				return false;
+			}
+
+			const iconElement = L.DomUtil.create('span', '', anchorElement);
+			iconElement.ariaHidden = 'true';
+			iconElement.innerHTML = '🎨';
+
+			return divElement;
+		};
+
+		info.addTo(map);
 	});
 </script>
 

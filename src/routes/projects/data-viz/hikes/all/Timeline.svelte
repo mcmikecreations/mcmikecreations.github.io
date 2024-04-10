@@ -2,7 +2,7 @@
 	import maps from '$lib/data/hikes.json';
 	import { Popover } from 'flowbite-svelte';
 
-	const years = new Map<string, Map<string, { name: string, day: string, route: string }[]>>;
+	const years = new Map<string, Map<string, { name: string, day: number, route: string }[]>>;
 
 	for (const hike of maps) {
 		const dates = hike.properties.dates;
@@ -10,7 +10,7 @@
 		for (const date of dates) {
 			const year = date.substring(0, 4);
 			const month = date.substring(5, 7);
-			const day = date.substring(8, 10);
+			const day = parseInt(date.substring(8, 10));
 
 			if (!years.has(year)) {
 				years.set(year, new Map([
@@ -33,9 +33,19 @@
 		}
 	}
 
-	const maxHikesPerMonth : number = Math.max(...[...years.values()].flatMap((x) => [...x.values()]).map((x) => x.length));
+	let maxHikesPerMonth = 1;
 
-	function getColor(month) : string {
+	for (const year of years.values()) {
+		for (const month of year.values()) {
+			month.sort((a, b) => a.day - b.day);
+
+			if (month.length > maxHikesPerMonth) {
+				maxHikesPerMonth = month.length;
+			}
+		}
+	}
+
+	function getColor(month : [string, unknown[]]) : string {
 		const rel = month[1].length / maxHikesPerMonth;
 		return `hsl(173deg ${89 * (rel * 0.75 + 0.25)}% ${72 * (rel * 0.6 + 0.4)}%)`;
 	}
@@ -51,7 +61,7 @@
 					<Popover class="text-sm font-light z-[1000]" defaultClass="" triggeredBy="#m{year[0]}{month[0]}">
 						<ul class="list-none !my-2 !mx-2 !pl-0">
 							{#each month[1] as hike}
-								<li>{year[0]}-{month[0]}-{hike.day}: <a href={hike.route}>{hike.name}</a></li>
+								<li>{year[0]}-{month[0]}-{hike.day.toString().padStart(2, '0')}: <a href={hike.route}>{hike.name}</a></li>
 							{/each}
 						</ul>
 					</Popover>

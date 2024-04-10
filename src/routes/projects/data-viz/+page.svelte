@@ -2,6 +2,14 @@
 	import { Card, Heading } from 'flowbite-svelte';
 	import AppTitle from '$lib/components/AppTitle.svelte';
 	import maps from '$lib/data/hikes.json';
+
+	const hikes = [...maps];
+	hikes.sort((a, b) =>
+		a.properties.dates[0] > b.properties.dates[0]
+		? -1
+		: a.properties.dates[0] < b.properties.dates[0]
+			? 1
+			: 0);
 </script>
 
 <AppTitle title="Data Viz" />
@@ -13,7 +21,7 @@
 			<Card href="/projects/data-viz/hikes/all" img="/images/projects/data-viz/hikes/all.jpg">
 				<Heading tag="h3" class="break-words">🚧 All Hikes</Heading>
 			</Card>
-			{#each maps as map}
+			{#each hikes as map}
 				<Card href={map.route} img={map.image}>
 					<Heading tag="h3" class="break-words">{map.name}</Heading>
 				</Card>
