@@ -1150,5 +1150,37 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "⏳ Aiplspitz",
+    "image": "/images/projects/data-viz/hikes/future.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-12-31"],
+      "filePath": "/_projects/data-viz/hikes/geojson/aiplspitz.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Neuhaus to Osterhofen via Aiplspitz (1759 m).",
+    "route": "/projects/data-viz/hikes/aiplspitz",
+    "height": 768,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.68896584339047,
+        "lon": 11.921625137329103
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "aiplspitz.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
