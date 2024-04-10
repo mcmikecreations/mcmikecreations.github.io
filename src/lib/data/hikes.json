@@ -1118,5 +1118,37 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Vorderskopf",
+    "image": "/images/projects/data-viz/hikes/vorderskopf.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2023-09-16"],
+      "filePath": "/_projects/data-viz/hikes/geojson/vorderskopf.json",
+      "fileType": "GeoJSON"
+    },
+    "description": "Hike from Rißtal Landstraße bus stop Aufstieg Tölzer Hütte and back to stop Kaiserhütte via Vorderskopf (1858 m).",
+    "route": "/projects/data-viz/hikes/vorderskopf",
+    "height": 384,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.49440007670227,
+        "lon": 11.449449062347414
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "vorderskopf.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
