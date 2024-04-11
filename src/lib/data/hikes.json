@@ -9,7 +9,8 @@
       "descent": null,
       "dates": ["2024-02-18"],
       "filePath": "/_projects/data-viz/hikes/geojson/seekarkreuz.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Lenggries to Seekarkreuz (1601 m).",
     "route": "/projects/data-viz/hikes/seekarkreuz",
@@ -41,7 +42,8 @@
       "descent": null,
       "dates": ["2024-01-03","2023-09-02"],
       "filePath": "/_projects/data-viz/hikes/geojson/wendelstein.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Osterhofen to Bayrischzell via Wendelstein (1838 m).",
     "route": "/projects/data-viz/hikes/wendelstein",
@@ -73,7 +75,8 @@
       "descent": null,
       "dates": ["2024-03-31"],
       "filePath": "/_projects/data-viz/hikes/geojson/bad_tolz_lenggries.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Bad Tölz to Lenggries via Isar.",
     "route": "/projects/data-viz/hikes/bad-tolz-lenggries",
@@ -105,7 +108,8 @@
       "descent": null,
       "dates": ["2024-03-09"],
       "filePath": "/_projects/data-viz/hikes/geojson/furnas.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Furnas and back via Parque da Grená.",
     "route": "/projects/data-viz/hikes/furnas",
@@ -137,7 +141,8 @@
       "descent": null,
       "dates": ["2024-04-06","2023-08-26"],
       "filePath": "/_projects/data-viz/hikes/geojson/seebergkopf.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Osterhofen to Bayrischzell via Seebergkopf (1538 m).",
     "route": "/projects/data-viz/hikes/seebergkopf",
@@ -169,7 +174,8 @@
       "descent": null,
       "dates": ["2024-02-03"],
       "filePath": "/_projects/data-viz/hikes/geojson/tegernsee.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Tegernsee to Gmund (am Tegernsee) via Bad Wiessee.",
     "route": "/projects/data-viz/hikes/tegernsee",
@@ -201,7 +207,8 @@
       "descent": null,
       "dates": ["2024-01-01","2023-11-18","2023-06-07","2022-06-06","2022-04-10"],
       "filePath": "/_projects/data-viz/hikes/geojson/gindelalmschneid.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Schliersee to Tegernsee via Gindelalmschneid (1335 m).",
     "route": "/projects/data-viz/hikes/gindelalmschneid",
@@ -233,7 +240,8 @@
       "descent": null,
       "dates": ["2023-08-19"],
       "filePath": "/_projects/data-viz/hikes/geojson/laimbachfall.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Kochel am See to Lainbach Wasserfall and back to lake Kochel. <a href=\"https://www.dav-neuland.de/2023/08/zu-den-lainbachwasserfaellen/\">Photo by Helga.</a>",
     "route": "/projects/data-viz/hikes/laimbachfall",
@@ -265,7 +273,8 @@
       "descent": null,
       "dates": ["2023-07-16"],
       "filePath": "/_projects/data-viz/hikes/geojson/herzogstand.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Walchensee to Kochel via Herzogstand (1731 m).",
     "route": "/projects/data-viz/hikes/herzogstand",
@@ -297,7 +306,8 @@
       "descent": null,
       "dates": ["2023-06-10", "2022-09-08"],
       "filePath": "/_projects/data-viz/hikes/geojson/nebelhorn.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Oberstdorf and back via Nebelhorn (2224 m).",
     "route": "/projects/data-viz/hikes/nebelhorn",
@@ -329,7 +339,8 @@
       "descent": null,
       "dates": ["2023-06-28"],
       "filePath": "/_projects/data-viz/hikes/geojson/jenner.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Königssee and back via Jenner (1874 m).",
     "route": "/projects/data-viz/hikes/jenner",
@@ -361,7 +372,8 @@
       "descent": null,
       "dates": ["2023-06-17"],
       "filePath": "/_projects/data-viz/hikes/geojson/bayrischzell_hohenweg.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Bayrischzell and back along the Hohenweg.",
     "route": "/projects/data-viz/hikes/bayrischzell_hohenweg",
@@ -393,7 +405,8 @@
       "descent": null,
       "dates": ["2024-03-30", "2023-04-22"],
       "filePath": "/_projects/data-viz/hikes/geojson/starnberg_tutzing.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Starnberg to Tutzing along Starnberger See.",
     "route": "/projects/data-viz/hikes/starnberg_tutzing",
@@ -425,7 +438,8 @@
       "descent": null,
       "dates": ["2022-05-19"],
       "filePath": "/_projects/data-viz/hikes/geojson/feldafing_tutzing.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Feldafing to Tutzing along the hillside.",
     "route": "/projects/data-viz/hikes/feldafing_tutzing",
@@ -457,7 +471,8 @@
       "descent": null,
       "dates": ["2023-04-29"],
       "filePath": "/_projects/data-viz/hikes/geojson/starnberg_munsing.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Starnberg to Munsing along Starnberger See.",
     "route": "/projects/data-viz/hikes/starnberg_munsing",
@@ -489,7 +504,8 @@
       "descent": null,
       "dates": ["2023-03-04"],
       "filePath": "/_projects/data-viz/hikes/geojson/kegon.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Okunikko Yumoto Onsen source (奥日光湯元温泉源泉) to the Kegon Waterfall (華厳滝) via Lake Chūzenji (中禅寺湖).",
     "route": "/projects/data-viz/hikes/kegon",
@@ -521,7 +537,8 @@
       "descent": null,
       "dates": ["2023-03-25"],
       "filePath": "/_projects/data-viz/hikes/geojson/herrsching_andechs.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Herrsching to Kloster Andechs.",
     "route": "/projects/data-viz/hikes/herrsching_andechs",
@@ -553,7 +570,8 @@
       "descent": null,
       "dates": ["2023-02-18"],
       "filePath": "/_projects/data-viz/hikes/geojson/takao.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Takaosanguchi Station (高尾山口駅) and back via Takao (高尾山) (599 m).",
     "route": "/projects/data-viz/hikes/takao",
@@ -585,7 +603,8 @@
       "descent": null,
       "dates": ["2023-02-26"],
       "filePath": "/_projects/data-viz/hikes/geojson/nokogiri.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Nokogiriyama Ropeway Mountain peak station (鋸山山頂駅) to Hota Station (保田駅) via the seaside.",
     "route": "/projects/data-viz/hikes/nokogiri",
@@ -617,7 +636,8 @@
       "descent": null,
       "dates": ["2022-12-02"],
       "filePath": "/_projects/data-viz/hikes/geojson/oyama.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Ryoben falls (良弁滝) and back via Oyama (大山).",
     "route": "/projects/data-viz/hikes/oyama",
@@ -649,7 +669,8 @@
       "descent": null,
       "dates": ["2022-12-07"],
       "filePath": "/_projects/data-viz/hikes/geojson/miura.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Misakiguchi Station (三崎口駅) to Jogashima Lighthouse (城ヶ島灯台) via the Miura (三浦市) seaside.",
     "route": "/projects/data-viz/hikes/miura",
@@ -681,7 +702,8 @@
       "descent": null,
       "dates": ["2022-11-04"],
       "filePath": "/_projects/data-viz/hikes/geojson/fuji.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Fujisan 5th Station (富士山五合目) to the public toilet near the toll gate (料金所下公衆トイレ), because the road was closed for the night, via Fujisan (富士山) (3776 m) 8.5th Station Goraikokan (御来光館) (3450 m).",
     "route": "/projects/data-viz/hikes/fuji",
@@ -713,7 +735,8 @@
       "descent": null,
       "dates": ["2023-12-09"],
       "filePath": "/_projects/data-viz/hikes/geojson/josefsthaler_wasserfall.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Schliersee to Neuhaus via the Josefstaler Wasserfall.",
     "route": "/projects/data-viz/hikes/josefsthaler_wasserfall",
@@ -745,7 +768,8 @@
       "descent": null,
       "dates": ["2023-11-25"],
       "filePath": "/_projects/data-viz/hikes/geojson/tegernsee_rottachfall.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Tegernsee and back via Rottach Wasserfall.",
     "route": "/projects/data-viz/hikes/tegernsee_rottachfall",
@@ -777,7 +801,8 @@
       "descent": null,
       "dates": ["2023-10-07"],
       "filePath": "/_projects/data-viz/hikes/geojson/himmelschrofen.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Oberstdorf and back via Himmelschrofen (1790 m).",
     "route": "/projects/data-viz/hikes/himmelschrofen",
@@ -809,7 +834,8 @@
       "descent": null,
       "dates": ["2023-10-21"],
       "filePath": "/_projects/data-viz/hikes/geojson/wank.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Garmisch and back via Wank (1780 m).",
     "route": "/projects/data-viz/hikes/wank",
@@ -841,7 +867,8 @@
       "descent": null,
       "dates": ["2023-10-28"],
       "filePath": "/_projects/data-viz/hikes/geojson/kramerspitz.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Garmisch and back via Kramerspitz (1985 m).",
     "route": "/projects/data-viz/hikes/kramerspitz",
@@ -873,7 +900,8 @@
       "descent": null,
       "dates": ["2023-10-29", "2022-08-16"],
       "filePath": "/_projects/data-viz/hikes/geojson/eibsee.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike around Eibsee.",
     "route": "/projects/data-viz/hikes/eibsee",
@@ -905,7 +933,8 @@
       "descent": null,
       "dates": ["2023-09-09"],
       "filePath": "/_projects/data-viz/hikes/geojson/jochberg.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Kochel am See and back via Sonnenspitz (1269 m) and Jochberg (1565 m). Shorter route was closed.",
     "route": "/projects/data-viz/hikes/jochberg",
@@ -937,7 +966,8 @@
       "descent": null,
       "dates": ["2023-09-30"],
       "filePath": "/_projects/data-viz/hikes/geojson/riefenkopf.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Oberstdorf and back via Riefenkopf (1749 m) and Hahnenköpfle (1735 m).",
     "route": "/projects/data-viz/hikes/riefenkopf",
@@ -969,7 +999,8 @@
       "descent": null,
       "dates": ["2023-07-06"],
       "filePath": "/_projects/data-viz/hikes/geojson/tegelberg.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Neuschwanstein to Füssen via Tegelberg (1700 m).",
     "route": "/projects/data-viz/hikes/tegelberg",
@@ -1001,7 +1032,8 @@
       "descent": null,
       "dates": ["2022-08-22"],
       "filePath": "/_projects/data-viz/hikes/geojson/partnachklamm.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Garmisch and back via Partnachklamm.",
     "route": "/projects/data-viz/hikes/partnachklamm",
@@ -1033,7 +1065,8 @@
       "descent": null,
       "dates": ["2022-11-30"],
       "filePath": "/_projects/data-viz/hikes/geojson/miyagase.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Aikawa Bridge (愛川大橋) and back via the Miyagase Dam (宮ヶ瀬ダム).",
     "route": "/projects/data-viz/hikes/miyagase",
@@ -1065,7 +1098,8 @@
       "descent": null,
       "dates": ["2022-06-18"],
       "filePath": "/_projects/data-viz/hikes/geojson/murnau.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Murnau am Staffelsee and back via the Münter-Haus museum.",
     "route": "/projects/data-viz/hikes/murnau",
@@ -1097,7 +1131,8 @@
       "descent": null,
       "dates": ["2022-03-22"],
       "filePath": "/_projects/data-viz/hikes/geojson/monsanto.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from downtown Lisbon to Belem via Panorâmico de Monsanto.",
     "route": "/projects/data-viz/hikes/monsanto",
@@ -1129,7 +1164,8 @@
       "descent": null,
       "dates": ["2023-09-16"],
       "filePath": "/_projects/data-viz/hikes/geojson/vorderskopf.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": false
     },
     "description": "Hike from Rißtal Landstraße bus stop Aufstieg Tölzer Hütte and back to stop Kaiserhütte via Vorderskopf (1858 m).",
     "route": "/projects/data-viz/hikes/vorderskopf",
@@ -1152,7 +1188,7 @@
     "features": null
   },
   {
-    "name": "⏳ Aiplspitz",
+    "name": "Aiplspitz",
     "image": "/images/projects/data-viz/hikes/future.jpg",
     "properties": {
       "distance": null,
@@ -1161,7 +1197,8 @@
       "descent": null,
       "dates": ["2024-12-31"],
       "filePath": "/_projects/data-viz/hikes/geojson/aiplspitz.json",
-      "fileType": "GeoJSON"
+      "fileType": "GeoJSON",
+      "draft": true
     },
     "description": "Hike from Neuhaus to Osterhofen via Aiplspitz (1759 m).",
     "route": "/projects/data-viz/hikes/aiplspitz",

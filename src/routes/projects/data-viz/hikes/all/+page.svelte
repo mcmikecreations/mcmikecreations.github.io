@@ -26,10 +26,16 @@
 			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 		}).addTo(map);
 		const randomColor = function(feature : Feature<Geometry, any> | undefined) {
-			return { color: '#' + ((feature?.properties?.id ?? 0) & 0x00FFFFFF).toString(16).padStart(6, '0') }
+			return {
+				color: '#' + ((feature?.properties?.id ?? 0) & 0x00FFFFFF).toString(16).padStart(6, '0'),
+				dashArray: feature?.properties?.draft === true ? '20, 20' : undefined,
+			}
 		};
-		const staticColor = function() {
-			return { color: '#000', };
+		const staticColor = function(feature : Feature<Geometry, any> | undefined) {
+			return {
+				color: '#000',
+				dashArray: feature?.properties?.draft === true ? '20, 20' : undefined,
+			};
 		}
 
 		const hikesLayer = L.geoJSON(data.features as GeoJsonObject[], {

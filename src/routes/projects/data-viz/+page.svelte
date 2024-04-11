@@ -23,7 +23,7 @@
 			</Card>
 			{#each hikes as map}
 				<Card href={map.route} img={map.image}>
-					<Heading tag="h3" class="break-words">{map.name}</Heading>
+					<Heading tag="h3" class="break-words">{(map.properties.draft ? '⏳ ' : '') + map.name}</Heading>
 				</Card>
 			{/each}
 		</div>

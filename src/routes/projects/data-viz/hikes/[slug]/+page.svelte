@@ -250,7 +250,7 @@
 		<BreadcrumbItem href="/" home>Home</BreadcrumbItem>
 		<BreadcrumbItem href="/projects">Projects</BreadcrumbItem>
 		<BreadcrumbItem href="/projects/data-viz">Data Viz</BreadcrumbItem>
-		<BreadcrumbItem>{data.map.name}</BreadcrumbItem>
+		<BreadcrumbItem>{(data.map.properties.draft ? '⏳ ' : '') + data.map.name}</BreadcrumbItem>
 	</Breadcrumb>
 	<div class="flex flex-row flex-wrap gap-4">
 		<article class="flex-1 w-full p-4 bg-gray-50 rounded-lg dark:bg-gray-800 min-w-40">

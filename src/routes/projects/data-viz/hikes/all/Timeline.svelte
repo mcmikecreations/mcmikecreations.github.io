@@ -29,7 +29,7 @@
 				]));
 			}
 
-			years.get(year)!.get(month)!.push({ name: hike.name, day: day, route: hike.route });
+			years.get(year)!.get(month)!.push({ name: (hike.properties.draft ? '⏳ ' : '') + hike.name, day: day, route: hike.route });
 		}
 	}
 
