@@ -28,13 +28,13 @@
 		const randomColor = function(feature : Feature<Geometry, any> | undefined) {
 			return {
 				color: '#' + ((feature?.properties?.id ?? 0) & 0x00FFFFFF).toString(16).padStart(6, '0'),
-				dashArray: feature?.properties?.draft === true ? '20, 20' : undefined,
+				dashArray: feature?.properties?.draft === true ? '5, 5' : undefined,
 			}
 		};
 		const staticColor = function(feature : Feature<Geometry, any> | undefined) {
 			return {
 				color: '#000',
-				dashArray: feature?.properties?.draft === true ? '20, 20' : undefined,
+				dashArray: feature?.properties?.draft === true ? '5, 5' : undefined,
 			};
 		}
 

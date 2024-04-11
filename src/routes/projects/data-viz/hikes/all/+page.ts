@@ -28,16 +28,19 @@ export const load: PageLoad = async ({ fetch }) => {
 		};
 
 		for (const map of maps) {
-			const layer = getMapFeatures(map).find((x) => x.type === 'Geometry') as Feature;
+			const layer = getMapFeatures(map).find((x : Feature) => x.type === 'Geometry') as Feature;
 			const geometryData = layer.data as GeometryData;
 			const geometry = await loadGeometry(fetch, geometryData);
 
 			const properties = loadProperties(map, geometry);
-			result.totalHikes += properties.dates.length;
-			result.totalDistance += (properties.distance ?? 0) * properties.dates.length;
-			result.totalTime += (properties.duration ?? 0) * properties.dates.length;
-			result.totalAscent += (properties.ascent ?? 0) * properties.dates.length;
-			result.totalDescent += (properties.descent ?? 0) * properties.dates.length;
+
+			if (map.properties?.draft !== true) {
+				result.totalHikes += properties.dates.length;
+				result.totalDistance += (properties.distance ?? 0) * properties.dates.length;
+				result.totalTime += (properties.duration ?? 0) * properties.dates.length;
+				result.totalAscent += (properties.ascent ?? 0) * properties.dates.length;
+				result.totalDescent += (properties.descent ?? 0) * properties.dates.length;
+			}
 
 			geometry['properties']['id'] = hash(map.route);
 			geometry['properties']['route'] = map.route;
