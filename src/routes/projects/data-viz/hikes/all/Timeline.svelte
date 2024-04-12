@@ -8,7 +8,7 @@
 		if (hike.properties.draft === true) {
 			continue;
 		}
-		
+
 		const dates = hike.properties.dates;
 
 		for (const date of dates) {

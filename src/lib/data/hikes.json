@@ -1219,5 +1219,104 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Älpelesattel",
+    "image": "/images/projects/data-viz/hikes/future.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-12-31"],
+      "filePath": "/_projects/data-viz/hikes/geojson/alpelesattel.json",
+      "fileType": "GeoJSON",
+      "draft": true
+    },
+    "description": "Hike from Bayrischzell and back via Älpelesattel (1772 m). An extended version of <a href=\"https://www.alltrails.com/explore/trail/germany/bavaria/durch-das-oytal\">this</a>.",
+    "route": "/projects/data-viz/hikes/alpelesattel",
+    "height": 768,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.38033557132068,
+        "lon": 10.323028564453127
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "alpelesattel.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Schrecksee",
+    "image": "/images/projects/data-viz/hikes/future.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-12-31"],
+      "filePath": "/_projects/data-viz/hikes/geojson/schrecksee.json",
+      "fileType": "GeoJSON",
+      "draft": true
+    },
+    "description": "Hike from Auele stop near Bad Hindelang to Vilalpsee bus stop via Schrecksee, Kirchdachsattel (1925 m), and Hintere Schafwanne (1957 m). An extended version of <a href=\"https://www.alltrails.com/explore/trail/germany/bavaria/schrecksee-ab-auele\">this</a>.",
+    "route": "/projects/data-viz/hikes/schrecksee",
+    "height": 512,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.45303334256455,
+        "lon": 10.478081677535556
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "schrecksee.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Branderschrofen",
+    "image": "/images/projects/data-viz/hikes/future.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-12-31"],
+      "filePath": "/_projects/data-viz/hikes/geojson/branderschrofen.json",
+      "fileType": "GeoJSON",
+      "draft": true
+    },
+    "description": "Hike from Tegelbergbahn near Schwangau to Neuschwanstein via Branderschrofen (1881 m). An extended version of <a href=\"https://www.alltrails.com/explore/trail/germany/bavaria/rohrkopf-und-tegelberg\">this</a>.",
+    "route": "/projects/data-viz/hikes/branderschrofen",
+    "height": 384,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.55810970349157,
+        "lon": 10.766301155090334
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "branderschrofen.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
