@@ -1318,5 +1318,104 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Klammspitz",
+    "image": "/images/projects/data-viz/hikes/future.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-12-31"],
+      "filePath": "/_projects/data-viz/hikes/geojson/klammspitz.json",
+      "fileType": "GeoJSON",
+      "draft": true
+    },
+    "description": "Hike from Castle Linderhof and back via Klammspitz (1924 m). An extended version of <a href=\"https://www.alltrails.com/explore/trail/germany/bavaria/brunnenkopfhutte-und-grosser-klammspitz\">this</a>.",
+    "route": "/projects/data-viz/hikes/klammspitz",
+    "height": 384,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.57626515499256,
+        "lon": 10.933413505554201
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "klammspitz.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Kranzberg",
+    "image": "/images/projects/data-viz/hikes/future.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-12-31"],
+      "filePath": "/_projects/data-viz/hikes/geojson/kranzberg.json",
+      "fileType": "GeoJSON",
+      "draft": true
+    },
+    "description": "Hike from Mittenwald and back via Kranzberg (1391 m). An extended version of <a href=\"https://www.alltrails.com/explore/trail/germany/bavaria/hoher-kranzberg-und-ferchensee-ab-mittenwald\">this</a>.",
+    "route": "/projects/data-viz/hikes/kranzberg",
+    "height": 384,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.44440120899903,
+        "lon": 11.238842010498049
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "kranzberg.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Rotwand",
+    "image": "/images/projects/data-viz/hikes/future.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-12-31"],
+      "filePath": "/_projects/data-viz/hikes/geojson/rotwand.json",
+      "fileType": "GeoJSON",
+      "draft": true
+    },
+    "description": "Hike from Mittenwald and back via Rotwand (1884 m). An extended version of <a href=\"https://www.alltrails.com/explore/trail/germany/bavaria/spitzingsee-taubenstein-rotwandhaus\">this</a>.",
+    "route": "/projects/data-viz/hikes/rotwand",
+    "height": 512,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.65688955503544,
+        "lon": 11.907463073730469
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "rotwand.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
