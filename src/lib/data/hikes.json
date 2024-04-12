@@ -1549,5 +1549,38 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Altmühltal Panoramaweg",
+    "image": "/images/projects/data-viz/hikes/future.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-04-14"],
+      "filePath": "/_projects/data-viz/hikes/geojson/altmuhltal_panoramaweg.json",
+      "fileType": "GeoJSON",
+      "draft": true
+    },
+    "description": "Hike from Treuchtlingen to Pappenheim via Altmühltal Panoramaweg. An extended version of <a href=\"https://www.wir-entdecken-bayern.de/ausflugsziele/altmuehltaweg-pappenheim-treuchtlingen\">this</a>.",
+    "route": "/projects/data-viz/hikes/altmuhltal_panoramaweg",
+    "height": 512,
+    "standardFeatures": {
+      "origin": {
+        "lat": 48.94657521916045,
+        "lon": 10.938777923583986
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "altmuhltal_panoramaweg.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
