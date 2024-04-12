@@ -1417,5 +1417,137 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Schärtenspitze",
+    "image": "/images/projects/data-viz/hikes/future.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-12-31"],
+      "filePath": "/_projects/data-viz/hikes/geojson/schartenspitze.json",
+      "fileType": "GeoJSON",
+      "draft": true
+    },
+    "description": "Hike from Hintersee to Ramsau bei Berchtesgaden via Schärtenspitze (2153 m). An extended version of <a href=\"https://www.alltrails.com/explore/trail/germany/bavaria/auf-die-schartenspitze-uber-die-blaueishutte\">this</a>.",
+    "route": "/projects/data-viz/hikes/schartenspitze",
+    "height": 384,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.59429854945577,
+        "lon": 12.879066467285158
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "schartenspitze.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Wimbachklamm",
+    "image": "/images/projects/data-viz/hikes/future.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-12-31"],
+      "filePath": "/_projects/data-viz/hikes/geojson/wimbachklamm.json",
+      "fileType": "GeoJSON",
+      "draft": true
+    },
+    "description": "Hike from Wimbachbrücke and back via Wimbachklamm and Wimbachschloss (930 m). An extended version of <a href=\"https://www.alltrails.com/explore/trail/germany/bavaria/wanderung-durch-die-wimbachklamm\">this</a>.",
+    "route": "/projects/data-viz/hikes/wimbachklamm",
+    "height": 384,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.58879945676844,
+        "lon": 12.911553382873537
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "wimbachklamm.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "St. Bartholomä Eiskapelle",
+    "image": "/images/projects/data-viz/hikes/future.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-12-31"],
+      "filePath": "/_projects/data-viz/hikes/geojson/bartholoma_eiskapelle.json",
+      "fileType": "GeoJSON",
+      "draft": true
+    },
+    "description": "Hike from St. Bartholomä and back via the Eiskapelle. An extended version of <a href=\"https://www.alltrails.com/explore/trail/germany/bavaria/von-sankt-bartholoma-zur-eiskapelle-am-konigssee\">this</a>.",
+    "route": "/projects/data-viz/hikes/bartholoma_eiskapelle",
+    "height": 384,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.544249993378145,
+        "lon": 12.952623367309572
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "bartholoma_eiskapelle.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Röthbachfall",
+    "image": "/images/projects/data-viz/hikes/future.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-12-31"],
+      "filePath": "/_projects/data-viz/hikes/geojson/rothbachfall.json",
+      "fileType": "GeoJSON",
+      "draft": true
+    },
+    "description": "Hike from Salet and back via Halsköpfl (1718 m) and Röthbachfall. An extended version of <a href=\"https://www.alltrails.com/explore/trail/germany/bavaria/sagerecksteig-halskopfl-wasserberg\">this</a>.",
+    "route": "/projects/data-viz/hikes/rothbachfall",
+    "height": 384,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.511055796571725,
+        "lon": 12.986741065979004
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "rothbachfall.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
