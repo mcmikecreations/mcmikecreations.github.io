@@ -3,7 +3,7 @@
 	import AppTitle from '$lib/components/AppTitle.svelte';
 	import maps from '$lib/data/hikes.json';
 
-	const hikes = [...maps.filter((x) => x.properties?.draft !== true)];
+	const hikes = [...maps];
 	hikes.sort((a, b) =>
 		a.properties.dates[0] > b.properties.dates[0]
 		? -1
@@ -22,7 +22,7 @@
 				<Heading tag="h3" class="break-words">🚧 All Hikes</Heading>
 			</Card>
 			{#each hikes as map}
-				<Card href={map.route} img={map.image.replace('/hikes/', '/hikes/thumb/')}>
+				<Card href={map.route} img={map.image.replace('/hikes/', '/hikes/thumb/')} class={map.properties?.draft === true ? 'hidden' : ''}>
 					<Heading tag="h3" class="break-words">{(map.properties.draft ? '⏳ ' : '') + map.name}</Heading>
 				</Card>
 			{/each}
