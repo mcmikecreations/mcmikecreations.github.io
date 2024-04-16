@@ -1582,5 +1582,38 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Murnau - Uffing",
+    "image": "/images/projects/data-viz/hikes/murnau_uffing.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-04-14"],
+      "filePath": "/_projects/data-viz/hikes/geojson/murnau_uffing.json",
+      "fileType": "GeoJSON",
+      "draft": false
+    },
+    "description": "Hike from Murnau to Uffing via Staffelsee Panoramaweg. The other way around, starting at Uffing, is more beautiful.",
+    "route": "/projects/data-viz/hikes/murnau_uffing",
+    "height": 512,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.69913366604341,
+        "lon": 11.175413131713867
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "murnau_uffing.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
