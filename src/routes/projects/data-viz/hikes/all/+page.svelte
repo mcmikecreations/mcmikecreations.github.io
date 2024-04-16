@@ -13,8 +13,11 @@
 	export let data: PageData;
 
 	onMount(async () => {
-		const L = await import('leaflet');
-		const map = L.map('map').setView([47.694653017305036, 11.799241670256336], 10);
+		const { L } = await import('$lib/components/leaflet.almostover.js');
+		const map = L.map('map', {
+			almostOnMouseMove: false,
+			almostDistance: 15,
+		}).setView([47.694653017305036, 11.799241670256336], 10);
 
 		const isStatic = {
 			isStatic: true,
@@ -54,6 +57,13 @@
 				}
 			}
 		}).addTo(map);
+
+		map.almostOver.addLayer(hikesLayer);
+		map.on('almost:click', function (e) {
+			// noinspection JSDeprecatedSymbols
+			const layer = e.layer as Layer;
+			layer.openPopup(e.latlng);
+		});
 
 		const info = new L.Control({position: 'topright'});
 
