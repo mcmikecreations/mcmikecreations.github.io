@@ -1354,16 +1354,16 @@
   },
   {
     "name": "Kranzberg",
-    "image": "/images/projects/data-viz/hikes/future.jpg",
+    "image": "/images/projects/data-viz/hikes/kranzberg.jpg",
     "properties": {
       "distance": null,
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-12-31"],
+      "dates": ["2024-05-01"],
       "filePath": "/_projects/data-viz/hikes/geojson/kranzberg.json",
       "fileType": "GeoJSON",
-      "draft": true
+      "draft": false
     },
     "description": "Hike from Mittenwald and back via Kranzberg (1391 m). An extended version of <a href=\"https://www.alltrails.com/explore/trail/germany/bavaria/hoher-kranzberg-und-ferchensee-ab-mittenwald\">this</a>.",
     "route": "/projects/data-viz/hikes/kranzberg",
