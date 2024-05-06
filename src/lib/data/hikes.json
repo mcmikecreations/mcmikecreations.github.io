@@ -1681,5 +1681,38 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Kochel Walchenseekraftwerk",
+    "image": "/images/projects/data-viz/hikes/kochel_hydropower.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-05-06"],
+      "filePath": "/_projects/data-viz/hikes/geojson/kochel_hydropower.json",
+      "fileType": "GeoJSON",
+      "draft": false
+    },
+    "description": "Hike from Walchenseekraftwerk down to the Kesselbach waterfalls and around Kochelsee.",
+    "route": "/projects/data-viz/hikes/kochel_hydropower",
+    "height": 512,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.64694479333218,
+        "lon": 11.341323852539064
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "kochel_hydropower.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
