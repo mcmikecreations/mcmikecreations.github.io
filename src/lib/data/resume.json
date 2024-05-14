@@ -254,6 +254,12 @@
   ],
   "certificates": [
     {
+      "name": "DevOps Crash Course certificate",
+      "issuer": "SoftServe | Academy",
+      "date": "2024-05-03",
+      "url": "https://drive.google.com/file/d/1a8AmuhVa3SGPmmo6cybngoWNEcyaeKfA/view?usp=sharing"
+    },
+    {
       "name": "Onboarding Program (OPB2403) Elective Module: Designing and Grading Exams certificate",
       "issuer": "ProLehre | Media and Didactics",
       "date": "2024-04-11",

@@ -1714,5 +1714,38 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Jochberg",
+    "image": "/images/projects/data-viz/hikes/jochberg_only.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-05-11"],
+      "filePath": "/_projects/data-viz/hikes/geojson/jochberg_only.json",
+      "fileType": "GeoJSON",
+      "draft": false
+    },
+    "description": "Hike from Kesselberg to Urfeld via Jochberg (1565 m).",
+    "route": "/projects/data-viz/hikes/jochberg_only",
+    "height": 384,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.62195450772335,
+        "lon": 11.357999129116743
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "jochberg_only.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
