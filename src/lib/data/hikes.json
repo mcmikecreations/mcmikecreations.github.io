@@ -1321,16 +1321,16 @@
   },
   {
     "name": "Klammspitz",
-    "image": "/images/projects/data-viz/hikes/future.jpg",
+    "image": "/images/projects/data-viz/hikes/klammspitz.jpg",
     "properties": {
       "distance": null,
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-12-31"],
+      "dates": ["2024-05-20"],
       "filePath": "/_projects/data-viz/hikes/geojson/klammspitz.json",
       "fileType": "GeoJSON",
-      "draft": true
+      "draft": false
     },
     "description": "Hike from Castle Linderhof and back via Klammspitz (1924 m). An extended version of <a href=\"https://www.alltrails.com/explore/trail/germany/bavaria/brunnenkopfhutte-und-grosser-klammspitz\">this</a>.",
     "route": "/projects/data-viz/hikes/klammspitz",
