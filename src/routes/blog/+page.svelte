@@ -173,6 +173,7 @@
 				<a
 					class="flex flex-col md:flex-row w-full md:min-h-48 rounded-lg shadow-lg bg-white dark:bg-gray-800"
 					href={p.url}
+					data-sveltekit-reload
 				>
 					<div class="relative block md:max-h-48 md:min-h-48 md:min-w-64 !aspect-crt overflow-hidden">
 						<div class="w-full md:w-auto md:h-full aspect-crt flex justify-center items-center">

@@ -3,6 +3,7 @@
 	import SvelteMarkdown from 'svelte-markdown';
 	import AppTitle from '$lib/components/AppTitle.svelte';
 	import DefaultCode from '$lib/renderers/DefaultCode.svelte';
+	import DefaultLink from '$lib/renderers/DefaultLink.svelte';
 	import { DarkModeLinker } from '$lib/renderers';
 	import ToTopButton from '$lib/components/ToTopButton.svelte';
 
@@ -31,7 +32,7 @@
 				</div>
 			{/if}
 		</div>
-		<SvelteMarkdown source={data.post.content} renderers={{ code: DefaultCode, }} />
+		<SvelteMarkdown source={data.post.content} renderers={{ code: DefaultCode, link: DefaultLink }} />
 	</div>
 </article>
 
