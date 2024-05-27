@@ -168,5 +168,16 @@ styling and preset child element types. A Gallery is just a pre-made grid or
 a nested list. A Footer with links is an enhanced bottom Navbar. A BottomNav is
 a Navbar with icons. The list goes on and on.
 
+### Blogs
+
+Another issue I had was with the blogs. The `markdown-svelte` package has some
+peculiarities. First, custom components need to be defined to render different
+markdown elements. The default components are difficult to style (unless
+wrapped with `prose` from `tailwind`), especially if compatibility with other
+framework components is desired. Second, due to the hydration step of
+client-side rendering, routing, and data preloading, inline JavaScript inside
+markdown doesn't work as intended. I found a [solution on Reddit](https://www.reddit.com/r/sveltejs/comments/16b1ipm/comment/jzapmyh/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) to perform
+full-page navigation instead of preloading.
+
 Regardless, I think the website came together nicely in the end. I
 thank you for getting this far in the post and wish you all the best.
