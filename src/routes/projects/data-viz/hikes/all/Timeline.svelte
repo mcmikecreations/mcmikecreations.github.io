@@ -5,7 +5,7 @@
 	const years = new Map<string, Map<string, { name: string, day: number, route: string }[]>>;
 
 	for (const hike of maps) {
-		if (hike.properties.draft === true) {
+		if (hike.properties?.draft === true || hike.properties?.hidden === true) {
 			continue;
 		}
 

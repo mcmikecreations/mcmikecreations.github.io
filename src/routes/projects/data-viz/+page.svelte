@@ -3,7 +3,7 @@
 	import AppTitle from '$lib/components/AppTitle.svelte';
 	import maps from '$lib/data/hikes.json';
 
-	const hikes = [...maps];
+	const hikes = [...maps.filter(x => x.properties?.hidden !== true)];
 	hikes.sort((a, b) =>
 		a.properties.dates[0] > b.properties.dates[0]
 		? -1

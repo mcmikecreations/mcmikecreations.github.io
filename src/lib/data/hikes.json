@@ -1747,5 +1747,39 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Blaubeuren",
+    "image": "/images/projects/data-viz/hikes/blaubeuren.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-05-26"],
+      "filePath": "/_projects/data-viz/hikes/geojson/blaubeuren.json",
+      "fileType": "GeoJSON",
+      "draft": false,
+      "hidden": true
+    },
+    "description": "Hike from Blaubeuren to the Günzelburg ruins and back.",
+    "route": "/projects/data-viz/hikes/blaubeuren",
+    "height": 384,
+    "standardFeatures": {
+      "origin": {
+        "lat": 48.410801560200944,
+        "lon": 9.77989196777344
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "blaubeuren.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]

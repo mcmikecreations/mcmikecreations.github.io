@@ -28,6 +28,10 @@ export const load: PageLoad = async ({ fetch }) => {
 		};
 
 		for (const map of maps) {
+			if (map.properties?.hidden === true) {
+				continue;
+			}
+
 			const layer = getMapFeatures(map).find((x : Feature) => x.type === 'Geometry') as Feature;
 			const geometryData = layer.data as GeometryData;
 			const geometry = await loadGeometry(fetch, geometryData);
