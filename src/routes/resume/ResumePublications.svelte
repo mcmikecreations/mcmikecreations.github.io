@@ -12,7 +12,7 @@
 					<span>{p.name}</span>
 					<span>{p.publisher},</span>
 					<span>{new Date(p.releaseDate).toLocaleDateString('en-us', { year:"numeric", month:"short" })},</span>
-					<A href={p.url}>{p.summary}</A>
+					<A href={p.url} target="_blank">{p.summary}</A>
 				</P>
 			</Li>
 		{/each}

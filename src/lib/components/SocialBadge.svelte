@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Button, Span } from 'flowbite-svelte';
+	import { A, Button, Span } from 'flowbite-svelte';
 	import resume from '$lib/data/resume.json';
 	import { twMerge } from 'tailwind-merge';
 
@@ -19,7 +19,7 @@
 </script>
 
 <div class="flex flex-row gap-4 content-end items-center">
-	<Button aria-label={innerProfile?.network} href={innerProfile?.url} color="alternative" class={twMerge(padding, size)} pill outline>
+	<Button aria-label={innerProfile?.network} href={innerProfile?.url} target="_blank" color="alternative" class={twMerge(padding, size)} pill outline>
 		<slot />
 	</Button>
 	{#if captioned}<Span class="text-md xl:text-xl">{innerProfile?.network}</Span>{/if}

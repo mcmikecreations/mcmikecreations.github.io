@@ -13,7 +13,7 @@
 <main class="mx-4 2xl:mx-0 mb-8 md:px-24">
 	<article class="flex-grow prose dark:prose-invert prose-a:text-primary-600 dark:prose-a:text-primary-500 md:prose-lg lg:prose-xl min-h-80 max-w-none">
 		{#if data.project.image}
-			<div class="sm:float-start me-4">
+			<div class="sm:float-end me-4">
 				<ProjectImage p={data.project} class="size-80 mx-auto" />
 			</div>
 		{/if}

@@ -12,7 +12,7 @@
 					<span>{p.name},</span>
 					<span>delivered by {p.issuer},</span>
 					<span>{new Date(p.date).toLocaleDateString('en-us', { year:"numeric", month:"short" })},</span>
-					<A href={p.url}>[Online Access]</A>
+					<A href={p.url} target="_blank">[Online Access]</A>
 				</Li>
 			{/each}
 		</List>

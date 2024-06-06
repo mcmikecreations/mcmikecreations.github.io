@@ -23,7 +23,7 @@
 						>{item.description}</A>
 					{/if}
 					<P>
-						<A href={item.url} class="text-sm">{item.institution}</A>
+						<A href={item.url} target="_blank" class="text-sm">{item.institution}</A>
 						<span>·</span>
 						<span class="text-sm">{item.location}</span>
 					</P>
@@ -50,7 +50,7 @@
 						>{item.description}</A>
 					{/if}
 					<P>
-						<A href={item.url} class="text-sm">{item.name}</A>
+						<A href={item.url} target="_blank" class="text-sm">{item.name}</A>
 						<span>·</span>
 						<span class="text-sm">{item.location}</span>
 					</P>
