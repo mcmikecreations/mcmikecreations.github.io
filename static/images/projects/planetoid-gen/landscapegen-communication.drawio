@@ -1,0 +1,62 @@
+<mxfile host="app.diagrams.net" modified="2024-06-10T17:04:50.636Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0" etag="X7Y-w0MIi54xY-ndIaMM" version="24.5.2" type="device">
+  <diagram name="Page-1" id="8BJoRxZuPCJ_-CAz5P3M">
+    <mxGraphModel dx="574" dy="310" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="iDrvmBQxM6RkV91wcPEJ-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="iDrvmBQxM6RkV91wcPEJ-3" target="iDrvmBQxM6RkV91wcPEJ-19" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="30" y="30" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iDrvmBQxM6RkV91wcPEJ-7" value="Chunk&lt;br&gt;Containers&lt;br&gt;" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];html=1;" parent="iDrvmBQxM6RkV91wcPEJ-6" vertex="1" connectable="0">
+          <mxGeometry x="0.1407" relative="1" as="geometry">
+            <mxPoint x="35" y="17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iDrvmBQxM6RkV91wcPEJ-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" parent="1" source="iDrvmBQxM6RkV91wcPEJ-3" target="iDrvmBQxM6RkV91wcPEJ-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iDrvmBQxM6RkV91wcPEJ-18" value="Caching&lt;br&gt;" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];html=1;" parent="iDrvmBQxM6RkV91wcPEJ-17" vertex="1" connectable="0">
+          <mxGeometry x="0.3058" y="1" relative="1" as="geometry">
+            <mxPoint x="-26" y="13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iDrvmBQxM6RkV91wcPEJ-3" value="Worker" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="100" y="20" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iDrvmBQxM6RkV91wcPEJ-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="iDrvmBQxM6RkV91wcPEJ-8" target="iDrvmBQxM6RkV91wcPEJ-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iDrvmBQxM6RkV91wcPEJ-11" value="Agent&lt;br&gt;retrieval" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=default;html=1;" parent="iDrvmBQxM6RkV91wcPEJ-10" vertex="1" connectable="0">
+          <mxGeometry x="-0.1217" y="1" relative="1" as="geometry">
+            <mxPoint x="26" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iDrvmBQxM6RkV91wcPEJ-8" value="Agent Registry" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="100" y="90" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iDrvmBQxM6RkV91wcPEJ-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0;entryDx=0;entryDy=0;" parent="1" source="iDrvmBQxM6RkV91wcPEJ-3" target="iDrvmBQxM6RkV91wcPEJ-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="145" y="10" />
+              <mxPoint x="210" y="10" />
+              <mxPoint x="210" y="20" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iDrvmBQxM6RkV91wcPEJ-15" value="Agent application" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];html=1;" parent="iDrvmBQxM6RkV91wcPEJ-14" vertex="1" connectable="0">
+          <mxGeometry x="-0.6794" y="1" relative="1" as="geometry">
+            <mxPoint x="-52" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iDrvmBQxM6RkV91wcPEJ-16" value="Landscape&lt;br&gt;Cache" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="90" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iDrvmBQxM6RkV91wcPEJ-19" value="Client" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry y="90" width="90" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
