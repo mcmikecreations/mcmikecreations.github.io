@@ -3,6 +3,10 @@
 
 	export let dark = false;
 
+	function emitDarkEvent(isDark : boolean) {
+		window.document.documentElement.dispatchEvent(new CustomEvent("dark", { detail: isDark, }));
+	}
+
 	onMount(() => {
 		const observer = new MutationObserver((mutations) => {
 			for (const mutation of mutations) {
@@ -11,6 +15,7 @@
 
 					if (value !== null) {
 						dark = value.split(' ').includes('dark');
+						emitDarkEvent(dark);
 					}
 				}
 			}
@@ -23,9 +28,11 @@
 		if ('color-theme' in localStorage) {
 			// explicit preference - overrides author's choice
 			dark = localStorage.getItem('color-theme') === 'dark';
+			emitDarkEvent(dark);
 		} else {
 			// browser preference - does not override
 			dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+			emitDarkEvent(dark);
 		}
 	});
 </script>

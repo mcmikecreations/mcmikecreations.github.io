@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { A, Button, Span } from 'flowbite-svelte';
+	import { Button, Span } from 'flowbite-svelte';
 	import resume from '$lib/data/resume.json';
 	import { twMerge } from 'tailwind-merge';
 

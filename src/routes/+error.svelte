@@ -13,4 +13,4 @@
 	</div>
 </section>
 
-<AppFooter pinBottom="true" />
+<AppFooter shouldPinBottom="true" />

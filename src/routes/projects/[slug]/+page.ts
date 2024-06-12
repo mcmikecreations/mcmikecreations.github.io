@@ -15,6 +15,9 @@ export const load: PageLoad = async ({ params }) => {
 		// Find all headers. The first one will be the page title.
 		return {
 			project: project,
+			toc: {
+				enabled: false,
+			}
 		};
 	} catch (ex) {
 		if ((ex as HttpError) !== undefined) {

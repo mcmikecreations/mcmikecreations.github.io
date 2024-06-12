@@ -4,5 +4,8 @@ export function load() {
 			pinBottom: false,
 			showSocials: true,
 		},
+		toc: {
+			enabled: false,
+		}
 	};
 }

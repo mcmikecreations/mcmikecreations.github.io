@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 import resume from '$lib/data/resume.json';
 import { page } from '$app/stores';
 import { Footer, FooterCopyright, FooterIcon, Tooltip } from 'flowbite-svelte';
@@ -12,8 +12,11 @@ import {
 	TelegramSolid
 } from '$lib/icons';
 
-export let pinBottom = $page.data.footer?.pinBottom ?? false;
-export let showSocials = $page.data.footer?.showSocials ?? true;
+export let shouldPinBottom : 'true' | 'false' | undefined = undefined;
+export let shouldShowSocials : 'true' | 'false' | undefined = undefined;
+
+$: pinBottom = shouldPinBottom !== undefined ? (shouldPinBottom === 'true') : ($page.data.footer?.pinBottom ?? false);
+$: showSocials = shouldShowSocials !== undefined ? (shouldShowSocials === 'true') : ($page.data.footer?.showSocials ?? true);
 </script>
 
 <Footer footerType={pinBottom ? "default" : "socialmedia"} class={pinBottom ? "absolute bottom-0 start-0 z-20 w-full" : undefined}>
