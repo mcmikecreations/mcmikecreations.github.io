@@ -245,7 +245,7 @@
 
 <AppTitle title={data.map.name} />
 
-<main class="md:px-24 mx-4 2xl:mx-0">
+<main>
 	<Breadcrumb class="mb-4" aria-label="Route" solid>
 		<BreadcrumbItem href="/" home>Home</BreadcrumbItem>
 		<BreadcrumbItem href="/projects">Projects</BreadcrumbItem>

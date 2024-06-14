@@ -9,18 +9,20 @@
 </script>
 
 {#if data.project.image}
-	<div class="sm:float-end me-4">
+	<div class="sm:float-end">
 		<ProjectImage p={data.project} class="size-80 mx-auto" />
 	</div>
 {/if}
-<h2>
-			<span class="inline-flex justify-center items-center">
-				{data.project.name}
-				{#if data.project.url}<a href={data.project.url} class="ps-2" target="_blank"><GlobeSolid size="xl" class="inline" /></a>{/if}
-			</span>
+<h2 class="mt-4">
+	<span class="inline-flex justify-center items-center">
+		{data.project.name}
+		{#if data.project.url}<a href={data.project.url} class="ps-2" target="_blank"><GlobeSolid size="xl" class="inline" /></a>{/if}
+	</span>
 </h2>
+<div></div>
 <blockquote>
-	{@html data.project.quote}</blockquote>
+	{@html data.project.quote}
+</blockquote>
 
 <p>
 	This page is divided into two parts. The first part covers PlanetoidGen, briefly described above.

@@ -14,7 +14,7 @@
 
 <AppTitle title="Data Viz" />
 
-<main class="md:px-24 mx-4 2xl:mx-0">
+<main>
 	<Heading tag="h2" id="hikes">Hikes</Heading>
 	<div class="w-fit mx-auto">
 		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-8">

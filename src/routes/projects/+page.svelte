@@ -10,7 +10,7 @@ const projects = resume.projects;
 
 <AppTitle title="Projects" />
 
-<main class="md:px-24">
+<main>
 	{#each projects as p}
 		<article class="flex flex-row flex-wrap lg:flex-nowrap gap-4 mx-4 2xl:mx-0 mb-8">
 			<div class="flex-1">
@@ -18,12 +18,12 @@ const projects = resume.projects;
 			</div>
 			<div class="flex-grow prose dark:prose-invert prose-a:text-primary-600 dark:prose-a:text-primary-500 md:prose-lg lg:prose-xl max-w-none">
 				<a href={p.route}>
-					<div class="inline-flex justify-center items-center">
-						<h2 class="!my-0">
+					<h2 class="!my-0">
+						<span class="inline-flex justify-center items-center">
 							{p.name}
-						</h2>
-						{#if p.url}<a href={p.url} class="ps-2" target="_blank"><GlobeSolid size="xl" class="inline" ariaLabel="website" /></a>{/if}
-					</div>
+							{#if p.url}<a href={p.url} class="ps-2" target="_blank"><GlobeSolid size="xl" class="inline" ariaLabel="website" /></a>{/if}
+						</span>
+					</h2>
 				</a>
 				<blockquote>{@html p.quote}</blockquote>
 				<p>

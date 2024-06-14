@@ -4,7 +4,7 @@
 </script>
 
 <section class="container mx-auto my-8">
-	<div class="flex flex-row-reverse">
+	<div class="mx-4 2xl:mx-0 md:px-24 mb-8 flex flex-row-reverse">
 		<AppToc />
 		<slot></slot>
 	</div>

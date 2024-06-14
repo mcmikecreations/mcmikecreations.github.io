@@ -10,7 +10,7 @@
 
 <AppTitle title={data.project.name} />
 
-<main class="mx-4 2xl:mx-0 mb-8 md:px-24">
+<main>
 	<article class="flex-grow prose dark:prose-invert prose-a:text-primary-600 dark:prose-a:text-primary-500 md:prose-lg lg:prose-xl min-h-80 max-w-none">
 		<PlanetoidGen {data} />
 		<LandscapeGen />

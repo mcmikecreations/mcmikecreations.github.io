@@ -94,7 +94,7 @@
 
 <AppTitle title="All hikes" />
 
-<main class="md:px-24 mx-4 2xl:mx-0">
+<main class="flex-1">
 	<Breadcrumb class="mb-4" aria-label="Route" solid>
 		<BreadcrumbItem href="/" home>Home</BreadcrumbItem>
 		<BreadcrumbItem href="/projects">Projects</BreadcrumbItem>
