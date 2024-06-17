@@ -53,7 +53,7 @@ export const load: PageLoad = async ({ fetch }) => {
 			if (map.properties?.checkpoints) {
 				geometry['geometry'] = {
 					"type": "LineString",
-					"coordinates": map.properties?.checkpoints.map((x) => [x[1], x[0]]),
+					"coordinates": map.properties?.checkpoints,
 				};
 
 				delete geometry['properties']['extras'];
