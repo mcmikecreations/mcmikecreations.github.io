@@ -50,6 +50,17 @@ export const load: PageLoad = async ({ fetch }) => {
 			geometry['properties']['route'] = map.route;
 			geometry['properties'] = Object.assign({}, geometry['properties'], properties);
 
+			if (map.properties?.checkpoints) {
+				geometry['geometry'] = {
+					"type": "LineString",
+					"coordinates": map.properties?.checkpoints.map((x) => [x[1], x[0]]),
+				};
+
+				delete geometry['properties']['extras'];
+				delete geometry['properties']['segments'];
+				delete geometry['properties']['way_points'];
+			}
+
 			features.push(geometry);
 		}
 
