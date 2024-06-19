@@ -84,6 +84,9 @@ export const load: PageLoad = async ({ fetch, params }) => {
 			pixelsPerMeter: pixelsPerMeter,
 			data2d: layers2d.join(''),
 			data3d: layers3d,
+			toc: {
+				enabled: false,
+			}
 		};
 	} catch (ex) {
 		if ((ex as HttpError) !== undefined) {

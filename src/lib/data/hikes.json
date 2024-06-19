@@ -2175,5 +2175,80 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Freising - Garching",
+    "image": "/images/projects/data-viz/hikes/freising_garching.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-06-08"],
+      "filePath": "/_projects/data-viz/hikes/geojson/freising_garching.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.7445653, 48.3951508],
+        [11.6522822, 48.2493200]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Freising to Garching along Isar.",
+    "route": "/projects/data-viz/hikes/freising_garching",
+    "height": 1408,
+    "standardFeatures": {
+      "origin": {
+        "lat": 48.31996234037576,
+        "lon": 11.695632934570312
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "freising_garching.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Garching - München",
+    "image": "/images/projects/data-viz/hikes/garching_munchen.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-06-16"],
+      "filePath": "/_projects/data-viz/hikes/geojson/garching_munchen.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.6522822, 48.2493200],
+        [11.5944693, 48.1418543],
+        [11.5569426, 48.1407253]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Garching to München along Isar.",
+    "route": "/projects/data-viz/hikes/garching_munchen",
+    "height": 1024,
+    "standardFeatures": {
+      "origin": {
+        "lat": 48.193098793553624,
+        "lon": 11.62834167480469
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "garching_munchen.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]

@@ -25,6 +25,9 @@ export const load: PageLoad = async ({ fetch }) => {
 			totalHikes: 0,
 			totalAscent: 0.0,
 			totalDescent: 0.0,
+			toc: {
+				enabled: false,
+			}
 		};
 
 		for (const map of maps) {

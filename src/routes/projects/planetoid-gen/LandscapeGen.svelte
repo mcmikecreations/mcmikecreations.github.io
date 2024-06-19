@@ -23,7 +23,7 @@
 	<code>Hierarchical axis-aligned bounding volumes</code>.
 </p>
 
-<h3>System architecture</h3>
+<h3>Architecture</h3>
 
 <p>
 	As mentioned in the overview, the overall systems consists of a simple client and a three-layer server.

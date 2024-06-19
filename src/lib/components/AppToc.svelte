@@ -23,6 +23,7 @@
 	<Toc
 		bind:nav={nav}
 		minItems={2}
+		warnOnEmpty={false}
 		--toc-mobile-btn-padding="0"
 		--toc-active-bg="transparent"
 	>
