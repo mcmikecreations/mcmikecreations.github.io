@@ -1576,13 +1576,13 @@
   },
   {
     "name": "Branderschrofen",
-    "image": "/images/projects/data-viz/hikes/future.jpg",
+    "image": "/images/projects/data-viz/hikes/branderschrofen.jpg",
     "properties": {
       "distance": null,
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-12-31"],
+      "dates": ["2024-06-30"],
       "filePath": "/_projects/data-viz/hikes/geojson/branderschrofen.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -1598,7 +1598,7 @@
         [10.7504319, 47.5578726],
         [10.7401371, 47.5567196]
       ],
-      "draft": true
+      "draft": false
     },
     "description": "Hike from Tegelbergbahn near Schwangau to Neuschwanstein via Branderschrofen (1881 m). An extended version of <a href=\"https://www.alltrails.com/explore/trail/germany/bavaria/rohrkopf-und-tegelberg\">this</a>.",
     "route": "/projects/data-viz/hikes/branderschrofen",
@@ -1976,13 +1976,13 @@
   },
   {
     "name": "Wallberg",
-    "image": "/images/projects/data-viz/hikes/future.jpg",
+    "image": "/images/projects/data-viz/hikes/wallberg.jpg",
     "properties": {
       "distance": null,
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-12-31"],
+      "dates": ["2024-06-22"],
       "filePath": "/_projects/data-viz/hikes/geojson/wallberg.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -1992,7 +1992,7 @@
         [11.8047030, 47.6848412],
         [11.7679584, 47.6952866]
       ],
-      "draft": true
+      "draft": false
     },
     "description": "Hike from Rottach-Egern and back via Wallberg (1722 m). An extended version of <a href=\"https://www.alltrails.com/explore/trail/germany/bavaria/wallbergtrail\">this</a>.",
     "route": "/projects/data-viz/hikes/wallberg",
