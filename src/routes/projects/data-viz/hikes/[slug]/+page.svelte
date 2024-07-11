@@ -97,13 +97,17 @@
 
 			const bbox = statsHeightIndicator.getBBox();
 			const rectWidth = bbox.width + 2.0 * offset;
-			const rectStart = newX - bbox.width - offset - statsIndicatorVerticalWidth;
+			const rectStart = newX - bbox.width - offset - statsIndicatorVerticalWidth * 0.5;
 
 			statsHeightIndicatorRect.setAttribute('width', String(rectWidth));
 
-			if (rectStart >= statsIndicatorVerticalWidth) {
+			if (rectStart >= statsIndicatorVerticalWidth * 0.5) {
 				statsHeightIndicator.setAttribute('x', String(newX));
 				statsHeightIndicatorRect.setAttribute('x', String(rectStart));
+			}
+			else {
+				statsHeightIndicator.setAttribute('x', String(statsIndicatorVerticalWidth * 0.5 + bbox.width + offset));
+				statsHeightIndicatorRect.setAttribute('x', String(statsIndicatorVerticalWidth * 0.5));
 			}
 		}
 
@@ -135,10 +139,7 @@
 					el.addEventListener('click', (event) => {
 						onUpdateStatistics(event.target as HTMLElement);
 					}, false);
-					el.addEventListener('mouseover', (event) => {
-						onUpdateStatistics(event.target as HTMLElement);
-					}, false);
-					el.addEventListener('touchmove', (event) => {
+					el.addEventListener('pointermove', (event) => {
 						event.preventDefault();
 						onUpdateStatistics(event.target as HTMLElement);
 					}, false);
@@ -305,7 +306,7 @@
 					<svg id="stats" viewBox="0 0 {data.map.height * 0.5} {data.map.height * 0.125}" class="w-full overflow-visible prose dark:prose-invert max-w-none">
 						<line id="statsIndicatorVertical" y1="-7.5" y2={data.map.height * 0.125 + 7.5} stroke={secondaryIndicatorColor} stroke-width={statsIndicatorVerticalWidth} class="hidden" />
 						{@html data.statistics}
-						<circle id="statsIndicator" r={data.map.height * 0.125 * 0.125 * 0.25} fill={secondaryIndicatorColor} class="hidden" />
+						<circle id="statsIndicator" r={data.map.height * 0.125 * 0.125 * 0.5} fill={secondaryIndicatorColor} class="hidden" />
 					</svg>
 				</div>
 			{/if}
@@ -319,7 +320,7 @@
 				<TabItem title="2D" on:click={() => onUpdateStatistics(lastStatsIndicatorTarget)}>
 					<svg viewBox="0 0 {data.map.height} {data.map.height}" class="w-full aspect-square">
 						{@html data.data2d}
-						<circle id="statsIndicator2d" r={data.map.height * 0.125 * 0.125 * 0.25} fill={secondaryIndicatorColor} class="hidden" />
+						<circle id="statsIndicator2d" r={data.map.height * 0.125 * 0.125 * 0.5} fill={secondaryIndicatorColor} class="hidden" />
 					</svg>
 					<Attribution {attrMapbox} {attrOSM} />
 				</TabItem>
