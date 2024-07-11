@@ -2,6 +2,7 @@ import type { Feature, GeometryData, Map } from '$lib/data/map-info';
 import { providerFolder } from '$lib/data/map-providers';
 import { geoPath, type GeoPermissibleObjects, type GeoProjection } from 'd3-geo';
 import * as THREE from 'three';
+import theme from '$lib/styling/theme';
 
 // noinspection JSUnusedGlobalSymbols
 class ThreePathContext {
@@ -90,6 +91,10 @@ export function loadProperties(map : Map, geometry : any) {
 
 	return properties;
 }
+export const primaryIndicatorColor = theme.colors.primary['500'];
+export const secondaryIndicatorColor = '#b08080';
+export const primaryGeometryColor = theme.colors.primary['400'];
+export const secondaryGeometryColor = '#ff0000';
 
 export async function buildGeometry(
 	fetch : (input: (RequestInfo | URL), init?: (RequestInit | undefined)) => Promise<Response>,
@@ -108,11 +113,10 @@ export async function buildGeometry(
 	};
 
 	const layerData : GeometryData = layer.data as GeometryData;
-	const color = 'red';
 
 	if (layerData.modes.includes('2d')) {
 		const path = geoPath(projection);
-		result.layers2d.push(`<g><path fill="none" stroke="${color}" d="${path(geometry as GeoPermissibleObjects)}" /></g>`);
+		result.layers2d.push(`<g><path fill="none" stroke-width="2" stroke="${secondaryGeometryColor}" d="${path(geometry as GeoPermissibleObjects)}" /></g>`);
 	}
 	if (layerData.modes.includes('3d')) {
 		const group = new THREE.Group();
@@ -133,7 +137,7 @@ export async function buildGeometry(
 
 			const buffer = new THREE.BufferGeometry().setFromPoints( points );
 			const material = new THREE.LineBasicMaterial({
-				color: color,
+				color: primaryGeometryColor,
 				depthTest: false,
 			});
 

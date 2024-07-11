@@ -58,6 +58,7 @@ interface MapProperties {
 	dates: Array<string>;
 	filePath: string;
 	fileType: string;
+	draft: boolean | null;
 }
 
 interface Map {

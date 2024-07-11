@@ -11,11 +11,14 @@
 	import { providerFile, providerFolder, providers } from '$lib/data/map-providers';
 	import { type Feature, getMapFeatures, type MapProvider, type TilesData } from '$lib/data/map-info';
 	import { getDistance, getTime } from './build-statistics';
+	import { detectMobileBrowser } from '$lib/components/detectmobilebrowser';
+	import { primaryIndicatorColor, secondaryIndicatorColor } from './build-geometry';
 
 	export let data: PageData;
 
 	const scale3d = 0.2;
 	const scale3dVertical = 0.4;
+	const statsIndicatorVerticalWidth = 1.0;
 
 	const center = data.projection([data.origin.lon, data.origin.lat])!;
 	const features = getMapFeatures(data.map) as Feature[];
@@ -27,6 +30,8 @@
 	let scene : THREE.Scene;
 	let statsIndicator3d : THREE.Object3D;
 	let lastStatsIndicatorTarget : HTMLElement;
+
+	let isMobile = false;
 
 	function render() {
 		if (renderer && scene && camera) {
@@ -64,6 +69,7 @@
 
 		lastStatsIndicatorTarget = target;
 		const statsIndicator = document.getElementById('statsIndicator') as (SVGCircleElement | null);
+		const statsIndicatorVertical = document.getElementById('statsIndicatorVertical') as (SVGLineElement | null);
 		const x = parseFloat(target.getAttribute('data-x') ?? '0');
 		const y = parseFloat(target.getAttribute('data-y') ?? '0');
 		const z = parseFloat(target.getAttribute('data-z') ?? '0');
@@ -75,10 +81,30 @@
 			statsIndicator.setAttribute('cx', elemX);
 			statsIndicator.setAttribute('cy', h.toString());
 		}
+		if (statsIndicatorVertical) {
+			statsIndicatorVertical.classList.remove('hidden');
+			statsIndicatorVertical.setAttribute('x1', elemX);
+			statsIndicatorVertical.setAttribute('x2', elemX);
+		}
 
-		const statsHeightIndicator = document.getElementById('statsHeightIndicator');
-		if (statsHeightIndicator) {
-			statsHeightIndicator.innerHTML = `${z} m`;
+		const statsHeightIndicator = document.getElementById('statsHeightIndicator') as SVGTextElement | null;
+		const statsHeightIndicatorRect = statsHeightIndicator?.previousSibling as SVGRectElement | null;
+
+		if (statsHeightIndicator && statsHeightIndicatorRect) {
+			const offset = 5.0;
+			const newX = parseFloat(elemX) - offset;
+			statsHeightIndicator.innerHTML = `${z.toFixed(1)} m`;
+
+			const bbox = statsHeightIndicator.getBBox();
+			const rectWidth = bbox.width + 2.0 * offset;
+			const rectStart = newX - bbox.width - offset - statsIndicatorVerticalWidth;
+
+			statsHeightIndicatorRect.setAttribute('width', String(rectWidth));
+
+			if (rectStart >= statsIndicatorVerticalWidth) {
+				statsHeightIndicator.setAttribute('x', String(newX));
+				statsHeightIndicatorRect.setAttribute('x', String(rectStart));
+			}
 		}
 
 		const statsIndicator2d = document.getElementById('statsIndicator2d') as (SVGCircleElement | null);
@@ -108,10 +134,14 @@
 				if (el.tagName === 'rect') {
 					el.addEventListener('click', (event) => {
 						onUpdateStatistics(event.target as HTMLElement);
-					});
+					}, false);
 					el.addEventListener('mouseover', (event) => {
 						onUpdateStatistics(event.target as HTMLElement);
-					});
+					}, false);
+					el.addEventListener('touchmove', (event) => {
+						event.preventDefault();
+						onUpdateStatistics(event.target as HTMLElement);
+					}, false);
 				}
 			}
 		}
@@ -213,9 +243,10 @@
 				}
 			});
 
-			const sphere = new THREE.SphereGeometry(2.0 * data.map.height / data.tileScale);
+			const sphere = new THREE.SphereGeometry((isMobile ? 4.0 : 2.0) * data.map.height / data.tileScale);
+
 			statsIndicator3d = new THREE.Mesh(sphere, new THREE.MeshBasicMaterial({
-				color: 0xB00000,
+				color: primaryIndicatorColor,
 				depthTest: false,
 			}));
 			statsIndicator3d.renderOrder = 900;
@@ -237,6 +268,7 @@
 	}
 
 	onMount(async () => {
+		isMobile = detectMobileBrowser();
 		await init3d();
 		attach3d();
 		initStatistics();
@@ -271,8 +303,9 @@
 			{#if data.statistics}
 				<div class="flex-1 mt-4">
 					<svg id="stats" viewBox="0 0 {data.map.height * 0.5} {data.map.height * 0.125}" class="w-full overflow-visible prose dark:prose-invert max-w-none">
+						<line id="statsIndicatorVertical" y1="-7.5" y2={data.map.height * 0.125 + 7.5} stroke={secondaryIndicatorColor} stroke-width={statsIndicatorVerticalWidth} class="hidden" />
 						{@html data.statistics}
-						<circle id="statsIndicator" r={data.map.height * 0.125 * 0.125 * 0.25} fill="#B00000" class="hidden" />
+						<circle id="statsIndicator" r={data.map.height * 0.125 * 0.125 * 0.25} fill={secondaryIndicatorColor} class="hidden" />
 					</svg>
 				</div>
 			{/if}
@@ -286,7 +319,7 @@
 				<TabItem title="2D" on:click={() => onUpdateStatistics(lastStatsIndicatorTarget)}>
 					<svg viewBox="0 0 {data.map.height} {data.map.height}" class="w-full aspect-square">
 						{@html data.data2d}
-						<circle id="statsIndicator2d" r={data.map.height * 0.125 * 0.125 * 0.25} fill="#B00000" class="hidden" />
+						<circle id="statsIndicator2d" r={data.map.height * 0.125 * 0.125 * 0.25} fill={secondaryIndicatorColor} class="hidden" />
 					</svg>
 					<Attribution {attrMapbox} {attrOSM} />
 				</TabItem>

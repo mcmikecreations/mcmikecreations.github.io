@@ -1,7 +1,7 @@
 import type { Feature, GeometryData } from '$lib/data/map-info';
 import { type GeoProjection } from 'd3-geo';
 import * as THREE from 'three';
-import { loadGeometry } from './build-geometry';
+import { loadGeometry, secondaryGeometryColor } from './build-geometry';
 
 export function getDistance(m : number) {
 	const km = Math.floor(m / 1000);
@@ -49,9 +49,9 @@ export async function buildStatistics(
 			`<rect width="${rectWidth}" height="${rectHeight}" x="${i * rectWidth}" fill="transparent" data-x="${x[0]}" data-y="${x[1]}" data-z="${x[2]}" data-h="${rectHeight - (x[2] - minHeight) / deltaHeight * rectHeight}" />`
 		).join('');
 		const paths = points.map((x : Array<number>, i : number) : string => `${i * rectWidth},${rectHeight - (x[2] - minHeight) / deltaHeight * rectHeight}`).join(' ');
-		result.layers2d.push(`<g><path fill="none" stroke="red" d="M 0,${rectHeight - (points[0][2] - minHeight) / deltaHeight * rectHeight} L ${paths}" /></g>`);
+		result.layers2d.push(`<g><path fill="none" stroke-width="1" stroke="${secondaryGeometryColor}" d="M 0,${rectHeight - (points[0][2] - minHeight) / deltaHeight * rectHeight} L ${paths}" /></g>`);
 		result.layers2d.push(`<g>${rectangles}</g>`);
-		result.layers2d.push(`<g fill="var(--tw-prose-body)" class="text-[10px] align-middle"><text y="${rectHeight - 5}">${minHeight} m</text><text y="5">${maxHeight} m</text><text x=${containerSize} y="5" text-anchor="end" id="statsHeightIndicator"></text></g>`);
+		result.layers2d.push(`<g fill="var(--tw-prose-body)" class="text-[10px] align-middle"><text y="${rectHeight - 5}">${minHeight} m</text><text y="5">${maxHeight} m</text><rect width="0" height="15" x=${containerSize} y="-7.5" class="fill-gray-200 dark:fill-gray-700" /><text x=${containerSize} y="5" text-anchor="end" id="statsHeightIndicator"></text></g>`);
 	}
 
 	return result;
