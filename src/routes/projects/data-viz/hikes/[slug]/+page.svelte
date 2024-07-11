@@ -133,19 +133,19 @@
 			return;
 		}
 
-		for (const group of statsElement.children) {
-			for (const el of group.children) {
-				if (el.tagName === 'rect') {
-					el.addEventListener('click', (event) => {
-						onUpdateStatistics(event.target as HTMLElement);
-					}, false);
-					el.addEventListener('pointermove', (event) => {
-						event.preventDefault();
-						onUpdateStatistics(event.target as HTMLElement);
-					}, false);
-				}
-			}
-		}
+		statsElement.addEventListener('pointermove', (event) => {
+			event.preventDefault();
+			const ev = event as PointerEvent;
+			const elems = document.elementsFromPoint(ev.clientX, ev.clientY).filter((x) => x.tagName === 'rect');
+			if (elems.length > 0) { onUpdateStatistics(elems[0] as HTMLElement); }
+		}, false);
+		statsElement.addEventListener('touchmove', (event) => {
+			event.preventDefault();
+			const ev = event as TouchEvent;
+			const touch = ev.touches[0];
+			const elems = document.elementsFromPoint(touch.clientX, touch.clientY).filter((x) => x.tagName === 'rect');
+			if (elems.length > 0) { onUpdateStatistics(elems[0] as HTMLElement); }
+		}, false);
 	}
 
 	async function init3d() : Promise<void> {
