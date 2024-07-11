@@ -204,6 +204,7 @@
         [11.7569037, 47.7143662],
         [11.7679584, 47.6952866],
         [11.7383820, 47.6957280],
+        [11.7408013, 47.7049198],
         [11.7272574, 47.7132548],
         [11.7267692, 47.7434127],
         [11.7349962, 47.7496082]
@@ -2245,6 +2246,44 @@
         "provider": "hikes/geojson",
         "modes": [ "2d", "3d" ],
         "path": "garching_munchen.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Fockenstein",
+    "image": "/images/projects/data-viz/hikes/fockenstein.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-07-11"],
+      "filePath": "/_projects/data-viz/hikes/geojson/fockenstein.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.5735467, 47.6802772],
+        [11.6522131, 47.6843889],
+        [11.7408013, 47.7049198]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Lenggries to Bad Wiessee am Tegernsee via Fockenstein (1564 m).",
+    "route": "/projects/data-viz/hikes/fockenstein",
+    "height": 1024,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.69127688626756,
+        "lon": 11.658382415771484
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "fockenstein.json#/features/0"
       }],
       "geometrySource": "https://maps.openrouteservice.org/",
       "statistics": true
