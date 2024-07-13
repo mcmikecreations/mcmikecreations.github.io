@@ -2222,7 +2222,7 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-06-06"],
+      "dates": ["2024-06-16"],
       "filePath": "/_projects/data-viz/hikes/geojson/garching_munchen.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -2260,7 +2260,7 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-07-11"],
+      "dates": ["2024-07-06"],
       "filePath": "/_projects/data-viz/hikes/geojson/fockenstein.json",
       "fileType": "GeoJSON",
       "checkpoints": [
