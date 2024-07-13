@@ -2222,7 +2222,7 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-06-16"],
+      "dates": ["2024-06-06"],
       "filePath": "/_projects/data-viz/hikes/geojson/garching_munchen.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -2284,6 +2284,46 @@
         "provider": "hikes/geojson",
         "modes": [ "2d", "3d" ],
         "path": "fockenstein.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Wildbarren",
+    "image": "/images/projects/data-viz/hikes/wildbarren.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-07-13"],
+      "filePath": "/_projects/data-viz/hikes/geojson/wildbarren.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [12.1752506, 47.6526185],
+        [12.1382447, 47.6811906],
+        [12.1218655, 47.6753047],
+        [12.1179449, 47.7012422],
+        [12.1280624, 47.7241358]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Oberaudorf to Flintsbach am Inn via Wildbarren (1448 m).",
+    "route": "/projects/data-viz/hikes/wildbarren",
+    "height": 1024,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.692663462837984,
+        "lon": 12.138004302978516
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "wildbarren.json#/features/0"
       }],
       "geometrySource": "https://maps.openrouteservice.org/",
       "statistics": true
