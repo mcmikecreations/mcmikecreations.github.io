@@ -2329,5 +2329,86 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Heimgarten",
+    "image": "/images/projects/data-viz/hikes/heimgarten.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-07-20"],
+      "filePath": "/_projects/data-viz/hikes/geojson/heimgarten.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.3161116, 47.5963793],
+        [11.2806617, 47.6125791],
+        [11.2174508, 47.6332855]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Walchensee to Ohlstadt via Heimgarten (1791 m).",
+    "route": "/projects/data-viz/hikes/heimgarten",
+    "height": 768,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.617735565265804,
+        "lon": 11.265192043227701
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "heimgarten.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Benediktenwand",
+    "image": "/images/projects/data-viz/hikes/benediktenwand.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-07-21"],
+      "filePath": "/_projects/data-viz/hikes/geojson/benediktenwand.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.5735467, 47.6802772],
+        [11.5086377, 47.6606163],
+        [11.4990327, 47.6565948],
+        [11.4862838, 47.6531047],
+        [11.4655437, 47.6531721],
+        [11.4624037, 47.6576119],
+        [11.4631932, 47.6724586],
+        [11.3714592, 47.6607930]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Lenggries to Kochel am See via Stangeneck (1646 m), Vorderer Kirchstein (1670 m), Latschenkopf (1712 m), Achselköpfe (1709 m), and Benediktenwand (1800 m).",
+    "route": "/projects/data-viz/hikes/benediktenwand",
+    "height": 1280,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.674866264152534,
+        "lon": 11.469383239746096
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "benediktenwand.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
