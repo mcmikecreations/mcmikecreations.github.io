@@ -1454,46 +1454,6 @@
     "features": null
   },
   {
-    "name": "Aiplspitz",
-    "image": "/images/projects/data-viz/hikes/future.jpg",
-    "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
-      "dates": ["2024-12-31"],
-      "filePath": "/_projects/data-viz/hikes/geojson/aiplspitz.json",
-      "fileType": "GeoJSON",
-      "checkpoints": [
-        [11.8733766, 47.7062602],
-        [11.8836539, 47.6861140],
-        [11.8867038, 47.6726326],
-        [11.9237064, 47.6731607],
-        [11.9864723, 47.6878397]
-      ],
-      "draft": true
-    },
-    "description": "Hike from Neuhaus to Osterhofen via Aiplspitz (1759 m).",
-    "route": "/projects/data-viz/hikes/aiplspitz",
-    "height": 768,
-    "standardFeatures": {
-      "origin": {
-        "lat": 47.68896584339047,
-        "lon": 11.921625137329103
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "aiplspitz.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
-  },
-  {
     "name": "Älpelesattel",
     "image": "/images/projects/data-viz/hikes/future.jpg",
     "properties": {
@@ -2405,6 +2365,47 @@
         "provider": "hikes/geojson",
         "modes": [ "2d", "3d" ],
         "path": "benediktenwand.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Aiplspitz",
+    "image": "/images/projects/data-viz/hikes/aiplspitz.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-08-31"],
+      "filePath": "/_projects/data-viz/hikes/geojson/aiplspitz.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.9864723, 47.6878397],
+        [11.9661809, 47.6939023],
+        [11.9236950, 47.6731724],
+        [11.9060494, 47.6735110],
+        [11.9059504, 47.6652905],
+        [11.8880556, 47.6618854]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Osterhofen to Spitzingsee via Aiplspitz (1759 m), Tanzeck (1703 m), and Jägerkamp (1746 m) with a swim in the lake.",
+    "route": "/projects/data-viz/hikes/aiplspitz",
+    "height": 684,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.676253276991204,
+        "lon": 11.936044692993166
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "aiplspitz.json#/features/0"
       }],
       "geometrySource": "https://maps.openrouteservice.org/",
       "statistics": true
