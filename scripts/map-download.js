@@ -21,8 +21,8 @@ const verifyFolder = async (path) => {
 	}
 }
 
-const downloadFile = async (address, fileName) => {
-	const response = await fetch(address);
+const downloadFile = async (address, fileName, requestInit = undefined) => {
+	const response = await fetch(address, requestInit);
 	const destination = resolve(mapFolder, fileName);
 	const buffer = Buffer.from(await response.arrayBuffer());
 	await writeFile(destination, buffer);
@@ -68,20 +68,39 @@ await verifyFolder(resolve(mapFolder, `${providers.osm.tileset}/`));
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 tiles.map(async ([x, y, z], i, {translate: [tx, ty], scale: k}) => {
+	//console.log(`Downloading ${z}/${x}/${y}`);
 	await downloadFile(
 		providers.mapboxDEM.url(x, y, z, `sku=${skuMapboxDEM}&access_token=${tokenMapboxDEM}`),
-		providerFile(x, y, z, providers.mapboxDEM.tileset, providers.mapboxDEM.format)
+		providerFile(x, y, z, providers.mapboxDEM.tileset, providers.mapboxDEM.format),
+		{
+			method: 'GET',
+			headers: {
+				"Origin": providers.mapboxDEM.origin,
+				"Referrer": providers.mapboxDEM.origin,
+			},
+			referrer: providers.mapboxDEM.origin,
+		}
 	);
 	await downloadFile(
 		providers.nextzenTerrariumDEM.url(x, y, z, `api_key=${tokenNextzen}`),
-		providerFile(x, y, z, providers.nextzenTerrariumDEM.tileset, providers.nextzenTerrariumDEM.format)
+		providerFile(x, y, z, providers.nextzenTerrariumDEM.tileset, providers.nextzenTerrariumDEM.format),
+		undefined
 	);
 	await downloadFile(
 		providers.osm.url(x, y, z),
-		providerFile(x, y, z, providers.osm.tileset, providers.osm.format)
+		providerFile(x, y, z, providers.osm.tileset, providers.osm.format),
+		undefined
 	);
 	await downloadFile(
 		providers.mapboxSatellite.url(x, y, z, `sku=${skuMapboxSatellite}&access_token=${tokenMapboxSatellite}`),
-		providerFile(x, y, z, providers.mapboxSatellite.tileset, providers.mapboxSatellite.format)
+		providerFile(x, y, z, providers.mapboxSatellite.tileset, providers.mapboxSatellite.format),
+		{
+			method: 'GET',
+			headers: {
+				"Origin": providers.mapboxDEM.origin,
+				"Referrer": providers.mapboxDEM.origin,
+			},
+			referrer: providers.mapboxDEM.origin,
+		}
 	);
 });

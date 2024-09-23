@@ -2394,7 +2394,7 @@
     },
     "description": "Hike from Osterhofen to Spitzingsee via Aiplspitz (1759 m), Tanzeck (1703 m), and Jägerkamp (1746 m) with a swim in the lake.",
     "route": "/projects/data-viz/hikes/aiplspitz",
-    "height": 684,
+    "height": 704,
     "standardFeatures": {
       "origin": {
         "lat": 47.676253276991204,
@@ -2406,6 +2406,85 @@
         "provider": "hikes/geojson",
         "modes": [ "2d", "3d" ],
         "path": "aiplspitz.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Simetsberg",
+    "image": "/images/projects/data-viz/hikes/simetsberg.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-09-07"],
+      "filePath": "/_projects/data-viz/hikes/geojson/simetsberg.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.2537283, 47.5665209],
+        [11.3012750, 47.5697947],
+        [11.3064766, 47.5716255]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Einsiedl and back to Walchensee via Simetsberg (1840 m) with a swim in the lake.",
+    "route": "/projects/data-viz/hikes/simetsberg",
+    "height": 384,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.5685925661014,
+        "lon": 11.279954910278322
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "simetsberg.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Roßkopf",
+    "image": "/images/projects/data-viz/hikes/rosskopf.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-09-21"],
+      "filePath": "/_projects/data-viz/hikes/geojson/rosskopf.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.8880556, 47.6618854],
+        [11.8724862, 47.6426762],
+        [11.8674221, 47.6432444],
+        [11.8618557, 47.6556941],
+        [11.8570706, 47.6601797],
+        [11.8880556, 47.6618854]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Spitzingsee and back via Stolzenberg (1609 m), Stolzeneck (1604 m), Rotkopf (1602 m), and Roßkopf (1579 m).",
+    "route": "/projects/data-viz/hikes/rosskopf",
+    "height": 384,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.65411446320232,
+        "lon": 11.872787475585938
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "rosskopf.json#/features/0"
       }],
       "geometrySource": "https://maps.openrouteservice.org/",
       "statistics": true

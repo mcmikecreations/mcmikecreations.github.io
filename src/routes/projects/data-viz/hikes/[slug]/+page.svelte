@@ -288,7 +288,7 @@
 	<div class="flex flex-row flex-wrap gap-4">
 		<article class="flex-1 w-full p-4 bg-gray-50 rounded-lg dark:bg-gray-800 min-w-40">
 			<div class="flex flex-row sm:flex-col flex-wrap gap-4">
-				<Img src={data.map.image} alt="Original map photo" class="w-full aspect-crt rounded-lg object-center object-cover" />
+				<Img src={data.map.image?.replace('/hikes/', '/hikes/thumb/')} alt="Original map photo" class="w-full aspect-crt rounded-lg object-center object-cover" />
 				<div class="prose dark:prose-invert prose-a:text-primary-600 dark:prose-a:text-primary-500">
 					<p>{@html data.map.description}</p>
 					<ul>
