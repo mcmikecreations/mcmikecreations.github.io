@@ -4,15 +4,12 @@
 	import AppTitle from '$lib/components/AppTitle.svelte';
 	import DefaultCode from '$lib/renderers/DefaultCode.svelte';
 	import DefaultLink from '$lib/renderers/DefaultLink.svelte';
-	import { DarkModeLinker } from '$lib/renderers';
 	import ToTopButton from '$lib/components/ToTopButton.svelte';
 
 	export let data: PageData;
 </script>
 
 <AppTitle title={data.post.title} />
-
-<DarkModeLinker />
 
 <article class="mx-4 2xl:mx-0">
 	<div class="mx-auto prose dark:prose-invert prose-a:text-primary-600 dark:prose-a:text-primary-500 md:prose-lg lg:prose-xl min-h-80">

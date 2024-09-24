@@ -7,5 +7,8 @@ export function load() {
 			pinBottom: false,
 			showSocials: true,
 		},
+		header: {
+			showNavbar: true,
+		}
 	};
 }

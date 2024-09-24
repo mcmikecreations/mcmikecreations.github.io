@@ -32,5 +32,5 @@
 			listitem: CustomListItem,
 			heading: CustomHeading,
 			codespan: CustomCodeSpan,
-			code: CustomCode,
+			code: CustomCode
 	}} />

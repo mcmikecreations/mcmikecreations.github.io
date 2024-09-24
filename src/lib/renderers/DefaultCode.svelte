@@ -1,6 +1,7 @@
 <script>
 	/* eslint-disable svelte/no-at-html-tags */
 	import hljs from 'highlight.js';
+	import 'highlight.js/styles/github-dark-dimmed.min.css';
 
 	export let text = '';
 	export let lang = '';
