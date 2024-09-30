@@ -1667,29 +1667,32 @@
   },
   {
     "name": "Rotwand",
-    "image": "/images/projects/data-viz/hikes/future.jpg",
+    "image": "/images/projects/data-viz/hikes/rotwand.jpg",
     "properties": {
       "distance": null,
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-12-31"],
+      "dates": ["2024-09-29"],
       "filePath": "/_projects/data-viz/hikes/geojson/rotwand.json",
       "fileType": "GeoJSON",
       "checkpoints": [
-        [11.8867038, 47.6726326],
         [11.9344203, 47.6502104],
-        [11.8848718, 47.6611957]
+        [11.9354246, 47.6461036],
+        [11.9218715, 47.6584409],
+        [11.8880556, 47.6618854],
+        [11.8879367, 47.6563143],
+        [11.9354246, 47.6461036]
       ],
-      "draft": true
+      "draft": false
     },
-    "description": "Hike from Mittenwald and back via Rotwand (1884 m). An extended version of <a href=\"https://www.alltrails.com/explore/trail/germany/bavaria/spitzingsee-taubenstein-rotwandhaus\">this</a>.",
+    "description": "Hike from Spitzingsee and back via Rotwand (1884 m). An extended version of <a href=\"https://www.alltrails.com/explore/trail/germany/bavaria/spitzingsee-taubenstein-rotwandhaus\">this</a>.",
     "route": "/projects/data-viz/hikes/rotwand",
     "height": 512,
     "standardFeatures": {
       "origin": {
-        "lat": 47.65688955503544,
-        "lon": 11.907463073730469
+        "lat": 47.65475043477393,
+        "lon": 11.909780502319338
       },
       "tiles2d": "osm",
       "tiles3d": "mapboxDEM",
