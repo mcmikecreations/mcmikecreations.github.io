@@ -2494,5 +2494,91 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Bockerlbahn-Weg",
+    "image": "/images/projects/data-viz/hikes/bockerlbahnweg.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-10-03"],
+      "filePath": "/_projects/data-viz/hikes/geojson/bockerlbahnweg.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.8954411, 47.6393151],
+        [11.8940537, 47.6507907],
+        [11.8879367, 47.6563143],
+        [11.8880556, 47.6618854],
+        [11.8836539, 47.6861140],
+        [11.8733766, 47.7062602]
+      ],
+      "draft": false
+    },
+    "description": "Hike near Spitzingsee through the Bockerlbahn-Weg.",
+    "route": "/projects/data-viz/hikes/bockerlbahnweg",
+    "height": 768,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.678622670466915,
+        "lon": 11.880340576171877
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "bockerlbahnweg.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Auerspitz",
+    "image": "/images/projects/data-viz/hikes/auerspitz.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-10-12"],
+      "filePath": "/_projects/data-viz/hikes/geojson/auerspitz.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.8880556, 47.6618854],
+        [11.8879367, 47.6563143],
+        [11.8940537, 47.6507907],
+        [11.8954411, 47.6393151],
+        [11.9338049, 47.6356882],
+        [11.9354246, 47.6461036],
+        [11.9452834, 47.6437639],
+        [11.9580125, 47.6510434],
+        [11.9779470, 47.6587764],
+        [11.9661809, 47.6939023]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Spitzingsee to Geitau via Auerspitz (1811 m).",
+    "route": "/projects/data-viz/hikes/auerspitz",
+    "height": 768,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.667338673431075,
+        "lon": 11.932364571863449
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "auerspitz.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
