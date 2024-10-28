@@ -356,7 +356,7 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2023-06-10", "2022-09-08"],
+      "dates": ["2024-10-27", "2023-06-10", "2022-09-08"],
       "filePath": "/_projects/data-viz/hikes/geojson/nebelhorn.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -2575,6 +2575,48 @@
         "provider": "hikes/geojson",
         "modes": [ "2d", "3d" ],
         "path": "auerspitz.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Krün",
+    "image": "/images/projects/data-viz/hikes/kruen.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-10-20"],
+      "filePath": "/_projects/data-viz/hikes/geojson/kruen.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.2781513, 47.5061647],
+        [11.2684429, 47.5081606],
+        [11.2438353, 47.5032428],
+        [11.2135015, 47.4924818],
+        [11.2389084, 47.4821822],
+        [11.2415215, 47.4915837],
+        [11.2684429, 47.5081606]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Krün and back via Barmsee, Geroldsee, and Grubsee.",
+    "route": "/projects/data-viz/hikes/kruen",
+    "height": 512,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.49636,
+        "lon": 11.24264
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "kruen.json#/features/0"
       }],
       "geometrySource": "https://maps.openrouteservice.org/",
       "statistics": true
