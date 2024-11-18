@@ -1,5 +1,5 @@
 <script>
-	import { FacebookSolid, GithubSolid, LinkedinSolid, XCompanySolid } from 'flowbite-svelte-icons';
+	import { FacebookSolid, GithubSolid, LinkedinSolid, XSolid } from 'flowbite-svelte-icons';
 import SocialBadge from '$lib/components/SocialBadge.svelte';
 	import {
 		GoogleScholarSolid,
@@ -28,4 +28,4 @@ import SocialBadge from '$lib/components/SocialBadge.svelte';
 <SocialBadge profile="Mastodon" {size} {padding} {pill} {outline} {plain}><MastodonSolid aria-hidden="true" /></SocialBadge>
 <SocialBadge profile="Facebook" {size} {padding} {pill} {outline} {plain}><FacebookSolid aria-hidden="true" /></SocialBadge>
 <SocialBadge profile="Instagram" {size} {padding} {pill} {outline} {plain}><InstagramSolid aria-hidden="true" /></SocialBadge>
-<SocialBadge profile="X" {size} {padding} {pill} {outline} {plain}><XCompanySolid aria-hidden="true" /></SocialBadge>
+<SocialBadge profile="X" {size} {padding} {pill} {outline} {plain}><XSolid aria-hidden="true" /></SocialBadge>

@@ -2622,5 +2622,46 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Hirschberg",
+    "image": "/images/projects/data-viz/hikes/hirschberg.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-11-17"],
+      "filePath": "/_projects/data-viz/hikes/geojson/hirschberg.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.7462209, 47.6469534],
+        [11.7032747, 47.6595256],
+        [11.6961076, 47.6607583],
+        [11.7053909, 47.6655995],
+        [11.7477276, 47.6662618],
+        [11.7605777, 47.6872590]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Kreuth to Scharling via Hirschberg (1668 m).",
+    "route": "/projects/data-viz/hikes/hirschberg",
+    "height": 512,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.66677462110549,
+        "lon": 11.730909347534181
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "hirschberg.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]

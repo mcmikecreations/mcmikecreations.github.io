@@ -2,7 +2,13 @@
 import resume from '$lib/data/resume.json';
 import { page } from '$app/stores';
 import { Footer, FooterCopyright, FooterIcon, Tooltip } from 'flowbite-svelte';
-import { EnvelopeSolid, FacebookSolid, GithubSolid, LinkedinSolid, XCompanySolid } from 'flowbite-svelte-icons';
+import {
+	EnvelopeSolid,
+	FacebookSolid,
+	GithubSolid,
+	LinkedinSolid,
+	XSolid
+} from 'flowbite-svelte-icons';
 import {
 	GoogleScholarSolid,
 	InstagramSolid,
@@ -56,7 +62,7 @@ $: showSocials = shouldShowSocials !== undefined ? (shouldShowSocials === 'true'
 					<InstagramSolid ariaLabel="instagram" />
 				</FooterIcon>
 				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'X')?.url} class="ms-6 mt-4 md:mt-0">
-					<XCompanySolid ariaLabel="x" />
+					<XSolid ariaLabel="x" />
 				</FooterIcon>
 			</div>
 		{/if}

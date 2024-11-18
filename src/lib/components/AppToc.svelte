@@ -2,7 +2,7 @@
 	import { page } from '$app/stores';
 	import Toc from 'svelte-toc';
 	import { Span } from 'flowbite-svelte';
-	import { BarsFromLeftSolid } from 'flowbite-svelte-icons';
+	import { BarsFromLeftOutline } from 'flowbite-svelte-icons';
 
 	$: enabled = $page.data.toc?.enabled ?? false;
 
@@ -43,7 +43,7 @@
 			hover:bg-gray-100 dark:hover:bg-gray-700
 			focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700
 			rounded-lg text-sm p-2.5">
-			<BarsFromLeftSolid class="size-5" />
+			<BarsFromLeftOutline class="size-5" />
 		</div>
 	</Toc>
 </div>
