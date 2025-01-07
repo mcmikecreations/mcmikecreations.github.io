@@ -2663,5 +2663,44 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Spitzingsee Schlitten",
+    "image": "/images/projects/data-viz/hikes/spitzingsee_schlittenfahrt.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2024-12-14"],
+      "filePath": "/_projects/data-viz/hikes/geojson/spitzingsee_schlittenfahrt.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.8880556, 47.6618854],
+        [11.8474276, 47.6632572],
+        [11.8836539, 47.6861140],
+        [11.8733766, 47.7062602]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Spitzingsee to Neuhaus visiting the Suttenstein viewpoint and going down from Firstalm with a sledge.",
+    "route": "/projects/data-viz/hikes/spitzingsee_schlittenfahrt",
+    "height": 512,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.68757916850813,
+        "lon": 11.87021255493164
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "spitzingsee_schlittenfahrt.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
