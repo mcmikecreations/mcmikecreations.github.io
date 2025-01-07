@@ -2,7 +2,7 @@
 import { geoMercator } from 'd3-geo';
 import { tile } from 'd3-tile';
 // noinspection ES6PreferShortImport
-import maps from '../src/lib/data/hikes.json' assert { type: "json" };
+import maps from '../src/lib/data/hikes.json' with { type: "json" };
 import { existsSync } from 'fs';
 import { mkdir, writeFile } from 'fs/promises';
 import { resolve } from 'path';

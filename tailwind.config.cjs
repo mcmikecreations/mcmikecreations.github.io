@@ -11,7 +11,7 @@ const config = {
 	darkMode: 'class',
 
 	theme: {
-		extend: require('./src/lib/styling/theme')
+		extend: require('./src/lib/styling/theme.json')
 	}
 };
 

@@ -2,7 +2,7 @@ import type { Feature, GeometryData, Map } from '$lib/data/map-info';
 import { providerFolder } from '$lib/data/map-providers';
 import { geoPath, type GeoPermissibleObjects, type GeoProjection } from 'd3-geo';
 import * as THREE from 'three';
-import theme from '$lib/styling/theme';
+import theme from '$lib/styling/theme.json';
 
 // noinspection JSUnusedGlobalSymbols
 class ThreePathContext {
