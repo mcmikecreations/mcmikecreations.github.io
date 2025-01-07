@@ -2,6 +2,7 @@
 	import { FacebookSolid, GithubSolid, LinkedinSolid, XSolid } from 'flowbite-svelte-icons';
 import SocialBadge from '$lib/components/SocialBadge.svelte';
 	import {
+		BlueSkySolid,
 		GoogleScholarSolid,
 		InstagramSolid,
 		MastodonSolid,
@@ -29,3 +30,4 @@ import SocialBadge from '$lib/components/SocialBadge.svelte';
 <SocialBadge profile="Facebook" {size} {padding} {pill} {outline} {plain}><FacebookSolid aria-hidden="true" /></SocialBadge>
 <SocialBadge profile="Instagram" {size} {padding} {pill} {outline} {plain}><InstagramSolid aria-hidden="true" /></SocialBadge>
 <SocialBadge profile="X" {size} {padding} {pill} {outline} {plain}><XSolid aria-hidden="true" /></SocialBadge>
+<SocialBadge profile="BlueSky" {size} {padding} {pill} {outline} {plain}><BlueSkySolid aria-hidden="true" /></SocialBadge>

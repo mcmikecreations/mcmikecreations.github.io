@@ -72,7 +72,12 @@
       {
         "network": "X",
         "username": "MykolaMor",
-        "url": "https://twitter.com/MykolaMor"
+        "url": "https://x.com/MykolaMor"
+      },
+      {
+        "network": "BlueSky",
+        "username": "mykolamor",
+        "url": "https://bsky.app/profile/mykolamor.bsky.social"
       }
     ]
   },

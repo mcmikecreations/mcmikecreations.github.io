@@ -10,6 +10,7 @@ import {
 	XSolid
 } from 'flowbite-svelte-icons';
 import {
+	BlueSkySolid,
 	GoogleScholarSolid,
 	InstagramSolid,
 	MastodonSolid,
@@ -63,6 +64,9 @@ $: showSocials = shouldShowSocials !== undefined ? (shouldShowSocials === 'true'
 				</FooterIcon>
 				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'X')?.url} class="ms-6 mt-4 md:mt-0">
 					<XSolid ariaLabel="x" />
+				</FooterIcon>
+				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'BlueSky')?.url} class="ms-6 mt-4 md:mt-0">
+					<BlueSkySolid ariaLabel="bluesky" />
 				</FooterIcon>
 			</div>
 		{/if}

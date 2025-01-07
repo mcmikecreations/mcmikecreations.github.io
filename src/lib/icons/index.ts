@@ -4,6 +4,7 @@ import MastodonSolid from '$lib/icons/MastodonSolid.svelte';
 import TelegramSolid from '$lib/icons/TelegramSolid.svelte';
 import GoogleScholarSolid from '$lib/icons/GoogleScholarSolid.svelte';
 import ResearchGateSolid from '$lib/icons/ResearchGateSolid.svelte';
+import BlueSkySolid from '$lib/icons/BlueSkySolid.svelte';
 
 export {
 	InstagramSolid,
@@ -12,4 +13,5 @@ export {
 	TelegramSolid,
 	GoogleScholarSolid,
 	ResearchGateSolid,
+	BlueSkySolid
 };
