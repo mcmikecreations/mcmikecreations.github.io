@@ -2742,5 +2742,47 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Großer Traithen",
+    "image": "/images/projects/data-viz/hikes/grosser_traithen.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2025-01-26"],
+      "filePath": "/_projects/data-viz/hikes/geojson/grosser_traithen.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [12.0111304, 47.6385934],
+        [12.0390564, 47.6509419],
+        [12.0376336, 47.6465626],
+        [12.0435734, 47.6442319],
+        [12.0546930, 47.6457112],
+        [12.1277150, 47.6305969],
+        [12.1752506, 47.6526185]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Bayrischzell to Oberaudorf via Großer Traithen (1852 m), Unterbergerjoch (1813 m), Steilnerjoch (1747 m).",
+    "route": "/projects/data-viz/hikes/grosser_traithen",
+    "height": 1024,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.645557001604324,
+        "lon": 12.09199905395508
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "grosser_traithen.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
