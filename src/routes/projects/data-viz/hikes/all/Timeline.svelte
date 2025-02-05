@@ -49,6 +49,9 @@
 		}
 	}
 
+	const yearsSorted = [...years.entries()];
+	yearsSorted.sort((a, b) => parseInt(b[0]) - parseInt(a[0]));
+
 	function getColor(month : [string, unknown[]]) : string {
 		const rel = month[1].length / maxHikesPerMonth;
 		return `hsl(173deg ${89 * (rel * 0.75 + 0.25)}% ${72 * (rel * 0.6 + 0.4)}%)`;
@@ -56,7 +59,7 @@
 </script>
 
 <div class="w-full">
-	{#each years.entries() as year}
+	{#each yearsSorted as year}
 		<div class="flex flex-row flex-nowrap mt-2">
 			<div>{year[0]}</div>
 			{#each year[1].entries() as month}

@@ -128,6 +128,7 @@
 
 	function initStatistics() : void {
 		const statsElement = document.getElementById('stats');
+		const statsRects = document.getElementById('statsRects');
 
 		if (!statsElement) {
 			return;
@@ -136,15 +137,37 @@
 		statsElement.addEventListener('pointermove', (event) => {
 			event.preventDefault();
 			const ev = event as PointerEvent;
-			const elems = document.elementsFromPoint(ev.clientX, ev.clientY).filter((x) => x.tagName === 'rect');
-			if (elems.length > 0) { onUpdateStatistics(elems[0] as HTMLElement); }
+
+			if (statsRects) {
+				const rect = statsElement.getBoundingClientRect();
+				const localX = (ev.clientX - rect.left) / rect.width;
+				const childIndex = Math.floor(localX * statsRects.childElementCount);
+				const elem = statsRects.childElementCount > childIndex
+					? statsRects.children.item(childIndex) as HTMLElement
+					: null;
+				if (elem) { onUpdateStatistics(elem); }
+			} else {
+				const elems = document.elementsFromPoint(ev.clientX, ev.clientY).filter((x) => x.tagName === 'rect');
+				if (elems.length > 0) { onUpdateStatistics(elems[0] as HTMLElement); }
+			}
 		}, false);
 		statsElement.addEventListener('touchmove', (event) => {
 			event.preventDefault();
 			const ev = event as TouchEvent;
 			const touch = ev.touches[0];
-			const elems = document.elementsFromPoint(touch.clientX, touch.clientY).filter((x) => x.tagName === 'rect');
-			if (elems.length > 0) { onUpdateStatistics(elems[0] as HTMLElement); }
+
+			if (statsRects) {
+				const rect = statsElement.getBoundingClientRect();
+				const localX = (touch.clientX - rect.left) / rect.width;
+				const childIndex = Math.floor(localX * statsRects.childElementCount);
+				const elem = statsRects.childElementCount > childIndex
+					? statsRects.children.item(childIndex) as HTMLElement
+					: null;
+				if (elem) { onUpdateStatistics(elem); }
+			} else {
+				const elems = document.elementsFromPoint(touch.clientX, touch.clientY).filter((x) => x.tagName === 'rect');
+				if (elems.length > 0) { onUpdateStatistics(elems[0] as HTMLElement); }
+			}
 		}, false);
 	}
 
