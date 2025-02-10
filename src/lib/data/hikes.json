@@ -2828,5 +2828,42 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Rampoldplatte",
+    "image": "/images/projects/data-viz/hikes/rampoldplatte.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2025-02-09"],
+      "filePath": "/_projects/data-viz/hikes/geojson/rampoldplatte.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [12.1069038, 47.7410763],
+        [12.0436119, 47.7239405]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Brannenburg and back via Rampoldplatte (1422 m).",
+    "route": "/projects/data-viz/hikes/rampoldplatte",
+    "height": 512,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.733031332912894,
+        "lon": 12.074747085571289
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "rampoldplatte.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
