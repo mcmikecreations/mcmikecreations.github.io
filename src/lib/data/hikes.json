@@ -7,7 +7,7 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-02-18"],
+      "dates": ["2025-03-02","2024-02-18"],
       "filePath": "/_projects/data-viz/hikes/geojson/seekarkreuz.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -2860,6 +2860,88 @@
         "provider": "hikes/geojson",
         "modes": [ "2d", "3d" ],
         "path": "rampoldplatte.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Herrsching - Tutzing",
+    "image": "/images/projects/data-viz/hikes/herrsching_tutzing.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2025-02-23"],
+      "filePath": "/_projects/data-viz/hikes/geojson/herrsching_tutzing.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.1703947, 47.9984622],
+        [11.1666375, 47.9973810],
+        [11.1827828, 47.9736348],
+        [11.2214892, 47.9470992],
+        [11.2570840, 47.9431822],
+        [11.2728014, 47.9071073]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Herrsching to Tutzing via Andechs, Erling, Machtlfing, and Traubing.",
+    "route": "/projects/data-viz/hikes/herrsching_tutzing",
+    "height": 896,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.95774347215711,
+        "lon": 11.223907470703125
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "herrsching_tutzing.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Hochstaufen",
+    "image": "/images/projects/data-viz/hikes/hochstaufen.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2025-03-09"],
+      "filePath": "/_projects/data-viz/hikes/geojson/hochstaufen.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [12.9115963, 47.7596347],
+        [12.8761479, 47.7537784],
+        [12.8487577, 47.7549634],
+        [12.8395427, 47.7529102],
+        [12.8740908, 47.7184280],
+        [12.8818914, 47.7313761]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Piding to Bad Reichenhall via Fuderheustein (1321 m) and Hochstaufen (1771 m).",
+    "route": "/projects/data-viz/hikes/hochstaufen",
+    "height": 512,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.74648034083308,
+        "lon": 12.875289916992188
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "hochstaufen.json#/features/0"
       }],
       "geometrySource": "https://maps.openrouteservice.org/",
       "statistics": true

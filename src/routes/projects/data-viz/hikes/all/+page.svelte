@@ -6,7 +6,7 @@
 	import {onMount} from 'svelte';
 	import 'leaflet/dist/leaflet.css';
 	import { getDistance, getTime } from '../[slug]/build-statistics';
-	import type { Layer } from 'leaflet';
+	import type { Layer, Polyline } from 'leaflet';
 	import type { Feature, GeoJsonObject, Geometry } from 'geojson';
 	import Timeline from './Timeline.svelte';
 

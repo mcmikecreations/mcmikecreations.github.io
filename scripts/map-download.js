@@ -30,77 +30,85 @@ const downloadFile = async (address, fileName, requestInit = undefined) => {
 	return buffer.length;
 };
 
-const slug = process.argv[2];
+const slug = process.argv.at(2);
 const skuMapboxDEM = process.env.mapboxDEMSKU;
 const tokenMapboxDEM = process.env.mapboxDEMAccess;
 const skuMapboxSatellite = process.env.mapboxSatelliteSKU;
 const tokenMapboxSatellite = process.env.mapboxSatelliteAccess;
 const tokenNextzen = process.env.nextzenAccess;
-const meta = maps.find((x) => x.route.endsWith(slug));
+const metas = slug === undefined
+	? Object.values(maps)
+	: [maps.find((x) => x.route.endsWith(slug))];
 
-if (!meta) {
+if (!metas || metas.at(0) === undefined) {
 	console.error(`Failed to fetch /maps/${slug} metadata.`);
 }
 
-const features = getMapFeatures(meta);
-const origin = features.find((x) => x.type === 'Origin');
-
-if (!origin) {
-	console.error(`Failed to find origin for /maps/${slug}.`);
+for (const meta of metas) {
+	await downloadMeta(meta);
 }
 
-const height = meta.height;
-const projection = geoMercator()
-	.center([origin.data.lon, origin.data.lat])
-	.scale(Math.pow(2, 21) / (2 * Math.PI))
-	.translate([height / 2, height / 2]);
+async function downloadMeta(meta) {
+	const features = getMapFeatures(meta);
+	const origin = features.find((x) => x.type === 'Origin');
 
-const tileFunc = tile()
-	.size([height, height])
-	.scale(projection.scale() * 2 * Math.PI)
-	.translate(projection([0, 0]));
-const tiles = tileFunc();
+	if (!origin) {
+		console.error(`Failed to find origin for /maps/${slug}.`);
+	}
 
-await verifyFolder(resolve(mapFolder, `${providers.mapboxDEM.tileset}/`));
-await verifyFolder(resolve(mapFolder, `${providers.mapboxSatellite.tileset}/`));
-await verifyFolder(resolve(mapFolder, `${providers.nextzenTerrariumDEM.tileset}/`));
-await verifyFolder(resolve(mapFolder, `${providers.osm.tileset}/`));
+	const height = meta.height;
+	const projection = geoMercator()
+		.center([origin.data.lon, origin.data.lat])
+		.scale(Math.pow(2, 21) / (2 * Math.PI))
+		.translate([height / 2, height / 2]);
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-tiles.map(async ([x, y, z], i, {translate: [tx, ty], scale: k}) => {
-	//console.log(`Downloading ${z}/${x}/${y}`);
-	await downloadFile(
-		providers.mapboxDEM.url(x, y, z, `sku=${skuMapboxDEM}&access_token=${tokenMapboxDEM}`),
-		providerFile(x, y, z, providers.mapboxDEM.tileset, providers.mapboxDEM.format),
-		{
-			method: 'GET',
-			headers: {
-				"Origin": providers.mapboxDEM.origin,
-				"Referrer": providers.mapboxDEM.origin,
-			},
-			referrer: providers.mapboxDEM.origin,
-		}
-	);
-	await downloadFile(
-		providers.nextzenTerrariumDEM.url(x, y, z, `api_key=${tokenNextzen}`),
-		providerFile(x, y, z, providers.nextzenTerrariumDEM.tileset, providers.nextzenTerrariumDEM.format),
-		undefined
-	);
-	await downloadFile(
-		providers.osm.url(x, y, z),
-		providerFile(x, y, z, providers.osm.tileset, providers.osm.format),
-		undefined
-	);
-	await downloadFile(
-		providers.mapboxSatellite.url(x, y, z, `sku=${skuMapboxSatellite}&access_token=${tokenMapboxSatellite}`),
-		providerFile(x, y, z, providers.mapboxSatellite.tileset, providers.mapboxSatellite.format),
-		{
-			method: 'GET',
-			headers: {
-				"Origin": providers.mapboxDEM.origin,
-				"Referrer": providers.mapboxDEM.origin,
-			},
-			referrer: providers.mapboxDEM.origin,
-		}
-	);
-});
+	const tileFunc = tile()
+		.size([height, height])
+		.scale(projection.scale() * 2 * Math.PI)
+		.translate(projection([0, 0]));
+	const tiles = tileFunc();
+
+	await verifyFolder(resolve(mapFolder, `${providers.mapboxDEM.tileset}/`));
+	await verifyFolder(resolve(mapFolder, `${providers.mapboxSatellite.tileset}/`));
+	await verifyFolder(resolve(mapFolder, `${providers.nextzenTerrariumDEM.tileset}/`));
+	await verifyFolder(resolve(mapFolder, `${providers.osm.tileset}/`));
+
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
+	tiles.map(async ([x, y, z], i, {translate: [tx, ty], scale: k}) => {
+		//console.log(`Downloading ${z}/${x}/${y}`);
+		await downloadFile(
+			providers.mapboxDEM.url(x, y, z, `sku=${skuMapboxDEM}&access_token=${tokenMapboxDEM}`),
+			providerFile(x, y, z, providers.mapboxDEM.tileset, providers.mapboxDEM.format),
+			{
+				method: 'GET',
+				headers: {
+					"Origin": providers.mapboxDEM.origin,
+					"Referrer": providers.mapboxDEM.origin,
+				},
+				referrer: providers.mapboxDEM.origin,
+			}
+		);
+		await downloadFile(
+			providers.nextzenTerrariumDEM.url(x, y, z, `api_key=${tokenNextzen}`),
+			providerFile(x, y, z, providers.nextzenTerrariumDEM.tileset, providers.nextzenTerrariumDEM.format),
+			undefined
+		);
+		await downloadFile(
+			providers.osm.url(x, y, z),
+			providerFile(x, y, z, providers.osm.tileset, providers.osm.format),
+			undefined
+		);
+		await downloadFile(
+			providers.mapboxSatellite.url(x, y, z, `sku=${skuMapboxSatellite}&access_token=${tokenMapboxSatellite}`),
+			providerFile(x, y, z, providers.mapboxSatellite.tileset, providers.mapboxSatellite.format),
+			{
+				method: 'GET',
+				headers: {
+					"Origin": providers.mapboxDEM.origin,
+					"Referrer": providers.mapboxDEM.origin,
+				},
+				referrer: providers.mapboxDEM.origin,
+			}
+		);
+	});
+}
