@@ -22,6 +22,7 @@ const verifyFolder = async (path) => {
 }
 
 const downloadFile = async (address, fileName, requestInit = undefined) => {
+	//console.log(`Downloading ${address}`);
 	const response = await fetch(address, requestInit);
 	const destination = resolve(mapFolder, fileName);
 	const buffer = Buffer.from(await response.arrayBuffer());
@@ -31,6 +32,7 @@ const downloadFile = async (address, fileName, requestInit = undefined) => {
 };
 
 const slug = process.argv.at(2);
+const cookieMapycz = process.env.mapyczAccess;
 const skuMapboxDEM = process.env.mapboxDEMSKU;
 const tokenMapboxDEM = process.env.mapboxDEMAccess;
 const skuMapboxSatellite = process.env.mapboxSatelliteSKU;
@@ -72,6 +74,7 @@ async function downloadMeta(meta) {
 	await verifyFolder(resolve(mapFolder, `${providers.mapboxSatellite.tileset}/`));
 	await verifyFolder(resolve(mapFolder, `${providers.nextzenTerrariumDEM.tileset}/`));
 	await verifyFolder(resolve(mapFolder, `${providers.osm.tileset}/`));
+	await verifyFolder(resolve(mapFolder, `${providers.mapyOutdoor.tileset}/`));
 
 	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	tiles.map(async ([x, y, z], i, {translate: [tx, ty], scale: k}) => {
@@ -108,6 +111,19 @@ async function downloadMeta(meta) {
 					"Referrer": providers.mapboxDEM.origin,
 				},
 				referrer: providers.mapboxDEM.origin,
+			}
+		);
+		await downloadFile(
+			providers.mapyOutdoor.url(x, y, z),
+			providerFile(x, y, z, providers.mapyOutdoor.tileset, providers.mapyOutdoor.format),
+			{
+				method: 'GET',
+				headers: {
+					"Origin": providers.mapyOutdoor.origin,
+					"Referrer": providers.mapyOutdoor.origin,
+					"Cookie": cookieMapycz
+				},
+				referrer: providers.mapyOutdoor.origin,
 			}
 		);
 	});
