@@ -9,6 +9,7 @@
 	import type { Layer, Polyline } from 'leaflet';
 	import type { Feature, GeoJsonObject, Geometry } from 'geojson';
 	import Timeline from './Timeline.svelte';
+	import { secondaryGeometryColor } from '../[slug]/build-geometry';
 
 	export let data: PageData;
 
@@ -36,7 +37,7 @@
 		};
 		const staticColor = function(feature : Feature<Geometry, any> | undefined) {
 			return {
-				color: '#000',
+				color: secondaryGeometryColor,
 				dashArray: feature?.properties?.draft === true ? '5, 5' : undefined,
 			};
 		}

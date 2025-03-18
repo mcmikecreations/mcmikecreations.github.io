@@ -2947,5 +2947,50 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Riedenburg - Kelheim",
+    "image": "/images/projects/data-viz/hikes/riedenburg_kelheim.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2025-03-16"],
+      "filePath": "/_projects/data-viz/hikes/geojson/riedenburg_kelheim.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.6814183, 48.9573690],
+        [11.6822098, 48.9606218],
+        [11.6849069, 48.9626143],
+        [11.7398785, 48.9504566],
+        [11.7880240, 48.9361210],
+        [11.8280255, 48.9181521],
+        [11.8207710, 48.9001189],
+        [11.8608486, 48.9191915],
+        [11.8701830, 48.9163868],
+        [11.9335261, 48.9023789]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Riedenburg to Saal through Prunn, Essing, Kloster Weltenburg, and Kelheim.",
+    "route": "/projects/data-viz/hikes/riedenburg_kelheim",
+    "height": 1536,
+    "standardFeatures": {
+      "origin": {
+        "lat": 48.92791313673253,
+        "lon": 11.806182861328127
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "riedenburg_kelheim.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
