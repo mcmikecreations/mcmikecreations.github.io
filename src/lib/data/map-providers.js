@@ -11,6 +11,15 @@ export const providers = {
 		origin: null,
 		url: (/** @type {number} */ x, /** @type {number} */ y, /** @type {number} */ z) => `https://${"abc"[Math.abs(x + y) % 3]}.tile.osm.org/${z}/${x}/${y}.png`,
 	},
+	mapyOutdoor: {
+		format: 'png',
+		name: 'Mapy.cz Outdoor',
+		size: 256,
+		tileset: 'mapycz-outdoor',
+		source: 'https://en.mapy.cz/',
+		origin: 'https://en.mapy.cz',
+		url: (/** @type {number} */ x, /** @type {number} */ y, /** @type {number} */ z) => `https://tilecache.mapy.cz/turist-en/${z}-${x}-${y}`,
+	},
 	wikimedia: {
 		format: 'png',
 		name: 'Wikimedia Maps',
