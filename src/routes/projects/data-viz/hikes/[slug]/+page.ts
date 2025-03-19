@@ -48,6 +48,7 @@ export const load: PageLoad = async ({ fetch, params }) => {
 
 		const layers2d : Array<string> = [];
 		const layers3d : Array<THREE.Object3D> = [];
+		const layersGeometry : Array<object> = [];
 		let properties = meta.properties;
 
 		for (const layer of features) {
@@ -56,6 +57,7 @@ export const load: PageLoad = async ({ fetch, params }) => {
 				data = await buildTiles(fetch, layer, tiles, tileFunc);
 			} else if (layer.type === 'Geometry') {
 				const geometry = await loadGeometry(fetch, layer.data as GeometryData);
+				layersGeometry.push(geometry);
 				properties = loadProperties(meta, geometry);
 				data = await buildGeometry(fetch, layer, geometry, projection, pixelsPerMeter, tiles.scale);
 			}
@@ -82,6 +84,7 @@ export const load: PageLoad = async ({ fetch, params }) => {
 			projection: projection,
 			tileScale: tiles.scale,
 			pixelsPerMeter: pixelsPerMeter,
+			dataGeometry: layersGeometry,
 			data2d: layers2d.join(''),
 			data3d: layers3d,
 			toc: {

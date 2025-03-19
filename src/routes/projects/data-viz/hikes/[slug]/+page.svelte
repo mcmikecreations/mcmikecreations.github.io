@@ -6,13 +6,16 @@
 	import { Tabs, TabItem, Img, Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
 	import Attribution from './Attribution.svelte';
 	import { onMount } from 'svelte';
+	import 'leaflet/dist/leaflet.css';
 	import * as THREE from 'three';
 	import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 	import { providerFile, providerFolder, providers } from '$lib/data/map-providers';
 	import { type Feature, getMapFeatures, type MapProvider, type TilesData } from '$lib/data/map-info';
 	import { getDistance, getTime } from './build-statistics';
 	import { detectMobileBrowser } from '$lib/components/detectmobilebrowser';
-	import { primaryIndicatorColor, secondaryIndicatorColor } from './build-geometry';
+	import { primaryIndicatorColor, secondaryGeometryColor, secondaryIndicatorColor } from './build-geometry';
+	import type { GeoJsonObject, Geometry } from 'geojson';
+	import { type Layer } from 'leaflet';
 
 	export let data: PageData;
 
@@ -23,12 +26,13 @@
 	const center = data.projection([data.origin.lon, data.origin.lat])!;
 	const features = getMapFeatures(data.map) as Feature[];
 	const attrMapbox = features.some((x) => x.type === 'Tiles' && (x.data as TilesData)!.provider!.includes('mapbox'));
-	const attrOSM = features.some((x) => x.type === 'Tiles' && (x.data as TilesData)!.provider!.includes('osm')) && !attrMapbox;
+	const attrOSM = features.some((x) => x.type === 'Tiles' && (x.data as TilesData)!.provider!.includes('osm'));
 
 	let renderer : THREE.WebGLRenderer;
 	let camera : THREE.PerspectiveCamera;
 	let scene : THREE.Scene;
 	let statsIndicator3d : THREE.Object3D;
+	let statsIndicatorInteractive : any;
 	let lastStatsIndicatorTarget : HTMLElement;
 
 	let isMobile = false;
@@ -37,6 +41,97 @@
 		if (renderer && scene && camera) {
 			renderer.render(scene, camera);
 		}
+	}
+
+	async function attachInteractive() : Promise<void> {
+		const { L } = await import('$lib/components/leaflet.almostover.js');
+
+		const mapOsm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			maxZoom: 19,
+			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+		});
+		const mapOsmLocal = (() => {
+			const provider = providers.osm;
+			return L.tileLayer(`/${providerFolder}/maps/${provider.tileset}/{z}_{x}_{y}.${provider.format}`, {
+				maxZoom: 13,
+				minZoom: 13,
+				attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			});
+		})();
+		const mapMapyczLocal = (() => {
+			const provider = providers.mapyOutdoor;
+			return L.tileLayer(`/${providerFolder}/maps/${provider.tileset}/{z}_{x}_{y}.${provider.format}`, {
+				maxZoom: 13,
+				minZoom: 13,
+				attribution: '© <a href="https://o.seznam.cz" target="_blank" rel="noopener">Seznam.cz, a.s.</a>, 2025 and <a href="https://licence.mapy.cz/?doc=mapy_attr&amp;lang=en" data-others="1" target="_blank" rel="noopener">more</a>'
+			});
+		})();
+		const mapSatelliteLocal = (() => {
+			const provider = providers.mapboxSatellite;
+			return L.tileLayer(`/${providerFolder}/maps/${provider.tileset}/{z}_{x}_{y}.${provider.format}`, {
+				maxZoom: 13,
+				minZoom: 13,
+				attribution: '<a href="https://www.mapbox.com/about/maps/" target="_blank" title="Mapbox" aria-label="Mapbox">© Mapbox</a> <a href="https://www.openstreetmap.org/about/" target="_blank" title="OpenStreetMap" aria-label="OpenStreetMap">© OpenStreetMap</a> <a class="mapbox-improve-map" href="https://apps.mapbox.com/feedback/?owner=examples&amp;id=cke97f49z5rlg19l310b7uu7j&amp;access_token=pk.eyJ1IjoiZXhhbXBsZXMiLCJhIjoiY203eXd1a3ZzMGV1ejJrcHRvdnVoYng0NCJ9.NzlqpAcLHejzezQqazzI-w#/41/21/3" target="_blank" title="Improve this map" aria-label="Improve this map" rel="noopener nofollow">Improve this map</a>'
+			});
+		})();
+		const baseMaps = {
+			'OSM Mirror': mapOsmLocal,
+			'Mapy.cz Outdoor': mapMapyczLocal,
+			'Mapbox Satellite': mapSatelliteLocal,
+			'OpenStreetMap': mapOsm,
+		};
+		const map = L.map('container-interactive', {
+			almostOnMouseMove: false,
+			almostDistance: 15,
+			layers: [mapOsm],
+		}).setView([data.origin.lat, data.origin.lon], 13);
+		const controls = L.control.layers(baseMaps).addTo(map);
+		const controlsContainer = controls.getContainer();
+		if (controlsContainer) {
+			function refocus() {
+				const tempInputs = controlsContainer?.getElementsByTagName('input');
+				for (let i = 0; i < tempInputs?.length ?? 0; ++i) {
+					tempInputs[i].disabled = false;
+				}
+				map.setView([data.origin.lat, data.origin.lon], 13);
+			}
+
+			controlsContainer.addEventListener('mouseover', refocus);
+			controlsContainer.addEventListener('click', refocus);
+
+			const inputs = controlsContainer.getElementsByTagName('input');
+			if (inputs && inputs.length > 0) {
+				for (let i = 0; i < inputs.length; ++i) {
+					inputs[i].addEventListener('mouseover', refocus);
+					inputs[i].addEventListener('click', refocus);
+					inputs[i].addEventListener('change', refocus);
+				}
+			}
+		}
+
+		const staticColor = function(feature : Feature<Geometry, any> | undefined) {
+			return {
+				color: secondaryGeometryColor,
+			};
+		}
+		const hikesLayer = L.geoJSON(data.dataGeometry as GeoJsonObject[], {
+			style: staticColor,
+			onEachFeature: function(feature: Feature<any, any>, layer: Layer) {
+			}
+		}).addTo(map);
+		map.almostOver.addLayer(hikesLayer);
+
+		statsIndicatorInteractive = new L.CircleMarker([data.origin.lat, data.origin.lon], {
+			fillColor: secondaryIndicatorColor,
+			color: secondaryIndicatorColor,
+			fill: true,
+			stroke: true,
+			fillOpacity: 1,
+			radius: 5,
+		}).addTo(map);
+		statsIndicatorInteractive.getElement()?.classList.add('hidden');
+
+		onUpdateStatistics(lastStatsIndicatorTarget);
 	}
 
 	function attach3d() : void {
@@ -123,6 +218,14 @@
 			statsIndicator3d.position.set(projected[0] - scale * 0.5, -projected[1] + scale * 0.5, z * data.pixelsPerMeter);
 			statsIndicator3d.visible = true;
 			render();
+		}
+
+		if (statsIndicatorInteractive) {
+			const element = statsIndicatorInteractive.getElement();
+			if (element) {
+				element.classList.remove('hidden');
+				statsIndicatorInteractive.setLatLng([y, x]);
+			}
 		}
 	}
 
@@ -295,6 +398,7 @@
 		isMobile = detectMobileBrowser();
 		await init3d();
 		attach3d();
+		//await attachInteractive();
 		initStatistics();
 	});
 </script>
@@ -336,7 +440,7 @@
 		</article>
 		<div class="flex-[2] min-w-80">
 			<Tabs>
-				<TabItem open title="3D" on:click={() => attach3d()}>
+				<TabItem open title="3D" on:click={async () => { await init3d(); attach3d(); }}>
 					<div id="container-3d" class="w-full aspect-square" />
 					<Attribution {attrMapbox} {attrOSM} />
 				</TabItem>
@@ -345,7 +449,12 @@
 						{@html data.data2d}
 						<circle id="statsIndicator2d" r={data.map.height * 0.125 * 0.125 * 0.5} fill={secondaryIndicatorColor} class="hidden" />
 					</svg>
-					<Attribution {attrMapbox} {attrOSM} />
+					<Attribution attrMapbox="{false}" {attrOSM} />
+				</TabItem>
+				<TabItem title="Interactive" on:click={async () => await attachInteractive()}>
+					<div class="overflow-hidden aspect-square">
+						<div id="container-interactive" class="w-full aspect-square" />
+					</div>
 				</TabItem>
 			</Tabs>
 		</div>
