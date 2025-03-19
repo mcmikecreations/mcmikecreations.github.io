@@ -15,7 +15,9 @@
 	import { detectMobileBrowser } from '$lib/components/detectmobilebrowser';
 	import { primaryIndicatorColor, secondaryGeometryColor, secondaryIndicatorColor } from './build-geometry';
 	import type { GeoJsonObject, Geometry } from 'geojson';
-	import { type Layer } from 'leaflet';
+	import type { Layer } from 'leaflet';
+	import SvelteMarkdown from 'svelte-markdown';
+	import DefaultLink from '$lib/renderers/DefaultLink.svelte';
 
 	export let data: PageData;
 
@@ -458,5 +460,15 @@
 				</TabItem>
 			</Tabs>
 		</div>
+		{#if data.posts.length > 0}
+			<div class="w-full p-4 bg-gray-50 rounded-lg dark:bg-gray-800">
+				{#each data.posts as postItem}
+					<article class="max-w-full prose dark:prose-invert">
+						<h2>Hike on {new Date(postItem.date).toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' })}</h2>
+						<SvelteMarkdown source={postItem.post} renderers={{ link: DefaultLink }} />
+					</article>
+				{/each}
+			</div>
+		{/if}
 	</div>
 </main>

@@ -74,6 +74,19 @@ export const load: PageLoad = async ({ fetch, params }) => {
 
 		meta.features = features;
 
+		const posts: { date: string, post: string }[] = [];
+		for (const date of properties.dates) {
+			try {
+				const res = await fetch(
+					`/_projects/data-viz/hikes/markdown/${date}-${params.slug}.md`
+				);
+				if (res.ok) {
+					const post = await res.text();
+					posts.push({ date, post });
+				}
+			} catch (e) {}
+		}
+
 		return {
 			map: meta,
 			properties: properties,
@@ -84,6 +97,7 @@ export const load: PageLoad = async ({ fetch, params }) => {
 			projection: projection,
 			tileScale: tiles.scale,
 			pixelsPerMeter: pixelsPerMeter,
+			posts: posts,
 			dataGeometry: layersGeometry,
 			data2d: layers2d.join(''),
 			data3d: layers3d,
