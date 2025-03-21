@@ -5,7 +5,7 @@
     "image": "/images/profile_thumb.jpg",
     "email": "mykola.morozov.2000@gmail.com",
     "phone": "",
-    "url": "https://mcmikecreations.github.io",
+    "url": "https://mykolamor.com",
     "quote": "Detail-oriented, responsible and committed developer, with a get-it-done, on-time and high-quality product spirit.",
     "summary": "Hi, my name's Mykola and I'm a TUM PhD and an ex senior software engineer at IsraelIT. As well as enterprise systems I also have experience making software and cross-platform apps. Detail-oriented, responsible and committed developer, with a get-it-done, on-time and high-quality product spirit. I quickly learn new skills and programming languages. I educate, refine and drive myself to be a better person.",
     "location": {
@@ -36,8 +36,8 @@
       },
       {
         "network": "Telegram",
-        "username": "mcmikecreations",
-        "url": "https://t.me/mcmikecreations"
+        "username": "mykolamor",
+        "url": "https://t.me/mykolamor"
       },
       {
         "network": "Google Scholar",
@@ -563,7 +563,7 @@
       "description": "A relatively big dataset of TUM exam statistics and course reviews. The data is collected anonymously and distributed across schools. The website uses <code>Jekyll</code>, <code>Ruby</code>, and <code>GitHub Actions</code> to statically compile the data and make it available in HTML and JSON formats for further usage or analysis.\n\nThe project uses a custom <code>Python</code> web scraper to collect courses for a specific student using their login and password."
     },
     {
-      "name": "Data Viz",
+      "name": "Hikes Visualization",
       "image": "/images/projects/data-viz/map.svg",
       "imageDark": "/images/projects/data-viz/map-dark.svg",
       "quote": "A set of small data visualization projects.",

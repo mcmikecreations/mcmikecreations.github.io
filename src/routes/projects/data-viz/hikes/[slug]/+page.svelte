@@ -95,7 +95,7 @@
 				for (let i = 0; i < tempInputs?.length ?? 0; ++i) {
 					tempInputs[i].disabled = false;
 				}
-				map.setView([data.origin.lat, data.origin.lon], 13);
+				map.setZoom(13);
 			}
 
 			controlsContainer.addEventListener('mouseover', refocus);

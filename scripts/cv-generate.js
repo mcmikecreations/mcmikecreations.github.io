@@ -1,4 +1,4 @@
-import resume from '../src/lib/data/resume.json' assert { type: "json" };
+import resume from '../src/lib/data/resume.json' with { type: "json" };
 import { writeFile } from 'fs';
 
 const filePath = '../static/cv.tex';
