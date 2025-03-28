@@ -2992,5 +2992,47 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Frau Hitt",
+    "image": "/images/projects/data-viz/hikes/frau_hitt.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2025-03-23"],
+      "filePath": "/_projects/data-viz/hikes/geojson/frau_hitt.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.2668145, 47.3918701],
+        [11.3087840, 47.3747646],
+        [11.3429050, 47.3374962],
+        [11.3504655, 47.3051777],
+        [11.3666171, 47.2984077],
+        [11.3941984, 47.2656731],
+        [11.4010207, 47.2632966]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Scharnitz to Innsbruck via Frau Hitt (2270 m).",
+    "route": "/projects/data-viz/hikes/frau_hitt",
+    "height": 1280,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.331813491093165,
+        "lon": 11.324269986715631
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "frau_hitt.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]

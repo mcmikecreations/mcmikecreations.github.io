@@ -18,7 +18,7 @@ export const providers = {
 		tileset: 'mapycz-outdoor',
 		source: 'https://en.mapy.cz/',
 		origin: 'https://en.mapy.cz',
-		url: (/** @type {number} */ x, /** @type {number} */ y, /** @type {number} */ z) => `https://tilecache.mapy.cz/turist-en/${z}-${x}-${y}`,
+		url: (/** @type {number} */ x, /** @type {number} */ y, /** @type {number} */ z) => `https://mapserver.mapy.cz/turist-en/${z}-${x}-${y}`,
 	},
 	wikimedia: {
 		format: 'png',

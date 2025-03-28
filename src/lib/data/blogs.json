@@ -1,5 +1,14 @@
 [
   {
+    "title": "How I make the hiking routes for the website",
+    "date": "2025-03-28",
+    "image": "/images/projects/data-viz/hikes/thumb/riedenburg_kelheim.jpg",
+    "description": "My hike mapping journey at a glance.",
+    "path": "2025-03-28-hiking-routes.md",
+    "author": "Mykola Morozov",
+    "tags": [ "Data-Viz" ]
+  },
+  {
     "title": "Reinventing the Wheel with ECS",
     "date": "2024-03-01",
     "image": "/images/blog/ecs.jpg",

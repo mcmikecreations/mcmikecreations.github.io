@@ -90,6 +90,7 @@ export const load: PageLoad = async ({ fetch, params }) => {
 		return {
 			map: meta,
 			properties: properties,
+			gpxPath: properties.filePath.replace('geojson', 'gpx').replace('json', 'gpx'),
 			origin: originData,
 			statistics: statistics
 				? ((await buildStatistics(fetch, statistics, height))?.layers2d?.join(''))
