@@ -5,6 +5,7 @@
 	import DefaultCode from '$lib/renderers/DefaultCode.svelte';
 	import DefaultLink from '$lib/renderers/DefaultLink.svelte';
 	import ToTopButton from '$lib/components/ToTopButton.svelte';
+	import DefaultImage from '$lib/renderers/DefaultImage.svelte';
 
 	export let data: PageData;
 </script>
@@ -29,7 +30,7 @@
 				</div>
 			{/if}
 		</div>
-		<SvelteMarkdown source={data.post.content} renderers={{ code: DefaultCode, link: DefaultLink }} />
+		<SvelteMarkdown source={data.post.content} renderers={{ code: DefaultCode, link: DefaultLink, image: DefaultImage }} />
 	</div>
 </article>
 

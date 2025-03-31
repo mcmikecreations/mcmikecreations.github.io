@@ -3034,5 +3034,51 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Hoher Fricken",
+    "image": "/images/projects/data-viz/hikes/hoher_fricken.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2025-03-30"],
+      "filePath": "/_projects/data-viz/hikes/geojson/hoher_fricken.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.1148716, 47.5311056],
+        [11.1322409, 47.5257291],
+        [11.1531653, 47.5313452],
+        [11.1569445, 47.5167755],
+        [11.1496011, 47.5180125],
+        [11.1303762, 47.5214625],
+        [11.1110771, 47.5000794],
+        [11.1086752, 47.4952846],
+        [11.1134033, 47.4907340],
+        [11.1086752, 47.4952846],
+        [11.0970176, 47.4915407]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Farchant to Garmisch-Partenkirchen via Kuhfluchtwasserfall and Hoher Fricken (1940 m).",
+    "route": "/projects/data-viz/hikes/hoher_fricken",
+    "height": 512,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.51432904852429,
+        "lon": 11.126458152207123
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "hoher_fricken.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]

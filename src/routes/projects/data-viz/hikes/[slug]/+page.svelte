@@ -18,6 +18,7 @@
 	import type { Layer } from 'leaflet';
 	import SvelteMarkdown from 'svelte-markdown';
 	import DefaultLink from '$lib/renderers/DefaultLink.svelte';
+	import DefaultImage from '$lib/renderers/DefaultImage.svelte';
 
 	export let data: PageData;
 
@@ -465,7 +466,7 @@
 				{#each data.posts as postItem}
 					<article class="max-w-full prose dark:prose-invert">
 						<h2>Hike on {new Date(postItem.date).toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' })}</h2>
-						<SvelteMarkdown source={postItem.post} renderers={{ link: DefaultLink }} />
+						<SvelteMarkdown source={postItem.post} renderers={{ link: DefaultLink, image: DefaultImage }} />
 					</article>
 				{/each}
 			</div>
