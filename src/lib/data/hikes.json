@@ -3080,5 +3080,43 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Caldeirão Verde PR9",
+    "image": "/images/projects/data-viz/hikes/caldeirao_verde.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2025-04-04"],
+      "filePath": "/_projects/data-viz/hikes/geojson/caldeirao_verde.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [-16.9060003, 32.7838419],
+        [-16.9218614, 32.7789972],
+        [-16.9354954, 32.7744500]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Parque das Queimadas to Caldeirão Verde and back.",
+    "route": "/projects/data-viz/hikes/caldeirao_verde",
+    "height": 256,
+    "standardFeatures": {
+      "origin": {
+        "lat": 32.78085234570831,
+        "lon": -16.92074775695801
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "caldeirao_verde.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
