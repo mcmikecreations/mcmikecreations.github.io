@@ -49,8 +49,14 @@ export async function buildStatistics(
 			`<rect width="${rectWidth}" height="${rectHeight}" x="${i * rectWidth}" fill="transparent" data-x="${x[0]}" data-y="${x[1]}" data-z="${x[2]}" data-h="${rectHeight - (x[2] - minHeight) / deltaHeight * rectHeight}" />`
 		).join('');
 		const paths = points.map((x : Array<number>, i : number) : string => `${i * rectWidth},${rectHeight - (x[2] - minHeight) / deltaHeight * rectHeight}`).join(' ');
-		result.layers2d.push(`<g><path fill="none" stroke-width="1" stroke="${secondaryGeometryColor}" d="M 0,${rectHeight - (points[0][2] - minHeight) / deltaHeight * rectHeight} L ${paths}" /></g>`);
-		result.layers2d.push(`<g fill="var(--tw-prose-body)" class="text-[10px] align-middle"><text y="${rectHeight - 5}">${minHeight} m</text><text y="5">${maxHeight} m</text><rect width="0" height="15" x=${containerSize} y="-7.5" class="fill-gray-200 dark:fill-gray-700" /><text x=${containerSize} y="5" text-anchor="end" id="statsHeightIndicator"></text></g>`);
+		result.layers2d.push(`<g><path fill="none" stroke-width="${rectHeight / 48}" stroke="${secondaryGeometryColor}" d="M 0,${rectHeight - (points[0][2] - minHeight) / deltaHeight * rectHeight} L ${paths}" /></g>`);
+		result.layers2d.push(`
+<g fill="var(--tw-prose-body)" style="font-size: ${10 * rectHeight / 48}px" class="align-middle">
+	<text y="${rectHeight - 5 * rectHeight / 48}">${minHeight} m</text>
+	<text y="${5 * rectHeight / 48}">${maxHeight} m</text>
+	<rect width="0" height="${15 * rectHeight / 48}" x=${containerSize} y="${-7.5 * rectHeight / 48}" class="fill-gray-200 dark:fill-gray-700" />
+	<text x=${containerSize} y="${5 * rectHeight / 48}" text-anchor="end" id="statsHeightIndicator"></text>
+</g>`);
 		result.layers2d.push(`<g id="statsRects">${rectangles}</g>`);
 	}
 

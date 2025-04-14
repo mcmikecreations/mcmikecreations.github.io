@@ -3118,5 +3118,42 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Pedra Rija PR1",
+    "image": "/images/projects/data-viz/hikes/pedra_rija.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2025-04-04"],
+      "filePath": "/_projects/data-viz/hikes/geojson/pedra_rija.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [-16.9368891, 32.7391717],
+        [-16.9285859, 32.7350716]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Pico do Areeiro to Pedra Rija and back.",
+    "route": "/projects/data-viz/hikes/pedra_rija",
+    "height": 256,
+    "standardFeatures": {
+      "origin": {
+        "lat": 32.73729195625725,
+        "lon": -16.932892799377445
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "pedra_rija.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]

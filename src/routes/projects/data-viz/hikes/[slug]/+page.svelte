@@ -186,7 +186,7 @@
 		}
 
 		const statsHeightIndicator = document.getElementById('statsHeightIndicator') as SVGTextElement | null;
-		const statsHeightIndicatorRect = statsHeightIndicator?.previousSibling as SVGRectElement | null;
+		const statsHeightIndicatorRect = statsHeightIndicator?.previousElementSibling as SVGRectElement | null;
 
 		if (statsHeightIndicator && statsHeightIndicatorRect) {
 			const offset = 5.0;
