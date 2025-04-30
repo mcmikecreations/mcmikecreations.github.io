@@ -3193,5 +3193,44 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Schweinsberg and Türkenköpfl",
+    "image": "/images/projects/data-viz/hikes/schweinsberg.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2025-04-21"],
+      "filePath": "/_projects/data-viz/hikes/geojson/schweinsberg.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.9661809, 47.6939023],
+        [11.9992281, 47.7053102],
+        [11.9876722, 47.7110389],
+        [11.9637481, 47.7133234]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Geitau to Fischbachau via Türkenköpfl (1512 m) and Schweinsberg (1514 m).",
+    "route": "/projects/data-viz/hikes/schweinsberg",
+    "height": 384,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.70693150460002,
+        "lon": 11.978187561035158
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "schweinsberg.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
