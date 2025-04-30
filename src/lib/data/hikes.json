@@ -3155,5 +3155,43 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "São Lourenço PR8 Partial",
+    "image": "/images/projects/data-viz/hikes/sao_lourenco_partial.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2025-04-06"],
+      "filePath": "/_projects/data-viz/hikes/geojson/sao_lourenco_partial.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [-16.7010340, 32.7433482],
+        [-16.6976713, 32.7489718],
+        [-16.6885934, 32.7460475]
+      ],
+      "draft": false
+    },
+    "description": "Hike at Vereda da Ponta de São Lourenço, partial.",
+    "route": "/projects/data-viz/hikes/sao_lourenco_partial",
+    "height": 256,
+    "standardFeatures": {
+      "origin": {
+        "lat": 32.74703805258418,
+        "lon": -16.695463657379154
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "sao_lourenco_partial.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
