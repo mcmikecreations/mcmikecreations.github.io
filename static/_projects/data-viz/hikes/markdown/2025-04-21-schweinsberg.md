@@ -33,7 +33,7 @@ I was also surprised that the sign at the saddle mentioned a wild skiing track g
 east. I'm not sure where the people are supposed to ski, since there was a forest and
 a water stream down below.
 
-![Alpine choughs at Schweinsberg](/images/projects/data-viz/hikes/stories/schweinsberg/2025-04-21-03.jpg)
+![Alpine choughs at Schweinsberg](/images/projects/data-viz/hikes/stories/schweinsberg/2025-04-21-04.jpg)
 
 As we arrived at the top of the second mountain, we were ambushed by alpine choughs,
 and I had to give away my Beefy to them as reparation again, repeating events from

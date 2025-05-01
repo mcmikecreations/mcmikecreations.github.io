@@ -3232,5 +3232,45 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Laber Hauptgipfel",
+    "image": "/images/projects/data-viz/hikes/laber_hauptgipfel.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2025-04-27"],
+      "filePath": "/_projects/data-viz/hikes/geojson/laber_hauptgipfel.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.0563870, 47.5999017],
+        [11.0802376, 47.5964637],
+        [11.1004400, 47.5849787],
+        [11.1177609, 47.5993189],
+        [11.0802376, 47.5964637]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Oberammergau and back via Schartenkopf (1636 m) Laber Hauptgipfel (1686 m).",
+    "route": "/projects/data-viz/hikes/laber_hauptgipfel",
+    "height": 384,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.59180955803043,
+        "lon": 11.08898162841797
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "laber_hauptgipfel.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
