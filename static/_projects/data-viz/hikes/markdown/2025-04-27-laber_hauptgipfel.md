@@ -26,7 +26,7 @@ the Alps in the distance. We took a lot of pictures and enjoyed the view.
 After a while, we kept going to Laber Hauptgipfel (1686 m), which apparently
 didn't have a cross despite being the main summit. Nobody was disappointed
 though, because we were on the way to a beer garden which may have been open.
-To our amusement, the beer garden was closed, so we had a drink there too.
+To our amusement, the beer garden was indeed open, so we had a drink there too.
 I also tried the main attraction of the place, the Alpine ice cream, which
 was delicious and I recommend it to everyone. As we were sitting there,
 the rising clouds finally caught up to us and we were surrounded by fog again.
