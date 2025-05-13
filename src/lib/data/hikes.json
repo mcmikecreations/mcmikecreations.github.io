@@ -3272,5 +3272,48 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Buch-/Roßstein",
+    "image": "/images/projects/data-viz/hikes/buchstein.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2025-05-11"],
+      "filePath": "/_projects/data-viz/hikes/geojson/buchstein.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.7462209, 47.6469534],
+        [11.6793681, 47.6330700],
+        [11.6783355, 47.6326587],
+        [11.6763040, 47.6326069],
+        [11.6783355, 47.6326587],
+        [11.6449773, 47.6433033],
+        [11.6431635, 47.6521541],
+        [11.5735467, 47.6802772]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Kreuth to Lenggries via Buchstein (1701 m), Roßstein (1698 m), Mariaeck (1469 m), and Seekarkreuz (1601 m).",
+    "route": "/projects/data-viz/hikes/buchstein",
+    "height": 1024,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.657525492808574,
+        "lon": 11.659584045410158
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "buchstein.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
