@@ -16,11 +16,17 @@ station. After some negotiation we decided to take a later train to Salzburg
 and go for a different hike. We decided on the Hochstaufen peak, with a route
 going from Piding to Bad Reichenhall.
 
+![The start of the ascent to Fuderheustein](/images/projects/data-viz/hikes/stories/hochstaufen/2025-03-09-00.jpg)
+
 After arriving at the station a few hours later, we headed to Schloß
 Staufeneck, then turned around and went parallel to the mountain to go up the
 ridge along the Fuderheustein peak. We climbed Fuderheustein from the wrong
 side, so we didn't get to touch the cross at the top, but the height was the
 same, so we proceeded further.
+
+![Fuderheustein and Hochstaufen](/images/projects/data-viz/hikes/stories/hochstaufen/2025-03-09-01.jpg)
+
+![Road to Hochstaufen](/images/projects/data-viz/hikes/stories/hochstaufen/2025-03-09-02.jpg)
 
 Quite quickly we noticed that there were a lot of slippery sections of the
 route, some with snow, others with mud. We exercised caution, but still
@@ -31,6 +37,10 @@ was quite rough and confusing, so we slowed down by a lot compared to our
 previous pace. It was tedious, but the views more than covered for it. The
 route we chose goes along the southern side of the mountain, so all the time
 we could see the tall Austrian mountains all around us.
+
+![Hut near the top of Hochstaufen](/images/projects/data-viz/hikes/stories/hochstaufen/2025-03-09-03.jpg)
+
+![Gate at the top of Hochstaufen](/images/projects/data-viz/hikes/stories/hochstaufen/2025-03-09-04.jpg)
 
 At the top of Hochstaufen we met a local military guy stretching his muscles
 on a quick hike up the mountain through the route we wanted to take on the
@@ -45,6 +55,10 @@ stretched his leg. This prompted us to slow down and pick sections with better
 terrain over faster sections. We also miscalculated the amount of water we
 needed, so we were quite thirsty by the time we got down.
 
+![Way down from Hochstaufen](/images/projects/data-viz/hikes/stories/hochstaufen/2025-03-09-05.jpg)
+
+![Sunset near Bad Reichenhall](/images/projects/data-viz/hikes/stories/hochstaufen/2025-03-09-06.jpg)
+
 Thankfully, we came across a mineral water tap and refilled our bottles to the
 brim. It was around 9 PM on a Sunday, but we met a local from a village a few
 kilometres away, who drove all the way to the tap to get a few bottles of water.
@@ -52,6 +66,8 @@ The mineral water tap is marked as "Bad Reichenhaller Mineralwasser" on the map.
 We continued along the edge of the Hochstaufenkaserne, seeing a lot of soldiers
 returning back to base before curfew, and finally arrived at the Bad Reichenhall
 Kirchberg station.
+
+![Bad Reichenhall at night](/images/projects/data-viz/hikes/stories/hochstaufen/2025-03-09-07.jpg)
 
 We still had around 40 minutes until the train, so we left Abeer to relax and
 proceeded through the town to the main Bad Reichenhall station in hopes of
