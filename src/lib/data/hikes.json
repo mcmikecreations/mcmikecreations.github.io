@@ -3315,5 +3315,46 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Breitenstein and Wendelstein",
+    "image": "/images/projects/data-viz/hikes/breitenstein_wendelstein.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2025-05-18"],
+      "filePath": "/_projects/data-viz/hikes/geojson/breitenstein_wendelstein.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.9332140, 47.7056945],
+        [11.9637481, 47.7133234],
+        [11.9877728, 47.7210941],
+        [11.9992281, 47.7053102],
+        [12.0120518, 47.7034761],
+        [12.0109980, 47.6757044]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Hammer/Fischbachau to Bayrischzell via Breitenstein (1622 m), Türkenköpfl (1512 m), and Wendelstein (1838 m).",
+    "route": "/projects/data-viz/hikes/breitenstein_wendelstein",
+    "height": 768,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.70242622904483,
+        "lon": 11.979045867919922
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "breitenstein_wendelstein.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
