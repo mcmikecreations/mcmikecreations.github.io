@@ -423,12 +423,15 @@
 					<p>{@html data.map.description}</p>
 					<ul>
 						<li>Distance: {getDistance(data.properties.distance ?? 0)}</li>
-						<li>Duration: {getTime(data.properties.duration ?? 0)}</li>
+						<li>Duration: {getTime(data.properties.duration ?? 0)}<sup>*</sup></li>
 						<li>Ascent: {getDistance(data.properties.ascent ?? 0)}</li>
 						<li>Descent: {getDistance(data.properties.descent ?? 0)}</li>
 						<li>Dates: {data.properties.dates.map((x) => new Date(x).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"})).join('; ')}</li>
 						<li><a href={data.properties.filePath}>{data.properties.fileType}</a>, <a href={data.gpxPath}>GPX</a></li>
 					</ul>
+					<span>
+						* The duration of the hike is pure walking time with above average speed.
+					</span>
 				</div>
 			</div>
 			{#if data.statistics}

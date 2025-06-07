@@ -92,6 +92,10 @@ As we came down to Bayrischzell, we headed directly to Café Konditorei Huber,
 my go-to place in the village, and ordered some cake as a reward for the 20 km
 on the road.
 
+<video width="50%" height="auto" controls class="mx-auto">
+  <source src="/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-16.mp4" type="video/mp4">
+</video>
+
 Looking back, this was a great hike, and a welcome expansion of the simpler
 [Wendelstein route](/projects/data-viz/hikes/wendelstein/) I did twice in the past.
 While combining several summits into one hike may seem a bit much, I didn't feel

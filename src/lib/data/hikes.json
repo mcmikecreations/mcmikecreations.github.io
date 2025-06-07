@@ -3356,5 +3356,45 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Blauberge and Halserspitz",
+    "image": "/images/projects/data-viz/hikes/blauberge.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2025-06-01"],
+      "filePath": "/_projects/data-viz/hikes/geojson/blauberge.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.7347044, 47.6230367],
+        [11.7347352, 47.5897362],
+        [11.7810799, 47.5911671],
+        [11.7969591, 47.6072676],
+        [11.7465657, 47.6267147]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Wildbad Kreuth and back via Predigtstuhl (1562 m), Wichtlplatte (1765 m), Blaubergschneid (1787 m), Blaubergkopf (1787 m), Karspitz (1801 m), and Halserspitze (1863 m).",
+    "route": "/projects/data-viz/hikes/blauberge",
+    "height": 512,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.610213718421726,
+        "lon": 11.766700744628906
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "blauberge.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
