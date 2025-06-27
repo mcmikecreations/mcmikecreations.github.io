@@ -4,4 +4,7 @@
 	export let text = '';
 </script>
 
-<img src={href} {title} alt={text} class="w-full xl:w-1/2 mx-auto" />
+<figure class="w-full xl:w-1/2 mx-auto">
+	<img src={href} {title} alt={text} />
+	<figcaption class="text-center">{text}</figcaption>
+</figure>

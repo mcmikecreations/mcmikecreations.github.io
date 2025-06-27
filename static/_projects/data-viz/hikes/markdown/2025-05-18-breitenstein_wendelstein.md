@@ -50,6 +50,8 @@ ironic, considering we were standing right beside them.
 ![The top of Breitenstein (1622 m)](/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-15.jpg)
 ![Spring gentians on the way down from Breitenstein](/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-06.jpg)
 
+![Me pointing from Breitenstein onto Wendelstein](/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-17.jpg)
+
 We then proceeded down the ridge, but had to go around Schweinsberg (1514 m),
 since the trail was closed due to nesting birds. Because of that, we skipped
 Schweinsberg and proceeded directly to Türkenköpfl (1512 m), passing by a
@@ -92,9 +94,12 @@ As we came down to Bayrischzell, we headed directly to Café Konditorei Huber,
 my go-to place in the village, and ordered some cake as a reward for the 20 km
 on the road.
 
-<video width="50%" height="auto" controls class="mx-auto">
-  <source src="/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-16.mp4" type="video/mp4">
-</video>
+<figure class="w-full xl:w-1/2 mx-auto">
+  <video controls title="Compilation of the road to Wendelstein (1838 m)">
+    <source src="/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-16.mp4" type="video/mp4">
+  </video>
+  <figcaption class="text-center">Compilation of the road to Wendelstein (1838 m)</figcaption>
+</figure>
 
 Looking back, this was a great hike, and a welcome expansion of the simpler
 [Wendelstein route](/projects/data-viz/hikes/wendelstein/) I did twice in the past.

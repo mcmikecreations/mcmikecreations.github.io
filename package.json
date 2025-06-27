@@ -62,6 +62,7 @@
 		"highlight.js": "^11.11.1",
 		"leaflet": "^1.9.4",
 		"svelte-markdown": "^0.4.1",
+		"swiper": "^11.2.8",
 		"three": "^0.162.0"
 	}
 }
