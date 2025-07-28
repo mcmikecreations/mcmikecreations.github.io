@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import {
 		CustomBlockquote, CustomCode, CustomCodeSpan, CustomHeading,
 		CustomImage, CustomList, CustomListItem,
@@ -10,9 +10,14 @@
 	import SvelteMarkdown from 'svelte-markdown';
 
 	// text, em <em>, strong <strong><b>, del <del>, <html> kept as-is.
-	// https://github.com/pablo-abc/svelte-markdown/blob/main/src/renderers/Html.svelte
+	
 
-	export let source = '';
+	interface Props {
+		// https://github.com/pablo-abc/svelte-markdown/blob/main/src/renderers/Html.svelte
+		source?: string;
+	}
+
+	let { source = '' }: Props = $props();
 </script>
 
 <SvelteMarkdown

@@ -2,17 +2,16 @@
 	import { twMerge } from 'tailwind-merge';
 	import { toggleTheme } from '$lib/components/DarkModeStore';
 
-	export let btnClass = 'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5';
-	export let size = 'md';
-	export let ariaLabel = 'Dark mode';
+	const btnClassConst = 'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5';
 	const sizes : Map<string, string> = new Map<string, string>([
 		['sm', 'w-4 h-4'],
 		['md', 'w-5 h-5'],
 		['lg', 'w-6 h-6']
 	]);
+	let { btnClass = btnClassConst, size = 'md', ariaLabel = 'Dark mode', class: propsClass, ...other } = $props();
 </script>
 
-<button on:click={toggleTheme} aria-label={ariaLabel} type="button" {...$$restProps} class={twMerge(btnClass, $$props.class)}>
+<button onclick={toggleTheme} aria-label={ariaLabel} type="button" {...other} class={twMerge(btnClass, propsClass)}>
   <span class="hidden dark:block">
     <slot name="lightIcon">
       <svg class={sizes.get(size)} fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">

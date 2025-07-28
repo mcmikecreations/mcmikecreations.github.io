@@ -19,7 +19,7 @@
 				<DateBadge date={new Date(item.startDate)} dateEnd={item.endDate ? new Date(item.endDate) : 'present'} />
 				<Heading tag="h4" class="text-xl">{item.studyType + ' in ' + item.area}</Heading>
 				{#if item.description}<p class="line-clamp-3">{item.description}</p>{/if}
-				<div class="flex-grow" />
+				<div class="flex-grow"></div>
 				<span>
 						<A href={item.url} class="text-sm pt-4 sm:pt-6">{item.institution}</A>
 						<span>·</span>
@@ -33,7 +33,7 @@
 				<DateBadge date={new Date(item.startDate)} dateEnd={item.endDate ? new Date(item.endDate) : 'present'} />
 				<Heading tag="h4" class="text-xl">{item.position}</Heading>
 				{#if item.description}<p class="line-clamp-3">{item.description}</p>{/if}
-				<div class="flex-grow" />
+				<div class="flex-grow"></div>
 				<span>
 					<A href={item.url} class="text-sm pt-4 sm:pt-6">{item.name}</A>
 					<span>·</span>
@@ -57,7 +57,7 @@
 		<div class="min-w-sm max-w-md flex flex-col p-4">
 			<Heading tag="h3">About Me</Heading>
 			<P class="py-2">{resume.basics.summary}</P>
-			<div class="flex-grow" />
+			<div class="flex-grow"></div>
 			<div class="flex flex-row">
 				<Button href="#contact" class="uppercase" pill>Contact me</Button>
 				<Button href="/resume" color="alternative" class="uppercase ms-2" pill>Résumé</Button>

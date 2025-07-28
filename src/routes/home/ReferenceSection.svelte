@@ -11,19 +11,23 @@
 	<div class="max-w-screen-lg mt-8 mx-auto px-4 2xl:px-0">
 		<Carousel
 			images={references}
-			let:Controls
-			let:Indicators
+			
+			
 			class="min-h-[36rem] relative"
 			ariaLabel={null}
 		>
-			<Controls
-				class="text-gray-700 dark:text-gray-300"
-			/>
-			<Indicators
-				activeClass="bg-gray-900 hover:bg-gray-700 dark:bg-gray-100 dark:hover:bg-gray-300 opacity-100"
-				inactiveClass="bg-gray-900 hover:bg-gray-700 dark:bg-gray-100 dark:hover:bg-gray-300 opacity-60"
-			/>
-			<ReferenceTestimonialSection slot="slide" let:index reference={references[index]} />
+			{#snippet children({ Controls, Indicators })}
+						<Controls
+					class="text-gray-700 dark:text-gray-300"
+				/>
+				<Indicators
+					activeClass="bg-gray-900 hover:bg-gray-700 dark:bg-gray-100 dark:hover:bg-gray-300 opacity-100"
+					inactiveClass="bg-gray-900 hover:bg-gray-700 dark:bg-gray-100 dark:hover:bg-gray-300 opacity-60"
+				/>
+				{/snippet}
+					{#snippet slide({ index })}
+						<ReferenceTestimonialSection   reference={references[index]} />
+					{/snippet}
 		</Carousel>
 	</div>
 </section>

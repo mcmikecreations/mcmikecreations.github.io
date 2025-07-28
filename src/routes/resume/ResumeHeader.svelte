@@ -12,7 +12,7 @@
 				shadow-[inset_0_0_20px_rgb(0_0_0_/_0.50)]
 				bg-[url('/images/profile_cropped.jpg')]
 				bg-cover bg-center"
-	/>
+	></div>
 	<div class="flex-1 flex flex-col gap-2 justify-center">
 		<div class="flex flex-row flex-wrap gap-4 mb-4">
 			<div>

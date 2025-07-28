@@ -11,7 +11,11 @@
 	import Timeline from './Timeline.svelte';
 	import { secondaryGeometryColor } from '../[slug]/build-geometry';
 
-	export let data: PageData;
+	interface Props {
+		data: PageData;
+	}
+
+	let { data }: Props = $props();
 
 	onMount(async () => {
 		const { L } = await import('$lib/components/leaflet.almostover.js');

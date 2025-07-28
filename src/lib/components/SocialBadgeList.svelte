@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { FacebookSolid, GithubSolid, LinkedinSolid, XSolid } from 'flowbite-svelte-icons';
 import SocialBadge from '$lib/components/SocialBadge.svelte';
 	import {
@@ -11,12 +11,22 @@ import SocialBadge from '$lib/components/SocialBadge.svelte';
 		TelegramSolid
 	} from '$lib/icons';
 
-	export let size = 'child:!size-4 child:xl:!size-8';
-	export let padding = '!p-2 xl:!p-4';
 
-	export let pill = true;
-	export let outline = true;
-	export let plain = false;
+	interface Props {
+		size?: string;
+		padding?: string;
+		pill?: boolean;
+		outline?: boolean;
+		plain?: boolean;
+	}
+
+	let {
+		size = 'child:!size-4 child:xl:!size-8',
+		padding = '!p-2 xl:!p-4',
+		pill = true,
+		outline = true,
+		plain = false
+	}: Props = $props();
 </script>
 
 <!-- <SocialBadge profile="TUM"><EnvelopeSolid class="w-8 h-8" /></SocialBadge> -->

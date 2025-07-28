@@ -1,5 +1,10 @@
-<script>
+<script lang="ts">
 	import { Table } from 'flowbite-svelte';
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
+
+	let { children }: Props = $props();
 </script>
 
-<Table><slot></slot></Table>
+<Table>{@render children?.()}</Table>

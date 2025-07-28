@@ -5,7 +5,11 @@
 	import PlanetoidGen from './PlanetoidGen.svelte';
 	import LandscapeGen from './LandscapeGen.svelte';
 
-	export let data: PageData;
+	interface Props {
+		data: PageData;
+	}
+
+	let { data }: Props = $props();
 </script>
 
 <AppTitle title={data.project.name} />

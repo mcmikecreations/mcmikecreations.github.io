@@ -1,6 +1,11 @@
 <script lang="ts">
-	export let href = ''
-	export let title : string | null | undefined = undefined
+	interface Props {
+		href?: string;
+		title?: string | null | undefined;
+		children?: import('svelte').Snippet;
+	}
+
+	let { href = '', title = undefined, children }: Props = $props();
 </script>
 
-<a data-sveltekit-reload {href} {title}><slot></slot></a>
+<a data-sveltekit-reload {href} {title}>{@render children?.()}</a>

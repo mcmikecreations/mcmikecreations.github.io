@@ -3,8 +3,12 @@
 	import { ArrowUpOutline } from 'flowbite-svelte-icons';
 	import { onMount } from 'svelte';
 
-	export let minScroll = 100;
-	export let position : 'left' | 'right' | undefined = 'right';
+	interface Props {
+		minScroll?: number;
+		position?: 'left' | 'right' | undefined;
+	}
+
+	let { minScroll = 100, position = 'right' }: Props = $props();
 
 	function scrollToTop() {
 		window.scroll({

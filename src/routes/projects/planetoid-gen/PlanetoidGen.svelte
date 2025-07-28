@@ -7,7 +7,11 @@
 	import katex from 'katex';
 	import 'katex/dist/katex.min.css';
 	import type { PageData } from './$types';
-	export let data: PageData;
+	interface Props {
+		data: PageData;
+	}
+
+	let { data }: Props = $props();
 </script>
 
 {#if data.project.image}

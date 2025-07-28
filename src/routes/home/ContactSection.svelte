@@ -18,7 +18,7 @@
 			<A href={'mailto:'+resume.basics.email}>{resume.basics.email}</A><br>
 			<A href={educationEmail}>{educationEmail.replace('mailto:','')}</A><br>
 			<A href={workEmail}>{workEmail.replace('mailto:','')}</A><br>
-			<div class="flex-grow" />
+			<div class="flex-grow"></div>
 			<Span>{`${resume.basics.location.city}, ${resume.basics.location.region}, ${resume.basics.location.countryCode}`}</Span>
 		</div>
 	</div>

@@ -1,10 +1,14 @@
-<script>
+<script lang="ts">
 	/* eslint-disable svelte/no-at-html-tags */
 	import hljs from 'highlight.js';
 	import 'highlight.js/styles/github-dark-dimmed.min.css';
 
-	export let text = '';
-	export let lang = '';
+	interface Props {
+		text?: string;
+		lang?: string;
+	}
+
+	let { text = '', lang = '' }: Props = $props();
 
 	const highlightedText = hljs.highlight(text, { language: lang ? lang : 'plaintext' }).value;
 </script>

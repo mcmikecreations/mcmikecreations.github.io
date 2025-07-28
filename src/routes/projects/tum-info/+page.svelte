@@ -5,7 +5,11 @@
 	import { GlobeSolid } from 'flowbite-svelte-icons';
 	import ProjectImage from '$lib/components/ProjectImage.svelte';
 
-	export let data: PageData;
+	interface Props {
+		data: PageData;
+	}
+
+	let { data }: Props = $props();
 </script>
 
 <AppTitle title={data.project.name} />

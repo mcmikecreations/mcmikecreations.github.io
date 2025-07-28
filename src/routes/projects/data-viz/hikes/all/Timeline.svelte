@@ -63,7 +63,7 @@
 		<div class="flex flex-row flex-nowrap mt-2">
 			<div>{year[0]}</div>
 			{#each year[1].entries() as month}
-				<div id="m{year[0]}{month[0]}" class="flex-1 !aspect-square ms-2" style="background: {getColor(month)}" />
+				<div id="m{year[0]}{month[0]}" class="flex-1 !aspect-square ms-2" style="background: {getColor(month)}"></div>
 				{#if month[1].length}
 					<Popover class="text-sm font-light z-[1000]" defaultClass="" triggeredBy="#m{year[0]}{month[0]}">
 						<ul class="list-none !my-2 !mx-2 !pl-0">

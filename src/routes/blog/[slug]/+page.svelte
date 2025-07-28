@@ -7,7 +7,11 @@
 	import ToTopButton from '$lib/components/ToTopButton.svelte';
 	import DefaultImage from '$lib/renderers/DefaultImage.svelte';
 
-	export let data: PageData;
+	interface Props {
+		data: PageData;
+	}
+
+	let { data }: Props = $props();
 </script>
 
 <AppTitle title={data.post.title} />
@@ -23,7 +27,7 @@
 			{#if data.post.tags?.length}
 				·
 				<div class="flex flex-row justify-end gap-2" aria-details="tags">
-					<span aria-label="tags" class="sr-only"/>
+					<span aria-label="tags" class="sr-only"></span>
 					{#each data.post.tags as t}
 						<span>{t}</span>
 					{/each}

@@ -10,7 +10,7 @@
 				shadow-[inset_0_0_20px_rgb(0_0_0_/_0.50)]
 				bg-[url('/images/profile_cropped.jpg')]
 				bg-cover bg-center"
-		/>
+		></div>
 		<Heading tag="h1" class="text-ellipsis text-balance text-center text-xl font-bold leading-6 mx-3">
 			{resume.basics.name}
 		</Heading>

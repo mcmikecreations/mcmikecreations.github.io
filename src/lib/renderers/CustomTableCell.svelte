@@ -1,15 +1,14 @@
-<script>
+<script lang="ts">
 	import { TableBodyCell, TableHeadCell } from 'flowbite-svelte';
 	import { getContext } from 'svelte';
 
-	export let header;
-	export let align;
+	let { header, align, children } = $props();
 
 	const isHead = getContext('IsCustomTableHead');
 </script>
 
-{#if isHead || header }
-	<TableHeadCell {align}><slot></slot></TableHeadCell>
+{#if isHead || header}
+	<TableHeadCell {align}>{@render children?.()}</TableHeadCell>
 {:else}
-	<TableBodyCell {align}><slot></slot></TableBodyCell>
+	<TableBodyCell {align}>{@render children?.()}</TableBodyCell>
 {/if}

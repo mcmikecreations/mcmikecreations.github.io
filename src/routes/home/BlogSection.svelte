@@ -25,7 +25,7 @@
 					<div class="pt-4 w-full flex flex-row">
 						<DateBadge date={date} dateEnd={undefined} />
 						<div class="flex-grow flex flex-row flex-wrap justify-end gap-2 ps-2" aria-details="tags">
-							<span aria-label="tags" class="sr-only"/>
+							<span aria-label="tags" class="sr-only"></span>
 							{#each p.tags as t}
 								<Badge>{t}</Badge>
 							{/each}

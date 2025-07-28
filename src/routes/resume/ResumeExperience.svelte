@@ -2,8 +2,8 @@
 	import { A, Blockquote, Heading, Modal, P, Timeline, TimelineItem } from 'flowbite-svelte';
 	import resume from '$lib/data/resume.json';
 
-	const educationModals = Array<boolean>(resume.education.length);
-	const workModals = Array<boolean>(resume.work.length);
+	const educationModals = $state(Array<boolean>(resume.education.length));
+	const workModals = $state(Array<boolean>(resume.work.length));
 </script>
 
 <div class="flex flex-row flex-wrap gap-8 justify-between mt-8 mx-4 2xl:mx-0">
@@ -39,7 +39,7 @@
 		<Timeline>
 			{#each resume.work as item, i}
 				<TimelineItem
-					title="{item.position}"
+					title={item.position}
 					date="{item.startDate} to {item.endDate ?? 'present'}"
 					classLi="mb-4"
 				>
@@ -54,7 +54,7 @@
 						<span>·</span>
 						<span class="text-sm">{item.location}</span>
 					</P>
-					<Modal title="{item.position}" bind:open={workModals[i]} autoclose>
+					<Modal title={item.position} bind:open={workModals[i]} autoclose>
 						<Blockquote class="text-base leading-relaxed text-gray-500 dark:text-gray-400">{item.summary}.</Blockquote>
 						<p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">{item.description}</p>
 						<p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">{item.highlights.join(' · ')}</p>

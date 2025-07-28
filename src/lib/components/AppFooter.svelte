@@ -19,11 +19,15 @@ import {
 	TelegramSolid
 } from '$lib/icons';
 
-export let shouldPinBottom : 'true' | 'false' | undefined = undefined;
-export let shouldShowSocials : 'true' | 'false' | undefined = undefined;
+	interface Props {
+		shouldPinBottom?: 'true' | 'false' | undefined;
+		shouldShowSocials?: 'true' | 'false' | undefined;
+	}
 
-$: pinBottom = shouldPinBottom !== undefined ? (shouldPinBottom === 'true') : ($page.data.footer?.pinBottom ?? false);
-$: showSocials = shouldShowSocials !== undefined ? (shouldShowSocials === 'true') : ($page.data.footer?.showSocials ?? true);
+	let { shouldPinBottom = undefined, shouldShowSocials = undefined }: Props = $props();
+
+let pinBottom = $derived(shouldPinBottom !== undefined ? (shouldPinBottom === 'true') : ($page.data.footer?.pinBottom ?? false));
+let showSocials = $derived(shouldShowSocials !== undefined ? (shouldShowSocials === 'true') : ($page.data.footer?.showSocials ?? true));
 </script>
 
 <Footer footerType={pinBottom ? "default" : "socialmedia"} class={pinBottom ? "absolute bottom-0 start-0 z-20 w-full" : undefined}>

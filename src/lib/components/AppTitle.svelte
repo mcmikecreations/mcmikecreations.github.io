@@ -4,9 +4,13 @@
 	import { onMount } from 'svelte';
 
 	const oldUrl = $page.url;
-	let canonicalUrl = new URL(oldUrl.origin.replace('www.', '') + oldUrl.pathname);
+	let canonicalUrl = $state(new URL(oldUrl.origin.replace('www.', '') + oldUrl.pathname));
 	const titleBase = resume.basics.name;
-	export let title : string | undefined;
+	interface Props {
+		title: string | undefined;
+	}
+
+	let { title }: Props = $props();
 
 	onMount(() => {
 		canonicalUrl.search = oldUrl.search;

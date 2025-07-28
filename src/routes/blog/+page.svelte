@@ -19,25 +19,29 @@
 	import AppTitle from '$lib/components/AppTitle.svelte';
 	import DateBadge from '$lib/components/DateBadge.svelte';
 
-	export let data: PageData;
+	interface Props {
+		data: PageData;
+	}
 
-	let posts = data.posts;
+	let { data }: Props = $props();
+
+	let posts = $state(data.posts);
 
 	const baseTitle = 'Blog';
-	let title = baseTitle;
+	let title = $state(baseTitle);
 
 	const postsPerPage = 5;
 	const years = new Set(data.posts.map(p => p.year.toString()));
 	type ToggleParam = (value : string) => void;
-	let toggleTag : ToggleParam;
-	let toggleYear : ToggleParam;
-	let togglePage : (e : CustomEvent) => void;
-	let clickPage : (e : MouseEvent) => void;
-	let selectedTags : string[];
-	let selectedYear : string | null;
+	let toggleTag : ToggleParam = $state();
+	let toggleYear : ToggleParam = $state();
+	let togglePage : (e : CustomEvent) => void = $state();
+	let clickPage : (e : MouseEvent) => void = $state();
+	let selectedTags : string[] = $state();
+	let selectedYear : string | null = $state();
 	let selectedPage : number = 1;
-	let pageCount = Math.ceil(posts.length / postsPerPage);
-	let pages : LinkType[];
+	let pageCount = $derived(Math.ceil(posts.length / postsPerPage));
+	let pages : LinkType[] = $state();
 
 	function filterPosts() : void {
 		const newPosts = data.posts.filter(x => {
@@ -140,7 +144,9 @@
 	<aside class="ms-4 sm:ms-0">
 		<Accordion multiple>
 			<AccordionItem open>
-				<span slot="header">By Year</span>
+				{#snippet header()}
+								<span >By Year</span>
+							{/snippet}
 				<div class="flex flex-row flex-wrap gap-4">
 					{#each years as year}
 						<A
@@ -151,7 +157,9 @@
 				</div>
 			</AccordionItem>
 			<AccordionItem open>
-				<span slot="header">By Tag</span>
+				{#snippet header()}
+								<span >By Tag</span>
+							{/snippet}
 				<div class="flex flex-row flex-wrap gap-4">
 					{#each tags as tag}
 						<Button
@@ -191,7 +199,7 @@
 						<div class="pt-4 w-full flex flex-row">
 							<DateBadge date={p.date} dateEnd={undefined} />
 							<div class="flex-grow flex flex-row justify-end gap-2" aria-details="tags">
-								<span aria-label="tags" class="sr-only"/>
+								<span aria-label="tags" class="sr-only"></span>
 								{#each p.tags as t}
 									<Badge>{t}</Badge>
 								{/each}
@@ -214,13 +222,17 @@
 		on:next={togglePage}
 		on:click={clickPage}
 	>
-		<svelte:fragment slot="prev">
-			<span class="sr-only">Previous</span>
-			<ChevronLeftOutline aria-hidden="true" class="size-4" />
-		</svelte:fragment>
-		<svelte:fragment slot="next">
-			<span class="sr-only">Next</span>
-			<ChevronRightOutline aria-hidden="true" class="size-4" />
-		</svelte:fragment>
+		{#snippet prev()}
+			
+				<span class="sr-only">Previous</span>
+				<ChevronLeftOutline aria-hidden="true" class="size-4" />
+			
+			{/snippet}
+		{#snippet next()}
+			
+				<span class="sr-only">Next</span>
+				<ChevronRightOutline aria-hidden="true" class="size-4" />
+			
+			{/snippet}
 	</Pagination>
 </div>

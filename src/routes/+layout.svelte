@@ -11,10 +11,15 @@
 	import DarkModeButton from '$lib/components/DarkModeButton.svelte';
 	import DarkModeHandler from '$lib/components/DarkModeHandler.svelte';
 
-	export let shouldShowNavbar : 'true' | 'false' | undefined = undefined;
-	$: showNavbar = shouldShowNavbar !== undefined ? (shouldShowNavbar === 'true') : ($page.data.header?.showNavbar ?? true);
+	interface Props {
+		shouldShowNavbar?: 'true' | 'false' | undefined;
+		children?: import('svelte').Snippet;
+	}
 
-	$: activeUrl = $page.url.pathname;
+	let { shouldShowNavbar = undefined, children }: Props = $props();
+	let showNavbar = $derived(shouldShowNavbar !== undefined ? (shouldShowNavbar === 'true') : ($page.data.header?.showNavbar ?? true));
+
+	let activeUrl = $derived($page.url.pathname);
 </script>
 
 <DarkModeHandler />
@@ -38,4 +43,4 @@
 </Navbar>
 {/if}
 
-<slot />
+{@render children?.()}

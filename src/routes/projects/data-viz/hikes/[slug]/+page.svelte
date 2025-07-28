@@ -20,7 +20,11 @@
 	import DefaultLink from '$lib/renderers/DefaultLink.svelte';
 	import DefaultImage from '$lib/renderers/DefaultImage.svelte';
 
-	export let data: PageData;
+	interface Props {
+		data: PageData;
+	}
+
+	let { data }: Props = $props();
 
 	const scale3d = 0.2;
 	const scale3dVertical = 0.4;
@@ -36,7 +40,7 @@
 	let scene : THREE.Scene;
 	let statsIndicator3d : THREE.Object3D;
 	let statsIndicatorInteractive : any;
-	let lastStatsIndicatorTarget : HTMLElement;
+	let lastStatsIndicatorTarget : HTMLElement = $state();
 
 	let isMobile = false;
 
@@ -447,7 +451,7 @@
 		<div class="flex-[2] min-w-80">
 			<Tabs>
 				<TabItem open title="3D" on:click={async () => { await init3d(); attach3d(); }}>
-					<div id="container-3d" class="w-full aspect-square" />
+					<div id="container-3d" class="w-full aspect-square"></div>
 					<Attribution {attrMapbox} {attrOSM} />
 				</TabItem>
 				<TabItem title="2D" on:click={() => onUpdateStatistics(lastStatsIndicatorTarget)}>
@@ -459,7 +463,7 @@
 				</TabItem>
 				<TabItem title="Interactive" on:click={async () => await attachInteractive()}>
 					<div class="overflow-hidden aspect-square">
-						<div id="container-interactive" class="w-full aspect-square" />
+						<div id="container-interactive" class="w-full aspect-square"></div>
 					</div>
 				</TabItem>
 			</Tabs>

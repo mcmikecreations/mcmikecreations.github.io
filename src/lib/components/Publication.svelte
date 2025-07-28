@@ -10,8 +10,12 @@
 		summary: string;
 	}
 
-	export let pub : Publication | undefined = undefined;
-	export let useComponent : boolean = true;
+	interface Props {
+		pub?: Publication | undefined;
+		useComponent?: boolean;
+	}
+
+	let { pub = undefined, useComponent = true }: Props = $props();
 </script>
 
 {#if pub}

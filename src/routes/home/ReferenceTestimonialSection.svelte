@@ -4,7 +4,8 @@
 	import { getContext } from 'svelte';
 	const state = getContext('state');
 
-	export let reference : {
+	interface Props {
+		reference: {
 		"name": string,
 		"position": string,
 		"institution": string,
@@ -12,20 +13,23 @@
 		"date": string,
 		"reference": string
 	};
-	$: transitionSlideIn = {
+	}
+
+	let { reference }: Props = $props();
+	let transitionSlideIn = $derived({
 		x: $state.forward ? '100%' : '-100%',
 		opacity: 1,
 		width: '100%',
 		height: '100%',
 		duration: $state.slideDuration
-	};
-	$: transitionSlideOut = {
+	});
+	let transitionSlideOut = $derived({
 		x: $state.forward ? '-100%' : '100%',
 		opacity: 0.9,
 		width: '100%',
 		height: '100%',
 		duration: $state.slideDuration
-	};
+	});
 </script>
 
 <!-- TODO: doesn't work with narrator. -->
