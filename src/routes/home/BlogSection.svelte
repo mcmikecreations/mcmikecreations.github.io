@@ -20,15 +20,17 @@
 					img={p.image ?? undefined}
 					class="max-w-sm lg:max-w-xl flex-1"
 				>
-					<Heading tag="h3">{p.title}</Heading>
-					<Span class="pt-4 flex-grow">{@html p.description}</Span>
-					<div class="pt-4 w-full flex flex-row">
-						<DateBadge date={date} dateEnd={undefined} />
-						<div class="flex-grow flex flex-row flex-wrap justify-end gap-2 ps-2" aria-details="tags">
-							<span aria-label="tags" class="sr-only"></span>
-							{#each p.tags as t}
-								<Badge>{t}</Badge>
-							{/each}
+					<div class="m-4 sm:m-6">
+						<Heading tag="h3">{p.title}</Heading>
+						<Span class="pt-4 flex-grow">{@html p.description}</Span>
+						<div class="pt-4 w-full flex flex-row">
+							<DateBadge date={date} dateEnd={undefined} />
+							<div class="flex-grow flex flex-row flex-wrap justify-end gap-2 ps-2" aria-details="tags">
+								<span aria-label="tags" class="sr-only"></span>
+								{#each p.tags as t}
+									<Badge>{t}</Badge>
+								{/each}
+							</div>
 						</div>
 					</div>
 				</Card>

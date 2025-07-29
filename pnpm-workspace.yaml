@@ -1,2 +1,6 @@
 ignoredBuiltDependencies:
   - svelte-preprocess
+
+onlyBuiltDependencies:
+  - deasync
+  - esbuild

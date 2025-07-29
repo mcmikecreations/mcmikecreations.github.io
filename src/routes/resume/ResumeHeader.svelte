@@ -34,7 +34,7 @@
 				<A href={'mailto:'+resume.basics.email}>{resume.basics.email}</A><br>
 				<A href={educationEmail}>{educationEmail.replace('mailto:','')}</A><br>
 				<A href={workEmail}>{workEmail.replace('mailto:','')}</A><br>
-				<Span>{`${resume.basics.location.city}, ${resume.basics.location.region}, ${resume.basics.location.countryCode}`}</Span>
+				<Span class="font-semibold text-gray-900 dark:text-white">{`${resume.basics.location.city}, ${resume.basics.location.region}, ${resume.basics.location.countryCode}`}</Span>
 			</div>
 			<P class="flex-1 min-w-60">{resume.basics.summary}</P>
 		</div>

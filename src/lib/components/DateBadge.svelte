@@ -4,10 +4,21 @@
 	import { Span } from 'flowbite-svelte';
 	import { twMerge } from 'tailwind-merge';
 
-	export let date = new Date();
-	export let dateEnd : Date | string | undefined;
-	export let splitter = ' to ';
-	export let iconClass = '';
+	let {
+		date = new Date(),
+		dateEnd = undefined,
+		splitter = ' to ',
+		iconClass = '',
+		class: propsClass,
+		...other
+	} : {
+		date : Date,
+		dateEnd? : Date | string | undefined,
+		splitter? : string,
+		iconClass? : string,
+		class? : unknown,
+		propsClass? : string
+	} = $props();
 
 	function formatDate(d : Date | string) : string {
 		if (typeof d === 'string') {
@@ -24,5 +35,5 @@
 
 <span class="whitespace-nowrap">
 	<CalendarMonthSolid ariaLabel="date" class={twMerge('inline w-4 h-4 text-gray-900 dark:text-white', iconClass)} />
-	<Span dir="ltr" {...$$restProps} class={twMerge('align-middle', $$props.class)}>{formatDate(date) + (dateEnd ? (splitter + formatDate(dateEnd)) : '')}</Span>
+	<Span dir="ltr" {...other} class={twMerge('align-middle', propsClass)}>{formatDate(date) + (dateEnd ? (splitter + formatDate(dateEnd)) : '')}</Span>
 </span>
