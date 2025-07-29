@@ -16,7 +16,7 @@
 		dateEnd? : Date | string | undefined,
 		splitter? : string,
 		iconClass? : string,
-		class? : unknown,
+		class? : string,
 		propsClass? : string
 	} = $props();
 
@@ -35,5 +35,5 @@
 
 <span class="whitespace-nowrap">
 	<CalendarMonthSolid ariaLabel="date" class={twMerge('inline w-4 h-4 text-gray-900 dark:text-white', iconClass)} />
-	<Span dir="ltr" {...other} class={twMerge('align-middle', propsClass)}>{formatDate(date) + (dateEnd ? (splitter + formatDate(dateEnd)) : '')}</Span>
+	<Span dir="ltr" {...other} class={twMerge('font-semibold text-gray-900 dark:text-white align-middle', propsClass)}>{formatDate(date) + (dateEnd ? (splitter + formatDate(dateEnd)) : '')}</Span>
 </span>

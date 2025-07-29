@@ -17,13 +17,13 @@
 		<div class="flex flex-row flex-wrap gap-4 mb-4">
 			<div>
 				<Heading tag="h1" class="text-4xl font-bold mb-2">{resume.basics.name}</Heading>
-				<P>
+				<span class="text-base font-normal tracking-normal leading-normal text-left whitespace-normal text-gray-900 dark:text-white">
 					{resume.basics.label}
 					{#each resume.languages as lang}
 						<span class="px-1">{lang.emoji}</span>
 						<Tooltip>{lang.fluency}</Tooltip>
 					{/each}
-				</P>
+				</span>
 			</div>
 			<div class="flex-grow flex flex-wrap gap-4 justify-center sm:justify-end">
 				<SocialBadgeList size="child:!size-4 child:xl:!size-6" padding="!p-2 xl:!p-3" />
