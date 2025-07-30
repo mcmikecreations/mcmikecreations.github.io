@@ -37,6 +37,6 @@
 	});
 </script>
 
-<Button id="scrollButton" on:click={scrollToTop} pill={true} class="fixed bottom-6 {position === 'left' ? 'left-6' : 'right-6'} !p-2 hidden">
+<Button id="scrollButton" onclick={scrollToTop} pill={true} class="fixed bottom-6 {position === 'left' ? 'left-6' : 'right-6'} !p-2 hidden">
 	<ArrowUpOutline class="w-4 h-4" />
 </Button>

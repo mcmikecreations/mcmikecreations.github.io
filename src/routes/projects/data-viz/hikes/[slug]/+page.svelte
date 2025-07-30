@@ -450,18 +450,18 @@
 		</article>
 		<div class="flex-[2] min-w-80">
 			<Tabs>
-				<TabItem open title="3D" on:click={async () => { await init3d(); attach3d(); }}>
+				<TabItem open title="3D" onclick={async () => { await init3d(); attach3d(); }}>
 					<div id="container-3d" class="w-full aspect-square"></div>
 					<Attribution {attrMapbox} {attrOSM} />
 				</TabItem>
-				<TabItem title="2D" on:click={() => onUpdateStatistics(lastStatsIndicatorTarget)}>
+				<TabItem title="2D" onclick={() => onUpdateStatistics(lastStatsIndicatorTarget)}>
 					<svg viewBox="0 0 {data.map.height} {data.map.height}" class="w-full aspect-square">
 						{@html data.data2d}
 						<circle id="statsIndicator2d" r={data.map.height * 0.125 * 0.125 * 0.5} fill={secondaryIndicatorColor} class="hidden" />
 					</svg>
-					<Attribution attrMapbox="{false}" {attrOSM} />
+					<Attribution attrMapbox={false} {attrOSM} />
 				</TabItem>
-				<TabItem title="Interactive" on:click={async () => await attachInteractive()}>
+				<TabItem title="Interactive" onclick={async () => await attachInteractive()}>
 					<div class="overflow-hidden aspect-square">
 						<div id="container-interactive" class="w-full aspect-square"></div>
 					</div>

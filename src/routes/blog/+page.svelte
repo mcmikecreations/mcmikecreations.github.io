@@ -11,7 +11,7 @@
 		Img,
 		Pagination,
 		type LinkType,
-		Badge
+		Badge, type PaginationItemProps
 	} from 'flowbite-svelte';
 	import { tags } from '$lib/data/blog-info';
 	import { onMount } from 'svelte';
@@ -33,15 +33,15 @@
 	const postsPerPage = 5;
 	const years = new Set(data.posts.map(p => p.year.toString()));
 	type ToggleParam = (value : string) => void;
-	let toggleTag : ToggleParam = $state();
-	let toggleYear : ToggleParam = $state();
-	let togglePage : (e : CustomEvent) => void = $state();
-	let clickPage : (e : MouseEvent) => void = $state();
-	let selectedTags : string[] = $state();
-	let selectedYear : string | null = $state();
-	let selectedPage : number = 1;
+	let toggleTag : ToggleParam = $state(() => {});
+	let toggleYear : ToggleParam = $state(() => {});
+	let togglePage : (isNext : boolean) => void = $state(() => {});
+	let clickPage : (e : MouseEvent) => void = $state(() => {});
+	let selectedTags : string[] = $state([]);
+	let selectedYear : string | null = $state(null);
+	let selectedPage : number = $state(1);
 	let pageCount = $derived(Math.ceil(posts.length / postsPerPage));
-	let pages : LinkType[] = $state();
+	let pages : PaginationItemProps[] = $state([]);
 
 	function filterPosts() : void {
 		const newPosts = data.posts.filter(x => {
@@ -118,10 +118,11 @@
 			updatePage();
 		};
 
-		togglePage = function (e : CustomEvent) : void {
-			const page = e.type === 'previous' ? selectedPage - 1 : selectedPage + 1;
+		togglePage = function (isNext : boolean) : void {
+			const page = isNext ? selectedPage + 1 : selectedPage - 1;
 
 			if (page >= 1 && page <= pageCount) {
+				alert('Toggled ' + page);
 				params.set(selectedPageKey, page.toString());
 				updatePage();
 			}
@@ -130,7 +131,8 @@
 		clickPage = function (e : MouseEvent) : void {
 			const page = parseInt((e.target as HTMLElement).innerText);
 
-			if (page !== selectedPage) {
+			if (isFinite(page) && page !== selectedPage) {
+				alert('Clicked ' + page);
 				params.set(selectedPageKey, page.toString());
 				updatePage();
 			}
@@ -151,7 +153,7 @@
 					{#each years as year}
 						<A
 							class={selectedYear === year ? 'text-primary-600 dark:text-primary-500' : 'text-alternative-600 dark:text-alternative-500'}
-							on:click={() => toggleYear(year)}
+							onclick={() => toggleYear(year)}
 						>{year}</A>
 					{/each}
 				</div>
@@ -166,7 +168,7 @@
 							class="inline-block"
 							color={selectedTags?.includes(tag) ? 'primary' : 'alternative'}
 							size="sm"
-							on:click={() => toggleTag(tag)}
+							onclick={() => toggleTag(tag)}
 						>{tag}</Button>
 					{/each}
 				</div>
@@ -213,26 +215,23 @@
 </div>
 
 <div class="flex flex-col justify-center items-center mt-4">
+	{#snippet prevContent()}
+		<span class="sr-only">Previous</span>
+		<ChevronLeftOutline aria-hidden="true" class="size-4" />
+	{/snippet}
+	{#snippet nextContent()}
+		<span class="sr-only">Next</span>
+		<ChevronRightOutline aria-hidden="true" class="size-4" />
+	{/snippet}
 	<Pagination
 		{pages}
 		class="mx-auto"
-		large
-		icon
-		on:previous={togglePage}
-		on:next={togglePage}
-		on:click={clickPage}
+		size="large"
+		previous={() => togglePage(false)}
+		next={() => togglePage(true)}
+		onclick={clickPage}
+		{prevContent}
+		{nextContent}
 	>
-		{#snippet prev()}
-			
-				<span class="sr-only">Previous</span>
-				<ChevronLeftOutline aria-hidden="true" class="size-4" />
-			
-			{/snippet}
-		{#snippet next()}
-			
-				<span class="sr-only">Next</span>
-				<ChevronRightOutline aria-hidden="true" class="size-4" />
-			
-			{/snippet}
 	</Pagination>
 </div>
