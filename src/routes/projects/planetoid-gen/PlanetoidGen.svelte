@@ -19,7 +19,7 @@
 		<ProjectImage p={data.project} class="size-80 mx-auto" />
 	</div>
 {/if}
-<h2 class="mt-4">
+<h2 class="mt-4" id="pg">
 	<span class="inline-flex justify-center items-center">
 		{data.project.name}
 		{#if data.project.url}<a href={data.project.url} class="ps-2" target="_blank"><GlobeSolid size="xl" class="inline" /></a>{/if}
@@ -44,12 +44,12 @@
 	<sup>3</sup> <a href="https://www.nii.ac.jp/" target="_blank">National Institute of Informatics</a>, Tokyo, Japan.
 </p>
 
-<h3>Overview</h3>
+<h3 id="pg-overview">Overview</h3>
 <p>
 	{@html data.project.description}
 </p>
 
-<h3>Architecture</h3>
+<h3 id="pg-architecture">Architecture</h3>
 <p>
 	This system builds on the advancements in multiple academic domains, including databases, distributed
 	systems, cloud computing, and parallel execution, to allow data processing and content generation algorithms
@@ -79,7 +79,7 @@
 	<code>Microsoft Azure Cloud Computing Services</code> or <code>Amazon Web Services</code>.
 </p>
 
-<h3>Components</h3>
+<h3 id="pg-components">Components</h3>
 
 <p>
 	The concrete components of the system include a simplified web client with pre-generated and pre-loaded data,
@@ -186,7 +186,7 @@
 	instance will try to process it.
 </p>
 
-<h3>Technologies</h3>
+<h3 id="pg-technologies">Technologies</h3>
 <p>
 	With a distributed pipeline to generate large-scale data, the issue of produced data size needs to be
 	tackled. If the server produces too much data for a single request, the performance of the system may
@@ -276,7 +276,7 @@
 	leading to a growing number of total jobs per request.
 </p>
 
-<h3>Publications</h3>
+<h3 id="pg-publications">Publications</h3>
 <ol>
 	<li><Publication useComponent={false} pub={resume.publications.find(x => x.releaseDate === '2023-11-27')} /></li>
 	<li><Publication useComponent={false} pub={resume.publications.find(x => x.releaseDate === '2023-09-20')} /></li>

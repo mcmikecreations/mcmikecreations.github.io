@@ -3,13 +3,13 @@
 	import Publication from '$lib/components/Publication.svelte';
 </script>
 
-<h2>LandscapeGen</h2>
+<h2 id="lg">LandscapeGen</h2>
 <blockquote>
 	A full-stack visualization system of natural and anthropogenic landscapes,
 	including terrain, infrastructure and architecture.
 </blockquote>
 
-<h3>Overview</h3>
+<h3 id="lg-overview">Overview</h3>
 <p>
 	The tool has been implemented as a session-based <code>Node.js</code> server component of a client-server
 	application for easy integration with existing software systems. A simple <code>JavaScript</code> web client
@@ -23,7 +23,7 @@
 	<code>Hierarchical axis-aligned bounding volumes</code>.
 </p>
 
-<h3>Architecture</h3>
+<h3 id="lg-architecture">Architecture</h3>
 
 <p>
 	As mentioned in the overview, the overall systems consists of a simple client and a three-layer server.
@@ -86,7 +86,7 @@
 	for visualizations, simulations, and for interactive experiences.
 </p>
 
-<h3>Publications</h3>
+<h3 id="lg-publications">Publications</h3>
 <ol>
 	<li><Publication useComponent={false} pub={resume.publications.find(x => x.releaseDate === '2022-07-01')} /></li>
 	<li><Publication useComponent={false} pub={resume.publications.find(x => x.releaseDate === '2021-11-25')} /></li>
