@@ -5,9 +5,25 @@
 	import { BarsFromLeftOutline } from 'flowbite-svelte-icons';
 	import {onDestroy, onMount} from "svelte";
 
+	/*
+None					width: 100%;
+sm (640px)		max-width: 640px;
+md (768px)		max-width: 768px;
+lg (1024px)		max-width: 1024px;
+xl (1280px)		max-width: 1280px;
+2xl (1536px)	max-width: 1536px;
+	 */
 	let enabled = $derived(page.data.toc?.enabled ?? false);
+	let windowWidth = $state(0);
+	let desktop = $state(true);
+	let breakpoint = $state(1024);
+	let open = $state(false);
+	let aside = $state<HTMLElement | undefined>(undefined);
 
-	onMount(() => {
+	function initTocbot() {
+		desktop = windowWidth > breakpoint;
+		// TODO: has a bug when sometimes the toc headings are not highlighted correctly in the list.
+		// because sometimes heading.offsetTop == 0.
 		tocbot.init({
 			// Where to render the table of contents.
 			tocSelector: '.js-toc',
@@ -19,73 +35,66 @@
 			hasInnerContainers: true,
 			// How many heading levels should not be collapsed.
 			collapseDepth: 2,
+			// Callback for scroll end.
+			scrollEndCallback: function (e) { if(!desktop) open = false; },
 		});
-	});
+		setTimeout(tocbot.refresh);
+	}
+
+	$effect(initTocbot);
+	onMount(tocbot.refresh);
 
 	onDestroy(() => {
 		tocbot.destroy();
 	})
 
-	let nav : HTMLElement | undefined = $state(undefined);
-
-	/*function updateNav(nav : HTMLElement | undefined) {
-		alert(nav);
-		if (nav) {
-			if (!nav.classList.contains('tw-toc')) {
-				nav.classList.add('tw-toc',
-						'bg-gray-50', 'border-gray-100',
-						'dark:bg-gray-800', 'dark:border-gray-700',
-						'rounded-lg', 'border', '!pb-4',
-						'border-gray-100', 'dark:border-gray-700',
-						'divide-gray-100', 'dark:divide-gray-700');
-
-				nav.querySelectorAll('li').forEach(li => {
-					const fontSizeStr = li.style.fontSize;
-					if (!fontSizeStr.endsWith('ex')) return;
-
-					const fontSize = parseFloat(fontSizeStr);
-					const indent = (3 - fontSize) / 0.1;
-
-					const newFontSize = Math.max(2 - 0.2 * indent, 1);
-					li.style.fontSize = `${newFontSize}ex`;
-				});
-			}
-		}
+	function close(event: MouseEvent) {
+		if (!aside?.contains(event.target as Node)) open = false;
 	}
 
 	$effect(() => {
-		updateNav($nav);
-	});*/
+		if (open || desktop) {
+			tocbot.refresh();
+		}
+	});
 </script>
 
-{#snippet title_snippet()}
-	<Span class="font-medium">
-		On this page:
-	</Span>
-{/snippet}
-
-{#snippet toc_item(heading : HTMLHeadingElement)}
-	<span class="block rounded py-0.5 pe-4 ps-3 md:p-0 font-medium">
-		{heading.textContent}
-	</span>
-{/snippet}
-
-{#snippet open_toc_icon()}
-	<div class="
-		text-gray-500 dark:text-gray-400
-		hover:bg-gray-100 dark:hover:bg-gray-700
-		focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700
-		rounded-lg text-sm p-2.5">
-		<BarsFromLeftOutline class="size-5" />
-	</div>
-{/snippet}
+<svelte:window
+	bind:innerWidth={windowWidth}
+	onresize={() => {
+		if (desktop !== (windowWidth > breakpoint)) {
+			desktop = windowWidth > breakpoint;
+		}
+	}}
+	onclick={close}
+></svelte:window>
 
 <div class={enabled ? '' : 'hidden'}>
-	<aside class="toc desktop py-4 bg-gray-50 border-gray-100 dark:bg-gray-800 dark:border-gray-700 divide-gray-100 dark:divide-gray-700 border rounded-lg">
-		<span class="ms-[1em] text-gray-900 dark:text-white font-medium">On this page:</span>
-		<nav class="js-toc">
-		</nav>
-	</aside>
+	{#if !open && !desktop}
+		<button
+			class="toc-button text-gray-500 dark:text-gray-400
+			bg-white/20
+			hover:bg-gray-100 dark:hover:bg-gray-700
+			focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700
+			rounded-lg text-sm p-2.5"
+			aria-label="Open table of contents"
+			onclick={(event) => { event.stopPropagation(); event.preventDefault(); open = true; }}
+		>
+			<BarsFromLeftOutline class="size-5 text-gray-500 dark:text-gray-400" />
+		</button>
+	{/if}
+	{#if open || desktop}
+		<aside
+			bind:this={aside}
+			class:desktop={desktop}
+			class:mobile={!desktop}
+			class="toc py-4 bg-gray-50 border-gray-100 dark:bg-gray-800 dark:border-gray-700 divide-gray-100 dark:divide-gray-700 border rounded-lg"
+		>
+			<span class="ms-[1em] text-gray-900 dark:text-white font-medium">On this page:</span>
+			<nav class="js-toc">
+			</nav>
+		</aside>
+	{/if}
 </div>
 
 <style>
@@ -145,6 +154,18 @@
 			/*padding-inline-start: .75rem;*/
 			/*padding-inline-end: 1rem;*/
   }
+
+	button.toc-button {
+      border: none;
+      bottom: var(--toc-mobile-btn-bottom, 1rem);
+      cursor: pointer;
+      font: var(--toc-mobile-btn-font, 2em sans-serif);
+      line-height: var(--toc-mobile-btn-line-height, 0);
+      position: fixed;
+      right: var(--toc-mobile-btn-right, 1rem);
+      z-index: var(--toc-mobile-btn-z-index, 2);
+      border-radius: var(--toc-mobile-btn-border-radius, 4pt);
+	}
 
   :global(aside.toc > nav a.node-name--H2) {
 			font-size: 2ex;

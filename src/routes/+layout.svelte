@@ -33,7 +33,7 @@
 		<DarkModeButton />
 		<NavHamburger />
 	</div>
-	<NavUl {activeUrl} classes={{ ul: "mt-4 md:space-x-8 md:mt-0 md:text-sm" }}>
+	<NavUl {activeUrl} classes={{ ul: "md:space-x-8 md:mt-0 md:text-sm" }}>
 		<NavLi class="md:p-0 rounded" href="/">Home</NavLi>
 		<NavLi class="md:p-0 rounded" href="/resume">Résumé</NavLi>
 		<NavLi class="md:p-0 rounded" href="/projects">Projects</NavLi>

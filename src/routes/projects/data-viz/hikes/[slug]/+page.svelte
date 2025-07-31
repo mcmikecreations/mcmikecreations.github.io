@@ -450,7 +450,7 @@
 		</article>
 		<div class="flex-[2] min-w-80">
 			<Tabs>
-				<TabItem open title="3D" onclick={async () => { await init3d(); attach3d(); }}>
+				<TabItem open title="3D" onclick={() => { setTimeout(async () => { await init3d(); attach3d(); }) }}>
 					<div id="container-3d" class="w-full aspect-square"></div>
 					<Attribution {attrMapbox} {attrOSM} />
 				</TabItem>

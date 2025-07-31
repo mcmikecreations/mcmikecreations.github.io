@@ -2,7 +2,7 @@
 	import { twMerge } from 'tailwind-merge';
 	import { toggleTheme } from '$lib/components/DarkModeStore';
 
-	const btnClassConst = 'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5';
+	const btnClassConst : string = 'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5';
 	const sizes : Map<string, string> = new Map<string, string>([
 		['sm', 'w-4 h-4'],
 		['md', 'w-5 h-5'],

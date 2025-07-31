@@ -151,10 +151,17 @@
 							{/snippet}
 				<div class="flex flex-row flex-wrap gap-4">
 					{#each years as year}
-						<A
-							class={selectedYear === year ? 'text-primary-600 dark:text-primary-500' : 'text-alternative-600 dark:text-alternative-500'}
-							onclick={() => toggleYear(year)}
-						>{year}</A>
+						{#if selectedYear === year}
+							<A
+								class="text-primary-600 dark:text-primary-500"
+								onclick={() => toggleYear(year)}
+							>{year}</A>
+						{:else}
+							<A
+								class="text-gray-500 dark:text-gray-400"
+								onclick={() => toggleYear(year)}
+							>{year}</A>
+						{/if}
 					{/each}
 				</div>
 			</AccordionItem>
@@ -181,7 +188,10 @@
 		<div class="flex flex-col gap-4">
 			{#each posts as p}
 				<a
-					class="flex flex-col md:flex-row w-full md:min-h-48 rounded-lg shadow-lg bg-white dark:bg-gray-800"
+					class="flex flex-col md:flex-row w-full md:min-h-48
+					rounded-lg shadow-lg
+					bg-white dark:bg-gray-800
+ 					text-gray-500 dark:text-gray-400"
 					href={p.url}
 					data-sveltekit-reload
 				>

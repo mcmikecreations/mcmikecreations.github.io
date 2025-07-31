@@ -20,7 +20,7 @@
 					img={p.image ?? undefined}
 					class="max-w-sm lg:max-w-xl flex-1"
 				>
-					<div class="m-4 sm:m-6">
+					<div class="m-4 sm:m-6 text-gray-500 dark:text-gray-400">
 						<Heading tag="h3">{p.title}</Heading>
 						<Span class="pt-4 flex-grow">{@html p.description}</Span>
 						<div class="pt-4 w-full flex flex-row">

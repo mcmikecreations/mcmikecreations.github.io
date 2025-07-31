@@ -16,7 +16,7 @@ export const load: PageLoad = async () => {
 		return {
 			project: project,
 			toc: {
-				enabled: true,
+				enabled: false,
 			}
 		};
 	} catch (ex) {
