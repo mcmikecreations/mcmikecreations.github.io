@@ -5,8 +5,6 @@
 	import { BarsFromLeftOutline } from 'flowbite-svelte-icons';
 	import {onDestroy, onMount} from "svelte";
 
-	import 'tocbot/dist/tocbot.css';
-
 	let enabled = $derived(page.data.toc?.enabled ?? false);
 
 	onMount(() => {
@@ -19,6 +17,8 @@
 			headingSelector: 'h2, h3, h4',
 			// For headings inside relative or absolute positioned containers within content.
 			hasInnerContainers: true,
+			// How many heading levels should not be collapsed.
+			collapseDepth: 2,
 		});
 	});
 
@@ -81,9 +81,9 @@
 {/snippet}
 
 <div class={enabled ? '' : 'hidden'}>
-	<aside class="toc desktop">
-		<nav class="js-toc !pb-4 bg-gray-50 border-gray-100 border rounded-lg">
-			<span class="text-gray-900 dark:text-white font-medium">On this page:</span>
+	<aside class="toc desktop py-4 bg-gray-50 border-gray-100 dark:bg-gray-800 dark:border-gray-700 divide-gray-100 dark:divide-gray-700 border rounded-lg">
+		<span class="ms-[1em] text-gray-900 dark:text-white font-medium">On this page:</span>
+		<nav class="js-toc">
 		</nav>
 	</aside>
 </div>
@@ -105,7 +105,7 @@
 	aside.toc.desktop {
 		margin: var(--toc-desktop-aside-margin, var(--toc-desktop-nav-margin));
 		position: sticky;
-		background: var(--toc-desktop-bg);
+		/*background: var(--toc-desktop-bg);*/
 		max-width: var(--toc-desktop-max-width);
 		top: var(--toc-desktop-sticky-top, 2em);
 	}
@@ -113,31 +113,65 @@
 	aside.toc > nav {
 		position: relative;
 		max-height: var(--toc-max-height, 90vh);
-		padding: var(--toc-padding, 1em 1em 0);
+		padding-inline-end: 1em;
 	}
 
-	:global(html.dark nav.tw-toc>ol>li:not(.active)) {
-		@apply text-gray-400 focus-within:text-white hover:text-white
-			bg-transparent
-			focus-within:ring-4 focus-within:outline-none
-			focus-within:ring-gray-700 rounded-lg;
+	:global(aside.toc > nav li) {
+      cursor: pointer;
+      border: var(--toc-li-border);
+      border-radius: var(--toc-li-border-radius);
+      margin: var(--toc-li-margin);
+
+			margin-inline-start: 1em;
 	}
-	:global(html:not(.dark) nav.tw-toc>ol>li:not(.active)) {
-		@apply text-gray-900 hover:text-primary-700 focus-within:text-primary-700
-    	bg-transparent hover:bg-gray-100
-			focus-within:ring-4 focus-within:outline-none
-			focus-within:ring-gray-200 rounded-lg;
-	}
-  :global(html.dark nav.tw-toc>ol>li.active) {
-      @apply text-white
-      bg-primary-600 hover:bg-primary-700
+
+  :global(aside.toc > nav a) {
+			border-radius: .5rem;
+      padding: var(--toc-li-padding, 2pt 4pt);
+			display: block;
+
+			font-weight: 500;
+			/*padding-inline-start: .75rem;*/
+			/*padding-inline-end: 1rem;*/
+  }
+
+  :global(aside.toc > nav a.node-name--H2) {
+			font-size: 2ex;
+  }
+
+  :global(aside.toc > nav a.node-name--H3) {
+			font-size: 1.8ex;
+  }
+
+  :global(aside.toc > nav a.node-name--H4) {
+			font-size: 1.6ex;
+  }
+
+  :global(aside.toc > nav a.node-name--H5) {
+			font-size: 1.6ex;
+  }
+
+  :global(aside.toc > nav a.node-name--H6) {
+			font-size: 1.6ex;
+  }
+
+  :global(aside.toc > nav a) {
+      @apply text-gray-900 hover:text-primary-700 focus-within:text-primary-700
+      bg-transparent hover:bg-gray-100
       focus-within:ring-4 focus-within:outline-none
-      focus-within:ring-primary-800 rounded-lg;
+      focus-within:ring-gray-200 rounded-lg;
   }
-	:global(nav.tw-toc>ol>li.active) {
-		@apply text-white
-			bg-primary-700 hover:bg-primary-800 dark:bg-primary-600 dark:hover:bg-primary-700
-    	focus-within:ring-4 focus-within:outline-none
-    	focus-within:ring-primary-300 dark:focus-within:ring-primary-800 rounded-lg;
+
+  :global(html.dark aside.toc > nav a) {
+      @apply text-gray-400 hover:bg-transparent focus-within:text-white hover:text-white focus-within:ring-gray-700;
   }
+
+  :global(aside.toc > nav a.is-active-link) {
+      @apply text-white hover:text-white
+      bg-primary-700 hover:bg-primary-800 focus-within:ring-4 focus-within:outline-none focus-within:ring-primary-300 rounded-lg;
+	}
+
+  :global(html.dark aside.toc > nav a.is-active-link) {
+      @apply text-white bg-primary-600 hover:bg-primary-700 focus-within:ring-primary-800;
+	}
 </style>
