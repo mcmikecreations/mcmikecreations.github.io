@@ -110,10 +110,20 @@
 		top: var(--toc-desktop-sticky-top, 2em);
 	}
 
+	aside.toc.mobile {
+		position: fixed;
+		bottom: var(--toc-mobile-bottom, 1em);
+		right: var(--toc-mobile-right, 1em);
+	}
+
 	aside.toc > nav {
 		position: relative;
 		max-height: var(--toc-max-height, 90vh);
 		padding-inline-end: 1em;
+	}
+
+	aside.toc.mobile > nav {
+      width: var(--toc-mobile-width, 18em);
 	}
 
 	:global(aside.toc > nav li) {
@@ -127,8 +137,9 @@
 
   :global(aside.toc > nav a) {
 			border-radius: .5rem;
-      padding: var(--toc-li-padding, 2pt 4pt);
 			display: block;
+      padding: var(--toc-li-padding, 2pt 4pt);
+			@apply py-[0.2922rem] md:py-[0.1672rem] px-[1.0844rem] md:px-[0.3344rem];
 
 			font-weight: 500;
 			/*padding-inline-start: .75rem;*/
