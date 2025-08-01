@@ -3396,5 +3396,47 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Zugspitze über Reintal",
+    "image": "/images/projects/data-viz/hikes/zugspitze_reintal.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": ["2025-06-21"],
+      "filePath": "/_projects/data-viz/hikes/geojson/zugspitze_reintal.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.1177715, 47.4825277],
+        [11.1193623, 47.4695861],
+        [11.1234968, 47.4598580],
+        [11.0942348, 47.4180397],
+        [11.0131029, 47.4099169],
+        [10.9797742, 47.4131261],
+        [10.9862970, 47.4212150]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Garmisch and back via Zugspitze (2962 m).",
+    "route": "/projects/data-viz/hikes/zugspitze_reintal",
+    "height": 1024,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.44480754169437,
+        "lon": 11.057820862664295
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "zugspitze_reintal.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]

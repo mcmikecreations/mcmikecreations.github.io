@@ -65,7 +65,7 @@
 			{#each year[1].entries() as month}
 				<div id="m{year[0]}{month[0]}" class="flex-1 !aspect-square ms-2" style="background: {getColor(month)}"></div>
 				{#if month[1].length}
-					<Popover class="text-sm font-light z-[1000]" defaultClass="" triggeredBy="#m{year[0]}{month[0]}">
+					<Popover class="text-sm font-light !m-0" placement="top" trigger="click" triggeredBy="#m{year[0]}{month[0]}">
 						<ul class="list-none !my-2 !mx-2 !pl-0">
 							{#each month[1] as hike}
 								<li>{year[0]}-{month[0]}-{hike.day.toString().padStart(2, '0')}: <a href={hike.route}>{hike.name}</a></li>
