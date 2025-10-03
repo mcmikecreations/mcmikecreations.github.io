@@ -1,24 +1,15 @@
 <script lang="ts">
-	import {onMount} from "svelte";
+    import {getContext, onMount, setContext, type SvelteComponent} from "svelte";
+    import DarkModeButton from "$lib/components/DarkModeButton.svelte";
+    import AppFooter from "$lib/components/AppFooter.svelte";
+    import AppNavbar from "$lib/components/AppNavbar.svelte";
+    import { Heading } from "flowbite-svelte";
+    import AppToc from "$lib/components/AppToc.svelte";
+    import ShowcaseCard from "./components/ShowcaseCard.svelte";
 
 	let parallaxStrength = $state(0.05);
 
 	onMount(() => {
-		window.addEventListener('scroll', () => {
-			const scrollY = window.scrollY;
-			document.querySelector<HTMLDivElement>('.hero-layer2')!.style.transform = `translateY(${scrollY * parallaxStrength}px)`;
-			document.querySelector<HTMLDivElement>('.hero-layer3')!.style.transform = `translateY(${scrollY * parallaxStrength * 2}px)`;
-			document.querySelector<HTMLDivElement>('.hero-layer4')!.style.transform = `translateY(${scrollY * parallaxStrength * 3}px)`;
-			document.querySelector<HTMLDivElement>('.hero-layer5')!.style.transform = `translateY(${scrollY * parallaxStrength * 3}px)`;
-			document.querySelector<HTMLDivElement>('.hero-layer6')!.style.transform = `translateY(${scrollY * parallaxStrength * 4}px)`;
-
-			const container = document.querySelector<HTMLDivElement>('.parallax-container')!;
-			const maxScroll = container.offsetHeight - window.innerHeight;
-			const text = document.querySelector<HTMLDivElement>('.parallax-text')!;
-			const clampedScroll = Math.min(scrollY, maxScroll);
-			text.style.transform = `translateY(${clampedScroll}px)`;
-		});
-
         const footstepsContainer = document.getElementById('footsteps-container');
         function footstepsUpdate() {
             const stepDistanceY = 60;
@@ -27,7 +18,7 @@
 
             if (!footstepsContainer) return;
             const stepCount = Math.floor(scrollY / stepDistanceY);
-            const oldStepCount = footstepsContainer.children.length / 2;
+            const oldStepCount = footstepsContainer.children.length;
 
             const stepOffsetY = window.innerHeight * ((stepCount * stepDistanceY + window.innerHeight) / document.documentElement.scrollHeight);
             const stepOffsetX = 50;
@@ -39,7 +30,7 @@
             } else if (oldStepCount < stepCount) {
                 for (let i = oldStepCount; i < stepCount; ++i) {
                     const svgNS = footstepsContainer.getAttribute('xmlns');
-                    {
+                    if (i % 2 === 0) {
                         const footstep = document.createElementNS(svgNS, 'rect') as SVGRectElement;
 
                         const t = i;
@@ -59,11 +50,11 @@
 
                         footstepsContainer.appendChild(footstep);
                     }
-                    {
+                    else {
                         const footstep = document.createElementNS(svgNS, 'rect') as SVGRectElement;
 
                         // Curve formula (e.g., sine wave)
-                        const t = i + 0.5;
+                        const t = i;
                         const x = stepDistanceX * Math.sin(t);
                         const y = t * stepDistanceY; // vertical position
                         footstep.setAttribute('x', '0');
@@ -72,8 +63,7 @@
                         footstep.setAttribute('height', '40');
                         let transform = '';
                         const angle = Math.atan(-Math.cos(t) * stepDistanceX / stepDistanceY);
-                        const offsetDistance = 0;
-                        transform += ` translate(${x + stepOffsetX - offsetDistance * Math.sin(angle)} ${y + stepOffsetY + offsetDistance * Math.cos(angle)})`;
+                        transform += ` translate(${x + stepOffsetX} ${y + stepOffsetY})`;
                         transform += `scale(1 1)`;
                         transform += ` rotate(${180 + angle / Math.PI * 180} 10 20)`;
                         footstep.setAttribute('transform', transform);
@@ -84,26 +74,73 @@
                 }
             }
         }
-
-        window.addEventListener('scroll', footstepsUpdate);
         footstepsUpdate();
+
+        const fakeHeader = document.getElementById('fake-header');
+        function fakeHeaderColor() {
+            const scrollY = window.scrollY;
+            const windowHeight = window.innerHeight;
+            if (fakeHeader) {
+                if (scrollY >= windowHeight) {
+                    fakeHeader.style.opacity = '0%';
+                } else {
+                    fakeHeader.style.opacity = '100%';
+                }
+            }
+        }
+
+		window.addEventListener('scroll', () => {
+			const scrollY = window.scrollY;
+			document.querySelector<HTMLDivElement>('.hero-layer2')!.style.transform = `translateY(${scrollY * parallaxStrength}px)`;
+			document.querySelector<HTMLDivElement>('.hero-layer3')!.style.transform = `translateY(${scrollY * parallaxStrength * 2}px)`;
+			document.querySelector<HTMLDivElement>('.hero-layer4')!.style.transform = `translateY(${scrollY * parallaxStrength * 3}px)`;
+			document.querySelector<HTMLDivElement>('.hero-layer5')!.style.transform = `translateY(${scrollY * parallaxStrength * 3}px)`;
+			document.querySelector<HTMLDivElement>('.hero-layer6')!.style.transform = `translateY(${scrollY * parallaxStrength * 4}px)`;
+
+			const maxScroll = window.innerHeight;
+			const text = document.querySelector<HTMLDivElement>('.parallax-text')!;
+			const clampedScroll = Math.min(scrollY, maxScroll);
+			text.style.transform = `translateY(${clampedScroll}px)`;
+
+            footstepsUpdate();
+            fakeHeaderColor();
+		});
     });
 </script>
 
-<div class="w-full h-[100vh]">
-	<div class="max-w-full max-h-full h-[100vh] relative overflow-hidden bg-red-500 parallax-container">
+{#snippet title()}
+    <span class="self-center whitespace-nowrap text-xl font-semibold invisible">Mykola Morozov</span>
+{/snippet}
+
+<AppNavbar
+    class="fixed z-10 top-0"
+    bgClass="bg-white/50 dark:bg-gray-800/50 dark:text-white"
+    bgClassUl="backdrop-blur-md bg-white dark:bg-gray-800 md:bg-white/50 md:dark:bg-gray-800/50 text-black dark:text-white"
+    {title}
+    fillNarrow={true}
+    shouldFixNavbar="true"
+/>
+<div class="w-full h-[100vh] absolute top-0 left-0">
+	<div class="max-w-full max-h-full h-[100vh] relative overflow-hidden">
 		<div class="parallax-layer hero-layer1"></div>
 		<div class="parallax-layer hero-layer2"></div>
 		<div class="parallax-layer hero-layer3"></div>
 		<div class="parallax-layer hero-layer4"></div>
 		<div class="parallax-layer hero-layer5"></div>
 		<div class="parallax-layer hero-layer6"></div>
-		<div class="absolute z-10 text-white drop-shadow-xl text-[8rem] left-10 top-0 parallax-text">Hikes</div>
+        <div class="absolute z-10 text-white drop-shadow-xl text-[8rem] left-10 top-[1rem] pointer-events-none parallax-text">Hikes</div>
 	</div>
-    <!-- TODO: light/dark button -->
 </div>
-<div class="h-[100vh] w-full bg-green-500">
-
+<div class="h-[100vh] w-full"></div>
+<div class="w-full h-[60px] md:h-[72px] bg-white dark:bg-gray-800 sticky top-0">
+    <div id="fake-header" class="transition-all duration-300 absolute z-10 w-full h-full top-0 left-0 bg-white dark:bg-gray-900"></div>
+    <div class="mx-auto h-full px-2 py-2.5 sm:px-4 flex flex-wrap items-center justify-between container">
+        <a href="/" class="flex items-center">
+            <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+                Mykola Morozov
+            </span>
+        </a>
+    </div>
 </div>
 <svg
         width="auto" height="auto"
@@ -111,10 +148,52 @@
         id="footsteps-container"
         xmlns="http://www.w3.org/2000/svg">
 </svg>
-<div></div>
+
+<section class="container mx-auto mb-8">
+    <div class="mx-4 2xl:mx-0 md:px-24 mb-8">
+        <Heading tag="h3">Projects</Heading>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-8">
+            <ShowcaseCard x={2} y={1} class="lg:col-span-2" href="/projects/data-viz/hikes/all/" img="/images/hikes/hero/web.png">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pb-4">
+                    Hiking Web
+                </h5>
+                <p class="leading-tight text-justify font-normal text-gray-700 dark:text-gray-400 pb-4">
+                    An attempt to connect all visited hiking paths into a single network.
+                </p>
+                <p class="leading-tight text-justify font-normal text-gray-700 dark:text-gray-400 pb-4">
+                    All of the simplified hiking routes on the page are fully explorable,
+                    some even contain event descriptions and photos from the hike.
+                </p>
+                <p class="leading-tight text-justify font-normal text-gray-700 dark:text-gray-400 pb-4">
+                    The simplified routes are based on the approximate origins and destinations
+                    of the hikes and include intersection points with other simplified routes.
+                </p>
+                <p class="leading-tight text-justify font-normal text-gray-700 dark:text-gray-400">
+                    Currently, most of the South Bavarian hikes have been connected.
+                </p>
+            </ShowcaseCard>
+            <ShowcaseCard x={1} y={1} href="/projects/data-viz/hikes/all/" img="/images/hikes/hero/web.png">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pb-4">
+                    Via Ferrata
+                </h5>
+                <p class="leading-tight text-justify font-normal text-gray-700 dark:text-gray-400 pb-4">
+                    A set of full-length recordings of via ferrata climbs, with or without gear.
+                </p>
+                <p class="leading-tight text-justify font-normal text-gray-700 dark:text-gray-400 pb-4">
+                    Any attempts to follow these climbs should be done with all necessary gear and
+                    utilizing all safety rules, regulations, and equipment.
+                </p>
+            </ShowcaseCard>
+        </div>
+        <!--<main></main>-->
+    </div>
+</section>
+
 <div style="height: 3000px;">
     <h1>Scroll down to see footsteps!</h1>
 </div>
+
+<AppFooter />
 
 <style>
 	.parallax-layer {
@@ -127,7 +206,6 @@
 	}
 
 	.parallax-text {
-		pointer-events: none;
 		transition: transform 0.1s linear;
 	}
 
@@ -172,6 +250,7 @@
         left: 0;
         top: 0;
         pointer-events: none;
+        z-index: -20;
     }
 
     :global(.footstep) {
@@ -183,6 +262,6 @@
     }
 
     :global(html.dark .footstep) {
-        fill: white;
+        fill: rgb(107 114 128 / var(--tw-text-opacity, 1));
     }
 </style>
