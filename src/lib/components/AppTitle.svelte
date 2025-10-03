@@ -8,9 +8,10 @@
 	const titleBase = resume.basics.name;
 	interface Props {
 		title: string | undefined;
+		hasBase?: boolean;
 	}
 
-	let { title }: Props = $props();
+	let { title, hasBase = true }: Props = $props();
 
 	onMount(() => {
 		canonicalUrl.search = oldUrl.search;
@@ -18,6 +19,6 @@
 </script>
 
 <svelte:head>
-	<title>{titleBase + (title ? (' | ' + title) : '')}</title>
+	<title>{hasBase ? (titleBase + (title ? (' | ' + title) : '')) : (title ? title : titleBase)}</title>
 	<link rel="canonical" href={canonicalUrl.toString()} />
 </svelte:head>

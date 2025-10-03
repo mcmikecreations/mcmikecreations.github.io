@@ -7,7 +7,24 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2025-03-02","2024-02-18"],
+      "dates": [
+        {
+          "date": "2025-03-02",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-03-02-seekarkreuz.md"
+        },
+        {
+          "date": "2024-02-18",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/seekarkreuz.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -44,7 +61,32 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2025-06-10","2024-01-03","2023-09-02"],
+      "dates": [
+        {
+          "date": "2025-06-10",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-06-10-wendelstein.md"
+        },
+        {
+          "date": "2024-01-03",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        },
+        {
+          "date": "2023-09-02",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/wendelstein.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -82,7 +124,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-03-31"],
+      "dates": [
+        {
+          "date": "2024-03-31",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/bad_tolz_lenggries.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -119,7 +170,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-03-09"],
+      "dates": [
+        {
+          "date": "2024-03-09",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/furnas.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -157,7 +217,24 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-04-06","2023-08-26"],
+      "dates": [
+        {
+          "date": "2024-04-06",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        },
+        {
+          "date": "2023-08-26",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/seebergkopf.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -197,7 +274,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-02-03"],
+      "dates": [
+        {
+          "date": "2024-02-03",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/tegernsee.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -239,7 +325,48 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-01-01","2023-11-18","2023-06-07","2022-06-06","2022-04-10"],
+      "dates": [
+        {
+          "date": "2024-01-01",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        },
+        {
+          "date": "2023-11-18",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        },
+        {
+          "date": "2023-06-07",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        },
+        {
+          "date": "2022-06-06",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        },
+        {
+          "date": "2022-04-10",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/gindelalmschneid.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -280,7 +407,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2023-08-19"],
+      "dates": [
+        {
+          "date": "2023-08-19",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/laimbachfall.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -318,7 +454,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2023-07-16"],
+      "dates": [
+        {
+          "date": "2023-07-16",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/herzogstand.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -356,7 +501,32 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-10-27", "2023-06-10", "2022-09-08"],
+      "dates": [
+        {
+          "date": "2024-10-27",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        },
+        {
+          "date": "2023-06-10",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        },
+        {
+          "date": "2022-09-08",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/nebelhorn.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -398,7 +568,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2023-06-28"],
+      "dates": [
+        {
+          "date": "2023-06-28",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/jenner.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -441,7 +620,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2023-06-17"],
+      "dates": [
+        {
+          "date": "2023-06-17",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/bayrischzell_hohenweg.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -481,7 +669,24 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-03-30", "2023-04-22"],
+      "dates": [
+        {
+          "date": "2024-03-30",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        },
+        {
+          "date": "2023-04-22",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/starnberg_tutzing.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -520,7 +725,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2022-05-19"],
+      "dates": [
+        {
+          "date": "2022-05-19",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/feldafing_tutzing.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -558,7 +772,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2023-04-29"],
+      "dates": [
+        {
+          "date": "2023-04-29",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/starnberg_munsing.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -598,7 +821,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2023-03-04"],
+      "dates": [
+        {
+          "date": "2023-03-04",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/kegon.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -638,7 +870,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2023-03-25"],
+      "dates": [
+        {
+          "date": "2023-03-25",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/herrsching_andechs.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -675,7 +916,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2023-02-18"],
+      "dates": [
+        {
+          "date": "2023-02-18",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/takao.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -714,7 +964,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2023-02-26"],
+      "dates": [
+        {
+          "date": "2023-02-26",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/nokogiri.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -753,7 +1012,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2022-12-02"],
+      "dates": [
+        {
+          "date": "2022-12-02",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/oyama.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -793,7 +1061,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2022-12-07"],
+      "dates": [
+        {
+          "date": "2022-12-07",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/miura.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -839,7 +1116,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2022-11-04"],
+      "dates": [
+        {
+          "date": "2022-11-04",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/fuji.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -880,7 +1166,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2023-12-09"],
+      "dates": [
+        {
+          "date": "2023-12-09",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/josefsthaler_wasserfall.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -919,7 +1214,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2023-11-25"],
+      "dates": [
+        {
+          "date": "2023-11-25",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/tegernsee_rottachfall.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -960,7 +1264,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2023-10-07"],
+      "dates": [
+        {
+          "date": "2023-10-07",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/himmelschrofen.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -1000,7 +1313,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2023-10-21"],
+      "dates": [
+        {
+          "date": "2023-10-21",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/wank.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -1043,7 +1365,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2023-10-28"],
+      "dates": [
+        {
+          "date": "2023-10-28",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/kramerspitz.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -1087,7 +1418,24 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2023-10-29", "2022-08-16"],
+      "dates": [
+        {
+          "date": "2023-10-29",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        },
+        {
+          "date": "2022-08-16",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/eibsee.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -1130,7 +1478,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2023-09-09"],
+      "dates": [
+        {
+          "date": "2023-09-09",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/jochberg.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -1169,7 +1526,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2023-09-30"],
+      "dates": [
+        {
+          "date": "2023-09-30",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/riefenkopf.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -1213,7 +1579,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2023-07-06"],
+      "dates": [
+        {
+          "date": "2023-07-06",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/tegelberg.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -1259,7 +1634,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2022-08-22"],
+      "dates": [
+        {
+          "date": "2022-08-22",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/partnachklamm.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -1298,7 +1682,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2022-11-30"],
+      "dates": [
+        {
+          "date": "2022-11-30",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/miyagase.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -1339,7 +1732,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2022-06-18"],
+      "dates": [
+        {
+          "date": "2022-06-18",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/murnau.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -1379,7 +1781,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2022-03-22"],
+      "dates": [
+        {
+          "date": "2022-03-22",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/monsanto.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -1423,7 +1834,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2023-09-16"],
+      "dates": [
+        {
+          "date": "2023-09-16",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/vorderskopf.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -1461,7 +1881,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-12-31"],
+      "dates": [
+        {
+          "date": "2024-12-31",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/alpelesattel.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -1504,7 +1933,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-12-31"],
+      "dates": [
+        {
+          "date": "2024-12-31",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/schrecksee.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -1543,7 +1981,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-06-30"],
+      "dates": [
+        {
+          "date": "2024-06-30",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/branderschrofen.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -1589,7 +2036,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-05-20"],
+      "dates": [
+        {
+          "date": "2024-05-20",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/klammspitz.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -1632,7 +2088,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-05-01"],
+      "dates": [
+        {
+          "date": "2024-05-01",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/kranzberg.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -1673,7 +2138,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-09-29"],
+      "dates": [
+        {
+          "date": "2024-09-29",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/rotwand.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -1714,7 +2188,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-12-31"],
+      "dates": [
+        {
+          "date": "2024-12-31",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/schartenspitze.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -1752,7 +2235,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-12-31"],
+      "dates": [
+        {
+          "date": "2024-12-31",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/wimbachklamm.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -1789,7 +2281,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-12-31"],
+      "dates": [
+        {
+          "date": "2024-12-31",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/bartholoma_eiskapelle.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -1826,7 +2327,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-12-31"],
+      "dates": [
+        {
+          "date": "2024-12-31",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/rothbachfall.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -1866,7 +2376,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-04-14"],
+      "dates": [
+        {
+          "date": "2024-04-14",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/altmuhltal_panoramaweg.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -1903,7 +2422,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-04-14"],
+      "dates": [
+        {
+          "date": "2024-04-14",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/murnau_uffing.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -1946,7 +2474,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-06-22"],
+      "dates": [
+        {
+          "date": "2024-06-22",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/wallberg.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -1986,7 +2523,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-04-28"],
+      "dates": [
+        {
+          "date": "2024-04-28",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/gmund_neuhaus.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -2029,7 +2575,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-05-06"],
+      "dates": [
+        {
+          "date": "2024-05-06",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/kochel_hydropower.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -2072,7 +2627,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-05-11"],
+      "dates": [
+        {
+          "date": "2024-05-11",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/jochberg_only.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -2109,7 +2673,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-05-26"],
+      "dates": [
+        {
+          "date": "2024-05-26",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/blaubeuren.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -2148,7 +2721,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-06-08"],
+      "dates": [
+        {
+          "date": "2024-06-08",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/freising_garching.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -2185,7 +2767,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-06-16"],
+      "dates": [
+        {
+          "date": "2024-06-16",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/garching_munchen.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -2223,7 +2814,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-07-06"],
+      "dates": [
+        {
+          "date": "2024-07-06",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/fockenstein.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -2261,7 +2861,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-07-13"],
+      "dates": [
+        {
+          "date": "2024-07-13",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/wildbarren.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -2301,7 +2910,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-07-20"],
+      "dates": [
+        {
+          "date": "2024-07-20",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/heimgarten.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -2339,7 +2957,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-07-21"],
+      "dates": [
+        {
+          "date": "2024-07-21",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/benediktenwand.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -2382,7 +3009,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-08-31"],
+      "dates": [
+        {
+          "date": "2024-08-31",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/aiplspitz.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -2423,7 +3059,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-09-07"],
+      "dates": [
+        {
+          "date": "2024-09-07",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/simetsberg.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -2461,7 +3106,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-09-21"],
+      "dates": [
+        {
+          "date": "2024-09-21",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/rosskopf.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -2503,7 +3157,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-10-03"],
+      "dates": [
+        {
+          "date": "2024-10-03",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/bockerlbahnweg.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -2544,7 +3207,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-10-12"],
+      "dates": [
+        {
+          "date": "2024-10-12",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/auerspitz.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -2589,7 +3261,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-10-20"],
+      "dates": [
+        {
+          "date": "2024-10-20",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/kruen.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -2631,7 +3312,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-11-17"],
+      "dates": [
+        {
+          "date": "2024-11-17",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/hirschberg.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -2672,7 +3362,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2024-12-14"],
+      "dates": [
+        {
+          "date": "2024-12-14",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/spitzingsee_schlittenfahrt.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -2711,7 +3410,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2025-01-19"],
+      "dates": [
+        {
+          "date": "2025-01-19",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/soiernspitze.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -2751,7 +3459,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2025-01-26"],
+      "dates": [
+        {
+          "date": "2025-01-26",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": null
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/grosser_traithen.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -2793,7 +3510,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2025-02-02"],
+      "dates": [
+        {
+          "date": "2025-02-02",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-02-02-pyramidenspitze.md"
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/pyramidenspitze.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -2837,7 +3563,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2025-02-09"],
+      "dates": [
+        {
+          "date": "2025-02-09",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-02-09-rampoldplatte.md"
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/rampoldplatte.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -2874,7 +3609,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2025-02-23"],
+      "dates": [
+        {
+          "date": "2025-02-23",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-02-23-herrsching_tutzing.md"
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/herrsching_tutzing.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -2915,7 +3659,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2025-03-09"],
+      "dates": [
+        {
+          "date": "2025-03-09",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-03-09-hochstaufen.md"
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/hochstaufen.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -2956,7 +3709,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2025-03-16"],
+      "dates": [
+        {
+          "date": "2025-03-16",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-03-16-riedenburg_kelheim.md"
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/riedenburg_kelheim.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -3001,7 +3763,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2025-03-23"],
+      "dates": [
+        {
+          "date": "2025-03-23",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-03-23-frau_hitt.md"
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/frau_hitt.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -3043,7 +3814,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2025-03-30"],
+      "dates": [
+        {
+          "date": "2025-03-30",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-03-30-hoher_fricken.md"
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/hoher_fricken.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -3089,7 +3869,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2025-04-04"],
+      "dates": [
+        {
+          "date": "2025-04-04",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-04-04-caldeirao_verde.md"
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/caldeirao_verde.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -3127,7 +3916,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2025-04-04"],
+      "dates": [
+        {
+          "date": "2025-04-04",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-04-04-pedra_rija.md"
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/pedra_rija.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -3164,7 +3962,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2025-04-06"],
+      "dates": [
+        {
+          "date": "2025-04-06",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-04-06-sao_lourenco_partial.md"
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/sao_lourenco_partial.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -3202,7 +4009,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2025-04-21"],
+      "dates": [
+        {
+          "date": "2025-04-21",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-04-21-schweinsberg.md"
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/schweinsberg.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -3241,7 +4057,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2025-04-27"],
+      "dates": [
+        {
+          "date": "2025-04-27",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-04-27-laber_hauptgipfel.md"
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/laber_hauptgipfel.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -3281,7 +4106,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2025-05-11"],
+      "dates": [
+        {
+          "date": "2025-05-11",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-05-11-buchstein.md"
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/buchstein.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -3324,7 +4158,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2025-05-18"],
+      "dates": [
+        {
+          "date": "2025-05-18",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-05-18-breitenstein_wendelstein.md"
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/breitenstein_wendelstein.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -3365,7 +4208,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2025-06-01"],
+      "dates": [
+        {
+          "date": "2025-06-01",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-06-01-blauberge.md"
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/blauberge.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -3405,7 +4257,16 @@
       "duration": null,
       "ascent": null,
       "descent": null,
-      "dates": ["2025-06-21"],
+      "dates": [
+        {
+          "date": "2025-06-21",
+          "title": null,
+          "description": null,
+          "tags": [],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-06-21-zugspitze_reintal.md"
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/zugspitze_reintal.json",
       "fileType": "GeoJSON",
       "checkpoints": [

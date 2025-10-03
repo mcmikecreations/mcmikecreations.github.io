@@ -19,7 +19,8 @@ export function getTime(m : number) {
 export async function buildStatistics(
 	fetch : (input: (RequestInfo | URL), init?: (RequestInit | undefined)) => Promise<Response>,
 	layer : Feature,
-	height : number
+	height : number,
+	rectHeightParam: number | undefined
 ) {
 	const result : {
 		layers2d: Array<string>,
@@ -44,7 +45,7 @@ export async function buildStatistics(
 		const deltaHeight = minHeight === maxHeight ? 1.0 : maxHeight - minHeight;
 		const containerSize = height * 0.5;
 		const rectWidth = containerSize / points.length;
-		const rectHeight = height * 0.125;
+		const rectHeight = rectHeightParam ?? height * 0.125;
 		const rectangles = points.map((x : Array<number>, i : number) : string =>
 			`<rect width="${rectWidth}" height="${rectHeight}" x="${i * rectWidth}" fill="transparent" data-x="${x[0]}" data-y="${x[1]}" data-z="${x[2]}" data-h="${rectHeight - (x[2] - minHeight) / deltaHeight * rectHeight}" />`
 		).join('');
@@ -55,7 +56,7 @@ export async function buildStatistics(
 	<text y="${rectHeight - 5 * rectHeight / 48}">${minHeight} m</text>
 	<text y="${5 * rectHeight / 48}">${maxHeight} m</text>
 	<rect width="0" height="${15 * rectHeight / 48}" x=${containerSize} y="${-7.5 * rectHeight / 48}" class="fill-gray-200 dark:fill-gray-700" />
-	<text x=${containerSize} y="${5 * rectHeight / 48}" text-anchor="end" id="statsHeightIndicator"></text>
+	<text x=${containerSize} y="${5 * rectHeight / 48}" text-anchor="end" class="statsHeightIndicator"></text>
 </g>`);
 		result.layers2d.push(`<g id="statsRects">${rectangles}</g>`);
 	}

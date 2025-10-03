@@ -50,12 +50,22 @@ interface StandardFeatures {
 	statistics: boolean;
 }
 
+interface MapDate {
+	date: string;
+	title?: string | undefined | null;
+	description?: string | undefined | null;
+	tags: string[];
+	image?: string | undefined | null;
+	path?: string | undefined | null;
+	author?: string | undefined | null;
+}
+
 interface MapProperties {
 	distance: number | null;
 	duration: number | null;
 	ascent: number | null;
 	descent: number | null;
-	dates: Array<string>;
+	dates: Array<MapDate>;
 	filePath: string;
 	fileType: string;
 	draft: boolean | null;

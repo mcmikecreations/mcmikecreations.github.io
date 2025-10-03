@@ -7,7 +7,7 @@ import { geoMercator } from 'd3-geo';
 // @ts-ignore
 import { tile } from 'd3-tile';
 import * as THREE from 'three';
-import { type GeometryData, getMapFeatures, type Map, type OriginData } from '$lib/data/map-info';
+import { type Feature, type GeometryData, getMapFeatures, type Map, type OriginData } from '$lib/data/map-info';
 import { buildGeometry, loadGeometry, loadProperties } from './build-geometry';
 import { buildTiles, getPixelsPerMeter } from './build-tiles';
 import { buildStatistics } from './build-statistics';
@@ -21,10 +21,10 @@ export const load: PageLoad = async ({ fetch, params }) => {
 			error(404, { message: `Failed to fetch "${params.slug}"` });
 		}
 
-		const features = getMapFeatures(meta);
+		const features: Feature[] = getMapFeatures(meta);
 
-		const statistics = features.find((x) => x.type === 'Statistics');
-		const origin = features.find((x) => x.type === 'Origin');
+		const statistics = features.find((x: Feature) => x.type === 'Statistics');
+		const origin = features.find((x: Feature) => x.type === 'Origin');
 
 		if (!origin) {
 			console.log(`Failed to find origin for /maps/${params.slug}.`);
@@ -75,17 +75,18 @@ export const load: PageLoad = async ({ fetch, params }) => {
 		meta.features = features;
 
 		const posts: { date: string, post: string }[] = [];
-		for (const date of properties.dates) {
+		/*for (const date of properties.dates) {
+			if (!date.path) continue;
 			try {
-				const res = await fetch(
-					`/_projects/data-viz/hikes/markdown/${date}-${params.slug}.md`
-				);
+				const res = await fetch(date.path);
 				if (res.ok) {
 					const post = await res.text();
-					posts.push({ date, post });
+					posts.push({ date: date.date, post: post });
 				}
-			} catch (e) {}
-		}
+			} catch (e) {
+				// empty
+			}
+		}*/
 
 		return {
 			map: meta,

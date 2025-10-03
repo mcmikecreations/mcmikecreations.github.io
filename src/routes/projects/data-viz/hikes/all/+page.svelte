@@ -56,7 +56,7 @@
   <li>Duration: ${getTime(feature.properties.duration ?? 0)}</li>
   <li>Ascent: ${getDistance(feature.properties.ascent ?? 0)}</li>
   <li>Descent: ${getDistance(feature.properties.descent ?? 0)}</li>
-  <li>Dates: ${feature.properties.dates.map((x : string) => new Date(x).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"})).join('; ')}</li>
+  <li>Dates: ${feature.properties.dates.map((x : string) => new Date(x.date).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"})).join('; ')}</li>
   <li><a href="${feature.properties.route}">Link</a>, <a href="${feature.properties.filePath}">${feature.properties.fileType}</a></li>
 </ul>`);
 				}
