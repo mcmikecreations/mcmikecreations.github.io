@@ -244,7 +244,7 @@
 		<Heading tag="h2">Blog</Heading>
 		<div class="mt-8">
 			<main>
-				<div class="flex flex-col gap-4">
+				<div class="flex flex-col gap-8">
 					{#each posts as p}
 						<a
 							class="flex flex-col md:flex-row w-full md:min-h-48

@@ -60,7 +60,8 @@ export const load: PageLoad = async ({ fetch, params }) => {
 			const layers2d : Array<string> = [];
 			const layers3d : Array<THREE.Object3D> = [];
 			const layersGeometry : Array<object> = [];
-			const statisticsSizePixels = height * 0.125;
+			const statisticsHeightPixels = height * 0.09375;
+			const statisticsWidthPixels = height * 0.5;
 
 			if (features && statistics) {
 				let properties = hike.properties;
@@ -125,9 +126,9 @@ export const load: PageLoad = async ({ fetch, params }) => {
 				mapDisplay: {
 					origin: originData,
 					features: features,
-					statisticsSizePixels: statisticsSizePixels,
+					statisticsSizePixels: [statisticsWidthPixels, statisticsHeightPixels],
 					statistics: statistics
-						? ((await buildStatistics(fetch, statistics, height, statisticsSizePixels))?.layers2d?.join(''))
+						? ((await buildStatistics(fetch, statistics, height, statisticsHeightPixels))?.layers2d?.join(''))
 						: undefined,
 					projection: projection,
 					tileScale: tiles.scale,

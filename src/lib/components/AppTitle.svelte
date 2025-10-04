@@ -19,6 +19,6 @@
 </script>
 
 <svelte:head>
-	<title>{hasBase ? (titleBase + (title ? (' | ' + title) : '')) : (title ? title : titleBase)}</title>
+	<title>{hasBase ? ((title ? (title + ' | ') : '') + titleBase) : (title ? title : titleBase)}</title>
 	<link rel="canonical" href={canonicalUrl.toString()} />
 </svelte:head>

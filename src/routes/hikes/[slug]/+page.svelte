@@ -467,7 +467,7 @@
 	});
 </script>
 
-<AppTitle title={data.post.title} />
+<AppTitle title={data.post.title + ' Hike'} />
 
 <div class="container mx-auto">
 	<div class="mx-4 2xl:mx-0 md:px-24 mb-8">
@@ -534,14 +534,14 @@
 						{#if data.mapDisplay.statistics}
 							<div class="flex-1 mt-4">
 								<svg
-									style="height: {data.mapDisplay.statisticsSizePixels}px"
-									class="stats w-full overflow-visible prose dark:prose-invert max-w-none"
+									style="height: {data.mapDisplay.statisticsSizePixels[1]}px; width: {data.mapDisplay.statisticsSizePixels[0]}px; aspect-ratio: {data.mapDisplay.statisticsSizePixels[0]/data.mapDisplay.statisticsSizePixels[1]};"
+									class="stats mx-auto max-w-full overflow-visible prose dark:prose-invert"
 									preserveAspectRatio="none"
-									viewBox="0 0 {data.map.height * 0.5} {data.mapDisplay.statisticsSizePixels}"
+									viewBox="0 0 {data.mapDisplay.statisticsSizePixels[0]} {data.mapDisplay.statisticsSizePixels[1]}"
 								>
-									<line class="statsIndicatorVertical hidden" y1="-7.5" y2={data.mapDisplay.statisticsSizePixels + 7.5} stroke={secondaryIndicatorColor} stroke-width={statsIndicatorVerticalWidth} />
+									<line class="statsIndicatorVertical hidden" y1="-7.5" y2={data.mapDisplay.statisticsSizePixels[1] + 7.5} stroke={secondaryIndicatorColor} stroke-width={statsIndicatorVerticalWidth} />
 									{@html data.mapDisplay.statistics}
-									<circle class="statsIndicator hidden" r={data.mapDisplay.statisticsSizePixels * 0.125 * 0.5} fill={secondaryIndicatorColor} />
+									<circle class="statsIndicator hidden" r={data.mapDisplay.statisticsSizePixels[1] * 0.125 * 0.5} fill={secondaryIndicatorColor} />
 								</svg>
 							</div>
 						{/if}
@@ -554,14 +554,14 @@
 						{#if data.mapDisplay.statistics}
 							<div class="flex-1 mt-4">
 								<svg
-									style="height: {data.mapDisplay.statisticsSizePixels}px"
-									class="stats w-full overflow-visible prose dark:prose-invert max-w-none"
+									style="height: {data.mapDisplay.statisticsSizePixels[1]}px; width: {data.mapDisplay.statisticsSizePixels[0]}px; aspect-ratio: {data.mapDisplay.statisticsSizePixels[0]/data.mapDisplay.statisticsSizePixels[1]};"
+									class="stats mx-auto max-w-full overflow-visible prose dark:prose-invert"
 									preserveAspectRatio="none"
-									viewBox="0 0 {data.map.height * 0.5} {data.mapDisplay.statisticsSizePixels}"
+									viewBox="0 0 {data.mapDisplay.statisticsSizePixels[0]} {data.mapDisplay.statisticsSizePixels[1]}"
 								>
-									<line class="statsIndicatorVertical hidden" y1="-7.5" y2={data.mapDisplay.statisticsSizePixels + 7.5} stroke={secondaryIndicatorColor} stroke-width={statsIndicatorVerticalWidth} />
+									<line class="statsIndicatorVertical hidden" y1="-7.5" y2={data.mapDisplay.statisticsSizePixels[1] + 7.5} stroke={secondaryIndicatorColor} stroke-width={statsIndicatorVerticalWidth} />
 									{@html data.mapDisplay.statistics}
-									<circle class="statsIndicator hidden" r={data.mapDisplay.statisticsSizePixels * 0.125 * 0.5} fill={secondaryIndicatorColor} />
+									<circle class="statsIndicator hidden" r={data.mapDisplay.statisticsSizePixels[1] * 0.125 * 0.5} fill={secondaryIndicatorColor} />
 								</svg>
 							</div>
 						{/if}
