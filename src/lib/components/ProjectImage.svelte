@@ -13,7 +13,7 @@
 		imageDark?: string | null | undefined;
 	};
 
-	export let containerClass = 'aspect-square min-w-sm bg-gray-100 dark:bg-gray-800 rounded-lg';
+	export let containerClass = 'h-full bg-gray-100 dark:bg-gray-800 rounded-lg';
 </script>
 
 <!-- Preload all images for improved responsivity -->

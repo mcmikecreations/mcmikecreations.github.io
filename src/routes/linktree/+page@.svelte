@@ -22,7 +22,8 @@
 		</div>
 		<div class="mt-8 w-full flex flex-col gap-4 child:min-h-16 child:px-11 child:!text-base child:!font-medium child:!leading-6">
 			<Button href="/" color="alternative" pill outline>Website</Button>
-			<Button href="https://www.daad-freundeskreis.de/de/regionalgruppen/standort/regionalgruppe-muenchen/" color="alternative" pill outline>Volunteering</Button>
+			<Button href="/hikes/" color="alternative" pill outline>Hiking, Climbing, Via Ferrata & Trail Maps</Button>
+			<Button href="https://www.daad-freundeskreis.de/de/unsere-regionalgruppen/regionalgruppe-muenchen/" color="alternative" pill outline>Volunteering</Button>
 		</div>
 	</div>
 </div>

@@ -10,9 +10,10 @@
       "dates": [
         {
           "date": "2025-03-02",
-          "title": null,
-          "description": null,
-          "tags": [],
+          "title": "Seekarkreuz DAAD Tour 2025",
+          "description": "Annette organized a DAAD hike to the summit going down to the Hirschbachstüberl restaurant.",
+          "tags": ["DAAD"],
+          "people": [],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-03-02-seekarkreuz.md"
         },
@@ -21,6 +22,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -64,10 +66,11 @@
       "dates": [
         {
           "date": "2025-06-10",
-          "title": null,
-          "description": null,
-          "tags": [],
-          "image": null,
+          "title": "TUM Hike Day 2025: Wendelstein",
+          "description": "A hike I organized for the Chair for Database Systems at TUM.",
+          "tags": ["Work"],
+          "people": [],
+          "image": "/images/projects/data-viz/hikes/stories/wendelstein/2025-06-10-02.jpg",
           "path": "/_projects/data-viz/hikes/markdown/2025-06-10-wendelstein.md"
         },
         {
@@ -75,6 +78,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         },
@@ -83,6 +87,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -130,6 +135,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -176,6 +182,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -223,6 +230,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         },
@@ -231,6 +239,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -280,6 +289,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -331,6 +341,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         },
@@ -339,6 +350,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         },
@@ -347,6 +359,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         },
@@ -355,6 +368,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         },
@@ -363,6 +377,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -413,6 +428,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -460,6 +476,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -507,6 +524,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         },
@@ -515,6 +533,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         },
@@ -523,6 +542,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -574,6 +594,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -626,6 +647,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -675,6 +697,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         },
@@ -683,6 +706,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -731,6 +755,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -778,6 +803,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -827,6 +853,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -876,6 +903,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -922,6 +950,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -970,6 +999,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -1018,6 +1048,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -1067,6 +1098,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -1122,6 +1154,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -1172,6 +1205,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -1220,6 +1254,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -1270,6 +1305,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -1319,6 +1355,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -1371,6 +1408,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -1424,6 +1462,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         },
@@ -1432,6 +1471,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -1484,6 +1524,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -1532,6 +1573,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -1585,6 +1627,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -1640,6 +1683,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -1688,6 +1732,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -1738,6 +1783,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -1787,6 +1833,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -1840,6 +1887,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -1887,6 +1935,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -1939,6 +1988,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -1987,6 +2037,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -2042,6 +2093,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -2094,6 +2146,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -2144,6 +2197,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -2194,6 +2248,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -2241,6 +2296,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -2287,6 +2343,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -2333,6 +2390,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -2382,6 +2440,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -2428,6 +2487,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -2480,6 +2540,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -2529,6 +2590,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -2581,6 +2643,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -2633,6 +2696,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -2679,6 +2743,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -2727,6 +2792,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -2773,6 +2839,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -2820,6 +2887,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -2867,6 +2935,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -2916,6 +2985,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -2963,6 +3033,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -3015,6 +3086,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -3065,6 +3137,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -3112,6 +3185,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -3163,6 +3237,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -3213,6 +3288,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -3267,6 +3343,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -3318,6 +3395,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -3368,6 +3446,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -3416,6 +3495,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -3465,6 +3545,7 @@
           "title": null,
           "description": null,
           "tags": [],
+          "people": [],
           "image": null,
           "path": null
         }
@@ -3513,9 +3594,10 @@
       "dates": [
         {
           "date": "2025-02-02",
-          "title": null,
-          "description": null,
-          "tags": [],
+          "title": "Pushing for Pyramidenspitze DAAD Tour",
+          "description": "A winter rendition of the route I organized for DAAD with the group dwindling down.",
+          "tags": ["DAAD"],
+          "people": ["Mikuláš Netík"],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-02-02-pyramidenspitze.md"
         }
@@ -3566,9 +3648,10 @@
       "dates": [
         {
           "date": "2025-02-09",
-          "title": null,
-          "description": null,
+          "title": "Rampoldplatte as a First",
+          "description": "Testing the fitness of a new friend on a moderate winter route.",
           "tags": [],
+          "people": ["David Bilan"],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-02-09-rampoldplatte.md"
         }
@@ -3612,9 +3695,10 @@
       "dates": [
         {
           "date": "2025-02-23",
-          "title": null,
-          "description": null,
-          "tags": [],
+          "title": "Herrsching to Tutzing",
+          "description": "One morning I was bored and decided to walk from one popular Bavarian lake to another.",
+          "tags": ["Web"],
+          "people": [],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-02-23-herrsching_tutzing.md"
         }
@@ -3662,9 +3746,10 @@
       "dates": [
         {
           "date": "2025-03-09",
-          "title": null,
-          "description": null,
-          "tags": [],
+          "title": "Hochstaufen DAAD Tour",
+          "description": "A DAAD tour I organized as a change of pace from the usual destinations.",
+          "tags": ["DAAD"],
+          "people": ["Mikuláš Netík"],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-03-09-hochstaufen.md"
         }
@@ -3712,9 +3797,10 @@
       "dates": [
         {
           "date": "2025-03-16",
-          "title": null,
-          "description": null,
-          "tags": [],
+          "title": "Altmühltal: Riedenburg to Kelheim",
+          "description": "A historical walk along river Prunn through Celtic settlements.",
+          "tags": ["Altmühltal"],
+          "people": ["Mikuláš Netík"],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-03-16-riedenburg_kelheim.md"
         }
@@ -3766,9 +3852,10 @@
       "dates": [
         {
           "date": "2025-03-23",
-          "title": null,
-          "description": null,
+          "title": "Frau Hitt: Push Through or Lose",
+          "description": "A full-day winter hike over the famous Innsbruck ridge. Freezing cold and icy slopes mixed with frogs and goats.",
           "tags": [],
+          "people": ["Mikuláš Netík"],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-03-23-frau_hitt.md"
         }
@@ -3817,9 +3904,10 @@
       "dates": [
         {
           "date": "2025-03-30",
-          "title": null,
-          "description": null,
+          "title": "Hoher Fricken with Alcoholics",
+          "description": "A goodbye hike for Mikuláš Netík, meeting German housewives downing schnapps at the top.",
           "tags": [],
+          "people": ["Mikuláš Netík", "Viktor Lebruška"],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-03-30-hoher_fricken.md"
         }
@@ -3872,9 +3960,10 @@
       "dates": [
         {
           "date": "2025-04-04",
-          "title": null,
-          "description": null,
-          "tags": [],
+          "title": "Caldeirão Verde PR9 Main Section",
+          "description": "Big waterfall visit going through tunnels and smaller waterfalls on the way with the final section closed off.",
+          "tags": ["Portugal"],
+          "people": ["Serhii Ivanenko"],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-04-04-caldeirao_verde.md"
         }
@@ -3919,9 +4008,10 @@
       "dates": [
         {
           "date": "2025-04-04",
-          "title": null,
-          "description": null,
-          "tags": [],
+          "title": "Pedra Rija PR1 Start",
+          "description": "What was supposed to be a full-day hike turned to be a 15-minute walk due to a landslide.",
+          "tags": ["Portugal"],
+          "people": ["Serhii Ivanenko"],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-04-04-pedra_rija.md"
         }
@@ -3965,9 +4055,10 @@
       "dates": [
         {
           "date": "2025-04-06",
-          "title": null,
-          "description": null,
-          "tags": [],
+          "title": "São Lourenço PR8 Intro",
+          "description": "A great oceanside hike cut short by a plane ride.",
+          "tags": ["Portugal"],
+          "people": ["Serhii Ivanenko"],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-04-06-sao_lourenco_partial.md"
         }
@@ -4012,9 +4103,10 @@
       "dates": [
         {
           "date": "2025-04-21",
-          "title": null,
-          "description": null,
-          "tags": [],
+          "title": "Schweinsberg Easter DAAD Tour",
+          "description": "Annette organized a group hike with Easter egg hunting for DAAD scholars.",
+          "tags": ["DAAD"],
+          "people": ["Annette Schörner"],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-04-21-schweinsberg.md"
         }
@@ -4060,9 +4152,10 @@
       "dates": [
         {
           "date": "2025-04-27",
-          "title": null,
-          "description": null,
-          "tags": [],
+          "title": "Laber Hauptgipfel DAAD Tour",
+          "description": "Organized group hike for DAAD scholars.",
+          "tags": ["DAAD"],
+          "people": [],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-04-27-laber_hauptgipfel.md"
         }
@@ -4109,9 +4202,10 @@
       "dates": [
         {
           "date": "2025-05-11",
-          "title": null,
-          "description": null,
-          "tags": [],
+          "title": "First Buchstein Climb",
+          "description": "My first cliff climbing experience, extended to a full day hike.",
+          "tags": ["Climb"],
+          "people": ["David Bilan"],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-05-11-buchstein.md"
         }
@@ -4161,9 +4255,10 @@
       "dates": [
         {
           "date": "2025-05-18",
-          "title": null,
-          "description": null,
+          "title": "Breitenstein and Wendelstein During Rainfall",
+          "description": "Despite the rainy weather, we set out to conquer both Breitenstein and Wendelstein and finish off with some Bayrischzell cake.",
           "tags": [],
+          "people": ["David Bilan"],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-05-18-breitenstein_wendelstein.md"
         }
@@ -4211,9 +4306,10 @@
       "dates": [
         {
           "date": "2025-06-01",
-          "title": null,
-          "description": null,
+          "title": "Blauberge Ridge Loop",
+          "description": "A summer trip along the Germany-Austria border.",
           "tags": [],
+          "people": ["David Bilan"],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-06-01-blauberge.md"
         }
@@ -4260,9 +4356,10 @@
       "dates": [
         {
           "date": "2025-06-21",
-          "title": null,
-          "description": null,
+          "title": "Zugspitze Reintal Loop in a Day",
+          "description": "A non-stop 22 hour hike to the top of Germany's highest mountain and back.",
           "tags": [],
+          "people": ["David Bilan"],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-06-21-zugspitze_reintal.md"
         }

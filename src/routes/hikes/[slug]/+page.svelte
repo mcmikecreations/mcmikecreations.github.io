@@ -1,9 +1,8 @@
 <script lang="ts">
 	import type { PageData } from './$types';
-	import { Breadcrumb, BreadcrumbItem, Card, Heading, A, TabItem } from 'flowbite-svelte';
+	import { Breadcrumb, BreadcrumbItem, Card, Heading, A } from 'flowbite-svelte';
 	import SvelteMarkdown from 'svelte-markdown';
 	import type { Token, Tokens } from 'marked';
-	import AppTitle from '$lib/components/AppTitle.svelte';
 	import DefaultCode from '$lib/renderers/DefaultCode.svelte';
 	import DefaultLink from '$lib/renderers/DefaultLink.svelte';
 	import ToTopButton from '$lib/components/ToTopButton.svelte';
@@ -25,6 +24,8 @@
 	import 'leaflet/dist/leaflet.css';
 	import * as THREE from 'three';
 	import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+	import AppMeta from '$lib/components/AppMeta.svelte';
+	import resume from '$lib/data/resume.json';
 
 	interface Props {
 		data: PageData;
@@ -467,13 +468,23 @@
 	});
 </script>
 
-<AppTitle title={data.post.title + ' Hike'} />
+<AppMeta
+	title={data.post.title + ' Hike'}
+	description={data.post.description ?? undefined}
+	image={data.post.image}
+	type="article"
+	tags={data.post.tags}
+	article-published_time="{data.post.date}T16:00:00+00:00"
+	article-author={resume.basics.name}
+	article-section="Hikes"
+/>
 
 <div class="container mx-auto">
 	<div class="mx-4 2xl:mx-0 md:px-24 mb-8">
 		<Breadcrumb aria-label="Page path" class="my-4">
 			<BreadcrumbItem href="/" home>Home</BreadcrumbItem>
 			<BreadcrumbItem href="/hikes/">Hikes</BreadcrumbItem>
+			<BreadcrumbItem class="hidden md:inline-flex">{data.post.title}</BreadcrumbItem>
 		</Breadcrumb>
 		<article>
 			<Heading tag="h1">{data.post.title}</Heading>
@@ -483,7 +494,7 @@
 					·
 					<span>{data.post.time}</span>
 					·
-					<span>{data.post.date}</span>
+					<span>{new Date(data.post.date).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"})}</span>
 					{#if data.post.tags?.length}
 						·
 						<div class="flex flex-row justify-end gap-2" aria-details="tags">

@@ -7,9 +7,9 @@
 	import { Badge, Heading, Img, Span } from 'flowbite-svelte';
 	import ShowcaseCard from "./components/ShowcaseCard.svelte";
 	import { P, ImagePlaceholder, CardPlaceholder, Progressbar } from 'flowbite-svelte';
-	import { ImageSolid } from 'flowbite-svelte-icons';
+	import { UserSolid } from 'flowbite-svelte-icons';
 	import DateBadge from '$lib/components/DateBadge.svelte';
-	import AppTitle from '$lib/components/AppTitle.svelte';
+	import AppMeta from '$lib/components/AppMeta.svelte';
 
 	interface Props {
 		data: PageData;
@@ -35,7 +35,7 @@
 	onMount(() => {
 		if (showProgressbar) {
 			const progressbar = document.getElementById('progressbar');
-			const images = heroImages.map(src => {
+			heroImages.map(src => {
 				const bgImage = new Image();
 				bgImage.onload = function() {
 					loadedImages += 1;
@@ -52,67 +52,52 @@
 
 		const footstepsContainer = document.getElementById('footsteps-container');
 		function footstepsUpdate() {
-				const stepDistanceY = 60;
-				const stepDistanceX = 30;
-				const scrollY = window.scrollY;
+			const stepDistanceY = 60;
+			const stepDistanceX = 30;
+			const scrollY = window.scrollY;
 
-				if (!footstepsContainer) return;
-				const stepCount = Math.floor(scrollY / stepDistanceY);
-				const oldStepCount = footstepsContainer.children.length;
+			if (!footstepsContainer) return;
+			const stepCount = Math.max(Math.floor(scrollY / stepDistanceY), 0);
+			const oldStepCount = footstepsContainer.children.length;
 
-				const stepOffsetY = window.innerHeight * ((stepCount * stepDistanceY + window.innerHeight) / document.documentElement.scrollHeight);
-				const stepOffsetX = 50;
+			const stepOffsetY = window.innerHeight * 0.5; //window.innerHeight * ((stepCount * stepDistanceY) / (document.documentElement.scrollHeight));
+			const stepOffsetX = 50;
 
-				if (oldStepCount > stepCount) {
-						for (let i = stepCount; i < oldStepCount; ++i) {
-								footstepsContainer.removeChild(footstepsContainer.lastChild!);
-						}
-				} else if (oldStepCount < stepCount) {
-						for (let i = oldStepCount; i < stepCount; ++i) {
-								const svgNS = footstepsContainer.getAttribute('xmlns');
-								if (i % 2 === 0) {
-										const footstep = document.createElementNS(svgNS, 'rect') as SVGRectElement;
-
-										const t = i;
-										const x = stepDistanceX * Math.sin(t);
-										const y = t * stepDistanceY; // vertical position
-										footstep.setAttribute('x', '0');
-										footstep.setAttribute('y', '0');
-										footstep.setAttribute('width', '20');
-										footstep.setAttribute('height', '40');
-										let transform = '';
-										const angle = Math.atan(-Math.cos(t) * stepDistanceX / stepDistanceY);
-										transform += ` translate(${x + stepOffsetX} ${y + stepOffsetY})`;
-										transform += ` rotate(${180 + angle / Math.PI * 180} 10 20)`;
-										transform += `scale(-1 1)`;
-										footstep.setAttribute('transform', transform);
-										footstep.setAttribute('class', 'footstep');
-
-										footstepsContainer.appendChild(footstep);
-								}
-								else {
-										const footstep = document.createElementNS(svgNS, 'rect') as SVGRectElement;
-
-										// Curve formula (e.g., sine wave)
-										const t = i;
-										const x = stepDistanceX * Math.sin(t);
-										const y = t * stepDistanceY; // vertical position
-										footstep.setAttribute('x', '0');
-										footstep.setAttribute('y', '0');
-										footstep.setAttribute('width', '20');
-										footstep.setAttribute('height', '40');
-										let transform = '';
-										const angle = Math.atan(-Math.cos(t) * stepDistanceX / stepDistanceY);
-										transform += ` translate(${x + stepOffsetX} ${y + stepOffsetY})`;
-										transform += `scale(1 1)`;
-										transform += ` rotate(${180 + angle / Math.PI * 180} 10 20)`;
-										footstep.setAttribute('transform', transform);
-										footstep.setAttribute('class', 'footstep');
-
-										footstepsContainer.appendChild(footstep);
-								}
-						}
+			if (oldStepCount > stepCount) {
+				for (let i = stepCount; i < oldStepCount; ++i) {
+					footstepsContainer.removeChild(footstepsContainer.lastChild!);
 				}
+			} else if (oldStepCount < stepCount) {
+				for (let i = oldStepCount; i < stepCount; ++i) {
+					const svgNS = footstepsContainer.getAttribute('xmlns');
+					const footstep = document.createElementNS(svgNS, 'rect') as SVGRectElement;
+
+					// Curve formula (e.g., sine wave)
+					const t = i;
+					const x = stepDistanceX * Math.sin(t);
+					const y = t * stepDistanceY; // vertical position
+					footstep.setAttribute('x', '0');
+					footstep.setAttribute('y', '0');
+					footstep.setAttribute('width', '20');
+					footstep.setAttribute('height', '40');
+					let transform = '';
+					const angle = Math.atan(-Math.cos(t) * stepDistanceX / stepDistanceY);
+					transform += ` translate(${x + stepOffsetX} ${y + stepOffsetY})`;
+
+					if (i % 2 === 0) {
+						transform += ` rotate(${180 + angle / Math.PI * 180} 10 20)`;
+						transform += `scale(-1 1)`;
+					}
+					else {
+						transform += `scale(1 1)`;
+						transform += ` rotate(${180 + angle / Math.PI * 180} 10 20)`;
+					}
+
+					footstep.setAttribute('transform', transform);
+					footstep.setAttribute('class', 'footstep');
+					footstepsContainer.appendChild(footstep);
+				}
+			}
 		}
 		footstepsUpdate();
 
@@ -160,7 +145,11 @@
     <span class="self-center whitespace-nowrap text-xl font-semibold invisible">Mykola Morozov</span>
 {/snippet}
 
-<AppTitle title="Hikes" />
+<AppMeta
+	title="Hiking, Climbing, Via Ferrata & Trail Maps | Personal Hike Experiences"
+	description="The best hiking, backpacking, and camping gear reviews on the web"
+	type="website"
+/>
 <AppNavbar
     class="fixed z-10 top-0"
     bgClass="bg-white/50 dark:bg-gray-800/50 dark:text-white"
@@ -181,6 +170,15 @@
 	</div>
 </div>
 <div class="h-[100vh] w-full"></div>
+<svg
+	width="auto" height="auto"
+	style="position: absolute; z-index: 0; pointer-events: none;"
+	class="-ml-16 md:ml-0"
+	opacity="0.75"
+	overflow="visible"
+	id="footsteps-container"
+	xmlns="http://www.w3.org/2000/svg">
+</svg>
 <div class="w-full h-[60px] md:h-[72px] bg-white dark:bg-gray-800 sticky top-0">
     <div id="fake-header" class="transition-all duration-300 absolute z-10 w-full h-full top-0 left-0 bg-white dark:bg-gray-900"></div>
     <div class="mx-auto h-full px-2 py-2.5 sm:px-4 flex flex-wrap items-center justify-between container">
@@ -191,12 +189,6 @@
         </a>
     </div>
 </div>
-<svg
-        width="auto" height="auto"
-        overflow="visible"
-        id="footsteps-container"
-        xmlns="http://www.w3.org/2000/svg">
-</svg>
 
 <section class="container mx-auto my-8">
     <div class="mx-4 2xl:mx-0 md:px-24 mb-8">
@@ -265,6 +257,14 @@
 									<DateBadge date={p.date} dateEnd={undefined} />
 									<div class="flex-grow flex flex-row justify-end gap-2" aria-details="tags">
 										<span aria-label="tags" class="sr-only"></span>
+										{#if data.showPeople}
+											{#each p.people as t}
+												<Badge rounded>
+													<UserSolid class="me-1.5 size-2.5" />
+													{t}
+												</Badge>
+											{/each}
+										{/if}
 										{#each p.tags as t}
 											<Badge>{t}</Badge>
 										{/each}
@@ -279,7 +279,7 @@
 	</div>
 </section>
 
-<AppFooter />
+<AppFooter class="absolute z-10 left-0 right-0" />
 
 {#if showProgressbar}
 	<div id="progressbar" class="fixed w-full h-full top-0 left-0 z-20 overflow-hidden bg-white dark:bg-gray-800">
@@ -382,6 +382,7 @@
 	}
 
 	:global(html.dark .footstep) {
-		fill: rgb(107 114 128 / var(--tw-text-opacity, 1));
+		/*fill: rgb(107 114 128 / var(--tw-text-opacity, 1));*/
+		fill: white;
 	}
 </style>

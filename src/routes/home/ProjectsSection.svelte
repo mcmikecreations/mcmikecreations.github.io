@@ -13,7 +13,7 @@
 		{#each projects as p}
 			<!-- TODO: A cannot be child of a -->
 			<div class="min-w-40 max-w-sm lg:max-w-lg">
-				<a href={p.route}>
+				<a href={p.route} class="block w-full h-auto aspect-square overflow-hidden">
 					<ProjectImage aria-label="page image" {p} />
 				</a>
 				<div class="py-4">

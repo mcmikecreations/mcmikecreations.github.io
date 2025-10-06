@@ -1,9 +1,9 @@
 <script lang="ts">
 	import resume from '$lib/data/resume.json';
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 	import { onMount } from 'svelte';
 
-	const oldUrl = $page.url;
+	const oldUrl = page.url;
 	let canonicalUrl = $state(new URL(oldUrl.origin.replace('www.', '') + oldUrl.pathname));
 	const titleBase = resume.basics.name;
 	interface Props {

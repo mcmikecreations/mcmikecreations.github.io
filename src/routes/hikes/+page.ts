@@ -15,14 +15,16 @@ export function load() {
 				url: `/hikes/${d.date}-${slug}/`,
 				title: d.title ?? h.name,
 				image: d.image ?? h.image,
-				description: d.description ?? h.description,
+				description: (d.description ? (d.description + ' ') : '') + h.description,
 				tags: d.tags,
+				people: d.people
 			};
 		}));
 	posts.sort((a, b) => a.date > b.date ? -1 : (a.date < b.date ? 1 : 0));
 	return {
 		posts: posts,
 		showProgressbar: false,
+		showPeople: false,
 		footer: {
 			pinBottom: false,
 			showSocials: true,

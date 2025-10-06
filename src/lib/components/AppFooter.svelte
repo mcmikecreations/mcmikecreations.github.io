@@ -1,6 +1,6 @@
 <script lang="ts">
 import resume from '$lib/data/resume.json';
-import { page } from '$app/stores';
+import { page } from '$app/state';
 import { Footer, FooterCopyright, FooterIcon, Tooltip } from 'flowbite-svelte';
 import {
 	EnvelopeSolid,
@@ -18,19 +18,21 @@ import {
 	ResearchGateSolid,
 	TelegramSolid
 } from '$lib/icons';
+import { type ClassNameValue, twMerge } from 'tailwind-merge';
 
 	interface Props {
 		shouldPinBottom?: 'true' | 'false' | undefined;
 		shouldShowSocials?: 'true' | 'false' | undefined;
+		class?: ClassNameValue;
 	}
 
-	let { shouldPinBottom = undefined, shouldShowSocials = undefined }: Props = $props();
+	let { shouldPinBottom = undefined, shouldShowSocials = undefined, class: classProp }: Props = $props();
 
-let pinBottom = $derived(shouldPinBottom !== undefined ? (shouldPinBottom === 'true') : ($page.data.footer?.pinBottom ?? false));
-let showSocials = $derived(shouldShowSocials !== undefined ? (shouldShowSocials === 'true') : ($page.data.footer?.showSocials ?? true));
+let pinBottom = $derived(shouldPinBottom !== undefined ? (shouldPinBottom === 'true') : (page.data.footer?.pinBottom ?? false));
+let showSocials = $derived(shouldShowSocials !== undefined ? (shouldShowSocials === 'true') : (page.data.footer?.showSocials ?? true));
 </script>
 
-<Footer footerType={pinBottom ? "default" : "socialmedia"} class={pinBottom ? "absolute bottom-0 start-0 z-20 w-full" : undefined}>
+<Footer footerType={pinBottom ? "default" : "socialmedia"} class={twMerge(pinBottom ? "absolute bottom-0 start-0 z-20 w-full" : '', classProp ?? '')}>
 	<div class="mx-auto flex flex-wrap {showSocials ? 'justify-between' : 'justify-center'} items-center container overflow-hidden">
 		<FooterCopyright href="/" by={resume.basics.name} year={new Date().getFullYear()} />
 		{#if showSocials}

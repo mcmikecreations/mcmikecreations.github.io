@@ -109,11 +109,12 @@ export const load: PageLoad = async ({ fetch, params }) => {
 			return {
 				post: {
 					title: date.title ?? hike.name,
+					description: (date.description ? (date.description + ' ') : '') + hike.description,
 					image: date.image ?? hike.image,
 					content: marked.lexer(post),
 					headers: headers,
 					time: stats.text,
-					date: new Date(dateStr).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"}),
+					date: dateStr,
 					tags: date.tags,
 					author: date.author ?? resume.basics.name,
 				},

@@ -55,6 +55,7 @@ interface MapDate {
 	title?: string | undefined | null;
 	description?: string | undefined | null;
 	tags: string[];
+	people: string[];
 	image?: string | undefined | null;
 	path?: string | undefined | null;
 	author?: string | undefined | null;
