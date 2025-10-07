@@ -34,6 +34,8 @@ export const load: PageLoad = async ({ fetch, params }) => {
 		return {
 			post: {
 				title: meta.title,
+				description: meta.description,
+				image: meta.image,
 				content: post,
 				headers: headers,
 				time: stats.text,

@@ -16,8 +16,8 @@
 	import { tags } from '$lib/data/blog-info';
 	import { onMount } from 'svelte';
 	import { ChevronLeftOutline, ChevronRightOutline, ImageSolid } from 'flowbite-svelte-icons';
-	import AppTitle from '$lib/components/AppTitle.svelte';
 	import DateBadge from '$lib/components/DateBadge.svelte';
+	import AppMeta from '$lib/components/AppMeta.svelte';
 
 	interface Props {
 		data: PageData;
@@ -140,7 +140,11 @@
 	});
 </script>
 
-<AppTitle {title} />
+<AppMeta
+	title={title}
+	description="Personal programming blog of Mykola Morozov"
+	type="website"
+/>
 
 <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 mx-4 2xl:mx-0">
 	<aside class="ms-4 sm:ms-0">

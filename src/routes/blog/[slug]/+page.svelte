@@ -1,11 +1,11 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import SvelteMarkdown from 'svelte-markdown';
-	import AppTitle from '$lib/components/AppTitle.svelte';
 	import DefaultCode from '$lib/renderers/DefaultCode.svelte';
 	import DefaultLink from '$lib/renderers/DefaultLink.svelte';
 	import ToTopButton from '$lib/components/ToTopButton.svelte';
 	import DefaultImage from '$lib/renderers/DefaultImage.svelte';
+	import AppMeta from '$lib/components/AppMeta.svelte';
 
 	interface Props {
 		data: PageData;
@@ -14,7 +14,16 @@
 	let { data }: Props = $props();
 </script>
 
-<AppTitle title={data.post.title} />
+<AppMeta
+	title={data.post.title}
+	description={data.post.description ?? undefined}
+	image={data.post.image}
+	type="article"
+	tags={data.post.tags}
+	article-published_time="{data.post.date}T16:00:00+00:00"
+	article-author={data.post.author}
+	article-section="Programming"
+/>
 
 <article class="mx-4 2xl:mx-0">
 	<div class="mx-auto prose dark:prose-invert prose-a:text-primary-600 dark:prose-a:text-primary-500 md:prose-lg lg:prose-xl min-h-80">

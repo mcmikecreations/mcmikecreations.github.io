@@ -60,7 +60,7 @@ export const load: PageLoad = async ({ fetch, params }) => {
 			const layers2d : Array<string> = [];
 			const layers3d : Array<THREE.Object3D> = [];
 			const layersGeometry : Array<object> = [];
-			const statisticsHeightPixels = height * 0.09375;
+			const statisticsHeightPixels = height * 0.0625;
 			const statisticsWidthPixels = height * 0.5;
 
 			if (features && statistics) {

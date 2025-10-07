@@ -147,7 +147,7 @@
 
 <AppMeta
 	title="Hiking, Climbing, Via Ferrata & Trail Maps | Personal Hike Experiences"
-	description="The best hiking, backpacking, and camping gear reviews on the web"
+	description="The most thorough hike reviews on the web"
 	type="website"
 />
 <AppNavbar

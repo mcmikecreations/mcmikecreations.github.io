@@ -25,14 +25,5 @@
     "path": "2024-02-26-migration.md",
     "author": "Mykola Morozov",
     "tags": [ "Frontend" ]
-  },
-  {
-    "title": "Markdown test",
-    "date": "2023-12-30",
-    "image": "/images/blog/markdown-test.png",
-    "description": "A test of common markdown components used in blogs.",
-    "path": "2023-12-30-markdown-test.md",
-    "author": "Mykola Morozov",
-    "tags": []
   }
 ]

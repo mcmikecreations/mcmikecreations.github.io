@@ -479,16 +479,33 @@
 	article-section="Hikes"
 />
 
+{#snippet statsSnippet()}
+	{#if data.mapDisplay.statistics}
+		<div class="flex-1 mt-4">
+			<svg
+				style="height: auto; width: 100%; aspect-ratio: {data.mapDisplay.statisticsSizePixels[0]/data.mapDisplay.statisticsSizePixels[1]};"
+				class="stats mx-auto max-w-full overflow-visible prose dark:prose-invert"
+				preserveAspectRatio="none"
+				viewBox="0 0 {data.mapDisplay.statisticsSizePixels[0]} {data.mapDisplay.statisticsSizePixels[1]}"
+			>
+				<line class="statsIndicatorVertical hidden" y1="-7.5" y2={data.mapDisplay.statisticsSizePixels[1] + 7.5} stroke={secondaryIndicatorColor} stroke-width={statsIndicatorVerticalWidth} />
+				{@html data.mapDisplay.statistics}
+				<circle class="statsIndicator hidden" r={data.mapDisplay.statisticsSizePixels[1] * 0.125 * 0.5} fill={secondaryIndicatorColor} />
+			</svg>
+		</div>
+	{/if}
+{/snippet}
+
 <div class="container mx-auto">
 	<div class="mx-4 2xl:mx-0 md:px-24 mb-8">
-		<Breadcrumb aria-label="Page path" class="my-4">
-			<BreadcrumbItem href="/" home>Home</BreadcrumbItem>
-			<BreadcrumbItem href="/hikes/">Hikes</BreadcrumbItem>
-			<BreadcrumbItem class="hidden md:inline-flex">{data.post.title}</BreadcrumbItem>
-		</Breadcrumb>
-		<article>
-			<Heading tag="h1">{data.post.title}</Heading>
-			<div class="max-w-full prose dark:prose-invert prose-a:text-primary-600 dark:prose-a:text-primary-500 md:prose-lg lg:prose-xl min-h-80">
+		<article class="mx-auto">
+			<div class="mx-auto prose dark:prose-invert prose-a:text-primary-600 dark:prose-a:text-primary-500 md:prose-lg lg:prose-xl min-h-80">
+				<Breadcrumb aria-label="Page path" class="mt-4 not-prose hidden md:flex">
+					<BreadcrumbItem href="/" home>Home</BreadcrumbItem>
+					<BreadcrumbItem href="/hikes/">Hikes</BreadcrumbItem>
+					<BreadcrumbItem>{data.post.title}</BreadcrumbItem>
+				</Breadcrumb>
+				<Heading tag="h1" class="!mb-0 !mt-2">{data.post.title}</Heading>
 				<div class="flex flex-row flex-wrap gap-2 !mt-2 !mb-4">
 					<span>{data.post.author}</span>
 					·
@@ -539,43 +556,17 @@
 						</div>
 					</Card>
 					<SvelteMarkdown source={data.post.content.slice(0, map2dIndex + 1)} renderers={renderers} />
-					<div class="w-full md:w-1/2 mx-auto not-prose">
+					<div class="w-full mx-auto not-prose">
 						<div id="container-3d" class="w-full aspect-square"></div>
 						<Attribution {attrMapbox} {attrOSM} />
-						{#if data.mapDisplay.statistics}
-							<div class="flex-1 mt-4">
-								<svg
-									style="height: {data.mapDisplay.statisticsSizePixels[1]}px; width: {data.mapDisplay.statisticsSizePixels[0]}px; aspect-ratio: {data.mapDisplay.statisticsSizePixels[0]/data.mapDisplay.statisticsSizePixels[1]};"
-									class="stats mx-auto max-w-full overflow-visible prose dark:prose-invert"
-									preserveAspectRatio="none"
-									viewBox="0 0 {data.mapDisplay.statisticsSizePixels[0]} {data.mapDisplay.statisticsSizePixels[1]}"
-								>
-									<line class="statsIndicatorVertical hidden" y1="-7.5" y2={data.mapDisplay.statisticsSizePixels[1] + 7.5} stroke={secondaryIndicatorColor} stroke-width={statsIndicatorVerticalWidth} />
-									{@html data.mapDisplay.statistics}
-									<circle class="statsIndicator hidden" r={data.mapDisplay.statisticsSizePixels[1] * 0.125 * 0.5} fill={secondaryIndicatorColor} />
-								</svg>
-							</div>
-						{/if}
+						{@render statsSnippet()}
 					</div>
 					<SvelteMarkdown source={data.post.content.slice(map2dIndex + 1, map3dIndex + 1)} renderers={renderers} />
-					<div class="w-full md:w-1/2 mx-auto not-prose">
+					<div class="w-full mx-auto not-prose">
 						<div class="overflow-hidden aspect-square">
 							<div id="container-interactive" class="w-full aspect-square"></div>
 						</div>
-						{#if data.mapDisplay.statistics}
-							<div class="flex-1 mt-4">
-								<svg
-									style="height: {data.mapDisplay.statisticsSizePixels[1]}px; width: {data.mapDisplay.statisticsSizePixels[0]}px; aspect-ratio: {data.mapDisplay.statisticsSizePixels[0]/data.mapDisplay.statisticsSizePixels[1]};"
-									class="stats mx-auto max-w-full overflow-visible prose dark:prose-invert"
-									preserveAspectRatio="none"
-									viewBox="0 0 {data.mapDisplay.statisticsSizePixels[0]} {data.mapDisplay.statisticsSizePixels[1]}"
-								>
-									<line class="statsIndicatorVertical hidden" y1="-7.5" y2={data.mapDisplay.statisticsSizePixels[1] + 7.5} stroke={secondaryIndicatorColor} stroke-width={statsIndicatorVerticalWidth} />
-									{@html data.mapDisplay.statistics}
-									<circle class="statsIndicator hidden" r={data.mapDisplay.statisticsSizePixels[1] * 0.125 * 0.5} fill={secondaryIndicatorColor} />
-								</svg>
-							</div>
-						{/if}
+						{@render statsSnippet()}
 					</div>
 					<SvelteMarkdown source={data.post.content.slice(map3dIndex + 1)} renderers={renderers} />
 				</div>
