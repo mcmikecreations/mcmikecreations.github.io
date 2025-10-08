@@ -151,8 +151,8 @@
 		<Accordion multiple>
 			<AccordionItem open>
 				{#snippet header()}
-								<span >By Year</span>
-							{/snippet}
+					<span >By Year</span>
+				{/snippet}
 				<div class="flex flex-row flex-wrap gap-4">
 					{#each years as year}
 						{#if selectedYear === year}
@@ -171,9 +171,15 @@
 			</AccordionItem>
 			<AccordionItem open>
 				{#snippet header()}
-								<span >By Tag</span>
-							{/snippet}
+					<span >By Tag</span>
+				{/snippet}
 				<div class="flex flex-row flex-wrap gap-4">
+					<Button
+						class="inline-block"
+						color="alternative"
+						size="sm"
+						href="/hikes/"
+					>Hikes</Button>
 					{#each tags as tag}
 						<Button
 							class="inline-block"

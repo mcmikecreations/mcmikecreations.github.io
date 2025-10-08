@@ -10,6 +10,7 @@
 	import { UserSolid } from 'flowbite-svelte-icons';
 	import DateBadge from '$lib/components/DateBadge.svelte';
 	import AppMeta from '$lib/components/AppMeta.svelte';
+	import Footsteps from './components/Footsteps.svelte';
 
 	interface Props {
 		data: PageData;
@@ -50,57 +51,6 @@
 			});
 		}
 
-		const footstepsContainer = document.getElementById('footsteps-container');
-		function footstepsUpdate() {
-			const stepDistanceY = 60;
-			const stepDistanceX = 30;
-			const scrollY = window.scrollY;
-
-			if (!footstepsContainer) return;
-			const stepCount = Math.max(Math.floor(scrollY / stepDistanceY), 0);
-			const oldStepCount = footstepsContainer.children.length;
-
-			const stepOffsetY = window.innerHeight * 0.5; //window.innerHeight * ((stepCount * stepDistanceY) / (document.documentElement.scrollHeight));
-			const stepOffsetX = 50;
-
-			if (oldStepCount > stepCount) {
-				for (let i = stepCount; i < oldStepCount; ++i) {
-					footstepsContainer.removeChild(footstepsContainer.lastChild!);
-				}
-			} else if (oldStepCount < stepCount) {
-				for (let i = oldStepCount; i < stepCount; ++i) {
-					const svgNS = footstepsContainer.getAttribute('xmlns');
-					const footstep = document.createElementNS(svgNS, 'rect') as SVGRectElement;
-
-					// Curve formula (e.g., sine wave)
-					const t = i;
-					const x = stepDistanceX * Math.sin(t);
-					const y = t * stepDistanceY; // vertical position
-					footstep.setAttribute('x', '0');
-					footstep.setAttribute('y', '0');
-					footstep.setAttribute('width', '20');
-					footstep.setAttribute('height', '40');
-					let transform = '';
-					const angle = Math.atan(-Math.cos(t) * stepDistanceX / stepDistanceY);
-					transform += ` translate(${x + stepOffsetX} ${y + stepOffsetY})`;
-
-					if (i % 2 === 0) {
-						transform += ` rotate(${180 + angle / Math.PI * 180} 10 20)`;
-						transform += `scale(-1 1)`;
-					}
-					else {
-						transform += `scale(1 1)`;
-						transform += ` rotate(${180 + angle / Math.PI * 180} 10 20)`;
-					}
-
-					footstep.setAttribute('transform', transform);
-					footstep.setAttribute('class', 'footstep');
-					footstepsContainer.appendChild(footstep);
-				}
-			}
-		}
-		footstepsUpdate();
-
 		const fakeHeader = document.getElementById('fake-header');
 		function fakeHeaderColor() {
             const scrollY = window.scrollY;
@@ -115,13 +65,6 @@
         }
 		fakeHeaderColor();
 
-		window.addEventListener('resize', () => {
-			if (footstepsContainer) {
-				footstepsContainer.innerHTML = '';
-				footstepsUpdate();
-			}
-		});
-
 		window.addEventListener('scroll', () => {
 			const scrollY = window.scrollY;
 			document.querySelector<HTMLDivElement>('.hero-layer2')!.style.transform = `translateY(${scrollY * parallaxStrength}px)`;
@@ -135,7 +78,6 @@
 			const clampedScroll = Math.min(scrollY, maxScroll);
 			text.style.transform = `translateY(${clampedScroll}px)`;
 
-			footstepsUpdate();
 			fakeHeaderColor();
 		});
 	});
@@ -170,15 +112,7 @@
 	</div>
 </div>
 <div class="h-[100vh] w-full"></div>
-<svg
-	width="auto" height="auto"
-	style="position: absolute; z-index: 0; pointer-events: none;"
-	class="-ml-16 md:ml-0"
-	opacity="0.75"
-	overflow="visible"
-	id="footsteps-container"
-	xmlns="http://www.w3.org/2000/svg">
-</svg>
+<Footsteps />
 <div class="w-full h-[60px] md:h-[72px] bg-white dark:bg-gray-800 sticky top-0">
     <div id="fake-header" class="transition-all duration-300 absolute z-10 w-full h-full top-0 left-0 bg-white dark:bg-gray-900"></div>
     <div class="mx-auto h-full px-2 py-2.5 sm:px-4 flex flex-wrap items-center justify-between container">
