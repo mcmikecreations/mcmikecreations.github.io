@@ -306,17 +306,4 @@
 		visibility: hidden;
 		transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
   }
-
-	:global(.footstep) {
-		mask-image: url("/images/hikes/hero/footstep.svg");
-		-webkit-mask-image: url("/images/hikes/hero/footstep.svg");
-		mask-position: center;
-		mask-size: 20px 40px;
-		fill: black;
-	}
-
-	:global(html.dark .footstep) {
-		/*fill: rgb(107 114 128 / var(--tw-text-opacity, 1));*/
-		fill: white;
-	}
 </style>
