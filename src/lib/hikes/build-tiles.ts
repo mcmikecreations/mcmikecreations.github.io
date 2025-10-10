@@ -61,7 +61,7 @@ export async function buildTiles(
 			// @ts-ignore
 			plane.imagePixels = k;
 			// @ts-ignore
-			plane.layer = 'Tiles';
+			plane.imageLayer = 'Tiles';
 			return plane;
 		});
 

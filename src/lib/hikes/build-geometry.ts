@@ -194,7 +194,7 @@ export async function buildGeometry(
 					line.imagePixels = tileScale;
 				}
 				// @ts-ignore
-				line.layer = 'Geometry';
+				line.imageLayer = 'Geometry';
 				group.add(line);
 			}
 

@@ -10,28 +10,20 @@
 	import DefaultImage from '$lib/renderers/DefaultImage.svelte';
 	import AppFooter from '$lib/components/AppFooter.svelte';
 	import { getDistance, getTime } from '$lib/hikes/build-statistics';
-	import Attribution from '../../projects/data-viz/hikes/[slug]/Attribution.svelte';
-	import type { Feature, MapProvider, TilesData, TilesMapsData } from '$lib/data/map-info';
-	import { providerFile, providerFolder, providers } from '$lib/data/map-providers';
+	import type { Feature, TilesData } from '$lib/data/map-info';
+	import { providerFolder, providers } from '$lib/data/map-providers';
 	import type { GeoJsonObject, Geometry, Feature as F } from 'geojson';
 	import {
-		primaryGeometryColor,
-		primaryIndicatorColor,
 		secondaryGeometryColor,
 		secondaryIndicatorColor
 	} from '$lib/hikes/build-geometry';
 	import type { Layer } from 'leaflet';
 	import { onMount } from 'svelte';
-	import { detectMobileBrowser } from '$lib/components/detectmobilebrowser';
 	import 'leaflet/dist/leaflet.css';
-	import * as THREE from 'three';
-	import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 	import AppMeta from '$lib/components/AppMeta.svelte';
 	import resume from '$lib/data/resume.json';
-	import { MeshLineHikeMaterial } from '$lib/hikes/meshline/MeshLineHikeMaterial';
-	import { MeshLineMaterial } from '$lib/hikes/meshline/MeshLineMaterial';
-	import { TileMaterial } from '$lib/hikes/meshline/TileMaterial';
-	import { MeshLineGeometry } from '$lib/hikes/meshline/MeshLineGeometry';
+	import Map3d from '$lib/hikes/Map3d.svelte';
+	import type { Map3dParameters } from '$lib/hikes/Map3dParameters';
 
 	interface Props {
 		data: PageData;
@@ -73,28 +65,17 @@
 		type: 'GPX'
 	};
 
-	const scale3d = 0.2;
-	const scale3dVertical = 0.4;
 	const statsIndicatorVerticalWidth = 1.0;
 
-	const center = data.mapDisplay.projection([data.mapDisplay.origin.lon, data.mapDisplay.origin.lat])!;
 	const features = data.mapDisplay.features!;
 	const attrMapbox = features.some((x: Feature) => x.type === 'Tiles' && (x.data as TilesData)!.provider!.includes('mapbox'));
 	const attrOSM = features.some((x: Feature) => x.type === 'Tiles' && (x.data as TilesData)!.provider!.includes('osm'));
 
-	let renderer : THREE.WebGLRenderer;
-	let camera : THREE.PerspectiveCamera;
-	let scene : THREE.Scene;
-	let statsIndicator3d : THREE.Object3D;
 	let statsIndicatorInteractive : any;
 	let lastStatsIndicatorTarget : HTMLElement | undefined = $state();
-	let isMobile = false;
-
-	function render() {
-		if (renderer && scene && camera) {
-			renderer.render(scene, camera);
-		}
-	}
+	let contentElement : HTMLElement | undefined = $state();
+	let myRefresh: (() => Promise<void>) | undefined = $state();
+	let myUpdateIndicator3d: ((x: number, y: number, z: number) => void) | undefined = $state();
 
 	async function attachInteractive() : Promise<void> {
 		const { L } = await import('$lib/components/leaflet.almostover.js');
@@ -138,18 +119,18 @@
 			almostDistance: 15,
 			layers: [mapOsm],
 		}).setView([data.mapDisplay.origin.lat, data.mapDisplay.origin.lon], 12);
+		function refocus() {
+			const tempInputs = controlsContainer?.getElementsByTagName('input');
+			if (tempInputs) {
+				for (let i = 0; i < tempInputs.length; ++i) {
+					tempInputs[i].disabled = false;
+				}
+			}
+			map.setZoom(13);
+		}
 		const controls = L.control.layers(baseMaps).addTo(map);
 		const controlsContainer = controls.getContainer();
 		if (controlsContainer) {
-			function refocus() {
-				const tempInputs = controlsContainer?.getElementsByTagName('input');
-				if (tempInputs) {
-					for (let i = 0; i < tempInputs.length; ++i) {
-						tempInputs[i].disabled = false;
-					}
-				}
-				map.setZoom(13);
-			}
 
 			controlsContainer.addEventListener('mouseover', refocus);
 			controlsContainer.addEventListener('click', refocus);
@@ -189,31 +170,6 @@
 		if (lastStatsIndicatorTarget) {
 			onUpdateStatistics(lastStatsIndicatorTarget);
 		}
-	}
-
-	function attach3d() : void {
-		if (renderer) {
-			const container = document.getElementById('container-3d');
-			container?.appendChild(renderer.domElement);
-		}
-
-		onWindowResize();
-		if (lastStatsIndicatorTarget) {
-			onUpdateStatistics(lastStatsIndicatorTarget);
-		}
-	}
-
-	function onWindowResize() {
-		const container = document.getElementById('container-3d');
-		if (camera && renderer && container) {
-			const containerSize = container.offsetWidth;
-			camera.aspect = containerSize / containerSize;
-			camera.updateProjectionMatrix();
-
-			renderer.setSize(containerSize, containerSize);
-		}
-
-		render();
 	}
 
 	function onUpdateStatistics(target : HTMLElement) : void {
@@ -282,19 +238,17 @@
 			statsIndicator2d.setAttribute('cy', projected[1].toString());
 		}
 
-		if (statsIndicator3d) {
-			const scale = data.mapDisplay.tileScale;
-			statsIndicator3d.position.set(projected[0] - scale * 0.5, -projected[1] + scale * 0.5, z * data.mapDisplay.pixelsPerMeter);
-			statsIndicator3d.visible = true;
-			render();
-		}
-
 		if (statsIndicatorInteractive) {
 			const element = statsIndicatorInteractive.getElement();
 			if (element) {
 				element.classList.remove('hidden');
 				statsIndicatorInteractive.setLatLng([y, x]);
 			}
+		}
+
+		if (myUpdateIndicator3d) {
+			const scale = data.mapDisplay.tileScale;
+			myUpdateIndicator3d(projected[0] - scale * 0.5, -projected[1] + scale * 0.5, z * data.mapDisplay.pixelsPerMeter);
 		}
 	}
 
@@ -345,242 +299,21 @@
 		}
 	}
 
-	async function init3d() : Promise<void> {
-		function getMaterial(
-			kind : 'tile' | 'basic' | 'meshline',
-			textures : Map<string, THREE.Texture>,
-			imageScale : number,
-			imageProvider : string,
-			tileSize : number,
-			includeDisplacement : boolean = false,
-			uvFromPosition : boolean = false,
-			colorFromUv : boolean = false,
-			depthTest : boolean = true,
-			offsetY : number = 0.0,
-		) : THREE.Material {
-			if (kind === 'tile' && imageProvider === 'mapboxDEM') {
-				return new TileMaterial({
-					diffuseTexture: textures.get('diffuse')!,
-					displacementTexture: textures.get('displacement')!,
-					tOffset: offsetY,
-					tTileSize: tileSize,
-					tScale: imageScale,
-					uvFromPosition: uvFromPosition,
-					colorFromUv: colorFromUv,
-					includeDisplacement: includeDisplacement,
-				});
-			} else if (kind === 'meshline') {
-				const wElement = document.getElementById('content');
-				const resolution = wElement
-					? new THREE.Vector2(wElement.offsetWidth, wElement.offsetWidth)
-					: new THREE.Vector2(512, 512);
-				//const resolution = new THREE.Vector2(renderer.domElement.offsetWidth, renderer.domElement.offsetWidth);
-				return new MeshLineHikeMaterial({
-					tScale: imageScale,
-					tTileSize: tileSize,
-					tOffset: offsetY,
-					tDisplacement: textures.get('displacement')!,
-					depthTest: depthTest,
-					map: textures.get('diffuse')!,
-					useMap: 1,
-					resolution: resolution,
-					lineWidth: 2,
-				});
-			} else {
-				return new THREE.MeshBasicMaterial({
-					map: textures.get('diffuse'),
-					depthTest: depthTest,
-					polygonOffset: offsetY === 0.0,
-					polygonOffsetFactor: offsetY === 0.0 ? undefined : -1,
-					polygonOffsetUnits: offsetY === 0.0 ? undefined : -4,
-				});
-			}
-		}
-
-		const container = document.getElementById('container-3d')!;
-		const containerSize = container.offsetWidth;
-
-		camera = new THREE.PerspectiveCamera(45, 1.0 /* w/h */, 1, 1000);
-		const cameraPos = data.map.height * 0.25;
-		camera.position.set(-cameraPos, cameraPos, cameraPos);
-
-		renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-		renderer.setPixelRatio(window.devicePixelRatio);
-		renderer.setSize(containerSize, containerSize);
-
-		const controls = new OrbitControls(camera, renderer.domElement);
-		controls.addEventListener('change', render);
-		controls.screenSpacePanning = true;
-		window.addEventListener('resize', onWindowResize);
-
-		scene = new THREE.Scene();
-
-		// const helper = new THREE.GridHelper(160, 2, 0x8d8d8d, 0xc1c1c1);
-		// helper.position.set(coords.x, 0, coords.z);
-		// scene.add(helper);
-
-		if (data.mapDisplay.data3d.length > 0) {
-			const group = new THREE.Group();
-			group.add(...data.mapDisplay.data3d);
-
-			const textureLoader = new THREE.TextureLoader();
-			group.traverse((o : THREE.Object3D) => {
-				const images = new Map<string, THREE.Texture>();
-				// @ts-ignore
-				const imageMaps : TilesMapsData | undefined = o.imageMaps;
-				// @ts-ignore
-				const imageCoordinates : Array<number> = o.imageCoordinates;
-				// @ts-ignore
-				const imageProvider = o.imageProvider;
-				// @ts-ignore
-				const imageScale = o.imageScale;
-				// @ts-ignore
-				const imagePixels = o.imagePixels;
-				// @ts-ignore
-				const oLayer = o.layer;
-				if (imageMaps && imageCoordinates && imageScale && imagePixels) {
-					for (const [key, value] of Object.entries(imageMaps)) {
-						if (value.startsWith('#')) {
-							const m = value.match(/^#([0-9a-f]{6})$/i)[1];
-							const color = m
-								? [
-									parseInt(m.slice(0,2),16),
-									parseInt(m.slice(2,4),16),
-									parseInt(m.slice(4,6),16),
-									255
-								] : [255, 0, 0, 255];
-							const solidRedTexture = new THREE.DataTexture(
-								new Uint8Array(color),
-								1,
-								1,
-								THREE.RGBAFormat
-							);
-							solidRedTexture.needsUpdate = true;
-							images.set(key, solidRedTexture);
-						} else {
-							let localImageUrl = undefined; // imageUrl
-							if (!localImageUrl) {
-								// @ts-ignore
-								const provider = (providers as unknown)[value as string] as MapProvider;
-								const url = (x : number, y : number, z : number) => `/${providerFolder}/maps/` + providerFile(x, y, z, provider.tileset, provider.format);
-								localImageUrl = url(imageCoordinates[0], imageCoordinates[1], imageCoordinates[2]);
-								// console.log('Failed to find image url ', localImageUrl, ' locally for ', o);
-							}
-							const texture = textureLoader.load(
-								localImageUrl,
-								(texture) => {
-									// Set texture filtering
-									texture.minFilter = THREE.LinearFilter;
-									texture.magFilter = THREE.LinearFilter;
-								}
-							);
-							images.set(key, texture);
-						}
-					}
-
-					if (oLayer === 'Tiles' && o.type === 'Mesh') {
-						const mesh = o as THREE.Mesh;
-						if (mesh) {
-							mesh.material = getMaterial(
-								'tile',
-								images,
-								data.mapDisplay.pixelsPerMeter,
-								imageProvider,
-								imagePixels,
-								true,
-								false,
-								false,
-								true,
-								0.0
-							);
-						}
-					} else if (oLayer === 'Geometry' && o.type === 'Line') {
-						const line = o as THREE.Line;
-						if (line) {
-							line.material = getMaterial(
-								'tile',
-								images,
-								data.mapDisplay.pixelsPerMeter,
-								imageProvider,
-								imagePixels,
-								true,
-								true,
-								false,
-								true,
-								1.0
-							);
-						}
-					} else if (oLayer === 'Geometry' && o.type === 'Mesh') {
-						const line = o as THREE.Mesh;
-						if (line) {
-							line.material = getMaterial(
-								'meshline',
-								images,
-								data.mapDisplay.pixelsPerMeter,
-								imageProvider,
-								imagePixels,
-								true,
-								true,
-								false,
-								true,
-								1.0
-							);
-						}
-					}
-				}
-			});
-
-			statsIndicator3d = new THREE.Group();
-			{
-				const offset = 20.0;
-				const sphere = new THREE.SphereGeometry((isMobile ? 4.0 : 2.0) * data.map.height / data.mapDisplay.tileScale);
-				const sphereMesh = new THREE.Mesh(sphere, new THREE.MeshBasicMaterial({
-					color: primaryIndicatorColor,
-					depthTest: true,
-				}));
-				sphereMesh.scale.set(1., 1., scale3dVertical);
-				sphereMesh.position.setZ(offset / scale3dVertical);
-				statsIndicator3d.add(sphereMesh);
-
-				const wElement = document.getElementById('content');
-				const resolution = wElement
-					? new THREE.Vector2(wElement.offsetWidth, wElement.offsetWidth)
-					: new THREE.Vector2(512, 512);
-				const line = new MeshLineGeometry().setFromPoints( [
-					new THREE.Vector3(0,0,-1),
-					new THREE.Vector3(0,0,offset / scale3dVertical),
-				] );
-				const lineMesh = new THREE.Mesh(line, new MeshLineMaterial({
-					color: primaryIndicatorColor,
-					resolution: resolution,
-					lineWidth: 2.5,
-				}));
-				statsIndicator3d.add(lineMesh);
-			}
-			statsIndicator3d.renderOrder = 900;
-			statsIndicator3d.visible = false;
-			group.add(statsIndicator3d);
-
-			group.position.set(-center[0] * scale3d * 0.5, 0.0, -center[1] * scale3d * 0.5); // 0.5 since planes are centered.
-			group.rotation.x = -Math.PI * 0.5;
-			group.scale.set(scale3d, scale3d, scale3dVertical);
-			scene.add(group);
-		}
-
-		THREE.DefaultLoadingManager.onLoad = function () {
-			render();
-		};
-
-		render();
-	}
-
 	onMount(async () => {
-		isMobile = detectMobileBrowser();
-		await init3d();
-		attach3d();
 		await attachInteractive();
 		initStatistics();
 	});
+
+	const map3dParameters : Map3dParameters = {
+		attrMapbox,
+		attrOSM,
+		origin: data.mapDisplay.origin,
+		projection: data.mapDisplay.projection,
+		map: data.map,
+		tileScale: data.mapDisplay.tileScale,
+		pixelsPerMeter: data.mapDisplay.pixelsPerMeter,
+		data3d: data.mapDisplay.data3d,
+	};
 </script>
 
 <AppMeta
@@ -672,8 +405,7 @@
 					</Card>
 					<SvelteMarkdown source={data.post.content.slice(0, map2dIndex + 1)} renderers={renderers} />
 					<div class="w-full mx-auto not-prose">
-						<div id="container-3d" class="w-full aspect-square"></div>
-						<Attribution {attrMapbox} {attrOSM} />
+						<Map3d parameters={map3dParameters} {contentElement} bind:refresh={myRefresh} bind:updateIndicator={myUpdateIndicator3d} />
 						{@render statsSnippet()}
 					</div>
 					<SvelteMarkdown source={data.post.content.slice(map2dIndex + 1, map3dIndex + 1)} renderers={renderers} />
