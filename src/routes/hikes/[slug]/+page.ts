@@ -6,13 +6,13 @@ import hikes from '$lib/data/hikes.json';
 import { readingTime } from 'reading-time-estimator';
 import resume from '$lib/data/resume.json';
 import { marked } from 'marked';
-import { buildGeometry, loadGeometry, loadProperties } from '../../projects/data-viz/hikes/[slug]/build-geometry';
-import { buildStatistics } from '../../projects/data-viz/hikes/[slug]/build-statistics';
+import { buildGeometry, loadGeometry, loadProperties } from '$lib/hikes/build-geometry';
+import { buildStatistics } from '$lib/hikes/build-statistics';
 import { geoMercator } from 'd3-geo';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
 import { tile } from 'd3-tile';
-import { buildTiles, getPixelsPerMeter } from '../../projects/data-viz/hikes/[slug]/build-tiles';
+import { buildTiles, getPixelsPerMeter } from '$lib/hikes/build-tiles';
 import * as THREE from 'three';
 
 export const load: PageLoad = async ({ fetch, params }) => {
@@ -73,7 +73,7 @@ export const load: PageLoad = async ({ fetch, params }) => {
 						const geometry = await loadGeometry(fetch, layer.data as GeometryData);
 						layersGeometry.push(geometry);
 						properties = loadProperties(hike, geometry);
-						data = await buildGeometry(fetch, layer, geometry, projection, pixelsPerMeter, tiles.scale);
+						data = await buildGeometry(fetch, layer, geometry, projection, pixelsPerMeter, tiles, tileFunc);
 						showStatistics = true;
 						showFilePrimary = true;
 					}

@@ -8,9 +8,9 @@ import { geoMercator } from 'd3-geo';
 import { tile } from 'd3-tile';
 import * as THREE from 'three';
 import { type Feature, type GeometryData, getMapFeatures, type Map, type OriginData } from '$lib/data/map-info';
-import { buildGeometry, loadGeometry, loadProperties } from './build-geometry';
-import { buildTiles, getPixelsPerMeter } from './build-tiles';
-import { buildStatistics } from './build-statistics';
+import { buildGeometry, loadGeometry, loadProperties } from '$lib/hikes/build-geometry';
+import { buildTiles, getPixelsPerMeter } from '$lib/hikes/build-tiles';
+import { buildStatistics } from '$lib/hikes/build-statistics';
 
 export const load: PageLoad = async ({ fetch, params }) => {
 	try {
@@ -59,7 +59,7 @@ export const load: PageLoad = async ({ fetch, params }) => {
 				const geometry = await loadGeometry(fetch, layer.data as GeometryData);
 				layersGeometry.push(geometry);
 				properties = loadProperties(meta, geometry);
-				data = await buildGeometry(fetch, layer, geometry, projection, pixelsPerMeter, tiles.scale);
+				data = await buildGeometry(fetch, layer, geometry, projection, pixelsPerMeter, tiles, tileFunc);
 			}
 
 			if (data) {
@@ -94,7 +94,7 @@ export const load: PageLoad = async ({ fetch, params }) => {
 			gpxPath: properties.filePath.replace('geojson', 'gpx').replace('json', 'gpx'),
 			origin: originData,
 			statistics: statistics
-				? ((await buildStatistics(fetch, statistics, height))?.layers2d?.join(''))
+				? ((await buildStatistics(fetch, statistics, height, undefined))?.layers2d?.join(''))
 				: undefined,
 			projection: projection,
 			tileScale: tiles.scale,

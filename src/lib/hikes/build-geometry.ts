@@ -1,8 +1,11 @@
+/* eslint-disable @typescript-eslint/no-explicit-any,@typescript-eslint/ban-ts-comment */
 import type { Feature, GeometryData, Map } from '$lib/data/map-info';
 import { providerFolder } from '$lib/data/map-providers';
-import { geoPath, type GeoPermissibleObjects, type GeoProjection } from 'd3-geo';
+import { geoClipRectangle, geoPath, type GeoPermissibleObjects, type GeoProjection } from 'd3-geo';
 import * as THREE from 'three';
 import theme from '$lib/styling/theme.json';
+import { MeshLineGeometry } from '$lib/hikes/meshline/MeshLineGeometry';
+import { MeshLineMaterial } from '$lib/hikes/meshline/MeshLineMaterial';
 
 // noinspection JSUnusedGlobalSymbols
 class ThreePathContext {
@@ -102,7 +105,8 @@ export async function buildGeometry(
 	geometry : object,
 	projection : GeoProjection,
 	pixelsPerMeter : number,
-	tileScale : number
+	tiles: any,
+	tileFunc : any
 ) {
 	const result : {
 		layers2d: Array<string>,
@@ -119,34 +123,85 @@ export async function buildGeometry(
 		result.layers2d.push(`<g><path fill="none" stroke-width="2" stroke="${secondaryGeometryColor}" d="${path(geometry as GeoPermissibleObjects)}" /></g>`);
 	}
 	if (layerData.modes.includes('3d')) {
-		const group = new THREE.Group();
-		const context = new ThreePathContext();
-		const path = geoPath(projection, context);
-		path(geometry as GeoPermissibleObjects);
+		const tileScale = tiles.scale;
+		const includeHelper = false;
+		const useElevation = true;
+		const objects = tiles.map((tile : Array<number>) => {
+			const tileData = {
+				x: (tile[0] + tiles.translate[0]) * tileScale,
+				y: (tile[1] + tiles.translate[1]) * tileScale,
+				scale: tileScale
+			};
+			const group = new THREE.Group();
+			const context = new ThreePathContext();
+			const polyCoords = [
+				{ x: tileData.x, y: tileData.y },
+				{ x: tileData.x, y: tileData.y + tileData.scale },
+				{ x: tileData.x + tileData.scale, y: tileData.y + tileData.scale },
+				{ x: tileData.x + tileData.scale, y: tileData.y },
+			];
+			projection.postclip(geoClipRectangle(
+				polyCoords[0].x,
+				polyCoords[0].y,
+				polyCoords[2].x,
+				polyCoords[2].y
+			));
+			const path = geoPath(projection, context);
+			path(geometry as GeoPermissibleObjects);
 
-		for (const p of context.paths) {
-			const points2d = p.getPoints();
-			// @ts-expect-error Erasing geometry type above
-			const coordinates : Array<number>[] = geometry.coordinates ?? geometry.geometry?.coordinates ?? [];
-			const points = points2d.length === coordinates.length
-				? points2d.map((v, i) => new THREE.Vector3(
-					v.x - tileScale * 0.5,
-					-v.y + tileScale * 0.5,
-					coordinates[i][2] * pixelsPerMeter))
-				: points2d.map((v) => new THREE.Vector3(v.x - tileScale * 0.5, -v.y + tileScale * 0.5, 0.0));
+			if (includeHelper) {
+				const polyShape = new THREE.Shape(polyCoords.map((coord) => new THREE.Vector2(coord.x - tileScale * 0.5, -coord.y + tileScale * 0.5)))
+				const polyGeometry = new THREE.ShapeGeometry(polyShape);
+				const polygon = new THREE.Mesh(polyGeometry, new THREE.MeshBasicMaterial({ color: '#0000ff', side: THREE.DoubleSide}));
+				group.add(polygon);
+			}
 
-			const buffer = new THREE.BufferGeometry().setFromPoints( points );
-			const material = new THREE.LineBasicMaterial({
-				color: primaryGeometryColor,
-				depthTest: false,
-			});
+			for (const p of context.paths) {
+				const points2d = p.getPoints();
+				// @ts-expect-error Erasing geometry type above
+				const coordinates : Array<number>[] = geometry.coordinates ?? geometry.geometry?.coordinates ?? [];
+				const points = !useElevation && points2d.length === coordinates.length
+					? points2d.map((v, i) => new THREE.Vector3(
+						v.x - tileScale * 0.5 - tileData.x,
+						-v.y + tileScale * 0.5 + tileData.y,
+						coordinates[i][2] * pixelsPerMeter))
+					: points2d.map((v) => new THREE.Vector3(
+						v.x - tileScale * 0.5 - tileData.x,
+						-v.y + tileScale * 0.5 + tileData.y,
+						0.0));
 
-			const line = new THREE.Line(buffer, material);
-			line.renderOrder = 800;
-			group.add(line);
-		}
+				const buffer = new MeshLineGeometry().setFromPoints( points );
+				const material = new MeshLineMaterial({
+					color: primaryGeometryColor,
+					resolution: new THREE.Vector2(512, 512),
+				});
 
-		result.layers3d.push(group);
+				const line = new THREE.Mesh(buffer, material);
+				line.position.set(tileData.x, -tileData.y, 0);
+				line.renderOrder = 800;
+				if (useElevation) {
+					// @ts-ignore
+					line.image = `/_projects/data-viz/maps/mapbox-terrain-dem-v1/${tile[2]}_${tile[0]}_${tile[1]}.png`;
+					// @ts-ignore
+					line.imageProvider = "mapboxDEM";
+					// @ts-ignore
+					line.imageMaps = { displacement: "mapboxDEM", diffuse: primaryGeometryColor };
+					// @ts-ignore
+					line.imageCoordinates = [ tile[0], tile[1], tile[2] ];
+					// @ts-ignore
+					line.imageScale = tileFunc.scale()();
+					// @ts-ignore
+					line.imagePixels = tileScale;
+				}
+				// @ts-ignore
+				line.layer = 'Geometry';
+				group.add(line);
+			}
+
+			return group;
+		});
+
+		result.layers3d.push(...objects);
 	}
 
 	return result;

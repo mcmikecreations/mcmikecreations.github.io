@@ -1,7 +1,7 @@
 import type { Feature, GeometryData } from '$lib/data/map-info';
 import { type GeoProjection } from 'd3-geo';
 import * as THREE from 'three';
-import { loadGeometry, secondaryGeometryColor } from './build-geometry';
+import { loadGeometry, secondaryGeometryColor } from '$lib/hikes/build-geometry';
 
 export function getDistance(m : number) {
 	const km = Math.floor(m / 1000);

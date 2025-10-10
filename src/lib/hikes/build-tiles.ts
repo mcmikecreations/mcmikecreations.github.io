@@ -60,6 +60,8 @@ export async function buildTiles(
 			plane.imageScale = tileFunc.scale()();
 			// @ts-ignore
 			plane.imagePixels = k;
+			// @ts-ignore
+			plane.layer = 'Tiles';
 			return plane;
 		});
 

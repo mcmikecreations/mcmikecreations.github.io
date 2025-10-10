@@ -5,11 +5,11 @@
 	import { Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
 	import {onMount} from 'svelte';
 	import 'leaflet/dist/leaflet.css';
-	import { getDistance, getTime } from '../[slug]/build-statistics';
+	import { getDistance, getTime } from '$lib/hikes/build-statistics';
 	import type { Layer, Polyline } from 'leaflet';
 	import type { Feature, GeoJsonObject, Geometry } from 'geojson';
 	import Timeline from './Timeline.svelte';
-	import { secondaryGeometryColor } from '../[slug]/build-geometry';
+	import { secondaryGeometryColor } from '$lib/hikes/build-geometry';
 
 	interface Props {
 		data: PageData;

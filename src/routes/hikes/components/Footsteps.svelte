@@ -60,12 +60,12 @@
 				opacity: [0, 1, 0],
 				duration: 700,
 				delay: stagger(140), // controls spacing along the trail
+				ease: eases.outBack(),
 				autoplay: onScroll({
 					enter: 'center',
 					leave: `center-=${stepDistanceY * 3}px`,
 					sync: 0.75,
 				}),
-				ease: eases.outBack()
 			});
 		}
 	});

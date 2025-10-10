@@ -2,7 +2,7 @@ import type { PageLoad } from './$types';
 import { type Feature, type GeometryData, getMapFeatures } from '$lib/data/map-info';
 import maps from '$lib/data/hikes.json';
 import { error, type HttpError } from '@sveltejs/kit';
-import { loadGeometry, loadProperties } from '../[slug]/build-geometry';
+import { loadGeometry, loadProperties } from '$lib/hikes/build-geometry';
 
 function hash(str : string) : number {
 	let hash = 0, i, chr;

@@ -1,4 +1,5 @@
 <script lang="ts">
+	/* eslint-disable @typescript-eslint/ban-ts-comment */
 	import type { PageData } from './$types';
 	import { Breadcrumb, BreadcrumbItem, Card, Heading, A } from 'flowbite-svelte';
 	import SvelteMarkdown from 'svelte-markdown';
@@ -8,16 +9,17 @@
 	import ToTopButton from '$lib/components/ToTopButton.svelte';
 	import DefaultImage from '$lib/renderers/DefaultImage.svelte';
 	import AppFooter from '$lib/components/AppFooter.svelte';
-	import { getDistance, getTime } from '../../projects/data-viz/hikes/[slug]/build-statistics';
+	import { getDistance, getTime } from '$lib/hikes/build-statistics';
 	import Attribution from '../../projects/data-viz/hikes/[slug]/Attribution.svelte';
-	import type { Feature, MapProvider, TilesData } from '$lib/data/map-info';
+	import type { Feature, MapProvider, TilesData, TilesMapsData } from '$lib/data/map-info';
 	import { providerFile, providerFolder, providers } from '$lib/data/map-providers';
 	import type { GeoJsonObject, Geometry, Feature as F } from 'geojson';
 	import {
+		primaryGeometryColor,
 		primaryIndicatorColor,
 		secondaryGeometryColor,
 		secondaryIndicatorColor
-	} from '../../projects/data-viz/hikes/[slug]/build-geometry';
+	} from '$lib/hikes/build-geometry';
 	import type { Layer } from 'leaflet';
 	import { onMount } from 'svelte';
 	import { detectMobileBrowser } from '$lib/components/detectmobilebrowser';
@@ -26,6 +28,10 @@
 	import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 	import AppMeta from '$lib/components/AppMeta.svelte';
 	import resume from '$lib/data/resume.json';
+	import { MeshLineHikeMaterial } from '$lib/hikes/meshline/MeshLineHikeMaterial';
+	import { MeshLineMaterial } from '$lib/hikes/meshline/MeshLineMaterial';
+	import { TileMaterial } from '$lib/hikes/meshline/TileMaterial';
+	import { MeshLineGeometry } from '$lib/hikes/meshline/MeshLineGeometry';
 
 	interface Props {
 		data: PageData;
@@ -340,41 +346,53 @@
 	}
 
 	async function init3d() : Promise<void> {
-		function getMaterial(textures : Map<string, THREE.Texture>, imageScale : number, imageProvider : string) : THREE.Material {
-			if (imageProvider === 'mapboxDEM') {
-				const vertexShader = `
-				uniform sampler2D tDisplacement;
-				uniform float tScale;
-				out vec2 tuv;
-				void main()	{
-					tuv = uv;
-					vec4 color = texture2D(tDisplacement, uv) * 256.0;
-					// height in meters
-					float height = -10000.0 + ((color.r * 256.0 * 256.0 + color.g * 256.0 + color.b) * 0.1);
-					gl_Position = projectionMatrix
-						* modelViewMatrix
-						* vec4(position.x, position.y, position.z + height * tScale, 1.0);
-				}
-				`;
-				const fragmentShader = `
-				uniform sampler2D tDiffuse;
-				in vec2 tuv;
-				void main() {
-					gl_FragColor = vec4(texture2D(tDiffuse, tuv));
-				}
-				`;
-				return new THREE.ShaderMaterial({
-					vertexShader: vertexShader,
-					fragmentShader: fragmentShader,
-					uniforms: {
-						tScale: { value: imageScale },
-						tDisplacement: { value: textures.get('displacement') },
-						tDiffuse: { value: textures.get('diffuse') }
-					}
+		function getMaterial(
+			kind : 'tile' | 'basic' | 'meshline',
+			textures : Map<string, THREE.Texture>,
+			imageScale : number,
+			imageProvider : string,
+			tileSize : number,
+			includeDisplacement : boolean = false,
+			uvFromPosition : boolean = false,
+			colorFromUv : boolean = false,
+			depthTest : boolean = true,
+			offsetY : number = 0.0,
+		) : THREE.Material {
+			if (kind === 'tile' && imageProvider === 'mapboxDEM') {
+				return new TileMaterial({
+					diffuseTexture: textures.get('diffuse')!,
+					displacementTexture: textures.get('displacement')!,
+					tOffset: offsetY,
+					tTileSize: tileSize,
+					tScale: imageScale,
+					uvFromPosition: uvFromPosition,
+					colorFromUv: colorFromUv,
+					includeDisplacement: includeDisplacement,
+				});
+			} else if (kind === 'meshline') {
+				const wElement = document.getElementById('content');
+				const resolution = wElement
+					? new THREE.Vector2(wElement.offsetWidth, wElement.offsetWidth)
+					: new THREE.Vector2(512, 512);
+				//const resolution = new THREE.Vector2(renderer.domElement.offsetWidth, renderer.domElement.offsetWidth);
+				return new MeshLineHikeMaterial({
+					tScale: imageScale,
+					tTileSize: tileSize,
+					tOffset: offsetY,
+					tDisplacement: textures.get('displacement')!,
+					depthTest: depthTest,
+					map: textures.get('diffuse')!,
+					useMap: 1,
+					resolution: resolution,
+					lineWidth: 2,
 				});
 			} else {
 				return new THREE.MeshBasicMaterial({
 					map: textures.get('diffuse'),
+					depthTest: depthTest,
+					polygonOffset: offsetY === 0.0,
+					polygonOffsetFactor: offsetY === 0.0 ? undefined : -1,
+					polygonOffsetUnits: offsetY === 0.0 ? undefined : -4,
 				});
 			}
 		}
@@ -397,7 +415,8 @@
 
 		scene = new THREE.Scene();
 
-		// const helper = new THREE.GridHelper(160, 10, 0x8d8d8d, 0xc1c1c1);
+		// const helper = new THREE.GridHelper(160, 2, 0x8d8d8d, 0xc1c1c1);
+		// helper.position.set(coords.x, 0, coords.z);
 		// scene.add(helper);
 
 		if (data.mapDisplay.data3d.length > 0) {
@@ -406,10 +425,9 @@
 
 			const textureLoader = new THREE.TextureLoader();
 			group.traverse((o : THREE.Object3D) => {
-				const mesh = o as THREE.Mesh;
 				const images = new Map<string, THREE.Texture>();
 				// @ts-ignore
-				const imageMaps = o.imageMaps;
+				const imageMaps : TilesMapsData | undefined = o.imageMaps;
 				// @ts-ignore
 				const imageCoordinates : Array<number> = o.imageCoordinates;
 				// @ts-ignore
@@ -418,31 +436,128 @@
 				const imageScale = o.imageScale;
 				// @ts-ignore
 				const imagePixels = o.imagePixels;
-				if (mesh && imageMaps && imageCoordinates && imageScale && imagePixels) {
+				// @ts-ignore
+				const oLayer = o.layer;
+				if (imageMaps && imageCoordinates && imageScale && imagePixels) {
 					for (const [key, value] of Object.entries(imageMaps)) {
-						// @ts-ignore
-						const provider = (providers as unknown)[value as string] as MapProvider;
-						const url = (x : number, y : number, z : number) => `/${providerFolder}/maps/` + providerFile(x, y, z, provider.tileset, provider.format);
-						const texture = textureLoader.load(url(imageCoordinates[0], imageCoordinates[1], imageCoordinates[2]));
-						images.set(key, texture);
+						if (value.startsWith('#')) {
+							const m = value.match(/^#([0-9a-f]{6})$/i)[1];
+							const color = m
+								? [
+									parseInt(m.slice(0,2),16),
+									parseInt(m.slice(2,4),16),
+									parseInt(m.slice(4,6),16),
+									255
+								] : [255, 0, 0, 255];
+							const solidRedTexture = new THREE.DataTexture(
+								new Uint8Array(color),
+								1,
+								1,
+								THREE.RGBAFormat
+							);
+							solidRedTexture.needsUpdate = true;
+							images.set(key, solidRedTexture);
+						} else {
+							let localImageUrl = undefined; // imageUrl
+							if (!localImageUrl) {
+								// @ts-ignore
+								const provider = (providers as unknown)[value as string] as MapProvider;
+								const url = (x : number, y : number, z : number) => `/${providerFolder}/maps/` + providerFile(x, y, z, provider.tileset, provider.format);
+								localImageUrl = url(imageCoordinates[0], imageCoordinates[1], imageCoordinates[2]);
+								// console.log('Failed to find image url ', localImageUrl, ' locally for ', o);
+							}
+							const texture = textureLoader.load(
+								localImageUrl,
+								(texture) => {
+									// Set texture filtering
+									texture.minFilter = THREE.LinearFilter;
+									texture.magFilter = THREE.LinearFilter;
+								}
+							);
+							images.set(key, texture);
+						}
 					}
 
-					mesh.material = getMaterial(
-						images,
-						data.mapDisplay.pixelsPerMeter,
-						imageProvider
-					);
+					if (oLayer === 'Tiles' && o.type === 'Mesh') {
+						const mesh = o as THREE.Mesh;
+						if (mesh) {
+							mesh.material = getMaterial(
+								'tile',
+								images,
+								data.mapDisplay.pixelsPerMeter,
+								imageProvider,
+								imagePixels,
+								true,
+								false,
+								false,
+								true,
+								0.0
+							);
+						}
+					} else if (oLayer === 'Geometry' && o.type === 'Line') {
+						const line = o as THREE.Line;
+						if (line) {
+							line.material = getMaterial(
+								'tile',
+								images,
+								data.mapDisplay.pixelsPerMeter,
+								imageProvider,
+								imagePixels,
+								true,
+								true,
+								false,
+								true,
+								1.0
+							);
+						}
+					} else if (oLayer === 'Geometry' && o.type === 'Mesh') {
+						const line = o as THREE.Mesh;
+						if (line) {
+							line.material = getMaterial(
+								'meshline',
+								images,
+								data.mapDisplay.pixelsPerMeter,
+								imageProvider,
+								imagePixels,
+								true,
+								true,
+								false,
+								true,
+								1.0
+							);
+						}
+					}
 				}
 			});
 
-			const sphere = new THREE.SphereGeometry((isMobile ? 4.0 : 2.0) * data.map.height / data.mapDisplay.tileScale);
+			statsIndicator3d = new THREE.Group();
+			{
+				const offset = 20.0;
+				const sphere = new THREE.SphereGeometry((isMobile ? 4.0 : 2.0) * data.map.height / data.mapDisplay.tileScale);
+				const sphereMesh = new THREE.Mesh(sphere, new THREE.MeshBasicMaterial({
+					color: primaryIndicatorColor,
+					depthTest: true,
+				}));
+				sphereMesh.scale.set(1., 1., scale3dVertical);
+				sphereMesh.position.setZ(offset / scale3dVertical);
+				statsIndicator3d.add(sphereMesh);
 
-			statsIndicator3d = new THREE.Mesh(sphere, new THREE.MeshBasicMaterial({
-				color: primaryIndicatorColor,
-				depthTest: false,
-			}));
+				const wElement = document.getElementById('content');
+				const resolution = wElement
+					? new THREE.Vector2(wElement.offsetWidth, wElement.offsetWidth)
+					: new THREE.Vector2(512, 512);
+				const line = new MeshLineGeometry().setFromPoints( [
+					new THREE.Vector3(0,0,-1),
+					new THREE.Vector3(0,0,offset / scale3dVertical),
+				] );
+				const lineMesh = new THREE.Mesh(line, new MeshLineMaterial({
+					color: primaryIndicatorColor,
+					resolution: resolution,
+					lineWidth: 2.5,
+				}));
+				statsIndicator3d.add(lineMesh);
+			}
 			statsIndicator3d.renderOrder = 900;
-			statsIndicator3d.scale.set(1., 1., scale3dVertical);
 			statsIndicator3d.visible = false;
 			group.add(statsIndicator3d);
 
