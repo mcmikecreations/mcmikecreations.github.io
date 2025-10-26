@@ -1,4 +1,4 @@
-I had to cancel the planned hike to Scharnitz due to bad weather conditions,
+I had to cancel the planned hike to [Scharnitz](/404/) due to bad weather conditions,
 so I and Mikuláš quickly came up with an alternative route near Regensburg,
 where the weather was much nicer. We set out to walk along Altmühltal
 Wanderweg, specifically from Riedenburg to Kelheim and Saal across the castles
@@ -17,7 +17,7 @@ visiting the Rosenburg Castle and walking east to Prunn.
 There we visited the Schloßprunn and descended back to the river, walking to
 Essing, observing Randeck from below. We checked out the gate at the village
 and headed to Kloster Weltenburg along the Keltenwall. It was a really pleasant
-surprise for me to learn about the 2000 year old Celtic settlement in the area,
+surprise for me to learn about the 2000-year-old Celtic settlement in the area,
 and I'm definitely going to find out more about it in the future.
 
 ![The tourist boat going back from Kloster Weltenburg](/images/projects/data-viz/hikes/stories/riedenburg_kelheim/2025-03-16-03.jpg)

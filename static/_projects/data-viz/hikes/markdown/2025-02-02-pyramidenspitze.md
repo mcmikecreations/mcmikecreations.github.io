@@ -1,18 +1,18 @@
 The track for this hike wasn't set in stone, since me and the other hikers
 didn't know the trail conditions and wanted to decide on the route as we went
-on. While Vordere Kesselschneid was (and still is) in my backlog, the concrete
+on. While Vordere Kesselschneid (2002 m) was (and still is) in my backlog, the concrete
 idea of going from Kufstein to the peak along the mountain ridge was proposed
 by Mikuláš. I sent out an invite to my hiking WhatsApp chats ahead of time and
 got Andrea, Dennis and Wang to join us two.
 
 ![Festung Kufstein](/images/projects/data-viz/hikes/stories/pyramidenspitze/2025-02-02-00.jpg)
-![View from Gasthaus Veitenhof](/images/projects/data-viz/hikes/stories/pyramidenspitze/2025-02-02-01.jpg)
+![View from Gasthaus Veitenhof (724 m)](/images/projects/data-viz/hikes/stories/pyramidenspitze/2025-02-02-01.jpg)
 
 We started off strong, pushing through the city and getting to the start of the
 actual trail near Parkplatz Kaisertal. We went up the dirt trail covered in
-stairs and steps up, looking at the scenery around us. It was easy to notice
+stairs and steps up, looking at the surrounding scenery. It was easy to notice
 that everything around us had "Kaiser" in the name. Goes to show how much power
-the emperor had. After reaching Gasthaus Veitenhof I started to notice some
+the emperor had. After reaching Gasthaus Veitenhof (724 m) I started to notice some
 members having to rest more often, so we slowed down the pace and took more
 breaks.
 
@@ -21,19 +21,19 @@ breaks.
 
 On the way up the scenery was breathtaking, having the clouds below us drop
 down from mountain ridges like water droplets from a waterfall. The sun was
-very active, so I made a stop at Ritzaualm to take my thermal suit off. The hut
+very active, so I made a stop at Ritzaualm (1161 m) to take my thermal suit off. The hut
 itself appeared to resemble a 4-star hotel more than a mountain hut, having a
 big restaurant, fresh wooden floors, hot water in the toilet and an overall
 expensive look.
 
 ![View at Naunspitze (1633 m)](/images/projects/data-viz/hikes/stories/pyramidenspitze/2025-02-02-03.jpg)
 
-After the involuntary break we climbed up to Vorderkaiserfeldenhütte, passing
+After the involuntary break we climbed up to Vorderkaiserfeldenhütte (1388 m), passing
 hikers that were already descending. At the hut we took an actually voluntary
 break to have some snacks and prepare for the tougher section of the hike.
 While the road before was accessible to off-road cars, from this point onwards
 it was just a narrow dirt trail covered in knee-high snow. We skipped
-Naunspitze and headed straight to Petersköpfl (1745 m) to take advantage of the
+Naunspitze (1633 m) and headed straight to Petersköpfl (1745 m) to take advantage of the
 light shining through some small cloud formations, casting a nice rainbow halo
 on the clouds below us.
 
@@ -68,7 +68,7 @@ sinking into the knee- or waist-high snow, hitting my legs on the rocks below
 it, the wind was almost blowing my head off my shoulders. There also were
 segments where we had to climb up or down some huge rocks holding onto a safety
 cable. It was twice as hard, considering the rocks were slippery and covered in
-ice. Still, we persevered and reached the Pyramidenspitze peak (1997 m). It was
+ice. Still, we persevered and reached the Pyramidenspitze (1997 m) peak. It was
 already past 16:00 at that time, and we didn't see any footsteps around, so we
 decided to skip Vordere Kesselschneid (2002 m) and head down. Since the path up
 was so long and difficult, we decided to head straight south trying to follow
@@ -85,7 +85,7 @@ path through the snow in the direction of Kufstein.
 ![Road down from Pyramidenspitze (1997 m) towards Öchselweldkar](/images/projects/data-viz/hikes/stories/pyramidenspitze/2025-02-02-14.jpg)
 
 We kept going for around 1.5 hours, until we finally reconnected with the
-Vorderkaiserfeldenhütte. At this point everything around us was pitch black,
+Vorderkaiserfeldenhütte (1388 m). At this point everything around us was pitch black,
 since the sun set at 16:40, so we used our head lights and treaded carefully.
 Another issue appeared when we realized that the once beautiful clouds at the
 bottom of the mountain actually moved higher up and now we had to walk through
@@ -93,14 +93,14 @@ them on the way down.
 
 ![Road towards Edelfeldenalm](/images/projects/data-viz/hikes/stories/pyramidenspitze/2025-02-02-07.jpg)
 
-When we came to Ritzaualm at 19:00, it was already closed (since 16:00), so we
+When we came to Ritzaualm (1161 m) at 19:00, it was already closed (since 16:00), so we
 sat outside and I removed the lake of water and the snow soup from my shoes,
 changed my socks and put some warm clothes on. Further down, we were surprised
-to find Gasthaus Veitenhof still open. I went inside and bought roughly 380 g
+to find Gasthaus Veitenhof (724 m) still open. I went inside and bought roughly 380 g
 of their homemade cheese for roughly 11.50€. Even paid with my phone's
 NFC module!
 
-![Me near Ritzaualm](/images/projects/data-viz/hikes/stories/pyramidenspitze/2025-02-02-15.jpg)
+![Me near Ritzaualm (1161 m)](/images/projects/data-viz/hikes/stories/pyramidenspitze/2025-02-02-15.jpg)
 
 The rest of the way down and back was just a matter of time. We had plenty of
 time to reach the train station, so we didn't rush. Somehow, we were too slow

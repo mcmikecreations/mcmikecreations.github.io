@@ -1,5 +1,5 @@
 As soon as I and Serhii landed at the Madeira airport, we immediately took
-a taxi and drove to Pico do Areeiro. The taxi driver was really confused where
+a taxi and drove to Pico do Areeiro (1818 m). The taxi driver was really confused where
 we were headed to, but we managed to convince him to drive us to the specified
 location without asking further questions. Upon arrival, we walked around the
 area, explored the souvenir shops, and went on to start the hike.

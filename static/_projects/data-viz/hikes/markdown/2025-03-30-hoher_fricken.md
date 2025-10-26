@@ -1,6 +1,6 @@
-After the demanding [Frau Hitt hike](/projects/data-viz/hikes/frau_hitt/)
+After the demanding [Frau Hitt (2270 m) hike](/hikes/2025-03-23-frau_hitt/)
 the next route we chose had to be lighter and preferably with a stop at a local
-cafe or restaurant, so the Hoher Fricken was chosen as one of the best
+cafe or restaurant, so the Hoher Fricken (1940 m) was chosen as one of the best
 candidates that we haven't been to yet. I, Mikuláš and Viktor from the DAAD FK
 München set out to start the trip at München Hbf at a reasonable hour, 7:30 AM,
 and were ready to start the hike around 9:00 AM. Getting up was tough because
@@ -20,13 +20,13 @@ snow for us.
 ![Oberer Kuhfluchtwasserfall](/images/projects/data-viz/hikes/stories/hoher_fricken/2025-03-30-02.jpg)
 
 Around the 1300 m elevation mark a snow layer appeared on the grass and trees.
-The forest itself started getting sparser, opening up enough to see Zugspitze.
+The forest itself started getting sparser, opening up enough to see [Zugspitze (2962 m)](/hikes/2025-06-21-zugspitze_reintal/).
 We kept going along the trail, often getting showered by melting snow and
 falling snow caps from tree tops, until we met two ladies hiking up the same
 route. There was roughly a kilometer left, which reassured both of our groups,
 and we kept tracking up one in front of the other.
 
-![View of Zugspitze from the Fricken forest](/images/projects/data-viz/hikes/stories/hoher_fricken/2025-03-30-03.jpg)
+![View of Zugspitze (2962 m) from the Fricken forest](/images/projects/data-viz/hikes/stories/hoher_fricken/2025-03-30-03.jpg)
 
 Getting to the top, we met up with two other ladies near the cross and
 rendezvoused with the group of French teenagers, who were enjoying their lunch and
@@ -36,22 +36,23 @@ so we devised a mischievous plan to follow the younger group so they clear
 the path forward for us. They weren't going any time soon, so we decided to stay
 for a bit too and enjoy our food and the view.
 
-![View of Zugspitze above French hikers from the top of Hoher Fricken](/images/projects/data-viz/hikes/stories/hoher_fricken/2025-03-30-04.jpg)
+![View of Zugspitze (2962 m) above French hikers from the top of Hoher Fricken (1940 m)](/images/projects/data-viz/hikes/stories/hoher_fricken/2025-03-30-04.jpg)
 
 Soon, the group of ladies caught up to us and joined two others at the top, brought
 out a few bottles of soft drinks, sparkly wine, Weinschorle and other small bottles,
-and started enjoying their achievement of reaching the Hoher Fricken peak. They also
+and started enjoying their achievement of reaching the Hoher Fricken (1940 m) peak. They also
 mentioned they want to follow the same route as us down to an Alpine hut with more
 drinks and Kaiserschmarrn. At that point we realized the French group wanted to
 go to a different mountain, Bischof (2033 m), so we had to be the ones to tread
 through the snow on the way down, although it wasn't that deep. The ladies asked
-if it's okay to follow us, and we set off on the way down across Ochsenberg and
-down to Predigtstuhl. This time, unlike the usual Alpine choughs, we saw actual
-ravens and glider planes on the way down.
+if it's okay to follow us, and we set off on the way down across Ochsenberg (1694 m) and
+down to Predigtstuhl with a view of [Wankberg (1780 m)](/404/). This time,
+unlike the usual Alpine choughs, we saw actual ravens and glider planes on the
+way down.
 
-![A look at Wankberg from Esterbergalm](/images/projects/data-viz/hikes/stories/hoher_fricken/2025-03-30-05.jpg)
+![A look at Wankberg (1780 m) from Esterbergalm (1265 m)](/images/projects/data-viz/hikes/stories/hoher_fricken/2025-03-30-05.jpg)
 
-Eventually our groups reached Esterbergalm, where we found out only drinks are
+Eventually our groups reached Esterbergalm (1265 m), where we found out only drinks are
 offered, so the ladies sat down for some more wine, while we had a snack we
 brought along and headed back to Partenkirchen. On the way back we stopped at
 Berggasthof Panorama for some cake, since we didn't want to rush to the earliest

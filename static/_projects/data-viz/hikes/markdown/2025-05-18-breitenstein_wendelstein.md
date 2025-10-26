@@ -1,12 +1,12 @@
 As the weather forecast was looking quite grim, I and David doubted if we
 should go hiking or skip this weekend. The choices were either to visit
 Hirschbichel (1935 m), which I saw on the way to
-[Kramerspitz (1985 m)](/projects/data-viz/hikes/kramerspitz/),
+[Kramerspitz (1985 m)](/404/),
 or Breitenstein (1622 m), which the DAAD FK group skipped during the
-[Schweinsberg (1514 m) Easter hike](/projects/data-viz/hikes/schweinsberg/).
+[Schweinsberg (1514 m) Easter hike](/hikes/2025-04-21-schweinsberg/).
 
 The [Bergfex](https://www.bergfex.de/) forecast was more hopeful for
-Breitenstein, so that's what we went for. When we exited the train at
+Breitenstein (1622 m), so that's what we went for. When we exited the train at
 Fischbachau, we were greeted by a very fluffy cat strolling across the
 street. As we kept going and came close to Wolfsee, we stumbled across
 some old stone ruins and a shrine. I couldn't find it on the map, but I
@@ -31,8 +31,9 @@ anywhere online and is slowly being forgotten.
 
 ![Lunaria rediviva](/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-02.jpg)
 
-Soon enough, we came across a father and a daughter going to a waterfall
-(47.7146275, 11.9712440) they saw on a waypost nearby. We walked for a bit
+Soon enough, we came across a father and a daughter going to a [waterfall
+(47.7146275, 11.9712440)](https://www.openstreetmap.org/node/3111658292)
+they saw on a waypost nearby. We walked for a bit
 together, but the way was too narrow and slippery for the child to continue,
 so they took some photos and turned back.
 
@@ -40,69 +41,63 @@ so they took some photos and turned back.
 ![Gentiana clusii, flower of the sweet-lady](/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-04.jpg)
 
 We skipped past Kesselalm (1278 m) and continued up the mountain, coming
-across big groups of hikers going to the top together. It was really
-surprising how many people were on the trail, considering the weather.
+across big groups of hikers going to the top together. It was astounding how
+many people were on the trail, considering the weather.
 On the top, we met yet another group of hikers, who were discussing how
 much better it is to go hiking in the rain, as it keeps the crowds away. A bit
 ironic, considering we were standing right beside them.
 
-![Gnome near the top of Breitenstein](/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-05.jpg)
+![Gnome near the top of Breitenstein (1622 m)](/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-05.jpg)
 ![The top of Breitenstein (1622 m)](/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-15.jpg)
-![Spring gentians on the way down from Breitenstein](/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-06.jpg)
-
-![Me pointing from Breitenstein onto Wendelstein](/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-17.jpg)
+![Spring gentians on the way down from Breitenstein (1622 m)](/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-06.jpg)
+![Me pointing from Breitenstein (1622 m) onto Wendelstein (1838 m)](/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-17.jpg)
 
 We then proceeded down the ridge, but had to go around Schweinsberg (1514 m),
 since the trail was closed due to nesting birds. Because of that, we skipped
-Schweinsberg and proceeded directly to Türkenköpfl (1512 m), passing by a
+Schweinsberg (1514 m) and proceeded directly to Türkenköpfl (1512 m), passing by a
 lot of Alpine spring flowers.
 
-![View from Breitenstein onto Wendelstein](/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-08.jpg)
-![Meadow buttercup further down Breitenstein](/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-07.jpg)
+![View from Breitenstein (1622 m) onto Wendelstein (1838 m)](/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-08.jpg)
+![Meadow buttercup further down Breitenstein (1622 m)](/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-07.jpg)
 ![Primroses on the way to Durhamer Alm](/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-09.jpg)
 
-As we were taking a detour to climb Türkenköpfl, we were taken by surprise
+As we were taking a detour to climb Türkenköpfl (1512 m), we were taken by surprise
 by a sudden hailstorm. We quickly took cover under a tree and waited for it to
 pass, putting our raincoats on as a precaution. After a few minutes, the hail
 stopped, and we continued our way up, meeting yet another large group of hikers
 near the cross and asking them to take a few photos of us.
 
-![Plant stubs near Türkenköpfl](/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-10.jpg)
-![The way up Wendelstein](/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-11.jpg)
+![Plant stubs near Türkenköpfl (1512 m)](/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-10.jpg)
+![The way up Wendelstein (1838 m)](/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-11.jpg)
 
-As we started climbing Wendelstein, coming across several other hiker groups,
+As we started climbing [Wendelstein (1838 m)](/404/), coming across several other hiker groups,
 we saw some rainy clouds in the distance. The trail was becoming more and more
 rocky, so we hurried up to the restaurant at the top before it started raining
 or hailing again. We made it just in time, and as we were taking a break
 inside, the rain started pouring down in the valley.
 
-![View from the Wendelsteinhaus restaurant](/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-12.jpg)
+![View from the Wendelsteinhaus restaurant (1724 m)](/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-12.jpg)
 
 We went to the observatory at the top, took some more photos, met local expats
 urging me to join their WhatsApp community and headed down to Bayrischzell,
 as it became considerably colder because of the rain and wind.
 
-![The way down Wendelstein](/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-13.jpg)
+![The way down Wendelstein (1838 m)](/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-13.jpg)
 
 On the way down we saw a herd of mountain goats running across the trail, but
 unfortunately they went the opposite direction from where we were going, so I
 decided to not chase them.
 
-![Mountain goats on Wendelstein](/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-14.jpg)
+![Mountain goats on Wendelstein (1838 m)](/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-14.jpg)
 
 As we came down to Bayrischzell, we headed directly to Café Konditorei Huber,
 my go-to place in the village, and ordered some cake as a reward for the 20 km
 on the road.
 
-<figure class="w-full xl:w-1/2 mx-auto">
-  <video controls title="Compilation of the road to Wendelstein (1838 m)">
-    <source src="/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-16.mp4" type="video/mp4">
-  </video>
-  <figcaption class="text-center">Compilation of the road to Wendelstein (1838 m)</figcaption>
-</figure>
+![Compilation of the road to Wendelstein (1838 m)](/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-16.mp4)
 
 Looking back, this was a great hike, and a welcome expansion of the simpler
-[Wendelstein route](/projects/data-viz/hikes/wendelstein/) I did twice in the past.
+[Wendelstein (1838 m)](/404/) route I did twice in the past.
 While combining several summits into one hike may seem a bit much, I didn't feel
 it was a significant challenge, and I would recommend it to anyone looking for a
 longer hike in the area. The only downside was the weather, which was unpredictable,

@@ -33,7 +33,7 @@ with the phone. Annette arranged with the savior to drop the phone off at a
 restaurant on the bottom of the mountain. After that we could continue the hike
 as usual. The final stretch of the way to the top was just as muddy as I
 remembered it to be, but the view from the top was great, showing popular
-mountains from Tegernsee, Spitzingsee, Lenggries and of course Zugspitze. We
+mountains from Tegernsee, Spitzingsee, Lenggries and of course [Zugspitze (2962 m)](/hikes/2025-06-21-zugspitze_reintal/). We
 wrote our names into the visitor book tucked away in a box attached to the
 cross, took some photos and headed back.
 

@@ -17,19 +17,20 @@ support. It was very fun, but the section was soon over.
 ![Other unnamed waterfall on the way](/images/projects/data-viz/hikes/stories/blauberge/2025-06-01-02.jpg)
 ![Climbing section](/images/projects/data-viz/hikes/stories/blauberge/2025-06-01-03.jpg)
 
-After finishing the climbing section, we reached the first summit, Predigtstuhl (1562 m),
+After finishing the climbing section, we reached the first summit, Predigtstuhl (1562 m)
+(what's up with the super common name?),
 which had a nice meadow and a great view of the surrounding mountains, including our way up.
 
 ![Globe-flower (Trollius europaeus)](/images/projects/data-viz/hikes/stories/blauberge/2025-06-01-04.jpg)
 ![Globularia](/images/projects/data-viz/hikes/stories/blauberge/2025-06-01-05.jpg)
 
-As we passed by the Blaubergalm, we realized that most of the hikers were only going to the hut
+As we passed by the Blaubergalm (1540 m), we realized that most of the hikers were only going to the hut
 and then downhill, not following us on the Blauberge. Moreover, the rain completely stopped and
 the sun came out, making it humid and hot. The flies came out in full force on every flat
 surface and on mountaintops, staying there until the end of the hike.
 
 ![Alpine anemone (Pulsatilla alpina)](/images/projects/data-viz/hikes/stories/blauberge/2025-06-01-06.jpg)
-![Meadow near Blaubergalm](/images/projects/data-viz/hikes/stories/blauberge/2025-06-01-07.jpg)
+![Meadow near Blaubergalm (1540 m)](/images/projects/data-viz/hikes/stories/blauberge/2025-06-01-07.jpg)
 
 On the way from the hut upwards we encountered an "Achtung! Lebensgefahr" sign, but to be
 honest, the trail was pretty easy and safe, with no real danger. If you decide to go on this hike,
@@ -41,7 +42,8 @@ and Karspitz (1801 m).
 Wichtlplatte (1765 m) and Blaubergkopf (1787 m) were uneventful, we passed by a group of 3
 hikers and a family with two kids going to the hut on the way, otherwise we were alone. The
 view was nice though, with the sun shining and the clouds flying around pushed by the wind.
-We could see all the way to Hochiss (2299 m), with Guffert (2194 m) in the front.
+We could see all the way to Hochiss (2299 m), with Guffert (2194 m) in the front. Also,
+in the other direction towards [Wallberg (1722 m)](/404/), we could see Tegernsee quite clearly.
 
 ![View from Halserspitze (1863 m) onto Guffert (2194 m)](/images/projects/data-viz/hikes/stories/blauberge/2025-06-01-08.jpg)
 
@@ -52,12 +54,12 @@ Tegernsee.
 ![View from Karspitz (1801 m) onto Tegernsee](/images/projects/data-viz/hikes/stories/blauberge/2025-06-01-11.jpg)
 ![Path from Karspitz (1801 m) to Halserspitze (1863 m)](/images/projects/data-viz/hikes/stories/blauberge/2025-06-01-12.jpg)
 
-After coming to Bayerische Wildalm, we saw a few more people enjoing a drink and a snack, but
+After coming to Bayerische Wildalm (1450 m), we saw a few more people enjoing a drink and a snack, but
 we were too far away to interact with them. We kept going down along Lohgartengraben,
 crossing the river streams multipel times for quite a while, until we reached the flat dirt
 road leading to Wildbad Kreuth.
 
-![View from Bayerische Wildalm](/images/projects/data-viz/hikes/stories/blauberge/2025-06-01-13.jpg)
+![View from Bayerische Wildalm (1450 m)](/images/projects/data-viz/hikes/stories/blauberge/2025-06-01-13.jpg)
 ![Valley of the MTB Erz-Herzog-Johann Tour](/images/projects/data-viz/hikes/stories/blauberge/2025-06-01-14.jpg)
 
 When we reached Wildbad, we found out that the last bus to Tegernsee left at 17 o'clock, and
@@ -65,7 +67,7 @@ it was already past 20:00, so there was no chance. We went onto the parking lot 
 found two ladies making a toilet break after a hike. We agreed to approach them and ask for
 a ride. The problem though was that we were already tired, so instead of pleasantries, I
 directly asked them if they had a car without any explanations or introductions. While it
-startled them, we quickly explained the situation and they agreed to help us get to the
+startled them, we quickly explained the situation, and they agreed to help us get to the
 Tegernsee train station, since they were travelling to Gmund. We were very grateful to have
 such a nice encounter.
 

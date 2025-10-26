@@ -1,4 +1,5 @@
-On the last day I and Serhii decided to hop on a short hike before the airport.
+On the last day after hiking to [Pedra Rija](/hikes/2025-04-04-pedra_rija/) and [Caldeirão Verde](/hikes/2025-04-04-caldeirao_verde/)
+I and Serhii decided to hop on a short hike before the airport.
 Out of the options we had, the one that made most sense time- and location-wise
 was the PR8 route Vereda da Ponta de São Lourenço. We assumed we won't be able
 to go the whole way through, so instead we took it slow and enjoyed the sights.

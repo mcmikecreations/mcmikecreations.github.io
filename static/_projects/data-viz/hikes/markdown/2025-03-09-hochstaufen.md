@@ -13,20 +13,20 @@ train is stuck at an earlier stop due to an issue with the railway and
 there's no timeline for the fix. 70 minutes later it was clear I'll have
 to modify or cancel the hike, leaving Abeer and Mikuláš stranded on the main
 station. After some negotiation we decided to take a later train to Salzburg
-and go for a different hike. We decided on the Hochstaufen peak, with a route
+and go for a different hike. We decided on the Hochstaufen (1771 m) peak, with a route
 going from Piding to Bad Reichenhall.
 
-![The start of the ascent to Fuderheustein](/images/projects/data-viz/hikes/stories/hochstaufen/2025-03-09-00.jpg)
+![The start of the ascent to Fuderheustein (1321 m)](/images/projects/data-viz/hikes/stories/hochstaufen/2025-03-09-00.jpg)
 
 After arriving at the station a few hours later, we headed to Schloß
 Staufeneck, then turned around and went parallel to the mountain to go up the
-ridge along the Fuderheustein peak. We climbed Fuderheustein from the wrong
+ridge along the Fuderheustein (1321 m) peak. We climbed Fuderheustein (1321 m) from the wrong
 side, so we didn't get to touch the cross at the top, but the height was the
 same, so we proceeded further.
 
-![Fuderheustein and Hochstaufen](/images/projects/data-viz/hikes/stories/hochstaufen/2025-03-09-01.jpg)
+![Fuderheustein (1321 m) and Hochstaufen (1771 m)](/images/projects/data-viz/hikes/stories/hochstaufen/2025-03-09-01.jpg)
 
-![Road to Hochstaufen](/images/projects/data-viz/hikes/stories/hochstaufen/2025-03-09-02.jpg)
+![Road to Hochstaufen (1771 m)](/images/projects/data-viz/hikes/stories/hochstaufen/2025-03-09-02.jpg)
 
 Quite quickly we noticed that there were a lot of slippery sections of the
 route, some with snow, others with mud. We exercised caution, but still
@@ -38,24 +38,24 @@ previous pace. It was tedious, but the views more than covered for it. The
 route we chose goes along the southern side of the mountain, so all the time
 we could see the tall Austrian mountains all around us.
 
-![Hut near the top of Hochstaufen](/images/projects/data-viz/hikes/stories/hochstaufen/2025-03-09-03.jpg)
+![Hut near the top of Hochstaufen (1771 m)](/images/projects/data-viz/hikes/stories/hochstaufen/2025-03-09-03.jpg)
 
-![Gate at the top of Hochstaufen](/images/projects/data-viz/hikes/stories/hochstaufen/2025-03-09-04.jpg)
+![Gate at the top of Hochstaufen (1771 m)](/images/projects/data-viz/hikes/stories/hochstaufen/2025-03-09-04.jpg)
 
-At the top of Hochstaufen we met a local military guy stretching his muscles
+At the top of Hochstaufen (1771 m) we met a local military guy stretching his muscles
 on a quick hike up the mountain through the route we wanted to take on the
 way down. He was very eager to talk about his shooting ranges, trenches and
 other activities at the station. We were also assaulted by some alpine choughs,
 which took our bread and nuts. We got some info from the military guy and
 exchanged snacks, had a lunch break ourselves and started the descent, as
-the sun already began to set. Near Mittelstaufen we turned onto the way down
+the sun already began to set. Near Mittelstaufen (1657 m) we turned onto the way down
 the mountain side. On the way down
 we sped up a bit, but at some point on a slippery section Abeer tripped and
 stretched his leg. This prompted us to slow down and pick sections with better
 terrain over faster sections. We also miscalculated the amount of water we
 needed, so we were quite thirsty by the time we got down.
 
-![Way down from Hochstaufen](/images/projects/data-viz/hikes/stories/hochstaufen/2025-03-09-05.jpg)
+![Way down from Hochstaufen (1771 m)](/images/projects/data-viz/hikes/stories/hochstaufen/2025-03-09-05.jpg)
 
 ![Sunset near Bad Reichenhall](/images/projects/data-viz/hikes/stories/hochstaufen/2025-03-09-06.jpg)
 
@@ -71,10 +71,10 @@ Kirchberg station.
 
 We still had around 40 minutes until the train, so we left Abeer to relax and
 proceeded through the town to the main Bad Reichenhall station in hopes of
-finding something to eat or drink. Unfortunately, all the cafes were closed.
+finding something to eat or drink. Unfortunately, all the cafés were closed.
 Miraculously, we managed to find a cafe that was still open (Il Centro), with
 local thugs counting income from the cash register. We walked past them and
-ordered hot chocolate to go. The town itself was quite lovely and I'd definitely
+ordered hot chocolate to go. The town itself was quite lovely, and I'd definitely
 like to return there one day. But at that point we didn't have time to explore
 too much, so we headed to the station and boarded the train, meeting Abeer inside.
 

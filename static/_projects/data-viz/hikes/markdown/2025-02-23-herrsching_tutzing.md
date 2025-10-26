@@ -9,8 +9,8 @@ longer and started visiting the course.
 After a rough week in a stuffy office room listening to the theoretical course
 in German for 3 hours a day, I decided to take a stroll along an easy route to
 clear my mind. Out of the option I had, e.g. Murnau to Kochel, Penzberg to
-Tutzing, Brannenburg to Prien, Munich to Starnberg... I decided to pick
-Herrsching to Tutzing. The goal being, of course, to connect my hiking route
+Tutzing, Brannenburg to Prien, [Munich to Starnberg](/404/)... I decided to pick
+Herrsching to [Tutzing](/404/). The goal being, of course, to connect my hiking route
 endpoints into a single net, since I'm walking anyway and might as well do
 something cool with it.
 
@@ -23,7 +23,7 @@ direction of the hike on the spot based on which train came first.
 
 The trains decided to stop at Passing, making me take several busses to get
 there, but eventually I ended up in Herrsching. I wandered around and took
-the longer trail to Kloster Andechs, then took the official X7 Wanderweg to
+the longer trail to [Kloster Andechs](/404/), then took the official X7 Wanderweg to
 Tutzing through Machtlfing and Traubing. It was already raining at 15:15 when I
 started, so there were not a lot of other hikers on the route.
 

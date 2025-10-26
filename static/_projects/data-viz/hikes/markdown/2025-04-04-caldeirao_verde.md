@@ -1,4 +1,5 @@
-After going on the PR1 hike, because of bad weather forecasts for the rest
+After going on the [PR1 hike](/hikes/2025-04-04-pedra_rija/), because of
+bad weather forecasts for the rest
 of our stay, I and Serhii decided to tackle another hike
 on the same day. Arriving to Parque das Queimadas by taxi, we took a quick
 look around at the local traditional huts and started walking. The hike follows
@@ -34,7 +35,7 @@ As we kept going, the trail became much narrower, forcing us to make breaks
 and jump over the canal to hug the rocks in order to let other hikers walk
 back. Considering how popular the PR9 route is, this happened almost every
 minute, severely slowing us down. Still, it was nice that the canal was
-mostly paved on the sides, allowing us to dodge all of the mud puddles around
+mostly paved on the sides, allowing us to dodge all the mud puddles around
 it.
 
 ![Narrow trail along the canal](/images/projects/data-viz/hikes/stories/caldeirao_verde/2025-04-04-03.jpg)
@@ -54,10 +55,10 @@ and create traffic jams every time.
 Eventually, we reached some tunnels barely marked [on the map](https://www.openstreetmap.org/way/698103146#map=19/32.783998/-16.926455)
 and headed inside. At first, everything was going smoothly; we were ducking
 under the low ceiling and swiftly moving forward using the head lamp I
-brought from my [Pyramidenspitze hike](/projects/data-viz/hikes/pyramidenspitze/).
+brought from my [Pyramidenspitze (1997 m) hike](/hikes/2025-02-02-pyramidenspitze/).
 Later on, however, it started to rain and we faced a flooded tunnel with ankle-deep
 water, forcing us to slow down, duck down even more and try to skip on the pebbles
-sticking out of the water. At some points it wasn't possible or we weren't
+sticking out of the water. At some points it wasn't possible, or we weren't
 careful enough, so we got our feet wet and had to keep moving carrying water
 puddles in our shoes.
 
