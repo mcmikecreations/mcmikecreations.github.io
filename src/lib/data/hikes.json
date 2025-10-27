@@ -4396,5 +4396,108 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Buchstein via Bayerwald",
+    "image": "/images/projects/data-viz/hikes/buchstein_only.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": [
+        {
+          "date": "2025-10-05",
+          "title": "Buchstein free solo",
+          "description": "A climb of Buchstein (1701 m) during a snowstorm starting at Bayerwald.",
+          "tags": [],
+          "people": [],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-10-05-buchstein_only.md"
+        }
+      ],
+      "filePath": "/_projects/data-viz/hikes/geojson/buchstein_only.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.6757052, 47.6156095],
+        [11.6757671, 47.6309637],
+        [11.6783234, 47.6326839],
+        [11.6793681, 47.6330700],
+        [11.7462209, 47.6469534],
+        [11.7477276, 47.6662618]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Bayerwald to Scharling via Buchstein (1701 m).",
+    "route": "/projects/data-viz/hikes/buchstein_only",
+    "height": 684,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.64758085221801,
+        "lon": 11.71142578125
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "buchstein_only.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Gindelalmschneid and Auer Berg",
+    "image": "/images/projects/data-viz/hikes/auer_berg.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": [
+        {
+          "date": "2025-10-27",
+          "title": "Tegernsee to Hausham via Auer Berg",
+          "description": "Beginner-friendly route across Gindelalmschneid (1335 m) and Auer Berg (1252 m).",
+          "tags": [],
+          "people": [],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-10-27-auer_berg.md"
+        }
+      ],
+      "filePath": "/_projects/data-viz/hikes/geojson/auer_berg.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.7569037, 47.7143662],
+        [11.7940329, 47.7181107],
+        [11.7956894, 47.7236176],
+        [11.8104963, 47.7305888],
+        [11.8263212, 47.7323621],
+        [11.8342723, 47.7376374],
+        [11.8401733, 47.7505216]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Tegernsee to Hausham via Gindelalmschneid (1335 m), Auer Berg (1252 m), Rainer Berg (1169 m), and Huberspitz (1051 m).",
+    "route": "/projects/data-viz/hikes/auer_berg",
+    "height": 640,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.7305489474114,
+        "lon": 11.804981231689455
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "auer_berg.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
