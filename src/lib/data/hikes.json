@@ -3455,7 +3455,9 @@
       "fileType": "GeoJSON",
       "checkpoints": [
         [11.8880556, 47.6618854],
+        [11.8538258, 47.6702560],
         [11.8474276, 47.6632572],
+        [11.8538258, 47.6702560],
         [11.8836539, 47.6861140],
         [11.8733766, 47.7062602]
       ],
@@ -4408,7 +4410,7 @@
       "dates": [
         {
           "date": "2025-10-05",
-          "title": "Buchstein free solo",
+          "title": "Buchstein Free Solo",
           "description": "A climb of Buchstein (1701 m) during a snowstorm starting at Bayerwald.",
           "tags": [],
           "people": [],
@@ -4494,6 +4496,105 @@
         "provider": "hikes/geojson",
         "modes": [ "2d", "3d" ],
         "path": "auer_berg.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Moosburg to Freising",
+    "image": "/images/projects/data-viz/hikes/moosburg_freising.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": [
+        {
+          "date": "2025-09-28",
+          "title": "Mental health walk to Freising",
+          "description": "Flat walk between two local towns.",
+          "tags": [],
+          "people": [],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-09-28-moosburg_freising.md"
+        }
+      ],
+      "filePath": "/_projects/data-viz/hikes/geojson/moosburg_freising.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.9304961, 48.4700110],
+        [11.7445653, 48.3951508]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Moosburg an der Isar to Freising.",
+    "route": "/projects/data-viz/hikes/moosburg_freising",
+    "height": 1024,
+    "standardFeatures": {
+      "origin": {
+        "lat": 48.430681299655106,
+        "lon": 11.852703094482424
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "moosburg_freising.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Bodenschneid",
+    "image": "/images/projects/data-viz/hikes/bodenschneid.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": [
+        {
+          "date": "2025-11-01",
+          "title": "DAAD Trip to Bodenschneid",
+          "description": "A medium difficulty muddy walk to the peak and down to Bodenschneidhaus.",
+          "tags": ["DAAD"],
+          "people": [],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-11-01-bodenschneid.md"
+        }
+      ],
+      "filePath": "/_projects/data-viz/hikes/geojson/bodenschneid.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.8860019, 47.6722099],
+        [11.8538258, 47.6702560],
+        [11.8381005, 47.6717531],
+        [11.8339866, 47.6745316],
+        [11.8333429, 47.6763233],
+        [11.8386618, 47.6777261],
+        [11.8733766, 47.7062602]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Spitzingsee to Neuhaus via Bodenschneid (1669 m) and Rinnerspitz (1611 m).",
+    "route": "/projects/data-viz/hikes/bodenschneid",
+    "height": 384,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.68879251104638,
+        "lon": 11.860427856445314
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "bodenschneid.json#/features/0"
       }],
       "geometrySource": "https://maps.openrouteservice.org/",
       "statistics": true
