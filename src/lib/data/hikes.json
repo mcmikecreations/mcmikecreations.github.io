@@ -4400,6 +4400,54 @@
     "features": null
   },
   {
+    "name": "Zugspitze über Höllental",
+    "image": "/images/projects/data-viz/hikes/zugspitze_hoellental.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": [
+        {
+          "date": "2025-09-18",
+          "title": "Zugspitze via Höllental: Catch the Cable Car",
+          "description": "An unlikely via ferrata climb to the top of Zugspitze before the last cable car down.",
+          "tags": [],
+          "people": ["David Bilan"],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-09-18-zugspitze_hoellental.md"
+        }
+      ],
+      "filePath": "/_projects/data-viz/hikes/geojson/zugspitze_hoellental.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.0463946, 47.4660396],
+        [11.0251958, 47.4380793],
+        [10.9862970, 47.4212150]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Hammersbach to the Zugspitze (2962 m) peak.",
+    "route": "/projects/data-viz/hikes/zugspitze_hoellental",
+    "height": 512,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.441324588172975,
+        "lon": 11.01705551147461
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "zugspitze_hoellental.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
     "name": "Buchstein via Bayerwald",
     "image": "/images/projects/data-viz/hikes/buchstein_only.jpg",
     "properties": {
@@ -4595,6 +4643,58 @@
         "provider": "hikes/geojson",
         "modes": [ "2d", "3d" ],
         "path": "bodenschneid.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Bischof and Krottenkopf",
+    "image": "/images/projects/data-viz/hikes/krottenkopf_bischof.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": [
+        {
+          "date": "2025-11-16",
+          "title": "Bischof and Krottenkopf Trial",
+          "description": "Catching the last warm days of the year and finishing off my to-do list.",
+          "tags": [],
+          "people": ["Bohdan Pryshchenko"],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-11-16-krottenkopf_bischof.md"
+        }
+      ],
+      "filePath": "/_projects/data-viz/hikes/geojson/krottenkopf_bischof.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.1148716, 47.5311056],
+        [11.1757851, 47.5404528],
+        [11.1885939, 47.5471730],
+        [11.1914281, 47.5443752],
+        [11.1885939, 47.5471730],
+        [11.2107325, 47.5601514],
+        [11.1879590, 47.6017819]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Farchant to Eschenlohe via Bischof (2033 m) and Krottenkopf (2086 m).",
+    "route": "/projects/data-viz/hikes/krottenkopf_bischof",
+    "height": 768,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.56992449234948,
+        "lon": 11.17464065551758
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "krottenkopf_bischof.json#/features/0"
       }],
       "geometrySource": "https://maps.openrouteservice.org/",
       "statistics": true

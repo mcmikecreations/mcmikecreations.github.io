@@ -28,7 +28,7 @@
 		</button>
 		<figcaption class="text-center">{text}</figcaption>
 	</figure>
-	<Modal bind:open={openModal} fullscreen size="none" closeBtnClass="bg-white dark:bg-gray-900">
+	<Modal bind:open={openModal} fullscreen size="none" classes={{ close: "bg-white dark:bg-gray-900" }}>
 		<div class="flex w-full h-full items-center justify-center">
 			<img src={href} {title} alt={text} class="w-full h-full object-contain" />
 		</div>

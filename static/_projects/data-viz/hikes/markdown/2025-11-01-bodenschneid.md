@@ -62,3 +62,13 @@ headed down to Neuhaus.
 To sum up, it was a good route with some nice views of the surrounding lakes
 and peaks, suitable for beginners and intermediate hikers, but I would suggest
 taking it only in good weather.
+
+P.S. Due to an SEV bus we ended up in Schliersee and tried going to 
+[Jianni's Greek Restaurant](https://maps.app.goo.gl/9huksxPbKzraRjRu7). The waiter
+ignored our group of 4 people for 20 minutes, then told us they were only allowing
+people with reservations. This wasn't true, as we saw several walk-in customers
+getting seated. I told him about it (in German) and he suggested me to leave.
+Another customer, watching German football at the table near the entrance, shouted
+at me to go back to my home country. If you check other reviews online, I'm by far
+not the only one experiencing this kind of behavior at this restaurant. Avoid it
+at all costs. The publicly available restaurant phone number is [08026 922480](tel:+498026922480).
