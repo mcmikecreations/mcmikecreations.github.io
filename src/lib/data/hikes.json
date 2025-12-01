@@ -4700,5 +4700,60 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Vordere Kesselschneid",
+    "image": "/images/projects/data-viz/hikes/vordere_kesselschneid.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": [
+        {
+          "date": "2025-11-23",
+          "title": "Steep Price for a Steep Hike to Vordere Kesselschneid",
+          "description": "Extending the old route to a new peak with a broken finger.",
+          "tags": [],
+          "people": ["Bohdan Pryshchenko"],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-11-23-vordere_kesselschneid.md"
+        }
+      ],
+      "filePath": "/_projects/data-viz/hikes/geojson/vordere_kesselschneid.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [12.2400625, 47.6055566],
+        [12.2463971, 47.6089803],
+        [12.2628159, 47.6121415],
+        [12.2650454, 47.6105840],
+        [12.2681757, 47.6097635],
+        [12.2767442, 47.6100527],
+        [12.2778148, 47.6068920],
+        [12.2713853, 47.6001564],
+        [12.2400625, 47.6055566],
+        [12.1657270, 47.5829718]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Kufstein and back via Pyramidenspitze (1997 m) and Vordere Kesselschneid (2002 m).",
+    "route": "/projects/data-viz/hikes/vordere_kesselschneid",
+    "height": 768,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.597366213216866,
+        "lon": 12.214221954345705
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "vordere_kesselschneid.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
