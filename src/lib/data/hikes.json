@@ -3249,6 +3249,7 @@
         [11.8940537, 47.6507907],
         [11.8879367, 47.6563143],
         [11.8880556, 47.6618854],
+        [11.8860019, 47.6722099],
         [11.8836539, 47.6861140],
         [11.8733766, 47.7062602]
       ],
@@ -3458,6 +3459,7 @@
         [11.8538258, 47.6702560],
         [11.8474276, 47.6632572],
         [11.8538258, 47.6702560],
+        [11.8860019, 47.6722099],
         [11.8836539, 47.6861140],
         [11.8733766, 47.7062602]
       ],
@@ -4471,7 +4473,7 @@
       "checkpoints": [
         [11.6757052, 47.6156095],
         [11.6757671, 47.6309637],
-        [11.6783234, 47.6326839],
+        [11.6783355, 47.6326587],
         [11.6793681, 47.6330700],
         [11.7462209, 47.6469534],
         [11.7477276, 47.6662618]
@@ -4857,6 +4859,56 @@
         "provider": "hikes/geojson",
         "modes": [ "2d", "3d" ],
         "path": "wasserspitz.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Brecherspitz",
+    "image": "/images/projects/data-viz/hikes/brecherspitz.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": [
+        {
+          "date": "2025-08-31",
+          "title": "Hot Pursuit of Brecherspitz",
+          "description": "Hiking with a fewer has never been so fun.",
+          "tags": [],
+          "people": [],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-08-31-brecherspitz.md"
+        }
+      ],
+      "filePath": "/_projects/data-viz/hikes/geojson/brecherspitz.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.8880556, 47.6618854],
+        [11.8538258, 47.6702560],
+        [11.8645597, 47.6751604],
+        [11.8710533, 47.6764385],
+        [11.8733766, 47.7062602]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Spitzingsee to Neuhaus via Brecherspitz (1685 m).",
+    "route": "/projects/data-viz/hikes/brecherspitz",
+    "height": 512,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.68769472615646,
+        "lon": 11.86746597290039
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "brecherspitz.json#/features/0"
       }],
       "geometrySource": "https://maps.openrouteservice.org/",
       "statistics": true
