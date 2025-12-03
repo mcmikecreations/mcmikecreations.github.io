@@ -12,7 +12,7 @@
           "date": "2025-03-02",
           "title": "Seekarkreuz DAAD Tour 2025",
           "description": "Annette organized a DAAD hike to the summit going down to the Hirschbachstüberl restaurant.",
-          "tags": ["DAAD"],
+          "tags": ["DAAD FK"],
           "people": [],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-03-02-seekarkreuz.md"
@@ -3598,7 +3598,7 @@
           "date": "2025-02-02",
           "title": "Pushing for Pyramidenspitze DAAD Tour",
           "description": "A winter rendition of the route I organized for DAAD with the group dwindling down.",
-          "tags": ["DAAD"],
+          "tags": ["DAAD FK"],
           "people": ["Mikuláš Netík"],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-02-02-pyramidenspitze.md"
@@ -3750,7 +3750,7 @@
           "date": "2025-03-09",
           "title": "Hochstaufen DAAD Tour",
           "description": "A DAAD tour I organized as a change of pace from the usual destinations.",
-          "tags": ["DAAD"],
+          "tags": ["DAAD FK"],
           "people": ["Mikuláš Netík"],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-03-09-hochstaufen.md"
@@ -4107,7 +4107,7 @@
           "date": "2025-04-21",
           "title": "Schweinsberg Easter DAAD Tour",
           "description": "Annette organized a group hike with Easter egg hunting for DAAD scholars.",
-          "tags": ["DAAD"],
+          "tags": ["DAAD FK"],
           "people": ["Annette Schörner"],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-04-21-schweinsberg.md"
@@ -4156,7 +4156,7 @@
           "date": "2025-04-27",
           "title": "Laber Hauptgipfel DAAD Tour",
           "description": "Organized group hike for DAAD scholars.",
-          "tags": ["DAAD"],
+          "tags": ["DAAD FK"],
           "people": [],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-04-27-laber_hauptgipfel.md"
@@ -4610,7 +4610,7 @@
           "date": "2025-11-01",
           "title": "DAAD Trip to Bodenschneid",
           "description": "A medium difficulty muddy walk to the peak and down to Bodenschneidhaus.",
-          "tags": ["DAAD"],
+          "tags": ["DAAD FK"],
           "people": [],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-11-01-bodenschneid.md"
@@ -4625,6 +4625,7 @@
         [11.8339866, 47.6745316],
         [11.8333429, 47.6763233],
         [11.8386618, 47.6777261],
+        [11.8448536, 47.6830911],
         [11.8733766, 47.7062602]
       ],
       "draft": false
@@ -4750,6 +4751,112 @@
         "provider": "hikes/geojson",
         "modes": [ "2d", "3d" ],
         "path": "vordere_kesselschneid.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Thierberg",
+    "image": "/images/projects/data-viz/hikes/thierberg.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": [
+        {
+          "date": "2025-11-29",
+          "title": "Kufstein Christmas Market",
+          "description": "Socializing on a nice relaxing hike in Austria.",
+          "tags": ["DAAD FK"],
+          "people": null,
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-11-29-thierberg.md"
+        }
+      ],
+      "filePath": "/_projects/data-viz/hikes/geojson/thierberg.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [12.1905026, 47.6098511],
+        [12.1630281, 47.6138359],
+        [12.1647833, 47.6003181],
+        [12.1486580, 47.5938590],
+        [12.1657270, 47.5829718],
+        [12.1695035, 47.5823323]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Kiefersfelden to Kufstein via Thierberg (721 m).",
+    "route": "/projects/data-viz/hikes/thierberg",
+    "height": 384,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.60020219518782,
+        "lon": 12.17216491699219
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "thierberg.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Wasserspitz",
+    "image": "/images/projects/data-viz/hikes/wasserspitz.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": [
+        {
+          "date": "2025-09-07",
+          "title": "Wasserspitz and Mountain Carts",
+          "description": "Going up Wasserspitz on foot. Going down Stümpfling on mountain carts.",
+          "tags": [],
+          "people": ["David Bilan"],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-09-07-wasserspitz.md"
+        }
+      ],
+      "filePath": "/_projects/data-viz/hikes/geojson/wasserspitz.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.8046984, 47.6848001],
+        [11.8454605, 47.6911654],
+        [11.8448536, 47.6830911],
+        [11.8359142, 47.6803875],
+        [11.8333429, 47.6763233],
+        [11.8386618, 47.6777261],
+        [11.8538258, 47.6702560],
+        [11.8474276, 47.6632572],
+        [11.8563377, 47.6622252],
+        [11.8570706, 47.6601797]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Tegernsee to Spitzingsee via Wasserspitz (1552 m) and Stümpfling (1506 m).",
+    "route": "/projects/data-viz/hikes/wasserspitz",
+    "height": 512,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.677871412038485,
+        "lon": 11.825666427612305
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "wasserspitz.json#/features/0"
       }],
       "geometrySource": "https://maps.openrouteservice.org/",
       "statistics": true

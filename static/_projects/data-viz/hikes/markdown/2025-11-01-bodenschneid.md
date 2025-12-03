@@ -39,7 +39,7 @@ on the other side of the mountain.
 
 The other side wasn't much better, and going down made the chance of slipping
 even higher. At some point I split from the group and headed to
-Rinnerspitz (1611 m), since I skipped it on a [recent hike to X (y m)](/404/).
+Rinnerspitz (1611 m), since I skipped it on a [recent hike to Wasserspitz (1552 m)](/hikes/2025-09-07-wasserspitz/).
 
 ![Guelder rose](/images/projects/data-viz/hikes/stories/bodenschneid/2025-11-01-10.jpg)
 
@@ -52,7 +52,7 @@ climb down a 1.0-1.5 meter drop.
 ![Rinnerspitz (1611 m) from the ridge](/images/projects/data-viz/hikes/stories/bodenschneid/2025-11-01-11.jpg)
 
 I've reached the Georg Jennerwein memorial halfway to Wasserspitz (1552 m) that
-I've [been to before](/404/) and started going down to
+I've [been to before](/hikes/2025-09-07-wasserspitz/) and started going down to
 Bodenschneidhaus (1365 m). There I reconnected with the group (turns out I
 arrived 5-6 minutes later than the others). We had some food and drinks and
 headed down to Neuhaus.
