@@ -4835,6 +4835,7 @@
         [11.8046984, 47.6848001],
         [11.8454605, 47.6911654],
         [11.8448536, 47.6830911],
+        [11.8386653, 47.6834388],
         [11.8359142, 47.6803875],
         [11.8333429, 47.6763233],
         [11.8386618, 47.6777261],
@@ -5008,6 +5009,114 @@
         "provider": "hikes/geojson",
         "modes": [ "2d", "3d" ],
         "path": "omis_fort.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Rainerkopf",
+    "image": "/images/projects/data-viz/hikes/rainerkopf.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": [
+        {
+          "date": "2025-12-23",
+          "title": "Slippery Rainerkopf",
+          "description": "Going down a slippery slope with a friend.",
+          "tags": [],
+          "people": ["Serhii Ivanenko"],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-12-23-rainerkopf.md"
+        }
+      ],
+      "filePath": "/_projects/data-viz/hikes/geojson/rainerkopf.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.8733766, 47.7062602],
+        [11.8448536, 47.6830911],
+        [11.8386653, 47.6834388],
+        [11.8423468, 47.6857619],
+        [11.8386653, 47.6834388],
+        [11.8448536, 47.6830911],
+        [11.8386618, 47.6777261],
+        [11.8538258, 47.6702560],
+        [11.8860019, 47.6722099],
+        [11.8880556, 47.6618854]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Neuhaus to Spitzingsee via Rainerkopf (1463 m).",
+    "route": "/projects/data-viz/hikes/rainerkopf",
+    "height": 384,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.68313000437364,
+        "lon": 11.86351776123047
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "rainerkopf.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Cima Sophia",
+    "image": "/images/projects/data-viz/hikes/cima_sophia.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": [
+        {
+          "date": "2025-12-29",
+          "title": "First trip to the Dolomites",
+          "description": "Attempting a rocky peak at the cold of winter.",
+          "tags": [],
+          "people": ["Serhii Ivanenko", "Pavlo Pustelnyk"],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-12-29-cima_sophia.md"
+        }
+      ],
+      "filePath": "/_projects/data-viz/hikes/geojson/cima_sophia.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [10.9653408, 46.1443855],
+        [10.9622329, 46.1523764],
+        [10.9535178, 46.1592023],
+        [10.9558687, 46.1635989],
+        [10.9528253, 46.1655181],
+        [10.9489756, 46.1688456],
+        [10.9434586, 46.1724942],
+        [10.9406454, 46.1710813]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Molveno and back via Palon de Tovre (1913 m) and Cima Sophia (2360 m).",
+    "route": "/projects/data-viz/hikes/cima_sophia",
+    "height": 512,
+    "standardFeatures": {
+      "origin": {
+        "lat": 46.15855073467609,
+        "lon": 10.95311164855957
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "cima_sophia.json#/features/0"
       }],
       "geometrySource": "https://maps.openrouteservice.org/",
       "statistics": true
