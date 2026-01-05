@@ -11,6 +11,7 @@ import {
 } from 'flowbite-svelte-icons';
 import {
 	BlueSkySolid,
+	BeRealSolid,
 	GoogleScholarSolid,
 	InstagramSolid,
 	MastodonSolid,
@@ -73,6 +74,9 @@ let showSocials = $derived(shouldShowSocials !== undefined ? (shouldShowSocials 
 				</FooterIcon>
 				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'BlueSky')?.url} class="ms-6 mt-4 md:mt-0">
 					<BlueSkySolid ariaLabel="bluesky" />
+				</FooterIcon>
+				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'BeReal')?.url} class="ms-6 mt-4 md:mt-0">
+					<BeRealSolid ariaLabel="bereal" />
 				</FooterIcon>
 			</div>
 		{/if}

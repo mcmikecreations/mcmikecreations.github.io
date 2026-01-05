@@ -317,7 +317,7 @@
 </script>
 
 <AppMeta
-	title={data.post.title + ' Hike'}
+	title={data.post.title + ' | Hike'}
 	description={data.post.description ?? undefined}
 	image={data.post.image}
 	type="article"
@@ -326,6 +326,10 @@
 	article-author={resume.basics.name}
 	article-section="Hikes"
 />
+<svelte:head>
+	<link rel="alternate" type="application/rss+xml" title="Mykola's Hiking Blog RSS Feed" href="/hikes/feed.xml" />
+	<link rel="alternate" type="application/atom+xml" title="Mykola's Hiking Blog Atom Feed" href="/hikes/atom.xml" />
+</svelte:head>
 
 {#snippet statsSnippet()}
 	{#if data.mapDisplay.statistics}

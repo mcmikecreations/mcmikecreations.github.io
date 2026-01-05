@@ -3,7 +3,7 @@
     "name": "Mykola Morozov",
     "label": "Senior Software Engineer",
     "image": "/images/profile_thumb.jpg",
-    "email": "mykola.morozov.2000@gmail.com",
+    "email": "contact@mykolamor.com",
     "phone": "",
     "url": "https://mykolamor.com",
     "quote": "Detail-oriented, responsible and committed developer, with a get-it-done, on-time and high-quality product spirit.",
@@ -78,6 +78,11 @@
         "network": "BlueSky",
         "username": "mykolamor",
         "url": "https://bsky.app/profile/mykolamor.bsky.social"
+      },
+      {
+        "network": "BeReal",
+        "username": "mykolamor",
+        "url": "https://bere.al/mykolamor"
       }
     ]
   },

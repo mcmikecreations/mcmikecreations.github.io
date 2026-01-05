@@ -6,12 +6,14 @@
 	import AppNavbar from "$lib/components/AppNavbar.svelte";
 	import { Badge, Heading, Img, Span } from 'flowbite-svelte';
 	import ShowcaseCard from "./components/ShowcaseCard.svelte";
-	import { P, ImagePlaceholder, CardPlaceholder, Progressbar } from 'flowbite-svelte';
+	import { A, P, ImagePlaceholder, CardPlaceholder, Progressbar } from 'flowbite-svelte';
 	import { UserSolid } from 'flowbite-svelte-icons';
 	import DateBadge from '$lib/components/DateBadge.svelte';
 	import AppMeta from '$lib/components/AppMeta.svelte';
 	import Footsteps from './components/Footsteps.svelte';
 	import Hero from './components/Hero.svelte';
+	import FeedSolid from '$lib/icons/FeedSolid.svelte';
+	import { FileCodeSolid } from 'flowbite-svelte-icons';
 
 	interface Props {
 		data: PageData;
@@ -79,6 +81,11 @@
 	description="The most thorough hike reviews on the web"
 	type="website"
 />
+<svelte:head>
+	<link rel="alternate" type="application/rss+xml" title="Mykola's Hiking Blog RSS Feed" href="/hikes/feed.xml" />
+	<link rel="alternate" type="application/atom+xml" title="Mykola's Hiking Blog Atom Feed" href="/hikes/atom.xml" />
+</svelte:head>
+
 <AppNavbar
     class="fixed z-50 top-0"
     bgClass="bg-white/50 dark:bg-gray-800/50 dark:text-white"
@@ -185,6 +192,20 @@
 					{/each}
 				</div>
 			</main>
+		</div>
+	</div>
+</section>
+
+<section class="container mx-auto mb-8">
+	<div class="mx-4 2xl:mx-0 md:px-24 flex flex-row justify-between">
+		<div>
+			<A href="/hikes/feed.xml" data-sveltekit-reload><FeedSolid ariaLabel="RSS Feed" class="me-1" /> RSS Feed</A>
+		</div>
+		<div>
+			<A href="/hikes/atom.xml" data-sveltekit-reload><FeedSolid ariaLabel="Atom Feed" class="me-1" /> Atom Feed</A>
+		</div>
+		<div>
+			<A href="https://raw.githubusercontent.com/mcmikecreations/mcmikecreations.github.io/refs/heads/feature/svelte-update/src/lib/data/hikes.json"><FileCodeSolid ariaLabel="Json Feed" class="me-1" /> Json Feed</A>
 		</div>
 	</div>
 </section>

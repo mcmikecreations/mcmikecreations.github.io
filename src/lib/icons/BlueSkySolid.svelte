@@ -19,7 +19,7 @@
 	export let size: 'xs' | 'sm' | 'md' | 'lg' | 'xl' = ctx.size || 'md';
 	export let role = ctx.role || 'img';
 
-	export let ariaLabel = 'google scholar solid';
+	export let ariaLabel = 'blue sky solid';
 </script>
 
 <svg
