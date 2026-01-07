@@ -29,6 +29,7 @@ from the hut, so it was just a sports challenge at the end of the day.
 ![Mykola climbing Buchstein (1701 m)](/images/projects/data-viz/hikes/stories/buchstein/2025-05-11-07.jpg)
 ![A view down from Buchstein (1701 m)](/images/projects/data-viz/hikes/stories/buchstein/2025-05-11-02.jpg)
 
+You can find the video of the climb in a subsequent attempt of mine [here](/hikes/2025-10-05-buchstein_only/).
 Then we did a quick detour to the top of Roßstein (1698 m), met some random guys smoking weed there, took more photos
 and headed down in the direction of Lenggries.
 

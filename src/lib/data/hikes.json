@@ -4414,7 +4414,7 @@
           "date": "2025-09-18",
           "title": "Zugspitze via Höllental: Catch the Cable Car",
           "description": "An unlikely via ferrata climb to the top of Zugspitze before the last cable car down.",
-          "tags": [],
+          "tags": ["Climb"],
           "people": ["David Bilan"],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-09-18-zugspitze_hoellental.md"
@@ -4462,7 +4462,7 @@
           "date": "2025-10-05",
           "title": "Buchstein Free Solo",
           "description": "A climb of Buchstein (1701 m) during a snowstorm starting at Bayerwald.",
-          "tags": [],
+          "tags": ["Climb"],
           "people": [],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-10-05-buchstein_only.md"
@@ -4979,7 +4979,7 @@
           "date": "2025-08-13",
           "title": "Family Trip to an Old Fort",
           "description": "Taking my mom up a local mountain.",
-          "tags": [],
+          "tags": ["Croatia"],
           "people": ["Liubov Bilinska"],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-08-13-omis_fort.md"
@@ -5009,6 +5009,55 @@
         "provider": "hikes/geojson",
         "modes": [ "2d", "3d" ],
         "path": "omis_fort.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Omiš Tvrđava \"Stari grad\" Via Ferrata",
+    "image": "/images/projects/data-viz/hikes/omis_fort_climb.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": [
+        {
+          "date": "2025-08-14",
+          "title": "Via Ferrata Climb to Omiš Fort",
+          "description": "Taking the straight way up this time.",
+          "tags": ["Climb", "Croatia"],
+          "people": [],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-08-14-omis_fort_climb.md"
+        }
+      ],
+      "filePath": "/_projects/data-viz/hikes/geojson/omis_fort_climb.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [16.6861604, 43.4447441],
+        [16.6914148, 43.4449119],
+        [16.7033760, 43.4436037],
+        [16.6991156, 43.4447678]
+      ],
+      "draft": false
+    },
+    "description": "Climb from Omiš and back via Tvrđava \"Stari grad\" (303 m).",
+    "route": "/projects/data-viz/hikes/omis_fort_climb",
+    "height": 384,
+    "standardFeatures": {
+      "origin": {
+        "lat": 43.44216982407968,
+        "lon": 16.693468093872074
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "omis_fort_climb.json#/features/0"
       }],
       "geometrySource": "https://maps.openrouteservice.org/",
       "statistics": true
