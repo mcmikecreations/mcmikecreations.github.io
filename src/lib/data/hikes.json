@@ -5171,5 +5171,58 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Setzberg",
+    "image": "/images/projects/data-viz/hikes/setzberg.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": [
+        {
+          "date": "2026-01-11",
+          "title": "Snowy Setzberg",
+          "description": "Plowing through the waist-deep snow to a skiing summit.",
+          "tags": [],
+          "people": null,
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2026-01-11-setzberg.md"
+        }
+      ],
+      "filePath": "/_projects/data-viz/hikes/geojson/setzberg.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [10.9653408, 46.1443855],
+        [10.9622329, 46.1523764],
+        [10.9535178, 46.1592023],
+        [10.9558687, 46.1635989],
+        [10.9528253, 46.1655181],
+        [10.9489756, 46.1688456],
+        [10.9434586, 46.1724942],
+        [10.9406454, 46.1710813]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Kreuth to Rottach-Egern via Setzberg (1706 m).",
+    "route": "/projects/data-viz/hikes/setzberg",
+    "height": 512,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.66891324873771,
+        "lon": 11.768261988119518
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "setzberg.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]

@@ -2,7 +2,7 @@ I got the hike route from Mikuláš, who did it solo in winter, finding and help
 solo hiker on the way. I and David weren't crazy enough to do it in a cold season, so we
 trained and waited until now to get it off our bucket list.
 
-![Weißbach river](/images/projects/data-viz/hikes/stories/blauberge/2025-06-01-00.jpg)
+![Weißach river](/images/projects/data-viz/hikes/stories/blauberge/2025-06-01-00.jpg)
 
 We started off passing quite a few hikers and bikers on the way to the waterfall, assuming
 the hike would be pretty easy. The waterfall was a nice sight, although it was raining a bit.
