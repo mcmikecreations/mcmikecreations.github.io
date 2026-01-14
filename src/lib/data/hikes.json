@@ -298,7 +298,7 @@
       "fileType": "GeoJSON",
       "checkpoints": [
         [11.7569037, 47.7143662],
-        [11.7679584, 47.6952866],
+        [11.7714181, 47.6937201],
         [11.7383820, 47.6957280],
         [11.7408013, 47.7049198],
         [11.7272574, 47.7132548],
@@ -1263,11 +1263,11 @@
       "fileType": "GeoJSON",
       "checkpoints": [
         [11.7569037, 47.7143662],
-        [11.7679584, 47.6952866],
+        [11.7714181, 47.6937201],
         [11.7914732, 47.6839885],
         [11.8175335, 47.6671473],
         [11.8047030, 47.6848412],
-        [11.7679584, 47.6952866]
+        [11.7714181, 47.6937201]
       ],
       "draft": false
     },
@@ -2548,11 +2548,13 @@
       "filePath": "/_projects/data-viz/hikes/geojson/wallberg.json",
       "fileType": "GeoJSON",
       "checkpoints": [
-        [11.7679584, 47.6952866],
+        [11.7714181, 47.6937201],
+        [11.7760724, 47.6752184],
+        [11.7905444, 47.6566799],
         [11.7967506, 47.6658847],
         [11.8175335, 47.6671473],
         [11.8047030, 47.6848412],
-        [11.7679584, 47.6952866]
+        [11.7714181, 47.6937201]
       ],
       "draft": false
     },
@@ -5194,14 +5196,12 @@
       "filePath": "/_projects/data-viz/hikes/geojson/setzberg.json",
       "fileType": "GeoJSON",
       "checkpoints": [
-        [10.9653408, 46.1443855],
-        [10.9622329, 46.1523764],
-        [10.9535178, 46.1592023],
-        [10.9558687, 46.1635989],
-        [10.9528253, 46.1655181],
-        [10.9489756, 46.1688456],
-        [10.9434586, 46.1724942],
-        [10.9406454, 46.1710813]
+        [11.7462209, 47.6469534],
+        [11.7854616, 47.6408063],
+        [11.7846084, 47.6512206],
+        [11.7905444, 47.6566799],
+        [11.7760724, 47.6752184],
+        [11.7714181, 47.6937201]
       ],
       "draft": false
     },
@@ -5219,6 +5219,69 @@
         "provider": "hikes/geojson",
         "modes": [ "2d", "3d" ],
         "path": "setzberg.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Höhenglücksteig",
+    "image": "/images/projects/data-viz/hikes/hoehengluecksteig_david.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": [
+        {
+          "date": "2025-07-26",
+          "title": "Exploring Höhenglücksteig",
+          "description": "Trying out via ferrata climbing in the wild.",
+          "tags": ["Climb"],
+          "people": ["Mikuláš Netík"],
+          "image": "/images/projects/data-viz/hikes/hoehengluecksteig_mikulas.jpg",
+          "path": "/_projects/data-viz/hikes/markdown/2025-07-26-hoehengluecksteig.md"
+        },
+        {
+          "date": "2025-08-03",
+          "title": "Returning to Höhenglücksteig",
+          "description": "Getting stuck on the same via ferrata.",
+          "tags": ["Climb"],
+          "people": ["David Bilan"],
+          "image": "/images/projects/data-viz/hikes/hoehengluecksteig_david.jpg",
+          "path": "/_projects/data-viz/hikes/markdown/2025-08-03-hoehengluecksteig.md"
+        }
+      ],
+      "filePath": "/_projects/data-viz/hikes/geojson/hoehengluecksteig.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.5077442, 49.5428551],
+        [11.5229667, 49.5464154],
+        [11.5315434, 49.5445946],
+        [11.5229667, 49.5464154],
+        [11.5277691, 49.5505647],
+        [11.5433907, 49.5486791],
+        [11.5432897, 49.5440503],
+        [11.5478759, 49.5356002],
+        [11.5869190, 49.5255487]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Fischbrunn to Etzelwang via Norissteig and Höhenglücksteig.",
+    "route": "/projects/data-viz/hikes/hoehengluecksteig",
+    "height": 512,
+    "standardFeatures": {
+      "origin": {
+        "lat": 49.53813224724326,
+        "lon": 11.547290883722177
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "hoehengluecksteig.json#/features/0"
       }],
       "geometrySource": "https://maps.openrouteservice.org/",
       "statistics": true

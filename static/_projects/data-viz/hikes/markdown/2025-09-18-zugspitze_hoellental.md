@@ -1,3 +1,6 @@
+Topo from [bergsteigen.com](https://www.bergsteigen.com/touren/klettersteig/hoellental-klettersteig-zugspitze/):
+![Topo of the climb](/images/hikes/topo/zugspitze_hoellental.png)
+
 The idea for this hike was born pretty much immediately after finishing the
 [Reintal route to the Zugspitze](/hikes/2025-06-21-zugspitze_reintal/). We
 planned ahead, bought an ice axe and ice spikes, checked the weather forecast

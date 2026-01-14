@@ -1,3 +1,6 @@
+Topo from [bergsteigen.com](https://www.bergsteigen.com/touren/klettersteig/ferrata-fortica-omis/):
+![Topo of the climb](/images/hikes/topo/omis_fort_climb.png)
+
 After seeing a group of people in harnesses on my [visit to Tvrđava "Stari grad" (303 m)](/404/)
 the day before, I couldn't get the idea of climbing the via ferrata
 out of my head. So I decided to return to the Omiš hillside alone the next day

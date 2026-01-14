@@ -1,3 +1,6 @@
+Topo from [bergsteigen.com](https://www.bergsteigen.com/touren/klettern/sahnestueckchen-buchstein/):
+![Topo of the climb](/images/hikes/topo/buchstein.jpg)
+
 The first time I visited [Buchstein (1701 m)](/hikes/2025-05-11-buchstein/),
 the idea of filming the climb to
 the top of the rock kept nagging me. With the weather getting worse each day,

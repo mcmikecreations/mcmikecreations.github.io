@@ -1,3 +1,6 @@
+Topo from [bergsteigen.com](https://www.bergsteigen.com/touren/klettern/sahnestueckchen-buchstein/):
+![Topo of the climb](/images/hikes/topo/buchstein.jpg)
+
 I was looking to gradually increase the difficulty from the
 [Laber Hauptgipfel (1686 m)](/hikes/2025-04-27-laber_hauptgipfel/).
 One of the few choices I came up with ended up being an extended trip from Tegernsee to Lenggries. Since I already
