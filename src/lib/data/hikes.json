@@ -4565,7 +4565,7 @@
       "dates": [
         {
           "date": "2025-09-28",
-          "title": "Mental health walk to Freising",
+          "title": "Mental Health Walk to Freising",
           "description": "Flat walk between two local towns.",
           "tags": [],
           "people": [],
@@ -5132,7 +5132,7 @@
       "dates": [
         {
           "date": "2025-12-29",
-          "title": "First trip to the Dolomites",
+          "title": "First Trip to the Dolomites",
           "description": "Attempting a rocky peak at the cold of winter.",
           "tags": [],
           "people": ["Serhii Ivanenko", "Pavlo Pustelnyk"],
@@ -5282,6 +5282,59 @@
         "provider": "hikes/geojson",
         "modes": [ "2d", "3d" ],
         "path": "hoehengluecksteig.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Trainsjoch",
+    "image": "/images/projects/data-viz/hikes/trainsjoch.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": [
+        {
+          "date": "2026-01-18",
+          "title": "Bridging Countries via Trainsjoch",
+          "description": "Trailing the border line between Germany and Austria on a winter trip.",
+          "tags": [],
+          "people": ["Bohdan Pryshchenko", "Stanislav Kidalau"],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2026-01-18-trainsjoch.md"
+        }
+      ],
+      "filePath": "/_projects/data-viz/hikes/geojson/trainsjoch.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [12.1905026, 47.6098511],
+        [12.1630281, 47.6138359],
+        [12.0965184, 47.6292935],
+        [12.0543473, 47.6152680],
+        [12.0378767, 47.6174517],
+        [12.0191196, 47.6218073],
+        [12.0111304, 47.6385934],
+        [12.0109980, 47.6757044]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Kiefersfelden to Bayrischzell via Trainsjoch (1707 m) and Nesselberg (1363 m).",
+    "route": "/projects/data-viz/hikes/trainsjoch",
+    "height": 1024,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.64434265359565,
+        "lon": 12.092170715332033
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "trainsjoch.json#/features/0"
       }],
       "geometrySource": "https://maps.openrouteservice.org/",
       "statistics": true

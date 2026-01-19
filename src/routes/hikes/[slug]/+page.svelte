@@ -387,9 +387,11 @@
 								<li><b>Elevation gain/loss</b>: {getDistance(data.map.properties.ascent ?? 0)}/{getDistance(data.map.properties.descent ?? 0)}</li>
 								<li><b>Duration</b>: {getTime(data.map.properties.duration ?? 0)}<sup>*</sup></li>
 							</ul>
-							<span><sup>
-								* Pure net walking time with above average speed.
-							</sup></span>
+							<span>
+<!--								<sup>-->
+								* Pure net walking time in summer with above average speed.
+<!--								</sup>-->
+							</span>
 							{#if data.display.filePrimary || data.display.fileGpx}
 								<blockquote class="!mb-0">
 									Grab the
