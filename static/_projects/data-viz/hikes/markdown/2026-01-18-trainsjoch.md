@@ -92,9 +92,11 @@ approaching from the other side. Stanislav brought a small drone to capture
 the moment. As he was setting it up, my gaze wandered around the stunning views
 of Kaisergebirge and [Vordere Kesselschneid (2002 m)](/hikes/2025-11-23-vordere_kesselschneid/),
 which I had climbed in November. Although it brought back the memory of
-fracturing my finger, I was still happy with the adventure overall.
+fracturing my finger, I was still happy with the adventure overall. We even
+got to see Brünnstein (1619 m), which [I climbed last summer](/hikes/2025-07-06-bruennstein/)
+with David.
 
-![Trainsjoch (1707 m) from above](/404/)
+![Trainsjoch (1707 m) from above](/images/projects/data-viz/hikes/stories/trainsjoch/2026-01-18-24.mp4)
 
 After relaxing for a bit and getting cold from the wind, we decided to start
 heading down to Bayrischzell. The descent was much easier than the ascent, as

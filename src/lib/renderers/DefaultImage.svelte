@@ -9,9 +9,24 @@
 
 	let { href = '', title = undefined, text = '' }: Props = $props();
 	let openModal = $state(false);
+	const isYoutubeLink = href.includes('youtube.com');
 </script>
 
-{#if href.trimEnd().endsWith('.mp4')}
+{#if isYoutubeLink}
+	{@const url = new URL(href)}
+	{@const videoId = url.searchParams.get('v')}
+	<figure class="w-full xl:w-1/2 mx-auto flex flex-col justify-center">
+		<a {href} target="_blank" rel="noopener noreferrer">
+			<img
+				src={`https://img.youtube.com/vi/${videoId}/0.jpg`}
+				{title}
+				alt={text}
+				class="pointer-events-none !my-0"
+			/>
+		</a>
+		<figcaption class="text-center">{text}</figcaption>
+	</figure>
+{:else if href.trimEnd().endsWith('.mp4')}
 	<figure class="w-full xl:w-1/2 mx-auto flex-col justify-center">
 		<video controls {title}>
 			<source src={href} type="video/mp4">

@@ -2,7 +2,7 @@ Topo from [bergsteigen.com](https://www.bergsteigen.com/touren/klettersteig/hoel
 ![Topo of the climb](/images/hikes/topo/zugspitze_hoellental.png)
 
 The idea for this hike was born pretty much immediately after finishing the
-[Reintal route to the Zugspitze](/hikes/2025-06-21-zugspitze_reintal/). We
+[Reintal route to the Zugspitze (2962 m)](/hikes/2025-06-21-zugspitze_reintal/). We
 planned ahead, bought an ice axe and ice spikes, checked the weather forecast
 and public transport schedule, so nothing would stop us from going up the
 Höllental Klamm. I even spend the night before the hike at David's place, so
@@ -145,7 +145,7 @@ huts can get quite busy during the hiking season.
 
 ![Full main via ferrata climb](/404/)
 
-P.S. Feels amazing to have finally completed the Zugspitze ascent via both main
+P.S. Feels amazing to have finally completed the Zugspitze (2962 m) ascent via both main
 routes! Looking forward to Jubiläumsgrat and the Wiener-Neustädter hut
 hopefully next year.
 

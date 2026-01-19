@@ -5340,5 +5340,58 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Brünnstein",
+    "image": "/images/projects/data-viz/hikes/bruennstein.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": [
+        {
+          "date": "2025-07-06",
+          "title": "First Outdoor Via Ferrata: Brünnstein",
+          "description": "Starting off with an easy route.",
+          "tags": [],
+          "people": ["David Bilan"],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-07-06-bruennstein.md"
+        }
+      ],
+      "filePath": "/_projects/data-viz/hikes/geojson/bruennstein.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [12.1905026, 47.6098511],
+        [12.1630281, 47.6138359],
+        [12.0965184, 47.6292935],
+        [12.0543473, 47.6152680],
+        [12.0378767, 47.6174517],
+        [12.0191196, 47.6218073],
+        [12.0111304, 47.6385934],
+        [12.0109980, 47.6757044]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Tatzelwurmwasserfälle to Oberaudorf via Brünnstein (1619 m).",
+    "route": "/projects/data-viz/hikes/bruennstein",
+    "height": 768,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.66157218807329,
+        "lon": 12.131069223310062
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "bruennstein.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
