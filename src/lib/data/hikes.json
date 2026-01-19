@@ -4274,7 +4274,9 @@
       "checkpoints": [
         [11.9332140, 47.7056945],
         [11.9637481, 47.7133234],
+        [11.9712440, 47.7146275],
         [11.9877728, 47.7210941],
+        [11.9864452, 47.7156792],
         [11.9992281, 47.7053102],
         [12.0120518, 47.7034761],
         [12.0109980, 47.6757044]
@@ -5388,6 +5390,59 @@
         "provider": "hikes/geojson",
         "modes": [ "2d", "3d" ],
         "path": "bruennstein.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Breitensteinfensterl",
+    "image": "/images/projects/data-viz/hikes/breitensteinfensterl.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": [
+        {
+          "date": "2025-07-20",
+          "title": "Free Solo of Breitensteinfensterl",
+          "description": "Going for a real via ferrata climb with no gear.",
+          "tags": [],
+          "people": [],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-07-20-breitensteinfensterl.md"
+        }
+      ],
+      "filePath": "/_projects/data-viz/hikes/geojson/breitensteinfensterl.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.9332140, 47.7056945],
+        [11.9637481, 47.7133234],
+        [11.9776495, 47.7187677],
+        [11.9828363, 47.7211575],
+        [11.9877728, 47.7210941],
+        [11.9864452, 47.7156792],
+        [11.9795573, 47.7144418],
+        [11.9637481, 47.7133234]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Hammer and back via Breitensteinfensterl (1350 m), Breitenstein Westgipfel (1575 m), and Breitenstein (1622 m).",
+    "route": "/projects/data-viz/hikes/breitensteinfensterl",
+    "height": 512,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.712995683722205,
+        "lon": 11.958892828925716
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "breitensteinfensterl.json#/features/0"
       }],
       "geometrySource": "https://maps.openrouteservice.org/",
       "statistics": true

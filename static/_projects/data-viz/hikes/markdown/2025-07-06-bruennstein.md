@@ -1,3 +1,6 @@
+Topo from [bergsteigen.com](https://www.bergsteigen.com/touren/klettersteig/dr-julius-mayr-weg/):
+![Topo of the climb](/images/hikes/topo/bruennstein.png)
+
 I don't remember what came first: our plan to climb Zugspitze (2962 m) over
 Höllental which [we later did](/hikes/2025-09-18-zugspitze_hoellental/), or
 the idea to start rock climbing indoors. Either way, we bought a climbing
