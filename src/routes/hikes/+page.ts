@@ -17,7 +17,8 @@ export function load() {
 				image: d.image ?? h.image?.replace('/hikes/', '/hikes/thumb/'),
 				description: (d.description ? (d.description + ' ') : '') + h.description,
 				tags: d.tags,
-				people: d.people
+				people: d.people,
+				anchor: `${d.date}-${slug}`
 			};
 		}));
 	posts.sort((a, b) => a.date > b.date ? -1 : (a.date < b.date ? 1 : 0));

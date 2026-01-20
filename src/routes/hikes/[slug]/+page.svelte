@@ -354,7 +354,7 @@
 			<div class="mx-auto prose dark:prose-invert prose-a:text-primary-600 dark:prose-a:text-primary-500 md:prose-lg lg:prose-xl min-h-80">
 				<Breadcrumb aria-label="Page path" class="mt-4 not-prose hidden md:flex">
 					<BreadcrumbItem href="/" home>Home</BreadcrumbItem>
-					<BreadcrumbItem href="/hikes/">Hikes</BreadcrumbItem>
+					<BreadcrumbItem href="/hikes/#{data.post.anchor}">Hikes</BreadcrumbItem>
 					<BreadcrumbItem>{data.post.title}</BreadcrumbItem>
 				</Breadcrumb>
 				<Heading tag="h1" class="!mb-0 !mt-2">{data.post.title}</Heading>

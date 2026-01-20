@@ -696,7 +696,7 @@
           "date": "2024-03-30",
           "title": null,
           "description": null,
-          "tags": [],
+          "tags": ["Web"],
           "people": [],
           "image": null,
           "path": null
@@ -812,6 +812,7 @@
       "fileType": "GeoJSON",
       "checkpoints": [
         [11.3438675, 47.9959377],
+        [11.3593591, 47.9957521],
         [11.3507246, 47.9725315],
         [11.3432341, 47.9558438],
         [11.3338582, 47.9027054],
@@ -2793,7 +2794,7 @@
           "date": "2024-06-08",
           "title": null,
           "description": null,
-          "tags": [],
+          "tags": ["Web"],
           "people": [],
           "image": null,
           "path": null
@@ -2840,7 +2841,7 @@
           "date": "2024-06-16",
           "title": null,
           "description": null,
-          "tags": [],
+          "tags": ["Web"],
           "people": [],
           "image": null,
           "path": null
@@ -4569,7 +4570,7 @@
           "date": "2025-09-28",
           "title": "Mental Health Walk to Freising",
           "description": "Flat walk between two local towns.",
-          "tags": [],
+          "tags": ["Web"],
           "people": [],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-09-28-moosburg_freising.md"
@@ -5365,14 +5366,14 @@
       "filePath": "/_projects/data-viz/hikes/geojson/bruennstein.json",
       "fileType": "GeoJSON",
       "checkpoints": [
-        [12.1905026, 47.6098511],
-        [12.1630281, 47.6138359],
-        [12.0965184, 47.6292935],
-        [12.0543473, 47.6152680],
-        [12.0378767, 47.6174517],
-        [12.0191196, 47.6218073],
-        [12.0111304, 47.6385934],
-        [12.0109980, 47.6757044]
+        [12.0834884, 47.6751751],
+        [12.0816908, 47.6712336],
+        [12.1037928, 47.6473627],
+        [12.0989204, 47.6447033],
+        [12.0971096, 47.6473418],
+        [12.0948462, 47.6469439],
+        [12.0989204, 47.6447033],
+        [12.1752506, 47.6526185]
       ],
       "draft": false
     },
@@ -5443,6 +5444,54 @@
         "provider": "hikes/geojson",
         "modes": [ "2d", "3d" ],
         "path": "breitensteinfensterl.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "München - Starnberg",
+    "image": "/images/projects/data-viz/hikes/muenchen_starnberg.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": [
+        {
+          "date": "2025-06-29",
+          "title": "Forest Walk to Starnberg",
+          "description": "Completing my route from Freising to Tutzing.",
+          "tags": ["Web"],
+          "people": [],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2025-06-29-muenchen_starnberg.md"
+        }
+      ],
+      "filePath": "/_projects/data-viz/hikes/geojson/muenchen_starnberg.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.5569426, 48.1407253],
+        [11.3593591, 47.9957521],
+        [11.3438675, 47.9959377]
+      ],
+      "draft": false
+    },
+    "description": "Hike from München to Starnberg via Forstenrieder Park.",
+    "route": "/projects/data-viz/hikes/muenchen_starnberg",
+    "height": 1280,
+    "standardFeatures": {
+      "origin": {
+        "lat": 48.06832937569165,
+        "lon": 11.463575699809981
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "muenchen_starnberg.json#/features/0"
       }],
       "geometrySource": "https://maps.openrouteservice.org/",
       "statistics": true

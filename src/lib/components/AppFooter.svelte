@@ -17,7 +17,8 @@ import {
 	MastodonSolid,
 	OrcidSolid,
 	ResearchGateSolid,
-	TelegramSolid
+	TelegramSolid,
+	StravaSolid
 } from '$lib/icons';
 import { type ClassNameValue, twMerge } from 'tailwind-merge';
 
@@ -77,6 +78,9 @@ let showSocials = $derived(shouldShowSocials !== undefined ? (shouldShowSocials 
 				</FooterIcon>
 				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'BeReal')?.url} class="ms-6 mt-4 md:mt-0">
 					<BeRealSolid ariaLabel="bereal" />
+				</FooterIcon>
+				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'Strava')?.url} class="ms-6 mt-4 md:mt-0">
+					<StravaSolid ariaLabel="strava" />
 				</FooterIcon>
 			</div>
 		{/if}

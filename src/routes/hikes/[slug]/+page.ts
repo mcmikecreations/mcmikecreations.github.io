@@ -117,6 +117,7 @@ export const load: PageLoad = async ({ fetch, params }) => {
 					date: dateStr,
 					tags: date.tags,
 					author: date.author ?? resume.basics.name,
+					anchor: slug
 				},
 				map: hike,
 				display: {

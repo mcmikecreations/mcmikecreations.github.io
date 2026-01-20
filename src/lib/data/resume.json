@@ -83,6 +83,11 @@
         "network": "BeReal",
         "username": "mykolamor",
         "url": "https://bere.al/mykolamor"
+      },
+      {
+        "network": "Strava",
+        "username": "mykolamor",
+        "url": "https://www.strava.com/athletes/mykolamor"
       }
     ]
   },

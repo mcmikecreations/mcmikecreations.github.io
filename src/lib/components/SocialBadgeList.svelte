@@ -9,6 +9,7 @@ import SocialBadge from '$lib/components/SocialBadge.svelte';
 		MastodonSolid,
 		OrcidSolid,
 		ResearchGateSolid,
+		StravaSolid,
 		TelegramSolid
 	} from '$lib/icons';
 
@@ -43,3 +44,4 @@ import SocialBadge from '$lib/components/SocialBadge.svelte';
 <SocialBadge profile="X" {size} {padding} {pill} {outline} {plain}><XSolid aria-hidden="true" /></SocialBadge>
 <SocialBadge profile="BlueSky" {size} {padding} {pill} {outline} {plain}><BlueSkySolid aria-hidden="true" /></SocialBadge>
 <SocialBadge profile="BeReal" {size} {padding} {pill} {outline} {plain}><BeRealSolid aria-hidden="true" /></SocialBadge>
+<SocialBadge profile="Strava" {size} {padding} {pill} {outline} {plain}><StravaSolid aria-hidden="true" /></SocialBadge>

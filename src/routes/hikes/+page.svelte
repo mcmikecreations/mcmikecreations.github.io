@@ -111,7 +111,7 @@
     <div class="mx-4 2xl:mx-0 md:px-24 mb-8">
         <Heading tag="h2">Projects</Heading>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-8">
-            <ShowcaseCard x={2} y={1} class="lg:col-span-2" href="/projects/data-viz/hikes/all/" img="/images/hikes/hero/web.jpg">
+            <ShowcaseCard x={2} y={1} class="lg:col-span-2" href="/hikes/web/" img="/images/hikes/hero/web.jpg">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pb-4">
                     Hiking Web
                 </h5>
@@ -161,6 +161,7 @@
 					bg-white dark:bg-gray-800
  					text-gray-500 dark:text-gray-400"
 							href={p.url}
+							id={p.anchor}
 						>
 							<div class="block md:max-h-48 md:min-h-48 md:min-w-64 !aspect-crt overflow-hidden">
 								{#if p.image}
@@ -174,7 +175,7 @@
 									<DateBadge date={p.date} dateEnd={undefined} />
 									<div class="flex-grow flex flex-row justify-end gap-2" aria-details="tags">
 										<span aria-label="tags" class="sr-only"></span>
-										{#if data.showPeople}
+										{#if data.showPeople && p.people}
 											{#each p.people as t}
 												<Badge rounded>
 													<UserSolid class="me-1.5 size-2.5" />

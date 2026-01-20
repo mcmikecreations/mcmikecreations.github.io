@@ -6,6 +6,7 @@ import GoogleScholarSolid from '$lib/icons/GoogleScholarSolid.svelte';
 import ResearchGateSolid from '$lib/icons/ResearchGateSolid.svelte';
 import BlueSkySolid from '$lib/icons/BlueSkySolid.svelte';
 import BeRealSolid from '$lib/icons/BeRealSolid.svelte';
+import StravaSolid from '$lib/icons/StravaSolid.svelte';
 
 export {
 	InstagramSolid,
@@ -15,5 +16,6 @@ export {
 	GoogleScholarSolid,
 	ResearchGateSolid,
 	BlueSkySolid,
-	BeRealSolid
+	BeRealSolid,
+	StravaSolid
 };
