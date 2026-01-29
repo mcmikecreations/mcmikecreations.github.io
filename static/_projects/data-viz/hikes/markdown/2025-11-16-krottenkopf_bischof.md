@@ -1,5 +1,6 @@
-I had Krottenkopf (2086 m) on my list of future hikes for quite some time, at
-least since August 2024. Scrolling through the list on Thursday evening, I
+I had Krottenkopf (2086 m) on my list of future hikes for quite some time,
+ever since my hike to [Aiplspitz (1759 m)](/404/). Scrolling through the list
+on Thursday evening, I
 stopped at [Pyramidenspitze (1997 m)](/hikes/2025-02-02-pyramidenspitze/)
 and Vordere Kesselschneid (2002 m), [Soiernspitze (2253 m)](/404/) over
 Signalkopf (1895 m), and Krottenkopf (2086 m) via Bischof (2033 m). The latter

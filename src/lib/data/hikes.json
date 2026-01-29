@@ -3549,12 +3549,12 @@
       "dates": [
         {
           "date": "2025-01-26",
-          "title": null,
-          "description": null,
+          "title": "Großer Traithen Ridge in Winter",
+          "description": "Crossing the ridge of the highest mountain in the Rosenheim district.",
           "tags": [],
-          "people": [],
+          "people": ["Mikuláš Netík", "Maksym Honcharko"],
           "image": null,
-          "path": null
+          "path": "/_projects/data-viz/hikes/markdown/2025-01-26-grosser_traithen.md"
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/grosser_traithen.json",
