@@ -4180,7 +4180,7 @@
     },
     "description": "Hike from Oberammergau and back via Schartenkopf (1636 m) Laber Hauptgipfel (1686 m).",
     "route": "/projects/data-viz/hikes/laber_hauptgipfel",
-    "height": 384,
+    "height": 512,
     "standardFeatures": {
       "origin": {
         "lat": 47.59180955803043,
@@ -4586,7 +4586,7 @@
     },
     "description": "Hike from Moosburg an der Isar to Freising.",
     "route": "/projects/data-viz/hikes/moosburg_freising",
-    "height": 1024,
+    "height": 1280,
     "standardFeatures": {
       "origin": {
         "lat": 48.430681299655106,
@@ -4953,7 +4953,7 @@
     },
     "description": "Hike from Kochelsee to Walchensee via Laimbachfall, Sonnenspitz (1259 m), and Jochberg (1565 m).",
     "route": "/projects/data-viz/hikes/lainbachfall_jochberg",
-    "height": 256,
+    "height": 512,
     "standardFeatures": {
       "origin": {
         "lat": 47.64237650648966,
@@ -5106,7 +5106,7 @@
     },
     "description": "Hike from Neuhaus to Spitzingsee via Rainerkopf (1463 m).",
     "route": "/projects/data-viz/hikes/rainerkopf",
-    "height": 384,
+    "height": 512,
     "standardFeatures": {
       "origin": {
         "lat": 47.68313000437364,
@@ -5326,7 +5326,7 @@
     },
     "description": "Hike from Kiefersfelden to Bayrischzell via Trainsjoch (1707 m) and Nesselberg (1363 m).",
     "route": "/projects/data-viz/hikes/trainsjoch",
-    "height": 1024,
+    "height": 1280,
     "standardFeatures": {
       "origin": {
         "lat": 47.64434265359565,
@@ -5492,6 +5492,56 @@
         "provider": "hikes/geojson",
         "modes": [ "2d", "3d" ],
         "path": "muenchen_starnberg.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Bolsterlanger Horn",
+    "image": "/images/projects/data-viz/hikes/bolsterlanger_horn_only.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": [
+        {
+          "date": "2026-01-25",
+          "title": "A Very Social Hike to Bolsterlanger Horn",
+          "description": "Scouting out the ridges around Fischen im Allgäu.",
+          "tags": ["Wandern für glückliche Menschen"],
+          "people": ["Natalia Kushch"],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2026-01-25-bolsterlanger_horn_only.md"
+        }
+      ],
+      "filePath": "/_projects/data-viz/hikes/geojson/bolsterlanger_horn_only.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [10.2717254, 47.4559694],
+        [10.2333699, 47.4602479],
+        [10.2130720, 47.4619005],
+        [10.2037106, 47.4616310],
+        [10.2083300, 47.4592700]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Bolsterlang and back via Bolsterlanger Horn (1586 m).",
+    "route": "/projects/data-viz/hikes/bolsterlanger_horn_only",
+    "height": 512,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.45902720869878,
+        "lon": 10.238142013549806
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "bolsterlanger_horn_only.json#/features/0"
       }],
       "geometrySource": "https://maps.openrouteservice.org/",
       "statistics": true

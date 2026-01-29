@@ -22,10 +22,15 @@ const verifyFolder = async (path) => {
 }
 
 const downloadFile = async (address, fileName, requestInit = undefined) => {
+	const destination = resolve(mapFolder, fileName);
+	if (existsSync(destination)) return 0;
 	//console.log(`Downloading ${address}`);
 	const response = await fetch(address, requestInit);
-	const destination = resolve(mapFolder, fileName);
 	const buffer = Buffer.from(await response.arrayBuffer());
+	if (!response.ok || buffer.length < 1024) {
+		console.error(`Failed to download ${address}: ${response.status} ${response.statusText}`);
+		return 0;
+	}
 	await writeFile(destination, buffer);
 
 	return buffer.length;
@@ -77,7 +82,7 @@ async function downloadMeta(meta) {
 	await verifyFolder(resolve(mapFolder, `${providers.mapyOutdoor.tileset}/`));
 
 	// eslint-disable-next-line @typescript-eslint/no-unused-vars
-	tiles.map(async ([x, y, z], i, {translate: [tx, ty], scale: k}) => {
+	for (const [x, y, z] of tiles) {
 		//console.log(`Downloading ${z}/${x}/${y}`);
 		await downloadFile(
 			providers.mapboxDEM.url(x, y, z, `sku=${skuMapboxDEM}&access_token=${tokenMapboxDEM}`),
@@ -126,5 +131,5 @@ async function downloadMeta(meta) {
 				referrer: providers.mapyOutdoor.origin,
 			}
 		);
-	});
+	}
 }
