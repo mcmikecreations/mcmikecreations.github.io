@@ -37,7 +37,7 @@
 		</p>
 		<div class="w-full flex justify-center">
 			<div id="widget-example" class="w-full lg:w-1/2">
-				<script src="https://mcmikecreations.github.io/tum_info/assets/js/course-widget.js" data-course="IN2386" data-semester="23WS" data-container-query="#widget-example"></script>
+				<script src="https://mykolamor.github.io/tum_info/assets/js/course-widget.js" data-course="IN2386" data-semester="23WS" data-container-query="#widget-example"></script>
 			</div>
 		</div>
 		<p>

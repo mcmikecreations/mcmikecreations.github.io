@@ -206,7 +206,7 @@
 			<A href="/hikes/atom.xml" data-sveltekit-reload><FeedSolid ariaLabel="Atom Feed" class="me-1" /> Atom Feed</A>
 		</div>
 		<div>
-			<A href="https://raw.githubusercontent.com/mcmikecreations/mcmikecreations.github.io/refs/heads/feature/svelte-update/src/lib/data/hikes.json"><FileCodeSolid ariaLabel="Json Feed" class="me-1" /> Json Feed</A>
+			<A href="https://raw.githubusercontent.com/mykolamor/mcmikecreations.github.io/refs/heads/feature/svelte-update/src/lib/data/hikes.json"><FileCodeSolid ariaLabel="Json Feed" class="me-1" /> Json Feed</A>
 		</div>
 	</div>
 </section>

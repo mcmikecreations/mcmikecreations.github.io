@@ -3499,12 +3499,12 @@
       "dates": [
         {
           "date": "2025-01-19",
-          "title": null,
-          "description": null,
+          "title": "Slipping Down Soiernspitze",
+          "description": "A no equipment hike with some men left behind.",
           "tags": [],
-          "people": [],
+          "people": ["Mikuláš Netík"],
           "image": null,
-          "path": null
+          "path": "/_projects/data-viz/hikes/markdown/2025-01-19-soiernspitze.md"
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/soiernspitze.json",

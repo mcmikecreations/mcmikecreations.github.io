@@ -121,7 +121,7 @@ to make different variants of code highlighting and images for both themes.
 For block code segments, which I highlighted through [highlight.js](https://highlightjs.org/),
 I wrote an observer which subscribed to `body` attribute changes and looked for
 the dark theme class. Then, the observer swapped a style include to a different
-path. The code can found on [GitHub](https://github.com/mcmikecreations/mcmikecreations.github.io/blob/a0e59cbf3ffa5ef7db229e896d98fbcba1b011b1/src/lib/renderers/DarkModeLinker.svelte).
+path. The code can found on [GitHub](https://github.com/mykolamor/mcmikecreations.github.io/blob/a0e59cbf3ffa5ef7db229e896d98fbcba1b011b1/src/lib/renderers/DarkModeLinker.svelte).
 
 For images, on the other hand, the process wasn't as intuitive. I didn't want
 to have more observers and was looking for a css-only solution. Because
