@@ -56,6 +56,8 @@ body and make the best decision for ourselves.
 We climbed a bit higher, but after some consideration, Felix decided to turn
 back and walk down to Vereiner Alm and travel back home. Mikuláš told me to
 keep going if I felt up to it, while he would bring Felix down safely first.
+I managed to slip and hurt my arm pretty badly on a rock, but I was determined
+to keep going.
 
 ![The climb to the Soiernspitze (2253 m) peak](/images/projects/data-viz/hikes/stories/soiernspitze/2025-01-19-06.jpg)
 
@@ -140,3 +142,5 @@ the ridge "trail" is not marked as closed in winter, the conditions are just
 too dangerous without a full set of alpine gear and experience. Repeating this
 trip in summer would be much more enjoyable and safer, allowing for a full
 exploration of the ridge between Soiernspitze (2253 m) and Signalkopf (1895 m).
+
+![My injured arm](/images/projects/data-viz/hikes/stories/soiernspitze/2025-01-19-16.jpg)

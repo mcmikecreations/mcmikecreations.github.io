@@ -5547,5 +5547,54 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Sonnenberg",
+    "image": "/images/projects/data-viz/hikes/sonnenberg.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": [
+        {
+          "date": "2026-02-15",
+          "title": "Falling from Sonnenberg",
+          "description": "A free fall from a cliff keeps a doctor scared and stiff.",
+          "tags": [],
+          "people": [],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2026-02-15-sonnenberg.md"
+        }
+      ],
+      "filePath": "/_projects/data-viz/hikes/geojson/sonnenberg.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.0563870, 47.5999017],
+        [11.0267772, 47.5840874],
+        [11.0163060, 47.5841989],
+        [10.9924142, 47.5835506]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Oberammergau to Unterammergau via Zahn (1483 m) and Sonnenberg (1622 m).",
+    "route": "/projects/data-viz/hikes/sonnenberg",
+    "height": 1280,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.59079656251042,
+        "lon": 11.02954387664795
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "sonnenberg.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
