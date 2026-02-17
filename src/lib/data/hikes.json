@@ -3447,12 +3447,12 @@
       "dates": [
         {
           "date": "2024-12-14",
-          "title": null,
-          "description": null,
-          "tags": [],
+          "title": "Sleds and Views at Spitzingsee",
+          "description": "Racing downhill from Firstalm to the lake.",
+          "tags": ["DAAD FK"],
           "people": [],
           "image": null,
-          "path": null
+          "path": "/_projects/data-viz/hikes/markdown/2024-12-14-spitzingsee_schlittenfahrt.md"
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/spitzingsee_schlittenfahrt.json",
