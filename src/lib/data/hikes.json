@@ -3396,12 +3396,12 @@
       "dates": [
         {
           "date": "2024-11-17",
-          "title": null,
-          "description": null,
-          "tags": [],
-          "people": [],
+          "title": "Taking Newbies to Hirschberg",
+          "description": "Exploring a new mountain with a fresh group.",
+          "tags": ["DAAD FK"],
+          "people": ["Mikuláš Netík"],
           "image": null,
-          "path": null
+          "path": "/_projects/data-viz/hikes/markdown/2024-11-17-hirschberg.md"
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/hirschberg.json",
@@ -3450,7 +3450,7 @@
           "title": "Sleds and Views at Spitzingsee",
           "description": "Racing downhill from Firstalm to the lake.",
           "tags": ["DAAD FK"],
-          "people": [],
+          "people": ["Mikuláš Netík"],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2024-12-14-spitzingsee_schlittenfahrt.md"
         }
@@ -5591,6 +5591,110 @@
         "provider": "hikes/geojson",
         "modes": [ "2d", "3d" ],
         "path": "sonnenberg.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Hoher Kalmberg",
+    "image": "/images/projects/data-viz/hikes/hoher_kalmberg.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": [
+        {
+          "date": "2026-03-06",
+          "title": "First Hike Near Linz",
+          "description": "Taking Pavlo for a tour near Hallstätter See.",
+          "tags": [],
+          "people": ["Pavlo Pustelnyk"],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2026-03-06-hoher_kalmberg.md"
+        }
+      ],
+      "filePath": "/_projects/data-viz/hikes/geojson/hoher_kalmberg.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [13.5401183, 47.5869637],
+        [13.5615707, 47.6208792],
+        [13.5675514, 47.6124692],
+        [13.5615707, 47.6208792],
+        [13.6131441, 47.6396874]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Gosau to Bad Goisern via Hoher Kalmberg (1833 m).",
+    "route": "/projects/data-viz/hikes/hoher_kalmberg",
+    "height": 684,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.61761985489538,
+        "lon": 13.583049774169924
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "hoher_kalmberg.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Geißwand",
+    "image": "/images/projects/data-viz/hikes/geisswand.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": [
+        {
+          "date": "2026-03-07",
+          "title": "Relaxing Spring Views at Traunsee",
+          "description": "Letting Pavlo recover on a nice walk.",
+          "tags": [],
+          "people": ["Pavlo Pustelnyk"],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2026-03-07-geisswand.md"
+        }
+      ],
+      "filePath": "/_projects/data-viz/hikes/geojson/geisswand.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [13.7871447, 47.8427673],
+        [13.7761018, 47.8446972],
+        [13.7776313, 47.8416273],
+        [13.7767660, 47.8426523],
+        [13.7776313, 47.8416273],
+        [13.7771705, 47.8408670],
+        [13.7776313, 47.8416273],
+        [13.7761018, 47.8446972],
+        [13.7771341, 47.8552628]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Traunkirchen Ort to Traunkirchen via Baalstein (800 m) and Geißwand (872 m).",
+    "route": "/projects/data-viz/hikes/geisswand",
+    "height": 384,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.84859079803738,
+        "lon": 13.779730796813965
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "geisswand.json#/features/0"
       }],
       "geometrySource": "https://maps.openrouteservice.org/",
       "statistics": true
