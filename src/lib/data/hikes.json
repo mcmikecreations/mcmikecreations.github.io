@@ -5700,5 +5700,64 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Bichl to Blomberg",
+    "image": "/images/projects/data-viz/hikes/bichl_blomberg.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": [
+        {
+          "date": "2026-03-16",
+          "title": "All Peaks from Bichl to Bad Tölz",
+          "description": "Checking off all easy hikes in the area at once.",
+          "tags": ["Web"],
+          "people": [],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2026-03-16-bichl_blomberg.md"
+        }
+      ],
+      "filePath": "/_projects/data-viz/hikes/geojson/bichl_blomberg.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.4087090, 47.7238031],
+        [11.4448587, 47.7194665],
+        [11.4602762, 47.7273048],
+        [11.4645391, 47.7184900],
+        [11.4674014, 47.7224724],
+        [11.4816115, 47.7246598],
+        [11.4786369, 47.7337525],
+        [11.4816115, 47.7246598],
+        [11.4884518, 47.7235737],
+        [11.5133539, 47.7277050],
+        [11.5072874, 47.7335365],
+        [11.4977402, 47.7351746],
+        [11.5156952, 47.7475633],
+        [11.5735926, 47.7603672]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Traunkirchen Ort to Traunkirchen via Baalstein (800 m) and Geißwand (872 m).",
+    "route": "/projects/data-viz/hikes/bichl_blomberg",
+    "height": 768,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.74105497889003,
+        "lon": 11.494789123535158
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "bichl_blomberg.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
