@@ -5711,13 +5711,13 @@
       "descent": null,
       "dates": [
         {
-          "date": "2026-03-16",
+          "date": "2026-03-15",
           "title": "All Peaks from Bichl to Bad Tölz",
           "description": "Checking off all easy hikes in the area at once.",
           "tags": ["Web"],
           "people": [],
           "image": null,
-          "path": "/_projects/data-viz/hikes/markdown/2026-03-16-bichl_blomberg.md"
+          "path": "/_projects/data-viz/hikes/markdown/2026-03-15-bichl_blomberg.md"
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/bichl_blomberg.json",
@@ -5740,9 +5740,9 @@
       ],
       "draft": false
     },
-    "description": "Hike from Traunkirchen Ort to Traunkirchen via Baalstein (800 m) and Geißwand (872 m).",
+    "description": "Hike from Bichl to Bad Tölz via Hollerkopf (932 m), Enzenauer Kopf (1205 m), Fahrtkopf (1203 m), Angerlkopf (1249 m), Stallauer Kopf (1322 m), Stallauer Eck (1213 m), Zwiesel (1348 m), Heigelkopf (1218 m), and Blomberg (1237/1203/1248 m).",
     "route": "/projects/data-viz/hikes/bichl_blomberg",
-    "height": 768,
+    "height": 896,
     "standardFeatures": {
       "origin": {
         "lat": 47.74105497889003,
