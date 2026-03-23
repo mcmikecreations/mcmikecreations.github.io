@@ -14,21 +14,21 @@ I don't know why the name didn't tip me off, and I didn't realize that
 Sonnenberggrat was a via ferrata route. The navigation app said the route takes
 4 hours, so I got decent sleep and set off in the morning.
 
-![River Ammer](/images/projects/data-viz/hikes/stories/sonnenberg/2026-02-15-00.jpg)
+![River Ammer](/images/projects/data-viz/hikes/stories/oberammergau_sonnenberg/2026-02-15-00.jpg)
 
 The start of the hike was very chill, walking through Oberammergau and the
 surrounding slopes, where parents were dragging sleds with their kids uphill.
 I can across Kreuzigungsgruppe Oberammergau, and headed further up.
 
-![View from the monument](/images/projects/data-viz/hikes/stories/sonnenberg/2026-02-15-01.jpg)
-![Kreuzigungsgruppe Oberammergau](/images/projects/data-viz/hikes/stories/sonnenberg/2026-02-15-02.jpg)
+![View from the monument](/images/projects/data-viz/hikes/stories/oberammergau_sonnenberg/2026-02-15-01.jpg)
+![Kreuzigungsgruppe Oberammergau](/images/projects/data-viz/hikes/stories/oberammergau_sonnenberg/2026-02-15-02.jpg)
 
 The whole area up to Kolbenalm was very lively, with teens practicing their
 snowboarding skills along the road, and families enjoying the snow. I was
 surprised to see so many people out in the cold weather, but it was nice to see
 everyone having fun.
 
-![Kolbenalm](/images/projects/data-viz/hikes/stories/sonnenberg/2026-02-15-03.jpg)
+![Kolbenalm](/images/projects/data-viz/hikes/stories/oberammergau_sonnenberg/2026-02-15-03.jpg)
 
 The tracks in the snow continued on from Kolbenalm, and I followed them for as
 long as I could. The path was very accessible, with some ski tour groups going
@@ -36,16 +36,16 @@ up to Kolbensattelhütte (1276 m) and back down. I was already expecting the
 tracks to end there, since I had to turn off the main path, but I was surprised
 to see that they continued on the way up the ridge.
 
-![Frozen weeds on the way up](/images/projects/data-viz/hikes/stories/sonnenberg/2026-02-15-04.jpg)
-![Outdoor shelter crossing Königssteig](/images/projects/data-viz/hikes/stories/sonnenberg/2026-02-15-05.jpg)
+![Frozen weeds on the way up](/images/projects/data-viz/hikes/stories/oberammergau_sonnenberg/2026-02-15-04.jpg)
+![Outdoor shelter crossing Königssteig](/images/projects/data-viz/hikes/stories/oberammergau_sonnenberg/2026-02-15-05.jpg)
 
 The tracks in the snow from an old ski tour remained, so I continued following
 them further. The hill was already getting steeper, but for some reason, this
 didn't raise any red flags for me. I was making steady progress roughly going
 on the trail, and that's what mattered.
 
-![Crossroads near Königssteig](/images/projects/data-viz/hikes/stories/sonnenberg/2026-02-15-06.jpg)
-![The way up](/images/projects/data-viz/hikes/stories/sonnenberg/2026-02-15-07.jpg)
+![Crossroads near Königssteig](/images/projects/data-viz/hikes/stories/oberammergau_sonnenberg/2026-02-15-06.jpg)
+![The way up](/images/projects/data-viz/hikes/stories/oberammergau_sonnenberg/2026-02-15-07.jpg)
 
 The path was getting steeper and more difficult, but he snow still wasn't too
 deep. I assumed that this trend will continue, so I kept going. At some point,
@@ -53,31 +53,31 @@ a thick cloud approached the mountainside, and the visibility dropped to a few
 meters. I was still managing to follow the ski tracks, so I wasn't too worried
 about it.
 
-![The trail getting steeper](/images/projects/data-viz/hikes/stories/sonnenberg/2026-02-15-08.jpg)
-![A ski tour hiker in the cloud](/images/projects/data-viz/hikes/stories/sonnenberg/2026-02-15-09.jpg)
+![The trail getting steeper](/images/projects/data-viz/hikes/stories/oberammergau_sonnenberg/2026-02-15-08.jpg)
+![A ski tour hiker in the cloud](/images/projects/data-viz/hikes/stories/oberammergau_sonnenberg/2026-02-15-09.jpg)
 
 I saw a ski tour hiker changing his equipment on the way from the top of
 Zahn (1615 m), which meant two things. First, I was on the right path, and the
 top was close. Second, the person making the trail is turning back, which meant
 that the conditions along the ridge would get much worse.
 
-![Walking by a treetop covered in snow](/images/projects/data-viz/hikes/stories/sonnenberg/2026-02-15-10.jpg)
-![The slope near Zahn (1615 m)](/images/projects/data-viz/hikes/stories/sonnenberg/2026-02-15-12.jpg)
+![Walking by a treetop covered in snow](/images/projects/data-viz/hikes/stories/oberammergau_sonnenberg/2026-02-15-10.jpg)
+![The slope near Zahn (1615 m)](/images/projects/data-viz/hikes/stories/oberammergau_sonnenberg/2026-02-15-12.jpg)
 
 I followed the zig-zag ski path up the ridge, eventually reaching what was
 meant to be the top of the mountain. I was surrounded by bare rocks on both
 sides, and it wasn't clear what counted as the peak, but the map says I
 visited it.
 
-![The supposed peak of Zahn (1615 m)](/images/projects/data-viz/hikes/stories/sonnenberg/2026-02-15-13.jpg)
-![The fence blocking the way down from Zahn (1615 m)](/images/projects/data-viz/hikes/stories/sonnenberg/2026-02-15-14.jpg)
+![The supposed peak of Zahn (1615 m)](/images/projects/data-viz/hikes/stories/oberammergau_sonnenberg/2026-02-15-13.jpg)
+![The fence blocking the way down from Zahn (1615 m)](/images/projects/data-viz/hikes/stories/oberammergau_sonnenberg/2026-02-15-14.jpg)
 
 I checked the map and saw that there's an extra path westwards cutting a
 portion of Sonnenberggrat, which was the route I planned to take. The snow in
 the area was already waist-deep, and I was already getting tired, so I went for
 it. What could go wrong, right?
 
-![The way down over the fence](/images/projects/data-viz/hikes/stories/sonnenberg/2026-02-15-15.jpg)
+![The way down over the fence](/images/projects/data-viz/hikes/stories/oberammergau_sonnenberg/2026-02-15-15.jpg)
 
 The slope was very steep, but with the deep snow, I was hoping to get a better
 grip and descend safely. I tried staying closer to the tree tops peaking from
@@ -85,7 +85,7 @@ the snow, which provided some support. When I descended to the main pathway,
 I saw the familiar ski tracks, which meant someone continued along the ridge,
 so I followed them.
 
-![The view from Sonnenberggrat](/images/projects/data-viz/hikes/stories/sonnenberg/2026-02-15-16.jpg)
+![The view from Sonnenberggrat](/images/projects/data-viz/hikes/stories/oberammergau_sonnenberg/2026-02-15-16.jpg)
 
 The tracks didn't help much at this point. The snow was deep and not packed at
 all, so I kept sinking with every step. Around halfway to Sonnenberg (1622 m),
@@ -94,7 +94,7 @@ hike to go to waste, plus I had Stanislav waiting for me at the hut. I messaged
 him just in case, but he didn't have any coverage as always, so I had to keep
 going.
 
-![The peak of Sonnenberg (1622 m)](/images/projects/data-viz/hikes/stories/sonnenberg/2026-02-15-17.jpg)
+![The peak of Sonnenberg (1622 m)](/images/projects/data-viz/hikes/stories/oberammergau_sonnenberg/2026-02-15-17.jpg)
 
 Eventually, I reached the crossroads going to the peak of Sonnenberg (1622 m).
 There was so much snow, that it was practically up to my neck. The trail up
@@ -102,7 +102,7 @@ is steep even in summer, but with the deep snow on the northern side of the
 mountain, it was very hard to get a grip. Staying close to the rocks, I managed
 to reach the top and send another message to Stanislav.
 
-![The steep slope I fell from near Sonnenberg (1622 m)](/images/projects/data-viz/hikes/stories/sonnenberg/2026-02-15-18.jpg)
+![The steep slope I fell from near Sonnenberg (1622 m)](/images/projects/data-viz/hikes/stories/oberammergau_sonnenberg/2026-02-15-18.jpg)
 
 As I returned to the crossroads and started the way further to the hut, I
 realized there is no way to reach the hut at a reasonable time. The snow was so
@@ -129,7 +129,7 @@ panicking, because I had no idea how long it would take to get down, and I was
 afraid of freezing. I was trying to stay calm and take it one step at a time,
 approaching Kofelsteig and heading in the direction of Pürschlingweg.
 
-![The view in the wilderness near Sonnenberg (1622 m)](/images/projects/data-viz/hikes/stories/sonnenberg/2026-02-15-19.jpg)
+![The view in the wilderness near Sonnenberg (1622 m)](/images/projects/data-viz/hikes/stories/oberammergau_sonnenberg/2026-02-15-19.jpg)
 
 I started to feel numbness in my hands and feet, so I wasn't checking my map
 anymore, but I knew I was getting closer to the main road. At some point, the
@@ -137,7 +137,7 @@ slope became completely inaccessible because of boulders and cliffs, so I
 decided to bite the bullet and head down to Kofelsteig. To my surprise, I came
 down directly to Kofelsteig merging into Pürschlingweg, so I made it!
 
-![Looking at August-Schuster-Haus from Pürschlingweg](/images/projects/data-viz/hikes/stories/sonnenberg/2026-02-15-20.jpg)
+![Looking at August-Schuster-Haus from Pürschlingweg](/images/projects/data-viz/hikes/stories/oberammergau_sonnenberg/2026-02-15-20.jpg)
 
 I was so relieved to be back on a marked trail, and I could finally relax a
 bit. I was immediately greeted by a group of hikers sliding down on sleds,
@@ -158,7 +158,7 @@ again at the bottom. I was planning to hike down myself, not realizing I was
 already suffering from hypothermia, but my gut feeling told me to accept the
 help.
 
-![Riding a snowmobile down](/images/projects/data-viz/hikes/stories/sonnenberg/2026-02-15-21.jpg)
+![Riding a snowmobile down](/images/projects/data-viz/hikes/stories/oberammergau_sonnenberg/2026-02-15-21.jpg)
 
 They drove me down in their snowmobile, which was a really cool first
 experience, and even took me by car to the Unterammergau train station.
@@ -166,7 +166,7 @@ Although I couldn't formulate a proper goodbye, I thanked them as I could and
 found Stanislav on the train station, who was surprised to see me in such a
 state. I explained what happened, and we went home.
 
-![A tiny glimpse into my scratches and bruises](/images/projects/data-viz/hikes/stories/sonnenberg/2026-02-15-22.jpg)
+![A tiny glimpse into my scratches and bruises](/images/projects/data-viz/hikes/stories/oberammergau_sonnenberg/2026-02-15-22.jpg)
 
 Now, would I recommend this hike to anyone? Definitely not in winter. But even
 in summer, the trail is quite steep and sketchy, with big drops downhill, so

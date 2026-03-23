@@ -5549,8 +5549,8 @@
     "features": null
   },
   {
-    "name": "Sonnenberg",
-    "image": "/images/projects/data-viz/hikes/sonnenberg.jpg",
+    "name": "Oberammergau to Sonnenberg",
+    "image": "/images/projects/data-viz/hikes/oberammergau_sonnenberg.jpg",
     "properties": {
       "distance": null,
       "duration": null,
@@ -5564,22 +5564,23 @@
           "tags": [],
           "people": [],
           "image": null,
-          "path": "/_projects/data-viz/hikes/markdown/2026-02-15-sonnenberg.md"
+          "path": "/_projects/data-viz/hikes/markdown/2026-02-15-oberammergau_sonnenberg.md"
         }
       ],
-      "filePath": "/_projects/data-viz/hikes/geojson/sonnenberg.json",
+      "filePath": "/_projects/data-viz/hikes/geojson/oberammergau_sonnenberg.json",
       "fileType": "GeoJSON",
       "checkpoints": [
         [11.0563870, 47.5999017],
         [11.0267772, 47.5840874],
         [11.0163060, 47.5841989],
+        [11.0058173, 47.5859025],
         [10.9924142, 47.5835506]
       ],
       "draft": false
     },
     "description": "Hike from Oberammergau to Unterammergau via Zahn (1483 m) and Sonnenberg (1622 m).",
-    "route": "/projects/data-viz/hikes/sonnenberg",
-    "height": 1280,
+    "route": "/projects/data-viz/hikes/oberammergau_sonnenberg",
+    "height": 512,
     "standardFeatures": {
       "origin": {
         "lat": 47.59079656251042,
@@ -5590,7 +5591,7 @@
       "geometry": [{
         "provider": "hikes/geojson",
         "modes": [ "2d", "3d" ],
-        "path": "sonnenberg.json#/features/0"
+        "path": "oberammergau_sonnenberg.json#/features/0"
       }],
       "geometrySource": "https://maps.openrouteservice.org/",
       "statistics": true
@@ -5754,6 +5755,56 @@
         "provider": "hikes/geojson",
         "modes": [ "2d", "3d" ],
         "path": "bichl_blomberg.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Unterammergau to Sonnenberg",
+    "image": "/images/projects/data-viz/hikes/unterammergau_sonnenberg.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": [
+        {
+          "date": "2026-03-22",
+          "title": "Retrieving a Hiking Stick at Sonnenberg",
+          "description": "Going back to the place I failed to take back what's mine.",
+          "tags": [],
+          "people": ["Stanislav Kidalau"],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2026-03-22-unterammergau_sonnenberg.md"
+        }
+      ],
+      "filePath": "/_projects/data-viz/hikes/geojson/unterammergau_sonnenberg.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.0304230, 47.6172496],
+        [11.0155039, 47.6048137],
+        [11.0058173, 47.5859025],
+        [10.9924142, 47.5835506],
+        [11.0163060, 47.5841989]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Unterammergau and back via Sonnenberg (1622 m).",
+    "route": "/projects/data-viz/hikes/unterammergau_sonnenberg",
+    "height": 512,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.60315376826435,
+        "lon": 11.012842388860308
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "unterammergau_sonnenberg.json#/features/0"
       }],
       "geometrySource": "https://maps.openrouteservice.org/",
       "statistics": true
