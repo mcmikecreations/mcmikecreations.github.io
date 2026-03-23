@@ -11,9 +11,11 @@ import { MeshLineMaterial } from '$lib/hikes/meshline/MeshLineMaterial';
 class ThreePathContext {
 	paths: THREE.Path[];
 	currentPath?: THREE.Path;
+	bounds?: { x: number, y: number, width: number, height: number };
 
-	constructor() {
+	constructor(bounds?: { x: number, y: number, width: number, height: number }) {
 		this.paths = [];
+		this.bounds = bounds;
 	}
 
 	initPath() {
@@ -38,10 +40,28 @@ class ThreePathContext {
 
 	lineTo(x: number, y: number): void {
 		this.initPath();
+		if (this.currentPath?.currentPoint && this.bounds) {
+			const p = this.currentPath.currentPoint;
+			const eps = 1e-9;
+			const isVertical = Math.abs(x - p.x) < eps;
+			const isHorizontal = Math.abs(y - p.y) < eps;
+			const onLeft = Math.abs(x - this.bounds.x) < eps;
+			const onRight = Math.abs(x - (this.bounds.x + this.bounds.width)) < eps;
+			const onTop = Math.abs(y - this.bounds.y) < eps;
+			const onBottom = Math.abs(y - (this.bounds.y + this.bounds.height)) < eps;
+
+			if ((isVertical && (onLeft || onRight)) || (isHorizontal && (onTop || onBottom))) {
+				this.moveTo(x, y);
+				return;
+			}
+		}
 		this.currentPath?.lineTo(x, y);
 	}
 
 	moveTo(x: number, y: number): void {
+		if (this.currentPath && this.currentPath.curves.length > 0) {
+			this.currentPath = undefined;
+		}
 		this.initPath();
 		this.currentPath?.moveTo(x, y);
 	}
@@ -133,7 +153,12 @@ export async function buildGeometry(
 				scale: tileScale
 			};
 			const group = new THREE.Group();
-			const context = new ThreePathContext();
+			const context = new ThreePathContext({
+				x: tileData.x,
+				y: tileData.y,
+				width: tileData.scale,
+				height: tileData.scale
+			});
 			const polyCoords = [
 				{ x: tileData.x, y: tileData.y },
 				{ x: tileData.x, y: tileData.y + tileData.scale },
