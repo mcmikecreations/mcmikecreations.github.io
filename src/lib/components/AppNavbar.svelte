@@ -3,7 +3,7 @@
     import DarkModeButton from "$lib/components/DarkModeButton.svelte";
     import { page } from '$app/state';
     import { twMerge } from "tailwind-merge";
-    import type {Snippet, SvelteComponent} from "svelte";
+    import type {Snippet} from "svelte";
 
     interface Props {
         shouldFixNavbar?: 'true' | 'false' | undefined;
@@ -17,10 +17,11 @@
 
     let { shouldFixNavbar = undefined, title, fillNarrow, class: propsClass, bgClass = bgClassDefault, bgClassUl = bgClass }: Props = $props();
     let fixedNavbar = $derived(shouldFixNavbar !== undefined ? (shouldFixNavbar === 'true') : (page.data.header?.fixedNavbar ?? false));
+    let fixedProps = 'w-full px-2 py-2.5 sm:px-4 fixed z-50 top-0';
     let activeUrl = $derived(page.url.pathname);
 </script>
 
-<Navbar class={twMerge(`${fillNarrow ? '' : bgClass} ${fixedNavbar ? 'fixed' : 'static'}`, propsClass)}>
+<Navbar class={twMerge(`${fillNarrow ? '' : bgClass} ${fixedNavbar ? fixedProps : 'static'}`, propsClass)}>
     <NavBrand href="/">
         {#if title}
             {@render title()}

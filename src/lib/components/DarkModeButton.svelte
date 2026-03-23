@@ -13,8 +13,8 @@
         btnClass = btnClassConst,
         size = 'md',
         ariaLabel = 'Dark mode',
-        lightIcon,
-        darkIcon,
+        lightIcon = undefined,
+        darkIcon = undefined,
         class: propsClass,
         ...other
     } = $props();

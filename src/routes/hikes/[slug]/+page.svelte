@@ -105,7 +105,7 @@
 			return L.tileLayer(`/${providerFolder}/maps/${provider.tileset}/{z}_{x}_{y}.${provider.format}`, {
 				maxZoom: 13,
 				minZoom: 13,
-				attribution: '<a href="https://www.mapbox.com/about/maps/" target="_blank" title="Mapbox" aria-label="Mapbox">© Mapbox</a> <a href="https://www.openstreetmap.org/about/" target="_blank" title="OpenStreetMap" aria-label="OpenStreetMap">© OpenStreetMap</a> <a class="mapbox-improve-map" href="https://apps.mapbox.com/feedback/?owner=examples&amp;id=cke97f49z5rlg19l310b7uu7j&amp;access_token=pk.eyJ1IjoiZXhhbXBsZXMiLCJhIjoiY203eXd1a3ZzMGV1ejJrcHRvdnVoYng0NCJ9.NzlqpAcLHejzezQqazzI-w#/41/21/3" target="_blank" title="Improve this map" aria-label="Improve this map" rel="noopener nofollow">Improve this map</a>'
+				attribution: '<a href="https://www.mapbox.com/about/maps/" target="_blank" title="Mapbox" aria-label="Mapbox">© Mapbox</a> <a href="https://www.openstreetmap.org/about/" target="_blank" title="OpenStreetMap" aria-label="OpenStreetMap">© OpenStreetMap</a> <a class="mapbox-improve-map" href="https://apps.mapbox.com/feedback/?owner=examples&amp;id=cke97f49z5rlg19l310b7uu7j&amp;access_token=pk.eyJ1IjoiZXhhbXBsZXMiLCJhIjoiY203eXd1a3ZzMGV1ejJrcHRvdnVoYng0NCJ9.NzlqpAcLHejzezQqazzI-w#/1/1/1" target="_blank" title="Improve this map" aria-label="Improve this map" rel="noopener nofollow">Improve this map</a>'
 			});
 		})();
 		const baseMaps = {
@@ -326,10 +326,6 @@
 	article-author={resume.basics.name}
 	article-section="Hikes"
 />
-<svelte:head>
-	<link rel="alternate" type="application/rss+xml" title="Mykola's Hiking Blog RSS Feed" href="/hikes/feed.xml" />
-	<link rel="alternate" type="application/atom+xml" title="Mykola's Hiking Blog Atom Feed" href="/hikes/atom.xml" />
-</svelte:head>
 
 {#snippet statsSnippet()}
 	{#if data.mapDisplay.statistics}
@@ -354,7 +350,7 @@
 			<div class="mx-auto prose dark:prose-invert prose-a:text-primary-600 dark:prose-a:text-primary-500 md:prose-lg lg:prose-xl min-h-80">
 				<Breadcrumb aria-label="Page path" class="mt-4 not-prose hidden md:flex">
 					<BreadcrumbItem href="/" home>Home</BreadcrumbItem>
-					<BreadcrumbItem href="/hikes/#{data.post.anchor}">Hikes</BreadcrumbItem>
+					<BreadcrumbItem href={data.post.page > 1 ? `/hikes/page/${data.post.page}/#${data.post.anchor}` : `/hikes/#${data.post.anchor}`}>Hikes</BreadcrumbItem>
 					<BreadcrumbItem>{data.post.title}</BreadcrumbItem>
 				</Breadcrumb>
 				<Heading tag="h1" class="!mb-0 !mt-2">{data.post.title}</Heading>

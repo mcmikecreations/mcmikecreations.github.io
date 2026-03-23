@@ -1,29 +1,14 @@
-import hikes from '$lib/data/hikes.json';
-import type { Map } from '$lib/data/map-info';
+import { getPosts, getAllPosts } from '$lib/data/hikes-info';
 
 export function load() {
-	const posts = (hikes as Map[]).flatMap(h => h.properties.dates
-		.filter(d => !h.properties.draft && d.path)
-		.map(d => {
-			const date = new Date(d.date);
-			const slug = h.route.substring(h.route.lastIndexOf('/') + 1);
-			return {
-				year: date.getFullYear(),
-				month: date.getMonth() + 1,
-				day: date.getDate(),
-				date: date,
-				url: `/hikes/${d.date}-${slug}/`,
-				title: d.title ?? h.name,
-				image: d.image ?? h.image?.replace('/hikes/', '/hikes/thumb/'),
-				description: (d.description ? (d.description + ' ') : '') + h.description,
-				tags: d.tags,
-				people: d.people,
-				anchor: `${d.date}-${slug}`
-			};
-		}));
-	posts.sort((a, b) => a.date > b.date ? -1 : (a.date < b.date ? 1 : 0));
+	const { posts, pagination } = getPosts({ page: 1, limit: 10 });
+	const allPosts = getAllPosts();
+	const yearList = [...new Set(allPosts.map(p => p.year))].sort((a, b) => b - a);
+	
 	return {
 		posts: posts,
+		yearList,
+		pagination,
 		showProgressbar: false,
 		showPeople: false,
 		footer: {

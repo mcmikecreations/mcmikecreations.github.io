@@ -14,6 +14,7 @@ import { geoMercator } from 'd3-geo';
 import { tile } from 'd3-tile';
 import { buildTiles, getPixelsPerMeter } from '$lib/hikes/build-tiles';
 import * as THREE from 'three';
+import { getAllPosts } from '$lib/data/hikes-info';
 
 export const load: PageLoad = async ({ fetch, params }) => {
 	try {
@@ -106,6 +107,11 @@ export const load: PageLoad = async ({ fetch, params }) => {
 			const headerRegex = /#{2} (.*)\r?\n/g;
 			const headers = Array.from(post.matchAll(headerRegex), x => x[1]);
 			const stats = readingTime(post);
+
+			const allPosts = getAllPosts();
+			const postIndex = allPosts.findIndex(p => p.anchor === slug);
+			const page = postIndex !== -1 ? Math.floor(postIndex / 10) + 1 : 1;
+
 			return {
 				post: {
 					title: date.title ?? hike.name,
@@ -117,7 +123,8 @@ export const load: PageLoad = async ({ fetch, params }) => {
 					date: dateStr,
 					tags: date.tags,
 					author: date.author ?? resume.basics.name,
-					anchor: slug
+					anchor: slug,
+					page,
 				},
 				map: hike,
 				display: {
