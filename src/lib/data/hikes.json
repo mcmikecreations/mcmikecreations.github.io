@@ -521,12 +521,12 @@
       "dates": [
         {
           "date": "2024-10-27",
-          "title": null,
-          "description": null,
+          "title": "Finishing Up Nebelhorn",
+          "description": "My first successful attempt at getting to the top of Nebelhorn and back.",
           "tags": [],
-          "people": [],
-          "image": null,
-          "path": null
+          "people": ["Veronica Vitez"],
+          "image": "/images/projects/data-viz/hikes/nebelhorn_2024.jpg",
+          "path": "/_projects/data-viz/hikes/markdown/2024-10-27-nebelhorn.md"
         },
         {
           "date": "2023-06-10",

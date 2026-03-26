@@ -110,7 +110,7 @@
     <div class="mx-4 2xl:mx-0 md:px-24 mb-8">
         <Heading tag="h2">Projects</Heading>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-8">
-            <ShowcaseCard x={2} y={1} class="lg:col-span-2" href="/hikes/web/" img="/images/hikes/hero/web.jpg">
+            <ShowcaseCard x={2} y={1} class="lg:col-span-2" href="/hikes/tag/Web/" img="/images/hikes/hero/web.jpg">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pb-4">
                     Hiking Web
                 </h5>
@@ -130,7 +130,7 @@
                     Currently, most of the South Bavarian hikes have been connected.
                 </p>
             </ShowcaseCard>
-            <ShowcaseCard x={1} y={1} href="/404/" img="/images/hikes/hero/viaferrata.jpg">
+            <ShowcaseCard x={1} y={1} href="/hikes/tag/Climb" img="/images/hikes/hero/viaferrata.jpg">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pb-4">
                     Via Ferrata
                 </h5>
