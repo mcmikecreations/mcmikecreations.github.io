@@ -3,6 +3,7 @@
 	import { Span } from 'flowbite-svelte';
 	import tocbot from 'tocbot';
 	import { BarsFromLeftOutline } from 'flowbite-svelte-icons';
+	import { tick } from 'svelte';
 	import {onDestroy, onMount} from "svelte";
 
 	/*
@@ -35,13 +36,36 @@ xl (1280px)		max-width: 1280px;
 			hasInnerContainers: true,
 			// How many heading levels should not be collapsed.
 			collapseDepth: 2,
+			// Lower = more responsive active-link updates during scroll
+			throttleTimeout: 10, // try 0, 10, 20 and compare
+			// Keep enabled so tocbot tracks active section while scrolling
+			disableTocScrollSync: false,
 			// Callback for scroll end.
 			scrollEndCallback: function (e) { if(!desktop) open = false; },
 		});
 		setTimeout(tocbot.refresh);
 	}
 
-	$effect(initTocbot);
+	$effect(() => {
+		if (!enabled) {
+			tocbot.destroy();
+			return;
+		}
+
+		// Rebuild TOC on in-layout route changes after the new page DOM is rendered.
+		const path = page.url.pathname;
+		let cancelled = false;
+
+		void tick().then(() => {
+			if (cancelled || page.url.pathname !== path) return;
+			tocbot.destroy();
+			initTocbot();
+		});
+
+		return () => {
+			cancelled = true;
+		};
+	});
 	onMount(tocbot.refresh);
 
 	onDestroy(() => {
