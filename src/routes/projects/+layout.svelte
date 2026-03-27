@@ -14,5 +14,3 @@
 		{@render children?.()}
 	</div>
 </section>
-
-<AppFooter />

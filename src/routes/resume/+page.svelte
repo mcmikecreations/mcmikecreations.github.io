@@ -1,5 +1,4 @@
 <script lang="ts">
-	import AppFooter from '$lib/components/AppFooter.svelte';
 	import AppTitle from '$lib/components/AppTitle.svelte';
 	import ResumeHeader from './ResumeHeader.svelte';
 	import ResumeExperience from './ResumeExperience.svelte';
@@ -18,8 +17,6 @@
 	<ResumeAwards />
 </section>
 
-<AppFooter />
-
-<Button href="/cv.pdf" pill={true} class="fixed bottom-6 right-6 !p-2">
-	<PrinterSolid class="w-4 h-4" />
+<Button href="/cv.pdf" pill={true} class="fixed bottom-6 right-6 px-5 py-2.5 text-sm p-3!">
+	<PrinterSolid class="size-8" />
 </Button>

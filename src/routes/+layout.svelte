@@ -4,6 +4,7 @@
 	import type { Snippet } from "svelte";
 	import DarkModeHandler from '$lib/components/DarkModeHandler.svelte';
     import AppNavbar from "$lib/components/AppNavbar.svelte";
+	import AppFooter from '$lib/components/AppFooter.svelte';
 
 	interface Props {
 		shouldShowNavbar?: 'true' | 'false' | undefined;
@@ -20,8 +21,14 @@
 
 <DarkModeHandler />
 
-{#if showNavbar}
-    <AppNavbar {shouldShowNavbar} {shouldFixNavbar} {children} />
-{/if}
+<div class="flex flex-col min-h-[100dvh]">
+	{#if showNavbar}
+		<AppNavbar {shouldShowNavbar} {shouldFixNavbar} {children} />
+	{/if}
 
-{@render children?.()}
+	<div class="flex-grow flex flex-col w-full">
+		{@render children?.()}
+	</div>
+
+	<AppFooter />
+</div>

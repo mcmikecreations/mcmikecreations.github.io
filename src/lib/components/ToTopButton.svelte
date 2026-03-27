@@ -10,6 +10,8 @@
 
 	let { minScroll = 100, position = 'right' }: Props = $props();
 
+	let isVisible = $state(false);
+
 	function scrollToTop() {
 		window.scroll({
 			top: 0,
@@ -17,26 +19,23 @@
 		})
 	}
 
+	function handleScroll() {
+		isVisible = window.scrollY > minScroll;
+	}
+
 	onMount(() => {
-		const scrollButton = document.getElementById('scrollButton');
-		const hiddenClass = 'hidden';
-
-		if (scrollButton) {
-			const listener = () => {
-				if (window.scrollY > minScroll) {
-					if (scrollButton.classList.contains(hiddenClass)) {
-						scrollButton.classList.remove(hiddenClass);
-					}
-				} else if (!scrollButton.classList.contains(hiddenClass)) {
-					scrollButton.classList.add(hiddenClass);
-				}
-			};
-
-			window.addEventListener("scroll", listener);
-		}
+		// Check initial scroll position on load
+		handleScroll();
 	});
 </script>
 
-<Button id="scrollButton" onclick={scrollToTop} pill={true} class="fixed bottom-6 {position === 'left' ? 'left-6' : 'right-6'} !p-2 hidden">
-	<ArrowUpOutline class="w-4 h-4" />
+<svelte:window onscroll={handleScroll} />
+
+<Button
+	id="scrollButton"
+	onclick={scrollToTop}
+	pill={true}
+	class="fixed bottom-6 {position === 'left' ? 'start-6' : 'end-6'} px-5 py-2.5 text-sm p-3! transition-opacity duration-300 {isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}"
+>
+	<ArrowUpOutline class="size-8" />
 </Button>

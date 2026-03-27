@@ -10,5 +10,3 @@
 <section class="container mx-auto my-8">
 	{@render children?.()}
 </section>
-
-<AppFooter />

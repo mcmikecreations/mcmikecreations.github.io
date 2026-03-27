@@ -28,7 +28,7 @@
 
 <div class="h-[60px] md:h-[72px] bg-white dark:bg-gray-800 mb-8"></div>
 
-<section class="container mx-auto mb-8 min-h-[60vh]">
+<section class="container mx-auto mb-8">
 	<div class="mx-4 2xl:mx-0 md:px-24 mb-8">
 		<div class="mb-6">
 			<A href="/hikes" class="inline-flex items-center">
@@ -49,5 +49,3 @@
 </section>
 
 <Feeds />
-
-<AppFooter />

@@ -168,8 +168,6 @@
 
 <Feeds />
 
-<AppFooter class="absolute z-10 left-0 right-0" />
-
 {#if showProgressbar}
 	<div id="progressbar" class="fixed w-full h-full top-0 left-0 z-20 overflow-hidden bg-white dark:bg-gray-800">
 		<div class="container mx-auto mt-10">

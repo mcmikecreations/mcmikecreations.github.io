@@ -34,7 +34,10 @@ let pinBottom = $derived(shouldPinBottom !== undefined ? (shouldPinBottom === 't
 let showSocials = $derived(shouldShowSocials !== undefined ? (shouldShowSocials === 'true') : (page.data.footer?.showSocials ?? true));
 </script>
 
-<Footer footerType={pinBottom ? "default" : "socialmedia"} class={twMerge(pinBottom ? "absolute bottom-0 start-0 z-20 w-full" : '', classProp ?? '')}>
+<Footer
+	footerType={pinBottom ? "default" : "socialmedia"}
+	class={twMerge(pinBottom ? "absolute bottom-0 start-0 z-20 w-full" : 'mt-auto', classProp ?? '')}
+>
 	<div class="mx-auto flex flex-wrap {showSocials ? 'justify-between' : 'justify-center'} items-center container overflow-hidden">
 		<FooterCopyright href="/" by={resume.basics.name} year={new Date().getFullYear()} />
 		{#if showSocials}
