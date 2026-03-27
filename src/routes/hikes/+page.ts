@@ -1,7 +1,7 @@
 import { getPosts, getAllPosts } from '$lib/data/hikes-info';
 
 export function load() {
-	const { posts, pagination } = getPosts({ page: 1, limit: 10 });
+	const { posts, pagination } = getPosts({ page: 1 });
 	const allPosts = getAllPosts();
 	const yearList = [...new Set(allPosts.map(p => p.year))].sort((a, b) => b - a);
 	

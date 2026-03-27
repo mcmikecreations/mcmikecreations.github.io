@@ -14,7 +14,7 @@ import { geoMercator } from 'd3-geo';
 import { tile } from 'd3-tile';
 import { buildTiles, getPixelsPerMeter } from '$lib/hikes/build-tiles';
 import * as THREE from 'three';
-import { getAllPosts } from '$lib/data/hikes-info';
+import { defaultPageSize, getAllPosts } from '$lib/data/hikes-info';
 
 export const load: PageLoad = async ({ fetch, params }) => {
 	try {
@@ -110,7 +110,7 @@ export const load: PageLoad = async ({ fetch, params }) => {
 
 			const allPosts = getAllPosts();
 			const postIndex = allPosts.findIndex(p => p.anchor === slug);
-			const page = postIndex !== -1 ? Math.floor(postIndex / 10) + 1 : 1;
+			const page = postIndex !== -1 ? Math.floor(postIndex / defaultPageSize) + 1 : 1;
 
 			return {
 				post: {

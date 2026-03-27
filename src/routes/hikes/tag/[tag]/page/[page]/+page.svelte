@@ -1,12 +1,7 @@
 <script lang="ts">
-    import AppFooter from "$lib/components/AppFooter.svelte";
-    import { Heading, A } from 'flowbite-svelte';
-    import { ArrowLeftOutline } from 'flowbite-svelte-icons';
-    import HikeList from '../../../../components/HikeList.svelte';
-    import CustomPagination from '../../../../components/CustomPagination.svelte';
-    import AppMeta from '$lib/components/AppMeta.svelte';
-    import type { PageData } from './$types';
-		import Feeds from '../../../../components/Feeds.svelte';
+	import AppMeta from '$lib/components/AppMeta.svelte';
+	import type { PageData } from './$types';
+	import HikeTagPage from '../../../../components/HikeTagPage.svelte';
 
     interface Props {
         data: PageData;
@@ -25,27 +20,4 @@
 	type="website"
 />
 
-
-<div class="h-[60px] md:h-[72px] bg-white dark:bg-gray-800 mb-8"></div>
-
-<section class="container mx-auto mb-8">
-	<div class="mx-4 2xl:mx-0 md:px-24 mb-8">
-		<div class="mb-6">
-			<A href="/hikes" class="inline-flex items-center">
-				<ArrowLeftOutline class="w-5 h-5 me-2" />
-				Back to All Hikes
-			</A>
-		</div>
-		<Heading tag="h2" class="mb-8">{tag} - Page {pagination.currentPage}</Heading>
-		<div class="mt-8">
-			<HikeList {posts} {showPeople} />
-			<CustomPagination
-				currentPage={pagination.currentPage}
-				totalPages={pagination.totalPages}
-				baseUrl={`/hikes/tag/${tag}`}
-			/>
-		</div>
-	</div>
-</section>
-
-<Feeds />
+<HikeTagPage {posts} {pagination} {showPeople} {tag} />

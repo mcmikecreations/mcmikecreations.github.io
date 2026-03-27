@@ -6,7 +6,7 @@ export const prerender = false;
 export function load({ params }) {
 	const year = parseInt(params.year);
 	if (isNaN(year)) throw error(404, 'Invalid year');
-	const { posts, pagination } = getPosts({ page: 1, limit: 10, year });
+	const { posts, pagination } = getPosts({ page: 1, year });
 	const yearList = [...new Set(getAllPosts().map(p => p.year))].sort((a, b) => b - a);
 
 	if (posts.length === 0) {

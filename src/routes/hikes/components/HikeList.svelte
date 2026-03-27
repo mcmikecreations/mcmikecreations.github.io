@@ -14,7 +14,9 @@
             class="flex flex-col md:flex-row w-full md:min-h-48
     rounded-lg shadow-lg
     bg-white dark:bg-gray-800 relative z-0
-    text-gray-500 dark:text-gray-400 group hover:shadow-xl transition-shadow duration-200"
+    text-gray-500 dark:text-gray-400
+    group hover:shadow-xl transition-shadow duration-200
+    scroll-my-28"
             id={p.anchor}
         >
             <a href={p.url} class="absolute inset-0 z-10 block" aria-label={p.title}></a>
@@ -54,9 +56,3 @@
         </div>
     {/each}
 </div>
-
-<style>
-    div[id] {
-        scroll-margin-top: 104px; /* Height of navbar 72 + gap-8 32. */
-    }
-</style>

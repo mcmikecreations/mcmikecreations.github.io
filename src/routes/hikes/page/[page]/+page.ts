@@ -9,7 +9,7 @@ export function load({ params }) {
         throw error(404, 'Invalid page');
     }
 
-    const { posts, pagination } = getPosts({ page, limit: 10 });
+    const { posts, pagination } = getPosts({ page });
 
 		console.log(pagination);
 

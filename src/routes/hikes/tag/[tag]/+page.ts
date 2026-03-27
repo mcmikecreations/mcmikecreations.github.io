@@ -5,7 +5,7 @@ export const prerender = false;
 
 export function load({ params }) {
     const tag = decodeURIComponent(params.tag);
-    const { posts, pagination } = getPosts({ page: 1, limit: 10, tag });
+    const { posts, pagination } = getPosts({ page: 1, tag });
 
     if (posts.length === 0) {
        throw error(404, 'Tag not found or no posts');

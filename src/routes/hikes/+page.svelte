@@ -106,7 +106,7 @@
     </div>
 </div>
 
-<section class="container mx-auto my-8">
+<section id="projects" class="container mx-auto my-8 scroll-my-20">
     <div class="mx-4 2xl:mx-0 md:px-24 mb-8">
         <Heading tag="h2">Projects</Heading>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-8">
@@ -143,11 +143,10 @@
                 </p>
             </ShowcaseCard>
         </div>
-        <!--<main></main>-->
     </div>
 </section>
 
-<section class="container mx-auto mb-8">
+<section id="blog" class="container mx-auto mb-8 scroll-my-20">
 	<div class="mx-4 2xl:mx-0 md:px-24 mb-8">
 		<Heading tag="h2">Blog</Heading>
 		<div class="mt-8">

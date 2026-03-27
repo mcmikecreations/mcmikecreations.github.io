@@ -46,7 +46,9 @@ export function getAllPosts(): ProcessedPost[] {
     return posts;
 }
 
-export function getPosts({ page = 1, tag, year, limit = 10 }: HikeParams) {
+export const defaultPageSize = 10;
+
+export function getPosts({ page = 1, tag, year, limit = defaultPageSize }: HikeParams) {
     let posts = getAllPosts();
 
     if (tag) {

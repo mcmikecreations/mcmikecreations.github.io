@@ -32,7 +32,7 @@
 <section class="container mx-auto mb-8">
 	<div class="mx-4 2xl:mx-0 md:px-24 mb-8">
 		<div class="mb-6">
-			<A href="/hikes" class="inline-flex items-center">
+			<A href="/hikes#blog" class="inline-flex items-center">
 				<ArrowLeftOutline class="w-5 h-5 me-2" />
 				Back to All Hikes
 			</A>

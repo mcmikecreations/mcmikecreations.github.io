@@ -10,7 +10,7 @@ export function load({ params }) {
 		throw error(404, 'Invalid page or year');
 	}
 
-	const { posts, pagination } = getPosts({ page, limit: 10, year });
+	const { posts, pagination } = getPosts({ page, year });
 
 	if (page > pagination.totalPages && pagination.totalPosts > 0) {
 		throw error(404, 'Page not found');
