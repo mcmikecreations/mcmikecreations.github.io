@@ -23,7 +23,7 @@
 
 <div class="flex flex-col min-h-[100dvh]">
 	{#if showNavbar}
-		<AppNavbar {shouldShowNavbar} {shouldFixNavbar} {children} />
+		<AppNavbar {fixedNavbar} />
 	{/if}
 
 	<div class="flex-grow flex flex-col w-full">
