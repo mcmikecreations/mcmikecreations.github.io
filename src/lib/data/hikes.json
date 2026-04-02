@@ -31,7 +31,9 @@
       "fileType": "GeoJSON",
       "checkpoints": [
         [11.5735467, 47.6802772],
-        [11.6431630, 47.6521540]
+        [11.6273785, 47.6648090],
+        [11.6431630, 47.6521540],
+        [11.5735467, 47.6802772]
       ],
       "draft": false
     },
@@ -2899,6 +2901,8 @@
       "fileType": "GeoJSON",
       "checkpoints": [
         [11.5735467, 47.6802772],
+        [11.6273785, 47.6648090],
+        [11.6610511, 47.6716794],
         [11.6522131, 47.6843889],
         [11.7408013, 47.7049198]
       ],
@@ -4221,6 +4225,7 @@
       "fileType": "GeoJSON",
       "checkpoints": [
         [11.7462209, 47.6469534],
+        [11.6931138, 47.6438242],
         [11.6793681, 47.6330700],
         [11.6783355, 47.6326587],
         [11.6763040, 47.6326069],
@@ -4480,6 +4485,7 @@
         [11.6757671, 47.6309637],
         [11.6783355, 47.6326587],
         [11.6793681, 47.6330700],
+        [11.6931138, 47.6438242],
         [11.7462209, 47.6469534],
         [11.7477276, 47.6662618]
       ],
@@ -5805,6 +5811,62 @@
         "provider": "hikes/geojson",
         "modes": [ "2d", "3d" ],
         "path": "unterammergau_sonnenberg.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Lenggries Auerkamp",
+    "image": "/images/projects/data-viz/hikes/lenggries_auerkamp.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": [
+        {
+          "date": "2026-03-29",
+          "title": "Burried in Snow at Kampen",
+          "description": "Doing a cliffside climb of the Kampen ridge after heavy snowfall.",
+          "tags": [],
+          "people": ["Bohdan Pryshchenko"],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2026-03-29-lenggries_auerkamp.md"
+        }
+      ],
+      "filePath": "/_projects/data-viz/hikes/geojson/lenggries_auerkamp.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.7143687, 47.6223463],
+        [11.6931138, 47.6438242],
+        [11.6507294, 47.6512688],
+        [11.6475851, 47.6553423],
+        [11.6528113, 47.6561236],
+        [11.6545785, 47.6589270],
+        [11.6598621, 47.6611778],
+        [11.6660249, 47.6661218],
+        [11.6610511, 47.6716794],
+        [11.6273785, 47.6648090],
+        [11.5735467, 47.6802772]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Kreuth Klamm to Lenggries via Brandkopf (1569 m), Spitzkamp (1604 m), Auerkamp (1607 m), and Ochsenkamp (1594 m).",
+    "route": "/projects/data-viz/hikes/lenggries_auerkamp",
+    "height": 768,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.649893728326944,
+        "lon": 11.635894775390627
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "lenggries_auerkamp.json#/features/0"
       }],
       "geometrySource": "https://maps.openrouteservice.org/",
       "statistics": true
