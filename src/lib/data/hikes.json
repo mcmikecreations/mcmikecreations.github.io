@@ -5369,6 +5369,61 @@
           "path": "/_projects/data-viz/hikes/markdown/2025-07-06-bruennstein.md"
         }
       ],
+      "nodes": [
+        {
+          "id": 313207153,
+          "lat": 47.6712336,
+          "lon": 12.0816908,
+          "tags": {
+            "name": "Oberer Tatzelwurmwasserfall",
+            "waterway": "waterfall",
+            "height": "30"
+          }
+        },
+        {
+          "id": 1277556865,
+          "lat": 47.6608705,
+          "lon": 12.0911750,
+          "tags": {
+            "name": "Schneelahner Hütte",
+            "alt_name": "Schneelahnerhütte",
+            "tourism": "alpine_hut",
+            "ele": "970",
+            "building": "yes",
+            "email": "schneelahner@alpenverein-grafing.de",
+            "website": "https://www.alpenverein-grafing.de/huetten/schneelahner-huette"
+          }
+        },
+        {
+          "id": 811044030,
+          "lat": 47.6446513,
+          "lon": 12.0984905,
+          "tags": {
+            "name": "Brünnsteinhaus",
+            "tourism": "alpine_hut",
+            "ele": "1342",
+            "wikidata": "Q997098",
+            "wikipedia": "de:Brünnsteinhaus",
+            "building": "yes",
+            "phone": "+4980331431",
+            "website": "http://www.bruennsteinhaus.de/"
+          }
+        },
+        {
+          "id": 304317008,
+          "lat": 47.6473418,
+          "lon": 12.0971096,
+          "tags": {
+            "name": "Brünnstein",
+            "natural": "peak",
+            "ele": "1619",
+            "wikidata": "Q882165",
+            "wikipedia": "de:Brünnstein",
+            "summit:cross": "yes",
+            "summit:register": "yes"
+          }
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/bruennstein.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -5422,6 +5477,71 @@
           "path": "/_projects/data-viz/hikes/markdown/2025-07-20-breitensteinfensterl.md"
         }
       ],
+      "nodes": [
+        {
+          "id": 1679600826,
+          "lat": 47.7187677,
+          "lon": 11.9776495,
+          "tags": {
+            "name": "Breitensteinfensterl",
+            "natural": "peak",
+            "ele": "1350",
+            "summit:cross": "yes",
+            "summit:register": "yes"
+          }
+        },
+        {
+          "id": 283733455,
+          "lat": 47.7211575,
+          "lon": 11.9828363,
+          "tags": {
+            "name": "Breitenstein Westgipfel",
+            "natural": "peak",
+            "ele": "1575",
+            "wikidata": "Q31551984",
+            "summit:cross": "yes",
+            "summit:register": "yes"
+          }
+        },
+        {
+          "id": 260979669,
+          "lat": 47.7210941,
+          "lon": 11.9877728,
+          "tags": {
+            "name": "Breitenstein",
+            "natural": "peak",
+            "ele": "1622",
+            "wikidata": "Q879983",
+            "wikipedia": "de:Breitenstein (Bayerische Voralpen)",
+            "summit:cross": "yes",
+            "summit:register": "yes"
+          }
+        },
+        {
+          "id": 3233329679,
+          "lat": 47.7156792,
+          "lon": 11.9864452,
+          "tags": {
+            "natural": "saddle",
+            "ele": "1351"
+          }
+        },
+        {
+          "id": 260979669,
+          "lat": 47.7210941,
+          "lon": 11.9877728,
+          "tags": {
+            "name": "Kesselalm",
+            "tourism": "alpine_hut",
+            "ele": "1278",
+            "amenity": "restaurant",
+            "building": "yes",
+            "mobile": "+491708493855",
+            "phone": "+49802826026",
+            "website": "https://kesselalm.com/"
+          }
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/breitensteinfensterl.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -5472,7 +5592,8 @@
           "tags": ["Web"],
           "people": [],
           "image": null,
-          "path": "/_projects/data-viz/hikes/markdown/2025-06-29-muenchen_starnberg.md"
+          "path": "/_projects/data-viz/hikes/markdown/2025-06-29-muenchen_starnberg.md",
+          "gpx": "/_projects/data-viz/hikes/gpx/muenchen_starnberg.gpx"
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/muenchen_starnberg.json",
@@ -5520,7 +5641,36 @@
           "tags": ["Wandern für glückliche Menschen"],
           "people": ["Natalia Kushch"],
           "image": null,
-          "path": "/_projects/data-viz/hikes/markdown/2026-01-25-bolsterlanger_horn_only.md"
+          "path": "/_projects/data-viz/hikes/markdown/2026-01-25-bolsterlanger_horn_only.md",
+          "gpx": "/_projects/data-viz/hikes/gpx/bolsterlanger_horn_only.gpx"
+        }
+      ],
+      "nodes": [
+        {
+          "id": 2164415346,
+          "lat": 47.4607896,
+          "lon": 10.2054673,
+          "tags": {
+            "name": "Hörnerbahn Bergstation",
+            "aerialway": "station",
+            "ele": "1540",
+            "public_transport": "station",
+            "building": "yes"
+          }
+        },
+        {
+          "id": 281349904,
+          "lat": 47.4592700,
+          "lon": 10.2083300,
+          "tags": {
+            "name": "Bolsterlanger Horn",
+            "natural": "peak",
+            "ele": "1586",
+            "wikidata": "Q891604",
+            "wikipedia": "de:Bolsterlanger Horn",
+            "summit:cross": "yes",
+            "summit:register": "yes"
+          }
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/bolsterlanger_horn_only.json",
@@ -5570,7 +5720,53 @@
           "tags": [],
           "people": [],
           "image": null,
-          "path": "/_projects/data-viz/hikes/markdown/2026-02-15-oberammergau_sonnenberg.md"
+          "path": "/_projects/data-viz/hikes/markdown/2026-02-15-oberammergau_sonnenberg.md",
+          "gpx": "/_projects/data-viz/hikes/gpx/oberammergau_sonnenberg.gpx"
+        }
+      ],
+      "nodes": [
+        {
+          "id": 3662166614,
+          "lat": 47.5840874,
+          "lon": 11.0267772,
+          "tags": {
+            "name": "Am Zahn",
+            "natural": "peak",
+            "ele": "1615",
+            "wikidata": "Q31557182",
+            "summit:cross": "yes"
+          }
+        },
+        {
+          "id": 344347709,
+          "lat": 47.5841989,
+          "lon": 11.0163060,
+          "tags": {
+            "name": "Sonnenberg",
+            "natural": "peak",
+            "ele": "1622",
+            "wikidata": "Q86751135",
+            "wikipedia": "en:Sonnenspitze",
+            "summit:cross": "yes",
+            "summit:register": "yes"
+          }
+        },
+        {
+          "id": 13197350872,
+          "lat": 47.5837771,
+          "lon": 10.9924948,
+          "tags": {
+            "name": "August-Schuster-Haus",
+            "alt_name": "Pürschlinghaus",
+            "tourism": "alpine_hut",
+            "ele": "1564",
+            "wikidata": "Q760644",
+            "amenity": "restaurant",
+            "building": "yes",
+            "email": "mail@august-schuster-haus.de",
+            "phone": "+4988223567",
+            "website": "https://august-schuster-haus.de"
+          }
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/oberammergau_sonnenberg.json",
@@ -5620,7 +5816,36 @@
           "tags": [],
           "people": ["Pavlo Pustelnyk"],
           "image": null,
-          "path": "/_projects/data-viz/hikes/markdown/2026-03-06-hoher_kalmberg.md"
+          "path": "/_projects/data-viz/hikes/markdown/2026-03-06-hoher_kalmberg.md",
+          "gpx": "/_projects/data-viz/hikes/gpx/hoher_kalmberg.gpx"
+        }
+      ],
+      "nodes": [
+        {
+          "id": 990927426,
+          "lat": 47.6207262,
+          "lon": 13.5615579,
+          "tags": {
+            "name": "Goiserer Hütte",
+            "tourism": "alpine_hut",
+            "ele": "1592",
+            "building": "yes",
+            "email": "info@goisererhuette.at",
+            "phone": "+43613521450",
+            "website": "https://www.goisererhuette.at/"
+          }
+        },
+        {
+          "id": 435173020,
+          "lat": 47.6124692,
+          "lon": 13.5675514,
+          "tags": {
+            "name": "Hoher Kalmberg",
+            "natural": "peak",
+            "ele": "1833",
+            "summit:cross": "yes",
+            "summit:register": "yes"
+          }
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/hoher_kalmberg.json",
@@ -5670,7 +5895,34 @@
           "tags": [],
           "people": ["Pavlo Pustelnyk"],
           "image": null,
-          "path": "/_projects/data-viz/hikes/markdown/2026-03-07-geisswand.md"
+          "path": "/_projects/data-viz/hikes/markdown/2026-03-07-geisswand.md",
+          "gpx": "/_projects/data-viz/hikes/gpx/geisswand.gpx"
+        }
+      ],
+      "nodes": [
+        {
+          "id": 1781859543,
+          "lat": 47.8426523,
+          "lon": 13.7767660,
+          "tags": {
+            "name": "Baalstein",
+            "natural": "peak",
+            "ele": "800",
+            "summit:cross": "yes",
+            "summit:register": "yes"
+          }
+        },
+        {
+          "id": 1781859544,
+          "lat": 47.8408670,
+          "lon": 13.7771705,
+          "tags": {
+            "name": "Geißwand",
+            "natural": "peak",
+            "ele": "872",
+            "summit:cross": "yes",
+            "summit:register": "yes"
+          }
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/geisswand.json",
@@ -5724,7 +5976,162 @@
           "tags": ["Web"],
           "people": [],
           "image": null,
-          "path": "/_projects/data-viz/hikes/markdown/2026-03-15-bichl_blomberg.md"
+          "path": "/_projects/data-viz/hikes/markdown/2026-03-15-bichl_blomberg.md",
+          "gpx": "/_projects/data-viz/hikes/gpx/bichl_blomberg.gpx"
+        }
+      ],
+      "nodes": [
+        {
+          "id": 2114909062,
+          "lat": 47.7194665,
+          "lon": 11.4448587,
+          "tags": {
+            "name": "Hollerkopf",
+            "natural": "peak",
+            "ele": "932"
+          }
+        },
+        {
+          "id": 389806116,
+          "lat": 47.7273048,
+          "lon": 11.4602762,
+          "tags": {
+            "name": "Enzenauer Kopf",
+            "natural": "peak",
+            "ele": "1205",
+            "wikidata": "Q31548008"
+          }
+        },
+        {
+          "id": 1511563857,
+          "lat": 47.7184900,
+          "lon": 11.4645391,
+          "tags": {
+            "name": "Fahrtkopf",
+            "natural": "peak",
+            "ele": "1203",
+            "wikidata": "Q31547603"
+          }
+        },
+        {
+          "id": 389806117,
+          "lat": 47.7224724,
+          "lon": 11.4674014,
+          "tags": {
+            "name": "Angerlkopf",
+            "natural": "peak",
+            "ele": "1249",
+            "wikidata": "Q31558935",
+            "summit:cross": "no",
+            "summit:register": "no"
+          }
+        },
+        {
+          "id": 389806118,
+          "lat": 47.7246598,
+          "lon": 11.4816115,
+          "tags": {
+            "name": "Stallauer Kopf",
+            "natural": "peak",
+            "ele": "1322",
+            "wikidata": "Q31519722",
+            "summit:cross": "no",
+            "summit:register": "no"
+          }
+        },
+        {
+          "id": 389806119,
+          "lat": 47.7337525,
+          "lon": 11.4786369,
+          "tags": {
+            "name": "Stallauer Eck",
+            "natural": "peak",
+            "ele": "1213",
+            "wikidata": "Q15848876",
+            "wikipedia": "de:Stallauer Eck",
+            "summit:cross": "yes"
+          }
+        },
+        {
+          "id": 261020752,
+          "lat": 47.7235737,
+          "lon": 11.4884518,
+          "tags": {
+            "name": "Zwiesel",
+            "natural": "peak",
+            "ele": "1348",
+            "wikidata": "Q14850767",
+            "wikipedia": "de:Zwiesel (Kocheler Berge)",
+            "summit:cross": "yes",
+            "summit:register": "no"
+          }
+        },
+        {
+          "id": 414607685,
+          "lat": 47.7277050,
+          "lon": 11.5133539,
+          "tags": {
+            "name": "Heigelkopf",
+            "alt_name": "Heiglkopf",
+            "old_name:1934-1945": "Hitler-Berg",
+            "natural": "peak",
+            "ele": "1218",
+            "wikidata": "Q869872",
+            "wikipedia": "de:Heigelkopf",
+            "summit:cross": "yes",
+            "summit:register": "yes"
+          }
+        },
+        {
+          "id": 2117581057,
+          "lat": 47.7308220,
+          "lon": 11.5125471,
+          "tags": {
+            "name": "Blombergkreuz",
+            "natural": "peak",
+            "ele": "1205",
+            "man_made": "cross",
+            "summit:register": "yes"
+          }
+        },
+        {
+          "id": 1644165590,
+          "lat": 47.7335365,
+          "lon": 11.5072874,
+          "tags": {
+            "name": "Blomberg Ostgipfel",
+            "natural": "peak",
+            "ele": "1237",
+            "wikidata": "Q31558978",
+            "summit:cross": "no",
+            "summit:register": "no"
+          }
+        },
+        {
+          "id": 1126963772,
+          "lat": 47.7350920,
+          "lon": 11.4980106,
+          "tags": {
+            "name": "Berggasthof Blomberghaus",
+            "tourism": "alpine_hut",
+            "ele": "1203",
+            "amenity": "restaurant",
+            "building": "yes",
+            "contact:website": "https://www.der-blomberg.de/blomberghaus"
+          }
+        },
+        {
+          "id": 414607694,
+          "lat": 47.7333461,
+          "lon": 11.4921002,
+          "tags": {
+            "name": "Blomberg Westgipfel",
+            "natural": "peak",
+            "ele": "1248",
+            "wikidata": "Q244660",
+            "wikipedia": "de:Blomberg (Bayerische Voralpen)",
+            "access": "private"
+          }
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/bichl_blomberg.json",
@@ -5783,7 +6190,41 @@
           "tags": [],
           "people": ["Stanislav Kidalau"],
           "image": null,
-          "path": "/_projects/data-viz/hikes/markdown/2026-03-22-unterammergau_sonnenberg.md"
+          "path": "/_projects/data-viz/hikes/markdown/2026-03-22-unterammergau_sonnenberg.md",
+          "gpx": "/_projects/data-viz/hikes/gpx/unterammergau_sonnenberg.gpx"
+        }
+      ],
+      "nodes": [
+        {
+          "id": 13197350872,
+          "lat": 47.5837771,
+          "lon": 10.9924948,
+          "tags": {
+            "name": "August-Schuster-Haus",
+            "alt_name": "Pürschlinghaus",
+            "tourism": "alpine_hut",
+            "ele": "1564",
+            "wikidata": "Q760644",
+            "amenity": "restaurant",
+            "building": "yes",
+            "email": "mail@august-schuster-haus.de",
+            "phone": "+4988223567",
+            "website": "https://august-schuster-haus.de"
+          }
+        },
+        {
+          "id": 344347709,
+          "lat": 47.5841989,
+          "lon": 11.0163060,
+          "tags": {
+            "name": "Sonnenberg",
+            "natural": "peak",
+            "ele": "1622",
+            "wikidata": "Q86751135",
+            "wikipedia": "en:Sonnenspitze",
+            "summit:cross": "yes",
+            "summit:register": "yes"
+          }
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/unterammergau_sonnenberg.json",
@@ -5833,7 +6274,76 @@
           "tags": [],
           "people": ["Bohdan Pryshchenko"],
           "image": null,
-          "path": "/_projects/data-viz/hikes/markdown/2026-03-29-lenggries_auerkamp.md"
+          "path": "/_projects/data-viz/hikes/markdown/2026-03-29-lenggries_auerkamp.md",
+          "gpx": "/_projects/data-viz/hikes/gpx/lenggries_auerkamp.gpx"
+        }
+      ],
+      "nodes": [
+        {
+          "id": 399492387,
+          "lat": 47.6561236,
+          "lon": 11.6528113,
+          "name": "Brandkopf",
+          "tags": {
+            "natural": "peak",
+            "ele": "1569",
+            "wikidata": "Q31551561"
+          }
+        },
+        {
+          "id": 264055810,
+          "lat": 47.6589270,
+          "lon": 11.6545785,
+          "tags": {
+            "name": "Spitzkamp",
+            "natural": "peak",
+            "ele": "1604",
+            "wikidata": "Q367455",
+            "wikipedia": "de:Kampen (Berg)",
+            "summit:cross": "yes",
+            "summit:register": "yes"
+          }
+        },
+        {
+          "id": 264055809,
+          "lat": 47.6611778,
+          "lon": 11.6598621,
+          "tags": {
+            "name": "Auerkamp",
+            "natural": "peak",
+            "ele": "1607",
+            "wikidata": "Q367455",
+            "wikipedia": "de:Kampen (Berg)",
+            "summit:cross": "no",
+            "summit:register": "no"
+          }
+        },
+        {
+          "id": 264056090,
+          "lat": 47.6661218,
+          "lon": 11.6660249,
+          "tags": {
+            "name": "Ochsenkamp",
+            "natural": "peak",
+            "ele": "1594",
+            "wikidata": "Q367455",
+            "wikipedia": "de:Kampen (Berg)",
+            "summit:cross": "yes",
+            "summit:register": "yes"
+          }
+        },
+        {
+          "id": 264056178,
+          "lat": 47.6716794,
+          "lon": 11.6610511,
+          "tags": {
+            "name": "Hirschtalsattel",
+            "natural": "saddle",
+            "ele": "1227",
+            "wikidata": "Q108700114",
+            "wikipedia": "de:Hirschtalsattel",
+            "mountain_pass": "yes"
+          }
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/lenggries_auerkamp.json",

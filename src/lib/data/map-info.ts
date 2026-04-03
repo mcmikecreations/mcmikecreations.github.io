@@ -50,6 +50,15 @@ interface StandardFeatures {
 	statistics: boolean;
 }
 
+interface MapNode {
+	id: number;
+	lat: number;
+	lng: number;
+	tags: {
+		[key: string]: string;
+	};
+}
+
 interface MapDate {
 	date: string;
 	title?: string | undefined | null;
@@ -58,6 +67,7 @@ interface MapDate {
 	people: string[] | null;
 	image?: string | undefined | null;
 	path?: string | undefined | null;
+	gpx?: string | undefined | null;
 	author?: string | undefined | null;
 }
 
@@ -70,6 +80,7 @@ interface MapProperties {
 	filePath: string;
 	fileType: string;
 	draft: boolean | null;
+	nodes?: MapNode[] | undefined | null;
 }
 
 interface Map {
