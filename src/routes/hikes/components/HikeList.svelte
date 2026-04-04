@@ -8,7 +8,7 @@
     export let showPeople: boolean = false;
 </script>
 
-<div class="flex flex-col gap-8">
+<div data-sveltekit-preload-data="off" class="flex flex-col gap-8">
     {#each posts as p}
         <div
             class="flex flex-col md:flex-row w-full md:min-h-48

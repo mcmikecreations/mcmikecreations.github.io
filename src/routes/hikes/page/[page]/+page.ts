@@ -11,8 +11,6 @@ export function load({ params }) {
 
     const { posts, pagination } = getPosts({ page });
 
-		console.log(pagination);
-
     if (page > pagination.totalPages && pagination.totalPosts > 0) {
         throw error(404, 'Page not found');
     }
