@@ -1,6 +1,8 @@
-With an extra holiday at hand, I decided to visit some interesting spots on the
-way from Moosburg an der Isar to Landshut. Although I didn't plan the route too
-carefully, I think I made it work at the end.
+With an extra holiday at hand, I decided to visit some interesting spots near
+Moosburg an der Isar. Although I didn't plan the route too carefully, I think I
+made it work at the end. Continuing the [Hiking Web](/hikes/tag/Web/)
+project, since I already visited [Moosburg an der Isar](/hikes/2025-09-28-moosburg_freising/),
+it was the logical next step to follow Isar all the way to Landshut.
 
 ![Restaurant Avlija Brzovic](/images/projects/data-viz/hikes/stories/moosburg_landshut/2026-04-03-00.jpg)
 ![Wayside shrine in the field](/images/projects/data-viz/hikes/stories/moosburg_landshut/2026-04-03-01.jpg)
