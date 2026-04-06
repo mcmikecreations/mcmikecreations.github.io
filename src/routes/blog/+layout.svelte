@@ -1,5 +1,4 @@
 <script lang="ts">
-	import AppFooter from '$lib/components/AppFooter.svelte';
 	interface Props {
 		children?: import('svelte').Snippet;
 	}

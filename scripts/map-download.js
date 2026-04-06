@@ -24,6 +24,10 @@ const verifyFolder = async (path) => {
 const downloadFile = async (address, fileName, requestInit = undefined) => {
 	const destination = resolve(mapFolder, fileName);
 	if (existsSync(destination)) return 0;
+	
+	// Wait a second between downloads to prevent rate-limiting
+	await new Promise(resolve => setTimeout(resolve, 1000));
+	
 	//console.log(`Downloading ${address}`);
 	const response = await fetch(address, requestInit);
 	const buffer = Buffer.from(await response.arrayBuffer());

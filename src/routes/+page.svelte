@@ -1,7 +1,6 @@
 <script lang="ts">
 	import BlogSection from './home/BlogSection.svelte';
 	import ResumeSection from './home/ResumeSection.svelte';
-	import AppFooter from '$lib/components/AppFooter.svelte';
 	import AppTitle from '$lib/components/AppTitle.svelte';
 	import HeroSection from './home/HeroSection.svelte';
 	import ContactSection from './home/ContactSection.svelte';

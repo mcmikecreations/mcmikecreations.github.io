@@ -8,7 +8,6 @@
 	import DefaultLink from '$lib/renderers/DefaultLink.svelte';
 	import ToTopButton from '$lib/components/ToTopButton.svelte';
 	import DefaultImage from '$lib/renderers/DefaultImage.svelte';
-	import AppFooter from '$lib/components/AppFooter.svelte';
 	import { getDistance, getTime } from '$lib/hikes/build-statistics';
 	import type { Feature, TilesData } from '$lib/data/map-info';
 	import { providerFolder, providers } from '$lib/data/map-providers';
@@ -426,4 +425,3 @@
 
 <ToTopButton />
 
-<AppFooter />

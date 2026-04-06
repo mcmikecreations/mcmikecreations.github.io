@@ -3,6 +3,7 @@
 	import AppMeta from '$lib/components/AppMeta.svelte';
 	import type { PageData } from './$types';
 	import HikeTagPage from '../../components/HikeTagPage.svelte';
+	import HikesWeb from '../../components/HikesWeb.svelte';
 
 	interface Props {
 			data: PageData;
@@ -17,19 +18,8 @@
 
 
 {#if tag === 'Web'}
-	<AppMeta
-		title={`Web of Hikes | Collecting All Routes and Peaks"`}
-		description={`Visiting all peaks in the biggest possible area while using the same departure and arrival points as other hikes.`}
-		type="website"
-	/>
-
 	<HikeTagPage {posts} {pagination} {showPeople} {tag}>
-		<Heading tag="h2" class="mb-2">Web of Hikes: Collecting All Routes and Peaks</Heading>
-		<p class="mb-8 text-gray-600 dark:text-gray-300">
-			Posts tagged <span class="font-medium">{tag}</span> focus on visiting all
-			peaks in the biggest possible area while using the same departure and
-			arrival points as other hikes.
-		</p>
+		<HikesWeb />
 	</HikeTagPage>
 {:else if tag === 'Climb'}
 	<AppMeta
