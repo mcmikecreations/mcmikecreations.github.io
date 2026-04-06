@@ -3,7 +3,7 @@ import { error } from '@sveltejs/kit';
 
 export const prerender = false;
 
-export function load({ params }) {
+export async function load({ params }) {
     const tag = decodeURIComponent(params.tag);
     const { posts, pagination } = getPosts({ page: 1, tag });
 
@@ -21,4 +21,3 @@ export function load({ params }) {
         }
     };
 }
-
