@@ -30,6 +30,23 @@ const downloadFile = async (address, fileName, requestInit = undefined) => {
 	
 	//console.log(`Downloading ${address}`);
 	const response = await fetch(address, requestInit);
+
+	if (response.status === 429) {
+		const interval = response.headers.get('X-Rate-Limit-Interval');
+		const limit = response.headers.get('X-Rate-Limit-Limit');
+		const reset = response.headers.get('X-Rate-Limit-Reset');
+
+		console.error(`Rate Limit Exceeded (429)!`);
+		console.error(`Interval: ${interval} seconds`);
+		console.error(`Limit: ${limit} requests`);
+		if (reset) {
+			const resetDate = new Date(parseInt(reset, 10) * 1000); // Unix timestamp is in seconds
+			console.error(`Reset: ${resetDate.toLocaleString('en-US', { timeZone: 'CET' })}`);
+		}
+		
+		process.exit(1);
+	}
+
 	const buffer = Buffer.from(await response.arrayBuffer());
 	if (!response.ok || buffer.length < 1024) {
 		console.error(`Failed to download ${address}: ${response.status} ${response.statusText}`);
@@ -88,8 +105,9 @@ async function downloadMeta(meta) {
 	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	for (const [x, y, z] of tiles) {
 		//console.log(`Downloading ${z}/${x}/${y}`);
+		let url = `${skuMapboxDEM}`.length > 0 ? `sku=${skuMapboxDEM}&access_token=${tokenMapboxDEM}` : `access_token=${tokenMapboxDEM}`;
 		await downloadFile(
-			providers.mapboxDEM.url(x, y, z, `sku=${skuMapboxDEM}&access_token=${tokenMapboxDEM}`),
+			providers.mapboxDEM.url(x, y, z, url),
 			providerFile(x, y, z, providers.mapboxDEM.tileset, providers.mapboxDEM.format),
 			{
 				method: 'GET',
@@ -100,6 +118,7 @@ async function downloadMeta(meta) {
 				referrer: providers.mapboxDEM.origin,
 			}
 		);
+		url = `api_key=${tokenNextzen}`;
 		await downloadFile(
 			providers.nextzenTerrariumDEM.url(x, y, z, `api_key=${tokenNextzen}`),
 			providerFile(x, y, z, providers.nextzenTerrariumDEM.tileset, providers.nextzenTerrariumDEM.format),
@@ -110,6 +129,7 @@ async function downloadMeta(meta) {
 			providerFile(x, y, z, providers.osm.tileset, providers.osm.format),
 			undefined
 		);
+		url = `${skuMapboxSatellite}`.length > 0 ? `sku=${skuMapboxSatellite}&access_token=${tokenMapboxSatellite}` : `access_token=${tokenMapboxSatellite}`;
 		await downloadFile(
 			providers.mapboxSatellite.url(x, y, z, `sku=${skuMapboxSatellite}&access_token=${tokenMapboxSatellite}`),
 			providerFile(x, y, z, providers.mapboxSatellite.tileset, providers.mapboxSatellite.format),
