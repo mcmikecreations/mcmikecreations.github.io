@@ -4330,6 +4330,88 @@
           "path": "/_projects/data-viz/hikes/markdown/2025-06-01-blauberge.md"
         }
       ],
+      "nodes": [
+        {
+          "id": 440346596,
+          "lat": 47.5897362,
+          "lon": 11.7347352,
+          "tags": {
+            "name": "Predigtstuhl",
+            "natural": "peak",
+            "ele": "1562",
+            "wikidata": "Q130365161",
+            "wikipedia": "de:Predigtstuhl (Blauberge)"
+          }
+        },
+        {
+          "id": 294649757,
+          "lat": 47.5884175,
+          "lon": 11.7496419,
+          "tags": {
+            "name": "Wichtlplatte",
+            "natural": "peak",
+            "ele": "1765"
+          }
+        },
+        {
+          "id": 268973925,
+          "lat": 47.5891188,
+          "lon": 11.7532551,
+          "tags": {
+            "name": "Blaubergschneid",
+            "natural": "peak",
+            "ele": "1787"
+          }
+        },
+        {
+          "id": 268972719,
+          "lat": 47.5901574,
+          "lon": 11.7672996,
+          "tags": {
+            "name": "Blaubergkopf",
+            "natural": "peak",
+            "ele": "1787",
+            "wikidata": "Q21876511",
+            "wikipedia": "de:Blaubergkopf"
+          }
+        },
+        {
+          "id": 345807520,
+          "lat": 47.5906428,
+          "lon": 11.7760479,
+          "tags": {
+            "name": "Karspitz",
+            "natural": "peak",
+            "ele": "1801"
+          }
+        },
+        {
+          "id": 268974034,
+          "lat": 47.5911671,
+          "lon": 11.7810799,
+          "tags": {
+            "name": "Halserspitz",
+            "natural": "peak",
+            "ele": "1862",
+            "summit:cross": "yes",
+            "summit:register": "yes",
+            "wikidata": "Q21871544"
+          }
+        },
+        {
+          "id": 30907084,
+          "lat": 47.5911671,
+          "lon": 11.7810799,
+          "tags": {
+            "name": "Bayerische Wildalm",
+            "tourism": "wilderness_hut",
+            "ele": "1450",
+            "building": "yes",
+            "wikidata": "Q812314",
+            "wikipedia": "de:Bayerische Wildalm"
+          }
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/blauberge.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -4378,6 +4460,81 @@
           "people": ["David Bilan"],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-06-21-zugspitze_reintal.md"
+        }
+      ],
+      "nodes": [
+        {
+          "id": 27384190,
+          "lat": 47.4212150,
+          "lon": 10.9862970,
+          "tags": {
+            "name": "Zugspitze",
+            "natural": "peak",
+            "ele": "2962",
+            "summit:cross": "yes",
+            "wikidata": "Q3375",
+            "wikipedia": "de:Zugspitze"
+          }
+        },
+        {
+          "id": 236047957,
+          "lat": 47.4209638,
+          "lon": 10.9847945,
+          "tags": {
+            "name": "Münchner Haus",
+            "tourism": "alpine_hut",
+            "ele": "2959",
+            "amenity": "restaurant",
+            "building": "hut",
+            "phone": "+4988212901",
+            "wikidata": "Q16444",
+            "website": "https://www.alpenverein-muenchen-oberland.de/huetten/alpenvereinshuetten/muenchner-haus"
+          }
+        },
+        {
+          "id": 31898848,
+          "lat": 47.4134275,
+          "lon": 10.9803555,
+          "tags": {
+            "name": "Zugspitzplatt",
+            "ele": "2588",
+            "public_transport": "station",
+            "railway": "station",
+            "building": "yes",
+            "wikidata": "Q106486357"
+          }
+        },
+        {
+          "id": 476498599,
+          "lat": 47.4100105,
+          "lon": 11.0127320,
+          "tags": {
+            "name": "Knorrhütte",
+            "tourism": "alpine_hut",
+            "ele": "2052",
+            "amenity": "restaurant",
+            "phone": "+4988212905",
+            "website": "http://www.knorrhuette.de/",
+            "wikidata": "Q1777433",
+            "wikipedia": "de:Knorrhütte"
+          }
+        },
+        {
+          "id": 173682244,
+          "lat": 47.4052637,
+          "lon": 11.0355503,
+          "tags": {
+            "name": "Reintalangerhütte",
+            "tourism": "alpine_hut",
+            "ele": "1366",
+            "amenity": "restaurant",
+            "building": "yes",
+            "contact:email": "reservierung@reintal.de",
+            "contact:phone": "+4988217089743",
+            "contact:website": "https://www.alpenverein-muenchen-oberland.de/huetten/alpenvereinshuetten/reintalangerhuette/",
+            "wikidata": "Q917130",
+            "wikipedia": "de:Reintalangerhütte"
+          }
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/zugspitze_reintal.json",
@@ -4432,6 +4589,65 @@
           "path": "/_projects/data-viz/hikes/markdown/2025-09-18-zugspitze_hoellental.md"
         }
       ],
+      "nodes": [
+        {
+          "id": 357482706,
+          "lat": 47.4483891,
+          "lon": 11.0444884,
+          "tags": {
+            "name": "Höllentaleingangshütte",
+            "tourism": "alpine_hut",
+            "ele": "1045",
+            "amenity": "restaurant",
+            "phone": "+4988218895",
+            "website": "http://www.hoellentalklamm.de/"
+          }
+        },
+        {
+          "id": 370669072,
+          "lat": 47.4483891,
+          "lon": 11.0444884,
+          "tags": {
+            "name": "Höllentalangerhütte",
+            "tourism": "alpine_hut",
+            "ele": "1387",
+            "amenity": "restaurant",
+            "building": "yes",
+            "phone": "+4988219438548",
+            "website": "http://www.hoellentalangerhuette.de/",
+            "wikidata": "Q183323",
+            "wikipedia": "de:Höllentalangerhütte"
+          }
+        },
+        {
+          "id": 27384190,
+          "lat": 47.4212150,
+          "lon": 10.9862970,
+          "tags": {
+            "name": "Zugspitze",
+            "natural": "peak",
+            "ele": "2962",
+            "summit:cross": "yes",
+            "wikidata": "Q3375",
+            "wikipedia": "de:Zugspitze"
+          }
+        },
+        {
+          "id": 236047957,
+          "lat": 47.4209638,
+          "lon": 10.9847945,
+          "tags": {
+            "name": "Münchner Haus",
+            "tourism": "alpine_hut",
+            "ele": "2959",
+            "amenity": "restaurant",
+            "building": "hut",
+            "phone": "+4988212901",
+            "wikidata": "Q16444",
+            "website": "https://www.alpenverein-muenchen-oberland.de/huetten/alpenvereinshuetten/muenchner-haus"
+          }
+        }
+      ],
       "filePath": "/_projects/data-viz/hikes/geojson/zugspitze_hoellental.json",
       "fileType": "GeoJSON",
       "checkpoints": [
@@ -4478,6 +4694,32 @@
           "people": [],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-10-05-buchstein_only.md"
+        }
+      ],
+      "nodes": [
+        {
+          "id": 26862641,
+          "lat": 47.6330700,
+          "lon": 11.6793681,
+          "tags": {
+            "name": "Buchstein",
+            "natural": "peak",
+            "ele": "1701",
+            "summit:cross": "yes",
+            "wikidata": "Q31557989"
+          }
+        },
+        {
+          "id": 5340076821,
+          "lat": 47.6327280,
+          "lon": 11.6783446,
+          "tags": {
+            "name": "Tegernseer Hütte",
+            "tourism": "alpine_hut",
+            "ele": "1650",
+            "wikidata": "Q2400327",
+            "wikipedia": "de:Tegernseer Hütte"
+          }
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/buchstein_only.json",
@@ -4530,6 +4772,57 @@
           "people": [],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-10-27-auer_berg.md"
+        }
+      ],
+      "nodes": [
+        {
+          "id": 4369817141,
+          "lat": 47.7236176,
+          "lon": 11.7956894,
+          "tags": {
+            "name": "Gindelalmschneid",
+            "natural": "peak",
+            "ele": "1335",
+            "summit:cross": "no",
+            "summit:register": "no",
+            "wikidata": "Q1524911",
+            "wikipedia": "de:Gindelalmschneid"
+          }
+        },
+        {
+          "id": 3229970780,
+          "lat": 47.7305888,
+          "lon": 11.8104963,
+          "tags": {
+            "name": "Auer Berg",
+            "natural": "peak",
+            "ele": "1252",
+            "wikidata": "Q16054465"
+          }
+        },
+        {
+          "id": 3229970782,
+          "lat": 47.7323621,
+          "lon": 11.8263212,
+          "tags": {
+            "name": "Rainer Berg",
+            "natural": "peak",
+            "ele": "1169",
+            "wikidata": "Q16292474"
+          }
+        },
+        {
+          "id": 2641018246,
+          "lat": 47.7376374,
+          "lon": 11.8342723,
+          "tags": {
+            "name": "Huberspitz",
+            "natural": "peak",
+            "ele": "1051",
+            "summit:cross": "no",
+            "place": "isolated_dwelling",
+            "wikidata": "Q31537823"
+          }
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/auer_berg.json",
@@ -4629,6 +4922,68 @@
           "people": [],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-11-01-bodenschneid.md"
+        }
+      ],
+      "nodes": [
+        {
+          "id": 60315210,
+          "lat": 47.6701495,
+          "lon": 11.8542289,
+          "tags": {
+            "name": "Obere Firstalm",
+            "tourism": "alpine_hut",
+            "ele": "1369",
+            "building": "yes",
+            "amenity": "restaurant",
+            "email": "info@firstalm.de",
+            "phone": "+4980267302",
+            "website": "https://firstalm.de/",
+            "wikidata": "Q27926449",
+            "wikipedia": "de:Firstalm"
+          }
+        },
+        {
+          "id": 1129365627,
+          "lat": 47.6717531,
+          "lon": 11.8381005,
+          "tags": {
+            "name": "Bodenschneid",
+            "natural": "peak",
+            "ele": "1669",
+            "summit:cross": "yes",
+            "summit:register": "yes",
+            "wikidata": "Q889652",
+            "wikipedia": "de:Bodenschneid"
+          }
+        },
+        {
+          "id": 797643804,
+          "lat": 47.6745316,
+          "lon": 11.8339866,
+          "tags": {
+            "name": "Rinnerspitz",
+            "natural": "peak",
+            "ele": "1611",
+            "wikidata": "Q2154222",
+            "wikipedia": "de:Rinnerspitz"
+          }
+        },
+        {
+          "id": 60310929,
+          "lat": 47.6777660,
+          "lon": 11.8390339,
+          "tags": {
+            "name": "Bodenschneidhaus",
+            "tourism": "alpine_hut",
+            "ele": "1365",
+            "building": "yes",
+            "contact:email": "info@bodenschneidhaus.de",
+            "contact:mobile": "+491723735798",
+            "contact:phone": "+4980264692",
+            "contact:website": "https://bodenschneidhaus.de/",
+            "wikidata": "Q889655",
+            "wikipedia": "de:Bodenschneidhaus"
+          }
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/bodenschneid.json",
