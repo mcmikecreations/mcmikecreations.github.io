@@ -132,6 +132,128 @@ async function startLoading() {
         }
     }).addTo(map);
 
+    let nodesData: any[] = [];
+    maps.forEach(m => {
+        if (m.properties?.hidden !== true && m.properties?.nodes) {
+            m.properties.nodes.forEach((node: any) => {
+                nodesData.push(node);
+            });
+        }
+    });
+
+    const uniqueNodes = Array.from(new Map(nodesData.map(node => [node.id, node])).values());
+    const nodesLayer = L.layerGroup().addTo(map);
+
+    const getNodeIconDetails = (tags: any) => {
+        if (tags.natural === 'peak') return { emoji: '⛰️', color: '#6b7280' };
+        if (tags.natural === 'saddle') return { emoji: '〰️', color: '#16a34a' };
+        if (tags.tourism === 'alpine_hut' || tags.tourism === 'wilderness_hut' || tags.building === 'hut') return { emoji: '🛖', color: '#b45309' };
+        if (tags.amenity === 'restaurant' || tags.amenity === 'cafe' || tags.amenity === 'fast_food' || tags.amenity === 'pub') return { emoji: '🍽️', color: '#ea580c' };
+        if (tags.tourism === 'viewpoint') return { emoji: '🔭', color: '#0284c7' };
+        if (tags.waterway === 'waterfall') return { emoji: '🌊', color: '#0ea5e9' };
+        if (tags.natural === 'water' || tags.natural === 'spring') return { emoji: '💧', color: '#38bdf8' };
+        if (tags.historic === 'ruins' || tags.historic === 'castle') return { emoji: '🏰', color: '#525252' };
+        if (tags.highway === 'bus_stop') return { emoji: '🚌', color: '#2563eb' };
+        if (tags.railway === 'station' || tags.railway === 'halt' || tags.public_transport === 'station') return { emoji: '🚉', color: '#dc2626' };
+        if (tags.tourism === 'information') return { emoji: 'ℹ️', color: '#2563eb' };
+        if (tags.place === 'village' || tags.place === 'town' || tags.place === 'city') return { emoji: '🏘️', color: '#7c3aed' };
+        return { emoji: '📍', color: '#3b82f6' };
+    };
+
+    const formatTags = (tags: any): [string, string][] => {
+        const formatted = new Map<string, string>();
+        const handledKeys = new Set(['name', 'ele']);
+
+        const addHandled = (keys: string[], label: string, formatter: (v: string) => string) => {
+            keys.forEach(k => handledKeys.add(k));
+            for (const k of keys) {
+                if (tags[k] !== undefined && tags[k] !== null) {
+                    formatted.set(label, formatter(String(tags[k])));
+                    return;
+                }
+            }
+        };
+
+        addHandled(['contact:phone', 'phone', 'contact:mobile', 'mobile'], 'Phone', v => `<a href="tel:${v}" style="color: #2563eb; text-decoration: none;">${v}</a>`);
+        addHandled(['contact:website', 'website', 'url'], 'Website', v => `<a href="${v.startsWith('http') ? v : 'https://' + v}" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">Link</a>`);
+        addHandled(['contact:email', 'email'], 'Email', v => `<a href="mailto:${v}" style="color: #2563eb; text-decoration: none;">${v}</a>`);
+
+        handledKeys.add('wikipedia');
+        if (tags.wikipedia) {
+            const parts = String(tags.wikipedia).split(':');
+            const lang = parts.length > 1 ? parts[0] : 'en';
+            const title = parts.length > 1 ? parts[1] : parts[0];
+            formatted.set('Wikipedia', `<a href="https://${lang}.wikipedia.org/wiki/${encodeURIComponent(title)}" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">${tags.wikipedia}</a>`);
+        }
+
+        handledKeys.add('wikidata');
+        if (tags.wikidata) {
+            formatted.set('Wikidata', `<a href="https://www.wikidata.org/wiki/${tags.wikidata}" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">${tags.wikidata}</a>`);
+        }
+
+        for (const [k, v] of Object.entries(tags)) {
+            if (!handledKeys.has(k)) {
+                const prettyKey = k.replace(/[:_]/g, ' ')
+                                   .split(' ')
+                                   .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                                   .join(' ');
+                formatted.set(prettyKey, String(v));
+            }
+        }
+
+        return Array.from(formatted.entries());
+    };
+
+    const renderNodes = () => {
+        nodesLayer.clearLayers();
+        const filteredNodes: any[] = [];
+        const minPixelDistance = 24; // marker diameter is size 24px
+
+        uniqueNodes.forEach(node => {
+            const p1 = map.project([node.lat, node.lon], map.getZoom());
+            const isOverlapping = filteredNodes.some(n => {
+                const p2 = map.project([n.lat, n.lon], map.getZoom());
+                return p1.distanceTo(p2) < minPixelDistance;
+            });
+
+            if (!isOverlapping) {
+                filteredNodes.push(node);
+            }
+        });
+
+        filteredNodes.forEach(node => {
+            const name = node.tags?.name || node.tags?.natural || "POI";
+            const ele = node.tags?.ele ? ` (${node.tags.ele}m)` : '';
+            const iconDetails = getNodeIconDetails(node.tags || {});
+
+            const icon = L.divIcon({
+                html: `<div style="background-color: ${iconDetails.color}; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3); font-size: 13px; line-height: 1;">${iconDetails.emoji}</div>`,
+                className: '',
+                iconSize: [24, 24],
+                iconAnchor: [12, 12],
+                popupAnchor: [0, -12]
+            });
+
+            let popupContent = `<div style="margin-bottom: 8px;"><b>${name}</b>${ele}</div>`;
+            const formattedTags = formatTags(node.tags || {});
+
+            const tagsList = formattedTags
+                .map(([k, v]) => `<tr><td style="padding-right: 8px; font-weight: 600; font-size: 11px; color: #6b7280; vertical-align: top; white-space: nowrap;">${k}</td><td style="font-size: 11px; word-break: break-word;">${v}</td></tr>`)
+                .join('');
+
+            if (tagsList) {
+                popupContent += `<div style="max-height: 150px; overflow-y: auto;"><table style="min-width: 100%; border-spacing: 0;">${tagsList}</table></div>`;
+            }
+
+            const marker = L.marker([node.lat, node.lon], { icon })
+            .bindPopup(popupContent);
+            nodesLayer.addLayer(marker);
+        });
+    };
+
+    renderNodes();
+    map.on('zoomend', renderNodes);
+
     (map as any).almostOver.addLayer(hikesLayer);
     map.on('almost:click', function (e: any) {
         // noinspection JSDeprecatedSymbols
