@@ -1,4 +1,5 @@
-After the semi-successful hike to [Sonnenberg (1622 m)](/404/) where I lost my hiking
+After the semi-successful hike to [Sonnenberg (1622 m)](/hikes/2026-02-15-oberammergau_sonnenberg/)
+where I lost my hiking
 pole, I was on the lookout for a sunny weekend to go back and retrieve it.
 I've also monitored Kleinanzeigen for the exact same model, but only found
 a few overpriced offers. Although the weather seemed ok at first, it
@@ -64,8 +65,8 @@ so I just winged it and hiked in the general direction of the next peak.
 After reaching a bigger road and turning off of it to get to the peak again,
 I was greeted with a hilltop covered in artificially planted young pines
 overgrown with spiky wines. Considering my previous fall at
-[Vordere Kesselschneid (2002 m)](/404/) and
-[Sonnenberg (1622 m)](/404/),
+[Vordere Kesselschneid (2002 m)](/hikes/2025-11-23-vordere_kesselschneid/) and
+[Sonnenberg (1622 m)](/hikes/2026-02-15-oberammergau_sonnenberg/),
 I didn't want to risk damaging my jacket and pants any further, so I tried
 my best to either walk around or fully step on the wines. While this worked,
 there was again no mark at the top, so I had to aimlessly wander around looking

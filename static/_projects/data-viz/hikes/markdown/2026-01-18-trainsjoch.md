@@ -7,7 +7,8 @@ valley between the ridges.
 ![Kieferbach near Kiefersfelden](/images/projects/data-viz/hikes/stories/trainsjoch/2026-01-18-00.jpg)
 
 I was tempted to go on a similar hike ever since my trip to
-[Großer Traithen (1852 m)](/404/) in January 2025, as I had seen Trainsjoch (1707 m)
+[Großer Traithen (1852 m)](/hikes/2025-01-26-grosser_traithen/)
+in January 2025, as I had seen Trainsjoch (1707 m)
 from the summit and wanted to explore it further. Still, I didn't expect
 to go there so soon and in winter of all times!
 

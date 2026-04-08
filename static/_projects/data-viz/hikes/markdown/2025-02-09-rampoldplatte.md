@@ -39,7 +39,8 @@ Sankt Margarethen, continuing to Brannenburg to get back home.
 ![Menu at Breitenberghütte (1050 m)](/images/projects/data-viz/hikes/stories/rampoldplatte/2025-02-09-05.jpg)
 ![Interior of Breitenberghütte (1050 m)](/images/projects/data-viz/hikes/stories/rampoldplatte/2025-02-09-06.jpg)
 
-My takeaway from this hike after going to [Soiernspitze (2253 m)](/404/) and [Pyramidenspitze (1997 m)](/hikes/2025-02-02-pyramidenspitze/)
+My takeaway from this hike after going to [Soiernspitze (2253 m)](/hikes/2025-01-19-soiernspitze/)
+and [Pyramidenspitze (1997 m)](/hikes/2025-02-02-pyramidenspitze/)
 earlier this year was that 17 km hikes with 1100 m of elevation difference now
 feel like walks in the park. On one hand, I'm proud of my progress and wish to
 keep it up. David called his experience "Reconnecting with nature" and I can't

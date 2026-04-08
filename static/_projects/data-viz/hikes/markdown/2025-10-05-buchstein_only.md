@@ -77,7 +77,7 @@ head back to civilization instead.
 
 Reaching Kreuth, the fancy bus stop with an E-ink display notified me that the
 bus will arrive in an hour. Freezing on the spot, I had to keep going all the
-way to Scharling (where I ended my hike to [Hirschberg (1668 m)](/404/)) to
+way to Scharling (where I ended my hike to [Hirschberg (1668 m)](/hikes/2024-11-17-hirschberg/)) to
 warm myself up, where the bus finally caught up with me and I headed home.
 
 ![View onto Kreuth near 47.641778, 11.734758](/images/projects/data-viz/hikes/stories/buchstein_only/2025-10-05-14.jpg)

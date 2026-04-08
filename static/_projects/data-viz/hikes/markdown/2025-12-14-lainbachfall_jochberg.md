@@ -1,5 +1,5 @@
 The group of Ukrainians I've met at the end of my recent hike to
-[Auer Berg (1252 m)](/404/)
+[Auer Berg (1252 m)](/hikes/2025-10-27-auer_berg/)
 invited me to an outing up Jochberg, which I visited a couple of times before.
 With a fractured finger and nothing better to do, I gladly accepted the
 invitation and joined the group. We set out early in the morning, traveling in
@@ -70,7 +70,7 @@ way ahead.
 We started the final section and reached the peak just 20 minutes later. The
 vista from the top was mind-blowing. The clouds in the Kochel region contrast
 the clear skies of Walchensee, [Simetsberg (1840 m)](/404/)
-in the distance in front of [Zugspitze (2962 m)](/404/),
+in the distance in front of [Zugspitze (2962 m)](/hikes/2025-06-21-zugspitze_reintal/),
 and [Benediktenwand (1800 m)](/404/)
 in the other direction add up to an amazing panorama. The tourists were also
 really kind, patiently stomaching our chatter the whole time we stayed there.

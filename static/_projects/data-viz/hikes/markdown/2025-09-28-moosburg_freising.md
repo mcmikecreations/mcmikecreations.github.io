@@ -1,4 +1,5 @@
-After the [Zugspitze Höllental hike](/404/) and a tough week, I was too tired to do a
+After the [Zugspitze Höllental hike](/hikes/2025-09-18-zugspitze_hoellental/)
+and a tough week, I was too tired to do a
 difficult hike. As a solution, I opted for a more relaxed hike from Moosburg
 to Freising. Took enough time to sleep in the morning, had nice breakfast,
 and set off around 11 AM.

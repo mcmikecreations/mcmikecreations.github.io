@@ -26,7 +26,7 @@ Despite passing many hiking groups at the beginning of the trail, we barely
 saw anyone going on our route. It would be interesting to know what other
 exciting hikes are there that are more popular than this one. Maybe
 Steilnerjoch (1747 m), which I crossed on my
-[Großer Traithen (1852 m) hike](/404/)?
+[Großer Traithen (1852 m) hike](/hikes/2025-01-26-grosser_traithen/)?
 
 ![Brünnstein (1619 m) from below](/images/projects/data-viz/hikes/stories/bruennstein/2025-07-06-03.jpg)
 

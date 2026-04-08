@@ -1,5 +1,6 @@
 Back in September 2024, I posted a list of hiking ideas, including
-[Nebelhorn (2224 m)](/404/) and [Simetsberg (1840 m)](/404/). This ridge got on
+[Nebelhorn (2224 m)](/hikes/2024-10-27-nebelhorn/) and
+[Simetsberg (1840 m)](/404/). This ridge got on
 the list and remained there until Mikuláš finally convinced me to do it. With
 no counterarguments, I agreed and asked Maksym, a former DAAD scholar, to join.
 

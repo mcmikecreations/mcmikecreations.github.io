@@ -7,7 +7,8 @@ on.
 
 Since Brecherspitz (1685 m) was in my to-do list ever since I saw it on my
 [first Spitzingsee hike](/404/), I decided to go there. Annette warned me on
-our [sledge riding trip](/404/) to Obere Firstalm (1369 m) that this path is
+our [sledge riding trip](/hikes/2024-12-14-spitzingsee_schlittenfahrt/)
+to Obere Firstalm (1369 m) that this path is
 quite dangerous in winter, which implied it being also not too safe in summer,
 so I knew I had to be extra careful, considering my sick state.
 
@@ -70,7 +71,8 @@ I headed along the gravel road back to Neuhaus and went back home to rest in
 bed.
 
 I would recommend this route to anyone in the area, as it's quite a different
-experience compared to [Stümpfling (1506 m)](/404/) and others I've been to
+experience compared to [Stümpfling (1506 m)](/hikes/2025-09-07-wasserspitz/)
+and others I've been to
 before. The views of the lake and other peaks, including
 [Wendelstein (1838 m)](/404/), are great, giving you a sweet panorama to look
 at. Just don't go there while sick, ok?

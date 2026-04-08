@@ -9,7 +9,7 @@ section of the train to Schliersee.
 ![Obere Firstalm (1369 m)](/images/projects/data-viz/hikes/stories/bodenschneid/2025-11-01-00.jpg)
 
 After taking the train and a bus to Spitzingsee, we headed up to
-Obere Firstalm (1369 m), from which we took the [sledges down last winter](/404/),
+Obere Firstalm (1369 m), from which we took the [sledges down last winter](/hikes/2024-12-14-spitzingsee_schlittenfahrt/),
 and took a short break. I also changed my clothes,
 since I got myself severely overprepared and overdressed.
 
