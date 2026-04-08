@@ -3657,8 +3657,8 @@
       "nodes": [
         {
           "id": 121940390,
-          "lat": 47.4815666,
-          "lon": 11.3571077,
+          "lat": 47.4675002,
+          "lon": 11.3563005,
           "tags": {
             "name": "Krinner-Kofler-Hütte",
             "tourism": "wilderness_hut",
@@ -4071,10 +4071,10 @@
         },
         {
           "id": 82814302,
-          "lat": 47.7302847,
-          "lon": 12.0437261,
+          "lat": 47.7225580,
+          "lon": 12.0679360,
           "tags": {
-            "name": "Schuhbräualm",
+            "name": "Breitenberghütte",
             "alt_name": "Breitenberghaus",
             "tourism": "alpine_hut",
             "amenity": "restaurant",
@@ -4366,8 +4366,8 @@
       "nodes": [
         {
           "id": 99318407,
-          "lat": 47.5238658,
-          "lon": 11.1485315,
+          "lat": 47.3374513,
+          "lon": 11.3428627,
           "tags": {
             "name": "Möslalm",
             "alt_name": "Arzler Kristenalm",
@@ -5165,8 +5165,8 @@
         },
         {
           "id": 30907084,
-          "lat": 47.5911671,
-          "lon": 11.7810799,
+          "lat": 47.5881087,
+          "lon": 11.7904834,
           "tags": {
             "name": "Bayerische Wildalm",
             "tourism": "wilderness_hut",
@@ -5370,8 +5370,8 @@
         },
         {
           "id": 370669072,
-          "lat": 47.4483891,
-          "lon": 11.0444884,
+          "lat": 47.4378683,
+          "lon": 11.0248867,
           "tags": {
             "name": "Höllentalangerhütte",
             "tourism": "alpine_hut",
@@ -5821,8 +5821,8 @@
         },
         {
           "id": 38173874,
-          "lat": 47.5443752,
-          "lon": 11.1914281,
+          "lat": 47.5471087,
+          "lon": 11.1888231,
           "tags": {
             "name": "Weilheimer Hütte",
             "alt_name": "Krottenkopfhütte",
@@ -5949,8 +5949,8 @@
         },
         {
           "id": 83122401,
-          "lat": 47.6037405,
-          "lon": 12.2309587,
+          "lat": 47.6059383,
+          "lon": 12.2392654,
           "tags": {
             "name": "Vorderkaiserfeldenhütte",
             "tourism": "alpine_hut",
@@ -7217,9 +7217,9 @@
           }
         },
         {
-          "id": 260979669,
-          "lat": 47.7210941,
-          "lon": 11.9877728,
+          "id": 84097007,
+          "lat": 47.7142465,
+          "lon": 11.9799945,
           "tags": {
             "name": "Kesselalm",
             "tourism": "alpine_hut",
@@ -7227,7 +7227,7 @@
             "amenity": "restaurant",
             "building": "yes",
             "mobile": "+491708493855",
-            "phone": "+49802826026",
+            "phone": "+4980282602",
             "website": "https://kesselalm.com/"
           }
         }

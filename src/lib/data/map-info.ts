@@ -53,7 +53,7 @@ interface StandardFeatures {
 interface MapNode {
 	id: number;
 	lat: number;
-	lng: number;
+	lon: number;
 	tags: {
 		[key: string]: string;
 	};
