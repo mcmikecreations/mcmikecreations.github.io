@@ -3403,12 +3403,12 @@
       "dates": [
         {
           "date": "2024-10-20",
-          "title": null,
-          "description": null,
+          "title": "Leisurely Walk Around Krün Lakes",
+          "description": "Taking a relaxing walk between more challenging hikes.",
           "tags": [],
           "people": [],
           "image": null,
-          "path": null
+          "path": "/_projects/data-viz/hikes/markdown/2024-10-20-kruen.md"
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/kruen.json",
