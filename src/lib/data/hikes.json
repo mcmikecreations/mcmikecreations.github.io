@@ -3296,12 +3296,29 @@
       "dates": [
         {
           "date": "2024-10-03",
-          "title": null,
-          "description": null,
+          "title": "I am the Train",
+          "description": "Following a 1919 railway path near Spitzingsee.",
           "tags": [],
           "people": [],
           "image": null,
-          "path": null
+          "path": "/_projects/data-viz/hikes/markdown/2024-10-03-bockerlbahnweg.md"
+        }
+      ],
+      "nodes": [
+        {
+          "id": 96257994,
+          "lat": 47.6481236,
+          "lon": 11.8905576,
+          "tags": {
+            "name": "Blecksteinhaus",
+            "tourism": "alpine_hut",
+            "ele": "1022",
+            "building": "yes",
+            "amenity": "restaurant",
+            "contact:website": "http://www.blecksteinhaus.de/",
+            "phone": "+49802671204",
+            "wikidata": "Q883386"
+          }
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/bockerlbahnweg.json",
