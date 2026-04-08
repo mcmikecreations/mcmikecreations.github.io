@@ -3348,12 +3348,60 @@
       "dates": [
         {
           "date": "2024-10-12",
-          "title": null,
-          "description": null,
-          "tags": [],
+          "title": "Cinematic Trip to Auerspitz",
+          "description": "Going on a trip across Alps with a group of photographers.",
+          "tags": ["DAAD FK"],
           "people": [],
           "image": null,
-          "path": null
+          "path": "/_projects/data-viz/hikes/markdown/2024-10-12-auerspitz.md"
+        }
+      ],
+      "nodes": [
+        {
+          "id": 2665669316,
+          "lat": 47.6468339,
+          "lon": 11.9384960,
+          "tags": {
+            "name": "Kümpflscharte",
+            "natural": "saddle",
+            "ele": "1695"
+          }
+        },
+        {
+          "id": 260858296,
+          "lat": 47.6437639,
+          "lon": 11.9452834,
+          "tags": {
+            "name": "Auerspitz",
+            "natural": "peak",
+            "ele": "1811",
+            "summit:cross": "yes",
+            "wikidata": "Q759286"
+          }
+        },
+        {
+          "id": 25075130,
+          "lat": 47.6487010,
+          "lon": 11.9584795,
+          "tags": {
+            "name": "Ruchenkopf-Hütte",
+            "alt_name": "Hütte der Ruchenköpfler",
+            "tourism": "wilderness_hut",
+            "ele": "1509",
+            "alt_ele": "1517",
+            "building": "yes",
+            "website": "https://ruchenkoepfler.de/"
+          }
+        },
+        {
+          "id": 297136278,
+          "lat": 47.6776378,
+          "lon": 11.9635431,
+          "tags": {
+            "name": "Segelflugplatz LSC Schliersee",
+            "aeroway": "aerodrome",
+            "website": "https://lsc-schliersee.de/"
+          }
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/auerspitz.json",

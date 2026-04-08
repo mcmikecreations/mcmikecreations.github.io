@@ -157,6 +157,7 @@ async function startLoading() {
         if (tags.railway === 'station' || tags.railway === 'halt' || tags.public_transport === 'station') return { emoji: '🚉', color: '#dc2626' };
         if (tags.tourism === 'information') return { emoji: 'ℹ️', color: '#2563eb' };
         if (tags.place === 'village' || tags.place === 'town' || tags.place === 'city') return { emoji: '🏘️', color: '#7c3aed' };
+        if (tags.aeroway === 'aerodrome') return { emoji: '✈️', color: '#6294ff' };
         return { emoji: '📍', color: '#3b82f6' };
     };
 
