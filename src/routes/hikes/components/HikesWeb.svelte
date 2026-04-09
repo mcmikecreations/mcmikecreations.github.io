@@ -1,21 +1,77 @@
 <script lang="ts">
 import AppMeta from '$lib/components/AppMeta.svelte';
 import { Heading, Progressbar, Button } from 'flowbite-svelte';
-import { onMount } from 'svelte';
 import 'leaflet/dist/leaflet.css';
 import { getDistance, getTime } from '$lib/hikes/build-statistics';
 import type { Layer } from 'leaflet';
 import type { Feature, GeoJsonObject, Geometry } from 'geojson';
 import HikesTimeline from './HikesTimeline.svelte';
-import { secondaryGeometryColor } from '$lib/hikes/build-geometry';
+import { primaryGeometryColor } from '$lib/hikes/build-geometry';
 import maps from '$lib/data/hikes.json';
-import { type Feature as MapFeature, type GeometryData, getMapFeatures } from '$lib/data/map-info';
+import { type Feature as MapFeature, type GeometryData, getMapFeatures, type MapDate } from '$lib/data/map-info';
 import { loadGeometry, loadProperties } from '$lib/hikes/build-geometry';
 
 let data: any = $state(null);
 let loadingProgress = $state(0);
 let isLoading = $state(true);
 let hasStartedLoading = $state(false);
+
+/// blended Catmull-Rom cubic spline
+function smoothCoords(pts: number[][], pointsPerSegment = 10, smoothing = 0.5): number[][] {
+    if (pts.length < 2) return pts;
+    const result: number[][] = [];
+
+    for (let i = 0; i < pts.length - 1; i++) {
+        let p0 = i === 0 ? pts[i] : pts[i - 1];
+        let p1 = pts[i];
+        let p2 = pts[i + 1];
+        let p3 = i + 2 < pts.length ? pts[i + 2] : p2;
+
+        let m1_c = (p2[0] - p0[0]) / 2;
+        let m1_cy = (p2[1] - p0[1]) / 2;
+        let m2_c = (p3[0] - p1[0]) / 2;
+        let m2_cy = (p3[1] - p1[1]) / 2;
+
+        if (i === 0) {
+            m1_c = p2[0] - p1[0];
+            m1_cy = p2[1] - p1[1];
+        }
+        if (i === pts.length - 2) {
+            m2_c = p2[0] - p1[0];
+            m2_cy = p2[1] - p1[1];
+        }
+
+        let m1_l = p2[0] - p1[0];
+        let m1_ly = p2[1] - p1[1];
+        let m2_l = p2[0] - p1[0];
+        let m2_ly = p2[1] - p1[1];
+
+        let m1_x = m1_l * (1 - smoothing) + m1_c * smoothing;
+        let m1_y = m1_ly * (1 - smoothing) + m1_cy * smoothing;
+        let m2_x = m2_l * (1 - smoothing) + m2_c * smoothing;
+        let m2_y = m2_ly * (1 - smoothing) + m2_cy * smoothing;
+
+        for (let j = 0; j < pointsPerSegment; j++) {
+            let t = j / pointsPerSegment;
+            let t2 = t * t;
+            let t3 = t2 * t;
+
+            let h00 = 2 * t3 - 3 * t2 + 1;
+            let h10 = t3 - 2 * t2 + t;
+            let h01 = -2 * t3 + 3 * t2;
+            let h11 = t3 - t2;
+
+            let x = h00 * p1[0] + h10 * m1_x + h01 * p2[0] + h11 * m2_x;
+            let y = h00 * p1[1] + h10 * m1_y + h01 * p2[1] + h11 * m2_y;
+
+            result.push([x, y]);
+        }
+    }
+
+    result.push(pts[pts.length - 1]);
+
+    return result;
+}
 
 function hash(str: string): number {
     let hash = 0, i, chr;
@@ -66,11 +122,17 @@ async function startLoading() {
         if (mapInfo.properties?.checkpoints) {
             (geometry as any)['geometry'] = {
                 "type": "LineString",
-                "coordinates": mapInfo.properties?.checkpoints,
+                "coordinates": smoothCoords(mapInfo.properties?.checkpoints, 10, 0.4),
             };
+            (geometry as any)['properties']['isSmoothed'] = true;
             delete (geometry as any)['properties']['extras'];
             delete (geometry as any)['properties']['segments'];
             delete (geometry as any)['properties']['way_points'];
+
+            const outlineGeometry = JSON.parse(JSON.stringify(geometry));
+            outlineGeometry.properties.isSmoothedOutline = true;
+            outlineGeometry.properties.isSmoothed = false;
+            features.push(outlineGeometry);
         }
 
         features.push(geometry);
@@ -95,14 +157,49 @@ async function startLoading() {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
     const randomColor = function(feature : Feature<Geometry, any> | undefined) {
+        if (feature?.properties?.isSmoothedOutline) {
+            return {
+                color: '#ffffff',
+                weight: 7,
+                opacity: 0.9,
+                dashArray: feature?.properties?.draft === true ? '5, 5' : undefined,
+            };
+        }
+        const c = '#' + ((feature?.properties?.id ?? 0) & 0x00FFFFFF).toString(16).padStart(6, '0');
+        if (feature?.properties?.isSmoothed) {
+            return {
+                color: c,
+                weight: 4,
+                opacity: 1.0,
+                dashArray: feature?.properties?.draft === true ? '5, 5' : undefined,
+            };
+        }
         return {
-            color: '#' + ((feature?.properties?.id ?? 0) & 0x00FFFFFF).toString(16).padStart(6, '0'),
+            color: c,
             dashArray: feature?.properties?.draft === true ? '5, 5' : undefined,
         }
     };
     const staticColor = function(feature : Feature<Geometry, any> | undefined) {
+        if (feature?.properties?.isSmoothedOutline) {
+            return {
+                color: '#ffffff',
+                weight: 7,
+                opacity: 0.9,
+                dashArray: feature?.properties?.draft === true ? '5, 5' : undefined,
+            };
+        }
+        if (feature?.properties?.isSmoothed) {
+            return {
+                color: primaryGeometryColor,
+                weight: 4,
+                opacity: 1.0,
+                dashArray: feature?.properties?.draft === true ? '5, 5' : undefined,
+            };
+        }
         return {
-            color: secondaryGeometryColor,
+            color: primaryGeometryColor,
+            weight: 3,
+            opacity: 0.8,
             dashArray: feature?.properties?.draft === true ? '5, 5' : undefined,
         };
     }
@@ -121,12 +218,14 @@ async function startLoading() {
 <li>Duration: ${getTime(feature.properties.duration ?? 0)}</li>
 <li>Ascent: ${getDistance(feature.properties.ascent ?? 0)}</li>
 <li>Descent: ${getDistance(feature.properties.descent ?? 0)}</li>
-<li>Dates: ${feature.properties.dates.map((x : any) => {
-    const filename = x.path ? x.path.split('/').pop().replace('.md', '') : null;
+<li>Posts: ${feature.properties.dates.map((x : MapDate) => {
+    const filename = x.path ? x.path!.split('/').pop()!.replace('.md', '') : null;
     const targetRoute = filename ? `/hikes/${filename}/` : feature.properties.route;
     return `<a href="${targetRoute}">${new Date(x.date).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"})}` + `</a>`;
 }).join('; ')}</li>
-<li><a href="${feature.properties.route}">Map Link</a>, <a href="${feature.properties.filePath}">${feature.properties.fileType}</a>${gpxSuffix}</li>
+<li>${feature.properties.dates.map((x : MapDate) => !!x.path).includes(true) ? '' : `<a href="${feature.properties.route}">Map Link</a>, `}
+<a href="${feature.properties.filePath}">${feature.properties.fileType}</a>${gpxSuffix}
+</li>
 </ul>`);
             }
         }

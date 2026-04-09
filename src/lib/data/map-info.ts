@@ -95,7 +95,7 @@ interface Map {
 }
 
 export type {
-	MapProvider, Map, MapProperties, Feature, GeometryData, TilesData, TilesMapsData, OriginData, Mode
+	MapProvider, Map, MapProperties, Feature, GeometryData, TilesData, TilesMapsData, OriginData, Mode, MapDate
 };
 export {
 	getMapFeatures
