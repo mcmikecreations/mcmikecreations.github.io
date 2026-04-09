@@ -47,9 +47,9 @@
 		{/each}
 	</div>
 
-	<div class="mx-auto mt-8 columns-2 flex flex-wrap justify-center gap-4">
+	<div class="mx-auto mt-8 flex flex-wrap justify-center gap-4 px-4 sm:px-0">
 		<div
-			class="relative min-w-sm max-w-md p-4
+			class="relative w-full md:w-auto md:min-w-[24rem] max-w-md p-4
 			before:content-[''] before:bg-[url('{resume.basics.image}')]
 			before:h-full before:w-full before:absolute before:-z-10 before:top-0 before:left-0
 			before:bg-cover before:bg-center before:bg-origin-border
@@ -58,7 +58,7 @@
 		>
 			<Img src={resume.basics.image} imgClass="aspect-crt object-cover object-center" alt="Profile" />
 		</div>
-		<div class="min-w-sm max-w-md flex flex-col p-4">
+		<div class="w-full md:w-auto md:min-w-[24rem] max-w-md flex flex-col p-4">
 			<Heading tag="h3">About Me</Heading>
 			<P class="py-2">{resume.basics.summary}</P>
 			<div class="flex-grow"></div>

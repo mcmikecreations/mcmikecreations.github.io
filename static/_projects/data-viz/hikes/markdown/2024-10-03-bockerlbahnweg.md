@@ -19,7 +19,7 @@ myself.
 
 I kept walking and getting closer to Spitzingsee, passing by a bunch of elderly
 hikers. At one point I saw Jägerkamp (1746 m) that [I've been at in the past](/404/).
-It was a memorable experience, just as the [trip to Rotwand (1884 m)](/404/).
+It was a memorable experience, just as the [trip to Rotwand (1884 m)](/hikes/2024-09-29-rotwand/).
 
 ![The meadow near Spitzingsee](/images/projects/data-viz/hikes/stories/bockerlbahnweg/2024-10-03-04.jpg)
 ![Spitzingsee beach](/images/projects/data-viz/hikes/stories/bockerlbahnweg/2024-10-03-05.jpg)

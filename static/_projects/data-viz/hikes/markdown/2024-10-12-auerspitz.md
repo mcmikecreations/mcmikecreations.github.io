@@ -35,7 +35,7 @@ After passing the Kümpflscharte (1695 m) saddle and reaching the
 Auerspitz (1811 m) summit, some DAAD FK students brought out their cameras and
 started taking photos of the scenery. I kept my binoculars on me, so I started
 handing them out to others that wanted to see the surrounding mountains up
-close. We even saw Rotwand (1884 m) that I [visited in September](/404/).
+close. We even saw Rotwand (1884 m) that I [visited in September](/hikes/2024-09-29-rotwand/).
 
 ![View down from Auerspitz (1811 m)](/images/projects/data-viz/hikes/stories/auerspitz/2024-10-12-06.jpg)
 ![View from Auerspitz (1811 m) towards Rotwand (1884 m)](/images/projects/data-viz/hikes/stories/auerspitz/2024-10-12-09.jpg)

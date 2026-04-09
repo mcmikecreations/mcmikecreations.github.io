@@ -2,6 +2,13 @@
 	/* eslint-disable @typescript-eslint/ban-ts-comment */
 	import type { PageData } from './$types';
 	import { Breadcrumb, BreadcrumbItem, Card, Heading, A } from 'flowbite-svelte';
+	import {
+		ClockOutline,
+		MapPinOutline,
+		ArrowUpOutline,
+		ArrowDownOutline,
+		ArrowLeftOutline
+	} from 'flowbite-svelte-icons';
 	import SvelteMarkdown from 'svelte-markdown';
 	import type { Token, Tokens } from 'marked';
 	import DefaultCode from '$lib/renderers/DefaultCode.svelte';
@@ -14,8 +21,10 @@
 	import type { GeoJsonObject, Geometry, Feature as F } from 'geojson';
 	import {
 		secondaryGeometryColor,
+		primaryGeometryColor,
 		secondaryIndicatorColor
 	} from '$lib/hikes/build-geometry';
+	import { getNodeIconDetails, formatTags } from '$lib/hikes/map-utils';
 	import type { Layer } from 'leaflet';
 	import { onMount } from 'svelte';
 	import 'leaflet/dist/leaflet.css';
@@ -29,6 +38,7 @@
 	}
 
 	let { data }: Props = $props();
+	let allHikesLink = $derived(data.post.page > 1 ? `/hikes/page/${data.post.page}/#${data.post.anchor}` : `/hikes/#${data.post.anchor}`);
 	const predicate = (to: Token, index: number, startFrom: number) =>
 		index > startFrom &&
 		to.type === 'paragraph' &&
@@ -75,6 +85,9 @@
 	let contentElement : HTMLElement | undefined = $state();
 	let myRefresh: (() => Promise<void>) | undefined = $state();
 	let myUpdateIndicator3d: ((x: number, y: number, z: number) => void) | undefined = $state();
+
+	let fullResImageSrc = $state<string | undefined>(undefined);
+	let fullImageLoaded = $state(false);
 
 	async function attachInteractive() : Promise<void> {
 		const { L } = await import('$lib/components/leaflet.almostover.js');
@@ -146,15 +159,84 @@
 
 		const staticColor = function(feature : F<Geometry, any> | undefined) {
 			return {
-				color: secondaryGeometryColor,
+				color: primaryGeometryColor,
+				weight: 4,
+				opacity: 1.0
 			};
 		}
+		const staticColorOutline = function(feature : F<Geometry, any> | undefined) {
+			return {
+				color: '#ffffff',
+				weight: 7,
+				opacity: 0.9
+			};
+		}
+
+		const hikesLayerOutline = L.geoJSON(data.mapDisplay.dataGeometry as GeoJsonObject[], {
+			style: staticColorOutline,
+			interactive: false
+		}).addTo(map);
+
 		const hikesLayer = L.geoJSON(data.mapDisplay.dataGeometry as GeoJsonObject[], {
 			style: staticColor,
 			onEachFeature: function(feature: F<any, any>, layer: Layer) {
 			}
 		}).addTo(map);
 		map.almostOver.addLayer(hikesLayer);
+
+		if (data.map.properties?.nodes) {
+			const nodesLayer = L.layerGroup().addTo(map);
+
+			const renderNodes = () => {
+				nodesLayer.clearLayers();
+				const filteredNodes: any[] = [];
+				const minPixelDistance = 24;
+
+				data.map.properties.nodes.forEach((node: any) => {
+					const p1 = map.project([node.lat, node.lon], map.getZoom());
+					const isOverlapping = filteredNodes.some(n => {
+						const p2 = map.project([n.lat, n.lon], map.getZoom());
+						return p1.distanceTo(p2) < minPixelDistance;
+					});
+
+					if (!isOverlapping) {
+						filteredNodes.push(node);
+					}
+				});
+
+				filteredNodes.forEach(node => {
+					const name = node.tags?.name || node.tags?.natural || "POI";
+					const ele = node.tags?.ele ? ` (${node.tags.ele}m)` : '';
+					const iconDetails = getNodeIconDetails(node.tags || {});
+
+					const icon = L.divIcon({
+						html: `<div style="background-color: ${iconDetails.color}; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3); font-size: 13px; line-height: 1;">${iconDetails.emoji}</div>`,
+						className: '',
+						iconSize: [24, 24],
+						iconAnchor: [12, 12],
+						popupAnchor: [0, -12]
+					});
+
+					let popupContent = `<div style="margin-bottom: 8px;"><b>${name}</b>${ele}</div>`;
+					const formattedTags = formatTags(node.tags || {});
+
+					const tagsList = formattedTags
+						.map(([k, v]) => `<tr><td style="padding-right: 8px; font-weight: 600; font-size: 11px; color: #6b7280; vertical-align: top; white-space: nowrap;">${k}</td><td style="font-size: 11px; word-break: break-word;">${v}</td></tr>`)
+						.join('');
+
+					if (tagsList) {
+						popupContent += `<div style="max-height: 150px; overflow-y: auto;"><table style="min-width: 100%; border-spacing: 0;">${tagsList}</table></div>`;
+					}
+
+					const marker = L.marker([node.lat, node.lon], { icon })
+						.bindPopup(popupContent);
+					nodesLayer.addLayer(marker);
+				});
+			};
+
+			renderNodes();
+			map.on('zoomend', renderNodes);
+		}
 
 		statsIndicatorInteractive = new L.CircleMarker([data.mapDisplay.origin.lat, data.mapDisplay.origin.lon], {
 			fillColor: secondaryIndicatorColor,
@@ -299,6 +381,21 @@
 	}
 
 	onMount(async () => {
+		// Delay loading of the full resolution image to allow other assets to finish loading first
+		if (data.post.imageFull) {
+			window.addEventListener('load', () => {
+				setTimeout(() => {
+					fullResImageSrc = data.post.imageFull;
+				}, 100);
+			});
+			// Fallback in case window load already fired
+			setTimeout(() => {
+				if (!fullResImageSrc) {
+					fullResImageSrc = data.post.imageFull;
+				}
+			}, 1000);
+		}
+
 		await attachInteractive();
 		initStatistics();
 	});
@@ -347,9 +444,15 @@
 	<div class="mx-4 2xl:mx-0 md:px-24 mb-8">
 		<article class="mx-auto">
 			<div class="mx-auto prose dark:prose-invert prose-a:text-primary-600 dark:prose-a:text-primary-500 md:prose-lg lg:prose-xl min-h-80">
+				<div class="mt-2 flex md:hidden">
+					<A href={allHikesLink} class="inline-flex items-center">
+						<ArrowLeftOutline class="w-5 h-5 me-2" />
+						Back to All Hikes
+					</A>
+				</div>
 				<Breadcrumb aria-label="Page path" class="mt-4 not-prose hidden md:flex">
 					<BreadcrumbItem href="/" home>Home</BreadcrumbItem>
-					<BreadcrumbItem href={data.post.page > 1 ? `/hikes/page/${data.post.page}/#${data.post.anchor}` : `/hikes/#${data.post.anchor}`}>Hikes</BreadcrumbItem>
+					<BreadcrumbItem href={allHikesLink}>Hikes</BreadcrumbItem>
 					<BreadcrumbItem>{data.post.title}</BreadcrumbItem>
 				</Breadcrumb>
 				<Heading tag="h1" class="!mb-0 !mt-2">{data.post.title}</Heading>
@@ -358,37 +461,74 @@
 					·
 					<span>{data.post.time}</span>
 					·
-					<span>{new Date(data.post.date).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"})}</span>
+					<a class="no-underline hover:underline" href="/hikes/year/{new Date(data.post.date).getFullYear()}">{new Date(data.post.date).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"})}</a>
 					{#if data.post.tags?.length}
 						·
-						<div class="flex flex-row justify-end gap-2" aria-details="tags">
+						<div class="flex flex-row flex-wrap justify-end gap-2 items-center" aria-details="tags">
 							<span aria-label="tags" class="sr-only"></span>
 							{#each data.post.tags as t}
-								<span>{t}</span>
+								<a class="bg-primary-100 text-primary-800 dark:bg-primary-900 dark:text-primary-300 px-2.5 py-0.5 rounded no-underline hover:bg-primary-200 dark:hover:bg-primary-800" href="/hikes/tag/{t}">{t}</a>
 							{/each}
 						</div>
 					{/if}
 				</div>
 				<div id="content">
-					<Card
-						horizontal
-						img={data.post.image}
-						class="not-prose w-full max-w-none bg-transparent dark:bg-transparent border-transparent dark:border-transparent"
-						classes={{ image: "md:w-48 lg:w-[24rem] rounded-lg md:rounded-lg" }}
-					>
-						<div class="mx-4 mt-4 md:mt-0">
-							<ul>
-								<li><b>Distance</b>: {getDistance(data.map.properties.distance ?? 0)}</li>
-								<li><b>Elevation gain/loss</b>: {getDistance(data.map.properties.ascent ?? 0)}/{getDistance(data.map.properties.descent ?? 0)}</li>
-								<li><b>Duration</b>: {getTime(data.map.properties.duration ?? 0)}<sup>*</sup></li>
-							</ul>
-							<span>
-<!--								<sup>-->
-								* Pure net walking time in summer with above average speed.
-<!--								</sup>-->
-							</span>
+					<div class="flex flex-col md:flex-row gap-6 mb-6 not-prose w-full max-w-none">
+						{#if data.post.imageFull}
+							<div class="relative w-full md:w-48 lg:w-[24rem] aspect-video md:aspect-auto m-0 shrink-0 rounded-lg md:rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800">
+								<img src={data.post.image} alt={data.post.title} class="absolute inset-0 w-full h-full object-cover m-0 {fullImageLoaded ? 'opacity-0 delay-500' : 'opacity-100'} transition-opacity duration-1000" />
+								{#if fullResImageSrc}
+									<picture class="absolute inset-0 w-full h-full m-0">
+										<source media="(min-width: 768px)" srcset={fullResImageSrc} />
+										<img src={data.post.image} alt={data.post.title} class="w-full h-full object-cover m-0 transition-opacity duration-500 {fullImageLoaded ? 'opacity-100' : 'opacity-0'}" onload={() => fullImageLoaded = true} />
+									</picture>
+								{/if}
+							</div>
+						{/if}
+						<div class="flex w-full flex-col justify-center">
+							<div class="flex flex-row flex-wrap gap-x-4 gap-y-4 md:gap-x-6 md:gap-y-6 my-2">
+								<div class="flex items-center gap-3 basis-[140px] grow">
+									<div class="text-primary-600 dark:text-primary-500 bg-primary-100 dark:bg-primary-900 rounded-lg p-2 shrink-0">
+										<ClockOutline class="w-6 h-6" />
+									</div>
+									<div>
+										<div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide">Duration*</div>
+										<div class="font-semibold whitespace-nowrap">{getTime(data.map.properties.duration ?? 0)}</div>
+									</div>
+								</div>
+								<div class="flex items-center gap-3 basis-[140px] grow">
+									<div class="text-primary-600 dark:text-primary-500 bg-primary-100 dark:bg-primary-900 rounded-lg p-2 shrink-0">
+										<MapPinOutline class="w-6 h-6" />
+									</div>
+									<div>
+										<div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide">Distance</div>
+										<div class="font-semibold whitespace-nowrap">{getDistance(data.map.properties.distance ?? 0)}</div>
+									</div>
+								</div>
+								<div class="flex items-center gap-3 basis-[140px] grow">
+									<div class="text-primary-600 dark:text-primary-500 bg-primary-100 dark:bg-primary-900 rounded-lg p-2 shrink-0">
+										<ArrowUpOutline class="w-6 h-6" />
+									</div>
+									<div>
+										<div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide">Ascent</div>
+										<div class="font-semibold whitespace-nowrap">{getDistance(data.map.properties.ascent ?? 0)}</div>
+									</div>
+								</div>
+								<div class="flex items-center gap-3 basis-[140px] grow">
+									<div class="text-primary-600 dark:text-primary-500 bg-primary-100 dark:bg-primary-900 rounded-lg p-2 shrink-0">
+										<ArrowDownOutline class="w-6 h-6" />
+									</div>
+									<div>
+										<div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide">Descent</div>
+										<div class="font-semibold whitespace-nowrap">{getDistance(data.map.properties.descent ?? 0)}</div>
+									</div>
+								</div>
+							</div>
+							<div class="text-sm text-gray-500 dark:text-gray-400 mt-2">
+								* Duration is pure net walking time in summer with above average speed.
+							</div>
 							{#if data.display.filePrimary || data.display.fileGpx}
-								<blockquote class="!mb-0">
+								<blockquote class="!mb-0 mt-4 border-l-4 border-gray-300 dark:border-gray-600 pl-4 py-1 italic text-gray-600 dark:text-gray-400">
 									Grab the
 									{#if data.display.fileGpx && data.display.filePrimary}
 										<A href={fileGpx.path} download={fileGpx.path.substring(fileGpx.path.lastIndexOf('/') + 1)}>{fileGpx.type}</A>
@@ -403,7 +543,7 @@
 								</blockquote>
 							{/if}
 						</div>
-					</Card>
+					</div>
 					<SvelteMarkdown source={data.post.content.slice(0, map2dIndex + 1)} renderers={renderers} />
 					<div class="w-full mx-auto not-prose">
 						<Map3d parameters={map3dParameters} {contentElement} bind:refresh={myRefresh} bind:updateIndicator={myUpdateIndicator3d} />
@@ -424,4 +564,3 @@
 </div>
 
 <ToTopButton />
-

@@ -117,6 +117,7 @@ export const load: PageLoad = async ({ fetch, params }) => {
 					title: date.title ?? hike.name,
 					description: (date.description ? (date.description + ' ') : '') + hike.description,
 					image: date.image?.replace('/hikes/', '/hikes/thumb/') ?? hike.image?.replace('/hikes/', '/hikes/thumb/'),
+					imageFull: date.image ?? hike.image,
 					content: marked.lexer(post),
 					headers: headers,
 					time: stats.text,

@@ -7,7 +7,7 @@ easy because of the number of newcomers that joined us, but this wasn't the case
 
 Although I wouldn't call it difficult, the gravel road up was quite steep, so
 people were getting exhausted quite fast. On the other hand, we had a nice view
-of [Aiplspitz (1759 m)](/404/) and [Rotwand (1884 m)](/404/)
+of [Aiplspitz (1759 m)](/404/) and [Rotwand (1884 m)](/hikes/2024-09-29-rotwand/)
 which compensated our troubles.
 
 As we continued up, we turned from the gravel road onto a dirt path between the

@@ -1,6 +1,7 @@
 <script lang="ts">
 import AppMeta from '$lib/components/AppMeta.svelte';
 import { Heading, Progressbar, Button } from 'flowbite-svelte';
+import { ClockOutline, MapPinOutline, ArrowUpOutline, ArrowDownOutline, TrackingOutline } from 'flowbite-svelte-icons';
 import 'leaflet/dist/leaflet.css';
 import { getDistance, getTime } from '$lib/hikes/build-statistics';
 import type { Layer } from 'leaflet';
@@ -10,6 +11,7 @@ import { primaryGeometryColor } from '$lib/hikes/build-geometry';
 import maps from '$lib/data/hikes.json';
 import { type Feature as MapFeature, type GeometryData, getMapFeatures, type MapDate } from '$lib/data/map-info';
 import { loadGeometry, loadProperties } from '$lib/hikes/build-geometry';
+import { getNodeIconDetails, formatTags } from '$lib/hikes/map-utils';
 
 let data: any = $state(null);
 let loadingProgress = $state(0);
@@ -243,67 +245,6 @@ async function startLoading() {
     const uniqueNodes = Array.from(new Map(nodesData.map(node => [node.id, node])).values());
     const nodesLayer = L.layerGroup().addTo(map);
 
-    const getNodeIconDetails = (tags: any) => {
-        if (tags.natural === 'peak') return { emoji: '⛰️', color: '#6b7280' };
-        if (tags.natural === 'saddle') return { emoji: '〰️', color: '#16a34a' };
-        if (tags.tourism === 'alpine_hut' || tags.tourism === 'wilderness_hut' || tags.building === 'hut') return { emoji: '🛖', color: '#b45309' };
-        if (tags.amenity === 'restaurant' || tags.amenity === 'cafe' || tags.amenity === 'fast_food' || tags.amenity === 'pub') return { emoji: '🍽️', color: '#ea580c' };
-        if (tags.tourism === 'viewpoint') return { emoji: '🔭', color: '#0284c7' };
-        if (tags.waterway === 'waterfall') return { emoji: '🌊', color: '#0ea5e9' };
-        if (tags.natural === 'water' || tags.natural === 'spring') return { emoji: '💧', color: '#38bdf8' };
-        if (tags.historic === 'ruins' || tags.historic === 'castle') return { emoji: '🏰', color: '#525252' };
-        if (tags.highway === 'bus_stop') return { emoji: '🚌', color: '#2563eb' };
-        if (tags.railway === 'station' || tags.railway === 'halt' || tags.public_transport === 'station') return { emoji: '🚉', color: '#dc2626' };
-        if (tags.tourism === 'information') return { emoji: 'ℹ️', color: '#2563eb' };
-        if (tags.place === 'village' || tags.place === 'town' || tags.place === 'city') return { emoji: '🏘️', color: '#7c3aed' };
-        if (tags.aeroway === 'aerodrome') return { emoji: '✈️', color: '#6294ff' };
-        return { emoji: '📍', color: '#3b82f6' };
-    };
-
-    const formatTags = (tags: any): [string, string][] => {
-        const formatted = new Map<string, string>();
-        const handledKeys = new Set(['name', 'ele']);
-
-        const addHandled = (keys: string[], label: string, formatter: (v: string) => string) => {
-            keys.forEach(k => handledKeys.add(k));
-            for (const k of keys) {
-                if (tags[k] !== undefined && tags[k] !== null) {
-                    formatted.set(label, formatter(String(tags[k])));
-                    return;
-                }
-            }
-        };
-
-        addHandled(['contact:phone', 'phone', 'contact:mobile', 'mobile'], 'Phone', v => `<a href="tel:${v}" style="color: #2563eb; text-decoration: none;">${v}</a>`);
-        addHandled(['contact:website', 'website', 'url'], 'Website', v => `<a href="${v.startsWith('http') ? v : 'https://' + v}" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">Link</a>`);
-        addHandled(['contact:email', 'email'], 'Email', v => `<a href="mailto:${v}" style="color: #2563eb; text-decoration: none;">${v}</a>`);
-
-        handledKeys.add('wikipedia');
-        if (tags.wikipedia) {
-            const parts = String(tags.wikipedia).split(':');
-            const lang = parts.length > 1 ? parts[0] : 'en';
-            const title = parts.length > 1 ? parts[1] : parts[0];
-            formatted.set('Wikipedia', `<a href="https://${lang}.wikipedia.org/wiki/${encodeURIComponent(title)}" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">${tags.wikipedia}</a>`);
-        }
-
-        handledKeys.add('wikidata');
-        if (tags.wikidata) {
-            formatted.set('Wikidata', `<a href="https://www.wikidata.org/wiki/${tags.wikidata}" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">${tags.wikidata}</a>`);
-        }
-
-        for (const [k, v] of Object.entries(tags)) {
-            if (!handledKeys.has(k)) {
-                const prettyKey = k.replace(/[:_]/g, ' ')
-                                   .split(' ')
-                                   .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-                                   .join(' ');
-                formatted.set(prettyKey, String(v));
-            }
-        }
-
-        return Array.from(formatted.entries());
-    };
-
     const renderNodes = () => {
         nodesLayer.clearLayers();
         const filteredNodes: any[] = [];
@@ -405,19 +346,57 @@ async function startLoading() {
 <div class="flex flex-col gap-4 mt-8">
     {#if data}
         <article class="
-        w-full max-w-none p-4 bg-gray-50 rounded-lg dark:bg-gray-800 flex flex-col md:flex-row gap-4
+        w-full max-w-none p-4 md:p-6 bg-gray-50 rounded-lg dark:bg-gray-800 flex flex-col gap-6
         prose dark:prose-invert prose-a:text-primary-600 dark:prose-a:text-primary-500
 ">
-            <div>
-                <ul>
-                    <li>Total hikes: {data.totalHikes}</li>
-                    <li>Total time: {getTime(data.totalTime)}</li>
-                    <li>Total distance: {getDistance(data.totalDistance)}</li>
-                    <li>Total ascent: {getDistance(data.totalAscent)}</li>
-                    <li>Total descent: {getDistance(data.totalDescent)}</li>
-                </ul>
+            <div class="flex flex-row flex-wrap gap-x-4 gap-y-4 md:gap-x-6 md:gap-y-6 not-prose w-full">
+                <div class="flex items-center gap-3 basis-[140px] grow">
+                    <div class="text-primary-600 dark:text-primary-500 bg-primary-100 dark:bg-primary-900 rounded-lg p-2 shrink-0">
+                        <TrackingOutline class="w-5 h-5 md:w-6 md:h-6" />
+                    </div>
+                    <div class="min-w-0">
+                        <div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide truncate">Total Hikes</div>
+                        <div class="font-semibold whitespace-nowrap">{data.totalHikes}</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 basis-[140px] grow">
+                    <div class="text-primary-600 dark:text-primary-500 bg-primary-100 dark:bg-primary-900 rounded-lg p-2 shrink-0">
+                        <ClockOutline class="w-5 h-5 md:w-6 md:h-6" />
+                    </div>
+                    <div class="min-w-0">
+                        <div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide truncate">Total Time</div>
+                        <div class="font-semibold whitespace-nowrap">{getTime(data.totalTime)}</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 basis-[140px] grow">
+                    <div class="text-primary-600 dark:text-primary-500 bg-primary-100 dark:bg-primary-900 rounded-lg p-2 shrink-0">
+                        <MapPinOutline class="w-5 h-5 md:w-6 md:h-6" />
+                    </div>
+                    <div class="min-w-0">
+                        <div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide truncate">Distance</div>
+                        <div class="font-semibold whitespace-nowrap">{getDistance(data.totalDistance)}</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 basis-[140px] grow">
+                    <div class="text-primary-600 dark:text-primary-500 bg-primary-100 dark:bg-primary-900 rounded-lg p-2 shrink-0">
+                        <ArrowUpOutline class="w-5 h-5 md:w-6 md:h-6" />
+                    </div>
+                    <div class="min-w-0">
+                        <div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide truncate">Ascent</div>
+                        <div class="font-semibold whitespace-nowrap">{getDistance(data.totalAscent)}</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 basis-[140px] grow">
+                    <div class="text-primary-600 dark:text-primary-500 bg-primary-100 dark:bg-primary-900 rounded-lg p-2 shrink-0">
+                        <ArrowDownOutline class="w-5 h-5 md:w-6 md:h-6" />
+                    </div>
+                    <div class="min-w-0">
+                        <div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide truncate">Descent</div>
+                        <div class="font-semibold whitespace-nowrap">{getDistance(data.totalDescent)}</div>
+                    </div>
+                </div>
             </div>
-            <div class="flex-1 w-full min-w-0">
+            <div class="w-full min-w-0">
                 <!-- Timeline typically takes all hikes, modifying it to take subset might be wanted if props were present -->
                 <HikesTimeline />
             </div>
