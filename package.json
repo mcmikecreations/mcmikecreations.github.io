@@ -10,7 +10,7 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
-		"postbuild": "./deploy.sh"
+		"deploy": "./deploy.sh"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.3.1",
@@ -63,7 +63,6 @@
 		"highlight.js": "^11.11.1",
 		"leaflet": "^1.9.4",
 		"marked": "^16.3.0",
-		"svelte-markdown": "^0.4.1",
 		"swiper": "^11.2.8",
 		"three": "^0.162.0",
 		"tocbot": "^4.36.4"

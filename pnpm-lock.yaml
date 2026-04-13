@@ -32,9 +32,6 @@ importers:
       marked:
         specifier: ^16.3.0
         version: 16.3.0
-      svelte-markdown:
-        specifier: ^0.4.1
-        version: 0.4.1(svelte@5.37.1)
       swiper:
         specifier: ^11.2.8
         version: 11.2.8
@@ -714,9 +711,6 @@ packages:
 
   '@types/leaflet@1.9.19':
     resolution: {integrity: sha512-pB+n2daHcZPF2FDaWa+6B0a0mSDf4dPU35y5iTXsx7x/PzzshiX5atYiS1jlBn43X7XvM8AP+AB26lnSk0J4GA==}
-
-  '@types/marked@5.0.2':
-    resolution: {integrity: sha512-OucS4KMHhFzhz27KxmWg7J+kIYqyqoW5kdIEI319hqARQQUTqhao3M/F+uFnDXD0Rg72iDDZxZNxq5gvctmLlg==}
 
   '@types/resolve@1.20.2':
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
@@ -1541,11 +1535,6 @@ packages:
     engines: {node: '>= 20'}
     hasBin: true
 
-  marked@5.1.2:
-    resolution: {integrity: sha512-ahRPGXJpjMjwSOlBoTMZAK7ATXkli5qCPxZ21TG44rx1KEo44bii4ekgTDQPNRQ4Kh7JMb9Ub1PVk1NxRSsorg==}
-    engines: {node: '>= 16'}
-    hasBin: true
-
   merge2@1.4.1:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
     engines: {node: '>= 8'}
@@ -2099,11 +2088,6 @@ packages:
     peerDependenciesMeta:
       svelte:
         optional: true
-
-  svelte-markdown@0.4.1:
-    resolution: {integrity: sha512-pOlLY6EruKJaWI9my/2bKX8PdTeP5CM0s4VMmwmC2prlOkjAf+AOmTM4wW/l19Y6WZ87YmP8+ZCJCCwBChWjYw==}
-    peerDependencies:
-      svelte: ^4.0.0
 
   svelte-sitemap@2.7.1:
     resolution: {integrity: sha512-9b6GAoaBZde3CCDvmfoDvRWLPAXeawg8MlcXyMmbf8Iu1HEOvVockagu+PiOhaKmyJE3Q9tnIZLaXlMdkfTxHA==}
@@ -2774,8 +2758,6 @@ snapshots:
   '@types/leaflet@1.9.19':
     dependencies:
       '@types/geojson': 7946.0.16
-
-  '@types/marked@5.0.2': {}
 
   '@types/resolve@1.20.2': {}
 
@@ -3679,8 +3661,6 @@ snapshots:
 
   marked@16.3.0: {}
 
-  marked@5.1.2: {}
-
   merge2@1.4.1: {}
 
   meshoptimizer@0.18.1: {}
@@ -4121,12 +4101,6 @@ snapshots:
       postcss: 8.5.6
       postcss-scss: 4.0.9(postcss@8.5.6)
     optionalDependencies:
-      svelte: 5.37.1
-
-  svelte-markdown@0.4.1(svelte@5.37.1):
-    dependencies:
-      '@types/marked': 5.0.2
-      marked: 5.1.2
       svelte: 5.37.1
 
   svelte-sitemap@2.7.1:

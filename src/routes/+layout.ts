@@ -9,7 +9,7 @@ export function load() {
 		},
 		header: {
 			showNavbar: true,
-            fixedNavbar: false,
+			fixedNavbar: false,
 		}
 	};
 }

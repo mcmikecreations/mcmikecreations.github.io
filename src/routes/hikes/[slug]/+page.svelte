@@ -9,7 +9,7 @@
 		ArrowDownOutline,
 		ArrowLeftOutline
 	} from 'flowbite-svelte-icons';
-	import SvelteMarkdown from 'svelte-markdown';
+	import Markdown from '$lib/renderers/vendor/Markdown.svelte';
 	import type { Token, Tokens } from 'marked';
 	import DefaultCode from '$lib/renderers/DefaultCode.svelte';
 	import DefaultLink from '$lib/renderers/DefaultLink.svelte';
@@ -544,19 +544,19 @@
 							{/if}
 						</div>
 					</div>
-					<SvelteMarkdown source={data.post.content.slice(0, map2dIndex + 1)} renderers={renderers} />
+					<Markdown source={data.post.content.slice(0, map2dIndex + 1)} {renderers} />
 					<div class="w-full mx-auto not-prose">
 						<Map3d parameters={map3dParameters} {contentElement} bind:refresh={myRefresh} bind:updateIndicator={myUpdateIndicator3d} />
 						{@render statsSnippet()}
 					</div>
-					<SvelteMarkdown source={data.post.content.slice(map2dIndex + 1, map3dIndex + 1)} renderers={renderers} />
+					<Markdown source={data.post.content.slice(map2dIndex + 1, map3dIndex + 1)} {renderers} />
 					<div class="w-full mx-auto not-prose">
 						<div class="overflow-hidden aspect-square">
 							<div id="container-interactive" class="w-full aspect-square"></div>
 						</div>
 						{@render statsSnippet()}
 					</div>
-					<SvelteMarkdown source={data.post.content.slice(map3dIndex + 1)} renderers={renderers} />
+					<Markdown source={data.post.content.slice(map3dIndex + 1)} {renderers} />
 				</div>
 			</div>
 		</article>

@@ -3,6 +3,7 @@ import type { PageLoad } from './$types';
 import type { HttpError } from '@sveltejs/kit'
 import blogs from '$lib/data/blogs.json';
 import { readingTime } from 'reading-time-estimator';
+import { marked } from 'marked';
 
 export const load: PageLoad = async ({ fetch, params }) => {
 	try {
@@ -36,7 +37,8 @@ export const load: PageLoad = async ({ fetch, params }) => {
 				title: meta.title,
 				description: meta.description,
 				image: meta.image,
-				content: post,
+				imageFull: meta.imageFull,
+				content: marked.lexer(post),
 				headers: headers,
 				time: stats.text,
 				date: new Date(meta.date).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"}),

@@ -8,7 +8,7 @@
 
 	interface Props {
 		shouldShowNavbar?: 'true' | 'false' | undefined;
-        shouldFixNavbar?: 'true' | 'false' | undefined;
+		shouldFixNavbar?: 'true' | 'false' | undefined;
 		children?: Snippet;
 	}
 

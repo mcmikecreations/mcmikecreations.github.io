@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types';
-	import SvelteMarkdown from 'svelte-markdown';
+	import Markdown from '$lib/renderers/vendor/Markdown.svelte';
 	import DefaultCode from '$lib/renderers/DefaultCode.svelte';
 	import DefaultLink from '$lib/renderers/DefaultLink.svelte';
 	import ToTopButton from '$lib/components/ToTopButton.svelte';
@@ -43,7 +43,10 @@
 				</div>
 			{/if}
 		</div>
-		<SvelteMarkdown source={data.post.content} renderers={{ code: DefaultCode, link: DefaultLink, image: DefaultImage }} />
+		{#if data.post.imageFull}
+			<img src={data.post.imageFull} class="w-full xl:w-3/4 mx-auto !mb-8 !mt-0 object-contain rounded border border-gray-200 dark:border-gray-800" alt="Main" />
+		{/if}
+		<Markdown source={data.post.content} renderers={{ code: DefaultCode, link: DefaultLink, image: DefaultImage }} />
 	</div>
 </article>
 

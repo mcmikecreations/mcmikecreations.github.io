@@ -4,24 +4,20 @@
 	import type { PageData } from './$types';
 	import AppTitle from '$lib/components/AppTitle.svelte';
 	import { Tabs, TabItem, Img, Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
-	import Attribution from '$lib/hikes/Attribution.svelte';
-	import { onMount } from 'svelte';
-	import 'leaflet/dist/leaflet.css';
-	import { providerFolder, providers } from '$lib/data/map-providers';
-	import {
-		type Feature,
-		getMapFeatures,
-		type TilesData,
-	} from '$lib/data/map-info';
-	import { getDistance, getTime } from '$lib/hikes/build-statistics';
-	import { secondaryGeometryColor, secondaryIndicatorColor } from '$lib/hikes/build-geometry';
-	import type { GeoJsonObject, Geometry } from 'geojson';
-	import type { Layer } from 'leaflet';
-	import SvelteMarkdown from 'svelte-markdown';
+	import Markdown from '$lib/renderers/vendor/Markdown.svelte';
 	import DefaultLink from '$lib/renderers/DefaultLink.svelte';
 	import DefaultImage from '$lib/renderers/DefaultImage.svelte';
 	import Map3d from '$lib/hikes/Map3d.svelte';
 	import type { Map3dParameters } from '$lib/hikes/Map3dParameters';
+	import { getMapFeatures, type Feature, type TilesData } from '$lib/data/map-info';
+	import { providerFolder, providers } from '$lib/data/map-providers';
+	import type { GeoJsonObject, Geometry, Feature as F } from 'geojson';
+	import { secondaryGeometryColor, secondaryIndicatorColor } from '$lib/hikes/build-geometry';
+	import type { Layer } from 'leaflet';
+	import { onMount } from 'svelte';
+	import Attribution from '$lib/hikes/Attribution.svelte';
+	import 'leaflet/dist/leaflet.css';
+	import { getDistance, getTime } from '$lib/hikes/build-statistics';
 
 	interface Props {
 		data: PageData;
@@ -82,7 +78,7 @@
 			almostOnMouseMove: false,
 			almostDistance: 15,
 			layers: [mapOsm],
-		}).setView([data.origin.lat, data.origin.lon], 13);
+		} as any).setView([data.origin.lat, data.origin.lon], 13);
 		function refocus() {
 			const tempInputs = controlsContainer?.getElementsByTagName('input');
 			for (let i = 0; i < (tempInputs?.length ?? 0); ++i) {
@@ -109,17 +105,17 @@
 			}
 		}
 
-		const staticColor = function(feature : Feature<Geometry, any> | undefined) {
+		const staticColor = function(feature : F<Geometry, any> | undefined) {
 			return {
 				color: secondaryGeometryColor,
 			};
 		}
 		const hikesLayer = L.geoJSON(data.dataGeometry as GeoJsonObject[], {
 			style: staticColor,
-			onEachFeature: function(feature: Feature<any, any>, layer: Layer) {
+			onEachFeature: function(feature: F<any, any>, layer: Layer) {
 			}
 		}).addTo(map);
-		map.almostOver.addLayer(hikesLayer);
+		(map as any).almostOver.addLayer(hikesLayer);
 
 		statsIndicatorInteractive = new L.CircleMarker([data.origin.lat, data.origin.lon], {
 			fillColor: secondaryIndicatorColor,
@@ -301,7 +297,7 @@
 					<svg id="stats" viewBox="0 0 {data.map.height * 0.5} {data.map.height * 0.125}" class="w-full overflow-visible prose dark:prose-invert max-w-none">
 						<line id="statsIndicatorVertical" y1="-7.5" y2={data.map.height * 0.125 + 7.5} stroke={secondaryIndicatorColor} stroke-width={statsIndicatorVerticalWidth} class="hidden" />
 						{@html data.statistics}
-						<circle id="statsIndicator" r={data.map.height * 0.125 * 0.125 * 0.5} fill={secondaryIndicatorColor} class="hidden" />
+						<circle id="statsIndicator" r={data.map.height * 0.125 * 0.5} fill={secondaryIndicatorColor} class="hidden" />
 					</svg>
 				</div>
 			{/if}
@@ -332,7 +328,7 @@
 				{#each data.posts as postItem}
 					<article class="max-w-full prose dark:prose-invert">
 						<h2>Hike on {new Date(postItem.date).toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' })}</h2>
-						<SvelteMarkdown source={postItem.post} renderers={{ link: DefaultLink, image: DefaultImage }} />
+						<Markdown source={postItem.post} renderers={{ link: DefaultLink, image: DefaultImage }} />
 					</article>
 				{/each}
 			</div>

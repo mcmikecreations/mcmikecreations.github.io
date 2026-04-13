@@ -15,6 +15,11 @@ import { tile } from 'd3-tile';
 import { buildTiles, getPixelsPerMeter } from '$lib/hikes/build-tiles';
 import * as THREE from 'three';
 import { defaultPageSize, getAllPosts } from '$lib/data/hikes-info';
+import type { EntryGenerator } from './$types';
+
+export const entries: EntryGenerator = () => {
+	return getAllPosts().map((p) => ({ slug: p.anchor }));
+};
 
 export const load: PageLoad = async ({ fetch, params }) => {
 	try {

@@ -7,7 +7,7 @@
 		CustomTableHead, CustomTableRow
 	} from '$lib/renderers/index.js';
 	import { A, Hr } from 'flowbite-svelte';
-	import SvelteMarkdown from 'svelte-markdown';
+	import Markdown from './vendor/Markdown.svelte';
 
 	// text, em <em>, strong <strong><b>, del <del>, <html> kept as-is.
 	
@@ -20,7 +20,7 @@
 	let { source = '' }: Props = $props();
 </script>
 
-<SvelteMarkdown
+<Markdown
 	{source}
 	renderers={{
 			paragraph: CustomParagraph,

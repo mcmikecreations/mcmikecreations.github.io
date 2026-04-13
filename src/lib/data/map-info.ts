@@ -55,7 +55,7 @@ interface MapNode {
 	lat: number;
 	lon: number;
 	tags: {
-		[key: string]: string;
+		[key: string]: string | null | undefined;
 	};
 }
 
