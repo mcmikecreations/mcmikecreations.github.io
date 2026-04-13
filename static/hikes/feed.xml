@@ -9,8 +9,8 @@
   <copyright>&amp;copy; 2026 Mykola Morozov</copyright>
   <managingEditor>contact@mykolamor.com (Mykola Morozov)</managingEditor>
 	<webMaster>contact@mykolamor.com (Mykola Morozov)</webMaster>
-	<pubDate>Thu, 09 Apr 2026 21:08:39 GMT</pubDate>
-	<lastBuildDate>Thu, 09 Apr 2026 21:08:39 GMT</lastBuildDate>
+	<pubDate>Mon, 13 Apr 2026 19:45:39 GMT</pubDate>
+	<lastBuildDate>Mon, 13 Apr 2026 19:45:39 GMT</lastBuildDate>
 	<category>Sports</category>
 	<docs>https://www.rssboard.org/rss-specification</docs>
 	<ttl>1440</ttl>
@@ -21,403 +21,163 @@
 	</image>
 
   <item>
+    <title>On Top of the World on Sněžka</title>
+    <link>https://mykolamor.com/hikes/2026-04-11-snezka_krakonos/</link>
+    <description>Visiting the highest peak on the Czech-Polish border. Hike from Pec pod Sněžkou to Špindlerův Mlýn via Sněžka (1603.3 m) and Krakonoš (1422 m).</description>
+    <pubDate>Sat, 11 Apr 2026 14:00:00 GMT</pubDate>
+    <guid>https://mykolamor.com/hikes/2026-04-11-snezka_krakonos/</guid>
+    <author>contact@mykolamor.com (Mykola Morozov)</author>
+  </item>
+  <item>
     <title>Ukrainian Hike to Fockenstein and Geierstein</title>
-    <link>https://mykolamor.com/hikes/hikes/2026-04-05-fockenstein_geierstein/</link>
+    <link>https://mykolamor.com/hikes/2026-04-05-fockenstein_geierstein/</link>
     <description>Joining a Ukrainian group to Fockenstein, then taking on Geierstein alone. Hike from Bad Wiessee to Lenggries via Zwergelberg (1113 m), Fockenstein (1564 m), Schlagkopf (1330 m), and Geierstein (1491 m).</description>
     <pubDate>Sun, 05 Apr 2026 14:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2026-04-05-fockenstein_geierstein/</guid>
+    <guid>https://mykolamor.com/hikes/2026-04-05-fockenstein_geierstein/</guid>
     <author>contact@mykolamor.com (Mykola Morozov)</author>
   </item>
   <item>
     <title>A Handful of Castles</title>
-    <link>https://mykolamor.com/hikes/hikes/2026-04-03-moosburg_landshut/</link>
+    <link>https://mykolamor.com/hikes/2026-04-03-moosburg_landshut/</link>
     <description>Visiting cool castles and ruins between Moosburg and Landshut. Hike from Moosburg an der Isar to Landshut via Berghofen, Kronwinkl, Ast, and Tiefenbach.</description>
     <pubDate>Fri, 03 Apr 2026 14:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2026-04-03-moosburg_landshut/</guid>
+    <guid>https://mykolamor.com/hikes/2026-04-03-moosburg_landshut/</guid>
     <author>contact@mykolamor.com (Mykola Morozov)</author>
   </item>
   <item>
     <title>Burried in Snow at Kampen</title>
-    <link>https://mykolamor.com/hikes/hikes/2026-03-29-lenggries_auerkamp/</link>
+    <link>https://mykolamor.com/hikes/2026-03-29-lenggries_auerkamp/</link>
     <description>Doing a cliffside climb of the Kampen ridge after heavy snowfall. Hike from Kreuth Klamm to Lenggries via Brandkopf (1569 m), Spitzkamp (1604 m), Auerkamp (1607 m), and Ochsenkamp (1594 m).</description>
     <pubDate>Sun, 29 Mar 2026 14:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2026-03-29-lenggries_auerkamp/</guid>
+    <guid>https://mykolamor.com/hikes/2026-03-29-lenggries_auerkamp/</guid>
     <author>contact@mykolamor.com (Mykola Morozov)</author>
   </item>
   <item>
     <title>Retrieving a Hiking Stick at Sonnenberg</title>
-    <link>https://mykolamor.com/hikes/hikes/2026-03-22-unterammergau_sonnenberg/</link>
-    <description>Going back to the place I failed to take back what's mine. Hike from Unterammergau and back via Sonnenberg (1622 m).</description>
+    <link>https://mykolamor.com/hikes/2026-03-22-unterammergau_sonnenberg/</link>
+    <description>Going back to the place I failed to take back what&apos;s mine. Hike from Unterammergau and back via Sonnenberg (1622 m).</description>
     <pubDate>Sun, 22 Mar 2026 15:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2026-03-22-unterammergau_sonnenberg/</guid>
+    <guid>https://mykolamor.com/hikes/2026-03-22-unterammergau_sonnenberg/</guid>
     <author>contact@mykolamor.com (Mykola Morozov)</author>
   </item>
   <item>
     <title>All Peaks from Bichl to Bad Tölz</title>
-    <link>https://mykolamor.com/hikes/hikes/2026-03-15-bichl_blomberg/</link>
+    <link>https://mykolamor.com/hikes/2026-03-15-bichl_blomberg/</link>
     <description>Checking off all easy hikes in the area at once. Hike from Bichl to Bad Tölz via Hollerkopf (932 m), Enzenauer Kopf (1205 m), Fahrtkopf (1203 m), Angerlkopf (1249 m), Stallauer Kopf (1322 m), Stallauer Eck (1213 m), Zwiesel (1348 m), Heigelkopf (1218 m), and Blomberg (1237/1203/1248 m).</description>
     <pubDate>Sun, 15 Mar 2026 15:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2026-03-15-bichl_blomberg/</guid>
+    <guid>https://mykolamor.com/hikes/2026-03-15-bichl_blomberg/</guid>
     <author>contact@mykolamor.com (Mykola Morozov)</author>
   </item>
   <item>
     <title>Relaxing Spring Views at Traunsee</title>
-    <link>https://mykolamor.com/hikes/hikes/2026-03-07-geisswand/</link>
+    <link>https://mykolamor.com/hikes/2026-03-07-geisswand/</link>
     <description>Letting Pavlo recover on a nice walk. Hike from Traunkirchen Ort to Traunkirchen via Baalstein (800 m) and Geißwand (872 m).</description>
     <pubDate>Sat, 07 Mar 2026 15:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2026-03-07-geisswand/</guid>
+    <guid>https://mykolamor.com/hikes/2026-03-07-geisswand/</guid>
     <author>contact@mykolamor.com (Mykola Morozov)</author>
   </item>
   <item>
     <title>First Hike Near Linz</title>
-    <link>https://mykolamor.com/hikes/hikes/2026-03-06-hoher_kalmberg/</link>
+    <link>https://mykolamor.com/hikes/2026-03-06-hoher_kalmberg/</link>
     <description>Taking Pavlo for a tour near Hallstätter See. Hike from Gosau to Bad Goisern via Hoher Kalmberg (1833 m).</description>
     <pubDate>Fri, 06 Mar 2026 15:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2026-03-06-hoher_kalmberg/</guid>
+    <guid>https://mykolamor.com/hikes/2026-03-06-hoher_kalmberg/</guid>
     <author>contact@mykolamor.com (Mykola Morozov)</author>
   </item>
   <item>
     <title>Falling from Sonnenberg</title>
-    <link>https://mykolamor.com/hikes/hikes/2026-02-15-oberammergau_sonnenberg/</link>
+    <link>https://mykolamor.com/hikes/2026-02-15-oberammergau_sonnenberg/</link>
     <description>A free fall from a cliff keeps a doctor scared and stiff. Hike from Oberammergau to Unterammergau via Zahn (1483 m) and Sonnenberg (1622 m).</description>
     <pubDate>Sun, 15 Feb 2026 15:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2026-02-15-oberammergau_sonnenberg/</guid>
+    <guid>https://mykolamor.com/hikes/2026-02-15-oberammergau_sonnenberg/</guid>
     <author>contact@mykolamor.com (Mykola Morozov)</author>
   </item>
   <item>
     <title>A Very Social Hike to Bolsterlanger Horn</title>
-    <link>https://mykolamor.com/hikes/hikes/2026-01-25-bolsterlanger_horn_only/</link>
+    <link>https://mykolamor.com/hikes/2026-01-25-bolsterlanger_horn_only/</link>
     <description>Scouting out the ridges around Fischen im Allgäu. Hike from Bolsterlang and back via Bolsterlanger Horn (1586 m).</description>
     <pubDate>Sun, 25 Jan 2026 15:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2026-01-25-bolsterlanger_horn_only/</guid>
+    <guid>https://mykolamor.com/hikes/2026-01-25-bolsterlanger_horn_only/</guid>
     <author>contact@mykolamor.com (Mykola Morozov)</author>
   </item>
   <item>
     <title>Bridging Countries via Trainsjoch</title>
-    <link>https://mykolamor.com/hikes/hikes/2026-01-18-trainsjoch/</link>
+    <link>https://mykolamor.com/hikes/2026-01-18-trainsjoch/</link>
     <description>Trailing the border line between Germany and Austria on a winter trip. Hike from Kiefersfelden to Bayrischzell via Trainsjoch (1707 m) and Nesselberg (1363 m).</description>
     <pubDate>Sun, 18 Jan 2026 15:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2026-01-18-trainsjoch/</guid>
+    <guid>https://mykolamor.com/hikes/2026-01-18-trainsjoch/</guid>
     <author>contact@mykolamor.com (Mykola Morozov)</author>
   </item>
   <item>
     <title>Snowy Setzberg</title>
-    <link>https://mykolamor.com/hikes/hikes/2026-01-11-setzberg/</link>
+    <link>https://mykolamor.com/hikes/2026-01-11-setzberg/</link>
     <description>Plowing through the waist-deep snow to a skiing summit. Hike from Kreuth to Rottach-Egern via Setzberg (1706 m).</description>
     <pubDate>Sun, 11 Jan 2026 15:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2026-01-11-setzberg/</guid>
+    <guid>https://mykolamor.com/hikes/2026-01-11-setzberg/</guid>
     <author>contact@mykolamor.com (Mykola Morozov)</author>
   </item>
   <item>
     <title>First Trip to the Dolomites</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-12-29-cima_sophia/</link>
+    <link>https://mykolamor.com/hikes/2025-12-29-cima_sophia/</link>
     <description>Attempting a rocky peak at the cold of winter. Hike from Molveno and back via Palon de Tovre (1913 m) and Cima Sophia (2360 m).</description>
     <pubDate>Mon, 29 Dec 2025 15:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-12-29-cima_sophia/</guid>
+    <guid>https://mykolamor.com/hikes/2025-12-29-cima_sophia/</guid>
     <author>contact@mykolamor.com (Mykola Morozov)</author>
   </item>
   <item>
     <title>Slippery Rainerkopf</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-12-23-rainerkopf/</link>
+    <link>https://mykolamor.com/hikes/2025-12-23-rainerkopf/</link>
     <description>Going down a slippery slope with a friend. Hike from Neuhaus to Spitzingsee via Rainerkopf (1463 m).</description>
     <pubDate>Tue, 23 Dec 2025 15:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-12-23-rainerkopf/</guid>
+    <guid>https://mykolamor.com/hikes/2025-12-23-rainerkopf/</guid>
     <author>contact@mykolamor.com (Mykola Morozov)</author>
   </item>
   <item>
     <title>A Homely Hike to Jochberg</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-12-14-lainbachfall_jochberg/</link>
+    <link>https://mykolamor.com/hikes/2025-12-14-lainbachfall_jochberg/</link>
     <description>Joining a group of Ukrainians on a social hike. Hike from Kochelsee to Walchensee via Laimbachfall, Sonnenspitz (1259 m), and Jochberg (1565 m).</description>
     <pubDate>Sun, 14 Dec 2025 15:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-12-14-lainbachfall_jochberg/</guid>
+    <guid>https://mykolamor.com/hikes/2025-12-14-lainbachfall_jochberg/</guid>
     <author>contact@mykolamor.com (Mykola Morozov)</author>
   </item>
   <item>
     <title>Kufstein Christmas Market</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-11-29-thierberg/</link>
+    <link>https://mykolamor.com/hikes/2025-11-29-thierberg/</link>
     <description>Socializing on a nice relaxing hike in Austria. Hike from Kiefersfelden to Kufstein via Thierberg (721 m).</description>
     <pubDate>Sat, 29 Nov 2025 15:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-11-29-thierberg/</guid>
+    <guid>https://mykolamor.com/hikes/2025-11-29-thierberg/</guid>
     <author>contact@mykolamor.com (Mykola Morozov)</author>
   </item>
   <item>
     <title>Steep Price for a Steep Hike to Vordere Kesselschneid</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-11-23-vordere_kesselschneid/</link>
+    <link>https://mykolamor.com/hikes/2025-11-23-vordere_kesselschneid/</link>
     <description>Extending the old route to a new peak with a broken finger. Hike from Kufstein and back via Pyramidenspitze (1997 m) and Vordere Kesselschneid (2002 m).</description>
     <pubDate>Sun, 23 Nov 2025 15:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-11-23-vordere_kesselschneid/</guid>
+    <guid>https://mykolamor.com/hikes/2025-11-23-vordere_kesselschneid/</guid>
     <author>contact@mykolamor.com (Mykola Morozov)</author>
   </item>
   <item>
     <title>Bischof and Krottenkopf Trial</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-11-16-krottenkopf_bischof/</link>
+    <link>https://mykolamor.com/hikes/2025-11-16-krottenkopf_bischof/</link>
     <description>Catching the last warm days of the year and finishing off my to-do list. Hike from Farchant to Eschenlohe via Bischof (2033 m) and Krottenkopf (2086 m).</description>
     <pubDate>Sun, 16 Nov 2025 15:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-11-16-krottenkopf_bischof/</guid>
+    <guid>https://mykolamor.com/hikes/2025-11-16-krottenkopf_bischof/</guid>
     <author>contact@mykolamor.com (Mykola Morozov)</author>
   </item>
   <item>
     <title>DAAD Trip to Bodenschneid</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-11-01-bodenschneid/</link>
+    <link>https://mykolamor.com/hikes/2025-11-01-bodenschneid/</link>
     <description>A medium difficulty muddy walk to the peak and down to Bodenschneidhaus. Hike from Spitzingsee to Neuhaus via Bodenschneid (1669 m) and Rinnerspitz (1611 m).</description>
     <pubDate>Sat, 01 Nov 2025 15:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-11-01-bodenschneid/</guid>
+    <guid>https://mykolamor.com/hikes/2025-11-01-bodenschneid/</guid>
     <author>contact@mykolamor.com (Mykola Morozov)</author>
   </item>
   <item>
     <title>Tegernsee to Hausham via Auer Berg</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-10-27-auer_berg/</link>
+    <link>https://mykolamor.com/hikes/2025-10-27-auer_berg/</link>
     <description>Beginner-friendly route across Gindelalmschneid (1335 m) and Auer Berg (1252 m). Hike from Tegernsee to Hausham via Gindelalmschneid (1335 m), Auer Berg (1252 m), Rainer Berg (1169 m), and Huberspitz (1051 m).</description>
     <pubDate>Mon, 27 Oct 2025 15:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-10-27-auer_berg/</guid>
-    <author>contact@mykolamor.com (Mykola Morozov)</author>
-  </item>
-  <item>
-    <title>Buchstein Free Solo</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-10-05-buchstein_only/</link>
-    <description>A climb of Buchstein (1701 m) during a snowstorm starting at Bayerwald. Hike from Bayerwald to Scharling via Buchstein (1701 m).</description>
-    <pubDate>Sun, 05 Oct 2025 14:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-10-05-buchstein_only/</guid>
-    <author>contact@mykolamor.com (Mykola Morozov)</author>
-  </item>
-  <item>
-    <title>Mental Health Walk to Freising</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-09-28-moosburg_freising/</link>
-    <description>Flat walk between two local towns. Hike from Moosburg an der Isar to Freising.</description>
-    <pubDate>Sun, 28 Sep 2025 14:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-09-28-moosburg_freising/</guid>
-    <author>contact@mykolamor.com (Mykola Morozov)</author>
-  </item>
-  <item>
-    <title>Zugspitze via Höllental: Catch the Cable Car</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-09-18-zugspitze_hoellental/</link>
-    <description>An unlikely via ferrata climb to the top of Zugspitze before the last cable car down. Hike from Hammersbach to the Zugspitze (2962 m) peak.</description>
-    <pubDate>Thu, 18 Sep 2025 14:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-09-18-zugspitze_hoellental/</guid>
-    <author>contact@mykolamor.com (Mykola Morozov)</author>
-  </item>
-  <item>
-    <title>Wasserspitz and Mountain Carts</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-09-07-wasserspitz/</link>
-    <description>Going up Wasserspitz on foot. Going down Stümpfling on mountain carts. Hike from Tegernsee to Spitzingsee via Wasserspitz (1552 m) and Stümpfling (1506 m).</description>
-    <pubDate>Sun, 07 Sep 2025 14:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-09-07-wasserspitz/</guid>
-    <author>contact@mykolamor.com (Mykola Morozov)</author>
-  </item>
-  <item>
-    <title>Hot Pursuit of Brecherspitz</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-08-31-brecherspitz/</link>
-    <description>Hiking with a fewer has never been so fun. Hike from Spitzingsee to Neuhaus via Brecherspitz (1685 m).</description>
-    <pubDate>Sun, 31 Aug 2025 14:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-08-31-brecherspitz/</guid>
-    <author>contact@mykolamor.com (Mykola Morozov)</author>
-  </item>
-  <item>
-    <title>Via Ferrata Climb to Omiš Fort</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-08-14-omis_fort_climb/</link>
-    <description>Taking the straight way up this time. Climb from Omiš and back via Tvrđava "Stari grad" (303 m).</description>
-    <pubDate>Thu, 14 Aug 2025 14:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-08-14-omis_fort_climb/</guid>
-    <author>contact@mykolamor.com (Mykola Morozov)</author>
-  </item>
-  <item>
-    <title>Family Trip to an Old Fort</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-08-13-omis_fort/</link>
-    <description>Taking my mom up a local mountain. Hike from Omiš and back via Tvrđava "Stari grad" (303 m).</description>
-    <pubDate>Wed, 13 Aug 2025 14:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-08-13-omis_fort/</guid>
-    <author>contact@mykolamor.com (Mykola Morozov)</author>
-  </item>
-  <item>
-    <title>Returning to Höhenglücksteig</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-08-03-hoehengluecksteig/</link>
-    <description>Getting stuck on the same via ferrata. Hike from Fischbrunn to Etzelwang via Norissteig and Höhenglücksteig.</description>
-    <pubDate>Sun, 03 Aug 2025 14:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-08-03-hoehengluecksteig/</guid>
-    <author>contact@mykolamor.com (Mykola Morozov)</author>
-  </item>
-  <item>
-    <title>Exploring Höhenglücksteig</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-07-26-hoehengluecksteig/</link>
-    <description>Trying out via ferrata climbing in the wild. Hike from Fischbrunn to Etzelwang via Norissteig and Höhenglücksteig.</description>
-    <pubDate>Sat, 26 Jul 2025 14:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-07-26-hoehengluecksteig/</guid>
-    <author>contact@mykolamor.com (Mykola Morozov)</author>
-  </item>
-  <item>
-    <title>Free Solo of Breitensteinfensterl</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-07-20-breitensteinfensterl/</link>
-    <description>Going for a real via ferrata climb with no gear. Hike from Hammer and back via Breitensteinfensterl (1350 m), Breitenstein Westgipfel (1575 m), and Breitenstein (1622 m).</description>
-    <pubDate>Sun, 20 Jul 2025 14:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-07-20-breitensteinfensterl/</guid>
-    <author>contact@mykolamor.com (Mykola Morozov)</author>
-  </item>
-  <item>
-    <title>First Outdoor Via Ferrata: Brünnstein</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-07-06-bruennstein/</link>
-    <description>Starting off with an easy route. Hike from Tatzelwurmwasserfälle to Oberaudorf via Brünnstein (1619 m).</description>
-    <pubDate>Sun, 06 Jul 2025 14:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-07-06-bruennstein/</guid>
-    <author>contact@mykolamor.com (Mykola Morozov)</author>
-  </item>
-  <item>
-    <title>Forest Walk to Starnberg</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-06-29-muenchen_starnberg/</link>
-    <description>Completing my route from Freising to Tutzing. Hike from München to Starnberg via Forstenrieder Park.</description>
-    <pubDate>Sun, 29 Jun 2025 14:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-06-29-muenchen_starnberg/</guid>
-    <author>contact@mykolamor.com (Mykola Morozov)</author>
-  </item>
-  <item>
-    <title>Zugspitze Reintal Loop in a Day</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-06-21-zugspitze_reintal/</link>
-    <description>A non-stop 22 hour hike to the top of Germany's highest mountain and back. Hike from Garmisch and back via Zugspitze (2962 m).</description>
-    <pubDate>Sat, 21 Jun 2025 14:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-06-21-zugspitze_reintal/</guid>
-    <author>contact@mykolamor.com (Mykola Morozov)</author>
-  </item>
-  <item>
-    <title>TUM Hike Day 2025: Wendelstein</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-06-10-wendelstein/</link>
-    <description>A hike I organized for the Chair for Database Systems at TUM. Hike from Osterhofen to Bayrischzell via Wendelstein (1838 m).</description>
-    <pubDate>Tue, 10 Jun 2025 14:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-06-10-wendelstein/</guid>
-    <author>contact@mykolamor.com (Mykola Morozov)</author>
-  </item>
-  <item>
-    <title>Blauberge Ridge Loop</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-06-01-blauberge/</link>
-    <description>A summer trip along the Germany-Austria border. Hike from Wildbad Kreuth and back via Predigtstuhl (1562 m), Wichtlplatte (1765 m), Blaubergschneid (1787 m), Blaubergkopf (1787 m), Karspitz (1801 m), and Halserspitze (1863 m).</description>
-    <pubDate>Sun, 01 Jun 2025 14:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-06-01-blauberge/</guid>
-    <author>contact@mykolamor.com (Mykola Morozov)</author>
-  </item>
-  <item>
-    <title>Breitenstein and Wendelstein During Rainfall</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-05-18-breitenstein_wendelstein/</link>
-    <description>Despite the rainy weather, we set out to conquer both Breitenstein and Wendelstein and finish off with some Bayrischzell cake. Hike from Hammer/Fischbachau to Bayrischzell via Breitenstein (1622 m), Türkenköpfl (1512 m), and Wendelstein (1838 m).</description>
-    <pubDate>Sun, 18 May 2025 14:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-05-18-breitenstein_wendelstein/</guid>
-    <author>contact@mykolamor.com (Mykola Morozov)</author>
-  </item>
-  <item>
-    <title>First Buchstein Climb</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-05-11-buchstein/</link>
-    <description>My first cliff climbing experience, extended to a full day hike. Hike from Kreuth to Lenggries via Buchstein (1701 m), Roßstein (1698 m), Mariaeck (1469 m), and Seekarkreuz (1601 m).</description>
-    <pubDate>Sun, 11 May 2025 14:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-05-11-buchstein/</guid>
-    <author>contact@mykolamor.com (Mykola Morozov)</author>
-  </item>
-  <item>
-    <title>Laber Hauptgipfel DAAD Tour</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-04-27-laber_hauptgipfel/</link>
-    <description>Organized group hike for DAAD scholars. Hike from Oberammergau and back via Schartenkopf (1636 m) Laber Hauptgipfel (1686 m).</description>
-    <pubDate>Sun, 27 Apr 2025 14:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-04-27-laber_hauptgipfel/</guid>
-    <author>contact@mykolamor.com (Mykola Morozov)</author>
-  </item>
-  <item>
-    <title>Schweinsberg Easter DAAD Tour</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-04-21-schweinsberg/</link>
-    <description>Annette organized a group hike with Easter egg hunting for DAAD scholars. Hike from Geitau to Fischbachau via Türkenköpfl (1512 m) and Schweinsberg (1514 m).</description>
-    <pubDate>Mon, 21 Apr 2025 14:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-04-21-schweinsberg/</guid>
-    <author>contact@mykolamor.com (Mykola Morozov)</author>
-  </item>
-  <item>
-    <title>São Lourenço PR8 Intro</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-04-06-sao_lourenco_partial/</link>
-    <description>A great oceanside hike cut short by a plane ride. Hike at Vereda da Ponta de São Lourenço, partial.</description>
-    <pubDate>Sun, 06 Apr 2025 14:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-04-06-sao_lourenco_partial/</guid>
-    <author>contact@mykolamor.com (Mykola Morozov)</author>
-  </item>
-  <item>
-    <title>Caldeirão Verde PR9 Main Section</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-04-04-caldeirao_verde/</link>
-    <description>Big waterfall visit going through tunnels and smaller waterfalls on the way with the final section closed off. Hike from Parque das Queimadas to Caldeirão Verde and back.</description>
-    <pubDate>Fri, 04 Apr 2025 14:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-04-04-caldeirao_verde/</guid>
-    <author>contact@mykolamor.com (Mykola Morozov)</author>
-  </item>
-  <item>
-    <title>Pedra Rija PR1 Start</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-04-04-pedra_rija/</link>
-    <description>What was supposed to be a full-day hike turned to be a 15-minute walk due to a landslide. Hike from Pico do Areeiro to Pedra Rija and back.</description>
-    <pubDate>Fri, 04 Apr 2025 14:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-04-04-pedra_rija/</guid>
-    <author>contact@mykolamor.com (Mykola Morozov)</author>
-  </item>
-  <item>
-    <title>Hoher Fricken with Alcoholics</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-03-30-hoher_fricken/</link>
-    <description>A goodbye hike for Mikuláš Netík, meeting German housewives downing schnapps at the top. Hike from Farchant to Garmisch-Partenkirchen via Kuhfluchtwasserfall and Hoher Fricken (1940 m).</description>
-    <pubDate>Sun, 30 Mar 2025 14:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-03-30-hoher_fricken/</guid>
-    <author>contact@mykolamor.com (Mykola Morozov)</author>
-  </item>
-  <item>
-    <title>Frau Hitt: Push Through or Lose</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-03-23-frau_hitt/</link>
-    <description>A full-day winter hike over the famous Innsbruck ridge. Freezing cold and icy slopes mixed with frogs and goats. Hike from Scharnitz to Innsbruck via Frau Hitt (2270 m).</description>
-    <pubDate>Sun, 23 Mar 2025 15:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-03-23-frau_hitt/</guid>
-    <author>contact@mykolamor.com (Mykola Morozov)</author>
-  </item>
-  <item>
-    <title>Altmühltal: Riedenburg to Kelheim</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-03-16-riedenburg_kelheim/</link>
-    <description>A historical walk along river Prunn through Celtic settlements. Hike from Riedenburg to Saal through Prunn, Essing, Kloster Weltenburg, and Kelheim.</description>
-    <pubDate>Sun, 16 Mar 2025 15:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-03-16-riedenburg_kelheim/</guid>
-    <author>contact@mykolamor.com (Mykola Morozov)</author>
-  </item>
-  <item>
-    <title>Hochstaufen DAAD Tour</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-03-09-hochstaufen/</link>
-    <description>A DAAD tour I organized as a change of pace from the usual destinations. Hike from Piding to Bad Reichenhall via Fuderheustein (1321 m) and Hochstaufen (1771 m).</description>
-    <pubDate>Sun, 09 Mar 2025 15:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-03-09-hochstaufen/</guid>
-    <author>contact@mykolamor.com (Mykola Morozov)</author>
-  </item>
-  <item>
-    <title>Seekarkreuz DAAD Tour 2025</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-03-02-seekarkreuz/</link>
-    <description>Annette organized a DAAD hike to the summit going down to the Hirschbachstüberl restaurant. Hike from Lenggries to Seekarkreuz (1601 m).</description>
-    <pubDate>Sun, 02 Mar 2025 15:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-03-02-seekarkreuz/</guid>
-    <author>contact@mykolamor.com (Mykola Morozov)</author>
-  </item>
-  <item>
-    <title>Herrsching to Tutzing</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-02-23-herrsching_tutzing/</link>
-    <description>One morning I was bored and decided to walk from one popular Bavarian lake to another. Hike from Herrsching to Tutzing via Andechs, Erling, Machtlfing, and Traubing.</description>
-    <pubDate>Sun, 23 Feb 2025 15:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-02-23-herrsching_tutzing/</guid>
-    <author>contact@mykolamor.com (Mykola Morozov)</author>
-  </item>
-  <item>
-    <title>Rampoldplatte as a First</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-02-09-rampoldplatte/</link>
-    <description>Testing the fitness of a new friend on a moderate winter route. Hike from Brannenburg and back via Rampoldplatte (1422 m).</description>
-    <pubDate>Sun, 09 Feb 2025 15:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-02-09-rampoldplatte/</guid>
-    <author>contact@mykolamor.com (Mykola Morozov)</author>
-  </item>
-  <item>
-    <title>Pushing for Pyramidenspitze DAAD Tour</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-02-02-pyramidenspitze/</link>
-    <description>A winter rendition of the route I organized for DAAD with the group dwindling down. Hike from Kufstein and back via Petersköpfl (1745 m), Einserkogel (1924 m), Zwölferkogel (1912 m), and Pyramidenspitze (1997 m).</description>
-    <pubDate>Sun, 02 Feb 2025 15:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-02-02-pyramidenspitze/</guid>
-    <author>contact@mykolamor.com (Mykola Morozov)</author>
-  </item>
-  <item>
-    <title>Großer Traithen Ridge in Winter</title>
-    <link>https://mykolamor.com/hikes/hikes/2025-01-26-grosser_traithen/</link>
-    <description>Crossing the ridge of the highest mountain in the Rosenheim district. Hike from Bayrischzell to Oberaudorf via Großer Traithen (1852 m), Unterbergerjoch (1813 m), Steilnerjoch (1747 m).</description>
-    <pubDate>Sun, 26 Jan 2025 15:00:00 GMT</pubDate>
-    <guid>https://mykolamor.com/hikes/hikes/2025-01-26-grosser_traithen/</guid>
+    <guid>https://mykolamor.com/hikes/2025-10-27-auer_berg/</guid>
     <author>contact@mykolamor.com (Mykola Morozov)</author>
   </item>
 </channel>

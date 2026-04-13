@@ -7186,7 +7186,7 @@
           "date": "2025-07-06",
           "title": "First Outdoor Via Ferrata: Brünnstein",
           "description": "Starting off with an easy route.",
-          "tags": [],
+          "tags": ["Climb"],
           "people": ["David Bilan"],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-07-06-bruennstein.md"
@@ -7294,7 +7294,7 @@
           "date": "2025-07-20",
           "title": "Free Solo of Breitensteinfensterl",
           "description": "Going for a real via ferrata climb with no gear.",
-          "tags": [],
+          "tags": ["Climb"],
           "people": [],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-07-20-breitensteinfensterl.md"
@@ -8486,6 +8486,159 @@
         "provider": "hikes/geojson",
         "modes": [ "2d", "3d" ],
         "path": "fockenstein_geierstein.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Sněžka and Krakonoš",
+    "image": "/images/projects/data-viz/hikes/snezka_krakonos.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": [
+        {
+          "date": "2026-04-11",
+          "title": "On Top of the World on Sněžka",
+          "description": "Visiting the highest peak on the Czech-Polish border.",
+          "tags": ["Czechia", "Poland"],
+          "people": ["Mikuláš Netík"],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2026-04-11-snezka_krakonos.md",
+          "gpx": "/_projects/data-viz/hikes/gpx/snezka_krakonos.gpx"
+        }
+      ],
+      "nodes": [
+        {
+          "id": 38723149,
+          "lat": 50.7078507,
+          "lon": 15.7312645,
+          "tags": {
+            "name": "Betyna",
+            "tourism": "alpine_hut",
+            "building": "yes",
+            "contact:website": "https://betyna.cz/chata-betyna/"
+          }
+        },
+        {
+          "id": 1354679430,
+          "lat": 50.7327460,
+          "lon": 15.7333884,
+          "tags": {
+            "name": "Vodárna pro Sněžku",
+            "historic": "technical_monument",
+            "man_made": "water_works",
+            "website": "https://www.turistika.cz/mista/vodarna-pro-snezku-v-obrim-dole"
+          }
+        },
+        {
+          "id": 19921121,
+          "lat": 50.7394155,
+          "lon": 15.7291969,
+          "tags": {
+            "name": "Dom Śląski",
+            "alt_name": "Śląski Dom",
+            "tourism": "alpine_hut",
+            "ele": "1400",
+            "building": "yes",
+            "contact:email": "info@domslaski.pl",
+            "contact:phone": "+48757535290",
+            "phone": "+48756126700",
+            "contact:website": "https://domslaski.pl",
+            "wikidata": "Q9334361",
+            "wikipedia": "pl:Schronisko Górskie \"Dom Śląski\""
+          }
+        },
+        {
+          "id": 1850303773,
+          "lat": 50.7360326,
+          "lon": 15.7396072,
+          "tags": {
+            "name": "Sněžka",
+            "alt_name": "Śnieżka",
+            "natural": "peak",
+            "ele": "1603.3",
+            "contact:website": "http://www.sniezka.karpacz.pl",
+            "tourism": "attraction",
+            "wikidata": "Q617511",
+            "wikipedia": "pl:Śnieżka"
+          }
+        },
+        {
+          "id": 19921110,
+          "lat": 50.7346979,
+          "lon": 15.6974086,
+          "tags": {
+            "name": "Luční bouda",
+            "alt_name": "Schronisko Buda Łąkowa",
+            "tourism": "alpine_hut",
+            "building": "hotel",
+            "website": "https://lucnibouda.cz/",
+            "wikidata": "Q132423",
+            "wikipedia": "cs:Luční bouda"
+          }
+        },
+        {
+          "id": 6767676700,
+          "lat": 50.7340107,
+          "lon": 15.6654555,
+          "tags": {
+            "name": "Krakonoš",
+            "alt_name": "Kozí hřbety",
+            "natural": "peak",
+            "ele": "1422",
+            "wikidata": "Q42575324",
+            "wikipedia": "cs:Krakonoš (Kozí hřbety)"
+          }
+        },
+        {
+          "id": 31128149,
+          "lat": 50.7409194,
+          "lon": 15.6473003,
+          "tags": {
+            "name": "Bouda Bílé Labe",
+            "tourism": "alpine_hut",
+            "building": "yes",
+            "email": "bile.labe@seznam.cz",
+            "phone": "+420499422121",
+            "website": "https://www.boudabilelabe.cz/"
+          }
+        }
+      ],
+      "filePath": "/_projects/data-viz/hikes/geojson/snezka_krakonos.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [15.7351998, 50.6946436],
+        [15.7312645, 50.7078507],
+        [15.7291969, 50.7394155],
+        [15.7396072, 50.7360326],
+        [15.7291969, 50.7394155],
+        [15.6974086, 50.7346979],
+        [15.6654555, 50.7340107],
+        [15.6473003, 50.7409194],
+        [15.6088188, 50.7423918],
+        [15.6039971, 50.7241162]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Pec pod Sněžkou to Špindlerův Mlýn via Sněžka (1603.3 m) and Krakonoš (1422 m).",
+    "route": "/projects/data-viz/hikes/snezka_krakonos",
+    "height": 1024,
+    "standardFeatures": {
+      "origin": {
+        "lat": 50.71896042963921,
+        "lon": 15.669765472412111
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "snezka_krakonos.json#/features/0"
       }],
       "geometrySource": "https://maps.openrouteservice.org/",
       "statistics": true

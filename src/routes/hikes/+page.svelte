@@ -16,6 +16,7 @@
 	import CustomPagination from './components/CustomPagination.svelte';
 	import Feeds from './components/Feeds.svelte';
 	import YearsNav from './components/YearsNav.svelte';
+	import resume from '$lib/data/resume.json';
 
 	interface Props {
 		data: PageData;
@@ -83,6 +84,9 @@
 	title="Hiking, Climbing, Via Ferrata & Trail Maps | Personal Hike Experiences"
 	description="The most thorough hike reviews on the web"
 	type="website"
+	image="https://mykolamor.com/images/hikes/hero/hike_poster_4_bg_2.png"
+	article-author={resume.basics.name}
+	article-section="Hikes"
 />
 
 <AppNavbar

@@ -24,6 +24,7 @@
 		...otherProps
 	}: Props = $props();
 	const oldUrl = page.url;
+	const fullImageUrl = image ? (image.startsWith('http') ? image : 'https://mykolamor.com' + image) : image;
 	let canonicalUrl = $state(new URL(oldUrl.origin.replace('www.', '') + oldUrl.pathname));
 	const titleBase = resume.basics.name;
 
@@ -55,8 +56,8 @@
 	{#if description}
 		<meta property="og:description" content={description}>
 	{/if}
-	{#if image}
-		<meta property="og:image" content={image}>
+	{#if fullImageUrl}
+		<meta property="og:image" content={fullImageUrl}>
 	{/if}
 	<meta property="og:locale" content="en_US">
 
@@ -67,7 +68,7 @@
 		<meta name="twitter:description" content={description}>
 	{/if}
 	{#if image}
-		<meta name="twitter:image" content={image}>
+		<meta name="twitter:image" content={fullImageUrl}>
 	{/if}
 
 	{#each Object.keys(otherProps) as key}

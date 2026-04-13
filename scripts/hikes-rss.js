@@ -6,6 +6,18 @@ const rssFilePath = '../static/hikes/feed.xml';
 const atomFilePath = '../static/hikes/atom.xml';
 const now = new Date();
 
+function escapeXml(unsafe) {
+	return unsafe.replace(/[<>&'"]/g, function (c) {
+		switch (c) {
+			case '<': return '&lt;';
+			case '>': return '&gt;';
+			case '&': return '&amp;';
+			case '\'': return '&apos;';
+			case '"': return '&quot;';
+		}
+	});
+}
+
 let posts = hikes.flatMap(h => h.properties.dates
 	.filter(d => !h.properties.draft && d.path)
 	.map(d => {
@@ -17,16 +29,16 @@ let posts = hikes.flatMap(h => h.properties.dates
 			month: date.getMonth() + 1,
 			day: date.getDate(),
 			date: date,
-			url: `/hikes/${d.date}-${slug}/`,
-			title: (d.title ?? h.name).replaceAll('&', '&amp;'),
-			image: d.image ?? h.image?.replace('/hikes/', '/hikes/thumb/'),
-			description: ((d.description ? (d.description + ' ') : '') + h.description).replaceAll('&', '&amp;'),
+			url: `/${d.date}-${slug}/`,
+			title: escapeXml(d.title ?? h.name),
+			image: (d.image ?? h.image)?.replace('/hikes/', '/hikes/thumb/'),
+			description: escapeXml((d.description ? (d.description + ' ') : '') + h.description),
 			tags: d.tags,
 			people: d.people
 		};
 	}));
 posts.sort((a, b) => a.date > b.date ? -1 : (a.date < b.date ? 1 : 0));
-posts = posts.slice(0, 50); // Limit to latest 50 posts.
+posts = posts.slice(0, 20); // Limit to latest 20 posts.
 
 function generateRSS() {
 	const header = `<?xml version="1.0" encoding="UTF-8" ?>
