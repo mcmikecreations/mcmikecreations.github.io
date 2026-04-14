@@ -56,12 +56,15 @@
 	</figure>
 {:else}
 	<figure class="w-full xl:w-3/4 mx-auto flex flex-col justify-center">
-		<button
-			type="button"
+		<!-- svelte-ignore a11y_click_events_have_key_events -->
+		<!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
+		<img
+			src={href}
+			{title}
+			alt={text}
+			class="cursor-pointer !my-0"
 			onclick={() => (openModal = true)}
-		>
-			<img src={href} {title} alt={text} class="pointer-events-none !my-0" />
-		</button>
+		/>
 		<figcaption class="text-center">{text}</figcaption>
 	</figure>
 	<Modal bind:open={openModal} fullscreen size="none" classes={{ close: 'bg-white dark:bg-gray-900' }}>
