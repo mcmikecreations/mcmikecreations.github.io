@@ -26,5 +26,5 @@
 {:else if depth === 6}
 	<h6 {id}><slot></slot></h6>
 {:else}
-	{raw}
+	{text ?? raw}
 {/if}

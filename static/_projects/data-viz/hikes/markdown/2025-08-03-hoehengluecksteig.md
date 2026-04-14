@@ -3,7 +3,7 @@ and [Höhenglücksteig](https://www.bergsteigen.com/touren/klettersteig/hoehengl
 ![Topo of Norissteig](/images/hikes/topo/norissteig.png)
 ![Topo of Höhenglücksteig](/images/hikes/topo/hoehengluecksteig.png)
 
-David had to skip the [previous visit](/hikes/2025-07-27-hoehengluecksteig)
+David had to skip the [previous visit](/hikes/2025-07-26-hoehengluecksteig)
 to the via ferrata with me and Mikuláš, so we planned another trip to climb
 both Norissteig and Höhenglücksteig.
 

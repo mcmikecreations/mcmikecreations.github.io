@@ -14,7 +14,6 @@
 		onparsed
 	} = $props();
 
-	let tokens = $state();
 	let lexer = $state();
 	let mounted = $state(false);
 
@@ -22,13 +21,13 @@
 	let slugger = $derived(source ? new Slugger() : undefined);
 	let combinedOptions = $derived({ ...defaultOptions, ...options });
 
-	$effect(() => {
+	let tokens = $derived.by(() => {
 		if (preprocessed) {
-			tokens = source;
+			return source;
 		} else {
-			lexer = new Lexer(combinedOptions);
-			tokens = isInline ? lexer.inlineTokens(source) : lexer.lex(source);
-			onparsed?.(new CustomEvent('parsed', { detail: tokens }));
+			const lex = new Lexer(combinedOptions);
+			const t = isInline ? lex.inlineTokens(source) : lex.lex(source);
+			return t;
 		}
 	});
 

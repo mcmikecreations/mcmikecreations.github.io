@@ -67,7 +67,7 @@
 				{#if tokens}
 					<svelte:self {tokens} {renderers} />
 				{:else}
-					{$$restProps.raw}
+					{$$restProps.text ?? $$restProps.raw ?? ''}
 				{/if}
 			</svelte:component>
 		{/if}

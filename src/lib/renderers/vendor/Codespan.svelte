@@ -1,5 +1,6 @@
 <script>
-	export let raw
+	export let text;
+	export let raw;
 </script>
 
-<code>{raw.replace(/`/g, '')}</code>
+<code>{(text ?? raw)?.replace(/`/g, '')}</code>

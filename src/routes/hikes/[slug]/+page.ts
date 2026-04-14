@@ -3,9 +3,6 @@ import type { PageLoad } from './$types';
 import type { HttpError } from '@sveltejs/kit'
 import { type Feature, type GeometryData, getMapFeatures, type Map, type OriginData } from '$lib/data/map-info';
 import hikes from '$lib/data/hikes.json';
-import { readingTime } from 'reading-time-estimator';
-import resume from '$lib/data/resume.json';
-import { marked } from 'marked';
 import { buildGeometry, loadGeometry, loadProperties } from '$lib/hikes/build-geometry';
 import { buildStatistics } from '$lib/hikes/build-statistics';
 import { geoMercator } from 'd3-geo';
@@ -14,14 +11,14 @@ import { geoMercator } from 'd3-geo';
 import { tile } from 'd3-tile';
 import { buildTiles, getPixelsPerMeter } from '$lib/hikes/build-tiles';
 import * as THREE from 'three';
-import { defaultPageSize, getAllPosts } from '$lib/data/hikes-info';
+import { getAllPosts } from '$lib/data/hikes-info';
 import type { EntryGenerator } from './$types';
 
 export const entries: EntryGenerator = () => {
 	return getAllPosts().map((p) => ({ slug: p.anchor }));
 };
 
-export const load: PageLoad = async ({ fetch, params }) => {
+export const load: PageLoad = async ({ data, fetch, params }) => {
 	try {
 		const slug = params.slug.endsWith('.html')
 			? params.slug.substring(0, params.slug.length - '.hmtl'.length)
@@ -102,36 +99,8 @@ export const load: PageLoad = async ({ fetch, params }) => {
 			);
 			const showFileGpx = gpx.ok;
 
-			const res = await fetch(date.path);
-			if (!res.ok) {
-				console.log(`Failed to fetch ${date.path} with return code ${res.status}.`);
-				error(404, { message: `Failed to fetch "${slug}"` });
-			}
-
-			const post = await res.text();
-			const headerRegex = /#{2} (.*)\r?\n/g;
-			const headers = Array.from(post.matchAll(headerRegex), x => x[1]);
-			const stats = readingTime(post);
-
-			const allPosts = getAllPosts();
-			const postIndex = allPosts.findIndex(p => p.anchor === slug);
-			const page = postIndex !== -1 ? Math.floor(postIndex / defaultPageSize) + 1 : 1;
-
 			return {
-				post: {
-					title: date.title ?? hike.name,
-					description: (date.description ? (date.description + ' ') : '') + hike.description,
-					image: date.image?.replace('/hikes/', '/hikes/thumb/') ?? hike.image?.replace('/hikes/', '/hikes/thumb/'),
-					imageFull: date.image ?? hike.image,
-					content: marked.lexer(post),
-					headers: headers,
-					time: stats.text,
-					date: dateStr,
-					tags: date.tags,
-					author: date.author ?? resume.basics.name,
-					anchor: slug,
-					page,
-				},
+				post: data.post,
 				map: hike,
 				display: {
 					statistics: showStatistics,

@@ -159,7 +159,7 @@ feel miserable missing out on local cuisine. We bought some česnečka, a garlic
 soup with chunks of meat, sausage, and vegetables. It was amazing, much more
 filling than the Bavarian Alpine hut soups, and having much deeper flavors. To
 finish the meal, we ordered some berry cake with some jam on top. A great treat
-for any visitor, I highly recommend [the place](www.boudabilelabe.cz).
+for any visitor, I highly recommend [the place](https://www.boudabilelabe.cz).
 
 ![The interior of the Bílé Labe restaurant hut](/images/projects/data-viz/hikes/stories/snezka_krakonos/2026-04-11-28.jpg)
 ![Bílé Labe waterfall on the way](/images/projects/data-viz/hikes/stories/snezka_krakonos/2026-04-11-29.jpg)

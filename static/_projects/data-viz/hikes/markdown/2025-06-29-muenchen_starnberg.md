@@ -1,6 +1,6 @@
 Having climbed [Zugspitze (2962 m) the week before](/hikes/2025-06-21-zugspitze_reintal/),
 I was eager to downscale my ambitions a bit. As part of my
-["Hiking Web" project](/hikes/web/), I wanted to connect my previous walks
+["Hiking Web" project](/hikes/tag/Web/), I wanted to connect my previous walks
 in the Munich area with Starnberg. I hoped this would be a relaxing walk to the
 lake with a swim at the end.
 
