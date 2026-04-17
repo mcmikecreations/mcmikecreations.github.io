@@ -11,14 +11,17 @@ import { geoMercator } from 'd3-geo';
 import { tile } from 'd3-tile';
 import { buildTiles, getPixelsPerMeter } from '$lib/hikes/build-tiles';
 import * as THREE from 'three';
-import { getAllPosts } from '$lib/data/hikes-info';
+import { getAllPosts, parseMarkdown } from '$lib/hikes/hikes-info';
 import type { EntryGenerator } from './$types';
+import { browser } from '$app/environment';
 
 export const entries: EntryGenerator = () => {
 	return getAllPosts().map((p) => ({ slug: p.anchor }));
 };
 
-export const load: PageLoad = async ({ data, fetch, params }) => {
+let hasHydrated = false;
+
+export const load: PageLoad = async ({ data, fetch, params, url }) => {
 	try {
 		const slug = params.slug.endsWith('.html')
 			? params.slug.substring(0, params.slug.length - '.hmtl'.length)
@@ -38,89 +41,30 @@ export const load: PageLoad = async ({ data, fetch, params }) => {
 				hikes.find(h => h.route.endsWith(routeStr));
 			if (!hike) break;
 
-			const date = hike.properties.dates.find(d => d.date === dateStr);
-			if (!date || !date.path) break;
+			let clientHtml: string | undefined;
 
-			let showStatistics = false;
-			let showFilePrimary = false;
-			const features: Feature[] | null = getMapFeatures(hike);
-			const statistics = features?.find((x: Feature) => x.type === 'Statistics');
-			const origin = features?.find((x: Feature) => x.type === 'Origin');
-			const originData: OriginData | undefined =
-				(origin?.data as OriginData | undefined) ??
-				{ lat: 48.1401825, lon: 11.5584097 };
-			const height = hike.height;
-			const projection = geoMercator()
-				.center([originData.lon, originData.lat])
-				.scale(Math.pow(2, 21) / (2 * Math.PI))
-				.translate([height / 2, height / 2]);
-			const tileFunc = tile()
-				.size([height, height])
-				.scale(projection.scale() * 2 * Math.PI)
-				.translate(projection([0, 0]));
-			const tiles = tileFunc();
-			const pixelsPerMeter = getPixelsPerMeter(originData.lat, tiles.scale, tileFunc.scale()());
-			const layers2d : Array<string> = [];
-			const layers3d : Array<THREE.Object3D> = [];
-			const layersGeometry : Array<object> = [];
-			const statisticsHeightPixels = height * 0.0625;
-			const statisticsWidthPixels = height * 0.5;
-
-			if (features && statistics) {
-				let properties = hike.properties;
-				for (const layer of features) {
-					let data;
-					if (layer.type === 'Tiles') {
-						data = await buildTiles(fetch, layer, tiles, tileFunc);
-					} else if (layer.type === 'Geometry') {
-						const geometry = await loadGeometry(fetch, layer.data as GeometryData);
-						layersGeometry.push(geometry);
-						properties = loadProperties(hike, geometry);
-						data = await buildGeometry(fetch, layer, geometry, projection, pixelsPerMeter, tiles, tileFunc);
-						showStatistics = true;
-						showFilePrimary = true;
-					}
-
-					if (data) {
-						if (data.layers2d.length > 0) {
-							layers2d.push(...data.layers2d);
-						}
-						if (data.layers3d.length > 0) {
-							layers3d.push(...data.layers3d);
+			if (browser) {
+				if (hasHydrated) {
+					// Client-side navigation: fetch the raw markdown and parse it on the client
+					// to avoid hitting the full index.html or bundling it in __data.json
+					const date = hike.properties.dates.find((d: any) => d.date === dateStr);
+					if (date && date.path) {
+						const res = await fetch(date.path);
+						if (res.ok) {
+							const postRaw = await res.text();
+							clientHtml = await parseMarkdown(postRaw);
 						}
 					}
+				} else {
+					hasHydrated = true;
 				}
-				hike.properties = properties;
-			}
-
-			const gpx = await fetch(
-				hike.properties.filePath.replace('geojson', 'gpx').replace('json', 'gpx'),
-				{ method: 'OPTIONS' }
-			);
-			const showFileGpx = gpx.ok;
+			}clientHtml = undefined;
 
 			return {
 				post: data.post,
-				map: hike,
-				display: {
-					statistics: showStatistics,
-					filePrimary: showFilePrimary,
-					fileGpx: showFileGpx,
-				},
-				mapDisplay: {
-					origin: originData,
-					features: features,
-					statisticsSizePixels: [statisticsWidthPixels, statisticsHeightPixels],
-					statistics: statistics
-						? ((await buildStatistics(fetch, statistics, height, statisticsHeightPixels))?.layers2d?.join(''))
-						: undefined,
-					projection: projection,
-					tileScale: tiles.scale,
-					pixelsPerMeter: pixelsPerMeter,
-					dataGeometry: layersGeometry,
-					data2d: layers2d.join(''),
-					data3d: layers3d
-				}
+				map: data.map,
+				display: data.display,
+				clientHtml,
 			};
 			// eslint-disable-next-line no-constant-condition
 		} while (false);

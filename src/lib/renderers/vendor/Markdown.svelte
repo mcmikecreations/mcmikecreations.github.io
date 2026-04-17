@@ -11,7 +11,7 @@
 		renderers = {},
 		options = {},
 		isInline = false,
-		onparsed
+		onparsed = undefined
 	} = $props();
 
 	let lexer = $state();

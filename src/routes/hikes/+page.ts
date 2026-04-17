@@ -1,4 +1,4 @@
-import { getPosts, getAllPosts } from '$lib/data/hikes-info';
+import { getPosts, getAllPosts } from '$lib/hikes/hikes-info';
 
 export function load() {
 	const { posts, pagination } = getPosts({ page: 1 });

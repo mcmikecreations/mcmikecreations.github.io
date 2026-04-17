@@ -2,20 +2,11 @@ import { error } from '@sveltejs/kit';
 import hikes from '$lib/data/hikes.json';
 import { readingTime } from 'reading-time-estimator';
 import resume from '$lib/data/resume.json';
-import { marked, type TokensList, type Token } from 'marked';
-import { defaultPageSize, getAllPosts } from '$lib/data/hikes-info';
+import { defaultPageSize, getAllPosts, parseMarkdown } from '$lib/hikes/hikes-info';
 import type { PageServerLoad } from './$types';
+import type { MapDate, MapProperties } from '$lib/data/map-info';
 
-function cleanTokens(tokens: Token[] | TokensList | undefined) {
-	if (!tokens) return;
-	for (const t of tokens) {
-		delete (t as any).raw;
-		if ((t as any).tokens) cleanTokens((t as any).tokens);
-		if ((t as any).items) cleanTokens((t as any).items);
-	}
-}
-
-export const load: PageServerLoad = async ({ fetch, params }) => {
+export const load: PageServerLoad = async ({ fetch, params, locals }) => {
 	try {
 		const slug = params.slug.endsWith('.html')
 			? params.slug.substring(0, params.slug.length - '.hmtl'.length)
@@ -33,7 +24,7 @@ export const load: PageServerLoad = async ({ fetch, params }) => {
 		if (!hike) {
 			error(404, { message: `Failed to find route "${routeStr}"` });
 		}
-		const date = hike.properties.dates.find(d => d.date === dateStr);
+		const date = hike.properties.dates.find(d => d.date === dateStr) as MapDate;
 		if (!date || !date.path) {
 			error(404, { message: `Failed to find date "${dateStr}"` });
 		}
@@ -53,8 +44,32 @@ export const load: PageServerLoad = async ({ fetch, params }) => {
 		const postIndex = allPosts.findIndex(p => p.anchor === slug);
 		const page = postIndex !== -1 ? Math.floor(postIndex / defaultPageSize) + 1 : 1;
 
-		const content = marked.lexer(postRaw);
-		cleanTokens(content);
+		locals.postContent = await parseMarkdown(postRaw);
+
+		let showStatistics = false;
+		let showFilePrimary = false;
+
+		const [gpx, geojsonRes] = await Promise.all([
+			fetch(hike.properties.filePath.replace('geojson', 'gpx').replace('json', 'gpx'), { method: 'OPTIONS' }),
+			fetch(hike.properties.filePath),
+		]);
+		const showFileGpx = gpx.ok;
+
+		let mapProperties = hike.properties as MapProperties;
+		if (geojsonRes.ok) {
+			const geojson = await geojsonRes.json();
+			const fp = geojson?.features?.[0]?.properties;
+			if (fp) {
+				showFilePrimary = true;
+				mapProperties = <MapProperties>{
+					...hike.properties,
+					distance: hike.properties.distance ?? (fp.summary?.distance ?? 0) * 1000,
+					duration: hike.properties.duration ?? (fp.summary?.duration ?? 0) / 60,
+					ascent: hike.properties.ascent ?? fp.ascent ?? null,
+					descent: hike.properties.descent ?? fp.descent ?? null,
+				};
+			}
+		}
 
 		return {
 			post: {
@@ -62,7 +77,6 @@ export const load: PageServerLoad = async ({ fetch, params }) => {
 				description: (date.description ? (date.description + ' ') : '') + hike.description,
 				image: date.image?.replace('/hikes/', '/hikes/thumb/') ?? hike.image?.replace('/hikes/', '/hikes/thumb/'),
 				imageFull: date.image ?? hike.image,
-				content: content,
 				headers: headers,
 				time: stats.text,
 				date: dateStr,
@@ -70,7 +84,13 @@ export const load: PageServerLoad = async ({ fetch, params }) => {
 				author: date.author ?? resume.basics.name,
 				anchor: slug ?? '',
 				page,
-			}
+			},
+			map: { ...hike, properties: mapProperties },
+			display: {
+				statistics: showStatistics,
+				filePrimary: showFilePrimary,
+				fileGpx: showFileGpx,
+			},
 		};
 	} catch (ex) {
 		console.log(ex);

@@ -2,7 +2,7 @@
     import { Heading, Img, Span, Badge } from 'flowbite-svelte';
     import { UserSolid } from 'flowbite-svelte-icons';
     import DateBadge from '$lib/components/DateBadge.svelte';
-    import type { ProcessedPost } from '$lib/data/hikes-info';
+    import type { ProcessedPost } from '$lib/hikes/hikes-info';
 
     export let posts: ProcessedPost[] = [];
     export let showPeople: boolean = false;

@@ -79,7 +79,7 @@ const vertexShader = /* glsl */ `
     }
   
     finalPosition.xy += normal.xy * side;
-    gl_Position = finalPosition + vec4(0.0, 0.0, -tOffset * 0.1, 0.0);
+    gl_Position = finalPosition;
     #include <logdepthbuf_vertex>
     #include <fog_vertex>
     vec4 mvPosition = modelViewMatrix * heightPos;

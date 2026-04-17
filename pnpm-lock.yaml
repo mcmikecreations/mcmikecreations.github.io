@@ -63,6 +63,9 @@ importers:
       '@types/d3-geo':
         specifier: ^3.1.0
         version: 3.1.0
+      '@types/d3-tile':
+        specifier: ^1.0.1
+        version: 1.0.1
       '@types/eslint':
         specifier: 8.56.0
         version: 8.56.0
@@ -675,6 +678,9 @@ packages:
 
   '@types/d3-shape@3.1.7':
     resolution: {integrity: sha512-VLvUQ33C+3J+8p+Daf+nYSOsjB4GXp19/S/aGo60m9h1v6XaxjiT82lKVWJCfzhtuZ3yD7i/TPeC/fuKLLOSmg==}
+
+  '@types/d3-tile@1.0.1':
+    resolution: {integrity: sha512-xOGszy0zoRtbqxUdybhQp8CpYaY6SlRE+EIB8WQTPPFmDKwcKDWU4ErcsozVSL65TrepIDnfGBTIPexvxkyeNw==}
 
   '@types/d3-time-format@4.0.3':
     resolution: {integrity: sha512-5xg9rC+wWL8kdDj153qZcsJ0FWiFt0J5RB6LYUNZjwSnesfblqrI/bJ1wBdJ8OQfncgbJG5+2F+qfqnqyzYxyg==}
@@ -2693,6 +2699,10 @@ snapshots:
   '@types/d3-shape@3.1.7':
     dependencies:
       '@types/d3-path': 3.1.1
+
+  '@types/d3-tile@1.0.1':
+    dependencies:
+      '@types/d3-zoom': 3.0.8
 
   '@types/d3-time-format@4.0.3': {}
 

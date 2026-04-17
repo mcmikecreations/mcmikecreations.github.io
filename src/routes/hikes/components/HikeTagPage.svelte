@@ -2,7 +2,7 @@
 	import { A, Heading } from 'flowbite-svelte';
 	import { ArrowLeftOutline } from 'flowbite-svelte-icons';
 	import type { Snippet } from 'svelte';
-	import type { ProcessedPost } from '$lib/data/hikes-info';
+	import type { ProcessedPost } from '$lib/hikes/hikes-info';
 	import HikeList from './HikeList.svelte';
 	import CustomPagination from './CustomPagination.svelte';
 	import Feeds from './Feeds.svelte';
