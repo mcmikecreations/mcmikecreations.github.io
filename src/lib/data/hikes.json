@@ -73,7 +73,8 @@
           "tags": ["Work"],
           "people": [],
           "image": "/images/projects/data-viz/hikes/wendelstein_tumdb.jpg",
-          "path": "/_projects/data-viz/hikes/markdown/2025-06-10-wendelstein.md"
+          "path": "/_projects/data-viz/hikes/markdown/2025-06-10-wendelstein.md",
+          "gpx": "/_projects/data-viz/hikes/gpx/wendelstein_tumdb.gpx"
         },
         {
           "date": "2024-01-03",

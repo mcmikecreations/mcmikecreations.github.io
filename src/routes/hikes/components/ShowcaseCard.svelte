@@ -13,9 +13,9 @@
     }
 
     let { x, y, img, href, children, class: classProps }: Props = $props();
-    const horizontal = x > 1;
-    const cardClass: ClassValue = "max-w-none min-w-[340px]" + (img ? "" : " p-4 sm:p-6 md:p-8");
-    const divClass: ClassValue = img ? "m-6 flex-1" : "";
+    const horizontal = $derived(x > 1);
+    const cardClass: ClassValue = $derived("max-w-none min-w-[340px]" + (img ? "" : " p-4 sm:p-6 md:p-8"));
+    const divClass: ClassValue = $derived(img ? "m-6 flex-1" : "");
 </script>
 
 <Card {href} {horizontal} class={twMerge(cardClass, classProps)}>

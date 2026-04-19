@@ -143,7 +143,7 @@
 				{#each col as week}
 					<div
 						id="week-{week.year}-{week.weekIndex}"
-						class="w-4 h-4 rounded-sm {getIntensityClass(week.hikes.length)} transition-colors hover:ring-2 hover:ring-gray-400 dark:hover:ring-gray-500 cursor-pointer"
+						class="w-4 h-4 rounded-xs {getIntensityClass(week.hikes.length)} transition-colors hover:ring-2 hover:ring-gray-400 dark:hover:ring-gray-500 cursor-pointer"
 						role="button"
 						tabindex="0"
 						aria-label="{week.label}: {week.hikes.length} hikes"
@@ -172,6 +172,6 @@
 			{/each}
 		</ul>
 		<!-- Custom tooltip arrow -->
-		<div class="absolute w-3 h-3 bg-white border-b border-r border-gray-200 dark:border-gray-700 dark:bg-gray-800 transform rotate-45 left-1/2 -bottom-1.5 -ml-1.5 shadow-sm rounded-sm"></div>
+		<div class="absolute w-3 h-3 bg-white border-b border-r border-gray-200 dark:border-gray-700 dark:bg-gray-800 transform rotate-45 left-1/2 -bottom-1.5 -ml-1.5 shadow-xs rounded-xs"></div>
 	</div>
 {/if}

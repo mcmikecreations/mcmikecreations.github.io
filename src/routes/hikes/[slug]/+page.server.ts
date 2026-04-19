@@ -19,8 +19,7 @@ export const load: PageServerLoad = async ({ fetch, params, locals }) => {
 		const dateStr = m[1];
 		const routeStr = m[2];
 		const hike =
-			hikes.find(h => h.route.endsWith(routeStr + '/')) ??
-			hikes.find(h => h.route.endsWith(routeStr));
+			hikes.find(h => h.route.split('/').pop() === routeStr);
 		if (!hike) {
 			error(404, { message: `Failed to find route "${routeStr}"` });
 		}
@@ -47,20 +46,22 @@ export const load: PageServerLoad = async ({ fetch, params, locals }) => {
 		locals.postContent = await parseMarkdown(postRaw);
 
 		let showStatistics = false;
-		let showFilePrimary = false;
+		let showFilePrimary: string | null = null;
+		let showFileGpx: string | null = null;
 
+		const gpxUrl = date.gpx ?? hike.properties.filePath.replace('geojson', 'gpx').replace('json', 'gpx');
 		const [gpx, geojsonRes] = await Promise.all([
-			fetch(hike.properties.filePath.replace('geojson', 'gpx').replace('json', 'gpx'), { method: 'OPTIONS' }),
+			fetch(gpxUrl, { method: 'OPTIONS' }),
 			fetch(hike.properties.filePath),
 		]);
-		const showFileGpx = gpx.ok;
+		showFileGpx = gpx.ok ? gpxUrl : null;
 
 		let mapProperties = hike.properties as MapProperties;
 		if (geojsonRes.ok) {
 			const geojson = await geojsonRes.json();
 			const fp = geojson?.features?.[0]?.properties;
 			if (fp) {
-				showFilePrimary = true;
+				showFilePrimary = hike.properties.filePath;
 				mapProperties = <MapProperties>{
 					...hike.properties,
 					distance: hike.properties.distance ?? (fp.summary?.distance ?? 0) * 1000,

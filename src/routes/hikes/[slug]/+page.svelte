@@ -60,14 +60,14 @@
 		path: string;
 		type: string;
 	}
-	const filePrimary: File = {
-		path: data.map.properties.filePath,
+	const filePrimary: File = $derived({
+		path: data.display.filePrimary,
 		type: data.map.properties.fileType
-	};
-	const fileGpx: File = {
-		path: data.map.properties.filePath.replace('geojson', 'gpx').replace('json', 'gpx'),
+	});
+	const fileGpx: File = $derived({
+		path: data.display.fileGpx,
 		type: 'GPX'
-	};
+	});
 
 	onMount(async () => {
 		// Delay loading of the full resolution image to allow other assets to finish loading first
@@ -223,7 +223,7 @@
 						<div class="flex flex-row flex-wrap justify-end gap-2 items-center" aria-details="tags">
 							<span aria-label="tags" class="sr-only"></span>
 							{#each data.post.tags as t}
-								<a class="bg-primary-100 text-primary-800 dark:bg-primary-900 dark:text-primary-300 px-2.5 py-0.5 rounded no-underline hover:bg-primary-200 dark:hover:bg-primary-800" href="/hikes/tag/{t}">{t}</a>
+								<a class="bg-primary-100 text-primary-800 dark:bg-primary-900 dark:text-primary-300 px-2.5 py-0.5 rounded-sm no-underline hover:bg-primary-200 dark:hover:bg-primary-800" href="/hikes/tag/{t}">{t}</a>
 							{/each}
 						</div>
 					{/if}
@@ -313,7 +313,7 @@
 	<!-- svelte-ignore a11y_click_events_have_key_events -->
 	<!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
 	<div
-		class="flex min-h-[calc(100vh-5rem)] h-full w-full items-center justify-center outline-none overscroll-contain"
+		class="flex min-h-[calc(100vh-5rem)] h-full w-full items-center justify-center outline-hidden overscroll-contain"
 		role="dialog"
 		tabindex="-1"
 		onclick={(e) => {

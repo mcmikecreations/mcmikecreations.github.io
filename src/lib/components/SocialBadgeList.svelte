@@ -23,7 +23,7 @@ import SocialBadge from '$lib/components/SocialBadge.svelte';
 	}
 
 	let {
-		size = 'child:!size-4 child:xl:!size-8',
+		size = '[&>*]:!size-4 xl:[&>*]:!size-8',
 		padding = '!p-2 xl:!p-4',
 		pill = true,
 		outline = true,

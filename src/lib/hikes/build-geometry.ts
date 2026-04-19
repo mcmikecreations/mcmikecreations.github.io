@@ -3,7 +3,6 @@ import type { Feature, GeometryData, Map } from '$lib/data/map-info';
 import { providerFolder } from '$lib/data/map-providers';
 import { geoClipRectangle, geoPath, type GeoPermissibleObjects, type GeoProjection } from 'd3-geo';
 import * as THREE from 'three';
-import theme from '$lib/styling/theme.json';
 import { MeshLineGeometry } from '$lib/hikes/meshline/MeshLineGeometry';
 import { MeshLineMaterial } from '$lib/hikes/meshline/MeshLineMaterial';
 import { ThreePathContext } from '$lib/hikes/ThreePathContext';
@@ -55,9 +54,9 @@ export function loadProperties(map : Map, geometry : any) {
 
 	return properties;
 }
-export const primaryIndicatorColor = theme.colors.primary['500'];
+export const primaryIndicatorColor = '#14b8a6';
 export const secondaryIndicatorColor = '#b08080';
-export const primaryGeometryColor = theme.colors.primary['400'];
+export const primaryGeometryColor = '#2dd4bf';
 export const secondaryGeometryColor = '#ff0000';
 
 export async function buildGeometry(

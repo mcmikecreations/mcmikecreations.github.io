@@ -27,9 +27,9 @@
 
 	const statsIndicatorVerticalWidth = 1.0;
 
-	const features = getMapFeatures(data.map) as Feature[];
-	const attrMapbox = features.some((x) => x.type === 'Tiles' && (x.data as TilesData)!.provider!.includes('mapbox'));
-	const attrOSM = features.some((x) => x.type === 'Tiles' && (x.data as TilesData)!.provider!.includes('osm'));
+	const features = $derived(getMapFeatures(data.map) as Feature[]);
+	const attrMapbox = $derived(features.some((x) => x.type === 'Tiles' && (x.data as TilesData)!.provider!.includes('mapbox')));
+	const attrOSM = $derived(features.some((x) => x.type === 'Tiles' && (x.data as TilesData)!.provider!.includes('osm')));
 
 	let statsIndicatorInteractive : any;
 	let lastStatsIndicatorTarget : HTMLElement | undefined = $state();
@@ -252,7 +252,7 @@
 		initStatistics();
 	});
 
-	const map3dParameters : Map3dParameters = {
+	const map3dParameters : Map3dParameters = $derived({
 		attrMapbox,
 		attrOSM,
 		origin: data.origin,
@@ -261,7 +261,7 @@
 		tileScale: data.tileScale,
 		pixelsPerMeter: data.pixelsPerMeter,
 		data3d: data.data3d,
-	};
+	});
 </script>
 
 <AppTitle title={data.map.name} />

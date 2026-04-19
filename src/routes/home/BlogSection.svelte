@@ -17,6 +17,7 @@
 				{@const u = '/blog/' + p.path.substring(0, p.path.length - 3)}
 				<Card
 					href={u}
+					data-sveltekit-reload
 					img={p.image ?? undefined}
 					class="max-w-sm lg:max-w-xl flex-1"
 				>

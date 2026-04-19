@@ -36,12 +36,12 @@
 		tileScale,
 		pixelsPerMeter,
 		data3d,
-	} = parameters;
+	} = $derived(parameters);
 
 	const scale3d = 0.2;
 	const scale3dVertical = 0.4;
 
-	const center = projection([origin.lon, origin.lat])!;
+	const center = $derived(projection([origin.lon, origin.lat])!);
 
 	let renderer : THREE.WebGLRenderer;
 	let camera : THREE.PerspectiveCamera;

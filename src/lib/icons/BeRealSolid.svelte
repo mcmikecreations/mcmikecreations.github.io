@@ -1,12 +1,9 @@
 <script lang="ts">
 	import { getContext } from 'svelte';
 	import { twMerge } from 'tailwind-merge';
-	interface CtxType {
-		size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
-		role?: string;
-	}
+	import type { BaseProps, Props, Size } from 'flowbite-svelte-icons/types';
 
-	const ctx: CtxType = getContext('iconCtx') ?? {};
+	const ctx: BaseProps = getContext('iconCtx') ?? {};
 	const sizes = {
 		xs: 'w-3 h-3',
 		sm: 'w-4 h-4',
@@ -15,30 +12,56 @@
 		xl: 'w-8 h-8'
 	};
 
-	export let size: 'xs' | 'sm' | 'md' | 'lg' | 'xl' = ctx.size || 'md';
-	export let role = ctx.role || 'img';
+	let {
+		size,
+		width,
+		height,
+		color = ctx.color || 'currentColor',
+		title,
+		desc,
+		class: className,
+		ariaLabel = 'be real solid',
+		role = ctx.role || 'img',
+		...restProps
+	}: Props = $props();
 
-	export let ariaLabel = 'be real solid';
+	// Type-safe size determination
+	const effectiveSize: Size = $derived(
+		width === undefined && height === undefined
+			? (size ?? (ctx.size as Size | undefined) ?? 'md')
+			: 'md' // fallback, won't be used if width/height are set
+	);
+
+	// Only use size classes when width/height are not provided
+	const sizeClass = $derived(
+		width === undefined && height === undefined ? sizes[effectiveSize] : undefined
+	);
+
+	const ariaDescribedby = $derived(`${title?.id || ''} ${desc?.id || ''}`.trim());
+	const hasDescription = $derived(!!(title?.id || desc?.id));
+	const isLabeled = $derived(!!ariaLabel || hasDescription);
 </script>
 
 <svg
 	xmlns="http://www.w3.org/2000/svg"
 	viewBox="0.00 0.00 230.00 230.00"
 	fill="currentColor"
-	{...$$restProps}
-	class={twMerge('shrink-0', sizes[size], $$props.class)}
-	{role}
+	{color}
+	{width}
+	{height}
+	{...restProps}
+	class={twMerge('shrink-0', sizeClass, `${className}`)}
+	role={isLabeled ? role : undefined}
 	aria-label={ariaLabel}
-	on:click
-	on:keydown
-	on:keyup
-	on:focus
-	on:blur
-	on:mouseenter
-	on:mouseleave
-	on:mouseover
-	on:mouseout
+	aria-describedby={hasDescription ? ariaDescribedby : undefined}
+	aria-hidden={!isLabeled}
 >
+	{#if title?.id && title.title}
+		<title id={title.id}>{title.title}</title>
+	{/if}
+	{#if desc?.id && desc.desc}
+		<desc id={desc.id}>{desc.desc}</desc>
+	{/if}
 	<path fill="currentColor" d="   M 60.08 0.00   L 169.05 0.00   C 181.01 -0.05 193.68 1.44 203.93 7.28   Q 223.60 18.47 228.58 42.18   Q 229.57 46.90 230.00 61.07   L 230.00 170.05   Q 229.43 182.94 228.79 186.49   Q 224.00 212.68 201.31 224.13   C 190.87 229.40 180.02 229.38 168.68 230.00   L 60.95 230.00   Q 50.27 229.68 43.07 228.65   C 21.13 225.49 4.83 208.13 1.26 186.48   Q 0.39 181.22 0.00 169.43   L 0.00 60.69   Q 0.47 47.16 1.27 43.00   Q 6.10 18.06 27.01 6.76   C 36.84 1.45 48.74 0.04 60.08 0.00   Z   M 191.50 95.44   A 0.26 0.26 0.0 0 0 191.24 95.18   L 184.02 95.18   A 0.26 0.26 0.0 0 0 183.76 95.44   L 183.76 133.74   A 0.26 0.26 0.0 0 0 184.02 134.00   L 191.24 134.00   A 0.26 0.26 0.0 0 0 191.50 133.74   L 191.50 95.44   Z   M 50.91 112.65   C 53.38 110.54 54.36 107.48 53.90 104.20   C 52.26 92.44 36.92 95.12 27.21 95.31   Q 26.75 95.31 26.75 95.77   L 26.75 133.48   A 0.51 0.50 90.0 0 0 27.25 133.99   C 34.16 134.03 45.30 135.14 50.71 132.36   C 58.12 128.57 58.51 117.65 50.98 113.36   A 0.44 0.43 39.6 0 1 50.91 112.65   Z   M 101.00 119.25   L 107.00 119.25   Q 107.53 119.25 107.78 119.71   L 115.40 133.50   Q 115.65 133.97 116.18 133.97   L 122.97 134.06   Q 123.60 134.07 123.28 133.52   L 114.40 118.08   Q 114.03 117.43 114.67 117.04   Q 121.91 112.68 120.27 104.19   C 118.15 93.26 101.43 95.16 93.74 95.28   Q 93.24 95.29 93.24 95.78   L 93.22 133.36   Q 93.22 134.00 93.86 134.00   L 99.75 134.00   Q 100.50 134.00 100.50 133.25   L 100.50 119.75   Q 100.50 119.25 101.00 119.25   Z   M 69.01 122.52   L 86.48 122.44   Q 87.05 122.44 87.10 121.88   C 89.38 98.26 56.48 101.40 60.90 123.99   C 63.00 134.69 76.24 137.09 84.95 132.17   Q 85.35 131.95 85.18 131.52   L 83.45 127.03   A 0.62 0.62 0.0 0 0 82.58 126.71   C 77.77 129.29 70.22 129.42 68.66 122.96   Q 68.56 122.53 69.01 122.52   Z   M 133.74 122.58   L 151.46 122.26   Q 151.97 122.25 151.99 121.73   C 152.18 113.15 148.63 105.04 138.57 105.73   Q 127.55 106.49 125.76 116.87   C 123.15 132.01 137.77 138.94 149.80 132.19   Q 150.26 131.93 150.04 131.44   L 148.07 126.96   A 0.51 0.50 -24.9 0 0 147.38 126.71   C 142.33 129.24 135.28 129.44 133.46 122.96   Q 133.35 122.59 133.74 122.58   Z   M 172.25 130.75   L 172.25 133.37   Q 172.25 134.00 172.87 134.00   L 178.98 134.00   Q 179.48 134.00 179.48 133.50   Q 179.54 124.62 179.48 115.73   C 179.38 102.67 157.70 102.76 155.82 114.17   Q 155.73 114.75 156.31 114.75   L 162.00 114.75   Q 162.51 114.75 162.75 114.30   C 165.31 109.53 173.31 110.92 172.10 116.98   Q 172.02 117.42 171.57 117.45   C 167.40 117.69 162.26 117.49 158.45 119.56   C 147.03 125.76 161.56 142.16 171.80 130.59   Q 172.25 130.07 172.25 130.75   Z   M 202.8266 126.7183   A 0.36 0.36 0.0 0 0 202.4703 126.3546   L 195.9107 126.2859   A 0.36 0.36 0.0 0 0 195.5470 126.6421   L 195.4734 133.6617   A 0.36 0.36 0.0 0 0 195.8297 134.0254   L 202.3893 134.0941   A 0.36 0.36 0.0 0 0 202.7530 133.7379   L 202.8266 126.7183   Z"/>
 	<rect fill="none" x="183.76" y="95.18" width="7.74" height="38.82" rx="0.26"/>
 	<path fill="none" d="   M 50.91 112.65   A 0.44 0.43 39.6 0 0 50.98 113.36   C 58.51 117.65 58.12 128.57 50.71 132.36   C 45.30 135.14 34.16 134.03 27.25 133.99   A 0.51 0.50 90.0 0 1 26.75 133.48   L 26.75 95.77   Q 26.75 95.31 27.21 95.31   C 36.92 95.12 52.26 92.44 53.90 104.20   C 54.36 107.48 53.38 110.54 50.91 112.65   Z   M 34.27 101.69   L 34.23 110.63   A 0.27 0.27 0.0 0 0 34.50 110.90   L 40.97 110.92   A 5.24 4.59 0.2 0 0 46.23 106.35   L 46.23 106.05   A 5.24 4.59 0.2 0 0 41.01 101.44   L 34.54 101.42   A 0.27 0.27 0.0 0 0 34.27 101.69   Z   M 34.25 117.27   L 34.25 127.57   A 0.21 0.21 0.0 0 0 34.46 127.78   L 42.97 127.78   A 5.72 5.20 -0.0 0 0 48.69 122.58   L 48.69 122.26   A 5.72 5.20 0.0 0 0 42.97 117.06   L 34.46 117.06   A 0.21 0.21 0.0 0 0 34.25 117.27   Z"/>

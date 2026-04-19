@@ -99,7 +99,7 @@ xl (1280px)		max-width: 1280px;
 			class="toc-button text-gray-500 dark:text-gray-400
 			bg-white/20
 			hover:bg-gray-100 dark:hover:bg-gray-700
-			focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700
+			focus:outline-hidden focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700
 			rounded-lg text-sm p-2.5"
 			aria-label="Open table of contents"
 			onclick={(event) => { event.stopPropagation(); event.preventDefault(); open = true; }}
@@ -122,6 +122,8 @@ xl (1280px)		max-width: 1280px;
 </div>
 
 <style>
+	@reference "../../app.css";
+
 	aside.toc {
 		box-sizing: border-box;
 		height: max-content;
@@ -214,7 +216,7 @@ xl (1280px)		max-width: 1280px;
   :global(aside.toc > nav a) {
       @apply text-gray-900 hover:text-primary-700 focus-within:text-primary-700
       bg-transparent hover:bg-gray-100
-      focus-within:ring-4 focus-within:outline-none
+      focus-within:ring-4 focus-within:outline-hidden
       focus-within:ring-gray-200 rounded-lg;
   }
 
@@ -224,7 +226,7 @@ xl (1280px)		max-width: 1280px;
 
   :global(aside.toc > nav a.is-active-link) {
       @apply text-white hover:text-white
-      bg-primary-700 hover:bg-primary-800 focus-within:ring-4 focus-within:outline-none focus-within:ring-primary-300 rounded-lg;
+      bg-primary-700 hover:bg-primary-800 focus-within:ring-4 focus-within:outline-hidden focus-within:ring-primary-300 rounded-lg;
 	}
 
   :global(html.dark aside.toc > nav a.is-active-link) {

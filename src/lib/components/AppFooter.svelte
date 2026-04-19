@@ -42,47 +42,47 @@ let showSocials = $derived(shouldShowSocials !== undefined ? (shouldShowSocials 
 		<FooterCopyright href="/" by={resume.basics.name} year={new Date().getFullYear()} />
 		{#if showSocials}
 			<div class="flex flex-wrap -ms-6 md:justify-center mt-0 [&_svg]:w-4 [&_svg]:h-4 [&_svg]:text-gray-500 [&_svg]:dark:text-gray-500 [&_svg:hover]:text-gray-900 [&_svg:hover]:dark:text-white">
-				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'TUM')?.url} class="ms-6 mt-4 md:mt-0" aria-label="email solid">
+				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'TUM')?.url}  target="_blank" rel="noopener noreferrer" class="ms-6 mt-4 md:mt-0" aria-label="email solid">
 					<EnvelopeSolid ariaLabel="email" />
 				</FooterIcon>
-				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'GitHub')?.url} class="ms-6 mt-4 md:mt-0">
+				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'GitHub')?.url} target="_blank" rel="noopener noreferrer" class="ms-6 mt-4 md:mt-0">
 					<GithubSolid ariaLabel="github" />
 				</FooterIcon>
-				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'LinkedIn')?.url} class="ms-6 mt-4 md:mt-0">
+				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'LinkedIn')?.url} target="_blank" rel="noopener noreferrer" class="ms-6 mt-4 md:mt-0">
 					<LinkedinSolid ariaLabel="linkedin" />
 				</FooterIcon>
-				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'Telegram')?.url} class="ms-6 mt-4 md:mt-0">
+				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'Telegram')?.url} target="_blank" rel="noopener noreferrer" class="ms-6 mt-4 md:mt-0">
 					<TelegramSolid ariaLabel="telegram" />
 				</FooterIcon>
-				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'Google Scholar')?.url} class="ms-6 mt-4 md:mt-0">
+				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'Google Scholar')?.url} target="_blank" rel="noopener noreferrer" class="ms-6 mt-4 md:mt-0">
 					<GoogleScholarSolid ariaLabel="google scholar" />
 				</FooterIcon>
-				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'ResearchGate')?.url} class="ms-6 mt-4 md:mt-0">
+				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'ResearchGate')?.url} target="_blank" rel="noopener noreferrer" class="ms-6 mt-4 md:mt-0">
 					<ResearchGateSolid ariaLabel="research gate" />
 				</FooterIcon>
-				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'Orcid')?.url} class="ms-6 mt-4 md:mt-0">
+				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'Orcid')?.url} target="_blank" rel="noopener noreferrer" class="ms-6 mt-4 md:mt-0">
 					<OrcidSolid ariaLabel="orcid" />
 				</FooterIcon>
-				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'Mastodon')?.url} class="ms-6 mt-4 md:mt-0">
+				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'Mastodon')?.url} target="_blank" rel="noopener noreferrer" class="ms-6 mt-4 md:mt-0">
 					<MastodonSolid ariaLabel="mastodon" />
 				</FooterIcon>
-				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'Facebook')?.url} class="ms-6 mt-4 md:mt-0">
+				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'Facebook')?.url} target="_blank" rel="noopener noreferrer" class="ms-6 mt-4 md:mt-0">
 					<FacebookSolid ariaLabel="facebook" />
 				</FooterIcon>
 				<Tooltip>Facebook</Tooltip>
-				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'Instagram')?.url} class="ms-6 mt-4 md:mt-0">
+				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'Instagram')?.url} target="_blank" rel="noopener noreferrer" class="ms-6 mt-4 md:mt-0">
 					<InstagramSolid ariaLabel="instagram" />
 				</FooterIcon>
-				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'X')?.url} class="ms-6 mt-4 md:mt-0">
+				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'X')?.url} target="_blank" rel="noopener noreferrer" class="ms-6 mt-4 md:mt-0">
 					<XSolid ariaLabel="x" />
 				</FooterIcon>
-				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'BlueSky')?.url} class="ms-6 mt-4 md:mt-0">
+				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'BlueSky')?.url} target="_blank" rel="noopener noreferrer" class="ms-6 mt-4 md:mt-0">
 					<BlueSkySolid ariaLabel="bluesky" />
 				</FooterIcon>
-				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'BeReal')?.url} class="ms-6 mt-4 md:mt-0">
+				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'BeReal')?.url} target="_blank" rel="noopener noreferrer" class="ms-6 mt-4 md:mt-0">
 					<BeRealSolid ariaLabel="bereal" />
 				</FooterIcon>
-				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'Strava')?.url} class="ms-6 mt-4 md:mt-0">
+				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'Strava')?.url} target="_blank" rel="noopener noreferrer" class="ms-6 mt-4 md:mt-0">
 					<StravaSolid ariaLabel="strava" />
 				</FooterIcon>
 			</div>

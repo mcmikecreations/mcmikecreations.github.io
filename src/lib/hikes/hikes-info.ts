@@ -113,7 +113,7 @@ export async function parseMarkdown(postRaw: string): Promise<string> {
                     }
                     return `
 <figure class="mk-figure">
-    <a href="${safeHref}" target="_blank" rel="noopener noreferrer">
+    <a class="flex justify-center" href="${safeHref}" target="_blank" rel="noopener noreferrer">
         <img src="https://img.youtube.com/vi/${videoId}/0.jpg" ${safeTitle ? `title="${safeTitle}"` : ''} alt="${safeText}" class="mk-img-no-pointer" />
     </a>
     <figcaption class="mk-figcaption">${safeText}</figcaption>

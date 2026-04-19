@@ -25,13 +25,13 @@
 
 	let { data }: Props = $props();
 
-	let posts = $state(data.posts);
+	let posts = $derived(data.posts);
 
 	const baseTitle = 'Blog';
 	let title = $state(baseTitle);
 
 	const postsPerPage = 5;
-	const years = new Set(data.posts.map(p => p.year.toString()));
+	const years = $derived(new Set(data.posts.map(p => p.year.toString())));
 	type ToggleParam = (value : string) => void;
 	let toggleTag : ToggleParam = $state(() => {});
 	let toggleYear : ToggleParam = $state(() => {});

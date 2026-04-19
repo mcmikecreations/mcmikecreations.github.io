@@ -66,7 +66,7 @@ const tokenMapboxSatellite = process.env.mapboxSatelliteAccess;
 const tokenNextzen = process.env.nextzenAccess;
 const metas = slug === undefined
 	? Object.values(maps)
-	: [maps.find((x) => x.route.endsWith(slug))];
+	: [maps.find((x) => x.route.split('/').pop() === slug)];
 
 if (!metas || metas.at(0) === undefined) {
 	console.error(`Failed to fetch /maps/${slug} metadata.`);

@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
-import { error } from '@sveltejs/kit';
+import { error, redirect } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
 import type { HttpError } from '@sveltejs/kit'
 import maps from '$lib/data/hikes.json';
@@ -14,12 +14,32 @@ import { buildStatistics } from '$lib/hikes/build-statistics';
 
 export const load: PageLoad = async ({ fetch, params }) => {
 	try {
-		const meta : Map | undefined = maps.find((x) => x.route.endsWith(params.slug));
+		const meta : Map | undefined = maps.find((x) => x.route.split('/').pop() === params.slug);
 
 		if (!meta) {
 			console.log(`Failed to fetch /maps/${params.slug} metadata.`);
 			error(404, { message: `Failed to fetch "${params.slug}"` });
 		}
+
+		let gpxPath = meta.properties.filePath.replace('geojson', 'gpx').replace('json', 'gpx');
+
+		do {
+			// If a date exists, check for a blog post (markdown).
+			const dates = [...meta.properties.dates.filter(d => d.path)];
+			if (dates.length == 0) break;
+
+			dates.sort((a, b) => a.date > b.date ? -1 : 1);
+			const date = dates[0];
+			if (!date.path) break;
+
+			if (date.gpx) gpxPath = date.gpx;
+
+			const markdownFile = await fetch(date.path, { method: 'OPTIONS' });
+			if (!markdownFile.ok) break;
+
+			const url = `/hikes/${date.date}-${params.slug}/`;
+			redirect(301, url);
+		} while (false);
 
 		const features: Feature[] = getMapFeatures(meta);
 
@@ -42,7 +62,7 @@ export const load: PageLoad = async ({ fetch, params }) => {
 		const tileFunc = tile()
 			.size([height, height])
 			.scale(projection.scale() * 2 * Math.PI)
-			.translate(projection([0, 0]));
+			.translate(projection([0, 0]) ?? [0, 0]);
 		const tiles = tileFunc();
 		const pixelsPerMeter = getPixelsPerMeter(originData.lat, tiles.scale, tileFunc.scale()());
 
@@ -91,7 +111,7 @@ export const load: PageLoad = async ({ fetch, params }) => {
 		return {
 			map: meta,
 			properties: properties,
-			gpxPath: properties.filePath.replace('geojson', 'gpx').replace('json', 'gpx'),
+			gpxPath: gpxPath,
 			origin: originData,
 			statistics: statistics
 				? ((await buildStatistics(fetch, statistics, height, undefined))?.layers2d?.join(''))

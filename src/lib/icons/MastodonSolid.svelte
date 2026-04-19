@@ -1,13 +1,9 @@
-<!-- @migration-task Error while migrating Svelte code: $$props is used together with named props in a way that cannot be automatically migrated. -->
 <script lang="ts">
 	import { getContext } from 'svelte';
 	import { twMerge } from 'tailwind-merge';
-	interface CtxType {
-		size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
-		role?: string;
-	}
+	import type { BaseProps, Props, Size } from 'flowbite-svelte-icons/types';
 
-	const ctx: CtxType = getContext('iconCtx') ?? {};
+	const ctx: BaseProps = getContext('iconCtx') ?? {};
 	const sizes = {
 		xs: 'w-3 h-3',
 		sm: 'w-4 h-4',
@@ -16,30 +12,56 @@
 		xl: 'w-8 h-8'
 	};
 
-	export let size: 'xs' | 'sm' | 'md' | 'lg' | 'xl' = ctx.size || 'md';
-	export let role = ctx.role || 'img';
+	let {
+		size,
+		width,
+		height,
+		color = ctx.color || 'currentColor',
+		title,
+		desc,
+		class: className,
+		ariaLabel = 'mastodon solid',
+		role = ctx.role || 'img',
+		...restProps
+	}: Props = $props();
 
-	export let ariaLabel = 'mastodon solid';
+	// Type-safe size determination
+	const effectiveSize: Size = $derived(
+		width === undefined && height === undefined
+			? (size ?? (ctx.size as Size | undefined) ?? 'md')
+			: 'md' // fallback, won't be used if width/height are set
+	);
+
+	// Only use size classes when width/height are not provided
+	const sizeClass = $derived(
+		width === undefined && height === undefined ? sizes[effectiveSize] : undefined
+	);
+
+	const ariaDescribedby = $derived(`${title?.id || ''} ${desc?.id || ''}`.trim());
+	const hasDescription = $derived(!!(title?.id || desc?.id));
+	const isLabeled = $derived(!!ariaLabel || hasDescription);
 </script>
 
 <svg
 	xmlns="http://www.w3.org/2000/svg"
 	fill="currentColor"
-	{...$$restProps}
-	class={twMerge('shrink-0', sizes[size], $$props.class)}
-	{role}
-	aria-label={ariaLabel}
 	viewBox="0 0 448 512"
-	on:click
-	on:keydown
-	on:keyup
-	on:focus
-	on:blur
-	on:mouseenter
-	on:mouseleave
-	on:mouseover
-	on:mouseout
+	{color}
+	{width}
+	{height}
+	{...restProps}
+	class={twMerge('shrink-0', sizeClass, `${className}`)}
+	role={isLabeled ? role : undefined}
+	aria-label={ariaLabel}
+	aria-describedby={hasDescription ? ariaDescribedby : undefined}
+	aria-hidden={!isLabeled}
 >
+	{#if title?.id && title.title}
+		<title id={title.id}>{title.title}</title>
+	{/if}
+	{#if desc?.id && desc.desc}
+		<desc id={desc.id}>{desc.desc}</desc>
+	{/if}
 	<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
 	<path
 		fill="currentColor"

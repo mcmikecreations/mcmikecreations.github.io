@@ -44,7 +44,7 @@
 			{/if}
 		</div>
 		{#if data.post.imageFull}
-			<img src={data.post.imageFull} class="w-full xl:w-3/4 mx-auto !mb-8 !mt-0 object-contain rounded border border-gray-200 dark:border-gray-800" alt="Main" />
+			<img src={data.post.imageFull} class="w-full xl:w-3/4 mx-auto !mb-8 !mt-0 object-contain rounded-sm border border-gray-200 dark:border-gray-800" alt="Main" />
 		{/if}
 		<Markdown source={data.post.content} renderers={{ code: DefaultCode, link: DefaultLink, image: DefaultImage }} />
 	</div>

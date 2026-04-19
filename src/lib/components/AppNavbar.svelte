@@ -78,11 +78,11 @@
             onclick={() => { if (!hidden) toggle(); }}
             classes={{ ul: `md:space-x-8 md:mt-0 md:text-sm ${fillNarrow ? bgClassUl : ''}` }}
         >
-            <NavLi class="md:p-0 rounded" href="/">Home</NavLi>
-            <NavLi class="md:p-0 rounded" href="/resume/">Résumé</NavLi>
-            <NavLi class="md:p-0 rounded" href="/projects/">Projects</NavLi>
-            <NavLi class="md:p-0 rounded" href="/blog/">Blog</NavLi>
-            <NavLi class="md:p-0 rounded" href="/#contact">Contact</NavLi>
+            <NavLi class="md:p-0 rounded-sm" href="/">Home</NavLi>
+            <NavLi class="md:p-0 rounded-sm" href="/resume/">Résumé</NavLi>
+            <NavLi class="md:p-0 rounded-sm" href="/projects/">Projects</NavLi>
+            <NavLi class="md:p-0 rounded-sm" href="/blog/">Blog</NavLi>
+            <NavLi class="md:p-0 rounded-sm" href="/#contact">Contact</NavLi>
         </NavUl>
     {/snippet}
 </Navbar>

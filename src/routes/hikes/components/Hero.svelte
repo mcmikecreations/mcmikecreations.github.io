@@ -69,6 +69,7 @@
 <div class="h-[100vh] w-full"></div>
 
 <style>
+    @reference "../../../app.css";
     .parallax-layer {
         @apply absolute top-0 left-0 w-full h-full;
 

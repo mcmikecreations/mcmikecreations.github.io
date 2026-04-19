@@ -9,7 +9,7 @@
 
 	let { href = '', title = undefined, text = '' }: Props = $props();
 	let openModal = $state(false);
-	const isYoutubeLink = href.includes('youtube.com');
+	const isYoutubeLink = $derived(href.includes('youtube.com'));
 
 	// Track open modal to prevent scrolling the content behind it.
 	$effect(() => {
@@ -71,7 +71,7 @@
 		<!-- svelte-ignore a11y_click_events_have_key_events -->
 		<!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
 		<div
-			class="flex h-full w-full items-center justify-center outline-none overscroll-contain"
+			class="flex h-full w-full items-center justify-center outline-hidden overscroll-contain"
 			role="dialog"
 			tabindex="-1"
 			onclick={(e) => {

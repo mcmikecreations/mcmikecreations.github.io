@@ -26,7 +26,7 @@
 				</span>
 			</div>
 			<div class="flex-grow flex flex-wrap gap-4 justify-center sm:justify-end">
-				<SocialBadgeList size="child:!size-4 child:xl:!size-6" padding="!p-2 xl:!p-3" />
+				<SocialBadgeList size="[&>*]:!size-4 xl:[&>*]:!size-6" padding="!p-2 xl:!p-3" />
 			</div>
 		</div>
 		<div class="flex flex-row-reverse flex-wrap justify-end gap-2">
