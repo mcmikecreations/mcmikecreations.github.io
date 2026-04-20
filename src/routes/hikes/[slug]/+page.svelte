@@ -159,14 +159,14 @@
 				const map3dHandle = initMap3d(map3dEl, geojson, data.map);
 				const map2dHandle = await initMap2d(map2dEl, geojson, data.map.properties.nodes);
 
-				let elev3dHandle: { setIndicator: (lat: number, lon: number) => void; hideIndicator: () => void };
-				let elev2dHandle: { setIndicator: (lat: number, lon: number) => void; hideIndicator: () => void };
+				let elev3dHandle: { setIndicator: (lat: number, lon: number, preferredDist?: number) => void; hideIndicator: () => void };
+				let elev2dHandle: { setIndicator: (lat: number, lon: number, preferredDist?: number) => void; hideIndicator: () => void };
 
-				const updateAllIndicators = (lat: number, lon: number, ele: number) => {
+				const updateAllIndicators = (lat: number, lon: number, ele: number, dist?: number) => {
 					map2dHandle.setIndicator(lat, lon);
 					map3dHandle.setIndicator(lat, lon, ele);
-					elev3dHandle?.setIndicator(lat, lon);
-					elev2dHandle?.setIndicator(lat, lon);
+					elev3dHandle?.setIndicator(lat, lon, dist);
+					elev2dHandle?.setIndicator(lat, lon, dist);
 				};
 
 				const hideAllIndicators = () => {
@@ -176,8 +176,19 @@
 					map3dHandle.hideIndicator?.();
 				};
 
-				elev3dHandle = initElevationChart(map3dElevWrapper, geojson, updateAllIndicators, hideAllIndicators);
-				elev2dHandle = initElevationChart(elevWrapper, geojson, updateAllIndicators, hideAllIndicators);
+				// Each chart updates the maps and the OTHER chart (not itself — its cursor
+				// is already correct from handlePointerAction, and a round-trip through
+				// setIndicator would mis-hit the outward-journey duplicate on out-and-back routes).
+				elev3dHandle = initElevationChart(map3dElevWrapper, geojson, (lat, lon, ele, dist) => {
+					map2dHandle.setIndicator(lat, lon);
+					map3dHandle.setIndicator(lat, lon, ele);
+					elev2dHandle?.setIndicator(lat, lon, dist);
+				}, hideAllIndicators);
+				elev2dHandle = initElevationChart(elevWrapper, geojson, (lat, lon, ele, dist) => {
+					map2dHandle.setIndicator(lat, lon);
+					map3dHandle.setIndicator(lat, lon, ele);
+					elev3dHandle?.setIndicator(lat, lon, dist);
+				}, hideAllIndicators);
 			}
 		}
 	});

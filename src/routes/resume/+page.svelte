@@ -4,7 +4,7 @@
 	import ResumeExperience from './ResumeExperience.svelte';
 	import ResumePublications from './ResumePublications.svelte';
 	import ResumeAwards from './ResumeAwards.svelte';
-	import { PrinterSolid } from 'flowbite-svelte-icons';
+	import { PrinterSolid, ProfileCardSolid } from 'flowbite-svelte-icons';
 	import { Button } from 'flowbite-svelte';
 </script>
 
@@ -17,6 +17,9 @@
 	<ResumeAwards />
 </section>
 
+<Button href="/contact.vcf" pill={true} color="alternative" class="fixed bottom-6 right-24 px-5 py-2.5 text-sm p-3!">
+	<ProfileCardSolid class="size-8" />
+</Button>
 <Button href="/cv.pdf" pill={true} class="fixed bottom-6 right-6 px-5 py-2.5 text-sm p-3!">
 	<PrinterSolid class="size-8" />
 </Button>

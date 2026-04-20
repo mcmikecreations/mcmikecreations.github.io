@@ -1,0 +1,7406 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-04-19T20:20:02Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/26863047",
+        "alt_name": "Große Ahrnspitze",
+        "description": "Große Arnspitze Signalgipfel",
+        "ele": "2196",
+        "name": "Große Arnspitze",
+        "natural": "peak",
+        "prominence": "993",
+        "wikidata": "Q1548141",
+        "wikipedia": "de:Große Arnspitze"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2223256,
+          47.3973362
+        ]
+      },
+      "id": "node/26863047"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/26863176",
+        "ele": "2608",
+        "name": "Hochkalter",
+        "natural": "peak",
+        "ref:avf": "2050",
+        "summit:cross": "yes",
+        "wikidata": "Q883041"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8658126,
+          47.5693262
+        ]
+      },
+      "id": "node/26863176"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/26863184",
+        "ele": "2082",
+        "name": "Hochplatte",
+        "natural": "peak",
+        "ref:avf": "2466",
+        "wikidata": "Q316418",
+        "wikipedia": "de:Ammergauer Hochplatte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.8420527,
+          47.5522729
+        ]
+      },
+      "id": "node/26863184"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/26863440",
+        "ele": "2086",
+        "name": "Krottenkopf",
+        "natural": "peak",
+        "prominence": "1156",
+        "summit:cross": "yes",
+        "wikidata": "Q565442"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1914281,
+          47.5443752
+        ]
+      },
+      "id": "node/26863440"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/27384190",
+        "alt_name": "Zugspitze (Ostgipfel)",
+        "ele": "2962",
+        "importance": "national",
+        "name": "Zugspitze",
+        "name:ja": "ツークシュピッツェ",
+        "natural": "peak",
+        "prominence": "1746",
+        "source:prominence": "2962-1216 (Fernpass)",
+        "summit:cross": "yes",
+        "wikidata": "Q3375",
+        "wikimedia_commons": "Category:Zugspitze",
+        "wikipedia": "de:Zugspitze"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.986297,
+          47.421215
+        ]
+      },
+      "id": "node/27384190"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/67233894",
+        "ele": "2253",
+        "man_made": "cross",
+        "name": "Soiernspitze",
+        "natural": "peak",
+        "summit:cross": "yes",
+        "wikidata": "Q316066",
+        "wikipedia": "de:Soiernspitze"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3571077,
+          47.4815666
+        ]
+      },
+      "id": "node/67233894"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/256041659",
+        "ele": "2609",
+        "name": "Bockkarkopf",
+        "natural": "peak",
+        "prominence": "105",
+        "ref:avf": "879",
+        "summit:cross": "yes",
+        "summit:register": "no",
+        "wikidata": "Q573647",
+        "wikipedia": "de:Bockkarkopf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2877037,
+          47.2921766
+        ]
+      },
+      "id": "node/256041659"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/256041673",
+        "alt_name": "Karlspitze",
+        "ele": "2682",
+        "name": "Leutascher Dreitorspitze",
+        "natural": "peak",
+        "wikidata": "Q585796",
+        "wikipedia": "de:Dreitorspitze"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1239474,
+          47.4004814
+        ]
+      },
+      "id": "node/256041673"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/256041781",
+        "ele": "2649",
+        "name": "Hochfrottspitze",
+        "natural": "peak",
+        "prominence": "203",
+        "ref:avf": "868",
+        "wikidata": "Q315335",
+        "wikipedia": "de:Hochfrottspitze"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2930007,
+          47.2969091
+        ]
+      },
+      "id": "node/256041781"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/256041839",
+        "ele": "2385",
+        "name": "Westliche Karwendelspitze",
+        "natural": "peak",
+        "summit:cross": "yes",
+        "wikidata": "Q316308",
+        "wikipedia": "de:Westliche Karwendelspitze"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.298858,
+          47.4300189
+        ]
+      },
+      "id": "node/256041839"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/256041847",
+        "ele": "2145",
+        "name": "Südliches Höllhorn",
+        "natural": "peak",
+        "prominence": "78",
+        "ref:avf": "1556",
+        "wikidata": "Q1323890",
+        "wikipedia": "de:Südliches Höllhorn"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.38663,
+          47.35827
+        ]
+      },
+      "id": "node/256041847"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/256041922",
+        "ele": "2644",
+        "name": "Mädelegabel",
+        "natural": "peak",
+        "prominence": "84",
+        "ref:avf": "865",
+        "summit:cross": "yes",
+        "summit:register": "yes",
+        "wikidata": "Q186077",
+        "wikipedia": "de:Mädelegabel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2956802,
+          47.2999249
+        ]
+      },
+      "id": "node/256041922"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/256042733",
+        "ele": "2385",
+        "name": "Rauheck",
+        "natural": "peak",
+        "prominence": "184",
+        "ref:avf": "1356",
+        "wikidata": "Q872340",
+        "wikipedia": "de:Rauheck (Allgäuer Alpen)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.368148,
+          47.3447112
+        ]
+      },
+      "id": "node/256042733"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/256042748",
+        "ele": "2485",
+        "name": "Rotgundspitze",
+        "natural": "peak",
+        "prominence": "136",
+        "ref:avf": "906",
+        "wikidata": "Q831788",
+        "wikipedia": "de:Rotgundspitze"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.265806,
+          47.2881103
+        ]
+      },
+      "id": "node/256042748"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/256042768",
+        "ele": "2874",
+        "name": "Schneefernerkopf",
+        "natural": "peak",
+        "wikidata": "Q679080",
+        "wikimedia_commons": "Category:Schneefernerkopf",
+        "wikipedia": "de:Schneefernerkopf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9699595,
+          47.4095968
+        ]
+      },
+      "id": "node/256042768"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/259406948",
+        "ele": "2060",
+        "name": "Osterfelderkopf",
+        "natural": "peak",
+        "wikidata": "Q18560512"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.049713,
+          47.4386941
+        ]
+      },
+      "id": "node/259406948"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/259486622",
+        "ele": "2628",
+        "name": "Alpspitze",
+        "natural": "peak",
+        "wikidata": "Q252743"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0478118,
+          47.4294968
+        ]
+      },
+      "id": "node/259486622"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/259965405",
+        "ele": "2170",
+        "name": "Walser Hammerspitze",
+        "natural": "peak",
+        "old_name:de_AT:": "Hammerspitze",
+        "old_name:de_DE": "Schüsser",
+        "prominence": "45",
+        "ref:avf": "767",
+        "summit:cross": "yes",
+        "wikidata": "Q1741866",
+        "wikipedia": "de:Walser Hammerspitze"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.1995502,
+          47.3264552
+        ]
+      },
+      "id": "node/259965405"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/276270971",
+        "ele": "2224",
+        "name": "Nebelhorn",
+        "natural": "peak",
+        "prominence": "44",
+        "ref:avf": "1262",
+        "summit:cross": "yes",
+        "summit:register": "no",
+        "wikidata": "Q696067",
+        "wikipedia": "de:Nebelhorn (Allgäuer Alpen)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3423461,
+          47.4218727
+        ]
+      },
+      "id": "node/276270971"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/277722457",
+        "ele": "2053",
+        "name": "Frieder",
+        "natural": "peak",
+        "summit:cross": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9595715,
+          47.5217533
+        ]
+      },
+      "id": "node/277722457"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/277722495",
+        "ele": "2049",
+        "name": "Friederspitz",
+        "natural": "peak",
+        "summit:cross": "yes",
+        "wikidata": "Q315901"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9588323,
+          47.5171414
+        ]
+      },
+      "id": "node/277722495"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/277727364",
+        "ele": "2052",
+        "name": "Schellschlicht",
+        "natural": "peak",
+        "ref:avf": "2596",
+        "summit:cross": "yes",
+        "summit:register": "yes",
+        "wikidata": "Q2233117"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9163331,
+          47.5092999
+        ]
+      },
+      "id": "node/277727364"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/280328857",
+        "ele": "2020",
+        "name": "Kuchelbergspitze",
+        "natural": "peak",
+        "summit:cross": "yes",
+        "summit:register": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9425313,
+          47.5414219
+        ]
+      },
+      "id": "node/280328857"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/280329639",
+        "ele": "2026",
+        "name": "Kuchelbergkopf",
+        "natural": "peak",
+        "wikidata": "Q31532992",
+        "wikipedia": "de:Kuchelbergkopf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9254312,
+          47.5349169
+        ]
+      },
+      "id": "node/280329639"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/281708195",
+        "ele": "2280",
+        "name": "Großer Daumen",
+        "natural": "peak",
+        "prominence": "344",
+        "ref:avf": "1267",
+        "summit:cross": "yes",
+        "wikidata": "Q316061",
+        "wikimedia_commons": "Category:Großer Daumen",
+        "wikipedia": "de:Großer Daumen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3755228,
+          47.4415982
+        ]
+      },
+      "id": "node/281708195"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/284141671",
+        "alt_name": "Schöttlkarspitze",
+        "ele": "2050",
+        "name": "Schöttelkarspitze",
+        "natural": "peak",
+        "wikidata": "Q139309",
+        "wikipedia": "de:Schöttelkarspitze"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3298011,
+          47.4940798
+        ]
+      },
+      "id": "node/284141671"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/285971718",
+        "ele": "2285",
+        "natural": "peak",
+        "prominence": "10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.214009,
+          47.311405
+        ]
+      },
+      "id": "node/285971718"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/285972358",
+        "alt_name": "Höchster Schafalpenkopf;Dritter Schafalpenkopf;Nordöstlicher Schafalpenkopf",
+        "ele": "2320",
+        "name": "Nördlicher Schafalpenkopf",
+        "natural": "peak",
+        "prominence": "216",
+        "ref:avf": "790",
+        "wikidata": "Q1259247",
+        "wikipedia": "de:Nördlicher Schafalpenkopf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2166035,
+          47.3105646
+        ]
+      },
+      "id": "node/285972358"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/285972361",
+        "alt_name": "Kemptner Köpfle;Kemptnerköpfle;Kempterle",
+        "ele": "2191",
+        "name": "Kemptner Kopf",
+        "natural": "peak",
+        "prominence": "85",
+        "ref:avf": "703",
+        "summit:cross": "yes",
+        "wikidata": "Q1738567",
+        "wikipedia": "de:Kemptner Kopf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.1990974,
+          47.2975067
+        ]
+      },
+      "id": "node/285972361"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/286687475",
+        "alt_name": "Törl",
+        "ele": "2202",
+        "name": "Frauenalpl",
+        "natural": "peak",
+        "summit:cross": "yes",
+        "summit:register": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1175579,
+          47.4142547
+        ]
+      },
+      "id": "node/286687475"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/286790301",
+        "ele": "2144",
+        "fixme": "check location",
+        "name": "Bernadeinkopf",
+        "natural": "peak",
+        "wikidata": "Q822140"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0603371,
+          47.4310847
+        ]
+      },
+      "id": "node/286790301"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/291978603",
+        "alt_name": "Walser Geißhorn",
+        "communication:amateur_radio:sota": "OE/VB-213",
+        "communication:amateur_radio:sota:points": "10",
+        "ele": "2366",
+        "ele:source": "Wikipedia",
+        "name": "Geißhorn",
+        "natural": "peak",
+        "prominence": "181",
+        "ref:avf": "811",
+        "summit:cross": "yes",
+        "wikidata": "Q320334",
+        "wikipedia": "de:Geißhorn"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.175332,
+          47.28786
+        ]
+      },
+      "id": "node/291978603"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/293247920",
+        "ele": "2372",
+        "name": "Nördliche Linderspitze",
+        "natural": "peak",
+        "wikidata": "Q15849891",
+        "wikipedia": "de:Linderspitzen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2930554,
+          47.4279802
+        ]
+      },
+      "id": "node/293247920"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/295731699",
+        "ele": "2048",
+        "natural": "peak",
+        "prominence": "12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3377599,
+          47.3098962
+        ]
+      },
+      "id": "node/295731699"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/307562003",
+        "alt_name": "Watzmann-Hocheck",
+        "ele": "2651",
+        "historic": "wayside_cross",
+        "name": "Hocheck",
+        "natural": "peak",
+        "ref:avf": "2520",
+        "summit:cross": "yes",
+        "summit:register": "no",
+        "wikidata": "Q31354005"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9237899,
+          47.558423
+        ]
+      },
+      "id": "node/307562003"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/319480822",
+        "ele": "2367",
+        "name": "Kreuzspitze",
+        "natural": "peak",
+        "prominence": "86",
+        "ref:avf": "1403",
+        "wikidata": "Q1788437",
+        "wikipedia": "de:Kreuzspitze (Allgäuer Alpen)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.43089,
+          47.38394
+        ]
+      },
+      "id": "node/319480822"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/319480825",
+        "ele": "2287",
+        "name": "Kreuzkopf",
+        "natural": "peak",
+        "prominence": "49",
+        "ref:avf": "1435",
+        "wikidata": "Q31533188"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.41966,
+          47.3846
+        ]
+      },
+      "id": "node/319480825"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/319480834",
+        "ele": "2240",
+        "name": "Vorderer Wilder",
+        "natural": "peak",
+        "prominence": "50",
+        "wikidata": "Q21863783"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4114125,
+          47.3780492
+        ]
+      },
+      "id": "node/319480834"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/319480846",
+        "alt_name": "Großer Wilder Hauptgipfel;Großer Wilder Mittelgipfel",
+        "ele": "2379",
+        "name": "Großer Wilder",
+        "name:en": "Großer Wilder Main Summit",
+        "natural": "peak",
+        "prominence": "210",
+        "ref:avf": "1446",
+        "wikidata": "Q130526149"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.38904,
+          47.37022
+        ]
+      },
+      "id": "node/319480846"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/319482020",
+        "ele": "2427",
+        "name": "Kratzer",
+        "natural": "peak",
+        "prominence": "207",
+        "ref:avf": "870",
+        "summit:cross": "yes",
+        "wikidata": "Q1767643",
+        "wikipedia": "de:Kratzer (Berg)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.31748,
+          47.30642
+        ]
+      },
+      "id": "node/319482020"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/319482862",
+        "ele": "2251",
+        "name": "Hochgehrenspitze",
+        "name:de-AT": "Hochgehrenspitze",
+        "name:de-DE": "Hammerspitze Nordwestgipfel",
+        "natural": "peak",
+        "prominence": "67",
+        "ref:avf": "774",
+        "wikidata": "Q21878174"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.207004,
+          47.3212941
+        ]
+      },
+      "id": "node/319482862"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/323333182",
+        "ele": "2129",
+        "name": "Kastenkopf",
+        "natural": "peak",
+        "prominence": "50",
+        "ref:avf": "1170",
+        "wikidata": "Q323852",
+        "wikipedia": "de:Kastenkopf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4715051,
+          47.4318938
+        ]
+      },
+      "id": "node/323333182"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/323363530",
+        "ele": "2212",
+        "name": "Grüner Kopf",
+        "natural": "peak",
+        "prominence": "8",
+        "wikidata": "Q130525410"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3818123,
+          47.3541808
+        ]
+      },
+      "id": "node/323363530"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/323486209",
+        "ele": "2071",
+        "name": "Knappenkopf",
+        "natural": "peak",
+        "prominence": "37",
+        "ref:avf": "1157",
+        "wikidata": "Q1776882",
+        "wikipedia": "de:Knappenkopf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4731457,
+          47.4430829
+        ]
+      },
+      "id": "node/323486209"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/323581294",
+        "alt_name": "Fuchskarspitze Südgipfel",
+        "ele": "2314",
+        "name": "Fuchskarspitze",
+        "natural": "peak",
+        "prominence": "157",
+        "ref:avf": "1397",
+        "wikidata": "Q130532257"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4291,
+          47.39108
+        ]
+      },
+      "id": "node/323581294"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/323829156",
+        "alt_name": "Fuchskarspitze Nordgipfel",
+        "ele": "2252",
+        "name": "Nördliche Fuchskarspitze",
+        "name:en": "Northern Fuchskarspitze",
+        "natural": "peak",
+        "prominence": "30",
+        "ref:avf": "1397",
+        "wikidata": "Q130532277"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.43043,
+          47.39652
+        ]
+      },
+      "id": "node/323829156"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/323842894",
+        "ele": "2548",
+        "name": "Kleiner Wanner",
+        "natural": "peak",
+        "wikidata": "Q21868517"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0397076,
+          47.3963394
+        ]
+      },
+      "id": "node/323842894"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/323882896",
+        "ele": "2391",
+        "name": "Großer Archenkopf",
+        "natural": "peak",
+        "ref:avf": "2710",
+        "wikidata": "Q21871266"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0699972,
+          47.5866422
+        ]
+      },
+      "id": "node/323882896"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/323896644",
+        "ele": "2815",
+        "name": "Zugspitzeck",
+        "natural": "peak",
+        "wikidata": "Q86980310",
+        "wikipedia": "de:Zugspitzeck"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9723451,
+          47.4175695
+        ]
+      },
+      "id": "node/323896644"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/324036733",
+        "ele": "2186",
+        "name": "Lärchwand",
+        "natural": "peak",
+        "prominence": "7",
+        "ref:avf": "1387",
+        "wikidata": "Q831149",
+        "wikipedia": "de:Lärchwand"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.43742,
+          47.40684
+        ]
+      },
+      "id": "node/324036733"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/348139963",
+        "ele": "2297",
+        "name": "Obere Wettersteinspitze",
+        "natural": "peak",
+        "wikidata": "Q2566053",
+        "wikipedia": "de:Wettersteinspitzen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1910129,
+          47.4269594
+        ]
+      },
+      "id": "node/348139963"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/364134323",
+        "alt_name": "Watzmann",
+        "ele": "2713",
+        "name": "Watzmann-Mittelspitze",
+        "natural": "peak",
+        "ref:avf": "2530",
+        "summit:cross": "yes",
+        "summit:register": "yes",
+        "wikidata": "Q31306014",
+        "wikipedia": "de:Watzmann"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9220342,
+          47.5543889
+        ]
+      },
+      "id": "node/364134323"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/380969481",
+        "ele": "2430",
+        "name": "Tiefkarspitze",
+        "natural": "peak",
+        "note": "m ü. A.",
+        "wikidata": "Q21863490",
+        "wikipedia": "de:Tiefkarspitze"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3212433,
+          47.4377328
+        ]
+      },
+      "id": "node/380969481"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/380989890",
+        "alt_name": "Brunnensteinspitze",
+        "ele": "2180",
+        "name": "Brunnsteinspitze",
+        "natural": "peak",
+        "summit:cross": "yes",
+        "summit:register": "no",
+        "wikidata": "Q2169131"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2872676,
+          47.4056113
+        ]
+      },
+      "id": "node/380989890"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/387467327",
+        "ele": "2593",
+        "name": "Großer Hundstod",
+        "natural": "peak",
+        "ref:avf": "3460",
+        "summit:cross": "yes",
+        "wikidata": "Q565025",
+        "wikimedia_commons": "File:Grosser Hundstod south.JPG",
+        "wikipedia": "de:Großer Hundstod"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8849252,
+          47.5127249
+        ]
+      },
+      "id": "node/387467327"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/387482195",
+        "ele": "2045",
+        "man_made": "cross",
+        "name": "Schottmalhorn",
+        "natural": "peak",
+        "wikidata": "Q828128"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8298043,
+          47.6132271
+        ]
+      },
+      "id": "node/387482195"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/388003958",
+        "ele": "2158",
+        "name": "Viehkogel",
+        "natural": "peak",
+        "ref:avf": "3400",
+        "summit:cross": "yes",
+        "summit:register": "yes",
+        "wikidata": "Q2523163"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.932659,
+          47.4882425
+        ]
+      },
+      "id": "node/388003958"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/414071751",
+        "ele": "2043",
+        "name": "Entschenkopf",
+        "natural": "peak",
+        "prominence": "208",
+        "ref:avf": "1247",
+        "summit:cross": "yes",
+        "summit:register": "yes",
+        "wikidata": "Q831204",
+        "wikipedia": "de:Entschenkopf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3313126,
+          47.4365673
+        ]
+      },
+      "id": "node/414071751"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/440062076",
+        "ele": "2010",
+        "name": "Krähe",
+        "natural": "peak",
+        "ref:avf": "2457",
+        "wikidata": "Q15117767"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.8252366,
+          47.5527964
+        ]
+      },
+      "id": "node/440062076"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/441557888",
+        "ele": "2213",
+        "name": "Sechszinkenspitze",
+        "natural": "peak",
+        "prominence": "98",
+        "ref:avf": "797",
+        "wikidata": "Q2263675",
+        "wikipedia": "de:Sechszinkenspitze"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.1942681,
+          47.2965653
+        ]
+      },
+      "id": "node/441557888"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/441895641",
+        "ele": "2082",
+        "name": "Hahnenköpfle",
+        "natural": "peak",
+        "prominence": "8",
+        "ref:avf": "690",
+        "summit:cross": "yes",
+        "wikidata": "Q130569470"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.102265,
+          47.3579122
+        ]
+      },
+      "id": "node/441895641"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/449389006",
+        "ele": "2049",
+        "name": "Oberer Rißkopf",
+        "natural": "peak",
+        "summit:cross": "yes",
+        "summit:register": "yes",
+        "wikidata": "Q21996583",
+        "wikipedia": "de:Oberer Rißkopf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1852668,
+          47.5488775
+        ]
+      },
+      "id": "node/449389006"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/449491364",
+        "ele": "2033",
+        "name": "Bischof",
+        "natural": "peak",
+        "summit:cross": "yes",
+        "summit:register": "yes",
+        "wikidata": "Q866104"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1757851,
+          47.5404528
+        ]
+      },
+      "id": "node/449491364"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/454666359",
+        "ele": "2469",
+        "image": "https://commons.wikimedia.org/wiki/File:Rappenseekopf_Gipfel_und_Grenzstein_(1).jpg",
+        "name": "Rappenseekopf",
+        "natural": "peak",
+        "prominence": "157",
+        "ref:avf": "913",
+        "summit:cross": "yes",
+        "summit:register": "no",
+        "wikidata": "Q831402",
+        "wikimedia_commons": "Category:Rappenseekopf",
+        "wikipedia": "de:Rappenseekopf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2548226,
+          47.2809839
+        ]
+      },
+      "id": "node/454666359"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/454899950",
+        "ele": "2271",
+        "name": "Fürschießer",
+        "natural": "peak",
+        "prominence": "65",
+        "ref:avf": "1581",
+        "wikidata": "Q830949",
+        "wikipedia": "de:Fürschießer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.32983,
+          47.32824
+        ]
+      },
+      "id": "node/454899950"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/454899951",
+        "alt_name": "Muttler",
+        "ele": "2368",
+        "name": "Muttlerkopf",
+        "natural": "peak",
+        "prominence": "44",
+        "ref:avf": "1570",
+        "summit:cross": "yes",
+        "wikidata": "Q21873215",
+        "wikipedia": "en:Muttlerkopf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3412333,
+          47.3144134
+        ]
+      },
+      "id": "node/454899951"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/455155017",
+        "ele": "2258",
+        "name": "Höfats Zweiter Gipfel",
+        "name:en": "Höfats second summit",
+        "natural": "peak",
+        "prominence": "480",
+        "ref:avf": "1345",
+        "wikidata": "Q124422131"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3494627,
+          47.3672021
+        ]
+      },
+      "id": "node/455155017"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/469159377",
+        "ele": "2235",
+        "name": "Westlicher Wengenkopf",
+        "name:en": "Western Wengenkopf",
+        "natural": "peak",
+        "prominence": "153",
+        "ref:avf": "1264",
+        "wikidata": "Q2565482",
+        "wikipedia": "de:Westlicher Wengenkopf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3503874,
+          47.4229311
+        ]
+      },
+      "id": "node/469159377"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/469169686",
+        "ele": "2190",
+        "natural": "peak",
+        "prominence": "8",
+        "wikidata": "Q307223"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.362153,
+          47.4266366
+        ]
+      },
+      "id": "node/469169686"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/469207035",
+        "alt_name": "Rotspitze",
+        "ele": "2034",
+        "name": "Rotspitz",
+        "natural": "peak",
+        "prominence": "139",
+        "ref:avf": "1282",
+        "summit:cross": "yes",
+        "wikidata": "Q830784",
+        "wikipedia": "de:Rotspitz (Allgäuer Alpen)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.369341,
+          47.4595011
+        ]
+      },
+      "id": "node/469207035"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/469207188",
+        "ele": "2197",
+        "name": "Kleiner Daumen",
+        "natural": "peak",
+        "prominence": "31",
+        "ref:avf": "1272",
+        "summit:cross": "yes",
+        "wikidata": "Q1311878",
+        "wikimedia_commons": "Category:Kleiner Daumen",
+        "wikipedia": "de:Kleiner Daumen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3861731,
+          47.4470862
+        ]
+      },
+      "id": "node/469207188"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/469641200",
+        "ele": "2384",
+        "name": "Liechelkopf",
+        "natural": "peak",
+        "prominence": "75",
+        "ref:avf": "803",
+        "wikidata": "Q831435",
+        "wikipedia": "de:Liechelkopf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.179743,
+          47.296087
+        ]
+      },
+      "id": "node/469641200"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/471168193",
+        "ele": "2270",
+        "name": "Glasfelderkopf",
+        "natural": "peak",
+        "prominence": "108",
+        "ref:avf": "1389",
+        "wikidata": "Q155086",
+        "wikipedia": "de:Glasfelderkopf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.43161,
+          47.4029
+        ]
+      },
+      "id": "node/471168193"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/475537031",
+        "ele": "2712",
+        "name": "Watzmann-Südspitze",
+        "natural": "peak",
+        "old_name": "Schönfeldspitze",
+        "ref:avf": "2540",
+        "summit:cross": "yes",
+        "summit:register": "yes",
+        "wikidata": "Q31354390"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9169564,
+          47.5480306
+        ]
+      },
+      "id": "node/475537031"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/476459617",
+        "alt_name": "Hirschwieskopf",
+        "ele": "2114",
+        "name": "Hirschwiese",
+        "natural": "peak",
+        "ref:avf": "2570",
+        "wikidata": "Q31354018"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.916452,
+          47.5295856
+        ]
+      },
+      "id": "node/476459617"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/480760326",
+        "ele": "2058",
+        "name": "Kanzelwand",
+        "name:de-AT": "Kanzelwand",
+        "name:de-DE": "Warmatsgundkopf",
+        "natural": "peak",
+        "prominence": "86",
+        "ref:avf": "766;1022",
+        "summit:cross": "yes",
+        "wikidata": "Q872350",
+        "wikipedia": "de:Kanzelwand"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2077026,
+          47.3347816
+        ]
+      },
+      "id": "node/480760326"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/481694454",
+        "ele": "2446",
+        "name": "Stuhljoch",
+        "natural": "peak",
+        "ref:avf": "3360",
+        "wikidata": "Q31302513",
+        "wikipedia": "de:Funtenseetauern#Stuhljoch"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9672187,
+          47.4898784
+        ]
+      },
+      "id": "node/481694454"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/496454912",
+        "ele": "2537",
+        "name": "Östliche Karwendelspitze",
+        "natural": "peak",
+        "prominence": "735",
+        "wikidata": "Q306927",
+        "wikipedia": "de:Östliche Karwendelspitze"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.421433,
+          47.4448563
+        ]
+      },
+      "id": "node/496454912"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/504796020",
+        "ele": "2330",
+        "name": "Großer Schneiber",
+        "natural": "peak",
+        "ref:avf": "3420",
+        "wikidata": "Q18289350"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9115931,
+          47.5106761
+        ]
+      },
+      "id": "node/504796020"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/506889874",
+        "alt_name": "Hochegger",
+        "ele": "2230",
+        "name": "Hocheck",
+        "natural": "peak",
+        "note": "Position aus Höhenlinienverlauf geschätzt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9965197,
+          47.4829148
+        ]
+      },
+      "id": "node/506889874"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/506889891",
+        "ele": "2236",
+        "name": "Wildpalfen",
+        "natural": "peak",
+        "ref:avf": "3010",
+        "summit:cross": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0377259,
+          47.4969696
+        ]
+      },
+      "id": "node/506889891"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/507017748",
+        "ele": "2164",
+        "name": "Fagstein",
+        "natural": "peak",
+        "ref:avf": "2880",
+        "source": "estimated from height lines",
+        "wikidata": "Q21032716"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0309162,
+          47.5488385
+        ]
+      },
+      "id": "node/507017748"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/507037980",
+        "ele": "2074",
+        "name": "Lafeldkopf",
+        "natural": "peak",
+        "note": "“Hohes Lafeld” oder “Hochlafeld” bezeichnet die Fläche unterhalb des Gipfels",
+        "ref:avf": "2950",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0237221,
+          47.5345871
+        ]
+      },
+      "id": "node/507037980"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/507083764",
+        "ele": "2268",
+        "name": "Gjaidkopf",
+        "natural": "peak",
+        "ref:avf": "3430",
+        "wikidata": "Q30683386"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9109261,
+          47.5163295
+        ]
+      },
+      "id": "node/507083764"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/507083769",
+        "ele": "2094",
+        "name": "Graskopf",
+        "natural": "peak",
+        "ref:avf": "3430",
+        "wikidata": "Q31354141"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9069035,
+          47.5200228
+        ]
+      },
+      "id": "node/507083769"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/507094246",
+        "ele": "2468",
+        "name": "Steintalhörnl",
+        "natural": "peak",
+        "ref:avf": "2150",
+        "source": "estimated from height lines"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.854934,
+          47.5596884
+        ]
+      },
+      "id": "node/507094246"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/507094248",
+        "ele": "2247",
+        "name": "Hinterbergkopf",
+        "natural": "peak",
+        "ref:avf": "2170",
+        "source": "estimated from height lines"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8528061,
+          47.5513535
+        ]
+      },
+      "id": "node/507094248"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/507105613",
+        "ele": "2153",
+        "name": "Schärtenspitze",
+        "natural": "peak",
+        "ref:avf": "2020",
+        "source": "survey",
+        "summit:cross": "yes",
+        "summit:register": "yes",
+        "wikipedia": "de:Hochkalter#Schärtenspitze"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8746816,
+          47.5822
+        ]
+      },
+      "id": "node/507105613"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/507105618",
+        "alt_name": "Watzmannfrau;Watzfrau",
+        "ele": "2307",
+        "name": "Kleiner Watzmann",
+        "natural": "peak",
+        "ref:avf": "2440",
+        "source": "estimation from height lines",
+        "wikidata": "Q31339405"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9424556,
+          47.5588894
+        ]
+      },
+      "id": "node/507105618"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/507116898",
+        "ele": "2257",
+        "name": "Griesspitze",
+        "natural": "peak",
+        "ref:avf": "2560",
+        "wikidata": "Q31354130"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9036638,
+          47.5436716
+        ]
+      },
+      "id": "node/507116898"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/507448708",
+        "ele": "2066",
+        "name": "Hachelkopf",
+        "natural": "peak",
+        "ref:avf": "2580",
+        "source": "estimated from height lines"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9341041,
+          47.5308097
+        ]
+      },
+      "id": "node/507448708"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/507594558",
+        "alt_name": "Lawand",
+        "ele": "2312",
+        "name": "Laubwand",
+        "natural": "peak",
+        "ref:avf": "3900",
+        "wikidata": "Q1680817",
+        "wikipedia": "de:Laubwand"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0185196,
+          47.4764177
+        ]
+      },
+      "id": "node/507594558"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/508474971",
+        "ele": "2276",
+        "name": "Großer Waxenstein",
+        "natural": "peak",
+        "wikidata": "Q256209"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0232944,
+          47.4462043
+        ]
+      },
+      "id": "node/508474971"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/508474978",
+        "ele": "2136",
+        "name": "Kleiner Waxenstein",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0301167,
+          47.446679
+        ]
+      },
+      "id": "node/508474978"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/508474984",
+        "ele": "2268",
+        "name": "Hinterer Waxenstein",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0174743,
+          47.4439368
+        ]
+      },
+      "id": "node/508474984"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/508489594",
+        "ele": "2242",
+        "name": "Nördliche Riffelspitze",
+        "natural": "peak",
+        "wikidata": "Q31555745"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.005791,
+          47.4388036
+        ]
+      },
+      "id": "node/508489594"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/508489606",
+        "ele": "2262",
+        "name": "Südliche Riffelspitze",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0037847,
+          47.437218
+        ]
+      },
+      "id": "node/508489606"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/508489623",
+        "ele": "2625",
+        "name": "Große Riffelwandspitze",
+        "natural": "peak",
+        "note": "in der Topo50 ist hier die Große Riffelwandspitze, in der Topo25 ist sie weiter südwestlich (fast gleich hoch)",
+        "wikidata": "Q31555666"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9924798,
+          47.4282738
+        ]
+      },
+      "id": "node/508489623"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/508489627",
+        "ele": "2543",
+        "name": "Kleine Riffelwandspitze",
+        "natural": "peak",
+        "wikidata": "Q31555682"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.996723,
+          47.4293162
+        ]
+      },
+      "id": "node/508489627"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/508489631",
+        "alt_name": "Hohe Riffel",
+        "ele": "2230",
+        "name": "Riffeltorkopf",
+        "natural": "peak",
+        "wikidata": "Q2152634",
+        "wikipedia": "de:Riffeltorkopf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9983071,
+          47.4350764
+        ]
+      },
+      "id": "node/508489631"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/508503689",
+        "ele": "2740",
+        "name": "Mittlere Höllentalspitze",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0198273,
+          47.4206907
+        ]
+      },
+      "id": "node/508503689"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/508503691",
+        "ele": "2741",
+        "name": "Innere Höllentalspitze",
+        "natural": "peak",
+        "wikidata": "Q265375"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0105717,
+          47.4184937
+        ]
+      },
+      "id": "node/508503691"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/508503692",
+        "ele": "2260",
+        "name": "Brunntalkopf",
+        "natural": "peak",
+        "wikidata": "Q31550882"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.016792,
+          47.4108271
+        ]
+      },
+      "id": "node/508503692"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/508503693",
+        "ele": "2715",
+        "name": "Äußere Höllentalspitze",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.027893,
+          47.4209398
+        ]
+      },
+      "id": "node/508503693"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/508503694",
+        "ele": "2630",
+        "name": "Vollkarspitze",
+        "natural": "peak",
+        "wikidata": "Q885103"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.034696,
+          47.4217228
+        ]
+      },
+      "id": "node/508503694"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/508509265",
+        "ele": "2420",
+        "name": "Blassenspitze",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0545854,
+          47.4219531
+        ]
+      },
+      "id": "node/508509265"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/508530564",
+        "ele": "2680",
+        "name": "Östliche Plattspitze",
+        "natural": "peak",
+        "wikidata": "Q830583",
+        "wikipedia": "de:Plattspitzen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9926825,
+          47.3964573
+        ]
+      },
+      "id": "node/508530564"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/509292145",
+        "ele": "2460",
+        "name": "Hochscheibe",
+        "natural": "peak",
+        "wikidata": "Q31354346"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.974321,
+          47.4881912
+        ]
+      },
+      "id": "node/509292145"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/509292149",
+        "ele": "2371",
+        "name": "Ebenhorn",
+        "natural": "peak",
+        "ref:avf": "3340",
+        "source": "Skelettskizze Funtenseetauern ca. 1920",
+        "wikidata": "Q30791818"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9750146,
+          47.4937833
+        ]
+      },
+      "id": "node/509292149"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/510121135",
+        "ele": "2251",
+        "name": "Wagendrischelhorn",
+        "natural": "peak",
+        "wikidata": "Q829328"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.7917253,
+          47.5988564
+        ]
+      },
+      "id": "node/510121135"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/510121157",
+        "ele": "2106",
+        "name": "Unterer Plattelkopf",
+        "natural": "peak",
+        "wikidata": "Q21864853"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.7970507,
+          47.6023921
+        ]
+      },
+      "id": "node/510121157"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/510121159",
+        "ele": "2098",
+        "name": "Oberer Plattelkopf",
+        "natural": "peak",
+        "wikidata": "Q93701942"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8028361,
+          47.6054624
+        ]
+      },
+      "id": "node/510121159"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/510121160",
+        "ele": "2060",
+        "name": "Reiter Steinberg",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8074181,
+          47.6102587
+        ]
+      },
+      "id": "node/510121160"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/510121162",
+        "ele": "2031",
+        "name": "Hohes Gerstfeld",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8245353,
+          47.6120942
+        ]
+      },
+      "id": "node/510121162"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/510122408",
+        "ele": "2110",
+        "name": "Rosentalhörnl",
+        "natural": "peak",
+        "source": "survey",
+        "wikidata": "Q31353035"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.003751,
+          47.4716921
+        ]
+      },
+      "id": "node/510122408"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/510122409",
+        "ele": "2084",
+        "natural": "peak",
+        "source": "estimated from height lines",
+        "source:ele": "ÖK50"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0117079,
+          47.4832578
+        ]
+      },
+      "id": "node/510122409"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/515678324",
+        "ele": "2071",
+        "name": "Feldernkopf",
+        "natural": "peak",
+        "wikidata": "Q31547165"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3362025,
+          47.4831655
+        ]
+      },
+      "id": "node/515678324"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/527273299",
+        "ele": "2241",
+        "name": "Westliches Kirchl",
+        "natural": "peak",
+        "wikidata": "Q111286543",
+        "wikipedia": "de:Kirchl (Karwendel)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3035822,
+          47.4307842
+        ]
+      },
+      "id": "node/527273299"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/527273302",
+        "ele": "2130",
+        "name": "Kreuzwand",
+        "natural": "peak",
+        "source": "estimated from NASA elevation data",
+        "wikidata": "Q31555715"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3011712,
+          47.4369645
+        ]
+      },
+      "id": "node/527273302"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/527273304",
+        "ele": "2054",
+        "name": "Viererspitze",
+        "natural": "peak",
+        "wikidata": "Q15061381"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.293681,
+          47.437945
+        ]
+      },
+      "id": "node/527273304"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/527273309",
+        "ele": "2211",
+        "name": "Mittleres Kirchl",
+        "natural": "peak",
+        "wikidata": "Q111286543",
+        "wikipedia": "de:Kirchl (Karwendel)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3075093,
+          47.4302026
+        ]
+      },
+      "id": "node/527273309"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/527273311",
+        "ele": "2225",
+        "name": "Östliches Kirchl",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3097695,
+          47.4303184
+        ]
+      },
+      "id": "node/527273311"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/527343335",
+        "ele": "2303",
+        "name": "Westliche Larchetfleckspitze",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3113814,
+          47.4304267
+        ]
+      },
+      "id": "node/527343335"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/527343336",
+        "ele": "2362",
+        "name": "Östliche Larchetfleckspitze",
+        "natural": "peak",
+        "note": "m ü. A."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3134407,
+          47.4307958
+        ]
+      },
+      "id": "node/527343336"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/527360269",
+        "ele": "2323",
+        "name": "Bäralplkopf",
+        "natural": "peak",
+        "wikidata": "Q21927860"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.390339,
+          47.4468728
+        ]
+      },
+      "id": "node/527360269"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/527360288",
+        "ele": "2015",
+        "name": "Östliche Steinkarspitze",
+        "natural": "peak",
+        "source": "estimated from NASA elevation data",
+        "wikidata": "Q21873241",
+        "wikipedia": "de:Steinkarspitze (Karwendel)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4131303,
+          47.4546499
+        ]
+      },
+      "id": "node/527360288"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/530735159",
+        "ele": "2459",
+        "name": "Linkerskopf",
+        "natural": "peak",
+        "prominence": "47",
+        "ref:avf": "907",
+        "wikidata": "Q831129",
+        "wikipedia": "de:Linkerskopf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.26369,
+          47.29093
+        ]
+      },
+      "id": "node/530735159"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/530742114",
+        "ele": "2577",
+        "name": "Wilder Mann",
+        "natural": "peak",
+        "prominence": "26",
+        "ref:avf": "881",
+        "wikidata": "Q830919",
+        "wikipedia": "de:Wilder Mann (Allgäuer Alpen)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.279934,
+          47.287708
+        ]
+      },
+      "id": "node/530742114"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/530743910",
+        "alt_name": "Rappenköpfle",
+        "ele": "2276",
+        "name": "Kleiner Rappenkopf",
+        "natural": "peak",
+        "prominence": "62",
+        "ref:avf": "917",
+        "wikidata": "Q1746667",
+        "wikipedia": "de:Kleiner Rappenkopf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.24396,
+          47.28342
+        ]
+      },
+      "id": "node/530743910"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/530743913",
+        "ele": "2073",
+        "natural": "peak",
+        "prominence": "30",
+        "wikidata": "Q138849311"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2665222,
+          47.2981718
+        ]
+      },
+      "id": "node/530743913"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/530747886",
+        "ele": "2381",
+        "name": "Westlicher Berg der guten Hoffnung",
+        "natural": "peak",
+        "prominence": "23",
+        "ref:avf": "877",
+        "summit:cross": "yes",
+        "wikidata": "Q31555081"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2856706,
+          47.2980139
+        ]
+      },
+      "id": "node/530747886"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/530747888",
+        "ele": "2595",
+        "name": "Trettachspitze",
+        "natural": "peak",
+        "prominence": "145",
+        "ref:avf": "860",
+        "summit:cross": "yes",
+        "wikidata": "Q450837",
+        "wikipedia": "de:Trettachspitze"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.29545,
+          47.30362
+        ]
+      },
+      "id": "node/530747888"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/530747893",
+        "ele": "2279",
+        "natural": "peak",
+        "prominence": "49",
+        "wikidata": "Q131862671"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2939821,
+          47.3106812
+        ]
+      },
+      "id": "node/530747893"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/530761774",
+        "ele": "2328",
+        "natural": "peak",
+        "prominence": "29"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3351478,
+          47.3217691
+        ]
+      },
+      "id": "node/530761774"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/530761775",
+        "ele": "2385",
+        "natural": "peak",
+        "prominence": "37"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.33937,
+          47.32032
+        ]
+      },
+      "id": "node/530761775"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/530774101",
+        "ele": "2017",
+        "natural": "peak",
+        "prominence": "25",
+        "wikidata": "Q138034977"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.34466,
+          47.37005
+        ]
+      },
+      "id": "node/530774101"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/530774103",
+        "ele": "2021",
+        "name": "Gieseler Wand",
+        "natural": "peak",
+        "prominence": "45",
+        "wikidata": "Q138034997"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3418405,
+          47.3729576
+        ]
+      },
+      "id": "node/530774103"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/530774119",
+        "ele": "2073",
+        "name": "Kleine Höfats",
+        "natural": "peak",
+        "prominence": "87",
+        "ref:avf": "1351",
+        "wikidata": "Q1746457",
+        "wikipedia": "de:Kleine Höfats"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.35452,
+          47.36807
+        ]
+      },
+      "id": "node/530774119"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/531228711",
+        "ele": "2197",
+        "name": "Wildengundkopf",
+        "natural": "peak",
+        "prominence": "25",
+        "ref:avf": "811",
+        "wikidata": "Q31514933"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.1835715,
+          47.2881364
+        ]
+      },
+      "id": "node/531228711"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/531228737",
+        "ele": "2263",
+        "name": "Angererkopf",
+        "natural": "peak",
+        "prominence": "51",
+        "ref:avf": "799",
+        "wikidata": "Q538072",
+        "wikipedia": "de:Angererkopf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.18548,
+          47.2939
+        ]
+      },
+      "id": "node/531228737"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/531242760",
+        "alt_name": "Haldenwangerkopf",
+        "ele": "2002",
+        "name": "Haldenwanger Kopf",
+        "natural": "peak",
+        "prominence": "34",
+        "ref:avf": "814",
+        "wikidata": "Q1570783",
+        "wikipedia": "de:Haldenwanger Kopf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.17348,
+          47.27507
+        ]
+      },
+      "id": "node/531242760"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/535311207",
+        "ele": "2139",
+        "name": "Rossgundkopf",
+        "natural": "peak",
+        "prominence": "66",
+        "ref:avf": "779",
+        "wikidata": "Q2171348",
+        "wikipedia": "de:Roßgundkopf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.23356,
+          47.31946
+        ]
+      },
+      "id": "node/535311207"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/535311211",
+        "ele": "2177",
+        "name": "Alpgundkopf",
+        "natural": "peak",
+        "prominence": "172",
+        "ref:avf": "781",
+        "wikidata": "Q1361612",
+        "wikipedia": "de:Alpgundkopf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.23758,
+          47.32221
+        ]
+      },
+      "id": "node/535311211"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/535311216",
+        "alt_name": "Griesgundkopf",
+        "ele": "2164",
+        "name": "Grießgundkopf",
+        "natural": "peak",
+        "prominence": "10",
+        "ref:avf": "781",
+        "summit:cross": "yes",
+        "summit:register": "yes",
+        "wikidata": "Q1546508",
+        "wikipedia": "de:Griesgundkopf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2395502,
+          47.3236012
+        ]
+      },
+      "id": "node/535311216"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/535318252",
+        "ele": "2066",
+        "name": "Rossgundturm",
+        "natural": "peak",
+        "prominence": "24",
+        "wikidata": "Q130621664"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2361038,
+          47.316735
+        ]
+      },
+      "id": "node/535318252"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/650865315",
+        "ele": "2135",
+        "name": "Kälbelespitze",
+        "name:de-AT": "Kastenkopf",
+        "natural": "peak",
+        "prominence": "209",
+        "ref:avf": "1173",
+        "wikidata": "Q1795309",
+        "wikipedia": "de:Kälbelesspitze"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.47539,
+          47.4316
+        ]
+      },
+      "id": "node/650865315"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/658981816",
+        "alt_name": "Wiedemer",
+        "ele": "2163",
+        "name": "Wiedemerkopf",
+        "natural": "peak",
+        "prominence": "6",
+        "ref:avf": "1441",
+        "summit:cross": "yes",
+        "wikidata": "Q2568292",
+        "wikipedia": "de:Wiedemerkopf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.41699,
+          47.39012
+        ]
+      },
+      "id": "node/658981816"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/664510186",
+        "ele": "2483",
+        "man_made": "summit_cross",
+        "name": "Kammerlinghorn",
+        "natural": "peak",
+        "ref:avf": "2260",
+        "source": "estimated from height lines",
+        "wikidata": "Q21868263",
+        "wikipedia": "de:Hochkalter#Kammerlinghorn"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8327097,
+          47.5450497
+        ]
+      },
+      "id": "node/664510186"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/773900448",
+        "ele": "2264",
+        "name": "Schönangerspitze",
+        "natural": "peak",
+        "wikidata": "Q31522130"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.011646,
+          47.4421375
+        ]
+      },
+      "id": "node/773900448"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/822263083",
+        "ele": "2268",
+        "man_made": "cross",
+        "name": "Schneck",
+        "natural": "peak",
+        "prominence": "261",
+        "ref:avf": "1326",
+        "summit:cross": "yes",
+        "wikidata": "Q831188"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.382386,
+          47.3859171
+        ]
+      },
+      "id": "node/822263083"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/822263093",
+        "ele": "2152",
+        "name": "Himmeleck",
+        "natural": "peak",
+        "prominence": "15",
+        "ref:avf": "1327",
+        "wikidata": "Q1602221"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3839399,
+          47.3824903
+        ]
+      },
+      "id": "node/822263093"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/822263104",
+        "ele": "2258",
+        "name": "Schneck-Vorgipfel",
+        "natural": "peak",
+        "prominence": "18",
+        "ref:avf": "1326",
+        "wikidata": "Q131442326"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.38171,
+          47.38483
+        ]
+      },
+      "id": "node/822263104"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/841832445",
+        "ele": "2111",
+        "name": "Seebichel",
+        "natural": "peak",
+        "prominence": "30",
+        "summit:cross": "yes",
+        "summit:register": "no",
+        "wikidata": "Q130486776"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2524866,
+          47.2879221
+        ]
+      },
+      "id": "node/841832445"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/844986604",
+        "ele": "2178",
+        "name": "Laufbacher Eck",
+        "natural": "peak",
+        "prominence": "50",
+        "ref:avf": "1317",
+        "wikidata": "Q832044",
+        "wikipedia": "de:Laufbacher Eck"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.380816,
+          47.3935621
+        ]
+      },
+      "id": "node/844986604"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/893340535",
+        "ele": "2477",
+        "name": "Krummer Turm",
+        "natural": "peak",
+        "prominence": "55",
+        "ref:avf": "1579",
+        "wikidata": "Q130554238"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3432506,
+          47.3199166
+        ]
+      },
+      "id": "node/893340535"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/912152794",
+        "ele": "2062",
+        "name": "Gundkopf",
+        "natural": "peak",
+        "prominence": "24",
+        "wikidata": "Q831155",
+        "wikipedia": "de:Gundkopf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3329842,
+          47.4193483
+        ]
+      },
+      "id": "node/912152794"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/912260217",
+        "ele": "2023",
+        "natural": "peak",
+        "prominence": "18"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3513,
+          47.41602
+        ]
+      },
+      "id": "node/912260217"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/912260256",
+        "ele": "2096",
+        "name": "Kleiner Seekopf",
+        "natural": "peak",
+        "prominence": "91",
+        "ref:avf": "1307",
+        "wikidata": "Q1635279",
+        "wikipedia": "de:Kleiner Seekopf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.35639,
+          47.40143
+        ]
+      },
+      "id": "node/912260256"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/912260273",
+        "ele": "2085",
+        "name": "Großer Seekopf",
+        "natural": "peak",
+        "prominence": "59",
+        "ref:avf": "1307",
+        "wikidata": "Q1548996",
+        "wikipedia": "de:Großer Seekopf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.35473,
+          47.40582
+        ]
+      },
+      "id": "node/912260273"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/912260300",
+        "ele": "2111",
+        "name": "Lachenkopf",
+        "natural": "peak",
+        "prominence": "112",
+        "ref:avf": "1313",
+        "wikidata": "Q323648"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.37171,
+          47.39483
+        ]
+      },
+      "id": "node/912260300"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/912352427",
+        "ele": "2175",
+        "name": "Balken",
+        "natural": "peak",
+        "prominence": "18",
+        "ref:avf": "1406",
+        "summit:cross": "yes",
+        "wikidata": "Q130532150"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4299087,
+          47.3888446
+        ]
+      },
+      "id": "node/912352427"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/912363810",
+        "ele": "2324",
+        "name": "Südliche Balkenspitze",
+        "name:en": "Southern Balkenspitze",
+        "natural": "peak",
+        "prominence": "13",
+        "wikidata": "Q130532213"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4313394,
+          47.38555
+        ]
+      },
+      "id": "node/912363810"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/912758344",
+        "ele": "2033",
+        "name": "Obere Gottesackerwände",
+        "natural": "peak",
+        "prominence": "202",
+        "ref:avf": "682",
+        "wikidata": "Q136039925"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.11713,
+          47.37617
+        ]
+      },
+      "id": "node/912758344"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/913800779",
+        "alt_name": "Pfannhölzer",
+        "ele": "2029",
+        "name": "Pfannenhölzer",
+        "natural": "peak",
+        "prominence": "50",
+        "ref:avf": "1290",
+        "wikidata": "Q130483357"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.39847,
+          47.44727
+        ]
+      },
+      "id": "node/913800779"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/913824478",
+        "ele": "2024",
+        "name": "Älpelekopf",
+        "natural": "peak",
+        "prominence": "56",
+        "ref:avf": "1160",
+        "wikidata": "Q254791",
+        "wikipedia": "de:Älpelekopf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4549,
+          47.439
+        ]
+      },
+      "id": "node/913824478"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/913843561",
+        "ele": "2070",
+        "name": "Schänzlekopf",
+        "natural": "peak",
+        "prominence": "157",
+        "ref:avf": "1167",
+        "wikidata": "Q323357",
+        "wikipedia": "de:Schänzlekopf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4534522,
+          47.4181469
+        ]
+      },
+      "id": "node/913843561"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/913843564",
+        "ele": "2097",
+        "name": "Sattelkopf",
+        "natural": "peak",
+        "prominence": "85",
+        "ref:avf": "1380",
+        "wikidata": "Q323584",
+        "wikipedia": "de:Sattelkopf (Allgäuer Alpen)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.43845,
+          47.41355
+        ]
+      },
+      "id": "node/913843564"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/913845485",
+        "ele": "2013",
+        "name": "Kirchendach",
+        "natural": "peak",
+        "prominence": "25",
+        "ref:avf": "1173",
+        "wikidata": "Q21877991"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4739205,
+          47.4360105
+        ]
+      },
+      "id": "node/913845485"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/913851925",
+        "ele": "2088",
+        "name": "Salober",
+        "natural": "peak",
+        "prominence": "59",
+        "ref:avf": "1320",
+        "wikidata": "Q572923"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.38808,
+          47.39785
+        ]
+      },
+      "id": "node/913851925"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/913851954",
+        "alt_name": "Berggächtle",
+        "ele": "2007",
+        "name": "Bergächtle",
+        "natural": "peak",
+        "prominence": "74",
+        "ref:avf": "1320",
+        "wikidata": "Q323383"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.39445,
+          47.40753
+        ]
+      },
+      "id": "node/913851954"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/913863374",
+        "alt_name": "Laufbichlkirche Südgipfel",
+        "ele": "2029",
+        "name": "Laufbichelkirche Südgipfel",
+        "natural": "peak",
+        "prominence": "30",
+        "ref:avf": "1295",
+        "wikidata": "Q131362624"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.38557,
+          47.43185
+        ]
+      },
+      "id": "node/913863374"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/913868690",
+        "ele": "2008",
+        "name": "Heubatspitze",
+        "natural": "peak",
+        "prominence": "63",
+        "ref:avf": "1280",
+        "summit:cross": "yes",
+        "summit:register": "yes",
+        "wikidata": "Q8553229",
+        "wikipedia": "de:Heubatspitze"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3810226,
+          47.4589308
+        ]
+      },
+      "id": "node/913868690"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/916211213",
+        "ele": "2162",
+        "natural": "peak",
+        "prominence": "60",
+        "wikidata": "Q138857960"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3679338,
+          47.4322986
+        ]
+      },
+      "id": "node/916211213"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/916804595",
+        "ele": "2370",
+        "name": "Großer Wilder Nordgipfel",
+        "name:en": "Großer Wilder Northern Summit",
+        "natural": "peak",
+        "prominence": "26",
+        "ref:avf": "1446",
+        "wikidata": "Q130526176"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.38791,
+          47.37172
+        ]
+      },
+      "id": "node/916804595"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/916814949",
+        "alt_name": "Großer Wilder Südgipfel",
+        "ele": "2359",
+        "name": "Hinterer Wilder",
+        "name:en": "Großer Wilder Southern Summit",
+        "natural": "peak",
+        "prominence": "44",
+        "ref:avf": "1448",
+        "wikidata": "Q130526116"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.38915,
+          47.36719
+        ]
+      },
+      "id": "node/916814949"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/944092774",
+        "ele": "2427",
+        "name": "Westliche Törlspitze",
+        "natural": "peak",
+        "summit:cross": "no",
+        "summit:register": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1301239,
+          47.4126395
+        ]
+      },
+      "id": "node/944092774"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/954676432",
+        "ele": "2238",
+        "name": "Wildengundkopf",
+        "natural": "peak",
+        "prominence": "19",
+        "ref:avf": "859",
+        "wikidata": "Q323390",
+        "wikipedia": "de:Wildengundkopf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.29192,
+          47.31284
+        ]
+      },
+      "id": "node/954676432"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1055352004",
+        "ele": "2481",
+        "name": "Blaueisspitze",
+        "natural": "peak",
+        "source": "estimated from height lines",
+        "summit:cross": "yes",
+        "wikidata": "Q31354412"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8694054,
+          47.5720037
+        ]
+      },
+      "id": "node/1055352004"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1055352011",
+        "ele": "2065",
+        "name": "Steinberg",
+        "natural": "peak",
+        "ref:avf": "2010",
+        "summit:cross": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8776064,
+          47.585734
+        ]
+      },
+      "id": "node/1055352011"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1055547059",
+        "ele": "2513",
+        "name": "Kleinkalter",
+        "natural": "peak",
+        "ref:avf": "2060",
+        "source": "estimation from height lines",
+        "summit:cross": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8624286,
+          47.5727411
+        ]
+      },
+      "id": "node/1055547059"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1055547069",
+        "ele": "2368",
+        "name": "Wimbachschneidspitze",
+        "natural": "peak",
+        "ref:avf": "2180",
+        "source": "estimated from height lines"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.847869,
+          47.5461712
+        ]
+      },
+      "id": "node/1055547069"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1055547071",
+        "ele": "2513",
+        "name": "Ofentalhörnl",
+        "natural": "peak",
+        "ref:avf": "2130",
+        "source": "estimated from height lines",
+        "wikidata": "Q31296619"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8614196,
+          47.5625765
+        ]
+      },
+      "id": "node/1055547071"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1055547086",
+        "ele": "2065",
+        "name": "Schärtenwandkopf",
+        "natural": "peak",
+        "ref:avf": "2080",
+        "source": "estimated from height lines",
+        "summit:cross": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8613061,
+          47.5841081
+        ]
+      },
+      "id": "node/1055547086"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1055547112",
+        "ele": "2450",
+        "name": "Schönwandeck",
+        "natural": "peak",
+        "ref:avf": "2120",
+        "source": "estimated from height lines"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8677725,
+          47.5642609
+        ]
+      },
+      "id": "node/1055547112"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1055547114",
+        "ele": "2367",
+        "name": "Rotpalfen",
+        "natural": "peak",
+        "ref:avf": "2070",
+        "source": "estimation from height lines",
+        "summit:cross": "no",
+        "wikidata": "Q1117892"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8621648,
+          47.5786336
+        ]
+      },
+      "id": "node/1055547114"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1055583497",
+        "ele": "2252",
+        "name": "Hocheishörndl",
+        "natural": "peak",
+        "ref:avf": "2220",
+        "source": "estimated from height lines",
+        "wikidata": "Q31353994"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8316752,
+          47.5546387
+        ]
+      },
+      "id": "node/1055583497"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1055583501",
+        "ele": "2095",
+        "name": "Eislhörndl",
+        "natural": "peak",
+        "ref:avf": "2200",
+        "source": "estimated from height lines"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8357131,
+          47.5583201
+        ]
+      },
+      "id": "node/1055583501"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1055583505",
+        "ele": "2083",
+        "name": "Vorderberghörndl",
+        "natural": "peak",
+        "ref:avf": "2210",
+        "source": "estimated from height lines"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8284226,
+          47.558802
+        ]
+      },
+      "id": "node/1055583505"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1055583508",
+        "ele": "2493",
+        "name": "Hinterberghorn",
+        "natural": "peak",
+        "ref": "avf:2240",
+        "ref:avf": "2230",
+        "source": "estimated from height lines"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8391498,
+          47.5509169
+        ]
+      },
+      "id": "node/1055583508"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1055599840",
+        "alt_name": "Kleines Palfelhorn",
+        "ele": "2073",
+        "name": "Kleines Palfenhorn",
+        "natural": "peak",
+        "ref:avf": "2330",
+        "source": "estimated from height lines",
+        "source:alt_name": "Königreich Bayern 1848;Franzisco-Josephinische Landesaufnahme;Max Zeller 1915",
+        "wikidata": "Q19964160",
+        "wikipedia": "de:Kleines Palfenhorn"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8706562,
+          47.5323307
+        ]
+      },
+      "id": "node/1055599840"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1059463596",
+        "alt_name": "Erstes Watzmannkind",
+        "ele": "2247",
+        "name": "1. Watzmannkind",
+        "natural": "peak",
+        "ref:avf": "2460",
+        "source": "estimation from height lines"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9378171,
+          47.5537381
+        ]
+      },
+      "id": "node/1059463596"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1059463616",
+        "alt_name": "Drittes Watzmannkind",
+        "ele": "2209",
+        "name": "3. Watzmannkind",
+        "natural": "peak",
+        "ref:avf": "2480",
+        "source:ele": "gps"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9339669,
+          47.5519243
+        ]
+      },
+      "id": "node/1059463616"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1059463627",
+        "alt_name": "Viertes Watzmannkind",
+        "ele": "2270",
+        "name": "4. Watzmannkind",
+        "natural": "peak",
+        "ref:avf": "2490",
+        "source": "estimation from height lines"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9328971,
+          47.5527479
+        ]
+      },
+      "id": "node/1059463627"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1059463633",
+        "alt_name": "Fünftes Watzmannkind",
+        "ele": "2225",
+        "name": "5. Watzmannkind",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9309994,
+          47.5526978
+        ]
+      },
+      "id": "node/1059463633"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1059571690",
+        "ele": "2171",
+        "name": "Reinersberg",
+        "natural": "peak",
+        "ref:avf": "2850",
+        "wikidata": "Q31359087"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.048298,
+          47.5570403
+        ]
+      },
+      "id": "node/1059571690"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1060100549",
+        "ele": "2073",
+        "name": "Hochsäul",
+        "natural": "peak",
+        "ref:avf": "2980",
+        "summit:cross": "yes",
+        "wikidata": "Q31353952"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0275981,
+          47.514663
+        ]
+      },
+      "id": "node/1060100549"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1060100551",
+        "ele": "2211",
+        "name": "Windschartenkopf",
+        "natural": "peak",
+        "ref:avf": "2900",
+        "summit:cross": "yes",
+        "wikidata": "Q93958735"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0446421,
+          47.5502715
+        ]
+      },
+      "id": "node/1060100551"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1060193888",
+        "ele": "2456",
+        "name": "Ledererkopf (M)",
+        "natural": "peak",
+        "ref:avf": "3370",
+        "source:ele": "Laserscan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9725873,
+          47.4787073
+        ]
+      },
+      "id": "node/1060193888"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1060193890",
+        "ele": "2506",
+        "name": "Ledererkopf (N)",
+        "natural": "peak",
+        "ref:avf": "3370",
+        "source:ele": "Laserscan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9743492,
+          47.4810842
+        ]
+      },
+      "id": "node/1060193890"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1060286350",
+        "alt_name": "Schottmal",
+        "ele": "2139",
+        "name": "Schloßkopf",
+        "natural": "peak",
+        "ref:avf": "3900",
+        "wikidata": "Q21873251"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0243806,
+          47.4812326
+        ]
+      },
+      "id": "node/1060286350"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1161136429",
+        "ele": "2008",
+        "name": "Krottenkopf Ostgipfel",
+        "natural": "peak",
+        "source_ref": "http://www.flickr.com/photos/kogo59/5454886506/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1992896,
+          47.5445909
+        ]
+      },
+      "id": "node/1161136429"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1175453045",
+        "ele": "2121",
+        "name": "Lahnerkopf",
+        "name:de-AT": "Lehnerkopf",
+        "natural": "peak",
+        "prominence": "133",
+        "ref:avf": "1162",
+        "wikidata": "Q323562",
+        "wikipedia": "de:Lahnerkopf (Allgäuer Alpen)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4628248,
+          47.4291531
+        ]
+      },
+      "id": "node/1175453045"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1184709612",
+        "ele": "2119",
+        "natural": "peak",
+        "prominence": "35",
+        "wikidata": "Q133048350"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3851082,
+          47.3959029
+        ]
+      },
+      "id": "node/1184709612"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1391464505",
+        "alt_name": "Kragenköpfl",
+        "ele": "2147",
+        "name": "Bramasofenkopf",
+        "natural": "peak",
+        "note": "estimated from SRTM"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.041245,
+          47.5051969
+        ]
+      },
+      "id": "node/1391464505"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1490464439",
+        "alt_name": "Mindelheimer Köpfle",
+        "ele": "2208",
+        "name": "Hüttenkopf",
+        "natural": "peak",
+        "prominence": "44",
+        "ref:avf": "797",
+        "wikidata": "Q1936353",
+        "wikipedia": "de:Mindelheimer Köpfle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.192541,
+          47.295291
+        ]
+      },
+      "id": "node/1490464439"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1617914845",
+        "ele": "2356",
+        "name": "Vordere Schlichtenkarspitze",
+        "natural": "peak",
+        "wikidata": "Q21873245"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3987822,
+          47.4475351
+        ]
+      },
+      "id": "node/1617914845"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1621410586",
+        "ele": "2239",
+        "inscription": "Mittlerelinderspitze 2300",
+        "name": "Mittlere Linderspitze",
+        "natural": "peak",
+        "wikidata": "Q15849891",
+        "wikipedia": "de:Linderspitzen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.290907,
+          47.4254602
+        ]
+      },
+      "id": "node/1621410586"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1621410656",
+        "ele": "2303",
+        "name": "Gerberkreuz",
+        "natural": "peak",
+        "wikidata": "Q31555001"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2870608,
+          47.4270819
+        ]
+      },
+      "id": "node/1621410656"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1621410767",
+        "ele": "2102",
+        "name": "Schafreuter",
+        "natural": "peak",
+        "source": "aerial imagery;basemap.at",
+        "wikidata": "Q315887",
+        "wikipedia": "de:Schafreuter"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4876,
+          47.509013
+        ]
+      },
+      "id": "node/1621410767"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1621651564",
+        "ele": "2226",
+        "name": "Zwölferkopf",
+        "natural": "peak",
+        "source": "kompass.de",
+        "wikidata": "Q31555875"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.02611,
+          47.4464989
+        ]
+      },
+      "id": "node/1621651564"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1640199607",
+        "ele": "2100",
+        "name": "Schochen",
+        "natural": "peak",
+        "prominence": "97",
+        "ref:avf": "1310",
+        "wikidata": "Q597225",
+        "wikipedia": "de:Schochen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3605812,
+          47.3941679
+        ]
+      },
+      "id": "node/1640199607"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1643299324",
+        "ele": "2182",
+        "name": "Rotkopf Südgipfel",
+        "natural": "peak",
+        "prominence": "8",
+        "wikidata": "Q131881255"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3813838,
+          47.3897992
+        ]
+      },
+      "id": "node/1643299324"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1643299468",
+        "alt_name": "Rotkopf Mittelgipfel",
+        "ele": "2194",
+        "name": "Rotkopf",
+        "natural": "peak",
+        "prominence": "87",
+        "ref:avf": "1384",
+        "wikidata": "Q131881063"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3812708,
+          47.3910978
+        ]
+      },
+      "id": "node/1643299468"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1643299567",
+        "ele": "2188",
+        "name": "Rotkopf Nordgipfel",
+        "natural": "peak",
+        "prominence": "23",
+        "wikidata": "Q131880751"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3814938,
+          47.3919684
+        ]
+      },
+      "id": "node/1643299567"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1643304152",
+        "ele": "2011",
+        "natural": "peak",
+        "prominence": "25"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3898753,
+          47.4019374
+        ]
+      },
+      "id": "node/1643304152"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1676377698",
+        "ele": "2321",
+        "inscription": "Sulzleklammspitze 2323m",
+        "name": "Sulzleklammspitze",
+        "natural": "peak",
+        "wikidata": "Q31517989"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2926087,
+          47.4186732
+        ]
+      },
+      "id": "node/1676377698"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1833449059",
+        "ele": "2272",
+        "fixme": "elevation from internet (http://de.geoview.info/bergl,6939756)",
+        "name": "Bergl",
+        "natural": "peak",
+        "wikidata": "Q31555547"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0052221,
+          47.4238952
+        ]
+      },
+      "id": "node/1833449059"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1833449062",
+        "ele": "2628",
+        "name": "Blassenkopf",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0495134,
+          47.4209691
+        ]
+      },
+      "id": "node/1833449062"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1833449069",
+        "ele": "2514",
+        "name": "Großer Kirchturm",
+        "natural": "peak",
+        "wikidata": "Q31544024"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0306086,
+          47.4165238
+        ]
+      },
+      "id": "node/1833449069"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1833449075",
+        "ele": "2706",
+        "name": "Hochblassen",
+        "natural": "peak",
+        "wikidata": "Q870721"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0444402,
+          47.4223964
+        ]
+      },
+      "id": "node/1833449075"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1833449085",
+        "ele": "2288",
+        "name": "Hoher Gaif",
+        "natural": "peak",
+        "summit:cross": "yes",
+        "wikidata": "Q31539054"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0633797,
+          47.4223324
+        ]
+      },
+      "id": "node/1833449085"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1999392342",
+        "ele": "2192",
+        "name": "Rotwandlspitze",
+        "natural": "peak",
+        "summit:cross": "no",
+        "summit:register": "no",
+        "wikidata": "Q15273395",
+        "wikipedia": "de:Rotwandlspitze"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2882158,
+          47.4066196
+        ]
+      },
+      "id": "node/1999392342"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2061799676",
+        "ele": "2744",
+        "name": "Hochwanner",
+        "natural": "peak",
+        "old_name": "Kotbachspitze;Kothbachspitze",
+        "prominence": "699",
+        "source:old_name": "Franzisco-Josephinische Landesaufnahme;Franziszeischer Kataster",
+        "wikidata": "Q255743",
+        "wikimedia_commons": "Category:Hochwanner",
+        "wikipedia": "de:Hochwanner"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0553604,
+          47.3959556
+        ]
+      },
+      "id": "node/2061799676"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2076476475",
+        "ele": "2010",
+        "name": "Gumpenkarspitze",
+        "natural": "peak",
+        "source_ref": "http://www.flickr.com/photos/kogo59/8290882081/",
+        "summit:cross": "yes",
+        "wikidata": "Q15111956"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3610059,
+          47.4920061
+        ]
+      },
+      "id": "node/2076476475"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2239112405",
+        "ele": "464,7",
+        "name": "Wernagel",
+        "natural": "peak",
+        "wikidata": "Q30613565"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8612193,
+          49.2492922
+        ]
+      },
+      "id": "node/2239112405"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2382132229",
+        "ele": "352,3",
+        "name": "Schellenberg",
+        "natural": "peak",
+        "tourism": "viewpoint",
+        "wikidata": "Q31332314"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2209906,
+          50.1019678
+        ]
+      },
+      "id": "node/2382132229"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2418167369",
+        "ele": "2174",
+        "ele:NN": "2174",
+        "name": "Soiernschneid",
+        "natural": "peak",
+        "wikidata": "Q31556117"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3424194,
+          47.4816121
+        ]
+      },
+      "id": "node/2418167369"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2419126850",
+        "ele": "2110",
+        "name": "Krapfenkarspitze",
+        "natural": "peak",
+        "source_ref": "http://www.flickr.com/photos/kogo59/5413924577/",
+        "summit:cross": "yes",
+        "summit:register": "yes",
+        "wikidata": "Q15057166"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3690903,
+          47.4935477
+        ]
+      },
+      "id": "node/2419126850"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2428070343",
+        "ele": "2234",
+        "fixme": "Lage",
+        "name": "Großes Mühlsturzhorn",
+        "natural": "peak",
+        "wikidata": "Q17250350"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.7978323,
+          47.59058
+        ]
+      },
+      "id": "node/2428070343"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2428070344",
+        "ele": "2141",
+        "fixme": "Lage",
+        "name": "Kleines Mühlsturzhorn",
+        "natural": "peak",
+        "wikidata": "Q21693450"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8015976,
+          47.5913873
+        ]
+      },
+      "id": "node/2428070344"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2428071182",
+        "ele": "2015",
+        "fixme": "Lage",
+        "name": "Knittelhorn",
+        "natural": "peak",
+        "source": "geoimage.at"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8098121,
+          47.5952828
+        ]
+      },
+      "id": "node/2428071182"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2428071183",
+        "ele": "2096",
+        "fixme": "Lage",
+        "name": "Großes Grundübelhorn",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8060459,
+          47.5925701
+        ]
+      },
+      "id": "node/2428071183"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2428276691",
+        "ele": "2084",
+        "fixme": "Lage",
+        "name": "Kleines Grundübelhorn",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8082407,
+          47.5937287
+        ]
+      },
+      "id": "node/2428276691"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2441923393",
+        "ele": "2150",
+        "name": "Höllentorkopf",
+        "natural": "peak",
+        "wikidata": "Q1273885"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.047341,
+          47.4381128
+        ]
+      },
+      "id": "node/2441923393"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2445853408",
+        "ele": "2389",
+        "name": "Riffelköpfe",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0001335,
+          47.4296521
+        ]
+      },
+      "id": "node/2445853408"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2489067962",
+        "ele": "2283",
+        "name": "Kleines Teufelshorn",
+        "natural": "peak",
+        "ref:avf": "3040",
+        "summit:cross": "yes",
+        "wikidata": "Q21873203"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0315637,
+          47.4868317
+        ]
+      },
+      "id": "node/2489067962"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2496261339",
+        "ele": "2173",
+        "name": "Vorderer Kragenkopf",
+        "natural": "peak",
+        "source": "estimated from elevation lines"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0460473,
+          47.5205032
+        ]
+      },
+      "id": "node/2496261339"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2496261392",
+        "ele": "2523",
+        "name": "Hocheisspitze",
+        "natural": "peak",
+        "ref:avf": "2240",
+        "wikidata": "Q871271",
+        "wikipedia": "de:Hocheisspitze"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.84264,
+          47.5468447
+        ]
+      },
+      "id": "node/2496261392"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2498250593",
+        "ele": "2578.4",
+        "name": "Funtenseetauern",
+        "natural": "peak",
+        "ref:avf": "3350",
+        "summit:cross": "yes",
+        "wikidata": "Q316715",
+        "wikipedia": "de:Funtenseetauern"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9767787,
+          47.4850145
+        ]
+      },
+      "id": "node/2498250593"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2498250705",
+        "ele": "2362",
+        "name": "Großes Teufelshorn",
+        "natural": "peak",
+        "ref:avf": "3030",
+        "summit:cross": "yes",
+        "wikidata": "Q320734"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0362619,
+          47.4891572
+        ]
+      },
+      "id": "node/2498250705"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2506368453",
+        "ele": "2461",
+        "name": "Scharnitzspitze",
+        "natural": "peak",
+        "source": "survey",
+        "wikidata": "Q21865424",
+        "wikipedia": "de:Scharnitzspitze"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1118219,
+          47.3957891
+        ]
+      },
+      "id": "node/2506368453"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2526645267",
+        "ele": "2046",
+        "name": "Kareck",
+        "natural": "peak",
+        "wikidata": "Q31536162"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1798299,
+          47.54834
+        ]
+      },
+      "id": "node/2526645267"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2622035954",
+        "ele": "2576",
+        "name": "Öfnerspitze",
+        "natural": "peak",
+        "prominence": "137",
+        "ref:avf": "1573",
+        "wikidata": "Q281277",
+        "wikipedia": "de:Öfnerspitze"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3487798,
+          47.3175062
+        ]
+      },
+      "id": "node/2622035954"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2837928504",
+        "ele": "517,1",
+        "name": "Hartenberg",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.8272778,
+          51.7900833
+        ]
+      },
+      "id": "node/2837928504"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2875158437",
+        "ele": "2031",
+        "name": "Gamskarköpfl",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9205349,
+          47.5089561
+        ]
+      },
+      "id": "node/2875158437"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2934579315",
+        "ele": "2513",
+        "name": "Ofentalhörndl",
+        "natural": "peak",
+        "wikipedia": "de:Hochkalter#Ofentalhörnl"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8614196,
+          47.5625765
+        ]
+      },
+      "id": "node/2934579315"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2980105509",
+        "ele": "2195",
+        "name": "Karlkopf",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8221541,
+          47.5460878
+        ]
+      },
+      "id": "node/2980105509"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2989185125",
+        "ele": "2026",
+        "name": "Steinberg",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8762366,
+          47.5873106
+        ]
+      },
+      "id": "node/2989185125"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3112764094",
+        "ele": "2014",
+        "name": "Oberreintalturm",
+        "natural": "peak",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.104952,
+          47.4028245
+        ]
+      },
+      "id": "node/3112764094"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3116985621",
+        "alt_name": "Zweites Watzmannkind",
+        "ele": "2232",
+        "fixme": "exakt position",
+        "name": "2. Watzmannkind",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9353854,
+          47.5531398
+        ]
+      },
+      "id": "node/3116985621"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3116985622",
+        "ele": "2015",
+        "ele:source": "gps",
+        "name": "Lablkopf",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9433972,
+          47.5542784
+        ]
+      },
+      "id": "node/3116985622"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3186071317",
+        "ele": "2522",
+        "man_made": "cross",
+        "name": "Hoher Göll",
+        "natural": "peak",
+        "prominence": "789",
+        "ref:avf": "2690",
+        "summit:cross": "yes",
+        "wikidata": "Q549503",
+        "wikimedia_commons": "File:Hoher Göll - Gipfelkreuz.jpg",
+        "wikipedia": "de:Hoher Göll"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0671406,
+          47.5939262
+        ]
+      },
+      "id": "node/3186071317"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3237548037",
+        "ele": "2286",
+        "name": "Stadelhorn",
+        "natural": "peak",
+        "prominence": "1121",
+        "wikidata": "Q472226"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.7953337,
+          47.5931666
+        ]
+      },
+      "id": "node/3237548037"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3403866805",
+        "ele": "2050",
+        "name": "Ledererkopf",
+        "natural": "peak",
+        "source": "Skelettskizze Funtenseetauern ca. 1920"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9610979,
+          47.485745
+        ]
+      },
+      "id": "node/3403866805"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3634965710",
+        "ele": "2622",
+        "name": "Partenkirchner Dreitorspitze, Mittelgipfel",
+        "natural": "peak",
+        "summit:cross": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1239416,
+          47.4081217
+        ]
+      },
+      "id": "node/3634965710"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3634965711",
+        "ele": "2626",
+        "name": "Partenkirchner Dreitorspitze, Nordostgipfel",
+        "natural": "peak",
+        "summit:cross": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1256736,
+          47.4091248
+        ]
+      },
+      "id": "node/3634965711"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3634965712",
+        "ele": "2444",
+        "name": "Östliche Törlspitze",
+        "natural": "peak",
+        "summit:cross": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1353612,
+          47.4127386
+        ]
+      },
+      "id": "node/3634965712"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3673190039",
+        "alt_name": "Höfats Südostgipfel",
+        "ele": "2258",
+        "name": "Höfats Ostgipfel",
+        "name:en": "Höfats eastern summit",
+        "natural": "peak",
+        "prominence": "53",
+        "ref:avf": "1345",
+        "wikidata": "Q124422101"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.350553,
+          47.3661458
+        ]
+      },
+      "id": "node/3673190039"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3678383616",
+        "alt_name": "Pfannhölzerturm",
+        "ele": "2053",
+        "name": "Kirchl",
+        "natural": "peak",
+        "prominence": "32",
+        "ref:avf": "1290",
+        "wikidata": "Q131316674"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3934104,
+          47.4474242
+        ]
+      },
+      "id": "node/3678383616"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3727777415",
+        "ele": "2047",
+        "name": "Pflughörndl",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0527859,
+          47.596405
+        ]
+      },
+      "id": "node/3727777415"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3743153796",
+        "alt_name": "Bschießer",
+        "ele": "2000",
+        "name": "B'schießer",
+        "name:at": "Bscheißer",
+        "name:de": "B'schießer",
+        "natural": "peak",
+        "prominence": "107",
+        "ref:avf": "1122",
+        "summit:cross": "yes",
+        "wikidata": "Q323910",
+        "wikimedia_commons": "Category:Bschiesser",
+        "wikipedia": "de:Bschießer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.440407,
+          47.4879802
+        ]
+      },
+      "id": "node/3743153796"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3777140321",
+        "ele": "2369",
+        "name": "Frauenalplspitz",
+        "natural": "peak",
+        "summit:cross": "no",
+        "wikidata": "Q31555531"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1280779,
+          47.4150815
+        ]
+      },
+      "id": "node/3777140321"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3777140322",
+        "ele": "2351.5",
+        "name": "Frauenalplkopf",
+        "natural": "peak",
+        "summit:cross": "yes",
+        "wikidata": "Q31555471"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1277051,
+          47.4166877
+        ]
+      },
+      "id": "node/3777140322"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4059510444",
+        "alt_name": "Signalkopf",
+        "ele": "2486",
+        "fixme": "position estimated",
+        "name": "Signalkuppe",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1264927,
+          47.410641
+        ]
+      },
+      "id": "node/4059510444"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4059510445",
+        "ele": "2507",
+        "fixme": "position estimated",
+        "name": "Bayerländerturm",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1265424,
+          47.4099632
+        ]
+      },
+      "id": "node/4059510445"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4256065941",
+        "ele": "2106.7",
+        "name": "Schossenkopf",
+        "natural": "peak",
+        "note": "Höhe: Hist. Karte ca.1900",
+        "wikidata": "Q31324123"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0353451,
+          47.5176763
+        ]
+      },
+      "id": "node/4256065941"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4270248273",
+        "ele": "2054.5",
+        "name": "Grauer Kopf",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0289044,
+          47.5173821
+        ]
+      },
+      "id": "node/4270248273"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4687406836",
+        "ele": "2012",
+        "name": "Kopf des Hunds",
+        "natural": "peak",
+        "summit:cross": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8755931,
+          47.5737113
+        ]
+      },
+      "id": "node/4687406836"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4689311473",
+        "ele": "2495",
+        "name": "Hocheiskopf",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8384593,
+          47.5455209
+        ]
+      },
+      "id": "node/4689311473"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4938279910",
+        "ele": "2368",
+        "name": "Kleiner Kirchturm",
+        "natural": "peak",
+        "wikidata": "Q31534553"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0308341,
+          47.414342
+        ]
+      },
+      "id": "node/4938279910"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4939234476",
+        "ele": "2054",
+        "natural": "peak",
+        "prominence": "4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3462403,
+          47.3433273
+        ]
+      },
+      "id": "node/4939234476"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4944025921",
+        "ele": "2355",
+        "name": "Jungfernkarkopf",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0724993,
+          47.4017931
+        ]
+      },
+      "id": "node/4944025921"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4997627646",
+        "ele": "2003",
+        "name": "Falkenberg",
+        "natural": "peak",
+        "prominence": "22",
+        "summit:cross": "yes",
+        "wikidata": "Q130525275"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.35144,
+          47.36145
+        ]
+      },
+      "id": "node/4997627646"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4997627655",
+        "alt_name": "Höfats Dritter Gipfel",
+        "ele": "2257",
+        "name": "Höfats Mittelgipfel",
+        "name:en": "Höfats central summit",
+        "natural": "peak",
+        "prominence": "21",
+        "ref:avf": "1345",
+        "wikidata": "Q124422109"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3502597,
+          47.3664231
+        ]
+      },
+      "id": "node/4997627655"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5034081693",
+        "ele": "2048",
+        "name": "Feldernkreuz",
+        "natural": "peak",
+        "wikidata": "Q15056103"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3287726,
+          47.491995
+        ]
+      },
+      "id": "node/5034081693"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5079866695",
+        "ele": "2340",
+        "name": "Hohes Brett",
+        "natural": "peak",
+        "note": "ele was 2331.8",
+        "ref:avf": "2720",
+        "summit:cross": "yes",
+        "wikidata": "Q1623963",
+        "wikipedia": "de:Hohes Brett"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0496897,
+          47.5843857
+        ]
+      },
+      "id": "node/5079866695"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5732788043",
+        "ele": "2093",
+        "natural": "peak",
+        "prominence": "43",
+        "wikidata": "Q138028807"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2276888,
+          47.3126361
+        ]
+      },
+      "id": "node/5732788043"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5793904554",
+        "ele": "2016",
+        "name": "Toreck",
+        "natural": "peak",
+        "prominence": "17",
+        "wikidata": "Q8532420",
+        "wikipedia": "en:Toreck"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.12894,
+          47.37649
+        ]
+      },
+      "id": "node/5793904554"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5817402896",
+        "ele": "2209",
+        "ele:NN": "2209",
+        "name": "Reißende Lahnspitz",
+        "natural": "peak",
+        "wikidata": "Q31526445"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3443547,
+          47.4802879
+        ]
+      },
+      "id": "node/5817402896"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5926552247",
+        "ele": "2304",
+        "name": "Drei Scharten",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1484033,
+          47.4177816
+        ]
+      },
+      "id": "node/5926552247"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6152393364",
+        "ele": "2021",
+        "name": "Sattelköpfle",
+        "natural": "peak",
+        "prominence": "31",
+        "summit:cross": "yes",
+        "summit:register": "yes",
+        "wikidata": "Q130532433"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4349889,
+          47.4134901
+        ]
+      },
+      "id": "node/6152393364"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6530414814",
+        "ele": "2338",
+        "name": "Kleiner Hundsstallkopf",
+        "natural": "peak",
+        "wikidata": "Q31555357"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0830808,
+          47.4023869
+        ]
+      },
+      "id": "node/6530414814"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6530414816",
+        "ele": "2276",
+        "name": "Hirschbichlkopf",
+        "natural": "peak",
+        "wikidata": "Q31555502"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.140303,
+          47.4172061
+        ]
+      },
+      "id": "node/6530414816"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6530414818",
+        "ele": "2151",
+        "name": "Untere Wettersteinspitze",
+        "natural": "peak",
+        "wikidata": "Q2566053",
+        "wikipedia": "de:Wettersteinspitzen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1991612,
+          47.4280299
+        ]
+      },
+      "id": "node/6530414818"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6619156558",
+        "ele": "2004",
+        "name": "Predigtstuhl",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8099509,
+          47.6049327
+        ]
+      },
+      "id": "node/6619156558"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6631990152",
+        "ele": "2440",
+        "name": "Teufelskopf",
+        "natural": "peak",
+        "wikidata": "Q21878034"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1002872,
+          47.3943412
+        ]
+      },
+      "id": "node/6631990152"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6690737689",
+        "alt_name": "Kirchlspitze",
+        "ele": "2301",
+        "name": "Kirchlespitze",
+        "natural": "peak",
+        "wikidata": "Q21879083"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2928413,
+          47.4155275
+        ]
+      },
+      "id": "node/6690737689"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7555541730",
+        "ele": "434,2",
+        "name": "Karnberg",
+        "natural": "peak",
+        "wikidata": "Q30630697"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2010721,
+          51.169131
+        ]
+      },
+      "id": "node/7555541730"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7555541731",
+        "ele": "455,2",
+        "name": "Konstein",
+        "natural": "peak",
+        "wikidata": "Q31333267"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2109673,
+          51.1840725
+        ]
+      },
+      "id": "node/7555541731"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8462457547",
+        "alt_name": "Laufbichlkirche; Laufbichler Kirche",
+        "ele": "2042",
+        "name": "Laufbichelkirche",
+        "natural": "peak",
+        "prominence": "79",
+        "ref:avf": "1295",
+        "wikidata": "Q131362662"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.38439,
+          47.43336
+        ]
+      },
+      "id": "node/8462457547"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8462457549",
+        "ele": "2088",
+        "name": "Auf dem Falken",
+        "natural": "peak",
+        "prominence": "21",
+        "wikidata": "Q130483332"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3909421,
+          47.445047
+        ]
+      },
+      "id": "node/8462457549"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9492945142",
+        "ele": "~40",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6662574,
+          54.1221457
+        ]
+      },
+      "id": "node/9492945142"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9588020892",
+        "ele": "2264",
+        "name": "Schafberg",
+        "natural": "peak",
+        "prominence": "28",
+        "wikidata": "Q130554145"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.32892,
+          47.32632
+        ]
+      },
+      "id": "node/9588020892"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10000691911",
+        "ele": "~455",
+        "name": "Steinpöhl",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1237178,
+          50.5927366
+        ]
+      },
+      "id": "node/10000691911"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10038439621",
+        "ele": "~390",
+        "name": "Wachberg",
+        "natural": "peak",
+        "wikidata": "Q31292869"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.186015,
+          50.7245233
+        ]
+      },
+      "id": "node/10038439621"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10072820095",
+        "ele": "~410",
+        "name": "Wachthübel",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1316109,
+          50.5961407
+        ]
+      },
+      "id": "node/10072820095"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10072846655",
+        "ele": "~365",
+        "name": "Röschnitzberg",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1526961,
+          50.6902164
+        ]
+      },
+      "id": "node/10072846655"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10087933719",
+        "ele": "2052",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9161796,
+          47.5095729
+        ]
+      },
+      "id": "node/10087933719"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10764752632",
+        "ele": "57,9",
+        "name": "Galgenberg",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.8811933,
+          53.1689526
+        ]
+      },
+      "id": "node/10764752632"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10797144738",
+        "ele": "85,3",
+        "name": "Kienberg",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.8930173,
+          53.1707705
+        ]
+      },
+      "id": "node/10797144738"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10797148994",
+        "ele": "58,1",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.888725,
+          53.1746796
+        ]
+      },
+      "id": "node/10797148994"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10816938648",
+        "ele": "83,9",
+        "name": "Reiherberg",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.9043933,
+          53.1886932
+        ]
+      },
+      "id": "node/10816938648"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10830668673",
+        "ele": "297,9",
+        "name": "Leutenhäuser Berg",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.4778776,
+          51.4408009
+        ]
+      },
+      "id": "node/10830668673"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10860510758",
+        "ele": "320,2",
+        "name": "Buchenberg",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.506627,
+          51.5609175
+        ]
+      },
+      "id": "node/10860510758"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10860510759",
+        "ele": "318,2",
+        "name": "Mittelberg",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4949543,
+          51.563231
+        ]
+      },
+      "id": "node/10860510759"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10895915827",
+        "ele": "223,8",
+        "name": "Pfingstberg",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2024848,
+          51.5018872
+        ]
+      },
+      "id": "node/10895915827"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10895915829",
+        "ele": "257,9",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2111108,
+          51.5026062
+        ]
+      },
+      "id": "node/10895915829"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10929975559",
+        "ele": "282,1",
+        "image": "https://commons.wikimedia.org/wiki/File:Tettelwarte.jpg",
+        "name": "Tettelwarte",
+        "natural": "peak",
+        "wikidata": "Q31299740"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2859986,
+          51.535456
+        ]
+      },
+      "id": "node/10929975559"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11037331433",
+        "ele": "282,6",
+        "name": "Schneeberg",
+        "natural": "peak",
+        "wikidata": "Q31325850"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4453309,
+          51.9837632
+        ]
+      },
+      "id": "node/11037331433"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11037331437",
+        "ele": "288,4",
+        "name": "Barley",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.426366,
+          51.9826738
+        ]
+      },
+      "id": "node/11037331437"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11037331438",
+        "ele": "284,4",
+        "name": "Glockenberg",
+        "natural": "peak",
+        "wikidata": "Q30678663"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4299924,
+          51.9787675
+        ]
+      },
+      "id": "node/11037331438"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11037331439",
+        "ele": "303,4",
+        "name": "Querberg",
+        "natural": "peak",
+        "wikidata": "Q31289951"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4346851,
+          51.9821946
+        ]
+      },
+      "id": "node/11037331439"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11037331440",
+        "ele": "309,1",
+        "name": "Fischerköpfe",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4371362,
+          51.9689349
+        ]
+      },
+      "id": "node/11037331440"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11039943563",
+        "ele": "228,1",
+        "name": "Kleiner Vorberg",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3453402,
+          52.0658705
+        ]
+      },
+      "id": "node/11039943563"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11039943564",
+        "ele": "241,1",
+        "name": "Burgberg",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2882351,
+          52.1216334
+        ]
+      },
+      "id": "node/11039943564"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11286976214",
+        "alt_name": "Schänzlespitze",
+        "ele": "2052",
+        "name": "Schänzlespitz",
+        "natural": "peak",
+        "prominence": "113",
+        "ref:avf": "1165",
+        "wikidata": "Q323571",
+        "wikipedia": "de:Schänzlespitz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4563733,
+          47.4232331
+        ]
+      },
+      "id": "node/11286976214"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11287088673",
+        "ele": "2176",
+        "natural": "peak",
+        "prominence": "7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3837599,
+          47.4446673
+        ]
+      },
+      "id": "node/11287088673"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11373913264",
+        "ele": "2315",
+        "name": "Mittlere Balkenspitze",
+        "name:en": "Central Balkenspitze",
+        "natural": "peak",
+        "prominence": "18",
+        "wikidata": "Q130532207"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.431625,
+          47.386593
+        ]
+      },
+      "id": "node/11373913264"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11373959481",
+        "ele": "2029",
+        "natural": "peak",
+        "prominence": "22"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3852797,
+          47.378056
+        ]
+      },
+      "id": "node/11373959481"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11465627795",
+        "ele": "2000",
+        "natural": "peak",
+        "prominence": "10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3302779,
+          47.4336118
+        ]
+      },
+      "id": "node/11465627795"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11465627796",
+        "ele": "2166",
+        "natural": "peak",
+        "prominence": "21"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3365379,
+          47.4220056
+        ]
+      },
+      "id": "node/11465627796"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11465627813",
+        "ele": "2014",
+        "natural": "peak",
+        "prominence": "7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3305883,
+          47.4355581
+        ]
+      },
+      "id": "node/11465627813"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11465675582",
+        "ele": "2219",
+        "natural": "peak",
+        "prominence": "9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3768028,
+          47.4382484
+        ]
+      },
+      "id": "node/11465675582"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11465675588",
+        "ele": "2154",
+        "natural": "peak",
+        "prominence": "19",
+        "wikidata": "Q132717802"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.369728,
+          47.4344621
+        ]
+      },
+      "id": "node/11465675588"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11465675594",
+        "ele": "2134",
+        "natural": "peak",
+        "prominence": "45",
+        "wikidata": "Q132717803"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3641422,
+          47.4293292
+        ]
+      },
+      "id": "node/11465675594"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11465675598",
+        "ele": "2191",
+        "natural": "peak",
+        "prominence": "15"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3595229,
+          47.4254503
+        ]
+      },
+      "id": "node/11465675598"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11465675600",
+        "ele": "2182",
+        "natural": "peak",
+        "prominence": "14"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3579259,
+          47.4246691
+        ]
+      },
+      "id": "node/11465675600"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11465675603",
+        "ele": "2197",
+        "natural": "peak",
+        "prominence": "18"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.355169,
+          47.4247825
+        ]
+      },
+      "id": "node/11465675603"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11465675605",
+        "ele": "2198",
+        "natural": "peak",
+        "prominence": "14"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3534157,
+          47.4242288
+        ]
+      },
+      "id": "node/11465675605"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11465675612",
+        "ele": "2214",
+        "natural": "peak",
+        "prominence": "33"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3450068,
+          47.4222228
+        ]
+      },
+      "id": "node/11465675612"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11465675625",
+        "ele": "2074",
+        "natural": "peak",
+        "prominence": "4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3348527,
+          47.420955
+        ]
+      },
+      "id": "node/11465675625"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11466455839",
+        "ele": "2032",
+        "natural": "peak",
+        "prominence": "16"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.46286,
+          47.43306
+        ]
+      },
+      "id": "node/11466455839"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11466458097",
+        "ele": "2379",
+        "natural": "peak",
+        "prominence": "119",
+        "wikidata": "Q137971496"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3566087,
+          47.333585
+        ]
+      },
+      "id": "node/11466458097"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11466458098",
+        "ele": "2336",
+        "natural": "peak",
+        "prominence": "13"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3537455,
+          47.3303573
+        ]
+      },
+      "id": "node/11466458098"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11466458115",
+        "ele": "2393",
+        "natural": "peak",
+        "prominence": "17"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3465729,
+          47.3152446
+        ]
+      },
+      "id": "node/11466458115"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11483815963",
+        "ele": "2111",
+        "name": "Himmelhorn",
+        "natural": "peak",
+        "prominence": "25",
+        "ref:avf": "1329",
+        "wikidata": "Q831806",
+        "wikipedia": "de:Himmelhorn"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3761505,
+          47.381963
+        ]
+      },
+      "id": "node/11483815963"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11565214801",
+        "ele": "2291",
+        "natural": "peak",
+        "prominence": "10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.209781,
+          47.305908
+        ]
+      },
+      "id": "node/11565214801"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11565214806",
+        "ele": "2289",
+        "name": "Plattaberg",
+        "natural": "peak",
+        "prominence": "17",
+        "wikidata": "Q138390655"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.212494,
+          47.311244
+        ]
+      },
+      "id": "node/11565214806"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11577144878",
+        "ele": "2023",
+        "natural": "peak",
+        "prominence": "40",
+        "wikidata": "Q132798748"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.173189,
+          47.277664
+        ]
+      },
+      "id": "node/11577144878"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11581413903",
+        "ele": "2081",
+        "natural": "peak",
+        "prominence": "3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.1016844,
+          47.3575656
+        ]
+      },
+      "id": "node/11581413903"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11583919705",
+        "alt_name": "Höfats Nordwestgipfel",
+        "ele": "2257",
+        "name": "Höfats Westgipfel",
+        "name:en": "Höfats western summit",
+        "natural": "peak",
+        "prominence": "20",
+        "ref:avf": "1345",
+        "wikidata": "Q124422161"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.34845,
+          47.36712
+        ]
+      },
+      "id": "node/11583919705"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11609693940",
+        "ele": "2330",
+        "natural": "peak",
+        "prominence": "10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.249325,
+          47.279311
+        ]
+      },
+      "id": "node/11609693940"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11642248314",
+        "ele": "2172",
+        "name": "Gratkopf",
+        "natural": "peak",
+        "prominence": "30",
+        "wikidata": "Q124617402"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3730985,
+          47.4360334
+        ]
+      },
+      "id": "node/11642248314"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11646574663",
+        "ele": "2102",
+        "name": "Alpkopf",
+        "natural": "peak",
+        "prominence": "10",
+        "wikidata": "Q2651319",
+        "wikipedia": "de:Alpkopf (Allgäu)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2410107,
+          47.3196564
+        ]
+      },
+      "id": "node/11646574663"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11926109175",
+        "ele": "2648",
+        "name": "Teufelsgrat",
+        "natural": "peak",
+        "wikidata": "Q9357673"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0837236,
+          47.3958358
+        ]
+      },
+      "id": "node/11926109175"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12057097909",
+        "ele": "381 m",
+        "name": "Bockspiel",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2413481,
+          49.6436837
+        ]
+      },
+      "id": "node/12057097909"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12097971759",
+        "ele": "2000",
+        "fixme": "genaue Höhe?",
+        "name": "Unterer Berggeistturm",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1117622,
+          47.4058027
+        ]
+      },
+      "id": "node/12097971759"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12097971760",
+        "ele": "2371",
+        "name": "Oberreintaldom",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1151897,
+          47.4060619
+        ]
+      },
+      "id": "node/12097971760"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12097971761",
+        "ele": "2135",
+        "name": "Unterer Schüsselkarturm",
+        "natural": "peak",
+        "source:ele": "Bayern-Atlas"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1109756,
+          47.4001811
+        ]
+      },
+      "id": "node/12097971761"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12250987733",
+        "ele": "2270",
+        "name": "Nördliche Balkenspitze",
+        "name:en": "Northern Balkenspitze",
+        "natural": "peak",
+        "prominence": "32",
+        "wikidata": "Q130532194"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4313449,
+          47.3875081
+        ]
+      },
+      "id": "node/12250987733"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12262806996",
+        "ele": "2551",
+        "name": "Krottenspitze",
+        "natural": "peak",
+        "prominence": "79",
+        "ref:avf": "1579",
+        "wikidata": "Q1790064",
+        "wikipedia": "de:Krottenspitze"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3448279,
+          47.3197905
+        ]
+      },
+      "id": "node/12262806996"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12262824003",
+        "ele": "2088",
+        "name": "Krummenstein",
+        "natural": "peak",
+        "prominence": "29",
+        "ref:avf": "1582A",
+        "wikidata": "Q31567300"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3217,
+          47.32936
+        ]
+      },
+      "id": "node/12262824003"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12276873913",
+        "ele": "2005",
+        "natural": "peak",
+        "prominence": "22"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3503549,
+          47.4138914
+        ]
+      },
+      "id": "node/12276873913"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12279635437",
+        "ele": "2130",
+        "natural": "peak",
+        "prominence": "7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2245409,
+          47.3143669
+        ]
+      },
+      "id": "node/12279635437"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12282062653",
+        "ele": "2215",
+        "name": "Saubuckelkopf",
+        "natural": "peak",
+        "prominence": "28",
+        "ref:avf": "789",
+        "wikidata": "Q31555097"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.22046,
+          47.31423
+        ]
+      },
+      "id": "node/12282062653"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12329300131",
+        "ele": "2416",
+        "name": "Östlicher Berg der guten Hoffnung",
+        "natural": "peak",
+        "prominence": "44",
+        "ref:avf": "877",
+        "wikidata": "Q131139370"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2873048,
+          47.2977875
+        ]
+      },
+      "id": "node/12329300131"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12332290584",
+        "ele": "2072",
+        "natural": "peak",
+        "prominence": "8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.34391,
+          47.32612
+        ]
+      },
+      "id": "node/12332290584"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12368159476",
+        "ele": "2131",
+        "name": "Auf dem Hohen Bichel",
+        "natural": "peak",
+        "prominence": "18",
+        "wikidata": "Q135920426"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.38011,
+          47.43878
+        ]
+      },
+      "id": "node/12368159476"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12386624976",
+        "ele": "2273",
+        "name": "Großer Daumen Ostgipfel",
+        "natural": "peak",
+        "prominence": "23",
+        "ref:avf": "1269",
+        "wikidata": "Q131872444"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.38055,
+          47.44237
+        ]
+      },
+      "id": "node/12386624976"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12386962675",
+        "ele": "2206",
+        "name": "Östlicher Wengenkopf",
+        "name:en": "Eastern Wengenkopf",
+        "natural": "peak",
+        "prominence": "63",
+        "ref:avf": "1264",
+        "wikidata": "Q138858064",
+        "wikipedia": "de:Östlicher Wengenkopf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3606828,
+          47.4262022
+        ]
+      },
+      "id": "node/12386962675"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12391651549",
+        "ele": "2530",
+        "natural": "peak",
+        "prominence": "33",
+        "wikidata": "Q138837818"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.276966,
+          47.288035
+        ]
+      },
+      "id": "node/12391651549"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12401676183",
+        "ele": "2029",
+        "name": "Sonnenberg",
+        "natural": "peak",
+        "prominence": "65",
+        "wikidata": "Q124653610"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.1262,
+          47.37615
+        ]
+      },
+      "id": "node/12401676183"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12423085152",
+        "ele": "2035",
+        "natural": "peak",
+        "prominence": "10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.1814553,
+          47.2808885
+        ]
+      },
+      "id": "node/12423085152"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12445118820",
+        "ele": "2270",
+        "natural": "peak",
+        "prominence": "34",
+        "wikidata": "Q132717984"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2967214,
+          47.309267
+        ]
+      },
+      "id": "node/12445118820"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12468970499",
+        "ele": "2403",
+        "name": "Höhlenkopf",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0615952,
+          47.400017
+        ]
+      },
+      "id": "node/12468970499"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12488618087",
+        "ele": "2782",
+        "natural": "peak",
+        "source:ele": "Laserscan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9710116,
+          47.4165622
+        ]
+      },
+      "id": "node/12488618087"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12592952990",
+        "ele": "2041",
+        "natural": "peak",
+        "prominence": "10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.09723,
+          47.360784
+        ]
+      },
+      "id": "node/12592952990"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12592952992",
+        "ele": "2066",
+        "natural": "peak",
+        "prominence": "55",
+        "wikidata": "Q132452576"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.097628,
+          47.359875
+        ]
+      },
+      "id": "node/12592952992"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12612920655",
+        "ele": "2165",
+        "natural": "peak",
+        "prominence": "36",
+        "wikidata": "Q138029482"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2386898,
+          47.3230616
+        ]
+      },
+      "id": "node/12612920655"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12633674310",
+        "ele": "2014",
+        "natural": "peak",
+        "prominence": "10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3655591,
+          47.3941728
+        ]
+      },
+      "id": "node/12633674310"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12644039375",
+        "ele": "2223",
+        "natural": "peak",
+        "prominence": "35",
+        "wikidata": "Q138865569"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4183788,
+          47.3867663
+        ]
+      },
+      "id": "node/12644039375"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12771644292",
+        "ele": "66,1",
+        "name": "Huderberg",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4815297,
+          52.4616974
+        ]
+      },
+      "id": "node/12771644292"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12817321074",
+        "ele": "2625",
+        "natural": "peak",
+        "note": "in der Topo25 ist hier die Große Riffelwandspitze, in der Topo50 ist sie weiter nordöstlich (fast gleich hoch)",
+        "source:ele": "Bayern-Atlas"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9907164,
+          47.4266791
+        ]
+      },
+      "id": "node/12817321074"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12992119562",
+        "ele": "509,6",
+        "name": "Hohe Bahn",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0396611,
+          51.2442957
+        ]
+      },
+      "id": "node/12992119562"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13114822703",
+        "ele": "2191",
+        "natural": "peak",
+        "prominence": "19"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3855562,
+          47.4461109
+        ]
+      },
+      "id": "node/13114822703"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13118817067",
+        "ele": "430m",
+        "name": "Hanelberg",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.694673,
+          48.9323899
+        ]
+      },
+      "id": "node/13118817067"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13118817068",
+        "ele": "429m",
+        "name": "Broselberg",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6911853,
+          48.9355828
+        ]
+      },
+      "id": "node/13118817068"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13160041419",
+        "alt_name": "Ammergauer Kreuzspitze, Ammergauer Kreuzspitz",
+        "ele": "2184",
+        "name": "Kreuzspitze",
+        "natural": "peak",
+        "note": "do not move POI as it is precisely at WGS84 UTM 32T E 44375 N 5265462 as indicated on a plate",
+        "prominence": "1182",
+        "wikidata": "Q279725",
+        "wikipedia": "de:Kreuzspitze (Ammergauer Alpen)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.917987,
+          47.52654
+        ]
+      },
+      "id": "node/13160041419"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13321920306",
+        "ele": "551,2",
+        "name": "Erzberg",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.9953654,
+          50.4441149
+        ]
+      },
+      "id": "node/13321920306"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13531433414",
+        "ele": "2211",
+        "natural": "peak",
+        "prominence": "11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2200677,
+          47.3137576
+        ]
+      },
+      "id": "node/13531433414"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13533670357",
+        "ele": "2290",
+        "natural": "peak",
+        "prominence": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3543707,
+          47.338608
+        ]
+      },
+      "id": "node/13533670357"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13618705943",
+        "ele": "Gallfenster",
+        "name": "504.9",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9295166,
+          50.6800575
+        ]
+      },
+      "id": "node/13618705943"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13659513091",
+        "ele": "54 m",
+        "name": "Höchste Erhebung im Kreis Nordfriesland 54 m NHN",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2317308,
+          54.46857
+        ]
+      },
+      "id": "node/13659513091"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13694829658",
+        "ele": "53,5 m",
+        "name": "Sandesberg",
+        "natural": "peak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2583745,
+          54.462594
+        ]
+      },
+      "id": "node/13694829658"
+    }
+  ]
+}

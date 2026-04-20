@@ -3,6 +3,7 @@ import type { PageServerLoad } from './$types';
 import blogs from '$lib/data/blogs.json';
 import { readingTime } from 'reading-time-estimator';
 import { marked, type TokensList, type Token } from 'marked';
+import type { BlogInfo } from '$lib/data/blog-info';
 
 function cleanTokens(tokens: Token[] | TokensList | undefined) {
 	if (!tokens) return;
@@ -21,7 +22,7 @@ export const load: PageServerLoad = async ({ fetch, params }) => {
 		// Get the post.
 		const fileName = `${slug}.md`;
 		
-		const meta = blogs.find((x) => x.path === fileName);
+		const meta = blogs.find((x) => x.path === fileName) as BlogInfo;
 
 		if (!meta) {
 			console.log(`Failed to fetch ${fileName} metadata.`);

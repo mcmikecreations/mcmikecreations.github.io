@@ -1,7 +1,12 @@
 import { getAllPosts, getPosts } from '$lib/hikes/hikes-info';
 import { error } from '@sveltejs/kit';
 
-export const prerender = false;
+export const prerender = true;
+
+export function entries() {
+	const years = [...new Set(getAllPosts().map(p => p.year))];
+	return years.map(year => ({ year: String(year) }));
+}
 
 export function load({ params }) {
 	const year = parseInt(params.year);
@@ -24,4 +29,3 @@ export function load({ params }) {
 		}
 	};
 }
-

@@ -7,7 +7,9 @@ interface BlogInfo {
 	title: string;
 	date: string;
 	image: string | null;
+	imageFull: string | null;
 	description?: string;
+	author: string | null;
 	path: string;
 	tags: Tag[];
 }

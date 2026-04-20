@@ -1,7 +1,13 @@
-import { getPosts } from '$lib/hikes/hikes-info';
+import { getAllPosts, getPosts } from '$lib/hikes/hikes-info';
 import { error } from '@sveltejs/kit';
 
-export const prerender = false;
+export const prerender = true;
+
+export function entries() {
+    const posts = getAllPosts();
+    const tags = [...new Set(posts.flatMap(p => p.tags))];
+    return tags.map(tag => ({ tag }));
+}
 
 export async function load({ params }) {
     const tag = decodeURIComponent(params.tag);

@@ -21,9 +21,9 @@ function haversineKm(c1: number[], c2: number[]): number {
 export function initElevationChart(
     container: HTMLElement,
     geojson: any,
-    onHover?: (lat: number, lon: number, ele: number) => void,
+    onHover?: (lat: number, lon: number, ele: number, dist: number) => void,
     onLeave?: () => void
-): { setIndicator: (lat: number, lon: number) => void; hideIndicator: () => void } {
+): { setIndicator: (lat: number, lon: number, preferredDist?: number) => void; hideIndicator: () => void } {
     let internalPoints: ElevationPoint[] = [];
     const coords: number[][] = geojson?.features?.[0]?.geometry?.coordinates;
     if (!coords?.length) return { setIndicator: () => {}, hideIndicator: () => {} };
@@ -154,7 +154,7 @@ export function initElevationChart(
 
         updateCursor(pt);
 
-        onHover?.(pt.lat, pt.lon, pt.ele);
+        onHover?.(pt.lat, pt.lon, pt.ele, pt.dist);
     };
 
     // Transparent overlay to capture pointer events
@@ -200,21 +200,27 @@ export function initElevationChart(
         cursor.select('.dist-label').attr('x', cx).text(`${pt.dist.toFixed(2)} km`);
     }
 
-    setIndicatorFn = (lat: number, lon: number) => {
-        // Find the closest point by distance in lat/lon
+    setIndicatorFn = (lat: number, lon: number, preferredDist?: number) => {
         let minD = Infinity;
-        let closestPt = null;
+        let closestPt: ElevationPoint | null = null;
         for (const pt of points) {
-            // fast approx euclidean distance since points are dense
             const d = (pt.lat - lat) ** 2 + (pt.lon - lon) ** 2;
-            if (d < minD) {
-                minD = d;
-                closestPt = pt;
+            if (d < minD) { minD = d; closestPt = pt; }
+        }
+        // For out-and-back routes multiple points share the same lat/lon;
+        // break ties by picking the one whose cumulative distance is closest to the hint.
+        if (closestPt && preferredDist !== undefined) {
+            const tolerance = minD * 4;
+            let minDistDiff = Math.abs(closestPt.dist - preferredDist);
+            for (const pt of points) {
+                const d = (pt.lat - lat) ** 2 + (pt.lon - lon) ** 2;
+                if (d <= tolerance) {
+                    const diff = Math.abs(pt.dist - preferredDist);
+                    if (diff < minDistDiff) { minDistDiff = diff; closestPt = pt; }
+                }
             }
         }
-        if (closestPt) {
-            updateCursor(closestPt);
-        }
+        if (closestPt) updateCursor(closestPt);
     };
 
     return { 

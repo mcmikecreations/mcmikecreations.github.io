@@ -35,7 +35,7 @@ export function getAllPosts(): ProcessedPost[] {
                 date: date,
                 url: `/hikes/${d.date}-${slug}/`,
                 title: d.title ?? h.name,
-                image: d.image?.replace('/hikes/', '/hikes/thumb/') ?? h.image?.replace('/hikes/', '/hikes/thumb/'),
+                image: (d.image ?? h.image)?.replace('/hikes/', '/hikes/thumb/'),
                 description: (d.description ? (d.description + ' ') : '') + h.description,
                 tags: d.tags,
                 people: d.people,

@@ -1,0 +1,1640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="overpass-turbo"><metadata><desc>Filtered OSM data converted to GPX by overpass turbo</desc><copyright author="The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."/><time>2026-04-19T20:20:02Z</time></metadata><wpt lat="47.3973362" lon="11.2223256"><name>Große Arnspitze</name><desc>alt_name=Große Ahrnspitze
+description=Große Arnspitze Signalgipfel
+ele=2196
+name=Große Arnspitze
+natural=peak
+prominence=993
+wikidata=Q1548141
+wikipedia=de:Große Arnspitze</desc><link href="http://osm.org/browse/node/26863047"/></wpt><wpt lat="47.5693262" lon="12.8658126"><name>Hochkalter</name><desc>ele=2608
+name=Hochkalter
+natural=peak
+ref:avf=2050
+summit:cross=yes
+wikidata=Q883041</desc><link href="http://osm.org/browse/node/26863176"/></wpt><wpt lat="47.5522729" lon="10.8420527"><name>Hochplatte</name><desc>ele=2082
+name=Hochplatte
+natural=peak
+ref:avf=2466
+wikidata=Q316418
+wikipedia=de:Ammergauer Hochplatte</desc><link href="http://osm.org/browse/node/26863184"/></wpt><wpt lat="47.5443752" lon="11.1914281"><name>Krottenkopf</name><desc>ele=2086
+name=Krottenkopf
+natural=peak
+prominence=1156
+summit:cross=yes
+wikidata=Q565442</desc><link href="http://osm.org/browse/node/26863440"/></wpt><wpt lat="47.421215" lon="10.986297"><name>Zugspitze</name><desc>alt_name=Zugspitze (Ostgipfel)
+ele=2962
+importance=national
+name=Zugspitze
+name:ja=ツークシュピッツェ
+natural=peak
+prominence=1746
+source:prominence=2962-1216 (Fernpass)
+summit:cross=yes
+wikidata=Q3375
+wikimedia_commons=Category:Zugspitze
+wikipedia=de:Zugspitze</desc><link href="http://osm.org/browse/node/27384190"/></wpt><wpt lat="47.4815666" lon="11.3571077"><name>Soiernspitze</name><desc>ele=2253
+man_made=cross
+name=Soiernspitze
+natural=peak
+summit:cross=yes
+wikidata=Q316066
+wikipedia=de:Soiernspitze</desc><link href="http://osm.org/browse/node/67233894"/></wpt><wpt lat="47.2921766" lon="10.2877037"><name>Bockkarkopf</name><desc>ele=2609
+name=Bockkarkopf
+natural=peak
+prominence=105
+ref:avf=879
+summit:cross=yes
+summit:register=no
+wikidata=Q573647
+wikipedia=de:Bockkarkopf</desc><link href="http://osm.org/browse/node/256041659"/></wpt><wpt lat="47.4004814" lon="11.1239474"><name>Leutascher Dreitorspitze</name><desc>alt_name=Karlspitze
+ele=2682
+name=Leutascher Dreitorspitze
+natural=peak
+wikidata=Q585796
+wikipedia=de:Dreitorspitze</desc><link href="http://osm.org/browse/node/256041673"/></wpt><wpt lat="47.2969091" lon="10.2930007"><name>Hochfrottspitze</name><desc>ele=2649
+name=Hochfrottspitze
+natural=peak
+prominence=203
+ref:avf=868
+wikidata=Q315335
+wikipedia=de:Hochfrottspitze</desc><link href="http://osm.org/browse/node/256041781"/></wpt><wpt lat="47.4300189" lon="11.298858"><name>Westliche Karwendelspitze</name><desc>ele=2385
+name=Westliche Karwendelspitze
+natural=peak
+summit:cross=yes
+wikidata=Q316308
+wikipedia=de:Westliche Karwendelspitze</desc><link href="http://osm.org/browse/node/256041839"/></wpt><wpt lat="47.35827" lon="10.38663"><name>Südliches Höllhorn</name><desc>ele=2145
+name=Südliches Höllhorn
+natural=peak
+prominence=78
+ref:avf=1556
+wikidata=Q1323890
+wikipedia=de:Südliches Höllhorn</desc><link href="http://osm.org/browse/node/256041847"/></wpt><wpt lat="47.2999249" lon="10.2956802"><name>Mädelegabel</name><desc>ele=2644
+name=Mädelegabel
+natural=peak
+prominence=84
+ref:avf=865
+summit:cross=yes
+summit:register=yes
+wikidata=Q186077
+wikipedia=de:Mädelegabel</desc><link href="http://osm.org/browse/node/256041922"/></wpt><wpt lat="47.3447112" lon="10.368148"><name>Rauheck</name><desc>ele=2385
+name=Rauheck
+natural=peak
+prominence=184
+ref:avf=1356
+wikidata=Q872340
+wikipedia=de:Rauheck (Allgäuer Alpen)</desc><link href="http://osm.org/browse/node/256042733"/></wpt><wpt lat="47.2881103" lon="10.265806"><name>Rotgundspitze</name><desc>ele=2485
+name=Rotgundspitze
+natural=peak
+prominence=136
+ref:avf=906
+wikidata=Q831788
+wikipedia=de:Rotgundspitze</desc><link href="http://osm.org/browse/node/256042748"/></wpt><wpt lat="47.4095968" lon="10.9699595"><name>Schneefernerkopf</name><desc>ele=2874
+name=Schneefernerkopf
+natural=peak
+wikidata=Q679080
+wikimedia_commons=Category:Schneefernerkopf
+wikipedia=de:Schneefernerkopf</desc><link href="http://osm.org/browse/node/256042768"/></wpt><wpt lat="47.4386941" lon="11.049713"><name>Osterfelderkopf</name><desc>ele=2060
+name=Osterfelderkopf
+natural=peak
+wikidata=Q18560512</desc><link href="http://osm.org/browse/node/259406948"/></wpt><wpt lat="47.4294968" lon="11.0478118"><name>Alpspitze</name><desc>ele=2628
+name=Alpspitze
+natural=peak
+wikidata=Q252743</desc><link href="http://osm.org/browse/node/259486622"/></wpt><wpt lat="47.3264552" lon="10.1995502"><name>Walser Hammerspitze</name><desc>ele=2170
+name=Walser Hammerspitze
+natural=peak
+old_name:de_AT:=Hammerspitze
+old_name:de_DE=Schüsser
+prominence=45
+ref:avf=767
+summit:cross=yes
+wikidata=Q1741866
+wikipedia=de:Walser Hammerspitze</desc><link href="http://osm.org/browse/node/259965405"/></wpt><wpt lat="47.4218727" lon="10.3423461"><name>Nebelhorn</name><desc>ele=2224
+name=Nebelhorn
+natural=peak
+prominence=44
+ref:avf=1262
+summit:cross=yes
+summit:register=no
+wikidata=Q696067
+wikipedia=de:Nebelhorn (Allgäuer Alpen)</desc><link href="http://osm.org/browse/node/276270971"/></wpt><wpt lat="47.5217533" lon="10.9595715"><name>Frieder</name><desc>ele=2053
+name=Frieder
+natural=peak
+summit:cross=yes</desc><link href="http://osm.org/browse/node/277722457"/></wpt><wpt lat="47.5171414" lon="10.9588323"><name>Friederspitz</name><desc>ele=2049
+name=Friederspitz
+natural=peak
+summit:cross=yes
+wikidata=Q315901</desc><link href="http://osm.org/browse/node/277722495"/></wpt><wpt lat="47.5092999" lon="10.9163331"><name>Schellschlicht</name><desc>ele=2052
+name=Schellschlicht
+natural=peak
+ref:avf=2596
+summit:cross=yes
+summit:register=yes
+wikidata=Q2233117</desc><link href="http://osm.org/browse/node/277727364"/></wpt><wpt lat="47.5414219" lon="10.9425313"><name>Kuchelbergspitze</name><desc>ele=2020
+name=Kuchelbergspitze
+natural=peak
+summit:cross=yes
+summit:register=yes</desc><link href="http://osm.org/browse/node/280328857"/></wpt><wpt lat="47.5349169" lon="10.9254312"><name>Kuchelbergkopf</name><desc>ele=2026
+name=Kuchelbergkopf
+natural=peak
+wikidata=Q31532992
+wikipedia=de:Kuchelbergkopf</desc><link href="http://osm.org/browse/node/280329639"/></wpt><wpt lat="47.4415982" lon="10.3755228"><name>Großer Daumen</name><desc>ele=2280
+name=Großer Daumen
+natural=peak
+prominence=344
+ref:avf=1267
+summit:cross=yes
+wikidata=Q316061
+wikimedia_commons=Category:Großer Daumen
+wikipedia=de:Großer Daumen</desc><link href="http://osm.org/browse/node/281708195"/></wpt><wpt lat="47.4940798" lon="11.3298011"><name>Schöttelkarspitze</name><desc>alt_name=Schöttlkarspitze
+ele=2050
+name=Schöttelkarspitze
+natural=peak
+wikidata=Q139309
+wikipedia=de:Schöttelkarspitze</desc><link href="http://osm.org/browse/node/284141671"/></wpt><wpt lat="47.311405" lon="10.214009"><name>node/285971718</name><desc>ele=2285
+natural=peak
+prominence=10</desc><link href="http://osm.org/browse/node/285971718"/></wpt><wpt lat="47.3105646" lon="10.2166035"><name>Nördlicher Schafalpenkopf</name><desc>alt_name=Höchster Schafalpenkopf;Dritter Schafalpenkopf;Nordöstlicher Schafalpenkopf
+ele=2320
+name=Nördlicher Schafalpenkopf
+natural=peak
+prominence=216
+ref:avf=790
+wikidata=Q1259247
+wikipedia=de:Nördlicher Schafalpenkopf</desc><link href="http://osm.org/browse/node/285972358"/></wpt><wpt lat="47.2975067" lon="10.1990974"><name>Kemptner Kopf</name><desc>alt_name=Kemptner Köpfle;Kemptnerköpfle;Kempterle
+ele=2191
+name=Kemptner Kopf
+natural=peak
+prominence=85
+ref:avf=703
+summit:cross=yes
+wikidata=Q1738567
+wikipedia=de:Kemptner Kopf</desc><link href="http://osm.org/browse/node/285972361"/></wpt><wpt lat="47.4142547" lon="11.1175579"><name>Frauenalpl</name><desc>alt_name=Törl
+ele=2202
+name=Frauenalpl
+natural=peak
+summit:cross=yes
+summit:register=no</desc><link href="http://osm.org/browse/node/286687475"/></wpt><wpt lat="47.4310847" lon="11.0603371"><name>Bernadeinkopf</name><desc>ele=2144
+fixme=check location
+name=Bernadeinkopf
+natural=peak
+wikidata=Q822140</desc><link href="http://osm.org/browse/node/286790301"/></wpt><wpt lat="47.28786" lon="10.175332"><name>Geißhorn</name><desc>alt_name=Walser Geißhorn
+communication:amateur_radio:sota=OE/VB-213
+communication:amateur_radio:sota:points=10
+ele=2366
+ele:source=Wikipedia
+name=Geißhorn
+natural=peak
+prominence=181
+ref:avf=811
+summit:cross=yes
+wikidata=Q320334
+wikipedia=de:Geißhorn</desc><link href="http://osm.org/browse/node/291978603"/></wpt><wpt lat="47.4279802" lon="11.2930554"><name>Nördliche Linderspitze</name><desc>ele=2372
+name=Nördliche Linderspitze
+natural=peak
+wikidata=Q15849891
+wikipedia=de:Linderspitzen</desc><link href="http://osm.org/browse/node/293247920"/></wpt><wpt lat="47.3098962" lon="10.3377599"><name>node/295731699</name><desc>ele=2048
+natural=peak
+prominence=12</desc><link href="http://osm.org/browse/node/295731699"/></wpt><wpt lat="47.558423" lon="12.9237899"><name>Hocheck</name><desc>alt_name=Watzmann-Hocheck
+ele=2651
+historic=wayside_cross
+name=Hocheck
+natural=peak
+ref:avf=2520
+summit:cross=yes
+summit:register=no
+wikidata=Q31354005</desc><link href="http://osm.org/browse/node/307562003"/></wpt><wpt lat="47.38394" lon="10.43089"><name>Kreuzspitze</name><desc>ele=2367
+name=Kreuzspitze
+natural=peak
+prominence=86
+ref:avf=1403
+wikidata=Q1788437
+wikipedia=de:Kreuzspitze (Allgäuer Alpen)</desc><link href="http://osm.org/browse/node/319480822"/></wpt><wpt lat="47.3846" lon="10.41966"><name>Kreuzkopf</name><desc>ele=2287
+name=Kreuzkopf
+natural=peak
+prominence=49
+ref:avf=1435
+wikidata=Q31533188</desc><link href="http://osm.org/browse/node/319480825"/></wpt><wpt lat="47.3780492" lon="10.4114125"><name>Vorderer Wilder</name><desc>ele=2240
+name=Vorderer Wilder
+natural=peak
+prominence=50
+wikidata=Q21863783</desc><link href="http://osm.org/browse/node/319480834"/></wpt><wpt lat="47.37022" lon="10.38904"><name>Großer Wilder</name><desc>alt_name=Großer Wilder Hauptgipfel;Großer Wilder Mittelgipfel
+ele=2379
+name=Großer Wilder
+name:en=Großer Wilder Main Summit
+natural=peak
+prominence=210
+ref:avf=1446
+wikidata=Q130526149</desc><link href="http://osm.org/browse/node/319480846"/></wpt><wpt lat="47.30642" lon="10.31748"><name>Kratzer</name><desc>ele=2427
+name=Kratzer
+natural=peak
+prominence=207
+ref:avf=870
+summit:cross=yes
+wikidata=Q1767643
+wikipedia=de:Kratzer (Berg)</desc><link href="http://osm.org/browse/node/319482020"/></wpt><wpt lat="47.3212941" lon="10.207004"><name>Hochgehrenspitze</name><desc>ele=2251
+name=Hochgehrenspitze
+name:de-AT=Hochgehrenspitze
+name:de-DE=Hammerspitze Nordwestgipfel
+natural=peak
+prominence=67
+ref:avf=774
+wikidata=Q21878174</desc><link href="http://osm.org/browse/node/319482862"/></wpt><wpt lat="47.4318938" lon="10.4715051"><name>Kastenkopf</name><desc>ele=2129
+name=Kastenkopf
+natural=peak
+prominence=50
+ref:avf=1170
+wikidata=Q323852
+wikipedia=de:Kastenkopf</desc><link href="http://osm.org/browse/node/323333182"/></wpt><wpt lat="47.3541808" lon="10.3818123"><name>Grüner Kopf</name><desc>ele=2212
+name=Grüner Kopf
+natural=peak
+prominence=8
+wikidata=Q130525410</desc><link href="http://osm.org/browse/node/323363530"/></wpt><wpt lat="47.4430829" lon="10.4731457"><name>Knappenkopf</name><desc>ele=2071
+name=Knappenkopf
+natural=peak
+prominence=37
+ref:avf=1157
+wikidata=Q1776882
+wikipedia=de:Knappenkopf</desc><link href="http://osm.org/browse/node/323486209"/></wpt><wpt lat="47.39108" lon="10.4291"><name>Fuchskarspitze</name><desc>alt_name=Fuchskarspitze Südgipfel
+ele=2314
+name=Fuchskarspitze
+natural=peak
+prominence=157
+ref:avf=1397
+wikidata=Q130532257</desc><link href="http://osm.org/browse/node/323581294"/></wpt><wpt lat="47.39652" lon="10.43043"><name>Nördliche Fuchskarspitze</name><desc>alt_name=Fuchskarspitze Nordgipfel
+ele=2252
+name=Nördliche Fuchskarspitze
+name:en=Northern Fuchskarspitze
+natural=peak
+prominence=30
+ref:avf=1397
+wikidata=Q130532277</desc><link href="http://osm.org/browse/node/323829156"/></wpt><wpt lat="47.3963394" lon="11.0397076"><name>Kleiner Wanner</name><desc>ele=2548
+name=Kleiner Wanner
+natural=peak
+wikidata=Q21868517</desc><link href="http://osm.org/browse/node/323842894"/></wpt><wpt lat="47.5866422" lon="13.0699972"><name>Großer Archenkopf</name><desc>ele=2391
+name=Großer Archenkopf
+natural=peak
+ref:avf=2710
+wikidata=Q21871266</desc><link href="http://osm.org/browse/node/323882896"/></wpt><wpt lat="47.4175695" lon="10.9723451"><name>Zugspitzeck</name><desc>ele=2815
+name=Zugspitzeck
+natural=peak
+wikidata=Q86980310
+wikipedia=de:Zugspitzeck</desc><link href="http://osm.org/browse/node/323896644"/></wpt><wpt lat="47.40684" lon="10.43742"><name>Lärchwand</name><desc>ele=2186
+name=Lärchwand
+natural=peak
+prominence=7
+ref:avf=1387
+wikidata=Q831149
+wikipedia=de:Lärchwand</desc><link href="http://osm.org/browse/node/324036733"/></wpt><wpt lat="47.4269594" lon="11.1910129"><name>Obere Wettersteinspitze</name><desc>ele=2297
+name=Obere Wettersteinspitze
+natural=peak
+wikidata=Q2566053
+wikipedia=de:Wettersteinspitzen</desc><link href="http://osm.org/browse/node/348139963"/></wpt><wpt lat="47.5543889" lon="12.9220342"><name>Watzmann-Mittelspitze</name><desc>alt_name=Watzmann
+ele=2713
+name=Watzmann-Mittelspitze
+natural=peak
+ref:avf=2530
+summit:cross=yes
+summit:register=yes
+wikidata=Q31306014
+wikipedia=de:Watzmann</desc><link href="http://osm.org/browse/node/364134323"/></wpt><wpt lat="47.4377328" lon="11.3212433"><name>Tiefkarspitze</name><desc>ele=2430
+name=Tiefkarspitze
+natural=peak
+note=m ü. A.
+wikidata=Q21863490
+wikipedia=de:Tiefkarspitze</desc><link href="http://osm.org/browse/node/380969481"/></wpt><wpt lat="47.4056113" lon="11.2872676"><name>Brunnsteinspitze</name><desc>alt_name=Brunnensteinspitze
+ele=2180
+name=Brunnsteinspitze
+natural=peak
+summit:cross=yes
+summit:register=no
+wikidata=Q2169131</desc><link href="http://osm.org/browse/node/380989890"/></wpt><wpt lat="47.5127249" lon="12.8849252"><name>Großer Hundstod</name><desc>ele=2593
+name=Großer Hundstod
+natural=peak
+ref:avf=3460
+summit:cross=yes
+wikidata=Q565025
+wikimedia_commons=File:Grosser Hundstod south.JPG
+wikipedia=de:Großer Hundstod</desc><link href="http://osm.org/browse/node/387467327"/></wpt><wpt lat="47.6132271" lon="12.8298043"><name>Schottmalhorn</name><desc>ele=2045
+man_made=cross
+name=Schottmalhorn
+natural=peak
+wikidata=Q828128</desc><link href="http://osm.org/browse/node/387482195"/></wpt><wpt lat="47.4882425" lon="12.932659"><name>Viehkogel</name><desc>ele=2158
+name=Viehkogel
+natural=peak
+ref:avf=3400
+summit:cross=yes
+summit:register=yes
+wikidata=Q2523163</desc><link href="http://osm.org/browse/node/388003958"/></wpt><wpt lat="47.4365673" lon="10.3313126"><name>Entschenkopf</name><desc>ele=2043
+name=Entschenkopf
+natural=peak
+prominence=208
+ref:avf=1247
+summit:cross=yes
+summit:register=yes
+wikidata=Q831204
+wikipedia=de:Entschenkopf</desc><link href="http://osm.org/browse/node/414071751"/></wpt><wpt lat="47.5527964" lon="10.8252366"><name>Krähe</name><desc>ele=2010
+name=Krähe
+natural=peak
+ref:avf=2457
+wikidata=Q15117767</desc><link href="http://osm.org/browse/node/440062076"/></wpt><wpt lat="47.2965653" lon="10.1942681"><name>Sechszinkenspitze</name><desc>ele=2213
+name=Sechszinkenspitze
+natural=peak
+prominence=98
+ref:avf=797
+wikidata=Q2263675
+wikipedia=de:Sechszinkenspitze</desc><link href="http://osm.org/browse/node/441557888"/></wpt><wpt lat="47.3579122" lon="10.102265"><name>Hahnenköpfle</name><desc>ele=2082
+name=Hahnenköpfle
+natural=peak
+prominence=8
+ref:avf=690
+summit:cross=yes
+wikidata=Q130569470</desc><link href="http://osm.org/browse/node/441895641"/></wpt><wpt lat="47.5488775" lon="11.1852668"><name>Oberer Rißkopf</name><desc>ele=2049
+name=Oberer Rißkopf
+natural=peak
+summit:cross=yes
+summit:register=yes
+wikidata=Q21996583
+wikipedia=de:Oberer Rißkopf</desc><link href="http://osm.org/browse/node/449389006"/></wpt><wpt lat="47.5404528" lon="11.1757851"><name>Bischof</name><desc>ele=2033
+name=Bischof
+natural=peak
+summit:cross=yes
+summit:register=yes
+wikidata=Q866104</desc><link href="http://osm.org/browse/node/449491364"/></wpt><wpt lat="47.2809839" lon="10.2548226"><name>Rappenseekopf</name><desc>ele=2469
+image=https://commons.wikimedia.org/wiki/File:Rappenseekopf_Gipfel_und_Grenzstein_(1).jpg
+name=Rappenseekopf
+natural=peak
+prominence=157
+ref:avf=913
+summit:cross=yes
+summit:register=no
+wikidata=Q831402
+wikimedia_commons=Category:Rappenseekopf
+wikipedia=de:Rappenseekopf</desc><link href="http://osm.org/browse/node/454666359"/></wpt><wpt lat="47.32824" lon="10.32983"><name>Fürschießer</name><desc>ele=2271
+name=Fürschießer
+natural=peak
+prominence=65
+ref:avf=1581
+wikidata=Q830949
+wikipedia=de:Fürschießer</desc><link href="http://osm.org/browse/node/454899950"/></wpt><wpt lat="47.3144134" lon="10.3412333"><name>Muttlerkopf</name><desc>alt_name=Muttler
+ele=2368
+name=Muttlerkopf
+natural=peak
+prominence=44
+ref:avf=1570
+summit:cross=yes
+wikidata=Q21873215
+wikipedia=en:Muttlerkopf</desc><link href="http://osm.org/browse/node/454899951"/></wpt><wpt lat="47.3672021" lon="10.3494627"><name>Höfats Zweiter Gipfel</name><desc>ele=2258
+name=Höfats Zweiter Gipfel
+name:en=Höfats second summit
+natural=peak
+prominence=480
+ref:avf=1345
+wikidata=Q124422131</desc><link href="http://osm.org/browse/node/455155017"/></wpt><wpt lat="47.4229311" lon="10.3503874"><name>Westlicher Wengenkopf</name><desc>ele=2235
+name=Westlicher Wengenkopf
+name:en=Western Wengenkopf
+natural=peak
+prominence=153
+ref:avf=1264
+wikidata=Q2565482
+wikipedia=de:Westlicher Wengenkopf</desc><link href="http://osm.org/browse/node/469159377"/></wpt><wpt lat="47.4266366" lon="10.362153"><name>node/469169686</name><desc>ele=2190
+natural=peak
+prominence=8
+wikidata=Q307223</desc><link href="http://osm.org/browse/node/469169686"/></wpt><wpt lat="47.4595011" lon="10.369341"><name>Rotspitz</name><desc>alt_name=Rotspitze
+ele=2034
+name=Rotspitz
+natural=peak
+prominence=139
+ref:avf=1282
+summit:cross=yes
+wikidata=Q830784
+wikipedia=de:Rotspitz (Allgäuer Alpen)</desc><link href="http://osm.org/browse/node/469207035"/></wpt><wpt lat="47.4470862" lon="10.3861731"><name>Kleiner Daumen</name><desc>ele=2197
+name=Kleiner Daumen
+natural=peak
+prominence=31
+ref:avf=1272
+summit:cross=yes
+wikidata=Q1311878
+wikimedia_commons=Category:Kleiner Daumen
+wikipedia=de:Kleiner Daumen</desc><link href="http://osm.org/browse/node/469207188"/></wpt><wpt lat="47.296087" lon="10.179743"><name>Liechelkopf</name><desc>ele=2384
+name=Liechelkopf
+natural=peak
+prominence=75
+ref:avf=803
+wikidata=Q831435
+wikipedia=de:Liechelkopf</desc><link href="http://osm.org/browse/node/469641200"/></wpt><wpt lat="47.4029" lon="10.43161"><name>Glasfelderkopf</name><desc>ele=2270
+name=Glasfelderkopf
+natural=peak
+prominence=108
+ref:avf=1389
+wikidata=Q155086
+wikipedia=de:Glasfelderkopf</desc><link href="http://osm.org/browse/node/471168193"/></wpt><wpt lat="47.5480306" lon="12.9169564"><name>Watzmann-Südspitze</name><desc>ele=2712
+name=Watzmann-Südspitze
+natural=peak
+old_name=Schönfeldspitze
+ref:avf=2540
+summit:cross=yes
+summit:register=yes
+wikidata=Q31354390</desc><link href="http://osm.org/browse/node/475537031"/></wpt><wpt lat="47.5295856" lon="12.916452"><name>Hirschwiese</name><desc>alt_name=Hirschwieskopf
+ele=2114
+name=Hirschwiese
+natural=peak
+ref:avf=2570
+wikidata=Q31354018</desc><link href="http://osm.org/browse/node/476459617"/></wpt><wpt lat="47.3347816" lon="10.2077026"><name>Kanzelwand</name><desc>ele=2058
+name=Kanzelwand
+name:de-AT=Kanzelwand
+name:de-DE=Warmatsgundkopf
+natural=peak
+prominence=86
+ref:avf=766;1022
+summit:cross=yes
+wikidata=Q872350
+wikipedia=de:Kanzelwand</desc><link href="http://osm.org/browse/node/480760326"/></wpt><wpt lat="47.4898784" lon="12.9672187"><name>Stuhljoch</name><desc>ele=2446
+name=Stuhljoch
+natural=peak
+ref:avf=3360
+wikidata=Q31302513
+wikipedia=de:Funtenseetauern#Stuhljoch</desc><link href="http://osm.org/browse/node/481694454"/></wpt><wpt lat="47.4448563" lon="11.421433"><name>Östliche Karwendelspitze</name><desc>ele=2537
+name=Östliche Karwendelspitze
+natural=peak
+prominence=735
+wikidata=Q306927
+wikipedia=de:Östliche Karwendelspitze</desc><link href="http://osm.org/browse/node/496454912"/></wpt><wpt lat="47.5106761" lon="12.9115931"><name>Großer Schneiber</name><desc>ele=2330
+name=Großer Schneiber
+natural=peak
+ref:avf=3420
+wikidata=Q18289350</desc><link href="http://osm.org/browse/node/504796020"/></wpt><wpt lat="47.4829148" lon="12.9965197"><name>Hocheck</name><desc>alt_name=Hochegger
+ele=2230
+name=Hocheck
+natural=peak
+note=Position aus Höhenlinienverlauf geschätzt</desc><link href="http://osm.org/browse/node/506889874"/></wpt><wpt lat="47.4969696" lon="13.0377259"><name>Wildpalfen</name><desc>ele=2236
+name=Wildpalfen
+natural=peak
+ref:avf=3010
+summit:cross=yes</desc><link href="http://osm.org/browse/node/506889891"/></wpt><wpt lat="47.5488385" lon="13.0309162"><name>Fagstein</name><desc>ele=2164
+name=Fagstein
+natural=peak
+ref:avf=2880
+source=estimated from height lines
+wikidata=Q21032716</desc><link href="http://osm.org/browse/node/507017748"/></wpt><wpt lat="47.5345871" lon="13.0237221"><name>Lafeldkopf</name><desc>ele=2074
+name=Lafeldkopf
+natural=peak
+note=“Hohes Lafeld” oder “Hochlafeld” bezeichnet die Fläche unterhalb des Gipfels
+ref:avf=2950
+source=survey</desc><link href="http://osm.org/browse/node/507037980"/></wpt><wpt lat="47.5163295" lon="12.9109261"><name>Gjaidkopf</name><desc>ele=2268
+name=Gjaidkopf
+natural=peak
+ref:avf=3430
+wikidata=Q30683386</desc><link href="http://osm.org/browse/node/507083764"/></wpt><wpt lat="47.5200228" lon="12.9069035"><name>Graskopf</name><desc>ele=2094
+name=Graskopf
+natural=peak
+ref:avf=3430
+wikidata=Q31354141</desc><link href="http://osm.org/browse/node/507083769"/></wpt><wpt lat="47.5596884" lon="12.854934"><name>Steintalhörnl</name><desc>ele=2468
+name=Steintalhörnl
+natural=peak
+ref:avf=2150
+source=estimated from height lines</desc><link href="http://osm.org/browse/node/507094246"/></wpt><wpt lat="47.5513535" lon="12.8528061"><name>Hinterbergkopf</name><desc>ele=2247
+name=Hinterbergkopf
+natural=peak
+ref:avf=2170
+source=estimated from height lines</desc><link href="http://osm.org/browse/node/507094248"/></wpt><wpt lat="47.5822" lon="12.8746816"><name>Schärtenspitze</name><desc>ele=2153
+name=Schärtenspitze
+natural=peak
+ref:avf=2020
+source=survey
+summit:cross=yes
+summit:register=yes
+wikipedia=de:Hochkalter#Schärtenspitze</desc><link href="http://osm.org/browse/node/507105613"/></wpt><wpt lat="47.5588894" lon="12.9424556"><name>Kleiner Watzmann</name><desc>alt_name=Watzmannfrau;Watzfrau
+ele=2307
+name=Kleiner Watzmann
+natural=peak
+ref:avf=2440
+source=estimation from height lines
+wikidata=Q31339405</desc><link href="http://osm.org/browse/node/507105618"/></wpt><wpt lat="47.5436716" lon="12.9036638"><name>Griesspitze</name><desc>ele=2257
+name=Griesspitze
+natural=peak
+ref:avf=2560
+wikidata=Q31354130</desc><link href="http://osm.org/browse/node/507116898"/></wpt><wpt lat="47.5308097" lon="12.9341041"><name>Hachelkopf</name><desc>ele=2066
+name=Hachelkopf
+natural=peak
+ref:avf=2580
+source=estimated from height lines</desc><link href="http://osm.org/browse/node/507448708"/></wpt><wpt lat="47.4764177" lon="13.0185196"><name>Laubwand</name><desc>alt_name=Lawand
+ele=2312
+name=Laubwand
+natural=peak
+ref:avf=3900
+wikidata=Q1680817
+wikipedia=de:Laubwand</desc><link href="http://osm.org/browse/node/507594558"/></wpt><wpt lat="47.4462043" lon="11.0232944"><name>Großer Waxenstein</name><desc>ele=2276
+name=Großer Waxenstein
+natural=peak
+wikidata=Q256209</desc><link href="http://osm.org/browse/node/508474971"/></wpt><wpt lat="47.446679" lon="11.0301167"><name>Kleiner Waxenstein</name><desc>ele=2136
+name=Kleiner Waxenstein
+natural=peak</desc><link href="http://osm.org/browse/node/508474978"/></wpt><wpt lat="47.4439368" lon="11.0174743"><name>Hinterer Waxenstein</name><desc>ele=2268
+name=Hinterer Waxenstein
+natural=peak</desc><link href="http://osm.org/browse/node/508474984"/></wpt><wpt lat="47.4388036" lon="11.005791"><name>Nördliche Riffelspitze</name><desc>ele=2242
+name=Nördliche Riffelspitze
+natural=peak
+wikidata=Q31555745</desc><link href="http://osm.org/browse/node/508489594"/></wpt><wpt lat="47.437218" lon="11.0037847"><name>Südliche Riffelspitze</name><desc>ele=2262
+name=Südliche Riffelspitze
+natural=peak</desc><link href="http://osm.org/browse/node/508489606"/></wpt><wpt lat="47.4282738" lon="10.9924798"><name>Große Riffelwandspitze</name><desc>ele=2625
+name=Große Riffelwandspitze
+natural=peak
+note=in der Topo50 ist hier die Große Riffelwandspitze, in der Topo25 ist sie weiter südwestlich (fast gleich hoch)
+wikidata=Q31555666</desc><link href="http://osm.org/browse/node/508489623"/></wpt><wpt lat="47.4293162" lon="10.996723"><name>Kleine Riffelwandspitze</name><desc>ele=2543
+name=Kleine Riffelwandspitze
+natural=peak
+wikidata=Q31555682</desc><link href="http://osm.org/browse/node/508489627"/></wpt><wpt lat="47.4350764" lon="10.9983071"><name>Riffeltorkopf</name><desc>alt_name=Hohe Riffel
+ele=2230
+name=Riffeltorkopf
+natural=peak
+wikidata=Q2152634
+wikipedia=de:Riffeltorkopf</desc><link href="http://osm.org/browse/node/508489631"/></wpt><wpt lat="47.4206907" lon="11.0198273"><name>Mittlere Höllentalspitze</name><desc>ele=2740
+name=Mittlere Höllentalspitze
+natural=peak</desc><link href="http://osm.org/browse/node/508503689"/></wpt><wpt lat="47.4184937" lon="11.0105717"><name>Innere Höllentalspitze</name><desc>ele=2741
+name=Innere Höllentalspitze
+natural=peak
+wikidata=Q265375</desc><link href="http://osm.org/browse/node/508503691"/></wpt><wpt lat="47.4108271" lon="11.016792"><name>Brunntalkopf</name><desc>ele=2260
+name=Brunntalkopf
+natural=peak
+wikidata=Q31550882</desc><link href="http://osm.org/browse/node/508503692"/></wpt><wpt lat="47.4209398" lon="11.027893"><name>Äußere Höllentalspitze</name><desc>ele=2715
+name=Äußere Höllentalspitze
+natural=peak</desc><link href="http://osm.org/browse/node/508503693"/></wpt><wpt lat="47.4217228" lon="11.034696"><name>Vollkarspitze</name><desc>ele=2630
+name=Vollkarspitze
+natural=peak
+wikidata=Q885103</desc><link href="http://osm.org/browse/node/508503694"/></wpt><wpt lat="47.4219531" lon="11.0545854"><name>Blassenspitze</name><desc>ele=2420
+name=Blassenspitze
+natural=peak</desc><link href="http://osm.org/browse/node/508509265"/></wpt><wpt lat="47.3964573" lon="10.9926825"><name>Östliche Plattspitze</name><desc>ele=2680
+name=Östliche Plattspitze
+natural=peak
+wikidata=Q830583
+wikipedia=de:Plattspitzen</desc><link href="http://osm.org/browse/node/508530564"/></wpt><wpt lat="47.4881912" lon="12.974321"><name>Hochscheibe</name><desc>ele=2460
+name=Hochscheibe
+natural=peak
+wikidata=Q31354346</desc><link href="http://osm.org/browse/node/509292145"/></wpt><wpt lat="47.4937833" lon="12.9750146"><name>Ebenhorn</name><desc>ele=2371
+name=Ebenhorn
+natural=peak
+ref:avf=3340
+source=Skelettskizze Funtenseetauern ca. 1920
+wikidata=Q30791818</desc><link href="http://osm.org/browse/node/509292149"/></wpt><wpt lat="47.5988564" lon="12.7917253"><name>Wagendrischelhorn</name><desc>ele=2251
+name=Wagendrischelhorn
+natural=peak
+wikidata=Q829328</desc><link href="http://osm.org/browse/node/510121135"/></wpt><wpt lat="47.6023921" lon="12.7970507"><name>Unterer Plattelkopf</name><desc>ele=2106
+name=Unterer Plattelkopf
+natural=peak
+wikidata=Q21864853</desc><link href="http://osm.org/browse/node/510121157"/></wpt><wpt lat="47.6054624" lon="12.8028361"><name>Oberer Plattelkopf</name><desc>ele=2098
+name=Oberer Plattelkopf
+natural=peak
+wikidata=Q93701942</desc><link href="http://osm.org/browse/node/510121159"/></wpt><wpt lat="47.6102587" lon="12.8074181"><name>Reiter Steinberg</name><desc>ele=2060
+name=Reiter Steinberg
+natural=peak</desc><link href="http://osm.org/browse/node/510121160"/></wpt><wpt lat="47.6120942" lon="12.8245353"><name>Hohes Gerstfeld</name><desc>ele=2031
+name=Hohes Gerstfeld
+natural=peak</desc><link href="http://osm.org/browse/node/510121162"/></wpt><wpt lat="47.4716921" lon="13.003751"><name>Rosentalhörnl</name><desc>ele=2110
+name=Rosentalhörnl
+natural=peak
+source=survey
+wikidata=Q31353035</desc><link href="http://osm.org/browse/node/510122408"/></wpt><wpt lat="47.4832578" lon="13.0117079"><name>node/510122409</name><desc>ele=2084
+natural=peak
+source=estimated from height lines
+source:ele=ÖK50</desc><link href="http://osm.org/browse/node/510122409"/></wpt><wpt lat="47.4831655" lon="11.3362025"><name>Feldernkopf</name><desc>ele=2071
+name=Feldernkopf
+natural=peak
+wikidata=Q31547165</desc><link href="http://osm.org/browse/node/515678324"/></wpt><wpt lat="47.4307842" lon="11.3035822"><name>Westliches Kirchl</name><desc>ele=2241
+name=Westliches Kirchl
+natural=peak
+wikidata=Q111286543
+wikipedia=de:Kirchl (Karwendel)</desc><link href="http://osm.org/browse/node/527273299"/></wpt><wpt lat="47.4369645" lon="11.3011712"><name>Kreuzwand</name><desc>ele=2130
+name=Kreuzwand
+natural=peak
+source=estimated from NASA elevation data
+wikidata=Q31555715</desc><link href="http://osm.org/browse/node/527273302"/></wpt><wpt lat="47.437945" lon="11.293681"><name>Viererspitze</name><desc>ele=2054
+name=Viererspitze
+natural=peak
+wikidata=Q15061381</desc><link href="http://osm.org/browse/node/527273304"/></wpt><wpt lat="47.4302026" lon="11.3075093"><name>Mittleres Kirchl</name><desc>ele=2211
+name=Mittleres Kirchl
+natural=peak
+wikidata=Q111286543
+wikipedia=de:Kirchl (Karwendel)</desc><link href="http://osm.org/browse/node/527273309"/></wpt><wpt lat="47.4303184" lon="11.3097695"><name>Östliches Kirchl</name><desc>ele=2225
+name=Östliches Kirchl
+natural=peak</desc><link href="http://osm.org/browse/node/527273311"/></wpt><wpt lat="47.4304267" lon="11.3113814"><name>Westliche Larchetfleckspitze</name><desc>ele=2303
+name=Westliche Larchetfleckspitze
+natural=peak</desc><link href="http://osm.org/browse/node/527343335"/></wpt><wpt lat="47.4307958" lon="11.3134407"><name>Östliche Larchetfleckspitze</name><desc>ele=2362
+name=Östliche Larchetfleckspitze
+natural=peak
+note=m ü. A.</desc><link href="http://osm.org/browse/node/527343336"/></wpt><wpt lat="47.4468728" lon="11.390339"><name>Bäralplkopf</name><desc>ele=2323
+name=Bäralplkopf
+natural=peak
+wikidata=Q21927860</desc><link href="http://osm.org/browse/node/527360269"/></wpt><wpt lat="47.4546499" lon="11.4131303"><name>Östliche Steinkarspitze</name><desc>ele=2015
+name=Östliche Steinkarspitze
+natural=peak
+source=estimated from NASA elevation data
+wikidata=Q21873241
+wikipedia=de:Steinkarspitze (Karwendel)</desc><link href="http://osm.org/browse/node/527360288"/></wpt><wpt lat="47.29093" lon="10.26369"><name>Linkerskopf</name><desc>ele=2459
+name=Linkerskopf
+natural=peak
+prominence=47
+ref:avf=907
+wikidata=Q831129
+wikipedia=de:Linkerskopf</desc><link href="http://osm.org/browse/node/530735159"/></wpt><wpt lat="47.287708" lon="10.279934"><name>Wilder Mann</name><desc>ele=2577
+name=Wilder Mann
+natural=peak
+prominence=26
+ref:avf=881
+wikidata=Q830919
+wikipedia=de:Wilder Mann (Allgäuer Alpen)</desc><link href="http://osm.org/browse/node/530742114"/></wpt><wpt lat="47.28342" lon="10.24396"><name>Kleiner Rappenkopf</name><desc>alt_name=Rappenköpfle
+ele=2276
+name=Kleiner Rappenkopf
+natural=peak
+prominence=62
+ref:avf=917
+wikidata=Q1746667
+wikipedia=de:Kleiner Rappenkopf</desc><link href="http://osm.org/browse/node/530743910"/></wpt><wpt lat="47.2981718" lon="10.2665222"><name>node/530743913</name><desc>ele=2073
+natural=peak
+prominence=30
+wikidata=Q138849311</desc><link href="http://osm.org/browse/node/530743913"/></wpt><wpt lat="47.2980139" lon="10.2856706"><name>Westlicher Berg der guten Hoffnung</name><desc>ele=2381
+name=Westlicher Berg der guten Hoffnung
+natural=peak
+prominence=23
+ref:avf=877
+summit:cross=yes
+wikidata=Q31555081</desc><link href="http://osm.org/browse/node/530747886"/></wpt><wpt lat="47.30362" lon="10.29545"><name>Trettachspitze</name><desc>ele=2595
+name=Trettachspitze
+natural=peak
+prominence=145
+ref:avf=860
+summit:cross=yes
+wikidata=Q450837
+wikipedia=de:Trettachspitze</desc><link href="http://osm.org/browse/node/530747888"/></wpt><wpt lat="47.3106812" lon="10.2939821"><name>node/530747893</name><desc>ele=2279
+natural=peak
+prominence=49
+wikidata=Q131862671</desc><link href="http://osm.org/browse/node/530747893"/></wpt><wpt lat="47.3217691" lon="10.3351478"><name>node/530761774</name><desc>ele=2328
+natural=peak
+prominence=29</desc><link href="http://osm.org/browse/node/530761774"/></wpt><wpt lat="47.32032" lon="10.33937"><name>node/530761775</name><desc>ele=2385
+natural=peak
+prominence=37</desc><link href="http://osm.org/browse/node/530761775"/></wpt><wpt lat="47.37005" lon="10.34466"><name>node/530774101</name><desc>ele=2017
+natural=peak
+prominence=25
+wikidata=Q138034977</desc><link href="http://osm.org/browse/node/530774101"/></wpt><wpt lat="47.3729576" lon="10.3418405"><name>Gieseler Wand</name><desc>ele=2021
+name=Gieseler Wand
+natural=peak
+prominence=45
+wikidata=Q138034997</desc><link href="http://osm.org/browse/node/530774103"/></wpt><wpt lat="47.36807" lon="10.35452"><name>Kleine Höfats</name><desc>ele=2073
+name=Kleine Höfats
+natural=peak
+prominence=87
+ref:avf=1351
+wikidata=Q1746457
+wikipedia=de:Kleine Höfats</desc><link href="http://osm.org/browse/node/530774119"/></wpt><wpt lat="47.2881364" lon="10.1835715"><name>Wildengundkopf</name><desc>ele=2197
+name=Wildengundkopf
+natural=peak
+prominence=25
+ref:avf=811
+wikidata=Q31514933</desc><link href="http://osm.org/browse/node/531228711"/></wpt><wpt lat="47.2939" lon="10.18548"><name>Angererkopf</name><desc>ele=2263
+name=Angererkopf
+natural=peak
+prominence=51
+ref:avf=799
+wikidata=Q538072
+wikipedia=de:Angererkopf</desc><link href="http://osm.org/browse/node/531228737"/></wpt><wpt lat="47.27507" lon="10.17348"><name>Haldenwanger Kopf</name><desc>alt_name=Haldenwangerkopf
+ele=2002
+name=Haldenwanger Kopf
+natural=peak
+prominence=34
+ref:avf=814
+wikidata=Q1570783
+wikipedia=de:Haldenwanger Kopf</desc><link href="http://osm.org/browse/node/531242760"/></wpt><wpt lat="47.31946" lon="10.23356"><name>Rossgundkopf</name><desc>ele=2139
+name=Rossgundkopf
+natural=peak
+prominence=66
+ref:avf=779
+wikidata=Q2171348
+wikipedia=de:Roßgundkopf</desc><link href="http://osm.org/browse/node/535311207"/></wpt><wpt lat="47.32221" lon="10.23758"><name>Alpgundkopf</name><desc>ele=2177
+name=Alpgundkopf
+natural=peak
+prominence=172
+ref:avf=781
+wikidata=Q1361612
+wikipedia=de:Alpgundkopf</desc><link href="http://osm.org/browse/node/535311211"/></wpt><wpt lat="47.3236012" lon="10.2395502"><name>Grießgundkopf</name><desc>alt_name=Griesgundkopf
+ele=2164
+name=Grießgundkopf
+natural=peak
+prominence=10
+ref:avf=781
+summit:cross=yes
+summit:register=yes
+wikidata=Q1546508
+wikipedia=de:Griesgundkopf</desc><link href="http://osm.org/browse/node/535311216"/></wpt><wpt lat="47.316735" lon="10.2361038"><name>Rossgundturm</name><desc>ele=2066
+name=Rossgundturm
+natural=peak
+prominence=24
+wikidata=Q130621664</desc><link href="http://osm.org/browse/node/535318252"/></wpt><wpt lat="47.4316" lon="10.47539"><name>Kälbelespitze</name><desc>ele=2135
+name=Kälbelespitze
+name:de-AT=Kastenkopf
+natural=peak
+prominence=209
+ref:avf=1173
+wikidata=Q1795309
+wikipedia=de:Kälbelesspitze</desc><link href="http://osm.org/browse/node/650865315"/></wpt><wpt lat="47.39012" lon="10.41699"><name>Wiedemerkopf</name><desc>alt_name=Wiedemer
+ele=2163
+name=Wiedemerkopf
+natural=peak
+prominence=6
+ref:avf=1441
+summit:cross=yes
+wikidata=Q2568292
+wikipedia=de:Wiedemerkopf</desc><link href="http://osm.org/browse/node/658981816"/></wpt><wpt lat="47.5450497" lon="12.8327097"><name>Kammerlinghorn</name><desc>ele=2483
+man_made=summit_cross
+name=Kammerlinghorn
+natural=peak
+ref:avf=2260
+source=estimated from height lines
+wikidata=Q21868263
+wikipedia=de:Hochkalter#Kammerlinghorn</desc><link href="http://osm.org/browse/node/664510186"/></wpt><wpt lat="47.4421375" lon="11.011646"><name>Schönangerspitze</name><desc>ele=2264
+name=Schönangerspitze
+natural=peak
+wikidata=Q31522130</desc><link href="http://osm.org/browse/node/773900448"/></wpt><wpt lat="47.3859171" lon="10.382386"><name>Schneck</name><desc>ele=2268
+man_made=cross
+name=Schneck
+natural=peak
+prominence=261
+ref:avf=1326
+summit:cross=yes
+wikidata=Q831188</desc><link href="http://osm.org/browse/node/822263083"/></wpt><wpt lat="47.3824903" lon="10.3839399"><name>Himmeleck</name><desc>ele=2152
+name=Himmeleck
+natural=peak
+prominence=15
+ref:avf=1327
+wikidata=Q1602221</desc><link href="http://osm.org/browse/node/822263093"/></wpt><wpt lat="47.38483" lon="10.38171"><name>Schneck-Vorgipfel</name><desc>ele=2258
+name=Schneck-Vorgipfel
+natural=peak
+prominence=18
+ref:avf=1326
+wikidata=Q131442326</desc><link href="http://osm.org/browse/node/822263104"/></wpt><wpt lat="47.2879221" lon="10.2524866"><name>Seebichel</name><desc>ele=2111
+name=Seebichel
+natural=peak
+prominence=30
+summit:cross=yes
+summit:register=no
+wikidata=Q130486776</desc><link href="http://osm.org/browse/node/841832445"/></wpt><wpt lat="47.3935621" lon="10.380816"><name>Laufbacher Eck</name><desc>ele=2178
+name=Laufbacher Eck
+natural=peak
+prominence=50
+ref:avf=1317
+wikidata=Q832044
+wikipedia=de:Laufbacher Eck</desc><link href="http://osm.org/browse/node/844986604"/></wpt><wpt lat="47.3199166" lon="10.3432506"><name>Krummer Turm</name><desc>ele=2477
+name=Krummer Turm
+natural=peak
+prominence=55
+ref:avf=1579
+wikidata=Q130554238</desc><link href="http://osm.org/browse/node/893340535"/></wpt><wpt lat="47.4193483" lon="10.3329842"><name>Gundkopf</name><desc>ele=2062
+name=Gundkopf
+natural=peak
+prominence=24
+wikidata=Q831155
+wikipedia=de:Gundkopf</desc><link href="http://osm.org/browse/node/912152794"/></wpt><wpt lat="47.41602" lon="10.3513"><name>node/912260217</name><desc>ele=2023
+natural=peak
+prominence=18</desc><link href="http://osm.org/browse/node/912260217"/></wpt><wpt lat="47.40143" lon="10.35639"><name>Kleiner Seekopf</name><desc>ele=2096
+name=Kleiner Seekopf
+natural=peak
+prominence=91
+ref:avf=1307
+wikidata=Q1635279
+wikipedia=de:Kleiner Seekopf</desc><link href="http://osm.org/browse/node/912260256"/></wpt><wpt lat="47.40582" lon="10.35473"><name>Großer Seekopf</name><desc>ele=2085
+name=Großer Seekopf
+natural=peak
+prominence=59
+ref:avf=1307
+wikidata=Q1548996
+wikipedia=de:Großer Seekopf</desc><link href="http://osm.org/browse/node/912260273"/></wpt><wpt lat="47.39483" lon="10.37171"><name>Lachenkopf</name><desc>ele=2111
+name=Lachenkopf
+natural=peak
+prominence=112
+ref:avf=1313
+wikidata=Q323648</desc><link href="http://osm.org/browse/node/912260300"/></wpt><wpt lat="47.3888446" lon="10.4299087"><name>Balken</name><desc>ele=2175
+name=Balken
+natural=peak
+prominence=18
+ref:avf=1406
+summit:cross=yes
+wikidata=Q130532150</desc><link href="http://osm.org/browse/node/912352427"/></wpt><wpt lat="47.38555" lon="10.4313394"><name>Südliche Balkenspitze</name><desc>ele=2324
+name=Südliche Balkenspitze
+name:en=Southern Balkenspitze
+natural=peak
+prominence=13
+wikidata=Q130532213</desc><link href="http://osm.org/browse/node/912363810"/></wpt><wpt lat="47.37617" lon="10.11713"><name>Obere Gottesackerwände</name><desc>ele=2033
+name=Obere Gottesackerwände
+natural=peak
+prominence=202
+ref:avf=682
+wikidata=Q136039925</desc><link href="http://osm.org/browse/node/912758344"/></wpt><wpt lat="47.44727" lon="10.39847"><name>Pfannenhölzer</name><desc>alt_name=Pfannhölzer
+ele=2029
+name=Pfannenhölzer
+natural=peak
+prominence=50
+ref:avf=1290
+wikidata=Q130483357</desc><link href="http://osm.org/browse/node/913800779"/></wpt><wpt lat="47.439" lon="10.4549"><name>Älpelekopf</name><desc>ele=2024
+name=Älpelekopf
+natural=peak
+prominence=56
+ref:avf=1160
+wikidata=Q254791
+wikipedia=de:Älpelekopf</desc><link href="http://osm.org/browse/node/913824478"/></wpt><wpt lat="47.4181469" lon="10.4534522"><name>Schänzlekopf</name><desc>ele=2070
+name=Schänzlekopf
+natural=peak
+prominence=157
+ref:avf=1167
+wikidata=Q323357
+wikipedia=de:Schänzlekopf</desc><link href="http://osm.org/browse/node/913843561"/></wpt><wpt lat="47.41355" lon="10.43845"><name>Sattelkopf</name><desc>ele=2097
+name=Sattelkopf
+natural=peak
+prominence=85
+ref:avf=1380
+wikidata=Q323584
+wikipedia=de:Sattelkopf (Allgäuer Alpen)</desc><link href="http://osm.org/browse/node/913843564"/></wpt><wpt lat="47.4360105" lon="10.4739205"><name>Kirchendach</name><desc>ele=2013
+name=Kirchendach
+natural=peak
+prominence=25
+ref:avf=1173
+wikidata=Q21877991</desc><link href="http://osm.org/browse/node/913845485"/></wpt><wpt lat="47.39785" lon="10.38808"><name>Salober</name><desc>ele=2088
+name=Salober
+natural=peak
+prominence=59
+ref:avf=1320
+wikidata=Q572923</desc><link href="http://osm.org/browse/node/913851925"/></wpt><wpt lat="47.40753" lon="10.39445"><name>Bergächtle</name><desc>alt_name=Berggächtle
+ele=2007
+name=Bergächtle
+natural=peak
+prominence=74
+ref:avf=1320
+wikidata=Q323383</desc><link href="http://osm.org/browse/node/913851954"/></wpt><wpt lat="47.43185" lon="10.38557"><name>Laufbichelkirche Südgipfel</name><desc>alt_name=Laufbichlkirche Südgipfel
+ele=2029
+name=Laufbichelkirche Südgipfel
+natural=peak
+prominence=30
+ref:avf=1295
+wikidata=Q131362624</desc><link href="http://osm.org/browse/node/913863374"/></wpt><wpt lat="47.4589308" lon="10.3810226"><name>Heubatspitze</name><desc>ele=2008
+name=Heubatspitze
+natural=peak
+prominence=63
+ref:avf=1280
+summit:cross=yes
+summit:register=yes
+wikidata=Q8553229
+wikipedia=de:Heubatspitze</desc><link href="http://osm.org/browse/node/913868690"/></wpt><wpt lat="47.4322986" lon="10.3679338"><name>node/916211213</name><desc>ele=2162
+natural=peak
+prominence=60
+wikidata=Q138857960</desc><link href="http://osm.org/browse/node/916211213"/></wpt><wpt lat="47.37172" lon="10.38791"><name>Großer Wilder Nordgipfel</name><desc>ele=2370
+name=Großer Wilder Nordgipfel
+name:en=Großer Wilder Northern Summit
+natural=peak
+prominence=26
+ref:avf=1446
+wikidata=Q130526176</desc><link href="http://osm.org/browse/node/916804595"/></wpt><wpt lat="47.36719" lon="10.38915"><name>Hinterer Wilder</name><desc>alt_name=Großer Wilder Südgipfel
+ele=2359
+name=Hinterer Wilder
+name:en=Großer Wilder Southern Summit
+natural=peak
+prominence=44
+ref:avf=1448
+wikidata=Q130526116</desc><link href="http://osm.org/browse/node/916814949"/></wpt><wpt lat="47.4126395" lon="11.1301239"><name>Westliche Törlspitze</name><desc>ele=2427
+name=Westliche Törlspitze
+natural=peak
+summit:cross=no
+summit:register=no</desc><link href="http://osm.org/browse/node/944092774"/></wpt><wpt lat="47.31284" lon="10.29192"><name>Wildengundkopf</name><desc>ele=2238
+name=Wildengundkopf
+natural=peak
+prominence=19
+ref:avf=859
+wikidata=Q323390
+wikipedia=de:Wildengundkopf</desc><link href="http://osm.org/browse/node/954676432"/></wpt><wpt lat="47.5720037" lon="12.8694054"><name>Blaueisspitze</name><desc>ele=2481
+name=Blaueisspitze
+natural=peak
+source=estimated from height lines
+summit:cross=yes
+wikidata=Q31354412</desc><link href="http://osm.org/browse/node/1055352004"/></wpt><wpt lat="47.585734" lon="12.8776064"><name>Steinberg</name><desc>ele=2065
+name=Steinberg
+natural=peak
+ref:avf=2010
+summit:cross=yes</desc><link href="http://osm.org/browse/node/1055352011"/></wpt><wpt lat="47.5727411" lon="12.8624286"><name>Kleinkalter</name><desc>ele=2513
+name=Kleinkalter
+natural=peak
+ref:avf=2060
+source=estimation from height lines
+summit:cross=no</desc><link href="http://osm.org/browse/node/1055547059"/></wpt><wpt lat="47.5461712" lon="12.847869"><name>Wimbachschneidspitze</name><desc>ele=2368
+name=Wimbachschneidspitze
+natural=peak
+ref:avf=2180
+source=estimated from height lines</desc><link href="http://osm.org/browse/node/1055547069"/></wpt><wpt lat="47.5625765" lon="12.8614196"><name>Ofentalhörnl</name><desc>ele=2513
+name=Ofentalhörnl
+natural=peak
+ref:avf=2130
+source=estimated from height lines
+wikidata=Q31296619</desc><link href="http://osm.org/browse/node/1055547071"/></wpt><wpt lat="47.5841081" lon="12.8613061"><name>Schärtenwandkopf</name><desc>ele=2065
+name=Schärtenwandkopf
+natural=peak
+ref:avf=2080
+source=estimated from height lines
+summit:cross=no</desc><link href="http://osm.org/browse/node/1055547086"/></wpt><wpt lat="47.5642609" lon="12.8677725"><name>Schönwandeck</name><desc>ele=2450
+name=Schönwandeck
+natural=peak
+ref:avf=2120
+source=estimated from height lines</desc><link href="http://osm.org/browse/node/1055547112"/></wpt><wpt lat="47.5786336" lon="12.8621648"><name>Rotpalfen</name><desc>ele=2367
+name=Rotpalfen
+natural=peak
+ref:avf=2070
+source=estimation from height lines
+summit:cross=no
+wikidata=Q1117892</desc><link href="http://osm.org/browse/node/1055547114"/></wpt><wpt lat="47.5546387" lon="12.8316752"><name>Hocheishörndl</name><desc>ele=2252
+name=Hocheishörndl
+natural=peak
+ref:avf=2220
+source=estimated from height lines
+wikidata=Q31353994</desc><link href="http://osm.org/browse/node/1055583497"/></wpt><wpt lat="47.5583201" lon="12.8357131"><name>Eislhörndl</name><desc>ele=2095
+name=Eislhörndl
+natural=peak
+ref:avf=2200
+source=estimated from height lines</desc><link href="http://osm.org/browse/node/1055583501"/></wpt><wpt lat="47.558802" lon="12.8284226"><name>Vorderberghörndl</name><desc>ele=2083
+name=Vorderberghörndl
+natural=peak
+ref:avf=2210
+source=estimated from height lines</desc><link href="http://osm.org/browse/node/1055583505"/></wpt><wpt lat="47.5509169" lon="12.8391498"><name>Hinterberghorn</name><desc>ele=2493
+name=Hinterberghorn
+natural=peak
+ref=avf:2240
+ref:avf=2230
+source=estimated from height lines</desc><link href="http://osm.org/browse/node/1055583508"/></wpt><wpt lat="47.5323307" lon="12.8706562"><name>Kleines Palfenhorn</name><desc>alt_name=Kleines Palfelhorn
+ele=2073
+name=Kleines Palfenhorn
+natural=peak
+ref:avf=2330
+source=estimated from height lines
+source:alt_name=Königreich Bayern 1848;Franzisco-Josephinische Landesaufnahme;Max Zeller 1915
+wikidata=Q19964160
+wikipedia=de:Kleines Palfenhorn</desc><link href="http://osm.org/browse/node/1055599840"/></wpt><wpt lat="47.5537381" lon="12.9378171"><name>1. Watzmannkind</name><desc>alt_name=Erstes Watzmannkind
+ele=2247
+name=1. Watzmannkind
+natural=peak
+ref:avf=2460
+source=estimation from height lines</desc><link href="http://osm.org/browse/node/1059463596"/></wpt><wpt lat="47.5519243" lon="12.9339669"><name>3. Watzmannkind</name><desc>alt_name=Drittes Watzmannkind
+ele=2209
+name=3. Watzmannkind
+natural=peak
+ref:avf=2480
+source:ele=gps</desc><link href="http://osm.org/browse/node/1059463616"/></wpt><wpt lat="47.5527479" lon="12.9328971"><name>4. Watzmannkind</name><desc>alt_name=Viertes Watzmannkind
+ele=2270
+name=4. Watzmannkind
+natural=peak
+ref:avf=2490
+source=estimation from height lines</desc><link href="http://osm.org/browse/node/1059463627"/></wpt><wpt lat="47.5526978" lon="12.9309994"><name>5. Watzmannkind</name><desc>alt_name=Fünftes Watzmannkind
+ele=2225
+name=5. Watzmannkind
+natural=peak</desc><link href="http://osm.org/browse/node/1059463633"/></wpt><wpt lat="47.5570403" lon="13.048298"><name>Reinersberg</name><desc>ele=2171
+name=Reinersberg
+natural=peak
+ref:avf=2850
+wikidata=Q31359087</desc><link href="http://osm.org/browse/node/1059571690"/></wpt><wpt lat="47.514663" lon="13.0275981"><name>Hochsäul</name><desc>ele=2073
+name=Hochsäul
+natural=peak
+ref:avf=2980
+summit:cross=yes
+wikidata=Q31353952</desc><link href="http://osm.org/browse/node/1060100549"/></wpt><wpt lat="47.5502715" lon="13.0446421"><name>Windschartenkopf</name><desc>ele=2211
+name=Windschartenkopf
+natural=peak
+ref:avf=2900
+summit:cross=yes
+wikidata=Q93958735</desc><link href="http://osm.org/browse/node/1060100551"/></wpt><wpt lat="47.4787073" lon="12.9725873"><name>Ledererkopf (M)</name><desc>ele=2456
+name=Ledererkopf (M)
+natural=peak
+ref:avf=3370
+source:ele=Laserscan</desc><link href="http://osm.org/browse/node/1060193888"/></wpt><wpt lat="47.4810842" lon="12.9743492"><name>Ledererkopf (N)</name><desc>ele=2506
+name=Ledererkopf (N)
+natural=peak
+ref:avf=3370
+source:ele=Laserscan</desc><link href="http://osm.org/browse/node/1060193890"/></wpt><wpt lat="47.4812326" lon="13.0243806"><name>Schloßkopf</name><desc>alt_name=Schottmal
+ele=2139
+name=Schloßkopf
+natural=peak
+ref:avf=3900
+wikidata=Q21873251</desc><link href="http://osm.org/browse/node/1060286350"/></wpt><wpt lat="47.5445909" lon="11.1992896"><name>Krottenkopf Ostgipfel</name><desc>ele=2008
+name=Krottenkopf Ostgipfel
+natural=peak
+source_ref=http://www.flickr.com/photos/kogo59/5454886506/</desc><link href="http://osm.org/browse/node/1161136429"/></wpt><wpt lat="47.4291531" lon="10.4628248"><name>Lahnerkopf</name><desc>ele=2121
+name=Lahnerkopf
+name:de-AT=Lehnerkopf
+natural=peak
+prominence=133
+ref:avf=1162
+wikidata=Q323562
+wikipedia=de:Lahnerkopf (Allgäuer Alpen)</desc><link href="http://osm.org/browse/node/1175453045"/></wpt><wpt lat="47.3959029" lon="10.3851082"><name>node/1184709612</name><desc>ele=2119
+natural=peak
+prominence=35
+wikidata=Q133048350</desc><link href="http://osm.org/browse/node/1184709612"/></wpt><wpt lat="47.5051969" lon="13.041245"><name>Bramasofenkopf</name><desc>alt_name=Kragenköpfl
+ele=2147
+name=Bramasofenkopf
+natural=peak
+note=estimated from SRTM</desc><link href="http://osm.org/browse/node/1391464505"/></wpt><wpt lat="47.295291" lon="10.192541"><name>Hüttenkopf</name><desc>alt_name=Mindelheimer Köpfle
+ele=2208
+name=Hüttenkopf
+natural=peak
+prominence=44
+ref:avf=797
+wikidata=Q1936353
+wikipedia=de:Mindelheimer Köpfle</desc><link href="http://osm.org/browse/node/1490464439"/></wpt><wpt lat="47.4475351" lon="11.3987822"><name>Vordere Schlichtenkarspitze</name><desc>ele=2356
+name=Vordere Schlichtenkarspitze
+natural=peak
+wikidata=Q21873245</desc><link href="http://osm.org/browse/node/1617914845"/></wpt><wpt lat="47.4254602" lon="11.290907"><name>Mittlere Linderspitze</name><desc>ele=2239
+inscription=Mittlerelinderspitze 2300
+name=Mittlere Linderspitze
+natural=peak
+wikidata=Q15849891
+wikipedia=de:Linderspitzen</desc><link href="http://osm.org/browse/node/1621410586"/></wpt><wpt lat="47.4270819" lon="11.2870608"><name>Gerberkreuz</name><desc>ele=2303
+name=Gerberkreuz
+natural=peak
+wikidata=Q31555001</desc><link href="http://osm.org/browse/node/1621410656"/></wpt><wpt lat="47.509013" lon="11.4876"><name>Schafreuter</name><desc>ele=2102
+name=Schafreuter
+natural=peak
+source=aerial imagery;basemap.at
+wikidata=Q315887
+wikipedia=de:Schafreuter</desc><link href="http://osm.org/browse/node/1621410767"/></wpt><wpt lat="47.4464989" lon="11.02611"><name>Zwölferkopf</name><desc>ele=2226
+name=Zwölferkopf
+natural=peak
+source=kompass.de
+wikidata=Q31555875</desc><link href="http://osm.org/browse/node/1621651564"/></wpt><wpt lat="47.3941679" lon="10.3605812"><name>Schochen</name><desc>ele=2100
+name=Schochen
+natural=peak
+prominence=97
+ref:avf=1310
+wikidata=Q597225
+wikipedia=de:Schochen</desc><link href="http://osm.org/browse/node/1640199607"/></wpt><wpt lat="47.3897992" lon="10.3813838"><name>Rotkopf Südgipfel</name><desc>ele=2182
+name=Rotkopf Südgipfel
+natural=peak
+prominence=8
+wikidata=Q131881255</desc><link href="http://osm.org/browse/node/1643299324"/></wpt><wpt lat="47.3910978" lon="10.3812708"><name>Rotkopf</name><desc>alt_name=Rotkopf Mittelgipfel
+ele=2194
+name=Rotkopf
+natural=peak
+prominence=87
+ref:avf=1384
+wikidata=Q131881063</desc><link href="http://osm.org/browse/node/1643299468"/></wpt><wpt lat="47.3919684" lon="10.3814938"><name>Rotkopf Nordgipfel</name><desc>ele=2188
+name=Rotkopf Nordgipfel
+natural=peak
+prominence=23
+wikidata=Q131880751</desc><link href="http://osm.org/browse/node/1643299567"/></wpt><wpt lat="47.4019374" lon="10.3898753"><name>node/1643304152</name><desc>ele=2011
+natural=peak
+prominence=25</desc><link href="http://osm.org/browse/node/1643304152"/></wpt><wpt lat="47.4186732" lon="11.2926087"><name>Sulzleklammspitze</name><desc>ele=2321
+inscription=Sulzleklammspitze 2323m
+name=Sulzleklammspitze
+natural=peak
+wikidata=Q31517989</desc><link href="http://osm.org/browse/node/1676377698"/></wpt><wpt lat="47.4238952" lon="11.0052221"><name>Bergl</name><desc>ele=2272
+fixme=elevation from internet (http://de.geoview.info/bergl,6939756)
+name=Bergl
+natural=peak
+wikidata=Q31555547</desc><link href="http://osm.org/browse/node/1833449059"/></wpt><wpt lat="47.4209691" lon="11.0495134"><name>Blassenkopf</name><desc>ele=2628
+name=Blassenkopf
+natural=peak</desc><link href="http://osm.org/browse/node/1833449062"/></wpt><wpt lat="47.4165238" lon="11.0306086"><name>Großer Kirchturm</name><desc>ele=2514
+name=Großer Kirchturm
+natural=peak
+wikidata=Q31544024</desc><link href="http://osm.org/browse/node/1833449069"/></wpt><wpt lat="47.4223964" lon="11.0444402"><name>Hochblassen</name><desc>ele=2706
+name=Hochblassen
+natural=peak
+wikidata=Q870721</desc><link href="http://osm.org/browse/node/1833449075"/></wpt><wpt lat="47.4223324" lon="11.0633797"><name>Hoher Gaif</name><desc>ele=2288
+name=Hoher Gaif
+natural=peak
+summit:cross=yes
+wikidata=Q31539054</desc><link href="http://osm.org/browse/node/1833449085"/></wpt><wpt lat="47.4066196" lon="11.2882158"><name>Rotwandlspitze</name><desc>ele=2192
+name=Rotwandlspitze
+natural=peak
+summit:cross=no
+summit:register=no
+wikidata=Q15273395
+wikipedia=de:Rotwandlspitze</desc><link href="http://osm.org/browse/node/1999392342"/></wpt><wpt lat="47.3959556" lon="11.0553604"><name>Hochwanner</name><desc>ele=2744
+name=Hochwanner
+natural=peak
+old_name=Kotbachspitze;Kothbachspitze
+prominence=699
+source:old_name=Franzisco-Josephinische Landesaufnahme;Franziszeischer Kataster
+wikidata=Q255743
+wikimedia_commons=Category:Hochwanner
+wikipedia=de:Hochwanner</desc><link href="http://osm.org/browse/node/2061799676"/></wpt><wpt lat="47.4920061" lon="11.3610059"><name>Gumpenkarspitze</name><desc>ele=2010
+name=Gumpenkarspitze
+natural=peak
+source_ref=http://www.flickr.com/photos/kogo59/8290882081/
+summit:cross=yes
+wikidata=Q15111956</desc><link href="http://osm.org/browse/node/2076476475"/></wpt><wpt lat="49.2492922" lon="7.8612193"><name>Wernagel</name><desc>ele=464,7
+name=Wernagel
+natural=peak
+wikidata=Q30613565</desc><link href="http://osm.org/browse/node/2239112405"/></wpt><wpt lat="50.1019678" lon="7.2209906"><name>Schellenberg</name><desc>ele=352,3
+name=Schellenberg
+natural=peak
+tourism=viewpoint
+wikidata=Q31332314</desc><link href="http://osm.org/browse/node/2382132229"/></wpt><wpt lat="47.4816121" lon="11.3424194"><name>Soiernschneid</name><desc>ele=2174
+ele:NN=2174
+name=Soiernschneid
+natural=peak
+wikidata=Q31556117</desc><link href="http://osm.org/browse/node/2418167369"/></wpt><wpt lat="47.4935477" lon="11.3690903"><name>Krapfenkarspitze</name><desc>ele=2110
+name=Krapfenkarspitze
+natural=peak
+source_ref=http://www.flickr.com/photos/kogo59/5413924577/
+summit:cross=yes
+summit:register=yes
+wikidata=Q15057166</desc><link href="http://osm.org/browse/node/2419126850"/></wpt><wpt lat="47.59058" lon="12.7978323"><name>Großes Mühlsturzhorn</name><desc>ele=2234
+fixme=Lage
+name=Großes Mühlsturzhorn
+natural=peak
+wikidata=Q17250350</desc><link href="http://osm.org/browse/node/2428070343"/></wpt><wpt lat="47.5913873" lon="12.8015976"><name>Kleines Mühlsturzhorn</name><desc>ele=2141
+fixme=Lage
+name=Kleines Mühlsturzhorn
+natural=peak
+wikidata=Q21693450</desc><link href="http://osm.org/browse/node/2428070344"/></wpt><wpt lat="47.5952828" lon="12.8098121"><name>Knittelhorn</name><desc>ele=2015
+fixme=Lage
+name=Knittelhorn
+natural=peak
+source=geoimage.at</desc><link href="http://osm.org/browse/node/2428071182"/></wpt><wpt lat="47.5925701" lon="12.8060459"><name>Großes Grundübelhorn</name><desc>ele=2096
+fixme=Lage
+name=Großes Grundübelhorn
+natural=peak</desc><link href="http://osm.org/browse/node/2428071183"/></wpt><wpt lat="47.5937287" lon="12.8082407"><name>Kleines Grundübelhorn</name><desc>ele=2084
+fixme=Lage
+name=Kleines Grundübelhorn
+natural=peak</desc><link href="http://osm.org/browse/node/2428276691"/></wpt><wpt lat="47.4381128" lon="11.047341"><name>Höllentorkopf</name><desc>ele=2150
+name=Höllentorkopf
+natural=peak
+wikidata=Q1273885</desc><link href="http://osm.org/browse/node/2441923393"/></wpt><wpt lat="47.4296521" lon="11.0001335"><name>Riffelköpfe</name><desc>ele=2389
+name=Riffelköpfe
+natural=peak</desc><link href="http://osm.org/browse/node/2445853408"/></wpt><wpt lat="47.4868317" lon="13.0315637"><name>Kleines Teufelshorn</name><desc>ele=2283
+name=Kleines Teufelshorn
+natural=peak
+ref:avf=3040
+summit:cross=yes
+wikidata=Q21873203</desc><link href="http://osm.org/browse/node/2489067962"/></wpt><wpt lat="47.5205032" lon="13.0460473"><name>Vorderer Kragenkopf</name><desc>ele=2173
+name=Vorderer Kragenkopf
+natural=peak
+source=estimated from elevation lines</desc><link href="http://osm.org/browse/node/2496261339"/></wpt><wpt lat="47.5468447" lon="12.84264"><name>Hocheisspitze</name><desc>ele=2523
+name=Hocheisspitze
+natural=peak
+ref:avf=2240
+wikidata=Q871271
+wikipedia=de:Hocheisspitze</desc><link href="http://osm.org/browse/node/2496261392"/></wpt><wpt lat="47.4850145" lon="12.9767787"><name>Funtenseetauern</name><desc>ele=2578.4
+name=Funtenseetauern
+natural=peak
+ref:avf=3350
+summit:cross=yes
+wikidata=Q316715
+wikipedia=de:Funtenseetauern</desc><link href="http://osm.org/browse/node/2498250593"/></wpt><wpt lat="47.4891572" lon="13.0362619"><name>Großes Teufelshorn</name><desc>ele=2362
+name=Großes Teufelshorn
+natural=peak
+ref:avf=3030
+summit:cross=yes
+wikidata=Q320734</desc><link href="http://osm.org/browse/node/2498250705"/></wpt><wpt lat="47.3957891" lon="11.1118219"><name>Scharnitzspitze</name><desc>ele=2461
+name=Scharnitzspitze
+natural=peak
+source=survey
+wikidata=Q21865424
+wikipedia=de:Scharnitzspitze</desc><link href="http://osm.org/browse/node/2506368453"/></wpt><wpt lat="47.54834" lon="11.1798299"><name>Kareck</name><desc>ele=2046
+name=Kareck
+natural=peak
+wikidata=Q31536162</desc><link href="http://osm.org/browse/node/2526645267"/></wpt><wpt lat="47.3175062" lon="10.3487798"><name>Öfnerspitze</name><desc>ele=2576
+name=Öfnerspitze
+natural=peak
+prominence=137
+ref:avf=1573
+wikidata=Q281277
+wikipedia=de:Öfnerspitze</desc><link href="http://osm.org/browse/node/2622035954"/></wpt><wpt lat="51.7900833" lon="10.8272778"><name>Hartenberg</name><desc>ele=517,1
+name=Hartenberg
+natural=peak</desc><link href="http://osm.org/browse/node/2837928504"/></wpt><wpt lat="47.5089561" lon="12.9205349"><name>Gamskarköpfl</name><desc>ele=2031
+name=Gamskarköpfl
+natural=peak</desc><link href="http://osm.org/browse/node/2875158437"/></wpt><wpt lat="47.5625765" lon="12.8614196"><name>Ofentalhörndl</name><desc>ele=2513
+name=Ofentalhörndl
+natural=peak
+wikipedia=de:Hochkalter#Ofentalhörnl</desc><link href="http://osm.org/browse/node/2934579315"/></wpt><wpt lat="47.5460878" lon="12.8221541"><name>Karlkopf</name><desc>ele=2195
+name=Karlkopf
+natural=peak</desc><link href="http://osm.org/browse/node/2980105509"/></wpt><wpt lat="47.5873106" lon="12.8762366"><name>Steinberg</name><desc>ele=2026
+name=Steinberg
+natural=peak</desc><link href="http://osm.org/browse/node/2989185125"/></wpt><wpt lat="47.4028245" lon="11.104952"><name>Oberreintalturm</name><desc>ele=2014
+name=Oberreintalturm
+natural=peak
+source=survey</desc><link href="http://osm.org/browse/node/3112764094"/></wpt><wpt lat="47.5531398" lon="12.9353854"><name>2. Watzmannkind</name><desc>alt_name=Zweites Watzmannkind
+ele=2232
+fixme=exakt position
+name=2. Watzmannkind
+natural=peak</desc><link href="http://osm.org/browse/node/3116985621"/></wpt><wpt lat="47.5542784" lon="12.9433972"><name>Lablkopf</name><desc>ele=2015
+ele:source=gps
+name=Lablkopf
+natural=peak</desc><link href="http://osm.org/browse/node/3116985622"/></wpt><wpt lat="47.5939262" lon="13.0671406"><name>Hoher Göll</name><desc>ele=2522
+man_made=cross
+name=Hoher Göll
+natural=peak
+prominence=789
+ref:avf=2690
+summit:cross=yes
+wikidata=Q549503
+wikimedia_commons=File:Hoher Göll - Gipfelkreuz.jpg
+wikipedia=de:Hoher Göll</desc><link href="http://osm.org/browse/node/3186071317"/></wpt><wpt lat="47.5931666" lon="12.7953337"><name>Stadelhorn</name><desc>ele=2286
+name=Stadelhorn
+natural=peak
+prominence=1121
+wikidata=Q472226</desc><link href="http://osm.org/browse/node/3237548037"/></wpt><wpt lat="47.485745" lon="12.9610979"><name>Ledererkopf</name><desc>ele=2050
+name=Ledererkopf
+natural=peak
+source=Skelettskizze Funtenseetauern ca. 1920</desc><link href="http://osm.org/browse/node/3403866805"/></wpt><wpt lat="47.4081217" lon="11.1239416"><name>Partenkirchner Dreitorspitze, Mittelgipfel</name><desc>ele=2622
+name=Partenkirchner Dreitorspitze, Mittelgipfel
+natural=peak
+summit:cross=no</desc><link href="http://osm.org/browse/node/3634965710"/></wpt><wpt lat="47.4091248" lon="11.1256736"><name>Partenkirchner Dreitorspitze, Nordostgipfel</name><desc>ele=2626
+name=Partenkirchner Dreitorspitze, Nordostgipfel
+natural=peak
+summit:cross=yes</desc><link href="http://osm.org/browse/node/3634965711"/></wpt><wpt lat="47.4127386" lon="11.1353612"><name>Östliche Törlspitze</name><desc>ele=2444
+name=Östliche Törlspitze
+natural=peak
+summit:cross=no</desc><link href="http://osm.org/browse/node/3634965712"/></wpt><wpt lat="47.3661458" lon="10.350553"><name>Höfats Ostgipfel</name><desc>alt_name=Höfats Südostgipfel
+ele=2258
+name=Höfats Ostgipfel
+name:en=Höfats eastern summit
+natural=peak
+prominence=53
+ref:avf=1345
+wikidata=Q124422101</desc><link href="http://osm.org/browse/node/3673190039"/></wpt><wpt lat="47.4474242" lon="10.3934104"><name>Kirchl</name><desc>alt_name=Pfannhölzerturm
+ele=2053
+name=Kirchl
+natural=peak
+prominence=32
+ref:avf=1290
+wikidata=Q131316674</desc><link href="http://osm.org/browse/node/3678383616"/></wpt><wpt lat="47.596405" lon="13.0527859"><name>Pflughörndl</name><desc>ele=2047
+name=Pflughörndl
+natural=peak</desc><link href="http://osm.org/browse/node/3727777415"/></wpt><wpt lat="47.4879802" lon="10.440407"><name>B'schießer</name><desc>alt_name=Bschießer
+ele=2000
+name=B'schießer
+name:at=Bscheißer
+name:de=B'schießer
+natural=peak
+prominence=107
+ref:avf=1122
+summit:cross=yes
+wikidata=Q323910
+wikimedia_commons=Category:Bschiesser
+wikipedia=de:Bschießer</desc><link href="http://osm.org/browse/node/3743153796"/></wpt><wpt lat="47.4150815" lon="11.1280779"><name>Frauenalplspitz</name><desc>ele=2369
+name=Frauenalplspitz
+natural=peak
+summit:cross=no
+wikidata=Q31555531</desc><link href="http://osm.org/browse/node/3777140321"/></wpt><wpt lat="47.4166877" lon="11.1277051"><name>Frauenalplkopf</name><desc>ele=2351.5
+name=Frauenalplkopf
+natural=peak
+summit:cross=yes
+wikidata=Q31555471</desc><link href="http://osm.org/browse/node/3777140322"/></wpt><wpt lat="47.410641" lon="11.1264927"><name>Signalkuppe</name><desc>alt_name=Signalkopf
+ele=2486
+fixme=position estimated
+name=Signalkuppe
+natural=peak</desc><link href="http://osm.org/browse/node/4059510444"/></wpt><wpt lat="47.4099632" lon="11.1265424"><name>Bayerländerturm</name><desc>ele=2507
+fixme=position estimated
+name=Bayerländerturm
+natural=peak</desc><link href="http://osm.org/browse/node/4059510445"/></wpt><wpt lat="47.5176763" lon="13.0353451"><name>Schossenkopf</name><desc>ele=2106.7
+name=Schossenkopf
+natural=peak
+note=Höhe: Hist. Karte ca.1900
+wikidata=Q31324123</desc><link href="http://osm.org/browse/node/4256065941"/></wpt><wpt lat="47.5173821" lon="13.0289044"><name>Grauer Kopf</name><desc>ele=2054.5
+name=Grauer Kopf
+natural=peak</desc><link href="http://osm.org/browse/node/4270248273"/></wpt><wpt lat="47.5737113" lon="12.8755931"><name>Kopf des Hunds</name><desc>ele=2012
+name=Kopf des Hunds
+natural=peak
+summit:cross=yes</desc><link href="http://osm.org/browse/node/4687406836"/></wpt><wpt lat="47.5455209" lon="12.8384593"><name>Hocheiskopf</name><desc>ele=2495
+name=Hocheiskopf
+natural=peak</desc><link href="http://osm.org/browse/node/4689311473"/></wpt><wpt lat="47.414342" lon="11.0308341"><name>Kleiner Kirchturm</name><desc>ele=2368
+name=Kleiner Kirchturm
+natural=peak
+wikidata=Q31534553</desc><link href="http://osm.org/browse/node/4938279910"/></wpt><wpt lat="47.3433273" lon="10.3462403"><name>node/4939234476</name><desc>ele=2054
+natural=peak
+prominence=4</desc><link href="http://osm.org/browse/node/4939234476"/></wpt><wpt lat="47.4017931" lon="11.0724993"><name>Jungfernkarkopf</name><desc>ele=2355
+name=Jungfernkarkopf
+natural=peak</desc><link href="http://osm.org/browse/node/4944025921"/></wpt><wpt lat="47.36145" lon="10.35144"><name>Falkenberg</name><desc>ele=2003
+name=Falkenberg
+natural=peak
+prominence=22
+summit:cross=yes
+wikidata=Q130525275</desc><link href="http://osm.org/browse/node/4997627646"/></wpt><wpt lat="47.3664231" lon="10.3502597"><name>Höfats Mittelgipfel</name><desc>alt_name=Höfats Dritter Gipfel
+ele=2257
+name=Höfats Mittelgipfel
+name:en=Höfats central summit
+natural=peak
+prominence=21
+ref:avf=1345
+wikidata=Q124422109</desc><link href="http://osm.org/browse/node/4997627655"/></wpt><wpt lat="47.491995" lon="11.3287726"><name>Feldernkreuz</name><desc>ele=2048
+name=Feldernkreuz
+natural=peak
+wikidata=Q15056103</desc><link href="http://osm.org/browse/node/5034081693"/></wpt><wpt lat="47.5843857" lon="13.0496897"><name>Hohes Brett</name><desc>ele=2340
+name=Hohes Brett
+natural=peak
+note=ele was 2331.8
+ref:avf=2720
+summit:cross=yes
+wikidata=Q1623963
+wikipedia=de:Hohes Brett</desc><link href="http://osm.org/browse/node/5079866695"/></wpt><wpt lat="47.3126361" lon="10.2276888"><name>node/5732788043</name><desc>ele=2093
+natural=peak
+prominence=43
+wikidata=Q138028807</desc><link href="http://osm.org/browse/node/5732788043"/></wpt><wpt lat="47.37649" lon="10.12894"><name>Toreck</name><desc>ele=2016
+name=Toreck
+natural=peak
+prominence=17
+wikidata=Q8532420
+wikipedia=en:Toreck</desc><link href="http://osm.org/browse/node/5793904554"/></wpt><wpt lat="47.4802879" lon="11.3443547"><name>Reißende Lahnspitz</name><desc>ele=2209
+ele:NN=2209
+name=Reißende Lahnspitz
+natural=peak
+wikidata=Q31526445</desc><link href="http://osm.org/browse/node/5817402896"/></wpt><wpt lat="47.4177816" lon="11.1484033"><name>Drei Scharten</name><desc>ele=2304
+name=Drei Scharten
+natural=peak</desc><link href="http://osm.org/browse/node/5926552247"/></wpt><wpt lat="47.4134901" lon="10.4349889"><name>Sattelköpfle</name><desc>ele=2021
+name=Sattelköpfle
+natural=peak
+prominence=31
+summit:cross=yes
+summit:register=yes
+wikidata=Q130532433</desc><link href="http://osm.org/browse/node/6152393364"/></wpt><wpt lat="47.4023869" lon="11.0830808"><name>Kleiner Hundsstallkopf</name><desc>ele=2338
+name=Kleiner Hundsstallkopf
+natural=peak
+wikidata=Q31555357</desc><link href="http://osm.org/browse/node/6530414814"/></wpt><wpt lat="47.4172061" lon="11.140303"><name>Hirschbichlkopf</name><desc>ele=2276
+name=Hirschbichlkopf
+natural=peak
+wikidata=Q31555502</desc><link href="http://osm.org/browse/node/6530414816"/></wpt><wpt lat="47.4280299" lon="11.1991612"><name>Untere Wettersteinspitze</name><desc>ele=2151
+name=Untere Wettersteinspitze
+natural=peak
+wikidata=Q2566053
+wikipedia=de:Wettersteinspitzen</desc><link href="http://osm.org/browse/node/6530414818"/></wpt><wpt lat="47.6049327" lon="12.8099509"><name>Predigtstuhl</name><desc>ele=2004
+name=Predigtstuhl
+natural=peak</desc><link href="http://osm.org/browse/node/6619156558"/></wpt><wpt lat="47.3943412" lon="11.1002872"><name>Teufelskopf</name><desc>ele=2440
+name=Teufelskopf
+natural=peak
+wikidata=Q21878034</desc><link href="http://osm.org/browse/node/6631990152"/></wpt><wpt lat="47.4155275" lon="11.2928413"><name>Kirchlespitze</name><desc>alt_name=Kirchlspitze
+ele=2301
+name=Kirchlespitze
+natural=peak
+wikidata=Q21879083</desc><link href="http://osm.org/browse/node/6690737689"/></wpt><wpt lat="51.169131" lon="10.2010721"><name>Karnberg</name><desc>ele=434,2
+name=Karnberg
+natural=peak
+wikidata=Q30630697</desc><link href="http://osm.org/browse/node/7555541730"/></wpt><wpt lat="51.1840725" lon="10.2109673"><name>Konstein</name><desc>ele=455,2
+name=Konstein
+natural=peak
+wikidata=Q31333267</desc><link href="http://osm.org/browse/node/7555541731"/></wpt><wpt lat="47.43336" lon="10.38439"><name>Laufbichelkirche</name><desc>alt_name=Laufbichlkirche; Laufbichler Kirche
+ele=2042
+name=Laufbichelkirche
+natural=peak
+prominence=79
+ref:avf=1295
+wikidata=Q131362662</desc><link href="http://osm.org/browse/node/8462457547"/></wpt><wpt lat="47.445047" lon="10.3909421"><name>Auf dem Falken</name><desc>ele=2088
+name=Auf dem Falken
+natural=peak
+prominence=21
+wikidata=Q130483332</desc><link href="http://osm.org/browse/node/8462457549"/></wpt><wpt lat="54.1221457" lon="11.6662574"><name>node/9492945142</name><desc>ele=~40
+natural=peak</desc><link href="http://osm.org/browse/node/9492945142"/></wpt><wpt lat="47.32632" lon="10.32892"><name>Schafberg</name><desc>ele=2264
+name=Schafberg
+natural=peak
+prominence=28
+wikidata=Q130554145</desc><link href="http://osm.org/browse/node/9588020892"/></wpt><wpt lat="50.5927366" lon="12.1237178"><name>Steinpöhl</name><desc>ele=~455
+name=Steinpöhl
+natural=peak</desc><link href="http://osm.org/browse/node/10000691911"/></wpt><wpt lat="50.7245233" lon="12.186015"><name>Wachberg</name><desc>ele=~390
+name=Wachberg
+natural=peak
+wikidata=Q31292869</desc><link href="http://osm.org/browse/node/10038439621"/></wpt><wpt lat="50.5961407" lon="12.1316109"><name>Wachthübel</name><desc>ele=~410
+name=Wachthübel
+natural=peak</desc><link href="http://osm.org/browse/node/10072820095"/></wpt><wpt lat="50.6902164" lon="12.1526961"><name>Röschnitzberg</name><desc>ele=~365
+name=Röschnitzberg
+natural=peak</desc><link href="http://osm.org/browse/node/10072846655"/></wpt><wpt lat="47.5095729" lon="10.9161796"><name>node/10087933719</name><desc>ele=2052
+natural=peak</desc><link href="http://osm.org/browse/node/10087933719"/></wpt><wpt lat="53.1689526" lon="13.8811933"><name>Galgenberg</name><desc>ele=57,9
+name=Galgenberg
+natural=peak</desc><link href="http://osm.org/browse/node/10764752632"/></wpt><wpt lat="53.1707705" lon="13.8930173"><name>Kienberg</name><desc>ele=85,3
+name=Kienberg
+natural=peak</desc><link href="http://osm.org/browse/node/10797144738"/></wpt><wpt lat="53.1746796" lon="13.888725"><name>node/10797148994</name><desc>ele=58,1
+natural=peak</desc><link href="http://osm.org/browse/node/10797148994"/></wpt><wpt lat="53.1886932" lon="13.9043933"><name>Reiherberg</name><desc>ele=83,9
+name=Reiherberg
+natural=peak</desc><link href="http://osm.org/browse/node/10816938648"/></wpt><wpt lat="51.4408009" lon="9.4778776"><name>Leutenhäuser Berg</name><desc>ele=297,9
+name=Leutenhäuser Berg
+natural=peak</desc><link href="http://osm.org/browse/node/10830668673"/></wpt><wpt lat="51.5609175" lon="10.506627"><name>Buchenberg</name><desc>ele=320,2
+name=Buchenberg
+natural=peak</desc><link href="http://osm.org/browse/node/10860510758"/></wpt><wpt lat="51.563231" lon="10.4949543"><name>Mittelberg</name><desc>ele=318,2
+name=Mittelberg
+natural=peak</desc><link href="http://osm.org/browse/node/10860510759"/></wpt><wpt lat="51.5018872" lon="10.2024848"><name>Pfingstberg</name><desc>ele=223,8
+name=Pfingstberg
+natural=peak</desc><link href="http://osm.org/browse/node/10895915827"/></wpt><wpt lat="51.5026062" lon="10.2111108"><name>node/10895915829</name><desc>ele=257,9
+natural=peak</desc><link href="http://osm.org/browse/node/10895915829"/></wpt><wpt lat="51.535456" lon="10.2859986"><name>Tettelwarte</name><desc>ele=282,1
+image=https://commons.wikimedia.org/wiki/File:Tettelwarte.jpg
+name=Tettelwarte
+natural=peak
+wikidata=Q31299740</desc><link href="http://osm.org/browse/node/10929975559"/></wpt><wpt lat="51.9837632" lon="10.4453309"><name>Schneeberg</name><desc>ele=282,6
+name=Schneeberg
+natural=peak
+wikidata=Q31325850</desc><link href="http://osm.org/browse/node/11037331433"/></wpt><wpt lat="51.9826738" lon="10.426366"><name>Barley</name><desc>ele=288,4
+name=Barley
+natural=peak</desc><link href="http://osm.org/browse/node/11037331437"/></wpt><wpt lat="51.9787675" lon="10.4299924"><name>Glockenberg</name><desc>ele=284,4
+name=Glockenberg
+natural=peak
+wikidata=Q30678663</desc><link href="http://osm.org/browse/node/11037331438"/></wpt><wpt lat="51.9821946" lon="10.4346851"><name>Querberg</name><desc>ele=303,4
+name=Querberg
+natural=peak
+wikidata=Q31289951</desc><link href="http://osm.org/browse/node/11037331439"/></wpt><wpt lat="51.9689349" lon="10.4371362"><name>Fischerköpfe</name><desc>ele=309,1
+name=Fischerköpfe
+natural=peak</desc><link href="http://osm.org/browse/node/11037331440"/></wpt><wpt lat="52.0658705" lon="10.3453402"><name>Kleiner Vorberg</name><desc>ele=228,1
+name=Kleiner Vorberg
+natural=peak</desc><link href="http://osm.org/browse/node/11039943563"/></wpt><wpt lat="52.1216334" lon="10.2882351"><name>Burgberg</name><desc>ele=241,1
+name=Burgberg
+natural=peak</desc><link href="http://osm.org/browse/node/11039943564"/></wpt><wpt lat="47.4232331" lon="10.4563733"><name>Schänzlespitz</name><desc>alt_name=Schänzlespitze
+ele=2052
+name=Schänzlespitz
+natural=peak
+prominence=113
+ref:avf=1165
+wikidata=Q323571
+wikipedia=de:Schänzlespitz</desc><link href="http://osm.org/browse/node/11286976214"/></wpt><wpt lat="47.4446673" lon="10.3837599"><name>node/11287088673</name><desc>ele=2176
+natural=peak
+prominence=7</desc><link href="http://osm.org/browse/node/11287088673"/></wpt><wpt lat="47.386593" lon="10.431625"><name>Mittlere Balkenspitze</name><desc>ele=2315
+name=Mittlere Balkenspitze
+name:en=Central Balkenspitze
+natural=peak
+prominence=18
+wikidata=Q130532207</desc><link href="http://osm.org/browse/node/11373913264"/></wpt><wpt lat="47.378056" lon="10.3852797"><name>node/11373959481</name><desc>ele=2029
+natural=peak
+prominence=22</desc><link href="http://osm.org/browse/node/11373959481"/></wpt><wpt lat="47.4336118" lon="10.3302779"><name>node/11465627795</name><desc>ele=2000
+natural=peak
+prominence=10</desc><link href="http://osm.org/browse/node/11465627795"/></wpt><wpt lat="47.4220056" lon="10.3365379"><name>node/11465627796</name><desc>ele=2166
+natural=peak
+prominence=21</desc><link href="http://osm.org/browse/node/11465627796"/></wpt><wpt lat="47.4355581" lon="10.3305883"><name>node/11465627813</name><desc>ele=2014
+natural=peak
+prominence=7</desc><link href="http://osm.org/browse/node/11465627813"/></wpt><wpt lat="47.4382484" lon="10.3768028"><name>node/11465675582</name><desc>ele=2219
+natural=peak
+prominence=9</desc><link href="http://osm.org/browse/node/11465675582"/></wpt><wpt lat="47.4344621" lon="10.369728"><name>node/11465675588</name><desc>ele=2154
+natural=peak
+prominence=19
+wikidata=Q132717802</desc><link href="http://osm.org/browse/node/11465675588"/></wpt><wpt lat="47.4293292" lon="10.3641422"><name>node/11465675594</name><desc>ele=2134
+natural=peak
+prominence=45
+wikidata=Q132717803</desc><link href="http://osm.org/browse/node/11465675594"/></wpt><wpt lat="47.4254503" lon="10.3595229"><name>node/11465675598</name><desc>ele=2191
+natural=peak
+prominence=15</desc><link href="http://osm.org/browse/node/11465675598"/></wpt><wpt lat="47.4246691" lon="10.3579259"><name>node/11465675600</name><desc>ele=2182
+natural=peak
+prominence=14</desc><link href="http://osm.org/browse/node/11465675600"/></wpt><wpt lat="47.4247825" lon="10.355169"><name>node/11465675603</name><desc>ele=2197
+natural=peak
+prominence=18</desc><link href="http://osm.org/browse/node/11465675603"/></wpt><wpt lat="47.4242288" lon="10.3534157"><name>node/11465675605</name><desc>ele=2198
+natural=peak
+prominence=14</desc><link href="http://osm.org/browse/node/11465675605"/></wpt><wpt lat="47.4222228" lon="10.3450068"><name>node/11465675612</name><desc>ele=2214
+natural=peak
+prominence=33</desc><link href="http://osm.org/browse/node/11465675612"/></wpt><wpt lat="47.420955" lon="10.3348527"><name>node/11465675625</name><desc>ele=2074
+natural=peak
+prominence=4</desc><link href="http://osm.org/browse/node/11465675625"/></wpt><wpt lat="47.43306" lon="10.46286"><name>node/11466455839</name><desc>ele=2032
+natural=peak
+prominence=16</desc><link href="http://osm.org/browse/node/11466455839"/></wpt><wpt lat="47.333585" lon="10.3566087"><name>node/11466458097</name><desc>ele=2379
+natural=peak
+prominence=119
+wikidata=Q137971496</desc><link href="http://osm.org/browse/node/11466458097"/></wpt><wpt lat="47.3303573" lon="10.3537455"><name>node/11466458098</name><desc>ele=2336
+natural=peak
+prominence=13</desc><link href="http://osm.org/browse/node/11466458098"/></wpt><wpt lat="47.3152446" lon="10.3465729"><name>node/11466458115</name><desc>ele=2393
+natural=peak
+prominence=17</desc><link href="http://osm.org/browse/node/11466458115"/></wpt><wpt lat="47.381963" lon="10.3761505"><name>Himmelhorn</name><desc>ele=2111
+name=Himmelhorn
+natural=peak
+prominence=25
+ref:avf=1329
+wikidata=Q831806
+wikipedia=de:Himmelhorn</desc><link href="http://osm.org/browse/node/11483815963"/></wpt><wpt lat="47.305908" lon="10.209781"><name>node/11565214801</name><desc>ele=2291
+natural=peak
+prominence=10</desc><link href="http://osm.org/browse/node/11565214801"/></wpt><wpt lat="47.311244" lon="10.212494"><name>Plattaberg</name><desc>ele=2289
+name=Plattaberg
+natural=peak
+prominence=17
+wikidata=Q138390655</desc><link href="http://osm.org/browse/node/11565214806"/></wpt><wpt lat="47.277664" lon="10.173189"><name>node/11577144878</name><desc>ele=2023
+natural=peak
+prominence=40
+wikidata=Q132798748</desc><link href="http://osm.org/browse/node/11577144878"/></wpt><wpt lat="47.3575656" lon="10.1016844"><name>node/11581413903</name><desc>ele=2081
+natural=peak
+prominence=3</desc><link href="http://osm.org/browse/node/11581413903"/></wpt><wpt lat="47.36712" lon="10.34845"><name>Höfats Westgipfel</name><desc>alt_name=Höfats Nordwestgipfel
+ele=2257
+name=Höfats Westgipfel
+name:en=Höfats western summit
+natural=peak
+prominence=20
+ref:avf=1345
+wikidata=Q124422161</desc><link href="http://osm.org/browse/node/11583919705"/></wpt><wpt lat="47.279311" lon="10.249325"><name>node/11609693940</name><desc>ele=2330
+natural=peak
+prominence=10</desc><link href="http://osm.org/browse/node/11609693940"/></wpt><wpt lat="47.4360334" lon="10.3730985"><name>Gratkopf</name><desc>ele=2172
+name=Gratkopf
+natural=peak
+prominence=30
+wikidata=Q124617402</desc><link href="http://osm.org/browse/node/11642248314"/></wpt><wpt lat="47.3196564" lon="10.2410107"><name>Alpkopf</name><desc>ele=2102
+name=Alpkopf
+natural=peak
+prominence=10
+wikidata=Q2651319
+wikipedia=de:Alpkopf (Allgäu)</desc><link href="http://osm.org/browse/node/11646574663"/></wpt><wpt lat="47.3958358" lon="11.0837236"><name>Teufelsgrat</name><desc>ele=2648
+name=Teufelsgrat
+natural=peak
+wikidata=Q9357673</desc><link href="http://osm.org/browse/node/11926109175"/></wpt><wpt lat="49.6436837" lon="7.2413481"><name>Bockspiel</name><desc>ele=381 m
+name=Bockspiel
+natural=peak</desc><link href="http://osm.org/browse/node/12057097909"/></wpt><wpt lat="47.4058027" lon="11.1117622"><name>Unterer Berggeistturm</name><desc>ele=2000
+fixme=genaue Höhe?
+name=Unterer Berggeistturm
+natural=peak</desc><link href="http://osm.org/browse/node/12097971759"/></wpt><wpt lat="47.4060619" lon="11.1151897"><name>Oberreintaldom</name><desc>ele=2371
+name=Oberreintaldom
+natural=peak</desc><link href="http://osm.org/browse/node/12097971760"/></wpt><wpt lat="47.4001811" lon="11.1109756"><name>Unterer Schüsselkarturm</name><desc>ele=2135
+name=Unterer Schüsselkarturm
+natural=peak
+source:ele=Bayern-Atlas</desc><link href="http://osm.org/browse/node/12097971761"/></wpt><wpt lat="47.3875081" lon="10.4313449"><name>Nördliche Balkenspitze</name><desc>ele=2270
+name=Nördliche Balkenspitze
+name:en=Northern Balkenspitze
+natural=peak
+prominence=32
+wikidata=Q130532194</desc><link href="http://osm.org/browse/node/12250987733"/></wpt><wpt lat="47.3197905" lon="10.3448279"><name>Krottenspitze</name><desc>ele=2551
+name=Krottenspitze
+natural=peak
+prominence=79
+ref:avf=1579
+wikidata=Q1790064
+wikipedia=de:Krottenspitze</desc><link href="http://osm.org/browse/node/12262806996"/></wpt><wpt lat="47.32936" lon="10.3217"><name>Krummenstein</name><desc>ele=2088
+name=Krummenstein
+natural=peak
+prominence=29
+ref:avf=1582A
+wikidata=Q31567300</desc><link href="http://osm.org/browse/node/12262824003"/></wpt><wpt lat="47.4138914" lon="10.3503549"><name>node/12276873913</name><desc>ele=2005
+natural=peak
+prominence=22</desc><link href="http://osm.org/browse/node/12276873913"/></wpt><wpt lat="47.3143669" lon="10.2245409"><name>node/12279635437</name><desc>ele=2130
+natural=peak
+prominence=7</desc><link href="http://osm.org/browse/node/12279635437"/></wpt><wpt lat="47.31423" lon="10.22046"><name>Saubuckelkopf</name><desc>ele=2215
+name=Saubuckelkopf
+natural=peak
+prominence=28
+ref:avf=789
+wikidata=Q31555097</desc><link href="http://osm.org/browse/node/12282062653"/></wpt><wpt lat="47.2977875" lon="10.2873048"><name>Östlicher Berg der guten Hoffnung</name><desc>ele=2416
+name=Östlicher Berg der guten Hoffnung
+natural=peak
+prominence=44
+ref:avf=877
+wikidata=Q131139370</desc><link href="http://osm.org/browse/node/12329300131"/></wpt><wpt lat="47.32612" lon="10.34391"><name>node/12332290584</name><desc>ele=2072
+natural=peak
+prominence=8</desc><link href="http://osm.org/browse/node/12332290584"/></wpt><wpt lat="47.43878" lon="10.38011"><name>Auf dem Hohen Bichel</name><desc>ele=2131
+name=Auf dem Hohen Bichel
+natural=peak
+prominence=18
+wikidata=Q135920426</desc><link href="http://osm.org/browse/node/12368159476"/></wpt><wpt lat="47.44237" lon="10.38055"><name>Großer Daumen Ostgipfel</name><desc>ele=2273
+name=Großer Daumen Ostgipfel
+natural=peak
+prominence=23
+ref:avf=1269
+wikidata=Q131872444</desc><link href="http://osm.org/browse/node/12386624976"/></wpt><wpt lat="47.4262022" lon="10.3606828"><name>Östlicher Wengenkopf</name><desc>ele=2206
+name=Östlicher Wengenkopf
+name:en=Eastern Wengenkopf
+natural=peak
+prominence=63
+ref:avf=1264
+wikidata=Q138858064
+wikipedia=de:Östlicher Wengenkopf</desc><link href="http://osm.org/browse/node/12386962675"/></wpt><wpt lat="47.288035" lon="10.276966"><name>node/12391651549</name><desc>ele=2530
+natural=peak
+prominence=33
+wikidata=Q138837818</desc><link href="http://osm.org/browse/node/12391651549"/></wpt><wpt lat="47.37615" lon="10.1262"><name>Sonnenberg</name><desc>ele=2029
+name=Sonnenberg
+natural=peak
+prominence=65
+wikidata=Q124653610</desc><link href="http://osm.org/browse/node/12401676183"/></wpt><wpt lat="47.2808885" lon="10.1814553"><name>node/12423085152</name><desc>ele=2035
+natural=peak
+prominence=10</desc><link href="http://osm.org/browse/node/12423085152"/></wpt><wpt lat="47.309267" lon="10.2967214"><name>node/12445118820</name><desc>ele=2270
+natural=peak
+prominence=34
+wikidata=Q132717984</desc><link href="http://osm.org/browse/node/12445118820"/></wpt><wpt lat="47.400017" lon="11.0615952"><name>Höhlenkopf</name><desc>ele=2403
+name=Höhlenkopf
+natural=peak</desc><link href="http://osm.org/browse/node/12468970499"/></wpt><wpt lat="47.4165622" lon="10.9710116"><name>node/12488618087</name><desc>ele=2782
+natural=peak
+source:ele=Laserscan</desc><link href="http://osm.org/browse/node/12488618087"/></wpt><wpt lat="47.360784" lon="10.09723"><name>node/12592952990</name><desc>ele=2041
+natural=peak
+prominence=10</desc><link href="http://osm.org/browse/node/12592952990"/></wpt><wpt lat="47.359875" lon="10.097628"><name>node/12592952992</name><desc>ele=2066
+natural=peak
+prominence=55
+wikidata=Q132452576</desc><link href="http://osm.org/browse/node/12592952992"/></wpt><wpt lat="47.3230616" lon="10.2386898"><name>node/12612920655</name><desc>ele=2165
+natural=peak
+prominence=36
+wikidata=Q138029482</desc><link href="http://osm.org/browse/node/12612920655"/></wpt><wpt lat="47.3941728" lon="10.3655591"><name>node/12633674310</name><desc>ele=2014
+natural=peak
+prominence=10</desc><link href="http://osm.org/browse/node/12633674310"/></wpt><wpt lat="47.3867663" lon="10.4183788"><name>node/12644039375</name><desc>ele=2223
+natural=peak
+prominence=35
+wikidata=Q138865569</desc><link href="http://osm.org/browse/node/12644039375"/></wpt><wpt lat="52.4616974" lon="14.4815297"><name>Huderberg</name><desc>ele=66,1
+name=Huderberg
+natural=peak</desc><link href="http://osm.org/browse/node/12771644292"/></wpt><wpt lat="47.4266791" lon="10.9907164"><name>node/12817321074</name><desc>ele=2625
+natural=peak
+note=in der Topo25 ist hier die Große Riffelwandspitze, in der Topo50 ist sie weiter nordöstlich (fast gleich hoch)
+source:ele=Bayern-Atlas</desc><link href="http://osm.org/browse/node/12817321074"/></wpt><wpt lat="51.2442957" lon="10.0396611"><name>Hohe Bahn</name><desc>ele=509,6
+name=Hohe Bahn
+natural=peak</desc><link href="http://osm.org/browse/node/12992119562"/></wpt><wpt lat="47.4461109" lon="10.3855562"><name>node/13114822703</name><desc>ele=2191
+natural=peak
+prominence=19</desc><link href="http://osm.org/browse/node/13114822703"/></wpt><wpt lat="48.9323899" lon="11.694673"><name>Hanelberg</name><desc>ele=430m
+name=Hanelberg
+natural=peak</desc><link href="http://osm.org/browse/node/13118817067"/></wpt><wpt lat="48.9355828" lon="11.6911853"><name>Broselberg</name><desc>ele=429m
+name=Broselberg
+natural=peak</desc><link href="http://osm.org/browse/node/13118817068"/></wpt><wpt lat="47.52654" lon="10.917987"><name>Kreuzspitze</name><desc>alt_name=Ammergauer Kreuzspitze, Ammergauer Kreuzspitz
+ele=2184
+name=Kreuzspitze
+natural=peak
+note=do not move POI as it is precisely at WGS84 UTM 32T E 44375 N 5265462 as indicated on a plate
+prominence=1182
+wikidata=Q279725
+wikipedia=de:Kreuzspitze (Ammergauer Alpen)</desc><link href="http://osm.org/browse/node/13160041419"/></wpt><wpt lat="50.4441149" lon="11.9953654"><name>Erzberg</name><desc>ele=551,2
+name=Erzberg
+natural=peak</desc><link href="http://osm.org/browse/node/13321920306"/></wpt><wpt lat="47.3137576" lon="10.2200677"><name>node/13531433414</name><desc>ele=2211
+natural=peak
+prominence=11</desc><link href="http://osm.org/browse/node/13531433414"/></wpt><wpt lat="47.338608" lon="10.3543707"><name>node/13533670357</name><desc>ele=2290
+natural=peak
+prominence=1</desc><link href="http://osm.org/browse/node/13533670357"/></wpt><wpt lat="50.6800575" lon="7.9295166"><name>504.9</name><desc>ele=Gallfenster
+name=504.9
+natural=peak</desc><link href="http://osm.org/browse/node/13618705943"/></wpt><wpt lat="54.46857" lon="9.2317308"><name>Höchste Erhebung im Kreis Nordfriesland 54 m NHN</name><desc>ele=54 m
+name=Höchste Erhebung im Kreis Nordfriesland 54 m NHN
+natural=peak</desc><link href="http://osm.org/browse/node/13659513091"/></wpt><wpt lat="54.462594" lon="9.2583745"><name>Sandesberg</name><desc>ele=53,5 m
+name=Sandesberg
+natural=peak</desc><link href="http://osm.org/browse/node/13694829658"/></wpt></gpx>

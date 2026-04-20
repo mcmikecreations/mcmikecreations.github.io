@@ -2,7 +2,16 @@
 	import resume from '$lib/data/resume.json';
 	import { Button, Heading } from 'flowbite-svelte';
 	import SocialBadgeList from '$lib/components/SocialBadgeList.svelte';
+	import AppMeta from '$lib/components/AppMeta.svelte';
 </script>
+
+<AppMeta
+	title="Socials | Linktree"
+	description={resume.basics.label}
+	type="website"
+	image="https://mykolamor.com/images/profile_cropped.jpg"
+	article-author={resume.basics.name}
+/>
 
 <div class="w-full h-full max-w-xl mx-auto px-4 pt-16 pb-8">
 	<div class="flex flex-col items-center">
@@ -21,6 +30,7 @@
 			<SocialBadgeList size="[&>*]:!size-8" padding="!p-2 xl:!p-3" plain />
 		</div>
 		<div class="mt-8 w-full flex flex-col gap-4 [&>*]:min-h-16 [&>*]:px-11 [&>*]:!text-base [&>*]:!font-medium [&>*]:!leading-6">
+			<Button href="/contact.vcf" color="alternative" pill outline>Save Contact</Button>
 			<Button href="/" color="alternative" pill outline>Website</Button>
 			<Button href="/hikes/" color="alternative" pill outline>Hiking, Climbing, Via Ferrata & Trail Maps</Button>
 			<Button href="https://www.daad-freundeskreis.de/de/unsere-regionalgruppen/regionalgruppe-muenchen/" color="alternative" pill outline>Volunteering</Button>
