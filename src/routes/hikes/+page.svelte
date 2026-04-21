@@ -2,7 +2,7 @@
 	/* eslint-disable svelte/no-at-html-tags */
 	import type { PageData } from './$types';
 	import { onMount } from "svelte";
-	import AppFooter from "$lib/components/AppFooter.svelte";
+	import { page } from '$app/state';
 	import AppNavbar from "$lib/components/AppNavbar.svelte";
 	import { Heading } from 'flowbite-svelte';
 	import ShowcaseCard from "./components/ShowcaseCard.svelte";
@@ -10,13 +10,14 @@
 	import AppMeta from '$lib/components/AppMeta.svelte';
 	import Footsteps from './components/Footsteps.svelte';
 	import Hero from './components/Hero.svelte';
-	import FeedSolid from '$lib/icons/FeedSolid.svelte';
-	import { FileCodeSolid } from 'flowbite-svelte-icons';
 	import HikeList from './components/HikeList.svelte';
 	import CustomPagination from './components/CustomPagination.svelte';
 	import Feeds from './components/Feeds.svelte';
 	import YearsNav from './components/YearsNav.svelte';
 	import resume from '$lib/data/resume.json';
+	import HikeJsonLd from './components/HikeJsonLd.svelte';
+	import { HIKES_BLOG_TITLE, HIKES_BLOG_DESCRIPTION, HIKES_HERO_IMAGE } from '$lib/hikes/hikes-meta';
+	import AppBreadcrumbs from '$lib/components/AppBreadcrumbs.svelte';
 
 	interface Props {
 		data: PageData;
@@ -81,13 +82,15 @@
 {/snippet}
 
 <AppMeta
-	title="Hiking, Climbing, Via Ferrata & Trail Maps | Personal Hike Experiences"
-	description="The most thorough hike reviews on the web"
+	title={HIKES_BLOG_TITLE}
+	description={HIKES_BLOG_DESCRIPTION}
 	type="website"
-	image="https://mykolamor.com/images/hikes/hero/hike_poster_4_bg_2.png"
+	image={page.url.origin + HIKES_HERO_IMAGE}
 	article-author={resume.basics.name}
 	article-section="Hikes"
 />
+<HikeJsonLd variant="blog" posts={data.posts} currentPage={data.pagination.currentPage} totalPages={data.pagination.totalPages} />
+<AppBreadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'Hikes', href: '/hikes/' }]} />
 
 <AppNavbar
     class="fixed z-50 top-0"

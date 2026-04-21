@@ -6,6 +6,10 @@
     import type { PageData } from './$types';
 		import { ArrowLeftOutline } from 'flowbite-svelte-icons';
 		import Feeds from '../../components/Feeds.svelte';
+		import HikeJsonLd from '../../components/HikeJsonLd.svelte';
+		import { hikesListTitle, hikesListDescription } from '$lib/hikes/hikes-meta';
+		import resume from '$lib/data/resume.json';
+		import AppBreadcrumbs from '$lib/components/AppBreadcrumbs.svelte';
 
     interface Props {
         data: PageData;
@@ -18,10 +22,18 @@
 </script>
 
 <AppMeta
-	title={`Hiking Blog - Page ${pagination.currentPage} | Personal Hike Experiences`}
-	description={`Browse hiking blog posts - Page ${pagination.currentPage}`}
+	title={hikesListTitle(pagination.currentPage)}
+	description={hikesListDescription(pagination.currentPage)}
 	type="website"
+	article-author={resume.basics.name}
+	article-section="Hikes"
 />
+<HikeJsonLd variant="list" {posts} currentPage={pagination.currentPage} />
+<AppBreadcrumbs items={[
+	{ name: 'Home', href: '/' },
+	{ name: 'Hikes', href: '/hikes/' },
+	{ name: `Page ${pagination.currentPage}` }
+]} />
 
 
 <div class="h-[60px] md:h-[72px] bg-white dark:bg-gray-800 mb-8"></div>

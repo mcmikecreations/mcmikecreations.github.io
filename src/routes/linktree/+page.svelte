@@ -1,5 +1,6 @@
 <script lang="ts">
 	import resume from '$lib/data/resume.json';
+	import { page } from '$app/state';
 	import { Button, Heading } from 'flowbite-svelte';
 	import SocialBadgeList from '$lib/components/SocialBadgeList.svelte';
 	import AppMeta from '$lib/components/AppMeta.svelte';
@@ -9,7 +10,7 @@
 	title="Socials | Linktree"
 	description={resume.basics.label}
 	type="website"
-	image="https://mykolamor.com/images/profile_cropped.jpg"
+	image="{page.url.origin}/images/profile_cropped.jpg"
 	article-author={resume.basics.name}
 />
 

@@ -17,6 +17,9 @@
 	import AppMeta from '$lib/components/AppMeta.svelte';
 	import resume from '$lib/data/resume.json';
 	import { Modal } from 'flowbite-svelte';
+	import HikeJsonLd from '../components/HikeJsonLd.svelte';
+	import { hikePostTitle } from '$lib/hikes/hikes-meta';
+	import AppBreadcrumbs from '$lib/components/AppBreadcrumbs.svelte';
 	import { parseMarkdown } from '$lib/hikes/hikes-info';
 	import { initMap2d } from '$lib/hikes/map-2d';
 	import { initElevationChart } from '$lib/hikes/map-elevation';
@@ -197,7 +200,7 @@
 <svelte:window onkeydown={handleKeydown} />
 
 <AppMeta
-	title={data.post.title + ' | Hike'}
+	title={hikePostTitle(data.post.title)}
 	description={data.post.description ?? undefined}
 	image={data.post.image}
 	type="article"
@@ -205,6 +208,25 @@
 	article-published_time="{data.post.date}T16:00:00+00:00"
 	article-author={resume.basics.name}
 	article-section="Hikes"
+/>
+<AppBreadcrumbs items={[
+	{ name: 'Home', href: '/' },
+	{ name: 'Hikes', href: '/hikes/' },
+	{ name: data.post.title, href: `/hikes/${data.post.anchor}/` }
+]} />
+<HikeJsonLd
+	variant="post"
+	title={data.post.title}
+	description={data.post.description ?? ''}
+	image={data.post.image}
+	date={data.post.date}
+	author={data.post.author}
+	tags={data.post.tags}
+	anchor={data.post.anchor}
+	distance={data.map.properties.distance}
+	ascent={data.map.properties.ascent}
+	descent={data.map.properties.descent}
+	duration={data.map.properties.duration}
 />
 
 <div class="container mx-auto">

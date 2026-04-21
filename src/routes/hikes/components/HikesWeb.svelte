@@ -1,5 +1,4 @@
 <script lang="ts">
-import AppMeta from '$lib/components/AppMeta.svelte';
 import { Heading, Progressbar, Button } from 'flowbite-svelte';
 import { ClockOutline, MapPinOutline, ArrowUpOutline, ArrowDownOutline, TrackingOutline } from 'flowbite-svelte-icons';
 import 'leaflet/dist/leaflet.css';
@@ -330,11 +329,6 @@ async function startLoading() {
 }
 </script>
 
-<AppMeta
-	title={`Web of Hikes | Collecting All Routes and Peaks"`}
-	description={`Visiting all peaks in the biggest possible area while using the same departure and arrival points as other hikes.`}
-	type="website"
-/>
 
 <Heading tag="h2" class="mb-2">Web of Hikes: Collecting All Routes and Peaks</Heading>
 <p class="mb-8 text-gray-600 dark:text-gray-300">

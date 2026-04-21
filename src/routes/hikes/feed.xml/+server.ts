@@ -7,7 +7,7 @@ function escapeXml(s: string): string {
 	return s.replace(/[<>&'"]/g, c => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;', "'": '&apos;', '"': '&quot;' }[c] ?? c));
 }
 
-export function GET() {
+export function GET({ url }) {
 	const now = new Date();
 	const posts = getAllPosts().slice(0, 20);
 	const { name, email } = resume.basics;
@@ -16,9 +16,9 @@ export function GET() {
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
 <channel>
   <title>Hiking, Climbing, Via Ferrata &amp; Trail Maps | Personal Hike Experiences | ${escapeXml(name)}</title>
-  <link>https://mykolamor.com/hikes/</link>
+  <link>${url.origin}/hikes/</link>
   <description>The most thorough hike reviews on the web</description>
-  <atom:link href="https://mykolamor.com/hikes/feed.xml" rel="self" type="application/rss+xml" />
+  <atom:link href="${url.origin}/hikes/feed.xml" rel="self" type="application/rss+xml" />
   <language>en-us</language>
   <copyright>&amp;copy; ${now.getFullYear()} ${escapeXml(name)}</copyright>
   <managingEditor>${escapeXml(email)} (${escapeXml(name)})</managingEditor>
@@ -29,18 +29,18 @@ export function GET() {
   <docs>https://www.rssboard.org/rss-specification</docs>
   <ttl>1440</ttl>
   <image>
-    <url>https://mykolamor.com/favicon.png</url>
+    <url>${url.origin}/favicon.png</url>
     <title>Hiking, Climbing, Via Ferrata &amp; Trail Maps | Personal Hike Experiences</title>
-    <link>https://mykolamor.com/hikes/</link>
+    <link>${url.origin}/hikes/</link>
   </image>
 ${posts.map(p => `  <item>
     <title>${escapeXml(p.title)}</title>
-    <link>https://mykolamor.com${p.url}</link>
+    <link>${url.origin}${p.url}</link>
     <description>${escapeXml(p.description)}</description>
     <pubDate>${p.date.toUTCString()}</pubDate>
-    <guid>https://mykolamor.com${p.url}</guid>
+    <guid>${url.origin}${p.url}</guid>
     <author>${escapeXml(email)} (${escapeXml(name)})</author>${p.image ? `
-    <media:content url="https://mykolamor.com${p.image}" medium="image" />` : ''}
+    <media:content url="${url.origin}${p.image}" medium="image" />` : ''}
   </item>`).join('\n')}
 </channel>
 </rss>`;

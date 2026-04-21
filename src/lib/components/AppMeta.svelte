@@ -24,7 +24,7 @@
 		...otherProps
 	}: Props = $props();
 	const oldUrl = page.url;
-	let fullImageUrl = $derived(image ? (image.startsWith('http') ? image : 'https://mykolamor.com' + image) : image);
+	let fullImageUrl = $derived(image ? (image.startsWith('http') ? image : page.url.origin + image) : image);
 	let canonicalUrl = $state(new URL(oldUrl.origin.replace('www.', '') + oldUrl.pathname));
 	const titleBase = resume.basics.name;
 

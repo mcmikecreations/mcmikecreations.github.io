@@ -14,6 +14,7 @@ const config = {
 			strict: true
 		}),
 		prerender: {
+			origin: 'https://mykolamor.com',
 			handleHttpError: ({ path, referrer, message }) => {
 				console.warn(message);
 			}

@@ -7,6 +7,10 @@
     import type { PageData } from './$types';
 		import Feeds from '../../components/Feeds.svelte';
 		import YearsNav from '../../components/YearsNav.svelte';
+		import HikeJsonLd from '../../components/HikeJsonLd.svelte';
+		import { hikesYearTitle, hikesYearDescription } from '$lib/hikes/hikes-meta';
+		import resume from '$lib/data/resume.json';
+		import AppBreadcrumbs from '$lib/components/AppBreadcrumbs.svelte';
 
     interface Props {
         data: PageData;
@@ -21,10 +25,18 @@
 </script>
 
 <AppMeta
-	title={`Hikes from ${year} | Personal Hike Experiences`}
-	description={`Browse hiking blog posts from ${year}`}
+	title={hikesYearTitle(year, pagination.currentPage)}
+	description={hikesYearDescription(year, pagination.currentPage)}
 	type="website"
+	article-author={resume.basics.name}
+	article-section="Hikes"
 />
+<HikeJsonLd variant="year" {year} {posts} currentPage={pagination.currentPage} totalPages={pagination.totalPages} />
+<AppBreadcrumbs items={[
+	{ name: 'Home', href: '/' },
+	{ name: 'Hikes', href: '/hikes/' },
+	{ name: String(year), href: `/hikes/year/${year}/` }
+]} />
 
 
 <div class="h-[60px] md:h-[72px] bg-white dark:bg-gray-800 mb-8"></div>
