@@ -6,6 +6,9 @@
 	import ToTopButton from '$lib/components/ToTopButton.svelte';
 	import DefaultImage from '$lib/renderers/DefaultImage.svelte';
 	import AppMeta from '$lib/components/AppMeta.svelte';
+	import AppBreadcrumbs from '$lib/components/AppBreadcrumbs.svelte';
+	import AppJsonLd from '$lib/components/AppJsonLd.svelte';
+	import { page } from '$app/state';
 
 	interface Props {
 		data: PageData;
@@ -14,6 +17,17 @@
 	let { data }: Props = $props();
 </script>
 
+<AppBreadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'Blog', href: '/blog/' }, { name: data.post.title, href: `/blog/${data.post.anchor}/` }]} />
+<AppJsonLd
+	variant="blog-post"
+	title={data.post.title}
+	description={data.post.description}
+	image={data.post.image}
+	isoDate={data.post.isoDate}
+	author={data.post.author}
+	tags={data.post.tags}
+	anchor={data.post.anchor}
+/>
 <AppMeta
 	title={data.post.title}
 	description={data.post.description ?? undefined}

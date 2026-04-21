@@ -3,6 +3,8 @@
 	/* eslint-disable svelte/no-at-html-tags */
 	import type { PageData } from './$types';
 	import AppTitle from '$lib/components/AppTitle.svelte';
+	import AppBreadcrumbs from '$lib/components/AppBreadcrumbs.svelte';
+	import AppJsonLd from '$lib/components/AppJsonLd.svelte';
 	import { Tabs, TabItem, Img, Breadcrumb, BreadcrumbItem } from 'flowbite-svelte';
 	import Markdown from '$lib/renderers/vendor/Markdown.svelte';
 	import DefaultLink from '$lib/renderers/DefaultLink.svelte';
@@ -265,6 +267,8 @@
 </script>
 
 <AppTitle title={data.map.name} />
+<AppBreadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'Projects', href: '/projects/' }, { name: 'Data Viz', href: '/projects/data-viz/' }, { name: data.map.name, href: data.map.route }]} />
+<AppJsonLd variant="creative-work" name={data.map.name} description={data.map.description} image={data.map.image} url={data.map.route} />
 
 <main>
 	<Breadcrumb class="mb-4" aria-label="Route" solid>

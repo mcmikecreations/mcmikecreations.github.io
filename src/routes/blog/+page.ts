@@ -6,7 +6,7 @@ export const load: PageLoad = async () => {
 	try {
 		const posts = blogs.map(
 			k => {
-				const url = '/blog/' + k.path.substring(0, k.path.length - 3);
+				const url = '/blog/' + k.path.substring(0, k.path.length - 3) + '/';
 				const date = new Date(k.date);
 
 				return ({

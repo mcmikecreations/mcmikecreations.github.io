@@ -14,7 +14,7 @@
 		<div class="flex flex-wrap justify-center gap-4 mt-8 mx-4 2xl:mx-0">
 			{#each posts as p}
 				{@const date = new Date(p.date)}
-				{@const u = '/blog/' + p.path.substring(0, p.path.length - 3)}
+				{@const u = '/blog/' + p.path.substring(0, p.path.length - 3) + '/'}
 				<Card
 					href={u}
 					data-sveltekit-reload

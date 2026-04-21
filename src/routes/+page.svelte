@@ -6,9 +6,13 @@
 	import ContactSection from './home/ContactSection.svelte';
 	import ReferenceSection from './home/ReferenceSection.svelte';
 	import ProjectsSection from './home/ProjectsSection.svelte';
+	import AppBreadcrumbs from '$lib/components/AppBreadcrumbs.svelte';
+	import AppJsonLd from '$lib/components/AppJsonLd.svelte';
 </script>
 
 <AppTitle title="Home" />
+<AppBreadcrumbs items={[{ name: 'Home', href: '/' }]} />
+<AppJsonLd variant="website" />
 
 <HeroSection />
 

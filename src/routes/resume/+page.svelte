@@ -1,5 +1,7 @@
 <script lang="ts">
 	import AppTitle from '$lib/components/AppTitle.svelte';
+	import AppBreadcrumbs from '$lib/components/AppBreadcrumbs.svelte';
+	import AppJsonLd from '$lib/components/AppJsonLd.svelte';
 	import ResumeHeader from './ResumeHeader.svelte';
 	import ResumeExperience from './ResumeExperience.svelte';
 	import ResumePublications from './ResumePublications.svelte';
@@ -9,6 +11,8 @@
 </script>
 
 <AppTitle title="Résumé" />
+<AppBreadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'Résumé', href: '/resume/' }]} />
+<AppJsonLd variant="profile" />
 
 <section class="container mx-auto md:px-24">
 	<ResumeHeader />

@@ -57,8 +57,10 @@ export const load: PageServerLoad = async ({ fetch, params }) => {
 				headers: headers,
 				time: stats.text,
 				date: new Date(meta.date).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"}),
+				isoDate: meta.date,
 				tags: meta.tags,
 				author: meta.author,
+				anchor: slug
 			},
 		};
 	} catch (ex) {

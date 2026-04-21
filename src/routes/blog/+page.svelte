@@ -18,6 +18,9 @@
 	import { ChevronLeftOutline, ChevronRightOutline, ImageSolid } from 'flowbite-svelte-icons';
 	import DateBadge from '$lib/components/DateBadge.svelte';
 	import AppMeta from '$lib/components/AppMeta.svelte';
+	import AppBreadcrumbs from '$lib/components/AppBreadcrumbs.svelte';
+	import AppJsonLd from '$lib/components/AppJsonLd.svelte';
+	import resume from '$lib/data/resume.json';
 
 	interface Props {
 		data: PageData;
@@ -140,10 +143,14 @@
 	});
 </script>
 
+<AppBreadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'Blog', href: '/blog/' }]} />
+<AppJsonLd variant="blog" posts={data.posts} />
 <AppMeta
 	title={title}
 	description="Personal programming blog of Mykola Morozov"
 	type="website"
+	article-author={resume.basics.name}
+	article-section="Programming"
 />
 
 <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 mx-4 2xl:mx-0">

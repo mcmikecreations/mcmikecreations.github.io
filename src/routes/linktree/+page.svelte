@@ -4,8 +4,12 @@
 	import { Button, Heading } from 'flowbite-svelte';
 	import SocialBadgeList from '$lib/components/SocialBadgeList.svelte';
 	import AppMeta from '$lib/components/AppMeta.svelte';
+	import AppBreadcrumbs from '$lib/components/AppBreadcrumbs.svelte';
+	import AppJsonLd from '$lib/components/AppJsonLd.svelte';
 </script>
 
+<AppBreadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'Linktree', href: '/linktree/' }]} />
+<AppJsonLd variant="profile" />
 <AppMeta
 	title="Socials | Linktree"
 	description={resume.basics.label}

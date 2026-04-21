@@ -1,6 +1,8 @@
 <script>
 	import { Card, Heading } from 'flowbite-svelte';
 	import AppTitle from '$lib/components/AppTitle.svelte';
+	import AppBreadcrumbs from '$lib/components/AppBreadcrumbs.svelte';
+	import AppJsonLd from '$lib/components/AppJsonLd.svelte';
 	import maps from '$lib/data/hikes.json';
 
 	const hikes = [...maps.filter(x => x.properties?.hidden !== true)];
@@ -13,6 +15,8 @@
 </script>
 
 <AppTitle title="Data Viz" />
+<AppBreadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'Projects', href: '/projects/' }, { name: 'Data Viz', href: '/projects/data-viz/' }]} />
+<AppJsonLd variant="collection" name="Data Viz" url="/projects/data-viz/" items={hikes.filter(m => !m.properties?.hidden).map(m => ({ name: m.name, url: m.route, image: m.image }))} />
 
 <main>
 	<Heading tag="h2" id="hikes">Hikes</Heading>

@@ -94,7 +94,8 @@
 			url: blogId,
 			image: absUrl(HIKES_HERO_IMAGE),
 			author: authorRef,
-			publisher: authorRef
+			publisher: authorRef,
+			isPartOf: { '@type': 'WebSite', '@id': origin + '/#website' }
 		};
 
 		function graph(...nodes: object[]) {
