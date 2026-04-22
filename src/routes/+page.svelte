@@ -1,7 +1,8 @@
 <script lang="ts">
 	import BlogSection from './home/BlogSection.svelte';
 	import ResumeSection from './home/ResumeSection.svelte';
-	import AppTitle from '$lib/components/AppTitle.svelte';
+	import AppMeta from '$lib/components/AppMeta.svelte';
+	import resume from '$lib/data/resume.json';
 	import HeroSection from './home/HeroSection.svelte';
 	import ContactSection from './home/ContactSection.svelte';
 	import ReferenceSection from './home/ReferenceSection.svelte';
@@ -10,7 +11,7 @@
 	import AppJsonLd from '$lib/components/AppJsonLd.svelte';
 </script>
 
-<AppTitle title="Home" />
+<AppMeta title="Home" description={resume.basics.summary} type="website" />
 <AppBreadcrumbs items={[{ name: 'Home', href: '/' }]} />
 <AppJsonLd variant="website" />
 

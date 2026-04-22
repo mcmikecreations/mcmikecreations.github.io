@@ -1,7 +1,7 @@
 <script lang="ts">
 	/* eslint-disable svelte/no-at-html-tags */
 	import type { PageData } from './$types';
-	import AppTitle from '$lib/components/AppTitle.svelte';
+	import AppMeta from '$lib/components/AppMeta.svelte';
 	import AppBreadcrumbs from '$lib/components/AppBreadcrumbs.svelte';
 	import AppJsonLd from '$lib/components/AppJsonLd.svelte';
 	import { GlobeSolid } from 'flowbite-svelte-icons';
@@ -14,7 +14,7 @@
 	let { data }: Props = $props();
 </script>
 
-<AppTitle title={data.project.name} />
+<AppMeta title={data.project.name} description={data.project.quote} image={data.project.image} type="website" />
 <AppBreadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'Projects', href: '/projects/' }, { name: data.project.name, href: data.project.route }]} />
 <AppJsonLd variant="software" name={data.project.name} description={data.project.quote} image={data.project.image} url={data.project.url} route={data.project.route} />
 

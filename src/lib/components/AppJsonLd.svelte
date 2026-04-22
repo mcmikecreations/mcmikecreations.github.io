@@ -3,7 +3,7 @@
 	import resume from '$lib/data/resume.json';
 
 	type WebsiteProps = { variant: 'website' };
-	type ProfileProps = { variant: 'profile' };
+	type ProfileProps = { variant: 'profile', description?: string | null };
 
 	type BlogListPost = { title: string; url: string; date: Date; image?: string | null };
 	type BlogListProps = { variant: 'blog'; posts?: BlogListPost[] };
@@ -99,6 +99,7 @@
 					'@type': 'ProfilePage',
 					'@id': absUrl(page.url.pathname) + '#profilepage',
 					url: absUrl(page.url.pathname),
+					...(props.description ? { description: props.description } : {}),
 					inLanguage: 'en',
 					mainEntity: { '@type': 'Person', '@id': personNode['@id'] }
 				},

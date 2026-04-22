@@ -3,16 +3,16 @@
 	import resume from '$lib/data/resume.json';
 	import { GlobeSolid } from 'flowbite-svelte-icons';
 	import ProjectImage from '$lib/components/ProjectImage.svelte';
-	import AppTitle from '$lib/components/AppTitle.svelte';
+	import AppMeta from '$lib/components/AppMeta.svelte';
 	import AppBreadcrumbs from '$lib/components/AppBreadcrumbs.svelte';
 	import AppJsonLd from '$lib/components/AppJsonLd.svelte';
 
 const projects = resume.projects;
 </script>
 
-<AppTitle title="Projects" />
+<AppMeta title="Projects" description="Various projects I have developed" type="website" />
 <AppBreadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'Projects', href: '/projects/' }]} />
-<AppJsonLd variant="collection" name="Projects" url="/projects/" items={projects.map(p => ({ name: p.name, url: p.route, image: p.image }))} />
+<AppJsonLd variant="collection" name="Projects" description="Various projects I have developed" url="/projects/" items={projects.map(p => ({ name: p.name, url: p.route, image: p.image }))} />
 
 <main>
 	{#each projects as p}

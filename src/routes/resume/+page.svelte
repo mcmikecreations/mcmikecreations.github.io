@@ -1,5 +1,5 @@
 <script lang="ts">
-	import AppTitle from '$lib/components/AppTitle.svelte';
+	import AppMeta from '$lib/components/AppMeta.svelte';
 	import AppBreadcrumbs from '$lib/components/AppBreadcrumbs.svelte';
 	import AppJsonLd from '$lib/components/AppJsonLd.svelte';
 	import ResumeHeader from './ResumeHeader.svelte';
@@ -8,11 +8,13 @@
 	import ResumeAwards from './ResumeAwards.svelte';
 	import { PrinterSolid, ProfileCardSolid } from 'flowbite-svelte-icons';
 	import { Button } from 'flowbite-svelte';
+	import resume from '$lib/data/resume.json';
+	const description = `Professional Resume of ${resume.basics.name}. Experienced ${resume.basics.label} specializing in Databases and Computer Graphics. View my full work history, technical proficiencies, and career highlights here.`;
 </script>
 
-<AppTitle title="Résumé" />
+<AppMeta title="Résumé" {description} type="website" />
 <AppBreadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'Résumé', href: '/resume/' }]} />
-<AppJsonLd variant="profile" />
+<AppJsonLd variant="profile" {description} />
 
 <section class="container mx-auto md:px-24">
 	<ResumeHeader />
