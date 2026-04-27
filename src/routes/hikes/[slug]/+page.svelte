@@ -127,7 +127,9 @@
 				const anchorEl = (index: number): Element =>
 					paragraphs[index] ?? paragraphs[paragraphs.length - 1] ?? contentEl;
 
-				// 3D map (Three.js) — after 1st paragraph
+				const offset = data.post.tags.includes('Climb') ? 1 : 0;
+
+				// 3D map (Three.js) - after 1st paragraph
 				const map3dWrapper = document.createElement('div');
 				map3dWrapper.className = 'w-full mx-auto not-prose my-4';
 				const map3dInner = document.createElement('div');
@@ -136,14 +138,14 @@
 				map3dEl.style.cssText = 'position: absolute; inset: 0;';
 				map3dInner.appendChild(map3dEl);
 				map3dWrapper.appendChild(map3dInner);
-				anchorEl(0).insertAdjacentElement('afterend', map3dWrapper);
+				anchorEl(offset).insertAdjacentElement('afterend', map3dWrapper);
 
-				// Elevation chart — directly below the 3D map
+				// Elevation chart - directly below the 3D map
 				const map3dElevWrapper = document.createElement('div');
 				map3dElevWrapper.className = 'w-full mx-auto not-prose';
 				map3dWrapper.insertAdjacentElement('afterend', map3dElevWrapper);
 
-				// 2D interactive map (Leaflet.js) — after 2nd paragraph
+				// 2D interactive map (Leaflet.js) - after 2nd paragraph
 				const map2dWrapper = document.createElement('div');
 				map2dWrapper.className = 'w-full mx-auto not-prose my-4';
 				const map2dInner = document.createElement('div');
@@ -152,9 +154,9 @@
 				map2dEl.style.cssText = 'position: absolute; inset: 0;';
 				map2dInner.appendChild(map2dEl);
 				map2dWrapper.appendChild(map2dInner);
-				anchorEl(1).insertAdjacentElement('afterend', map2dWrapper);
+				anchorEl(offset + 1).insertAdjacentElement('afterend', map2dWrapper);
 
-				// Elevation chart — directly below the 2D map
+				// Elevation chart - directly below the 2D map
 				const elevWrapper = document.createElement('div');
 				elevWrapper.className = 'w-full mx-auto not-prose';
 				map2dWrapper.insertAdjacentElement('afterend', elevWrapper);
@@ -165,13 +167,6 @@
 				let elev3dHandle: { setIndicator: (lat: number, lon: number, preferredDist?: number) => void; hideIndicator: () => void };
 				let elev2dHandle: { setIndicator: (lat: number, lon: number, preferredDist?: number) => void; hideIndicator: () => void };
 
-				const updateAllIndicators = (lat: number, lon: number, ele: number, dist?: number) => {
-					map2dHandle.setIndicator(lat, lon);
-					map3dHandle.setIndicator(lat, lon, ele);
-					elev3dHandle?.setIndicator(lat, lon, dist);
-					elev2dHandle?.setIndicator(lat, lon, dist);
-				};
-
 				const hideAllIndicators = () => {
 					elev3dHandle?.hideIndicator();
 					elev2dHandle?.hideIndicator();
@@ -179,7 +174,7 @@
 					map3dHandle.hideIndicator?.();
 				};
 
-				// Each chart updates the maps and the OTHER chart (not itself — its cursor
+				// Each chart updates the maps and the OTHER chart (not itself - its cursor
 				// is already correct from handlePointerAction, and a round-trip through
 				// setIndicator would mis-hit the outward-journey duplicate on out-and-back routes).
 				elev3dHandle = initElevationChart(map3dElevWrapper, geojson, (lat, lon, ele, dist) => {
