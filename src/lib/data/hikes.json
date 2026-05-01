@@ -8863,5 +8863,82 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Neufahrn (Niederbayern) - Landshut",
+    "image": "/images/projects/data-viz/hikes/neufahrn_niederbayern_landshut.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": [
+        {
+          "date": "2026-05-01",
+          "title": "Finishing the Neufahrn - Neufahrn Trail",
+          "description": "Taking a casual stroll after getting my wisdom teeth removed.",
+          "tags": ["Web"],
+          "people": [],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2026-05-01-neufahrn_niederbayern_landshut.md",
+          "gpx": "/_projects/data-viz/hikes/gpx/neufahrn_niederbayern_landshut.gpx"
+        }
+      ],
+      "nodes": [
+        {
+          "id": 6956416906,
+          "lat": 48.6916490,
+          "lon": 12.2087026,
+          "tags": {
+            "name": "Kapellenberg/Lourdes-Kapelle",
+            "natural": "peak",
+            "ele": "462"
+          }
+        },
+        {
+          "id": 185528411,
+          "lat": 48.6123931,
+          "lon": 12.1961825,
+          "tags": {
+            "name": "Schloss Mirskofen",
+            "building": "yes",
+            "historic": "castle",
+            "tourism": "attraction",
+            "wikidata": "Q18630555",
+            "wikipedia": "de:Schloss Mirskofen"
+          }
+        }
+      ],
+      "filePath": "/_projects/data-viz/hikes/geojson/neufahrn_niederbayern_landshut.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [12.1903603, 48.7299318],
+        [12.2087026, 48.6916490],
+        [12.2107392, 48.6379764],
+        [12.1961825, 48.6123931],
+        [12.1726803, 48.5774783],
+        [12.1360812, 48.5475468]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Neufahrn (Niederbayern) to Landshut.",
+    "route": "/projects/data-viz/hikes/neufahrn_niederbayern_landshut",
+    "height": 1408,
+    "standardFeatures": {
+      "origin": {
+        "lat": 48.653325044758695,
+        "lon": 12.176971435546877
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "neufahrn_niederbayern_landshut.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
