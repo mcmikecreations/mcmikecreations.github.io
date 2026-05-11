@@ -10,13 +10,14 @@
         shouldFixNavbar?: 'true' | 'false' | undefined;
         title?: Snippet | undefined;
         fillNarrow?: boolean;
+        alwaysBurger?: boolean;
         class?: string | undefined;
         bgClass?: string | undefined;
         bgClassUl?: string | undefined;
     }
     const bgClassDefault = 'bg-white dark:bg-gray-800';
 
-    let { shouldFixNavbar = undefined, title, fillNarrow, class: propsClass, bgClass = bgClassDefault, bgClassUl = bgClass }: Props = $props();
+    let { shouldFixNavbar = undefined, title, fillNarrow, alwaysBurger = false, class: propsClass, bgClass = bgClassDefault, bgClassUl = bgClass }: Props = $props();
     let fixedNavbar = $derived(shouldFixNavbar !== undefined ? (shouldFixNavbar === 'true') : (page.data.header?.fixedNavbar ?? false));
     let fixedProps = 'w-full px-2 py-2.5 sm:px-4 fixed z-50 top-0';
     let activeUrl = $derived.by(() => {
@@ -62,7 +63,7 @@
     };
 </script>
 
-<Navbar class={twMerge(`${fillNarrow ? '' : bgClass} ${fixedNavbar ? fixedProps : 'relative'}`, propsClass)}>
+<Navbar class={twMerge(`${fillNarrow ? '' : bgClass} ${fixedNavbar ? fixedProps : 'relative'}`, propsClass)} navContainerClass={alwaysBurger ? 'relative' : undefined}>
     {#snippet children({ hidden, toggle })}
         <NavBrand href="/">
             {#if title}
@@ -73,7 +74,7 @@
         </NavBrand>
         <div class="flex md:order-2">
             <DarkModeButton class={fillNarrow ? bgClass : ''} />
-            <NavHamburger class={fillNarrow ? bgClass : ''} />
+            <NavHamburger class={twMerge(fillNarrow ? bgClass : '', alwaysBurger ? 'nav-hamburger-always-burger' : '')} />
         </div>
 
         <!-- invisible tracker specifically for connecting the auto-close state -->
@@ -82,7 +83,8 @@
         <NavUl
             {activeUrl}
             onclick={() => { if (!hidden) toggle(); }}
-            classes={{ ul: `md:space-x-8 md:mt-0 md:text-sm ${fillNarrow ? bgClassUl : ''}` }}
+            class={alwaysBurger ? 'nav-ul-always-burger' : undefined}
+            classes={{ ul: `md:space-x-8 md:mt-0 md:text-sm ${fillNarrow ? bgClassUl : ''} ${alwaysBurger ? 'md:!flex-col md:!rounded-lg' : ''}` }}
         >
             <NavLi class="md:p-0 rounded-sm" href="/" activeClass={activeNavClass} nonActiveClass={nonActiveNavClass}>Home</NavLi>
             <NavLi class="md:p-0 rounded-sm" href="/resume/" activeClass={activeNavClass} nonActiveClass={nonActiveNavClass}>Résumé</NavLi>
@@ -92,3 +94,26 @@
         </NavUl>
     {/snippet}
 </Navbar>
+
+<style>
+    /* alwaysBurger: keep hamburger button visible even at md+ breakpoint */
+    :global(.nav-hamburger-always-burger.md\:hidden) {
+        display: inline-flex !important;
+    }
+    /* alwaysBurger: prevent nav links from auto-showing on desktop when closed */
+    :global(.nav-ul-always-burger.hidden.md\:block) {
+        display: none !important;
+    }
+    /* alwaysBurger: keep dropdown absolutely positioned below navbar, not inline */
+    :global(.nav-ul-always-burger) {
+        position: absolute !important;
+        z-index: 50 !important;
+    }
+    /* alwaysBurger: on desktop shrink to content width and pin to the right (near burger) */
+    @media (min-width: 48rem) {
+        :global(.nav-ul-always-burger) {
+            left: auto !important;
+            width: auto !important;
+        }
+    }
+</style>

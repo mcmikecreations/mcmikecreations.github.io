@@ -99,10 +99,11 @@
     {title}
     fillNarrow={true}
     shouldFixNavbar="true"
+    alwaysBurger={true}
 />
 <Hero />
 <Footsteps />
-<div class="w-full h-[60px] md:h-[72px] bg-white dark:bg-gray-800 sticky top-0 z-40">
+<div class="w-full h-[60px] bg-white dark:bg-gray-800 sticky top-0 z-40">
     <div id="fake-header" class="transition-all duration-300 absolute z-10 w-full h-full top-0 left-0 bg-white dark:bg-gray-900"></div>
     <div class="mx-auto h-full px-2 py-2.5 sm:px-4 flex flex-wrap items-center justify-between container">
         <a href="/" class="flex items-center">
