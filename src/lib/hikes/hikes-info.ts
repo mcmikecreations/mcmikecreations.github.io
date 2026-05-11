@@ -100,6 +100,9 @@ export async function parseMarkdown(postRaw: string): Promise<string> {
                 const safeHref = href.replace(/"/g, '&quot;');
                 const safeTitle = title.replace(/"/g, '&quot;');
                 const safeText = text.replace(/"/g, '&quot;');
+                const renderedText = token.tokens?.length
+                    ? (this as any).parser.parseInline(token.tokens)
+                    : safeText;
 
                 const isYoutubeLink = href.includes('youtube.com');
 
@@ -116,7 +119,7 @@ export async function parseMarkdown(postRaw: string): Promise<string> {
     <a class="flex justify-center" href="${safeHref}" target="_blank" rel="noopener noreferrer">
         <img src="https://img.youtube.com/vi/${videoId}/0.jpg" ${safeTitle ? `title="${safeTitle}"` : ''} alt="${safeText}" class="mk-img-no-pointer" />
     </a>
-    <figcaption class="mk-figcaption">${safeText}</figcaption>
+    <figcaption class="mk-figcaption">${renderedText}</figcaption>
 </figure>`;
                 } else if (href.trimEnd().endsWith('.mp4')) {
                     return `
@@ -124,13 +127,13 @@ export async function parseMarkdown(postRaw: string): Promise<string> {
     <video controls ${safeTitle ? `title="${safeTitle}"` : ''}>
         <source src="${safeHref}" type="video/mp4">
     </video>
-    <figcaption class="mk-figcaption">${safeText}</figcaption>
+    <figcaption class="mk-figcaption">${renderedText}</figcaption>
 </figure>`;
                 } else {
                     return `
 <figure class="mk-figure">
     <img src="${safeHref}" ${safeTitle ? `title="${safeTitle}"` : ''} alt="${safeText}" class="mk-img-pointer marked-image" />
-    <figcaption class="mk-figcaption">${safeText}</figcaption>
+    <figcaption class="mk-figcaption">${renderedText}</figcaption>
 </figure>`;
                 }
             }

@@ -182,7 +182,7 @@ felt like filler content nightmare. While the route up is great and not too diff
 the way down to Knorrhütte (2052 m) with the evening views is great, the rest of the way
 to Garmisch is just pure suffering, not worth the effort.
 
-![Compilation of the road to Zugspitze (2962 m) over Reintal](/images/projects/data-viz/hikes/stories/zugspitze_reintal/2025-06-21-00.mp4)
+![Compilation of the road to Zugspitze (2962 m) over Reintal by [David Bilan](https://bilandavid.com/)](/images/projects/data-viz/hikes/stories/zugspitze_reintal/2025-06-21-00.mp4)
 
 I wouldn't repeat this route the way we did it the first time. With better
 resource management it's completely possible to reach the top before the last

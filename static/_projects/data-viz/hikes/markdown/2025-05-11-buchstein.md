@@ -52,6 +52,8 @@ a comfortable ride back.
 
 ![Sunset near Lenggries](/images/projects/data-viz/hikes/stories/buchstein/2025-05-11-06.jpg)
 
+![Compilation of the road to Buchstein (1701 m) by [David Bilan](https://bilandavid.com/)](/images/projects/data-viz/hikes/stories/buchstein/2025-05-11-08.mp4)
+
 Overall, the hike was very memorable, with the climbing sections being a highlight and a long-lasting memory for me.
 The overall route is great even for intermediate hikers, but I'm not sure I would recommend the optional climbing
 sections to beginner climbers, it is a bit challenging and requires attention, patience, focus, and a bit of

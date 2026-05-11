@@ -94,7 +94,7 @@ As we came down to Bayrischzell, we headed directly to Café Konditorei Huber,
 my go-to place in the village, and ordered some cake as a reward for the 20 km
 on the road.
 
-![Compilation of the road to Wendelstein (1838 m)](/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-16.mp4)
+![Compilation of the road to Wendelstein (1838 m) by [David Bilan](https://bilandavid.com/)](/images/projects/data-viz/hikes/stories/breitenstein_wendelstein/2025-05-18-16.mp4)
 
 Looking back, this was a great hike, and a welcome expansion of the simpler
 [Wendelstein (1838 m)](/404/) route I did twice in the past.
