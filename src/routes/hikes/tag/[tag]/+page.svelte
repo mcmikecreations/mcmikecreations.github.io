@@ -54,7 +54,7 @@
 
 {#if tag === 'Web'}
 	<HikeTagPage {posts} {pagination} {showPeople} {tag}>
-		<HikesWeb />
+		<HikesWeb webData={data.webData!} />
 	</HikeTagPage>
 {:else if tag === 'Climb'}
 	<HikeTagPage {posts} {pagination} {showPeople} {tag}>

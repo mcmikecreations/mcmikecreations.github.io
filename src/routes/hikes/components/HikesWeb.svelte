@@ -7,12 +7,26 @@ import type { Layer } from 'leaflet';
 import type { Feature, GeoJsonObject, Geometry } from 'geojson';
 import HikesTimeline from './HikesTimeline.svelte';
 import { primaryGeometryColor } from '$lib/hikes/build-geometry';
-import maps from '$lib/data/hikes.json';
-import { type Feature as MapFeature, type GeometryData, getMapFeatures, type MapDate } from '$lib/data/map-info';
-import { loadGeometry, loadProperties } from '$lib/hikes/build-geometry';
+import { type MapDate } from '$lib/data/map-info';
 import { getNodeIconDetails, formatTags } from '$lib/hikes/map-utils';
 
-let data: any = $state(null);
+type WeekHike = { name: string; route: string };
+type WeekData = { year: number; weekIndex: number; label: string; hikes: WeekHike[] };
+type WebStats = {
+	totalDistance: number;
+	totalTime: number;
+	totalHikes: number;
+	totalAscent: number;
+	totalDescent: number;
+};
+type HikeStats = { distance: number | null; duration: number | null; ascent: number | null; descent: number | null };
+
+interface Props {
+	webData: { stats: WebStats; weeks: WeekData[]; hikeStats: Record<string, HikeStats> };
+}
+
+let { webData }: Props = $props();
+
 let loadingProgress = $state(0);
 let isLoading = $state(true);
 let hasStartedLoading = $state(false);
@@ -80,67 +94,49 @@ function hash(str: string): number {
     for (i = 0; i < str.length; i++) {
         chr = str.charCodeAt(i);
         hash = ((hash << 5) - hash) + chr;
-        hash |= 0; // Convert to 32bit integer
+        hash |= 0;
     }
     return hash;
 }
 
 async function startLoading() {
     hasStartedLoading = true;
+    const { default: maps } = await import('$lib/data/hikes.json');
+
     const features: object[] = [];
-    const result = {
-        features: features,
-        totalDistance: 0.0,
-        totalTime: 0.0,
-        totalHikes: 0,
-        totalAscent: 0.0,
-        totalDescent: 0.0,
-    };
-
-    const mapsToProcess = maps.filter(mapInfo => mapInfo.properties?.hidden !== true);
+    const mapsToProcess = (maps as any[]).filter(mapInfo => mapInfo.properties?.hidden !== true);
     const totalMaps = mapsToProcess.length;
-    let loadedMaps = 0;
 
-    for (const mapInfo of mapsToProcess) {
-        const layer = getMapFeatures(mapInfo as any).find((x: MapFeature) => x.type === 'Geometry') as MapFeature;
-        if (!layer) continue;
-        const geometryData = layer.data as GeometryData;
-        const geometry = await loadGeometry(window.fetch, geometryData);
-        const properties = loadProperties(mapInfo as any, geometry);
+    for (let i = 0; i < mapsToProcess.length; i++) {
+        const mapInfo = mapsToProcess[i];
+        const { checkpoints, ...props } = mapInfo.properties as any;
+        if (!checkpoints) continue;
 
-        if (mapInfo.properties?.draft !== true) {
-            result.totalHikes += properties.dates.length;
-            result.totalDistance += (properties.distance ?? 0) * properties.dates.length;
-            result.totalTime += (properties.duration ?? 0) * properties.dates.length;
-            result.totalAscent += (properties.ascent ?? 0) * properties.dates.length;
-            result.totalDescent += (properties.descent ?? 0) * properties.dates.length;
-        }
+        const hikeProps = webData.hikeStats[mapInfo.route];
+        const sharedProperties = {
+            ...props,
+            id: hash(mapInfo.route),
+            route: mapInfo.route,
+            distance: hikeProps?.distance ?? null,
+            duration: hikeProps?.duration ?? null,
+            ascent: hikeProps?.ascent ?? null,
+            descent: hikeProps?.descent ?? null,
+        };
+        const smoothed = smoothCoords(checkpoints, 10, 0.4);
 
-        (geometry as any)['properties']['id'] = hash(mapInfo.route);
-        (geometry as any)['properties']['route'] = mapInfo.route;
-        (geometry as any)['properties'] = Object.assign({}, (geometry as any)['properties'], properties);
+        features.push({
+            type: 'Feature',
+            geometry: { type: 'LineString', coordinates: smoothed },
+            properties: { ...sharedProperties, isSmoothedOutline: true, isSmoothed: false },
+        });
+        features.push({
+            type: 'Feature',
+            geometry: { type: 'LineString', coordinates: smoothed },
+            properties: { ...sharedProperties, isSmoothed: true },
+        });
 
-        if (mapInfo.properties?.checkpoints) {
-            (geometry as any)['geometry'] = {
-                "type": "LineString",
-                "coordinates": smoothCoords(mapInfo.properties?.checkpoints, 10, 0.4),
-            };
-            (geometry as any)['properties']['isSmoothed'] = true;
-            delete (geometry as any)['properties']['extras'];
-            delete (geometry as any)['properties']['segments'];
-            delete (geometry as any)['properties']['way_points'];
-
-            const outlineGeometry = JSON.parse(JSON.stringify(geometry));
-            outlineGeometry.properties.isSmoothedOutline = true;
-            outlineGeometry.properties.isSmoothed = false;
-            features.push(outlineGeometry);
-        }
-
-        features.push(geometry);
-        loadedMaps++;
-        loadingProgress = Math.round((loadedMaps / totalMaps) * 100);
+        loadingProgress = Math.round(((i + 1) / totalMaps) * 100);
     }
-    data = result;
 
     const { L } = await import('$lib/components/leaflet.almostover.js');
     const map = L.map('map', {
@@ -157,7 +153,8 @@ async function startLoading() {
         maxZoom: 19,
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
-    const randomColor = function(feature : Feature<Geometry, any> | undefined) {
+
+    const randomColor = function(feature: Feature<Geometry, any> | undefined) {
         if (feature?.properties?.isSmoothedOutline) {
             return {
                 color: '#ffffff',
@@ -180,7 +177,7 @@ async function startLoading() {
             dashArray: feature?.properties?.draft === true ? '5, 5' : undefined,
         }
     };
-    const staticColor = function(feature : Feature<Geometry, any> | undefined) {
+    const staticColor = function(feature: Feature<Geometry, any> | undefined) {
         if (feature?.properties?.isSmoothedOutline) {
             return {
                 color: '#ffffff',
@@ -205,7 +202,7 @@ async function startLoading() {
         };
     }
 
-    const hikesLayer = L.geoJSON(data.features as GeoJsonObject[], {
+    const hikesLayer = L.geoJSON(features as GeoJsonObject[], {
         style: staticColor,
         onEachFeature: function(feature: Feature<any, any>, layer: Layer) {
             if (feature.properties) {
@@ -219,12 +216,12 @@ async function startLoading() {
 <li>Duration: ${getTime(feature.properties.duration ?? 0)}</li>
 <li>Ascent: ${getDistance(feature.properties.ascent ?? 0)}</li>
 <li>Descent: ${getDistance(feature.properties.descent ?? 0)}</li>
-<li>Posts: ${feature.properties.dates.map((x : MapDate) => {
+<li>Posts: ${feature.properties.dates.map((x: MapDate) => {
     const filename = x.path ? x.path!.split('/').pop()!.replace('.md', '') : null;
     const targetRoute = filename ? `/hikes/${filename}/` : feature.properties.route;
     return `<a href="${targetRoute}">${new Date(x.date).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"})}` + `</a>`;
 }).join('; ')}</li>
-<li>${feature.properties.dates.map((x : MapDate) => !!x.path).includes(true) ? '' : `<a href="${feature.properties.route}">Map Link</a>, `}
+<li>${feature.properties.dates.map((x: MapDate) => !!x.path).includes(true) ? '' : `<a href="${feature.properties.route}">Map Link</a>, `}
 <a href="${feature.properties.filePath}">${feature.properties.fileType}</a>${gpxSuffix}
 </li>
 </ul>`);
@@ -233,7 +230,7 @@ async function startLoading() {
     }).addTo(map);
 
     let nodesData: any[] = [];
-    maps.forEach(m => {
+    (maps as any[]).forEach(m => {
         if (m.properties?.hidden !== true && m.properties?.nodes) {
             m.properties.nodes.forEach((node: any) => {
                 nodesData.push(node);
@@ -247,7 +244,7 @@ async function startLoading() {
     const renderNodes = () => {
         nodesLayer.clearLayers();
         const filteredNodes: any[] = [];
-        const minPixelDistance = 24; // marker diameter is size 24px
+        const minPixelDistance = 24;
 
         uniqueNodes.forEach(node => {
             const p1 = map.project([node.lat, node.lon], map.getZoom());
@@ -338,81 +335,71 @@ async function startLoading() {
 </p>
 
 <div class="flex flex-col gap-4 mt-8">
-    {#if data}
-        <article class="
+    <article class="
         w-full max-w-none p-4 md:p-6 bg-gray-50 rounded-lg dark:bg-gray-800 flex flex-col gap-6
         prose dark:prose-invert prose-a:text-primary-600 dark:prose-a:text-primary-500
-">
-            <div class="flex flex-row flex-wrap gap-x-4 gap-y-4 md:gap-x-6 md:gap-y-6 not-prose w-full">
-                <div class="flex items-center gap-3 basis-[140px] grow">
-                    <div class="text-primary-600 dark:text-primary-500 bg-primary-100 dark:bg-primary-900 rounded-lg p-2 shrink-0">
-                        <TrackingOutline class="w-5 h-5 md:w-6 md:h-6" />
-                    </div>
-                    <div class="min-w-0">
-                        <div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide truncate">Total Hikes</div>
-                        <div class="font-semibold whitespace-nowrap">{data.totalHikes}</div>
-                    </div>
+    ">
+        <div class="flex flex-row flex-wrap gap-x-4 gap-y-4 md:gap-x-6 md:gap-y-6 not-prose w-full">
+            <div class="flex items-center gap-3 basis-[140px] grow">
+                <div class="text-primary-600 dark:text-primary-500 bg-primary-100 dark:bg-primary-900 rounded-lg p-2 shrink-0">
+                    <TrackingOutline class="w-5 h-5 md:w-6 md:h-6" />
                 </div>
-                <div class="flex items-center gap-3 basis-[140px] grow">
-                    <div class="text-primary-600 dark:text-primary-500 bg-primary-100 dark:bg-primary-900 rounded-lg p-2 shrink-0">
-                        <ClockOutline class="w-5 h-5 md:w-6 md:h-6" />
-                    </div>
-                    <div class="min-w-0">
-                        <div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide truncate">Total Time</div>
-                        <div class="font-semibold whitespace-nowrap">{getTime(data.totalTime)}</div>
-                    </div>
-                </div>
-                <div class="flex items-center gap-3 basis-[140px] grow">
-                    <div class="text-primary-600 dark:text-primary-500 bg-primary-100 dark:bg-primary-900 rounded-lg p-2 shrink-0">
-                        <MapPinOutline class="w-5 h-5 md:w-6 md:h-6" />
-                    </div>
-                    <div class="min-w-0">
-                        <div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide truncate">Distance</div>
-                        <div class="font-semibold whitespace-nowrap">{getDistance(data.totalDistance)}</div>
-                    </div>
-                </div>
-                <div class="flex items-center gap-3 basis-[140px] grow">
-                    <div class="text-primary-600 dark:text-primary-500 bg-primary-100 dark:bg-primary-900 rounded-lg p-2 shrink-0">
-                        <ArrowUpOutline class="w-5 h-5 md:w-6 md:h-6" />
-                    </div>
-                    <div class="min-w-0">
-                        <div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide truncate">Ascent</div>
-                        <div class="font-semibold whitespace-nowrap">{getDistance(data.totalAscent)}</div>
-                    </div>
-                </div>
-                <div class="flex items-center gap-3 basis-[140px] grow">
-                    <div class="text-primary-600 dark:text-primary-500 bg-primary-100 dark:bg-primary-900 rounded-lg p-2 shrink-0">
-                        <ArrowDownOutline class="w-5 h-5 md:w-6 md:h-6" />
-                    </div>
-                    <div class="min-w-0">
-                        <div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide truncate">Descent</div>
-                        <div class="font-semibold whitespace-nowrap">{getDistance(data.totalDescent)}</div>
-                    </div>
+                <div class="min-w-0">
+                    <div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide truncate">Total Hikes</div>
+                    <div class="font-semibold whitespace-nowrap">{webData.stats.totalHikes}</div>
                 </div>
             </div>
-            <div class="w-full min-w-0">
-                <!-- Timeline typically takes all hikes, modifying it to take subset might be wanted if props were present -->
-                <HikesTimeline />
+            <div class="flex items-center gap-3 basis-[140px] grow">
+                <div class="text-primary-600 dark:text-primary-500 bg-primary-100 dark:bg-primary-900 rounded-lg p-2 shrink-0">
+                    <ClockOutline class="w-5 h-5 md:w-6 md:h-6" />
+                </div>
+                <div class="min-w-0">
+                    <div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide truncate">Total Time</div>
+                    <div class="font-semibold whitespace-nowrap">{getTime(webData.stats.totalTime)}</div>
+                </div>
             </div>
-        </article>
-    {:else}
-        <article class="w-full max-w-none p-4 bg-gray-50 rounded-lg dark:bg-gray-800 flex flex-col items-center justify-center min-h-[250px]">
-            {#if !hasStartedLoading}
-                <Button onclick={startLoading}>Load Web of Hikes</Button>
-                <div class="text-xs text-gray-500 dark:text-gray-400 mt-3 max-w-md text-center">Warning: Loading this visualization will download a large amount of spatial coordinate data (GeoJSON and GPX files).</div>
-            {:else}
-                <span class="text-gray-500 dark:text-gray-400 mb-4">Processing coordinates... {loadingProgress}%</span>
-                <Progressbar progress={loadingProgress} size="h-2" class="w-1/2 md:w-1/3" />
-            {/if}
-        </article>
-    {/if}
+            <div class="flex items-center gap-3 basis-[140px] grow">
+                <div class="text-primary-600 dark:text-primary-500 bg-primary-100 dark:bg-primary-900 rounded-lg p-2 shrink-0">
+                    <MapPinOutline class="w-5 h-5 md:w-6 md:h-6" />
+                </div>
+                <div class="min-w-0">
+                    <div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide truncate">Distance</div>
+                    <div class="font-semibold whitespace-nowrap">{getDistance(webData.stats.totalDistance)}</div>
+                </div>
+            </div>
+            <div class="flex items-center gap-3 basis-[140px] grow">
+                <div class="text-primary-600 dark:text-primary-500 bg-primary-100 dark:bg-primary-900 rounded-lg p-2 shrink-0">
+                    <ArrowUpOutline class="w-5 h-5 md:w-6 md:h-6" />
+                </div>
+                <div class="min-w-0">
+                    <div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide truncate">Ascent</div>
+                    <div class="font-semibold whitespace-nowrap">{getDistance(webData.stats.totalAscent)}</div>
+                </div>
+            </div>
+            <div class="flex items-center gap-3 basis-[140px] grow">
+                <div class="text-primary-600 dark:text-primary-500 bg-primary-100 dark:bg-primary-900 rounded-lg p-2 shrink-0">
+                    <ArrowDownOutline class="w-5 h-5 md:w-6 md:h-6" />
+                </div>
+                <div class="min-w-0">
+                    <div class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide truncate">Descent</div>
+                    <div class="font-semibold whitespace-nowrap">{getDistance(webData.stats.totalDescent)}</div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full min-w-0">
+            <HikesTimeline weeks={webData.weeks} />
+        </div>
+    </article>
     <div class="w-full bg-gray-50 rounded-lg overflow-hidden dark:bg-gray-800 relative z-0 aspect-[4/3] md:aspect-[21/9]">
-        {#if isLoading}
+        {#if !hasStartedLoading}
+            <div class="absolute inset-0 flex flex-col items-center justify-center z-10 gap-3 p-8">
+                <Button onclick={startLoading}>Load Web of Hikes</Button>
+                <div class="text-xs text-gray-500 dark:text-gray-400 max-w-md text-center">Warning: Loading this visualization will download a large amount of spatial coordinate data (GeoJSON and GPX files).</div>
+            </div>
+        {:else if isLoading}
             <div class="absolute inset-0 flex flex-col items-center justify-center z-10 gap-4 p-8">
-                {#if hasStartedLoading}
-                    <span class="text-gray-500 dark:text-gray-400">Loading map elements...</span>
-                    <!-- Progress bar removed here as requested -->
-                {/if}
+                <span class="text-gray-500 dark:text-gray-400">Processing coordinates... {loadingProgress}%</span>
+                <Progressbar progress={loadingProgress} size="h-2" class="w-1/2 md:w-1/3" />
             </div>
         {/if}
         <div class="w-full h-full transition-opacity duration-500 {isLoading ? 'opacity-0' : 'opacity-100'}">

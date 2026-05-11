@@ -1,92 +1,22 @@
 <script lang="ts">
-	import maps from '$lib/data/hikes.json';
 	import { onMount } from 'svelte';
 
-	const GRID_ROWS = 6; // Configurable constant for vertical number of elements
+	const GRID_ROWS = 6;
 
-	type HikeItem = { name: string; route: string; draft?: boolean };
-	type WeekData = { year: number; label: string; weekIndex: number; hikes: HikeItem[] };
+	type WeekHike = { name: string; route: string };
+	type WeekData = { year: number; weekIndex: number; label: string; hikes: WeekHike[] };
 
-	const yearsData = new Map<number, WeekData[]>();
-	let maxHikesPerWeek = 1;
+	export let weeks: WeekData[];
 
-	function getYearWeeks(year: number) {
-		const weeks: WeekData[] = [];
-		for (let i = 0; i < 53; i++) {
-			const wStart = new Date(Date.UTC(year, 0, 1 + i * 7));
-			const wEnd = new Date(Math.min(Date.UTC(year, 0, 1 + i * 7 + 6), Date.UTC(year, 11, 31)));
-			if (wStart.getUTCFullYear() > year) break;
-
-			const startStr = wStart.toISOString().split('T')[0];
-			const endStr = wEnd.toISOString().split('T')[0];
-
-			weeks.push({
-				year: year,
-				weekIndex: i,
-				label: `${startStr} to ${endStr}`,
-				hikes: []
-			});
-		}
-		return weeks;
-	}
-
-	// Populate data map
-	for (const hike of maps) {
-		if (hike.properties?.draft === true || hike.properties?.hidden === true) {
-			continue;
-		}
-
-		const dates = hike.properties.dates || [];
-
-		for (const dateObj of dates) {
-			const dateStr = dateObj.date; // e.g. YYYY-MM-DD
-			const year = parseInt(dateStr.substring(0, 4));
-			const month = parseInt(dateStr.substring(5, 7)) - 1;
-			const day = parseInt(dateStr.substring(8, 10));
-
-			if (!yearsData.has(year)) {
-				yearsData.set(year, getYearWeeks(year));
-			}
-
-			const d = new Date(Date.UTC(year, month, day));
-			const startOfYear = new Date(Date.UTC(year, 0, 1));
-			const daysElapsed = Math.floor((d.getTime() - startOfYear.getTime()) / 86400000);
-			const weekIndex = Math.floor(daysElapsed / 7);
-
-			const filename = dateObj.path ? dateObj.path.split('/').pop()?.replace('.md', '') : null;
-			const targetRoute = filename ? `/hikes/${filename}/` : hike.route;
-
-			const weeks = yearsData.get(year)!;
-			if (weeks[weekIndex]) {
-				weeks[weekIndex].hikes.push({
-					name: (hike.properties.draft ? '⏳ ' : '') + hike.name,
-					route: targetRoute
-				});
-
-				if (weeks[weekIndex].hikes.length > maxHikesPerWeek) {
-					maxHikesPerWeek = weeks[weekIndex].hikes.length;
-				}
-			}
-		}
-	}
-
-	const sortedYears = [...yearsData.keys()].sort((a, b) => a - b);
-
-	let allWeeks: WeekData[] = [];
-	for (const year of sortedYears) {
-		allWeeks = allWeeks.concat(yearsData.get(year)!);
-	}
-
-	function generateColumns(weeks: WeekData[] | undefined) {
+	function generateColumns(ws: WeekData[]) {
 		const columns: WeekData[][] = [];
-		weeks = weeks ?? [];
-		for (let i = 0; i < weeks.length; i += GRID_ROWS) {
-			columns.push(weeks.slice(i, i + GRID_ROWS));
+		for (let i = 0; i < ws.length; i += GRID_ROWS) {
+			columns.push(ws.slice(i, i + GRID_ROWS));
 		}
 		return columns;
 	}
 
-	const allColumns = generateColumns(allWeeks);
+	$: allColumns = generateColumns(weeks);
 
 	function getIntensityClass(count: number) {
 		if (count === 0) return 'bg-gray-200 dark:bg-gray-700';
@@ -105,7 +35,7 @@
 	});
 
 	let activeWeek: WeekData | null = null;
-	let popoverStyle = "";
+	let popoverStyle = '';
 
 	function togglePopover(event: MouseEvent | KeyboardEvent, week: WeekData) {
 		event.stopPropagation();
@@ -115,11 +45,8 @@
 			activeWeek = week;
 			const target = event.currentTarget as HTMLElement;
 			const rect = target.getBoundingClientRect();
-
-			// Position centered above the box (using fixed window coordinates)
 			const left = rect.left + rect.width / 2;
 			const top = rect.top - 8;
-
 			popoverStyle = `left: ${left}px; top: ${top}px; transform: translate(-50%, -100%); pointer-events: auto;`;
 		}
 	}
@@ -171,7 +98,6 @@
 				</li>
 			{/each}
 		</ul>
-		<!-- Custom tooltip arrow -->
 		<div class="absolute w-3 h-3 bg-white border-b border-r border-gray-200 dark:border-gray-700 dark:bg-gray-800 transform rotate-45 left-1/2 -bottom-1.5 -ml-1.5 shadow-xs rounded-xs"></div>
 	</div>
 {/if}
