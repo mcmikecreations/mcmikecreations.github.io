@@ -7,6 +7,7 @@ export const getNodeIconDetails = (tags: any) => {
     if (tags.waterway === 'waterfall') return { emoji: '🌊', color: '#0ea5e9' };
     if (tags.natural === 'water' || tags.natural === 'spring') return { emoji: '💧', color: '#38bdf8' };
     if (tags.historic === 'ruins' || tags.historic === 'castle') return { emoji: '🏰', color: '#525252' };
+    if (tags.historic === 'memorial') return { emoji: '🪦', color: '#78716c' };
     if (tags.highway === 'bus_stop') return { emoji: '🚌', color: '#2563eb' };
     if (tags.railway === 'station' || tags.railway === 'halt' || tags.public_transport === 'station') return { emoji: '🚉', color: '#dc2626' };
     if (tags.tourism === 'information') return { emoji: 'ℹ️', color: '#2563eb' };

@@ -9189,5 +9189,86 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Neufahrn (Niederbayern) to Eggmühl",
+    "image": "/images/projects/data-viz/hikes/neufahrn_niederbayern_eggmuehl.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": [
+        {
+          "date": "2026-05-14",
+          "title": "Via Nova Pilgrimage to Eggmühl",
+          "description": "Chasing rainy clouds and wild deer towards Regensburg.",
+          "tags": ["Web"],
+          "people": [],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2026-05-14-neufahrn_niederbayern_eggmuehl.md",
+          "gpx": "/_projects/data-viz/hikes/gpx/neufahrn_niederbayern_eggmuehl.gpx"
+        }
+      ],
+      "nodes": [
+        {
+          "id": 3190662,
+          "lat": 48.7371892,
+          "lon": 12.1904357,
+          "tags": {
+            "name": "Schlosshotel Neufahrn",
+            "building": "yes",
+            "historic": "castle",
+            "heritage": "4",
+            "heritage:operator": "BLfD",
+            "ref:BLfD": "D-2-74-153-2",
+            "wikidata": "Q17488753",
+            "wikipedia": "de:Schloss Neufahrn"
+          }
+        },
+        {
+          "id": 2273005201,
+          "lat": 48.8378723,
+          "lon": 12.1833660,
+          "tags": {
+            "name": "Löwendenkmal",
+            "historic": "memorial",
+            "memorial": "statue",
+            "heritage": "4",
+            "heritage:operator": "BLfD",
+            "ref:BLfD": "D-3-75-196-29"
+          }
+        }
+      ],
+      "filePath": "/_projects/data-viz/hikes/geojson/neufahrn_niederbayern_eggmuehl.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [12.1903603, 48.7299318],
+        [12.1900676, 48.7370986],
+        [12.2275494, 48.7693664],
+        [12.2159654, 48.8251328],
+        [12.1833286, 48.8370777]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Neufahrn (Niederbayern) to Eggmühl.",
+    "route": "/projects/data-viz/hikes/neufahrn_niederbayern_eggmuehl",
+    "height": 1024,
+    "standardFeatures": {
+      "origin": {
+        "lat": 48.77859147884576,
+        "lon": 12.200832366943361
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "neufahrn_niederbayern_eggmuehl.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]

@@ -9,6 +9,7 @@ import HikesTimeline from './HikesTimeline.svelte';
 import { primaryGeometryColor } from '$lib/hikes/build-geometry';
 import { type MapDate } from '$lib/data/map-info';
 import { getNodeIconDetails, formatTags } from '$lib/hikes/map-utils';
+import { onMount } from 'svelte';
 
 type WeekHike = { name: string; route: string };
 type WeekData = { year: number; weekIndex: number; label: string; hikes: WeekHike[] };
@@ -145,7 +146,7 @@ async function startLoading() {
     } as any).setView([47.694653017305036, 11.799241670256336], 10);
 
     const isStatic = {
-        isStatic: true,
+        isStatic: false,
         toggle: function() { this.isStatic = !this.isStatic; return this.isStatic; }
     }
 
@@ -203,7 +204,7 @@ async function startLoading() {
     }
 
     const hikesLayer = L.geoJSON(features as GeoJsonObject[], {
-        style: staticColor,
+        style: isStatic.isStatic ? staticColor : randomColor,
         onEachFeature: function(feature: Feature<any, any>, layer: Layer) {
             if (feature.properties) {
                 const gpxLinks = (feature.properties.dates || [])
@@ -324,6 +325,10 @@ async function startLoading() {
     info.addTo(map);
     isLoading = false;
 }
+
+onMount(() => {
+	startLoading();
+});
 </script>
 
 
@@ -391,17 +396,6 @@ async function startLoading() {
         </div>
     </article>
     <div class="w-full bg-gray-50 rounded-lg overflow-hidden dark:bg-gray-800 relative z-0 aspect-[4/3] md:aspect-[21/9]">
-        {#if !hasStartedLoading}
-            <div class="absolute inset-0 flex flex-col items-center justify-center z-10 gap-3 p-8">
-                <Button onclick={startLoading}>Load Web of Hikes</Button>
-                <div class="text-xs text-gray-500 dark:text-gray-400 max-w-md text-center">Warning: Loading this visualization will download a large amount of spatial coordinate data (GeoJSON and GPX files).</div>
-            </div>
-        {:else if isLoading}
-            <div class="absolute inset-0 flex flex-col items-center justify-center z-10 gap-4 p-8">
-                <span class="text-gray-500 dark:text-gray-400">Processing coordinates... {loadingProgress}%</span>
-                <Progressbar progress={loadingProgress} size="h-2" class="w-1/2 md:w-1/3" />
-            </div>
-        {/if}
         <div class="w-full h-full transition-opacity duration-500 {isLoading ? 'opacity-0' : 'opacity-100'}">
             <div id="map" class="w-full h-full relative z-0"></div>
         </div>
