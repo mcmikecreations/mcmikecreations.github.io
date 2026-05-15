@@ -11,6 +11,9 @@ importers:
       animejs:
         specifier: ^4.3.6
         version: 4.3.6
+      any-ascii:
+        specifier: ^0.3.3
+        version: 0.3.3
       d3:
         specifier: ^7.9.0
         version: 7.9.0
@@ -967,6 +970,10 @@ packages:
 
   animejs@4.3.6:
     resolution: {integrity: sha512-rzZ4bDc8JAtyx6hYwxj7s5M/yWfnM5qqY4hZDnhy1cWFvMb6H5/necHS2sbCY3WQTDbRLuZL10dPXSxSCFOr/w==}
+
+  any-ascii@0.3.3:
+    resolution: {integrity: sha512-8hm+zPrc1VnlxD5eRgMo9F9k2wEMZhbZVLKwA/sPKIt6ywuz7bI9uV/yb27uvc8fv8q6Wl2piJT51q1saKX0Jw==}
+    engines: {node: '>=12.20'}
 
   apexcharts@5.10.6:
     resolution: {integrity: sha512-FJQGbso3iRuOwUYnj0yUhkWeKeJE6aboVol+ae09lsc+lbLMWZqSRbrAWVa/qishLiaeG2icxdvmVkm+9n6kOQ==}
@@ -2995,6 +3002,8 @@ snapshots:
       uri-js: 4.4.1
 
   animejs@4.3.6: {}
+
+  any-ascii@0.3.3: {}
 
   apexcharts@5.10.6: {}
 

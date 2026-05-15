@@ -159,12 +159,23 @@
 					name: hikesListTitle(n)
 				}))
 				: [];
-			return {
-				'@context': 'https://schema.org',
-				...blogNode,
-				blogPost: props.posts.map(postSchema),
-				...(pageRefs.length > 0 ? { hasPart: pageRefs } : {})
+			const websiteNode = {
+				'@type': 'WebSite',
+				'@id': origin + '/#website',
+				url: origin + '/',
+				potentialAction: {
+					'@type': 'SearchAction',
+					target: {
+						'@type': 'EntryPoint',
+						urlTemplate: origin + '/hikes/search/?q={search_term_string}'
+					},
+					'query-input': 'required name=search_term_string'
+				}
 			};
+			return graph(
+				{ ...blogNode, blogPost: props.posts.map(postSchema), ...(pageRefs.length > 0 ? { hasPart: pageRefs } : {}) },
+				websiteNode
+			);
 		}
 
 		if (props.variant === 'list') {

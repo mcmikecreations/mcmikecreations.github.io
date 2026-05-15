@@ -1,6 +1,7 @@
 <script lang="ts">
     import {Navbar, NavBrand, NavHamburger, NavLi, NavUl} from "flowbite-svelte";
     import DarkModeButton from "$lib/components/DarkModeButton.svelte";
+    import HikesSearchBar from "$lib/hikes/HikesSearchBar.svelte";
     import { page } from '$app/state';
     import { afterNavigate } from '$app/navigation';
     import { twMerge } from "tailwind-merge";
@@ -19,6 +20,9 @@
 
     let { shouldFixNavbar = undefined, title, fillNarrow, alwaysBurger = false, class: propsClass, bgClass = bgClassDefault, bgClassUl = bgClass }: Props = $props();
     let fixedNavbar = $derived(shouldFixNavbar !== undefined ? (shouldFixNavbar === 'true') : (page.data.header?.fixedNavbar ?? false));
+    let isHikesPage = $derived(
+        page.url.pathname.startsWith('/hikes/')
+    );
     let fixedProps = 'w-full px-2 py-2.5 sm:px-4 fixed z-50 top-0';
     let activeUrl = $derived.by(() => {
         const topLevelSegment = page.url.pathname.split('/')[1];
@@ -72,7 +76,10 @@
                 <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Mykola Morozov</span>
             {/if}
         </NavBrand>
-        <div class="flex md:order-2">
+        <div class="flex md:order-2 items-center">
+            {#if isHikesPage}
+                <HikesSearchBar class="me-3" />
+            {/if}
             <DarkModeButton class={fillNarrow ? bgClass : ''} />
             <NavHamburger class={twMerge(fillNarrow ? bgClass : '', alwaysBurger ? 'nav-hamburger-always-burger' : '')} />
         </div>
