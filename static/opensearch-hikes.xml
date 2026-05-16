@@ -3,5 +3,6 @@
   <ShortName>Hikes</ShortName>
   <Description>Search hike posts on mykolamor.com</Description>
   <Url type="text/html" template="https://mykolamor.com/hikes/search/?q={searchTerms}"/>
+  <Url type="application/x-suggestions+json" template="https://mykolamor.com/hikes/suggestions.php?q={searchTerms}"/>
   <Image width="32" height="32" type="image/png">https://mykolamor.com/favicon.png</Image>
 </OpenSearchDescription>
