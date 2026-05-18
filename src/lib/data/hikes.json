@@ -147,6 +147,7 @@
       "fileType": "GeoJSON",
       "checkpoints": [
         [11.5739418, 47.7605841],
+        [11.5620381, 47.7096589],
         [11.5735467, 47.6802772]
       ],
       "draft": false
@@ -9265,6 +9266,269 @@
         "provider": "hikes/geojson",
         "modes": [ "2d", "3d" ],
         "path": "neufahrn_niederbayern_eggmuehl.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
+  },
+  {
+    "name": "Obergries to Bad Wiessee",
+    "image": "/images/projects/data-viz/hikes/rechelkopf_semmelberg.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": null,
+      "descent": null,
+      "dates": [
+        {
+          "date": "2026-05-17",
+          "title": "Checking Off Obergries",
+          "description": "Recovering from 3 vaccines 2 days before while visiting 15 peaks on the way.",
+          "tags": ["Web"],
+          "people": [],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2026-05-17-rechelkopf_semmelberg.md",
+          "gpx": "/_projects/data-viz/hikes/gpx/rechelkopf_semmelberg.gpx"
+        }
+      ],
+      "nodes": [
+        {
+          "id": 942667605,
+          "lat": 47.7223741,
+          "lon": 11.6007828,
+          "tags": {
+            "name": "Schürfenkopf",
+            "natural": "peak",
+            "ele": "1096",
+            "wikidata": "Q31521735",
+            "wikipedia": "de:Schürfenkopf"
+          }
+        },
+        {
+          "id": 1271399144,
+          "lat": 47.7273579,
+          "lon": 11.6080162,
+          "tags": {
+            "name": "Schwarzköpfel",
+            "natural": "peak",
+            "ele": "1140",
+            "summit:cross": "no",
+            "wikidata": "Q92192050",
+            "wikipedia": "de:Schwarzköpfel"
+          }
+        },
+        {
+          "id": 401706780,
+          "lat": 47.7295347,
+          "lon": 11.6209060,
+          "tags": {
+            "name": "Sulzkopf",
+            "natural": "peak",
+            "ele": "1279",
+            "summit:cross": "no",
+            "wikidata": "Q16857355",
+            "wikipedia": "de:Sulzkopf"
+          }
+        },
+        {
+          "id": 281499400,
+          "lat": 47.7222953,
+          "lon": 11.6247509,
+          "tags": {
+            "name": "Rechelkopf",
+            "natural": "peak",
+            "ele": "1330",
+            "summit:cross": "yes",
+            "summit:register": "yes",
+            "wikidata": "Q2135213",
+            "wikipedia": "de:Rechelkopf"
+          }
+        },
+        {
+          "id": 1272500634,
+          "lat": 47.7214992,
+          "lon": 11.6369916,
+          "tags": {
+            "name": "Mitterberg",
+            "natural": "peak",
+            "ele": "1280",
+            "wikidata": "Q31530597"
+          }
+        },
+        {
+          "id": 1271398990,
+          "lat": 47.7201850,
+          "lon": 11.6167245,
+          "tags": {
+            "name": "Rechelköpfel",
+            "natural": "peak",
+            "ele": "1182"
+          }
+        },
+        {
+          "id": 440940585,
+          "lat": 47.7155768,
+          "lon": 11.6496965,
+          "tags": {
+            "name": "Gronetseck",
+            "alt_name": "Grainharts Eck",
+            "natural": "peak",
+            "ele": "1278",
+            "summit:cross": "no",
+            "wikidata": "Q26271340",
+            "wikipedia": "de:Gronetseck"
+          }
+        },
+        {
+          "id": 440940577,
+          "lat": 47.7190337,
+          "lon": 11.6744000,
+          "tags": {
+            "name": "Kogelkopf",
+            "natural": "peak",
+            "ele": "1324",
+            "wikidata": "Q19843401",
+            "wikipedia": "de:Kogelkopf"
+          }
+        },
+        {
+          "id": 440940579,
+          "lat": 47.7146342,
+          "lon": 11.6647047,
+          "tags": {
+            "name": "Luckenkopf",
+            "natural": "peak",
+            "ele": "1370",
+            "summit:cross": "no",
+            "wikidata": "Q22692887",
+            "wikipedia": "de:Luckenkopf"
+          }
+        },
+        {
+          "id": 9892741718,
+          "lat": 47.7100497,
+          "lon": 11.6638254,
+          "tags": {
+            "name": "Brauneck",
+            "natural": "peak",
+            "ele": "1290"
+          }
+        },
+        {
+          "id": 10300162542,
+          "lat": 47.7018864,
+          "lon": 11.6661234,
+          "tags": {
+            "name": "Spitzeck",
+            "natural": "peak",
+            "ele": "1339"
+          }
+        },
+        {
+          "id": 4647797222,
+          "lat": 47.7012898,
+          "lon": 11.6755881,
+          "tags": {
+            "name": "Huder",
+            "natural": "peak",
+            "ele": "1382",
+            "wikidata": "Q19963321",
+            "wikipedia": "de:Huder (Berg)"
+          }
+        },
+        {
+          "id": 10300162543,
+          "lat": 47.6938922,
+          "lon": 11.6721641,
+          "tags": {
+            "name": "Sattelkopf",
+            "natural": "peak",
+            "ele": "1384",
+            "wikidata": "Q25392929",
+            "wikipedia": "de:Sattelkopf (Tegernseer Berge)"
+          }
+        },
+        {
+          "id": 37452163,
+          "lat": 47.6890187,
+          "lon": 11.6731547,
+          "tags": {
+            "name": "Aueralm",
+            "tourism": "alpine_hut",
+            "ele": "1269",
+            "contact:phone": "+49802283600",
+            "contact:website": "https://www.aueralm.de/",
+            "email": "mail@aueralm.de",
+            "building": "cabin",
+            "wikidata": "Q100256552",
+            "wikipedia": "de:Aueralm"
+          }
+        },
+        {
+          "id": 3233329548,
+          "lat": 47.7112511,
+          "lon": 11.6950730,
+          "tags": {
+            "name": "Auereck",
+            "natural": "peak",
+            "ele": "1113",
+            "summit:cross": "no"
+          }
+        },
+        {
+          "id": 3233329687,
+          "lat": 47.7105567,
+          "lon": 11.7034539,
+          "tags": {
+            "name": "Semmelberg",
+            "natural": "peak",
+            "ele": "1101",
+            "summit:cross": "yes",
+            "summit:register": "no",
+            "wikidata": "Q31520990"
+          }
+        }
+      ],
+      "filePath": "/_projects/data-viz/hikes/geojson/rechelkopf_semmelberg.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [11.5620381, 47.7096589],
+        [11.5636091, 47.7074613],
+        [11.6007828, 47.7223741],
+        [11.6080162, 47.7273579],
+        [11.6209060, 47.7295347],
+        [11.6247509, 47.7222953],
+        [11.6369916, 47.7214992],
+        [11.6167245, 47.7201850],
+        [11.6496965, 47.7155768],
+        [11.6744000, 47.7190337],
+        [11.6647047, 47.7146342],
+        [11.6638254, 47.7100497],
+        [11.6661234, 47.7018864],
+        [11.6755881, 47.7012898],
+        [11.6721641, 47.6938922],
+        [11.6731547, 47.6890187],
+        [11.6950730, 47.7112511],
+        [11.7034539, 47.7105567],
+        [11.7277939, 47.7020869]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Obergries to Bad Wiessee via Schürfen Kopf (1096 m), Schwarzköpfel (1140 m), Sulzkopf (1279 m), Rechelkopf (1330 m), Mitter Berg (1280 m), Rechelköpfel (1182 m), Gronetseck (1278 m), Kogelkopf (1324 m), Lucken Kopf (1370 m), Brauneck (1290 m), Spitzeck (1339 m), Huder (1405 m), Sattelkopf (1384 m), Auereck (1113 m), and Semmel Berg (1101 m).",
+    "route": "/projects/data-viz/hikes/rechelkopf_semmelberg",
+    "height": 1280,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.7097615426664,
+        "lon": 11.640186309814453
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "rechelkopf_semmelberg.json#/features/0"
       }],
       "geometrySource": "https://maps.openrouteservice.org/",
       "statistics": true
