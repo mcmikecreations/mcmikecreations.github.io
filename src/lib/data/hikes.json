@@ -525,6 +525,16 @@
       "descent": null,
       "dates": [
         {
+          "date": "2026-05-23",
+          "title": "Annual Visit to Nebelhorn",
+          "description": "Taking a friend on a trip with unforgettable views.",
+          "tags": [],
+          "people": ["Pavlo Pustelnyk"],
+          "image": "/images/projects/data-viz/hikes/nebelhorn_2026.jpg",
+          "path": "/_projects/data-viz/hikes/markdown/2026-05-23-nebelhorn.md",
+          "gpx": "/_projects/data-viz/hikes/gpx/nebelhorn_2026.gpx"
+        },
+        {
           "date": "2024-10-27",
           "title": "Finishing Up Nebelhorn",
           "description": "My first successful attempt at getting to the top of Nebelhorn and back.",
