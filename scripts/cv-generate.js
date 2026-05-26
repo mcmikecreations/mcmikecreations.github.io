@@ -174,6 +174,7 @@ function buildHeader() {
 \\usepackage{soul}
 %\\input{glyphtounicode}
 \\usepackage[margin=0.5in]{geometry}
+\\usepackage[utf8]{inputenc}
 
 %----------FONT OPTIONS----------
 % Sans-serif Fonts

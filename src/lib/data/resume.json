@@ -279,6 +279,30 @@
   ],
   "certificates": [
     {
+      "name": "Identify and Prioritize High-Impact AI Agent Use Cases",
+      "issuer": "Microsoft",
+      "date": "2026-04-14",
+      "url": "https://drive.google.com/file/d/1VQCjzeVH1URbgiJJkuasYtNdYFLW9xvN/view?usp=sharing"
+    },
+    {
+      "name": "Implement secure AI-ready infrastructure with Azure services certificate",
+      "issuer": "Microsoft",
+      "date": "2026-04-14",
+      "url": "https://drive.google.com/file/d/1-oNICZG6ZG35ijmfSuI3wmAR2Ia5sv-d/view?usp=sharing"
+    },
+    {
+      "name": "The Year of AI Agents for Developers and Engineers certificate",
+      "issuer": "Microsoft",
+      "date": "2026-04-14",
+      "url": "https://drive.google.com/file/d/1W4Xld85G0tm_8VeCDt0REZA7sqPSVGM7/view?usp=sharing"
+    },
+    {
+      "name": "Get Licensing Ready Master certificate",
+      "issuer": "Microsoft",
+      "date": "2025-11-25",
+      "url": "https://drive.google.com/file/d/1IHZN5MLe_HduqONktRZJJfm8xuCO_s1E/view?usp=sharing"
+    },
+    {
       "name": "DevOps Crash Course certificate",
       "issuer": "SoftServe | Academy",
       "date": "2024-05-03",
