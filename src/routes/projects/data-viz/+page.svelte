@@ -5,7 +5,10 @@
 	import AppJsonLd from '$lib/components/AppJsonLd.svelte';
 	import maps from '$lib/data/hikes.json';
 
-	const hikes = [...maps.filter(x => x.properties?.hidden !== true)];
+	const hikes = [...maps.filter(x =>
+		x.properties?.hidden !== true &&
+		x.properties?.dates?.some(d => !d.path)
+	)];
 	hikes.sort((a, b) =>
 		a.properties.dates[0].date > b.properties.dates[0].date
 		? -1

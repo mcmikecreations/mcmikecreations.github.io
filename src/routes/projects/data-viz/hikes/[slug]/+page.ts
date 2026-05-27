@@ -24,17 +24,17 @@ export const load: PageLoad = async ({ fetch, params }) => {
 		let gpxPath = meta.properties.filePath.replace('geojson', 'gpx').replace('json', 'gpx');
 
 		do {
-			// If a date exists, check for a blog post (markdown).
-			const dates = [...meta.properties.dates.filter(d => d.path)];
-			if (dates.length == 0) break;
+			// Only redirect if every date has a blog post (markdown).
+			const allDates = meta.properties.dates;
+			if (allDates.length == 0) break;
+			if (!allDates.every(d => d.path)) break;
 
-			dates.sort((a, b) => a.date > b.date ? -1 : 1);
+			const dates = [...allDates].sort((a, b) => a.date > b.date ? -1 : 1);
 			const date = dates[0];
-			if (!date.path) break;
 
 			if (date.gpx) gpxPath = date.gpx;
 
-			const markdownFile = await fetch(date.path, { method: 'OPTIONS' });
+			const markdownFile = await fetch(date.path!, { method: 'OPTIONS' });
 			if (!markdownFile.ok) break;
 
 			const url = `/hikes/${date.date}-${params.slug}/`;

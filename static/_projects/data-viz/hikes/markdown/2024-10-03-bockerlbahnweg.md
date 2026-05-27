@@ -18,7 +18,7 @@ myself.
 ![View towards Jägerkamp (1746 m)](/images/projects/data-viz/hikes/stories/bockerlbahnweg/2024-10-03-03.jpg)
 
 I kept walking and getting closer to Spitzingsee, passing by a bunch of elderly
-hikers. At one point I saw Jägerkamp (1746 m) that [I've been at in the past](/404/).
+hikers. At one point I saw Jägerkamp (1746 m) that [I've been at in the past](/hikes/2024-08-31-aiplspitz/).
 It was a memorable experience, just as the [trip to Rotwand (1884 m)](/hikes/2024-09-29-rotwand/).
 
 ![The meadow near Spitzingsee](/images/projects/data-viz/hikes/stories/bockerlbahnweg/2024-10-03-04.jpg)

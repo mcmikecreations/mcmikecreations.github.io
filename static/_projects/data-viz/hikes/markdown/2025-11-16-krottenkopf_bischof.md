@@ -1,5 +1,5 @@
 I had Krottenkopf (2086 m) on my list of future hikes for quite some time,
-ever since my hike to [Aiplspitz (1759 m)](/404/). Scrolling through the list
+ever since my hike to [Aiplspitz (1759 m)](/hikes/2024-08-31-aiplspitz/). Scrolling through the list
 on Thursday evening, I
 stopped at [Pyramidenspitze (1997 m)](/hikes/2025-02-02-pyramidenspitze/)
 and Vordere Kesselschneid (2002 m), [Soiernspitze (2253 m)](/hikes/2025-01-19-soiernspitze/) over
