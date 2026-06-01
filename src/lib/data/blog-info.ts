@@ -1,7 +1,8 @@
 const TagFrontend = 'Frontend';
 const TagBackend = 'Backend';
 const TagGamedev = 'Gamedev';
-type Tag = typeof TagFrontend | typeof TagBackend | typeof TagGamedev;
+const TagDataViz = 'Data-Viz';
+type Tag = typeof TagFrontend | typeof TagBackend | typeof TagGamedev | typeof TagDataViz;
 
 interface BlogInfo {
 	title: string;
@@ -23,4 +24,5 @@ export const tags = [
 	TagFrontend,
 	TagBackend,
 	TagGamedev,
+	TagDataViz,
 ];

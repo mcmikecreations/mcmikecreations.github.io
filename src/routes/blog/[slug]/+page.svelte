@@ -52,7 +52,7 @@
 				<div class="flex flex-row justify-end gap-2" aria-details="tags">
 					<span aria-label="tags" class="sr-only"></span>
 					{#each data.post.tags as t}
-						<span>{t}</span>
+						<a href={`/blog/tag/${encodeURIComponent(t)}/`} class="hover:underline text-primary-600 dark:text-primary-500">{t}</a>
 					{/each}
 				</div>
 			{/if}

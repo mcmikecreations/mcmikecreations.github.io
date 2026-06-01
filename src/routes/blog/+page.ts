@@ -1,33 +1,18 @@
-import { error } from '@sveltejs/kit';
-import type { PageLoad } from './$types';
-import blogs from '$lib/data/blogs.json';
+import { getAllBlogPosts, getBlogPosts } from '$lib/blog/blog-info';
 
-export const load: PageLoad = async () => {
-	try {
-		const posts = blogs.map(
-			k => {
-				const url = '/blog/' + k.path.substring(0, k.path.length - 3) + '/';
-				const date = new Date(k.date);
+export const prerender = true;
 
-				return ({
-					year: date.getFullYear(),
-					month: date.getMonth() + 1,
-					day: date.getDate(),
-					date: date,
-					title: k.title,
-					url: url,
-					image: k.image,
-					description: k.description,
-					tags: k.tags,
-				});
-			}
-		);
+export function load() {
+	const { posts, pagination } = getBlogPosts({ page: 1 });
+	const yearList = [...new Set(getAllBlogPosts().map(p => p.year))].sort((a, b) => b - a);
 
-		return {
-			posts: posts,
-		};
-	} catch (ex) {
-		console.log(ex);
-		error(500);
-	}
-};
+	return {
+		posts,
+		pagination,
+		yearList,
+		footer: {
+			pinBottom: false,
+			showSocials: true,
+		},
+	};
+}
