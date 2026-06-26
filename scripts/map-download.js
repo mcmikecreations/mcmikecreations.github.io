@@ -49,7 +49,8 @@ const downloadFile = async (address, fileName, requestInit = undefined) => {
 
 	const buffer = Buffer.from(await response.arrayBuffer());
 	if (!response.ok || buffer.length < 1024) {
-		console.error(`Failed to download ${address}: ${response.status} ${response.statusText}`);
+		const decoder = new TextDecoder("utf-8");
+		console.error(`Failed to download ${address}: ${response.status} ${response.statusText}`, decoder.decode(buffer));
 		return 0;
 	}
 	await writeFile(destination, buffer);
@@ -149,10 +150,17 @@ async function downloadMeta(meta) {
 				method: 'GET',
 				headers: {
 					"Origin": providers.mapyOutdoor.origin,
-					"Referrer": providers.mapyOutdoor.origin,
-					"Cookie": cookieMapycz
+					"Referrer": providers.mapyOutdoor.origin + '/',
+					"Cookie": cookieMapycz,
+					"Accept": "image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5",
+					"Priority": "u=5, i",
+					"Sec-Fetch-Dest": "image",
+					"Sec-Fetch-Mode": "cors",
+					"Sec-Fetch-Site": "same-site",
+					"Sec-GPC": "1",
+					"TE": "trailers"
 				},
-				referrer: providers.mapyOutdoor.origin,
+				referrer: providers.mapyOutdoor.origin + '/',
 			}
 		);
 	}

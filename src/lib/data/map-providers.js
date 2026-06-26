@@ -16,9 +16,9 @@ export const providers = {
 		name: 'Mapy.cz Outdoor',
 		size: 256,
 		tileset: 'mapycz-outdoor',
-		source: 'https://en.mapy.cz/',
-		origin: 'https://en.mapy.cz',
-		url: (/** @type {number} */ x, /** @type {number} */ y, /** @type {number} */ z) => `https://mapserver.mapy.cz/turist-en/${z}-${x}-${y}`,
+		source: 'https://mapy.com/',
+		origin: 'https://mapy.com',
+		url: (/** @type {number} */ x, /** @type {number} */ y, /** @type {number} */ z) => `https://tilecache.mapy.com/turist-en/${z}-${x}-${y}`,
 	},
 	wikimedia: {
 		format: 'png',
