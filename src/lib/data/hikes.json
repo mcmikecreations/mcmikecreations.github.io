@@ -5,8 +5,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 880,
+      "descent": 880,
       "dates": [
         {
           "date": "2025-03-02",
@@ -25,6 +25,69 @@
           "people": [],
           "image": null,
           "path": null
+        }
+      ],
+      "nodes": [
+        {
+          "id": 99523239,
+          "lat": 47.6724325,
+          "lon": 11.5875751,
+          "tags": {
+            "name": "Schloss Hohenburg",
+            "historic": "castle",
+            "building": "yes",
+            "website": "http://schloss.st-ursula.net/",
+            "wikidata": "Q2241603",
+            "wikipedia": "de:Hohenburg (Lenggries)"
+          }
+        },
+        {
+          "id": 9101538957,
+          "lat": 47.6656009,
+          "lon": 11.6209367,
+          "tags": {
+            "waterway": "waterfall"
+          }
+        },
+        {
+          "id": 901156954,
+          "lat": 47.6621125,
+          "lon": 11.6322388,
+          "tags": {
+            "waterway": "waterfall"
+          }
+        },
+        {
+          "id": 9278796023,
+          "lat": 47.6518126,
+          "lon": 11.6311714,
+          "tags": {
+            "name": "Lenggrieser Hütte",
+            "amenity": "cafe",
+            "cuisine": "german;regional",
+            "ele": "1338",
+            "email": "info@lenggrieserhuette.de",
+            "mobile": "+491714849349",
+            "phone": "+498042967112; +4980425633096",
+            "toilets": "yes",
+            "website": "https://www.lenggrieserhuette.de/",
+            "website:menu": "http://www.lenggrieserhuette.de/kulinarisches.html"
+          }
+        },
+        {
+          "id": 264056175,
+          "lat": 47.6521541,
+          "lon": 11.6431635,
+          "tags": {
+            "name": "Seekarkreuz",
+            "alias": "Silberkopf",
+            "ele": "1601",
+            "natural": "peak",
+            "summit:cross": "yes",
+            "summit:register": "yes",
+            "wikidata": "Q2265064",
+            "wikipedia": "de:Seekarkreuz"
+          }
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/seekarkreuz.json",
@@ -63,8 +126,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 990,
+      "descent": 990,
       "dates": [
         {
           "date": "2025-06-10",
@@ -93,6 +156,96 @@
           "people": [],
           "image": null,
           "path": null
+        }
+      ],
+      "nodes": [
+        {
+          "id": 143270539,
+          "lat": 47.6846631,
+          "lon": 12.0054222,
+          "tags": {
+            "name": "Bergcafé Siglhof",
+            "amenity": "cafe",
+            "building": "yes",
+            "tourism": "guest_house",
+            "email": "info@siglhof.com",
+            "operator": "Josef Winlker",
+            "phone": "+498023679",
+            "website": "https://www.siglhof.com/"
+          }
+        },
+        {
+          "id": 220070602,
+          "lat": 47.6944027,
+          "lon": 12.0125794,
+          "tags": {
+            "name": "Siglhütte",
+            "access": "private",
+            "building": "hut",
+            "contact:phone": "+4989290709-0",
+            "contact:website": "https://www.alpenverein-muenchen-oberland.de/siglhuette",
+            "ele": "1334",
+            "operator": "DAV Sektion München und Oberland",
+            "reservation": "members_only",
+            "tourism": "wilderness_hut"
+          }
+        },
+        {
+          "id": 136892007,
+          "lat": 47.7020736,
+          "lon": 12.0123066,
+          "tags": {
+            "name": "Wendelsteinhaus",
+            "amenity": "restaurant",
+            "building": "yes",
+            "construction_year": "1883",
+            "cuisine": "bavarian;regional",
+            "email": "info@wendelsteinhaus.de",
+            "toilets": "yes",
+            "phone": "+498023404",
+            "website": "https://wendelsteinhaus.de/",
+            "wikidata": "Q2559057"
+          }
+        },
+        {
+          "id": 140178107,
+          "lat": 47.7021757,
+          "lon": 12.0132786,
+          "tags": {
+            "name": "Wendelsteinkircherl",
+            "amenity": "place_of_worship",
+            "ele": "1740",
+            "building": "church",
+            "denomination": "roman_catholic",
+            "religion": "christian",
+            "wikidata": "Q41213882",
+            "wikipedia": "de:Wendelsteinkirche"
+          }
+        },
+        {
+          "id": 26865134,
+          "lat": 47.7034761,
+          "lon": 12.0120518,
+          "tags": {
+            "name": "Wendelstein",
+            "natural": "peak",
+            "ele": "1838",
+            "summit:cross": "yes",
+            "summit:register": "no",
+            "wikidata": "Q819671",
+            "wikipedia": "de:Wendelstein (Berg)"
+          }
+        },
+        {
+          "id": 342301041,
+          "lat": 47.6736675,
+          "lon": 12.0118233,
+          "tags": {
+            "name": "Café Konditorei Huber",
+            "amenity": "cafe",
+            "shop": "bakery",
+            "website": "https://www.cafe-huber-bayrischzell.de/"
+          }
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/wendelstein.json",
@@ -521,8 +674,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 1460,
+      "descent": 1460,
       "dates": [
         {
           "date": "2026-05-23",
@@ -612,6 +765,35 @@
             "summit:register": "no",
             "wikidata": "Q696067",
             "wikipedia": "de:Nebelhorn (Allgäuer Alpen)"
+          }
+        },
+        {
+          "id": 102542595,
+          "lat": 47.4088164,
+          "lon": 10.3236963,
+          "tags": {
+            "name": "Vordere Seealpe",
+            "amenity": "biergarten",
+            "start_date": "1886",
+            "building": "farm_auxiliary",
+            "operator": "Nebelhornbahn AG",
+            "pasture": "galt",
+            "wikidata": "Q131350734",
+            "ref:dadlo": "386.1"
+          }
+        },
+        {
+          "id": 99203628,
+          "lat": 47.4086956,
+          "lon": 10.3130841,
+          "tags": {
+            "name": "Berggasthof Seealpe",
+            "amenity": "restaurant",
+            "ele": "1280",
+            "building": "retail",
+            "operator": "Nebelhornbahn AG",
+            "pasture": "none",
+            "ref:dadlo": "385"
           }
         }
       ],
@@ -2258,8 +2440,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 810,
+      "descent": 810,
       "dates": [
         {
           "date": "2024-09-29",
@@ -2306,6 +2488,16 @@
             "name": "Taubensteinsattel",
             "natural": "saddle",
             "ele": "1660"
+          }
+        },
+        {
+          "id": 2874807218,
+          "lat": 47.6479779,
+          "lon": 11.9260025,
+          "tags": {
+            "name": "Kirchstein",
+            "natural": "peak",
+            "wikidata": "Q55489734"
           }
         },
         {
@@ -3234,8 +3426,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 1030,
+      "descent": 740,
       "dates": [
         {
           "date": "2024-08-31",
@@ -3353,8 +3545,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 970,
+      "descent": 990,
       "dates": [
         {
           "date": "2024-09-07",
@@ -3364,6 +3556,48 @@
           "people": [],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2024-09-07-simetsberg.md"
+        }
+      ],
+      "nodes": [
+        {
+          "id": 12762897023,
+          "lat": 47.5671264,
+          "lon": 11.2881699,
+          "tags": {
+            "name": "Vorderfallbachhöhle",
+            "natural": "cave_entrance"
+          }
+        },
+        {
+          "id": 117389463,
+          "lat": 47.5616581,
+          "lon": 11.2780258,
+          "tags": {
+            "name": "Tiroler Hütte",
+            "building": "cabin"
+          }
+        },
+        {
+          "id": 96258180,
+          "lat": 47.5640375,
+          "lon": 11.2597325,
+          "tags": {
+            "name": "Simetsberg Diensthütte",
+            "building": "cabin"
+          }
+        },
+        {
+          "id": 268949226,
+          "lat": 47.5665209,
+          "lon": 11.2537283,
+          "tags": {
+            "name": "Simetsberg",
+            "natural": "peak",
+            "ele": "1840",
+            "summit:cross": "yes",
+            "wikidata": "Q315741",
+            "wikipedia": "de:Simetsberg (Estergebirge)"
+          }
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/simetsberg.json",
@@ -3401,12 +3635,12 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 590,
+      "descent": 170,
       "dates": [
         {
           "date": "2024-09-21",
-          "title": "Mountain Carts Frenzy",
+          "title": "Roßkopf: Mountain Carts Frenzy",
           "description": "Doing a Roßkopf (1579 m) loop and taking the mountain carts down.",
           "tags": ["DAAD FK"],
           "people": ["Dennis Makhandia"],
@@ -3544,12 +3778,12 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 280,
+      "descent": 570,
       "dates": [
         {
           "date": "2024-10-03",
-          "title": "I am the Train",
+          "title": "Bockerlbahn-Weg: I am the Train",
           "description": "Following a 1919 railway path near Spitzingsee.",
           "tags": [],
           "people": [],
@@ -3613,8 +3847,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 840,
+      "descent": 1160,
       "dates": [
         {
           "date": "2024-10-12",
@@ -3716,8 +3950,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 180,
+      "descent": 180,
       "dates": [
         {
           "date": "2024-10-20",
@@ -3727,6 +3961,50 @@
           "people": [],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2024-10-20-kruen.md"
+        }
+      ],
+      "nodes": [
+        {
+          "id": 313172002,
+          "lat": 47.4913807,
+          "lon": 11.2139174,
+          "tags": {
+            "name": "Kapelle Gerold",
+            "amenity": "place_of_worship",
+            "building": "chapel",
+            "religion": "christian",
+            "roof:shape": "gabled"
+          }
+        },
+        {
+          "id": 1147768588,
+          "lat": 47.4819651,
+          "lon": 11.2387374,
+          "tags": {
+            "name": "Klaiser Kapelle",
+            "amenity": "place_of_worship",
+            "building": "chapel",
+            "denomination": "roman_catholic",
+            "historic": "chapel",
+            "religion": "christian",
+            "wikidata": "Q41218008",
+            "wikipedia": "de:Kapelle Klais"
+          }
+        },
+        {
+          "id": 339247249,
+          "lat": 47.4962891,
+          "lon": 11.2531423,
+          "tags": {
+            "name": "Alpengasthof Barmsee",
+            "amenity": "restaurant",
+            "contact:email": "hotel@barmsee.de",
+            "cuisine": "local",
+            "internet_access": "yes",
+            "internet_access:fee": "no",
+            "phone": "+4988252034",
+            "website": "https://www.barmsee.de"
+          }
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/kruen.json",
@@ -3768,8 +4046,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 900,
+      "descent": 940,
       "dates": [
         {
           "date": "2024-11-17",
@@ -3888,8 +4166,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 400,
+      "descent": 680,
       "dates": [
         {
           "date": "2024-12-14",
@@ -3959,8 +4237,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 1360,
+      "descent": 1350,
       "dates": [
         {
           "date": "2025-01-19",
@@ -4051,8 +4329,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 1050,
+      "descent": 1420,
       "dates": [
         {
           "date": "2025-01-26",
@@ -4170,8 +4448,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 1600,
+      "descent": 1600,
       "dates": [
         {
           "date": "2025-02-02",
@@ -4347,8 +4625,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 940,
+      "descent": 940,
       "dates": [
         {
           "date": "2025-02-09",
@@ -4438,8 +4716,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 310,
+      "descent": 240,
       "dates": [
         {
           "date": "2025-02-23",
@@ -4449,6 +4727,108 @@
           "people": [],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-02-23-herrsching_tutzing.md"
+        }
+      ],
+      "nodes": [
+        {
+          "id": 1207420,
+          "lat": 47.9742914,
+          "lon": 11.1830029,
+          "tags": {
+            "name": "Kloster Andechs",
+            "building": "yes",
+            "contact:website": "https://www.andechs.de/",
+            "wikidata": "Q259971",
+            "wikipedia": "de:Kloster Andechs"
+          }
+        },
+        {
+          "id": 72036146,
+          "lat": 47.9674567,
+          "lon": 11.1843369,
+          "tags": {
+            "name": "St. Vitus",
+            "amenity": "place_of_worship",
+            "building": "yes",
+            "denomination": "catholic",
+            "religion": "christian",
+            "wikidata": "Q24261947",
+            "wikipedia": "de:St. Vitus (Erling)"
+          }
+        },
+        {
+          "id": 79119143,
+          "lat": 47.9532409,
+          "lon": 11.2042345,
+          "tags": {
+            "name": "St. Stephan",
+            "amenity": "place_of_worship",
+            "building": "chapel",
+            "ele": "728",
+            "heritage": "4",
+            "heritage:operator": "BLfD",
+            "religion": "christian",
+            "ref:BLfD": "D-1-88-117-30",
+            "roof:shape": "gabled",
+            "wikidata": "Q41257659"
+          }
+        },
+        {
+          "id": 373662966,
+          "lat": 47.9480376,
+          "lon": 11.2209280,
+          "tags": {
+            "name": "Unsere Liebe Frau",
+            "amenity": "place_of_worship",
+            "building": "church",
+            "religion": "christian",
+            "website": "https://www.pg-andechs.de/marienkirche_machtlfing.html",
+            "wikidata": "Q41257652",
+            "wikipedia": "de:Unsere Liebe Frau (Machtlfing)"
+          }
+        },
+        {
+          "id": 27365348,
+          "lat": 47.9480535,
+          "lon": 11.2232232,
+          "tags": {
+            "name": "St. Johannes Baptist",
+            "amenity": "place_of_worship",
+            "building": "yes",
+            "religion": "christian",
+            "wikidata": "Q24264911",
+            "wikipedia": "de:St. Johann Baptist (Machtlfing)"
+          }
+        },
+        {
+          "id": 261950928,
+          "lat": 47.9442462,
+          "lon": 11.2578042,
+          "tags": {
+            "name": "Mariä Geburt",
+            "amenity": "place_of_worship",
+            "building": "church",
+            "denomination": "roman_catholic",
+            "religion": "christian",
+            "wikidata": "Q41258292",
+            "wikipedia": "de:Mariä Geburt (Traubing)"
+          }
+        },
+        {
+          "id": 238463222,
+          "lat": 47.9108463,
+          "lon": 11.2777178,
+          "tags": {
+            "name": "St. Joseph",
+            "amenity": "place_of_worship",
+            "building": "church",
+            "denomination": "catholic",
+            "religion": "christian",
+            "start_date": "1929",
+            "website": "http://www.st-joseph-tutzing.de/st-joseph/",
+            "wikidata": "Q41258184",
+            "wikipedia": "de:St. Joseph (Tutzing)"
+          }
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/herrsching_tutzing.json",
@@ -4489,8 +4869,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 1330,
+      "descent": 1310,
       "dates": [
         {
           "date": "2025-03-09",
@@ -4584,8 +4964,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 690,
+      "descent": 710,
       "dates": [
         {
           "date": "2025-03-16",
@@ -4668,8 +5048,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 1340,
+      "descent": 1720,
       "dates": [
         {
           "date": "2025-03-23",
@@ -4751,8 +5131,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 1260,
+      "descent": 1230,
       "dates": [
         {
           "date": "2025-03-30",
@@ -4833,8 +5213,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 700,
+      "descent": 710,
       "dates": [
         {
           "date": "2025-04-04",
@@ -4844,6 +5224,45 @@
           "people": ["Serhii Ivanenko"],
           "image": null,
           "path": "/_projects/data-viz/hikes/markdown/2025-04-04-caldeirao_verde.md"
+        }
+      ],
+      "nodes": [
+        {
+          "id": 2319315497,
+          "lat": 32.7744500,
+          "lon": -16.9354954,
+          "tags": {
+            "name": "Caldeirão Verde",
+            "waterway": "waterfall"
+          }
+        },
+        {
+          "id": 6513058893,
+          "lat": 32.7789972,
+          "lon": -16.9218614,
+          "tags": {
+            "waterway": "waterfall"
+          }
+        },
+        {
+          "id": 6556491409,
+          "lat": 32.7828182,
+          "lon": -16.9135953,
+          "tags": {
+            "waterway": "waterfall"
+          }
+        },
+        {
+          "id": 365253728,
+          "lat": 32.7836487,
+          "lon": -16.9061557,
+          "tags": {
+            "amenity": "cafe",
+            "building": "yes",
+            "roof:material": "thatch",
+            "roof:shape": "gabled",
+            "toilets": "no"
+          }
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/caldeirao_verde.json",
@@ -4881,8 +5300,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 380,
+      "descent": 410,
       "dates": [
         {
           "date": "2025-04-04",
@@ -4952,8 +5371,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 130,
+      "descent": 130,
       "dates": [
         {
           "date": "2025-04-06",
@@ -5000,8 +5419,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 750,
+      "descent": 670,
       "dates": [
         {
           "date": "2025-04-21",
@@ -5089,8 +5508,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 760,
+      "descent": 800,
       "dates": [
         {
           "date": "2025-04-27",
@@ -5176,8 +5595,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 1250,
+      "descent": 1350,
       "dates": [
         {
           "date": "2025-05-11",
@@ -5269,8 +5688,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 1290,
+      "descent": 1240,
       "dates": [
         {
           "date": "2025-05-18",
@@ -5532,8 +5951,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 2430,
+      "descent": 2430,
       "dates": [
         {
           "date": "2025-06-21",
@@ -5659,8 +6078,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 2160,
+      "descent": 20,
       "dates": [
         {
           "date": "2025-09-18",
@@ -5766,8 +6185,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 1000,
+      "descent": 1110,
       "dates": [
         {
           "date": "2025-10-05",
@@ -5844,8 +6263,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 590,
+      "descent": 580,
       "dates": [
         {
           "date": "2025-10-27",
@@ -5947,12 +6366,12 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 70,
+      "descent": 50,
       "dates": [
         {
           "date": "2025-09-28",
-          "title": "Mental Health Walk to Freising",
+          "title": "Moosburg Mental Health Walk to Freising",
           "description": "Flat walk between two local towns.",
           "tags": ["Web"],
           "people": [],
@@ -5994,8 +6413,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 510,
+      "descent": 830,
       "dates": [
         {
           "date": "2025-11-01",
@@ -6109,8 +6528,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 1660,
+      "descent": 1670,
       "dates": [
         {
           "date": "2025-11-16",
@@ -6135,6 +6554,18 @@
             "summit:cross": "yes",
             "summit:register": "yes",
             "wikidata": "Q866104"
+          }
+        },
+        {
+          "id": 2526645264,
+          "lat": 47.5460461,
+          "lon": 11.1748876,
+          "tags": {
+            "name": "Henneneck",
+            "natural": "peak",
+            "ele": "1964",
+            "wikidata": "Q31541397",
+            "wikipedia": "de:Henneneck"
           }
         },
         {
@@ -6205,8 +6636,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 1780,
+      "descent": 1730,
       "dates": [
         {
           "date": "2025-11-23",
@@ -6373,12 +6804,12 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 330,
+      "descent": 190,
       "dates": [
         {
           "date": "2025-11-29",
-          "title": "Kufstein Christmas Market",
+          "title": "Thierberg to Kufstein Christmas Market",
           "description": "Socializing on a nice relaxing hike in Austria.",
           "tags": ["DAAD FK"],
           "people": null,
@@ -6398,6 +6829,22 @@
             "ele": "721",
             "wikidata": "Q872013",
             "wikipedia": "de:Thierberg (Tirol)"
+          }
+        },
+        {
+          "id": 1837410,
+          "lat": 47.5810714,
+          "lon": 12.1688419,
+          "tags": {
+            "name": "Festung Kufstein",
+            "castle_type": "fortress",
+            "heritage": "2",
+            "heritage:operator": "bda",
+            "historic": "castle",
+            "start_date": "1205",
+            "tourism": "attraction",
+            "wikidata": "Q700709",
+            "wikipedia": "de:Festung Kufstein"
           }
         }
       ],
@@ -6439,8 +6886,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 1030,
+      "descent": 300,
       "dates": [
         {
           "date": "2025-09-07",
@@ -6567,8 +7014,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 540,
+      "descent": 820,
       "dates": [
         {
           "date": "2025-08-31",
@@ -6661,8 +7108,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 1020,
+      "descent": 810,
       "dates": [
         {
           "date": "2025-12-14",
@@ -6740,12 +7187,12 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 280,
+      "descent": 280,
       "dates": [
         {
           "date": "2025-08-13",
-          "title": "Family Trip to an Old Fort",
+          "title": "Family Trip to the Omiš Old Fort",
           "description": "Taking my mom up a local mountain.",
           "tags": ["Croatia"],
           "people": ["Liubov Bilinska"],
@@ -6805,8 +7252,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 280,
+      "descent": 300,
       "dates": [
         {
           "date": "2025-08-14",
@@ -6880,8 +7327,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 810,
+      "descent": 530,
       "dates": [
         {
           "date": "2025-12-23",
@@ -6982,12 +7429,12 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 820,
+      "descent": 1410,
       "dates": [
         {
           "date": "2025-12-29",
-          "title": "First Trip to the Dolomites",
+          "title": "Cima Sophia: First Trip to the Dolomites",
           "description": "Attempting a rocky peak at the cold of winter.",
           "tags": [],
           "people": ["Serhii Ivanenko", "Pavlo Pustelnyk"],
@@ -7072,8 +7519,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 950,
+      "descent": 990,
       "dates": [
         {
           "date": "2026-01-11",
@@ -7150,8 +7597,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 360,
+      "descent": 310,
       "dates": [
         {
           "date": "2025-07-26",
@@ -7294,8 +7741,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 1230,
+      "descent": 910,
       "dates": [
         {
           "date": "2026-01-18",
@@ -7375,8 +7822,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 940,
+      "descent": 1260,
       "dates": [
         {
           "date": "2025-07-06",
@@ -7483,8 +7930,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 860,
+      "descent": 730,
       "dates": [
         {
           "date": "2025-07-20",
@@ -7601,8 +8048,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 190,
+      "descent": 110,
       "dates": [
         {
           "date": "2025-06-29",
@@ -7662,8 +8109,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 660,
+      "descent": 780,
       "dates": [
         {
           "date": "2026-01-25",
@@ -7741,8 +8188,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 1293,
+      "descent": 573,
       "dates": [
         {
           "date": "2026-02-15",
@@ -7837,12 +8284,12 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 1107,
+      "descent": 1229,
       "dates": [
         {
           "date": "2026-03-06",
-          "title": "First Hike Near Linz",
+          "title": "Hoher Kalmberg: First Hike Near Linz",
           "description": "Taking Pavlo for a tour near Hallstätter See.",
           "tags": [],
           "people": ["Pavlo Pustelnyk"],
@@ -7916,12 +8363,12 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 462,
+      "descent": 481,
       "dates": [
         {
           "date": "2026-03-07",
-          "title": "Relaxing Spring Views at Traunsee",
+          "title": "Geißwand: Relaxing Spring Views at Traunsee",
           "description": "Letting Pavlo recover on a nice walk.",
           "tags": [],
           "people": ["Pavlo Pustelnyk"],
@@ -7997,8 +8444,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 1665,
+      "descent": 1592,
       "dates": [
         {
           "date": "2026-03-15",
@@ -8211,8 +8658,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 947,
+      "descent": 947,
       "dates": [
         {
           "date": "2026-03-22",
@@ -8295,8 +8742,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 968,
+      "descent": 1127,
       "dates": [
         {
           "date": "2026-03-29",
@@ -8420,12 +8867,12 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 615,
+      "descent": 623,
       "dates": [
         {
           "date": "2026-04-03",
-          "title": "A Handful of Castles",
+          "title": "Moosburg to Landshut: A Handful of Castles",
           "description": "Visiting cool castles and ruins between Moosburg and Landshut.",
           "tags": ["Web"],
           "people": [],
@@ -8574,8 +9021,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 1287,
+      "descent": 1365,
       "dates": [
         {
           "date": "2026-04-05",
@@ -8694,8 +9141,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 1004,
+      "descent": 1060,
       "dates": [
         {
           "date": "2026-04-11",
@@ -8847,8 +9294,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 1253,
+      "descent": 1238,
       "dates": [
         {
           "date": "2026-04-26",
@@ -8963,8 +9410,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 332,
+      "descent": 339,
       "dates": [
         {
           "date": "2026-05-01",
@@ -9040,8 +9487,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 581,
+      "descent": 580,
       "dates": [
         {
           "date": "2026-05-03",
@@ -9117,8 +9564,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 1255,
+      "descent": 1251,
       "dates": [
         {
           "date": "2026-05-10",
@@ -9289,8 +9736,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 310,
+      "descent": 331,
       "dates": [
         {
           "date": "2026-05-14",
@@ -9370,8 +9817,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 1796,
+      "descent": 1708,
       "dates": [
         {
           "date": "2026-05-17",
@@ -9633,8 +10080,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 1013,
+      "descent": 995,
       "dates": [
         {
           "date": "2026-06-21",
@@ -9839,8 +10286,8 @@
     "properties": {
       "distance": null,
       "duration": null,
-      "ascent": null,
-      "descent": null,
+      "ascent": 900,
+      "descent": 82,
       "dates": [
         {
           "date": "2026-06-27",
