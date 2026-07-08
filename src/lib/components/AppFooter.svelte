@@ -18,7 +18,8 @@ import {
 	OrcidSolid,
 	ResearchGateSolid,
 	TelegramSolid,
-	StravaSolid
+	StravaSolid,
+	KomootSolid
 } from '$lib/icons';
 import { type ClassNameValue, twMerge } from 'tailwind-merge';
 
@@ -84,6 +85,9 @@ let showSocials = $derived(shouldShowSocials !== undefined ? (shouldShowSocials 
 				</FooterIcon>
 				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'Strava')?.url} target="_blank" rel="noopener noreferrer" class="ms-6 mt-4 md:mt-0">
 					<StravaSolid ariaLabel="strava" />
+				</FooterIcon>
+				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'Komoot')?.url} target="_blank" rel="noopener noreferrer" class="ms-6 mt-4 md:mt-0">
+					<KomootSolid ariaLabel="komoot" />
 				</FooterIcon>
 			</div>
 		{/if}

@@ -6,8 +6,15 @@ export const getNodeIconDetails = (tags: any) => {
     if (tags.tourism === 'viewpoint') return { emoji: '🔭', color: '#0284c7' };
     if (tags.waterway === 'waterfall') return { emoji: '🌊', color: '#0ea5e9' };
     if (tags.natural === 'water' || tags.natural === 'spring') return { emoji: '💧', color: '#38bdf8' };
+    if (tags.natural === 'cave_entrance') return { emoji: '🕳️', color: '#57534e' };
     if (tags.historic === 'ruins' || tags.historic === 'castle') return { emoji: '🏰', color: '#525252' };
     if (tags.historic === 'memorial') return { emoji: '🪦', color: '#78716c' };
+    if (tags.amenity === 'place_of_worship') {
+        if (tags.religion === 'muslim') return { emoji: '🕌', color: '#9333ea' };
+        if (tags.religion === 'jewish') return { emoji: '🕍', color: '#9333ea' };
+        if (tags.religion === 'hindu' || tags.religion === 'buddhist') return { emoji: '🛕', color: '#9333ea' };
+        return { emoji: '⛪', color: '#9333ea' };
+    }
     if (tags.highway === 'bus_stop') return { emoji: '🚌', color: '#2563eb' };
     if (tags.railway === 'station' || tags.railway === 'halt' || tags.public_transport === 'station') return { emoji: '🚉', color: '#dc2626' };
     if (tags.tourism === 'information') return { emoji: 'ℹ️', color: '#2563eb' };

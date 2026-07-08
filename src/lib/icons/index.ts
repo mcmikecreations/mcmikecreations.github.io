@@ -7,6 +7,7 @@ import ResearchGateSolid from '$lib/icons/ResearchGateSolid.svelte';
 import BlueSkySolid from '$lib/icons/BlueSkySolid.svelte';
 import BeRealSolid from '$lib/icons/BeRealSolid.svelte';
 import StravaSolid from '$lib/icons/StravaSolid.svelte';
+import KomootSolid from '$lib/icons/KomootSolid.svelte';
 
 export {
 	InstagramSolid,
@@ -17,5 +18,6 @@ export {
 	ResearchGateSolid,
 	BlueSkySolid,
 	BeRealSolid,
-	StravaSolid
+	StravaSolid,
+	KomootSolid
 };

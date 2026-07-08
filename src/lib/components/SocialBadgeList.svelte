@@ -6,6 +6,7 @@ import SocialBadge from '$lib/components/SocialBadge.svelte';
 		BlueSkySolid,
 		GoogleScholarSolid,
 		InstagramSolid,
+		KomootSolid,
 		MastodonSolid,
 		OrcidSolid,
 		ResearchGateSolid,
@@ -45,3 +46,4 @@ import SocialBadge from '$lib/components/SocialBadge.svelte';
 <SocialBadge profile="BlueSky" {size} {padding} {pill} {outline} {plain}><BlueSkySolid aria-hidden="true" /></SocialBadge>
 <SocialBadge profile="BeReal" {size} {padding} {pill} {outline} {plain}><BeRealSolid aria-hidden="true" /></SocialBadge>
 <SocialBadge profile="Strava" {size} {padding} {pill} {outline} {plain}><StravaSolid aria-hidden="true" /></SocialBadge>
+<SocialBadge profile="Komoot" {size} {padding} {pill} {outline} {plain}><KomootSolid aria-hidden="true" /></SocialBadge>

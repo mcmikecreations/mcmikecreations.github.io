@@ -88,6 +88,11 @@
         "network": "Strava",
         "username": "mykolamor",
         "url": "https://www.strava.com/athletes/mykolamor"
+      },
+      {
+        "network": "Komoot",
+        "username": "Mykola",
+        "url": "https://www.komoot.com/user/4341478648996"
       }
     ]
   },
