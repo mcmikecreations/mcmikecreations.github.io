@@ -6,6 +6,7 @@ import * as THREE from 'three';
 import { MeshLineGeometry } from '$lib/hikes/meshline/MeshLineGeometry';
 import { MeshLineMaterial } from '$lib/hikes/meshline/MeshLineMaterial';
 import { ThreePathContext } from '$lib/hikes/ThreePathContext';
+import { mergeMetrics } from '$lib/hikes/hike-metrics';
 
 export async function loadGeometry(
 	fetch : (input: (RequestInfo | URL), init?: (RequestInit | undefined)) => Promise<Response>,
@@ -30,27 +31,12 @@ export async function loadGeometry(
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function loadProperties(map : Map, geometry : any) {
 	const properties = map.properties;
+	const merged = mergeMetrics(properties, geometry?.properties);
 
-	if (properties.distance == null) {
-		properties.distance = geometry.properties?.summary?.distance
-			? geometry.properties.summary.distance * 1000
-			: null;
-	}
-	if (properties.duration == null) {
-		properties.duration = geometry.properties?.summary?.duration
-			? geometry.properties.summary.duration / 60
-			: null;
-	}
-	if (properties.ascent == null) {
-		properties.ascent = geometry.properties?.ascent
-		  ? geometry.properties.ascent
-			: null;
-	}
-	if (properties.descent == null) {
-		properties.descent = geometry.properties?.descent
-			? geometry.properties.descent
-			: null;
-	}
+	properties.distance = merged.distance;
+	properties.duration = merged.duration;
+	properties.ascent = merged.ascent;
+	properties.descent = merged.descent;
 
 	return properties;
 }

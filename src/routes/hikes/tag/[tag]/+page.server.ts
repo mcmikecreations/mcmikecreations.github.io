@@ -4,6 +4,7 @@ import hikes from '$lib/data/hikes.json';
 import type { Map as HikeMap, GeometryData } from '$lib/data/map-info';
 import { getMapFeatures } from '$lib/data/map-info';
 import { providerFolder } from '$lib/data/map-providers';
+import { mergeMetrics } from '$lib/hikes/hike-metrics';
 
 export const prerender = true;
 
@@ -22,7 +23,8 @@ export type WebStats = {
     totalAscent: number;
     totalDescent: number;
 };
-export type WebData = { stats: WebStats; weeks: WeekData[] };
+export type HikeStats = { distance: number | null; duration: number | null; ascent: number | null; descent: number | null };
+export type WebData = { stats: WebStats; weeks: WeekData[]; hikeStats: Record<string, HikeStats> };
 
 function getYearWeeks(year: number): WeekData[] {
     const weeks: WeekData[] = [];
@@ -88,10 +90,7 @@ async function computeWebData(fetchFn: typeof fetch): Promise<WebData> {
                     const geo = await fetchGeometry(fetchFn, layer.data as GeometryData);
                     if (!geo) return;
                     const p = mapInfo.properties;
-                    const distance = p.distance ?? (geo.properties?.summary?.distance ? geo.properties.summary.distance * 1000 : null);
-                    const duration = p.duration ?? (geo.properties?.summary?.duration ? geo.properties.summary.duration / 60 : null);
-                    const ascent = p.ascent ?? geo.properties?.ascent ?? null;
-                    const descent = p.descent ?? geo.properties?.descent ?? null;
+                    const { distance, duration, ascent, descent } = mergeMetrics(p, geo.properties);
                     hikeStats[mapInfo.route] = { distance, duration, ascent, descent };
                     if (p.draft !== true) {
                         totalHikes += p.dates.length;

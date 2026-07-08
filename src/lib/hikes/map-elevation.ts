@@ -1,37 +1,35 @@
 import { select, pointer, scaleLinear, line as d3Line, area as d3Area, curveMonotoneX, axisBottom, axisLeft, bisectLeft } from 'd3';
 import { primaryGeometryColor, secondaryIndicatorColor } from '$lib/hikes/build-geometry';
+import { computeMetricScales, haversineKm, scaleElevation, type HikeMetrics } from '$lib/hikes/hike-metrics';
 
 interface ElevationPoint {
-    dist: number; // km
-    ele: number;  // m
+    dist: number; // km (already scaled to the authoritative distance)
+    ele: number;  // m (raw track elevation; labels are scaled on display)
     lat: number;
     lon: number;
-}
-
-function haversineKm(c1: number[], c2: number[]): number {
-    const R = 6371;
-    const φ1 = (c1[1] * Math.PI) / 180;
-    const φ2 = (c2[1] * Math.PI) / 180;
-    const Δφ = ((c2[1] - c1[1]) * Math.PI) / 180;
-    const Δλ = ((c2[0] - c1[0]) * Math.PI) / 180;
-    const a = Math.sin(Δφ / 2) ** 2 + Math.cos(φ1) * Math.cos(φ2) * Math.sin(Δλ / 2) ** 2;
-    return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 }
 
 export function initElevationChart(
     container: HTMLElement,
     geojson: any,
     onHover?: (lat: number, lon: number, ele: number, dist: number) => void,
-    onLeave?: () => void
+    onLeave?: () => void,
+    metrics?: Partial<HikeMetrics> | null
 ): { setIndicator: (lat: number, lon: number, preferredDist?: number) => void; hideIndicator: () => void } {
     let internalPoints: ElevationPoint[] = [];
     const coords: number[][] = geojson?.features?.[0]?.geometry?.coordinates;
     if (!coords?.length) return { setIndicator: () => {}, hideIndicator: () => {} };
 
+    // Map the raw track onto the authoritative (possibly overridden) metrics:
+    // distances are stretched so the total matches; elevation labels are scaled
+    // so the vertical travel matches, while the plotted curve keeps its shape.
+    const { distanceFactor, elevationFactor, minElevation } = computeMetricScales(coords, metrics, geojson?.features?.[0]?.properties);
+    const displayEle = (ele: number) => scaleElevation(ele, minElevation, elevationFactor);
+
     const points: ElevationPoint[] = [];
     let cumDist = 0;
     for (let i = 0; i < coords.length; i++) {
-        if (i > 0) cumDist += haversineKm(coords[i - 1], coords[i]);
+        if (i > 0) cumDist += haversineKm(coords[i - 1], coords[i]) * distanceFactor;
         points.push({ dist: cumDist, ele: coords[i][2] ?? 0, lat: coords[i][1], lon: coords[i][0] });
     }
     const distArray = points.map(p => p.dist);
@@ -93,9 +91,9 @@ export function initElevationChart(
     xAxisG.selectAll('.tick line').attr('stroke', '#9ca3af');
     xAxisG.selectAll('text').attr('fill', '#6b7280').style('font-size', '11px');
 
-    // Y axis
+    // Y axis (labels scaled to the authoritative vertical range; curve shape unchanged)
     const yAxisG = g.append('g').call(
-        axisLeft(yScale).ticks(5).tickFormat((d: any) => `${Math.round(d as number)} m`)
+        axisLeft(yScale).ticks(5).tickFormat((d: any) => `${Math.round(displayEle(d as number))} m`)
     );
     yAxisG.select('.domain').attr('stroke', '#9ca3af');
     yAxisG.selectAll('.tick line').attr('stroke', '#9ca3af');
@@ -188,7 +186,7 @@ export function initElevationChart(
         // Elevation label positioning
         const labelPad = 5;
         const labelH = 18;
-        const labelText = `${pt.ele.toFixed(0)} m`;
+        const labelText = `${displayEle(pt.ele).toFixed(0)} m`;
         const textEl = cursor.select<SVGTextElement>('.ele-label-text').text(labelText);
         const textW = (textEl.node()?.getBBox().width ?? 40) + labelPad * 2 + 4;
         const labelX = cx > iW / 2 ? cx - textW - labelPad : cx + labelPad;

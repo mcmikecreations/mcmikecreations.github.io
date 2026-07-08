@@ -5,6 +5,7 @@ import resume from '$lib/data/resume.json';
 import { defaultPageSize, getAllPosts, parseMarkdown } from '$lib/hikes/hikes-info';
 import type { PageServerLoad } from './$types';
 import type { MapDate, MapProperties } from '$lib/data/map-info';
+import { mergeMetrics } from '$lib/hikes/hike-metrics';
 
 export const load: PageServerLoad = async ({ fetch, params, locals }) => {
 	try {
@@ -64,10 +65,7 @@ export const load: PageServerLoad = async ({ fetch, params, locals }) => {
 				showFilePrimary = hike.properties.filePath;
 				mapProperties = <MapProperties>{
 					...hike.properties,
-					distance: hike.properties.distance ?? (fp.summary?.distance ?? 0) * 1000,
-					duration: hike.properties.duration ?? (fp.summary?.duration ?? 0) / 60,
-					ascent: hike.properties.ascent ?? fp.ascent ?? null,
-					descent: hike.properties.descent ?? fp.descent ?? null,
+					...mergeMetrics(hike.properties, fp),
 				};
 			}
 		}

@@ -114,7 +114,7 @@ export const load: PageLoad = async ({ fetch, params }) => {
 			gpxPath: gpxPath,
 			origin: originData,
 			statistics: statistics
-				? ((await buildStatistics(fetch, statistics, height, undefined))?.layers2d?.join(''))
+				? ((await buildStatistics(fetch, statistics, height, undefined, properties))?.layers2d?.join(''))
 				: undefined,
 			projection: projection,
 			tileScale: tiles.scale,

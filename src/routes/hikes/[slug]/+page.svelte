@@ -181,12 +181,12 @@
 					map2dHandle.setIndicator(lat, lon);
 					map3dHandle.setIndicator(lat, lon, ele);
 					elev2dHandle?.setIndicator(lat, lon, dist);
-				}, hideAllIndicators);
+				}, hideAllIndicators, data.map.properties);
 				elev2dHandle = initElevationChart(elevWrapper, geojson, (lat, lon, ele, dist) => {
 					map2dHandle.setIndicator(lat, lon);
 					map3dHandle.setIndicator(lat, lon, ele);
 					elev3dHandle?.setIndicator(lat, lon, dist);
-				}, hideAllIndicators);
+				}, hideAllIndicators, data.map.properties);
 			}
 		}
 	});

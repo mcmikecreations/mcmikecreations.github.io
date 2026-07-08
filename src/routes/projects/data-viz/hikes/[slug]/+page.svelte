@@ -145,6 +145,7 @@
 		const x = parseFloat(target.getAttribute('data-x') ?? '0');
 		const y = parseFloat(target.getAttribute('data-y') ?? '0');
 		const z = parseFloat(target.getAttribute('data-z') ?? '0');
+		const dz = parseFloat(target.getAttribute('data-dz') ?? '');
 		const h = parseFloat(target.getAttribute('data-h') ?? '0');
 		const projected = data.projection([x, y])!;
 		const elemX = target.getAttribute('x') ?? '0';
@@ -165,7 +166,7 @@
 		if (statsHeightIndicator && statsHeightIndicatorRect) {
 			const offset = 5.0;
 			const newX = parseFloat(elemX) - offset;
-			statsHeightIndicator.innerHTML = `${z.toFixed(1)} m`;
+			statsHeightIndicator.innerHTML = `${(Number.isNaN(dz) ? z : dz).toFixed(1)} m`;
 
 			const bbox = statsHeightIndicator.getBBox();
 			const rectWidth = bbox.width + 2.0 * offset;
