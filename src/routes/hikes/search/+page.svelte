@@ -9,6 +9,7 @@
 	import { Badge, Heading, Img, Span } from 'flowbite-svelte';
 	import DateBadge from '$lib/components/DateBadge.svelte';
 	import { normalize } from '$lib/hikes/search-normalize';
+	import { hashQuery } from '$lib/hikes/name-hash';
 	import type { SearchEntry } from '../search-index.json/+server';
 
 	let index: SearchEntry[] | null = $state(null);
@@ -19,8 +20,24 @@
 		query = page.url.searchParams.get('q') ?? '';
 	});
 	let results = $state<SearchEntry[]>([]);
+	let queryPeopleHashes = $state<string[]>([]);
 
-	function score(entry: SearchEntry, nq: string): number {
+	$effect(() => {
+		const q = query;
+		queryPeopleHashes = [];
+		if (!browser || !q) {
+			return;
+		}
+		let cancelled = false;
+		hashQuery(q).then((h) => {
+			if (!cancelled) queryPeopleHashes = h;
+		});
+		return () => {
+			cancelled = true;
+		};
+	});
+
+	function score(entry: SearchEntry, nq: string, peopleHashes: string[]): number {
 		const full = (s: string) => normalize(s) === nq;
 		const partial = (s: string) => !full(s) && normalize(s).includes(nq);
 
@@ -28,6 +45,7 @@
 		const fullNode = entry.nodeNames.some((n) => full(n));
 		const fullTag = entry.tags.some((t) => full(t));
 		const fullDesc = full(entry.description);
+		const people = entry.peopleHashes.some((h) => peopleHashes.includes(h));
 		const partialName = !fullName && (partial(entry.hikeName) || partial(entry.title));
 		const partialNode = !fullNode && entry.nodeNames.some((n) => partial(n));
 		const partialTag = !fullTag && entry.tags.some((t) => partial(t));
@@ -37,6 +55,7 @@
 			(fullName ? 10000 : 0) +
 			(fullNode ? 5000 : 0) +
 			(fullTag ? 5000 : 0) +
+			(people ? 5000 : 0) +
 			(fullDesc ? 3000 : 0) +
 			(partialName ? 100 : 0) +
 			(partialNode ? 40 : 0) +
@@ -51,8 +70,9 @@
 			return;
 		}
 		const nq = normalize(query);
+		const ph = queryPeopleHashes;
 		results = index
-			.map((e) => ({ entry: e, s: score(e, nq) }))
+			.map((e) => ({ entry: e, s: score(e, nq, ph) }))
 			.filter((x) => x.s > 0)
 			.sort((a, b) => b.s - a.s || b.entry.date.localeCompare(a.entry.date))
 			.map((x) => x.entry);

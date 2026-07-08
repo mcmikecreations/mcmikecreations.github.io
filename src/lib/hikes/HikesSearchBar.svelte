@@ -4,6 +4,7 @@
 	import { browser } from '$app/environment';
 	import { SearchOutline } from 'flowbite-svelte-icons';
 	import { normalize } from '$lib/hikes/search-normalize';
+	import { hashQuery } from '$lib/hikes/name-hash';
 	import type { SearchEntry } from '../../routes/hikes/search-index.json/+server';
 
 	interface Props {
@@ -45,13 +46,14 @@
 		suggestionsOpen = false;
 	}
 
-	function scoreEntry(entry: SearchEntry, nq: string): number {
+	function scoreEntry(entry: SearchEntry, nq: string, peopleHashes: string[]): number {
 		const full = (s: string) => normalize(s) === nq;
 		const partial = (s: string) => !full(s) && normalize(s).includes(nq);
 		return (
 			(full(entry.hikeName) || full(entry.title) ? 10000 : 0) +
 			(entry.nodeNames.some((n) => full(n)) ? 5000 : 0) +
 			(entry.tags.some((t) => full(t)) ? 5000 : 0) +
+			(entry.peopleHashes.some((h) => peopleHashes.includes(h)) ? 5000 : 0) +
 			(full(entry.description) ? 3000 : 0) +
 			(partial(entry.hikeName) || partial(entry.title) ? 100 : 0) +
 			(entry.nodeNames.some((n) => partial(n)) ? 40 : 0) +
@@ -72,8 +74,9 @@
 		}
 		if (!searchIndex) return;
 		const nq = normalize(q);
+		const ph = await hashQuery(q);
 		const results = searchIndex
-			.map((e) => ({ entry: e, s: scoreEntry(e, nq) }))
+			.map((e) => ({ entry: e, s: scoreEntry(e, nq, ph) }))
 			.filter((x) => x.s > 0)
 			.sort((a, b) => b.s - a.s || b.entry.date.localeCompare(a.entry.date))
 			.slice(0, 8);
