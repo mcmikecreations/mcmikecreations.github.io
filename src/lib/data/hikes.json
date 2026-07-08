@@ -9955,5 +9955,117 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Eggmühl to Köfering",
+    "image": "/images/projects/data-viz/hikes/eggmuehl_koefering.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": 258,
+      "descent": 288,
+      "dates": [
+        {
+          "date": "2026-07-05",
+          "title": "Exploring Köfering Castles",
+          "description": "Walking between two historic settlements and visiting local castles.",
+          "tags": ["Web"],
+          "people": [],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2026-07-05-eggmuehl_koefering.md",
+          "gpx": "/_projects/data-viz/hikes/gpx/eggmuehl_koefering.gpx"
+        }
+      ],
+      "nodes": [
+        {
+          "id": 2273005201,
+          "lat": 48.8378723,
+          "lon": 12.1833660,
+          "tags": {
+            "name": "Löwendenkmal",
+            "historic": "memorial",
+            "memorial": "statue",
+            "heritage": "4",
+            "heritage:operator": "BLfD",
+            "ref:BLfD": "D-3-75-196-29"
+          }
+        },
+        {
+          "id": 1802818,
+          "lat": 48.9022551,
+          "lon": 12.1795670,
+          "tags": {
+            "name": "Schloss Haus",
+            "building": "yes",
+            "historic": "castle",
+            "heritage": "4",
+            "heritage:operator": "BLfD",
+            "ref:BLfD": "D-3-75-205-8",
+            "wikidata": "Q2241466",
+            "wikipedia": "de:Schloss Haus (Neueglofsheim)"
+          }
+        },
+        {
+          "id": 297564020,
+          "lat": 48.9017822,
+          "lon": 12.1827045,
+          "tags": {
+            "name": "Wolfgangseiche",
+            "denotation": "natural_monument",
+            "leaf_cycle": "deciduous",
+            "leaf_type": "broadleaved",
+            "natural": "tree",
+            "species": "Quercus robur",
+            "wikidata": "Q2222131",
+            "wikipedia": "de:Sankt-Wolfgangs-Eiche"
+          }
+        },
+        {
+          "id": 28963332,
+          "lat": 48.9182167,
+          "lon": 12.2044987,
+          "tags": {
+            "name": "Schloß Alteglofsheim",
+            "building": "yes",
+            "castle_type": "manor",
+            "historic": "castle",
+            "wikidata": "Q2239998",
+            "wikipedia": "de:Schloss Alteglofsheim"
+          }
+        }
+      ],
+      "filePath": "/_projects/data-viz/hikes/geojson/eggmuehl_koefering.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [12.1833286, 48.8370777],
+        [12.2182478, 48.8514791],
+        [12.1716017, 48.8918695],
+        [12.1827045, 48.9017822],
+        [12.1806350, 48.9019593],
+        [12.1827045, 48.9017822],
+        [12.2050617, 48.9185889],
+        [12.2084954, 48.9320665]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Eggmühl to Köfering via Rogging, Einhausen, Höhenberg, Untersanding, Neueglofsheim, and Alteglofsheim.",
+    "route": "/projects/data-viz/hikes/eggmuehl_koefering",
+    "height": 768,
+    "standardFeatures": {
+      "origin": {
+        "lat": 48.88052184622007,
+        "lon": 12.196712493896484
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "eggmuehl_koefering.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
