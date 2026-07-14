@@ -1,5 +1,6 @@
 import hikes from '$lib/data/hikes.json';
 import type { Map } from '$lib/data/map-info';
+import { stripFrontmatter } from '$lib/hikes/frontmatter';
 
 export interface ProcessedPost {
     year: number;
@@ -80,6 +81,10 @@ export function getPosts({ page = 1, tag, year, limit = defaultPageSize }: HikeP
 }
 
 export async function parseMarkdown(postRaw: string): Promise<string> {
+    // Drop any leading YAML front matter before rendering. Uses the
+    // dependency-free stripper so this stays safe in the client bundle, which
+    // re-renders the body on navigation. Files without front matter are unchanged.
+    const post = stripFrontmatter(postRaw);
     const { Marked } = await import('marked');
 
     const markedInstance = new Marked();
@@ -140,7 +145,7 @@ export async function parseMarkdown(postRaw: string): Promise<string> {
         }
     });
 
-    const result = await markedInstance.parse(postRaw, { async: true });
+    const result = await markedInstance.parse(post, { async: true });
     const styles = `
 <style>
 .mk-figure { width: 100%; margin-left: auto; margin-right: auto; display: flex; flex-direction: column; justify-content: center; }
