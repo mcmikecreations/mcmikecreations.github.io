@@ -21,6 +21,7 @@
 	import { hikePostTitle } from '$lib/hikes/hikes-meta';
 	import AppBreadcrumbs from '$lib/components/AppBreadcrumbs.svelte';
 	import { parseMarkdown } from '$lib/hikes/hikes-info';
+	import HikeContacts from '../components/HikeContacts.svelte';
 	import { initMap2d } from '$lib/hikes/map-2d';
 	import { initElevationChart } from '$lib/hikes/map-elevation';
 	import { initMap3d } from '$lib/hikes/map-3d';
@@ -331,6 +332,7 @@
 					<div id="content">
 						{@html data.clientHtml ?? '%%SSR_POST_CONTENT%%'}
 					</div>
+					<HikeContacts contacts={data.contacts} />
 				</div>
 			</div>
 		</article>

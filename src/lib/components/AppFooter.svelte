@@ -2,25 +2,7 @@
 import resume from '$lib/data/resume.json';
 import { page } from '$app/state';
 import { Footer, FooterCopyright, FooterIcon, Tooltip } from 'flowbite-svelte';
-import {
-	EnvelopeSolid,
-	FacebookSolid,
-	GithubSolid,
-	LinkedinSolid,
-	XSolid
-} from 'flowbite-svelte-icons';
-import {
-	BlueSkySolid,
-	BeRealSolid,
-	GoogleScholarSolid,
-	InstagramSolid,
-	MastodonSolid,
-	OrcidSolid,
-	ResearchGateSolid,
-	TelegramSolid,
-	StravaSolid,
-	KomootSolid
-} from '$lib/icons';
+import { networkIcon } from '$lib/icons/network-icons';
 import { type ClassNameValue, twMerge } from 'tailwind-merge';
 
 	interface Props {
@@ -33,6 +15,27 @@ import { type ClassNameValue, twMerge } from 'tailwind-merge';
 
 let pinBottom = $derived(shouldPinBottom !== undefined ? (shouldPinBottom === 'true') : (page.data.footer?.pinBottom ?? false));
 let showSocials = $derived(shouldShowSocials !== undefined ? (shouldShowSocials === 'true') : (page.data.footer?.showSocials ?? true));
+
+// Networks rendered in the footer, in display order. `ariaLabel` is the icon's
+// label; `footerAriaLabel` sets aria-label on the FooterIcon anchor (only the
+// email entry sets it); `tooltip` renders a Tooltip after the icon.
+const socials: Array<{ network: string; ariaLabel: string; footerAriaLabel?: string; tooltip?: string }> = [
+	{ network: 'TUM', ariaLabel: 'email', footerAriaLabel: 'email solid' },
+	{ network: 'GitHub', ariaLabel: 'github' },
+	{ network: 'LinkedIn', ariaLabel: 'linkedin' },
+	{ network: 'Telegram', ariaLabel: 'telegram' },
+	{ network: 'Google Scholar', ariaLabel: 'google scholar' },
+	{ network: 'ResearchGate', ariaLabel: 'research gate' },
+	{ network: 'Orcid', ariaLabel: 'orcid' },
+	{ network: 'Mastodon', ariaLabel: 'mastodon' },
+	{ network: 'Facebook', ariaLabel: 'facebook', tooltip: 'Facebook' },
+	{ network: 'Instagram', ariaLabel: 'instagram' },
+	{ network: 'X', ariaLabel: 'x' },
+	{ network: 'BlueSky', ariaLabel: 'bluesky' },
+	{ network: 'BeReal', ariaLabel: 'bereal' },
+	{ network: 'Strava', ariaLabel: 'strava' },
+	{ network: 'Komoot', ariaLabel: 'komoot' }
+];
 </script>
 
 <Footer
@@ -43,52 +46,13 @@ let showSocials = $derived(shouldShowSocials !== undefined ? (shouldShowSocials 
 		<FooterCopyright href="/" by={resume.basics.name} year={new Date().getFullYear()} />
 		{#if showSocials}
 			<div class="flex flex-wrap -ms-6 md:justify-center mt-0 [&_svg]:w-4 [&_svg]:h-4 [&_svg]:text-gray-500 [&_svg]:dark:text-gray-500 [&_svg:hover]:text-gray-900 [&_svg:hover]:dark:text-white">
-				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'TUM')?.url}  target="_blank" rel="noopener noreferrer" class="ms-6 mt-4 md:mt-0" aria-label="email solid">
-					<EnvelopeSolid ariaLabel="email" />
-				</FooterIcon>
-				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'GitHub')?.url} target="_blank" rel="noopener noreferrer" class="ms-6 mt-4 md:mt-0">
-					<GithubSolid ariaLabel="github" />
-				</FooterIcon>
-				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'LinkedIn')?.url} target="_blank" rel="noopener noreferrer" class="ms-6 mt-4 md:mt-0">
-					<LinkedinSolid ariaLabel="linkedin" />
-				</FooterIcon>
-				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'Telegram')?.url} target="_blank" rel="noopener noreferrer" class="ms-6 mt-4 md:mt-0">
-					<TelegramSolid ariaLabel="telegram" />
-				</FooterIcon>
-				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'Google Scholar')?.url} target="_blank" rel="noopener noreferrer" class="ms-6 mt-4 md:mt-0">
-					<GoogleScholarSolid ariaLabel="google scholar" />
-				</FooterIcon>
-				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'ResearchGate')?.url} target="_blank" rel="noopener noreferrer" class="ms-6 mt-4 md:mt-0">
-					<ResearchGateSolid ariaLabel="research gate" />
-				</FooterIcon>
-				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'Orcid')?.url} target="_blank" rel="noopener noreferrer" class="ms-6 mt-4 md:mt-0">
-					<OrcidSolid ariaLabel="orcid" />
-				</FooterIcon>
-				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'Mastodon')?.url} target="_blank" rel="noopener noreferrer" class="ms-6 mt-4 md:mt-0">
-					<MastodonSolid ariaLabel="mastodon" />
-				</FooterIcon>
-				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'Facebook')?.url} target="_blank" rel="noopener noreferrer" class="ms-6 mt-4 md:mt-0">
-					<FacebookSolid ariaLabel="facebook" />
-				</FooterIcon>
-				<Tooltip>Facebook</Tooltip>
-				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'Instagram')?.url} target="_blank" rel="noopener noreferrer" class="ms-6 mt-4 md:mt-0">
-					<InstagramSolid ariaLabel="instagram" />
-				</FooterIcon>
-				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'X')?.url} target="_blank" rel="noopener noreferrer" class="ms-6 mt-4 md:mt-0">
-					<XSolid ariaLabel="x" />
-				</FooterIcon>
-				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'BlueSky')?.url} target="_blank" rel="noopener noreferrer" class="ms-6 mt-4 md:mt-0">
-					<BlueSkySolid ariaLabel="bluesky" />
-				</FooterIcon>
-				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'BeReal')?.url} target="_blank" rel="noopener noreferrer" class="ms-6 mt-4 md:mt-0">
-					<BeRealSolid ariaLabel="bereal" />
-				</FooterIcon>
-				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'Strava')?.url} target="_blank" rel="noopener noreferrer" class="ms-6 mt-4 md:mt-0">
-					<StravaSolid ariaLabel="strava" />
-				</FooterIcon>
-				<FooterIcon href={resume.basics.profiles.find(x => x.network === 'Komoot')?.url} target="_blank" rel="noopener noreferrer" class="ms-6 mt-4 md:mt-0">
-					<KomootSolid ariaLabel="komoot" />
-				</FooterIcon>
+				{#each socials as s}
+					{@const Icon = networkIcon(s.network)}
+					<FooterIcon href={resume.basics.profiles.find(x => x.network === s.network)?.url} target="_blank" rel="noopener noreferrer" class="ms-6 mt-4 md:mt-0" aria-label={s.footerAriaLabel}>
+						<Icon ariaLabel={s.ariaLabel} />
+					</FooterIcon>
+					{#if s.tooltip}<Tooltip>{s.tooltip}</Tooltip>{/if}
+				{/each}
 			</div>
 		{/if}
 	</div>

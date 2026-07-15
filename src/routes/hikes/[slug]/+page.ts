@@ -54,6 +54,7 @@ export const load: PageLoad = async ({ data, fetch, params, url }) => {
 				post: data.post,
 				map: data.map,
 				display: data.display,
+				contacts: data.contacts,
 				clientHtml,
 			};
 			// eslint-disable-next-line no-constant-condition
