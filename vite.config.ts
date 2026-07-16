@@ -6,5 +6,13 @@ export default defineConfig({
 	plugins: [
 		tailwindcss(),
 		sveltekit(),
-	]
+	],
+	server: {
+		watch: {
+			// `build/` is adapter-static output (thousands of map tiles). The dev
+			// server never needs to watch it, and doing so exhausts the inotify
+			// watcher limit on Linux (ENOSPC).
+			ignored: ['**/build/**'],
+		},
+	},
 });

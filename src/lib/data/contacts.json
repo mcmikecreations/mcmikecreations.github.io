@@ -1,0 +1,85 @@
+{
+	"Stanislav Kidalau": {
+		"avatar": "/images/hikes/people/stanislav_kidalau.jpg",
+		"links": [
+			{ "network": "Instagram", "url": "https://www.instagram.com/stanislav.kidalau/" },
+			{ "network": "Strava", "url": "https://www.strava.com/athletes/41834799" }
+		]
+	},
+	"Myroslava Shkilniuk": {
+		"avatar": "/images/hikes/people/mykoslava_shkilniuk.jpg",
+		"links": [
+			{ "network": "Strava", "url": "https://www.strava.com/athletes/141618970" }
+		]
+	},
+	"Julia Krat": {
+		"avatar": "/images/hikes/people/julia_krat.jpg",
+		"links": [
+			{ "network": "Strava", "url": "https://www.strava.com/athletes/133900650" }
+		]
+	},
+	"Bohdan Pryshchenko": {
+		"avatar": "/images/hikes/people/bohdan_pryshchenko.jpg",
+		"links": [
+			{ "network": "Strava", "url": "https://www.strava.com/athletes/25300469" },
+			{ "network": "Komoot", "url": "https://www.komoot.com/user/463758237069" }
+		]
+	},
+	"Mikuláš Netík": {
+		"avatar": "/images/hikes/people/mikulas_netik.jpg",
+		"links": [
+			{ "network": "Site", "url": "https://mikulasnetik.cz/en/" },
+			{ "network": "Facebook", "url": "https://www.facebook.com/p/Mikul%C3%A1%C5%A1-Net%C3%ADk-Art-100063269947575/" },
+			{ "network": "LinkedIn", "url": "https://www.linkedin.com/in/mikul%C3%A1%C5%A1-net%C3%ADk-4a0940351/" }
+		]
+	},
+	"Serhii Ivanenko": {
+		"avatar": "/images/hikes/people/serhii_ivanenko.jpg",
+		"links": [
+			{ "network": "Instagram", "url": "https://www.instagram.com/sergiyivanenko/" },
+			{ "network": "LinkedIn", "url": "https://www.linkedin.com/in/serhiiivanenko/" },
+			{ "network": "Facebook", "url": "https://www.facebook.com/profile.php?id=100017666559799" }
+		]
+	},
+	"Pavlo Pustelnyk": {
+		"avatar": "/images/hikes/people/pavlo_pustelnyk.jpg",
+		"links": [
+			{ "network": "Instagram", "url": "https://www.instagram.com/xkasu.mi/" },
+			{ "network": "LinkedIn", "url": "https://www.linkedin.com/in/pavlo-pustelnyk-559b39184/" }
+		]
+	},
+	"Maksym Honcharko": {
+		"avatar": "/images/hikes/people/maksym_honcharko.jpg",
+		"links": [
+			{ "network": "Instagram", "url": "https://www.instagram.com/max.gotter/" }
+		]
+	},
+	"Viktor Lebruška": {
+		"avatar": "/images/hikes/people/viktor_lebruska.jpg",
+		"links": [
+			{ "network": "Instagram", "url": "https://www.instagram.com/viktor_lebruska/" }
+		]
+	},
+	"David Bilan": {
+		"avatar": "/images/hikes/people/david_bilan.jpg",
+		"links": [
+			{ "network": "Site", "url": "https://bilandavid.com/" },
+			{ "network": "Komoot", "url": "https://www.komoot.com/user/3069539946963" },
+			{ "network": "LinkedIn", "url": "https://www.linkedin.com/in/bilandavid07/" }
+		]
+	},
+	"Annette Schörner": {
+		"links": [
+			{ "network": "Komoot", "url": "https://www.komoot.com/user/678222201883" },
+			{ "network": "Facebook", "url": "https://www.facebook.com/annette.schoerner" }
+		]
+	},
+	"Veronica Vitez": {
+		"links": [
+			{ "network": "Instagram", "url": "https://www.instagram.com/vitez693/" }
+		]
+	},
+	"Natalia Kushch": {},
+	"Dennis Makhandia": {},
+	"Liubov Bilinska": {}
+}

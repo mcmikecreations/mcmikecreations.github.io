@@ -52,7 +52,7 @@ function cleanString(value: unknown): string | null {
  * A link needs a `url` plus either a `network` (mapped to an icon downstream)
  * or a freeform `label`. Anything else is discarded.
  */
-function readContactLink(raw: unknown): HikeContactLink | null {
+export function readContactLink(raw: unknown): HikeContactLink | null {
 	if (!isPlainObject(raw)) return null;
 	const url = cleanString(raw.url);
 	if (!url) return null;

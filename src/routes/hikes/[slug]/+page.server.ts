@@ -8,6 +8,8 @@ import type { Map, MapDate, MapProperties } from '$lib/data/map-info';
 import { mergeMetrics } from '$lib/hikes/hike-metrics';
 import { applyHikeOverrides, readHikeFrontmatter } from '$lib/hikes/frontmatter.server';
 import { readHikeContacts } from '$lib/hikes/frontmatter';
+import { buildHikeContacts } from '$lib/hikes/contacts';
+import contactsBook from '$lib/data/contacts.json';
 
 export const load: PageServerLoad = async ({ fetch, params, locals }) => {
 	try {
@@ -43,7 +45,8 @@ export const load: PageServerLoad = async ({ fetch, params, locals }) => {
 		// header outline and reading time ignore the metadata block.
 		const { data: frontmatter, content: postBody } = readHikeFrontmatter(postRaw);
 		const { hike: mergedHike, date: mergedDate } = applyHikeOverrides(hike as unknown as Map, date, frontmatter);
-		const contacts = readHikeContacts(frontmatter);
+		const fmContacts = readHikeContacts(frontmatter);
+		const contacts = buildHikeContacts(mergedDate.people, contactsBook, fmContacts);
 
 		const headerRegex = /#{2} (.*)\r?\n/g;
 		const headers = Array.from(postBody.matchAll(headerRegex), x => x[1]);

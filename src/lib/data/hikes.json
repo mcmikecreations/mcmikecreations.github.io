@@ -10514,5 +10514,168 @@
       "statistics": true
     },
     "features": null
+  },
+  {
+    "name": "Drachenkopf",
+    "image": "/images/projects/data-viz/hikes/drachenkopf.jpg",
+    "properties": {
+      "distance": null,
+      "duration": null,
+      "ascent": 1566,
+      "descent": 1549,
+      "dates": [
+        {
+          "date": "2026-07-12",
+          "title": "Drying up on Drachenkopf",
+          "description": "Scorching summer hike to the peak, paired with a social hike back.",
+          "tags": ["Climb"],
+          "people": ["Stanislav Kidalau","Myroslava Shkilniuk","Julia Krat"],
+          "image": null,
+          "path": "/_projects/data-viz/hikes/markdown/2026-07-12-drachenkopf.md",
+          "gpx": "/_projects/data-viz/hikes/gpx/drachenkopf.gpx"
+        }
+      ],
+      "nodes": [
+        {
+          "id": 5810277909,
+          "lat": 47.3775867,
+          "lon": 10.9352297,
+          "tags": {
+            "name": "Coburger Bank",
+            "leisure": "picnic_table",
+            "ele": "1493",
+            "tourism": "picnic_site"
+          }
+        },
+        {
+          "id": 17725549,
+          "lat": 47.36861,
+          "lon": 10.93464,
+          "tags": {
+            "name": "Seebensee",
+            "natural": "water",
+            "ele": "1657",
+            "water": "lake",
+            "wikidata": "Q2264576",
+            "wikipedia": "de:Seebensee"
+          }
+        },
+        {
+          "id": 154960992,
+          "lat": 47.358315,
+          "lon": 10.934620,
+          "tags": {
+            "name": "Drachensee",
+            "natural": "water",
+            "ele": "1874",
+            "water": "lake",
+            "wikidata": "Q21034656"
+          }
+        },
+        {
+          "id": 26954262,
+          "lat": 47.3599220,
+          "lon": 10.9335123,
+          "tags": {
+            "name": "Coburger Hütte",
+            "amenity": "restaurant",
+            "ele": "1927",
+            "building": "yes",
+            "email": "office@coburgerhuette.at",
+            "phone": "+436643254714",
+            "tourism": "alpine_hut",
+            "website": "https://www.coburgerhuette.at/",
+            "wikidata": "Q1104821",
+            "wikipedia": "de:Coburger Hütte"
+          }
+        },
+        {
+          "id": 26955651,
+          "lat": 47.3735095,
+          "lon": 10.9426366,
+          "tags": {
+            "name": "Seeben Alm",
+            "amenity": "restaurant",
+            "ele": "1566",
+            "building": "yes",
+            "tourism": "alpine_hut"
+          }
+        },
+        {
+          "id": 430957208,
+          "lat": 47.3874743,
+          "lon": 10.9392006,
+          "tags": {
+            "name": "Brent Alm",
+            "amenity": "restaurant",
+            "building": "yes",
+            "email": "info@brentalm.at",
+            "fax": "+4356732208440",
+            "phone": "+43567320116",
+            "website": "https://www.brentalm.at/"
+          }
+        },
+        {
+          "id": 123125010,
+          "lat": 47.3875476,
+          "lon": 10.9383732,
+          "tags": {
+            "name": "Ehrwalder Almbahn Talstation",
+            "aerialway": "station",
+            "aerialway:station": "bottom",
+            "public_transport": "station",
+            "building": "transportation",
+            "ele": "1108"
+          }
+        },
+        {
+          "id": 310287862,
+          "lat": 47.3577088,
+          "lon": 10.9265357,
+          "tags": {
+            "name": "Drachenkopf",
+            "alt_name": "Vorderer Drachenkopf",
+            "ele": "2303",
+            "natural": "peak",
+            "summit:cross": "yes",
+            "wikidata": "Q14912302",
+            "wikipedia": "de:Vorderer Drachenkopf"
+          }
+        }
+      ],
+      "filePath": "/_projects/data-viz/hikes/geojson/drachenkopf.json",
+      "fileType": "GeoJSON",
+      "checkpoints": [
+        [10.9385542, 47.3874899],
+        [10.9352297, 47.3775867],
+        [10.9370502, 47.3699135],
+        [10.9335110, 47.3597467],
+        [10.9265357, 47.3577088],
+        [10.9335110, 47.3597467],
+        [10.9370502, 47.3699135],
+        [10.9572100, 47.3760445],
+        [10.9385542, 47.3874899]
+      ],
+      "draft": false
+    },
+    "description": "Hike from Ehrwald and back via Hoher Gang, Seebensee, Drachensee, Drachenkopf (2303 m), and Immensteig.",
+    "route": "/projects/data-viz/hikes/drachenkopf",
+    "height": 512,
+    "standardFeatures": {
+      "origin": {
+        "lat": 47.37161708892748,
+        "lon": 10.93568801879883
+      },
+      "tiles2d": "osm",
+      "tiles3d": "mapboxDEM",
+      "geometry": [{
+        "provider": "hikes/geojson",
+        "modes": [ "2d", "3d" ],
+        "path": "drachenkopf.json#/features/0"
+      }],
+      "geometrySource": "https://maps.openrouteservice.org/",
+      "statistics": true
+    },
+    "features": null
   }
 ]
