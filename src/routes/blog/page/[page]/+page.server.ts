@@ -1,4 +1,4 @@
-import { getBlogPosts } from '$lib/blog/blog-info';
+import { getBlogPosts } from '$lib/blog/blog-posts.server';
 import { error, redirect } from '@sveltejs/kit';
 
 export const prerender = 'auto';

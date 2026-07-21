@@ -13,6 +13,7 @@ interface BlogInfo {
 	author: string | null;
 	path: string;
 	tags: Tag[];
+	draft?: boolean;
 }
 
 export type {

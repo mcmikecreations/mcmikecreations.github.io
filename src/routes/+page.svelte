@@ -9,6 +9,9 @@
 	import ProjectsSection from './home/ProjectsSection.svelte';
 	import AppBreadcrumbs from '$lib/components/AppBreadcrumbs.svelte';
 	import AppJsonLd from '$lib/components/AppJsonLd.svelte';
+	import type { PageData } from './$types';
+
+	let { data }: { data: PageData } = $props();
 </script>
 
 <AppMeta title="Home" description={resume.basics.summary} type="website" />
@@ -21,7 +24,7 @@
 	<ProjectsSection />
 	<ResumeSection />
 	<ReferenceSection />
-	<BlogSection />
+	<BlogSection posts={data.blogPosts} />
 	<ContactSection />
 </main>
 

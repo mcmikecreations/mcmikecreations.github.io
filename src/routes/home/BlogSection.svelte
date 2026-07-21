@@ -1,11 +1,16 @@
 <script lang="ts">
 	/* eslint-disable svelte/no-at-html-tags */
 	import { A, Badge, Card, Heading, Span } from 'flowbite-svelte';
-	import blogs from '$lib/data/blogs.json';
 	import DateBadge from '$lib/components/DateBadge.svelte';
+	import type { ProcessedBlogPost } from '$lib/blog/blog-info';
 
-	const posts = blogs.slice(0, 3);
-	const hasPosts = blogs.length > 0;
+	interface Props {
+		posts: ProcessedBlogPost[];
+	}
+
+	let { posts }: Props = $props();
+
+	const hasPosts = $derived(posts.length > 0);
 </script>
 
 {#if hasPosts}
@@ -13,10 +18,8 @@
 		<Heading tag="h2" class="text-center mt-8">Latest <A href="/blog">Blog</A> Posts</Heading>
 		<div class="flex flex-wrap justify-center gap-4 mt-8 mx-4 2xl:mx-0">
 			{#each posts as p}
-				{@const date = new Date(p.date)}
-				{@const u = '/blog/' + p.path.substring(0, p.path.length - 3) + '/'}
 				<Card
-					href={u}
+					href={p.url}
 					data-sveltekit-reload
 					img={p.image ?? undefined}
 					class="max-w-sm lg:max-w-xl flex-1"
@@ -25,7 +28,7 @@
 						<Heading tag="h3">{p.title}</Heading>
 						<Span class="pt-4 flex-grow">{@html p.description}</Span>
 						<div class="pt-4 w-full flex flex-row">
-							<DateBadge date={date} dateEnd={undefined} />
+							<DateBadge date={p.date} dateEnd={undefined} />
 							<div class="flex-grow flex flex-row flex-wrap justify-end gap-2 ps-2" aria-details="tags">
 								<span aria-label="tags" class="sr-only"></span>
 								{#each p.tags as t}

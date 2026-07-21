@@ -1,4 +1,4 @@
-import { getAllBlogPosts } from '$lib/blog/blog-info';
+import { getAllBlogPosts } from '$lib/blog/blog-posts.server';
 import { BLOG_TITLE, BLOG_DESCRIPTION } from '$lib/blog/blog-meta';
 import resume from '$lib/data/resume.json';
 

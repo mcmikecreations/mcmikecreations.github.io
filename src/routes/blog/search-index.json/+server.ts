@@ -1,5 +1,5 @@
 import { json } from '@sveltejs/kit';
-import blogs from '$lib/data/blogs.json';
+import { getAllBlogMeta } from '$lib/blog/blog-posts.server';
 
 export const prerender = true;
 
@@ -13,17 +13,14 @@ export interface SearchEntry {
 }
 
 export function GET() {
-	const entries: SearchEntry[] = (blogs as { title: string; date: string; image?: string | null; description?: string; path: string; tags: string[] }[]).map(k => {
-		const anchor = k.path.substring(0, k.path.length - 3);
-		return {
-			url: `/blog/${anchor}/`,
-			title: k.title,
-			description: k.description ?? '',
-			tags: k.tags,
-			date: k.date,
-			image: k.image ?? undefined,
-		};
-	});
+	const entries: SearchEntry[] = getAllBlogMeta().map(m => ({
+		url: `/blog/${m.anchor}/`,
+		title: m.title,
+		description: m.description,
+		tags: m.tags,
+		date: m.date,
+		image: m.image ?? undefined,
+	}));
 
 	entries.sort((a, b) => (a.date > b.date ? -1 : a.date < b.date ? 1 : 0));
 

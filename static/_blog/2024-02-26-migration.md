@@ -1,3 +1,13 @@
+---
+title: Jekyll to Flowbite Svelte
+date: '2024-02-26'
+image: /images/blog/migration.jpg
+description: 'How I migrated from Ruby and Jekyll to Vite, Svelte, SvelteKit and Flowbite.'
+path: 2024-02-26-migration.md
+author: Mykola Morozov
+tags:
+  - Frontend
+---
 # Jekyll to Flowbite Svelte
 
 ## Old website
