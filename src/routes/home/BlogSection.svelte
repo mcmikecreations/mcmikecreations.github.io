@@ -22,6 +22,7 @@
 					href={p.url}
 					data-sveltekit-reload
 					img={p.image ?? undefined}
+					imgClass="w-full aspect-crt object-cover object-center"
 					class="max-w-sm lg:max-w-xl flex-1"
 				>
 					<div class="m-4 sm:m-6 text-gray-500 dark:text-gray-400">
