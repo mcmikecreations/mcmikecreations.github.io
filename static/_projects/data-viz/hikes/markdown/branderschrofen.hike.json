@@ -1,0 +1,23 @@
+{
+  "name": "Branderschrofen",
+  "description": "Hike from Tegelbergbahn near Schwangau to Neuschwanstein via Branderschrofen (1881 m). An extended version of <a href=\"https://www.alltrails.com/explore/trail/germany/bavaria/rohrkopf-und-tegelberg\">this</a>.",
+  "image": "/images/projects/data-viz/hikes/branderschrofen.jpg",
+  "origin": {
+    "lat": 47.55810970349157,
+    "lon": 10.766301155090334
+  },
+  "height": 384,
+  "checkpoints": [
+    [10.7560762, 47.5684258],
+    [10.780935, 47.5681512],
+    [10.7800524, 47.5617436],
+    [10.7796253, 47.5597508],
+    [10.7869836, 47.5593486],
+    [10.7796253, 47.5597508],
+    [10.7927032, 47.5511902],
+    [10.7715876, 47.5441742],
+    [10.7494664, 47.555005],
+    [10.7504319, 47.5578726],
+    [10.7401371, 47.5567196]
+  ]
+}

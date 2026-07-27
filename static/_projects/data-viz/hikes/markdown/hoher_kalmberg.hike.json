@@ -1,0 +1,45 @@
+{
+  "name": "Hoher Kalmberg",
+  "description": "Hike from Gosau to Bad Goisern via Hoher Kalmberg (1833 m).",
+  "image": "/images/projects/data-viz/hikes/hoher_kalmberg.jpg",
+  "origin": {
+    "lat": 47.61761985489538,
+    "lon": 13.583049774169924
+  },
+  "height": 684,
+  "checkpoints": [
+    [13.5401183, 47.5869637],
+    [13.5615707, 47.6208792],
+    [13.5675514, 47.6124692],
+    [13.5615707, 47.6208792],
+    [13.6131441, 47.6396874]
+  ],
+  "nodes": [
+    {
+      "id": 990927426,
+      "lat": 47.6207262,
+      "lon": 13.5615579,
+      "tags": {
+        "name": "Goiserer Hütte",
+        "tourism": "alpine_hut",
+        "ele": "1592",
+        "building": "yes",
+        "email": "info@goisererhuette.at",
+        "phone": "+43613521450",
+        "website": "https://www.goisererhuette.at/"
+      }
+    },
+    {
+      "id": 435173020,
+      "lat": 47.6124692,
+      "lon": 13.5675514,
+      "tags": {
+        "name": "Hoher Kalmberg",
+        "natural": "peak",
+        "ele": "1833",
+        "summit:cross": "yes",
+        "summit:register": "yes"
+      }
+    }
+  ]
+}

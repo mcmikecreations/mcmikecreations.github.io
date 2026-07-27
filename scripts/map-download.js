@@ -2,7 +2,7 @@
 import { geoMercator } from 'd3-geo';
 import { tile } from 'd3-tile';
 // noinspection ES6PreferShortImport
-import maps from '../src/lib/data/hikes.json' with { type: "json" };
+import { loadHikes } from './load-hikes.js';
 import { existsSync } from 'fs';
 import { mkdir, writeFile } from 'fs/promises';
 import { resolve } from 'path';
@@ -10,6 +10,8 @@ import { resolve } from 'path';
 import { providers, providerFolder, providerFile } from '../src/lib/data/map-providers.js';
 // noinspection ES6PreferShortImport
 import { getMapFeatures } from '../src/lib/data/map-get-features.js';
+
+const maps = loadHikes();
 
 // Load map based on name and mapbox key. E.g. node map-download.js seekarkreuz pk.eya79cwhrfa9we
 

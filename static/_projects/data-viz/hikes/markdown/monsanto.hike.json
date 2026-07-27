@@ -1,0 +1,21 @@
+{
+  "name": "Lisboa Monsanto",
+  "description": "Hike from downtown Lisbon to Belem via Panorâmico de Monsanto.",
+  "image": "/images/projects/data-viz/hikes/monsanto.jpg",
+  "origin": {
+    "lat": 38.72636714120497,
+    "lon": -9.17257057910392
+  },
+  "height": 576,
+  "checkpoints": [
+    [-9.1500263, 38.7252919],
+    [-9.1558141, 38.7372996],
+    [-9.1304059, 38.7372887],
+    [-9.1558141, 38.7372996],
+    [-9.1802482, 38.7408389],
+    [-9.1756878, 38.7333914],
+    [-9.184612, 38.7286232],
+    [-9.198746, 38.7076051],
+    [-9.1984011, 38.6944899]
+  ]
+}

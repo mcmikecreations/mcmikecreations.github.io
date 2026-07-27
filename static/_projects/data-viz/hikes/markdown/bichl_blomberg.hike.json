@@ -1,0 +1,180 @@
+{
+  "name": "Bichl to Blomberg",
+  "description": "Hike from Bichl to Bad Tölz via Hollerkopf (932 m), Enzenauer Kopf (1205 m), Fahrtkopf (1203 m), Angerlkopf (1249 m), Stallauer Kopf (1322 m), Stallauer Eck (1213 m), Zwiesel (1348 m), Heigelkopf (1218 m), and Blomberg (1237/1203/1248 m).",
+  "image": "/images/projects/data-viz/hikes/bichl_blomberg.jpg",
+  "origin": {
+    "lat": 47.74105497889003,
+    "lon": 11.494789123535158
+  },
+  "height": 896,
+  "checkpoints": [
+    [11.408709, 47.7238031],
+    [11.4448587, 47.7194665],
+    [11.4602762, 47.7273048],
+    [11.4645391, 47.71849],
+    [11.4674014, 47.7224724],
+    [11.4816115, 47.7246598],
+    [11.4786369, 47.7337525],
+    [11.4816115, 47.7246598],
+    [11.4884518, 47.7235737],
+    [11.5133539, 47.727705],
+    [11.5072874, 47.7335365],
+    [11.4977402, 47.7351746],
+    [11.5156952, 47.7475633],
+    [11.5735926, 47.7603672]
+  ],
+  "nodes": [
+    {
+      "id": 2114909062,
+      "lat": 47.7194665,
+      "lon": 11.4448587,
+      "tags": {
+        "name": "Hollerkopf",
+        "natural": "peak",
+        "ele": "932"
+      }
+    },
+    {
+      "id": 389806116,
+      "lat": 47.7273048,
+      "lon": 11.4602762,
+      "tags": {
+        "name": "Enzenauer Kopf",
+        "natural": "peak",
+        "ele": "1205",
+        "wikidata": "Q31548008"
+      }
+    },
+    {
+      "id": 1511563857,
+      "lat": 47.71849,
+      "lon": 11.4645391,
+      "tags": {
+        "name": "Fahrtkopf",
+        "natural": "peak",
+        "ele": "1203",
+        "wikidata": "Q31547603"
+      }
+    },
+    {
+      "id": 389806117,
+      "lat": 47.7224724,
+      "lon": 11.4674014,
+      "tags": {
+        "name": "Angerlkopf",
+        "natural": "peak",
+        "ele": "1249",
+        "wikidata": "Q31558935",
+        "summit:cross": "no",
+        "summit:register": "no"
+      }
+    },
+    {
+      "id": 389806118,
+      "lat": 47.7246598,
+      "lon": 11.4816115,
+      "tags": {
+        "name": "Stallauer Kopf",
+        "natural": "peak",
+        "ele": "1322",
+        "wikidata": "Q31519722",
+        "summit:cross": "no",
+        "summit:register": "no"
+      }
+    },
+    {
+      "id": 389806119,
+      "lat": 47.7337525,
+      "lon": 11.4786369,
+      "tags": {
+        "name": "Stallauer Eck",
+        "natural": "peak",
+        "ele": "1213",
+        "wikidata": "Q15848876",
+        "wikipedia": "de:Stallauer Eck",
+        "summit:cross": "yes"
+      }
+    },
+    {
+      "id": 261020752,
+      "lat": 47.7235737,
+      "lon": 11.4884518,
+      "tags": {
+        "name": "Zwiesel",
+        "natural": "peak",
+        "ele": "1348",
+        "wikidata": "Q14850767",
+        "wikipedia": "de:Zwiesel (Kocheler Berge)",
+        "summit:cross": "yes",
+        "summit:register": "no"
+      }
+    },
+    {
+      "id": 414607685,
+      "lat": 47.727705,
+      "lon": 11.5133539,
+      "tags": {
+        "name": "Heigelkopf",
+        "alt_name": "Heiglkopf",
+        "old_name:1934-1945": "Hitler-Berg",
+        "natural": "peak",
+        "ele": "1218",
+        "wikidata": "Q869872",
+        "wikipedia": "de:Heigelkopf",
+        "summit:cross": "yes",
+        "summit:register": "yes"
+      }
+    },
+    {
+      "id": 2117581057,
+      "lat": 47.730822,
+      "lon": 11.5125471,
+      "tags": {
+        "name": "Blombergkreuz",
+        "natural": "peak",
+        "ele": "1205",
+        "man_made": "cross",
+        "summit:register": "yes"
+      }
+    },
+    {
+      "id": 1644165590,
+      "lat": 47.7335365,
+      "lon": 11.5072874,
+      "tags": {
+        "name": "Blomberg Ostgipfel",
+        "natural": "peak",
+        "ele": "1237",
+        "wikidata": "Q31558978",
+        "summit:cross": "no",
+        "summit:register": "no"
+      }
+    },
+    {
+      "id": 1126963772,
+      "lat": 47.735092,
+      "lon": 11.4980106,
+      "tags": {
+        "name": "Berggasthof Blomberghaus",
+        "tourism": "alpine_hut",
+        "ele": "1203",
+        "amenity": "restaurant",
+        "building": "yes",
+        "contact:website": "https://www.der-blomberg.de/blomberghaus"
+      }
+    },
+    {
+      "id": 414607694,
+      "lat": 47.7333461,
+      "lon": 11.4921002,
+      "tags": {
+        "name": "Blomberg Westgipfel",
+        "natural": "peak",
+        "ele": "1248",
+        "wikidata": "Q244660",
+        "wikipedia": "de:Blomberg (Bayerische Voralpen)",
+        "access": "private"
+      }
+    }
+  ]
+}

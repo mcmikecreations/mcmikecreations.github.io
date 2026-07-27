@@ -2,7 +2,7 @@ import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
 import type { HttpError } from '@sveltejs/kit'
 import type { Map } from '$lib/data/map-info';
-import hikes from '$lib/data/hikes.json';
+import { hikes } from '$lib/data/hikes-db';
 import { getAllPosts, parseMarkdown } from '$lib/hikes/hikes-info';
 import type { EntryGenerator } from './$types';
 import { browser } from '$app/environment';

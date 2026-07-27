@@ -1,0 +1,15 @@
+{
+  "name": "Furnas",
+  "description": "Hike from Furnas and back via Parque da Grená.",
+  "image": "/images/projects/data-viz/hikes/furnas.jpg",
+  "origin": {
+    "lat": 37.77060760698926,
+    "lon": -25.3225223579699
+  },
+  "height": 256,
+  "checkpoints": [
+    [-25.3106707, 37.7725985],
+    [-25.3322401, 37.7681991],
+    [-25.3385499, 37.7695789]
+  ]
+}

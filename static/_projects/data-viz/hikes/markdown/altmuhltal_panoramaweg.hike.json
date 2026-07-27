@@ -1,0 +1,14 @@
+{
+  "name": "Altmühltal Panoramaweg",
+  "description": "Hike from Treuchtlingen to Pappenheim via Altmühltal Panoramaweg. An extended version of <a href=\"https://www.wir-entdecken-bayern.de/ausflugsziele/altmuehltaweg-pappenheim-treuchtlingen\">this</a>.",
+  "image": "/images/projects/data-viz/hikes/future.jpg",
+  "origin": {
+    "lat": 48.94657521916045,
+    "lon": 10.938777923583986
+  },
+  "height": 512,
+  "checkpoints": [
+    [10.9082493, 48.961282],
+    [10.964094, 48.9262769]
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Takao",
+  "description": "Hike from Takaosanguchi Station (高尾山口駅) and back via Takao (高尾山) (599 m).",
+  "image": "/images/projects/data-viz/hikes/takao.jpg",
+  "origin": {
+    "lat": 35.62768655665466,
+    "lon": 139.2574978803166
+  },
+  "height": 256,
+  "checkpoints": [
+    [139.2699078, 35.6325002],
+    [139.2436878, 35.6252267],
+    [139.2560849, 35.6310687],
+    [139.2699078, 35.6325002]
+  ]
+}

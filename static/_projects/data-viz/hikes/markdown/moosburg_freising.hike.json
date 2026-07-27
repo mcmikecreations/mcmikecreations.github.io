@@ -1,0 +1,14 @@
+{
+  "name": "Moosburg to Freising",
+  "description": "Hike from Moosburg an der Isar to Freising.",
+  "image": "/images/projects/data-viz/hikes/moosburg_freising.jpg",
+  "origin": {
+    "lat": 48.430681299655106,
+    "lon": 11.852703094482424
+  },
+  "height": 1280,
+  "checkpoints": [
+    [11.9304961, 48.470011],
+    [11.7445653, 48.3951508]
+  ]
+}

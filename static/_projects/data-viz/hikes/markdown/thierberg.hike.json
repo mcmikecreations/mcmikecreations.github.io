@@ -1,0 +1,48 @@
+{
+  "name": "Thierberg",
+  "description": "Hike from Kiefersfelden to Kufstein via Thierberg (721 m).",
+  "image": "/images/projects/data-viz/hikes/thierberg.jpg",
+  "origin": {
+    "lat": 47.60020219518782,
+    "lon": 12.17216491699219
+  },
+  "height": 384,
+  "checkpoints": [
+    [12.1905026, 47.6098511],
+    [12.1630281, 47.6138359],
+    [12.1647833, 47.6003181],
+    [12.148658, 47.593859],
+    [12.165727, 47.5829718],
+    [12.1695035, 47.5823323]
+  ],
+  "nodes": [
+    {
+      "id": 256042833,
+      "lat": 47.6003181,
+      "lon": 12.1647833,
+      "tags": {
+        "name": "Thierberg",
+        "natural": "peak",
+        "ele": "721",
+        "wikidata": "Q872013",
+        "wikipedia": "de:Thierberg (Tirol)"
+      }
+    },
+    {
+      "id": 1837410,
+      "lat": 47.5810714,
+      "lon": 12.1688419,
+      "tags": {
+        "name": "Festung Kufstein",
+        "castle_type": "fortress",
+        "heritage": "2",
+        "heritage:operator": "bda",
+        "historic": "castle",
+        "start_date": "1205",
+        "tourism": "attraction",
+        "wikidata": "Q700709",
+        "wikipedia": "de:Festung Kufstein"
+      }
+    }
+  ]
+}

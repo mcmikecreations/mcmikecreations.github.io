@@ -1,0 +1,20 @@
+{
+  "name": "Älpelesattel",
+  "description": "Hike from Bayrischzell and back via Älpelesattel (1772 m). An extended version of <a href=\"https://www.alltrails.com/explore/trail/germany/bavaria/durch-das-oytal\">this</a>.",
+  "image": "/images/projects/data-viz/hikes/future.jpg",
+  "origin": {
+    "lat": 47.38033557132068,
+    "lon": 10.323028564453127
+  },
+  "height": 768,
+  "checkpoints": [
+    [10.2946136, 47.3910809],
+    [10.3363002, 47.388556],
+    [10.3699264, 47.3714029],
+    [10.3567613, 47.3574422],
+    [10.3455415, 47.354155],
+    [10.3125545, 47.3696454],
+    [10.2946136, 47.3910809],
+    [10.27825, 47.4112728]
+  ]
+}

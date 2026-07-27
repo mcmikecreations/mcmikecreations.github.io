@@ -1,0 +1,17 @@
+{
+  "name": "Oyama",
+  "description": "Hike from Ryoben falls (良弁滝) and back via Oyama (大山).",
+  "image": "/images/projects/data-viz/hikes/oyama.jpg",
+  "origin": {
+    "lat": 35.43231633328529,
+    "lon": 139.24084817830578
+  },
+  "height": 256,
+  "checkpoints": [
+    [139.2313338, 35.4408317],
+    [139.2379321, 35.4314913],
+    [139.2394925, 35.4292998],
+    [139.2495768, 35.4242377],
+    [139.2379321, 35.4314913]
+  ]
+}

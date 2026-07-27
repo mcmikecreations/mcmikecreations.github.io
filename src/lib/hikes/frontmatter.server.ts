@@ -2,9 +2,9 @@
  * Server-only front matter parsing + override merging.
  *
  * Override rule: a value written in a post's front matter wins over the matching
- * field in `hikes.json`, but only when it is present and not null. Anything
- * omitted (or explicitly null) falls back to the `hikes.json` value, so posts
- * without front matter behave exactly as they did before.
+ * field from the hike database (`hikes-db`), but only when it is present and not
+ * null. Anything omitted (or explicitly null) falls back to the database value,
+ * so posts without front matter behave exactly as they did before.
  */
 
 import matter from 'gray-matter';
@@ -65,7 +65,7 @@ export function readHikeFrontmatter(raw: string): { data: Dict; content: string 
 /**
  * Apply front matter overrides onto a hike and its (single) matched date entry.
  *
- * Front matter mirrors a `hikes.json` entry, except `dates` is a single object
+ * Front matter mirrors an assembled hike entry, except `dates` is a single object
  * (one blog post per hike date) rather than an array. Returns fresh copies; the
  * originals (and the imported JSON) are left untouched.
  */

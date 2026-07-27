@@ -1,0 +1,17 @@
+{
+  "name": "Röthbachfall",
+  "description": "Hike from Salet and back via Halsköpfl (1718 m) and Röthbachfall. An extended version of <a href=\"https://www.alltrails.com/explore/trail/germany/bavaria/sagerecksteig-halskopfl-wasserberg\">this</a>.",
+  "image": "/images/projects/data-viz/hikes/future.jpg",
+  "origin": {
+    "lat": 47.511055796571725,
+    "lon": 12.986741065979004
+  },
+  "height": 384,
+  "checkpoints": [
+    [12.9727401, 47.5251534],
+    [13.0111689, 47.5080529],
+    [13.0066806, 47.4944817],
+    [12.9744106, 47.5106633],
+    [12.9727401, 47.5251534]
+  ]
+}

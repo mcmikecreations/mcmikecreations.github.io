@@ -1,0 +1,17 @@
+{
+  "name": "Murnau",
+  "description": "Hike from Murnau am Staffelsee and back via the Münter-Haus museum.",
+  "image": "/images/projects/data-viz/hikes/murnau.jpg",
+  "origin": {
+    "lat": 47.67899829787426,
+    "lon": 11.194680276275825
+  },
+  "height": 256,
+  "checkpoints": [
+    [11.1927787, 47.6822758],
+    [11.1965473, 47.6745402],
+    [11.1917029, 47.677203],
+    [11.1869954, 47.6795786],
+    [11.1927787, 47.6822758]
+  ]
+}

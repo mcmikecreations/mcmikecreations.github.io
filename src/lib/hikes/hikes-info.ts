@@ -1,4 +1,4 @@
-import hikes from '$lib/data/hikes.json';
+import { hikes } from '$lib/data/hikes-db';
 import type { Map } from '$lib/data/map-info';
 import { stripFrontmatter } from '$lib/hikes/frontmatter';
 

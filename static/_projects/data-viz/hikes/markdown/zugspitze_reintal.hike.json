@@ -1,0 +1,94 @@
+{
+  "name": "Zugspitze über Reintal",
+  "description": "Hike from Garmisch and back via Zugspitze (2962 m).",
+  "image": "/images/projects/data-viz/hikes/zugspitze_reintal.jpg",
+  "origin": {
+    "lat": 47.44480754169437,
+    "lon": 11.057820862664295
+  },
+  "height": 1024,
+  "checkpoints": [
+    [11.1177715, 47.4825277],
+    [11.1193623, 47.4695861],
+    [11.1234968, 47.459858],
+    [11.0942348, 47.4180397],
+    [11.0131029, 47.4099169],
+    [10.9797742, 47.4131261],
+    [10.986297, 47.421215]
+  ],
+  "nodes": [
+    {
+      "id": 27384190,
+      "lat": 47.421215,
+      "lon": 10.986297,
+      "tags": {
+        "name": "Zugspitze",
+        "natural": "peak",
+        "ele": "2962",
+        "summit:cross": "yes",
+        "wikidata": "Q3375",
+        "wikipedia": "de:Zugspitze"
+      }
+    },
+    {
+      "id": 236047957,
+      "lat": 47.4209638,
+      "lon": 10.9847945,
+      "tags": {
+        "name": "Münchner Haus",
+        "tourism": "alpine_hut",
+        "ele": "2959",
+        "amenity": "restaurant",
+        "building": "hut",
+        "phone": "+4988212901",
+        "wikidata": "Q16444",
+        "website": "https://www.alpenverein-muenchen-oberland.de/huetten/alpenvereinshuetten/muenchner-haus"
+      }
+    },
+    {
+      "id": 31898848,
+      "lat": 47.4134275,
+      "lon": 10.9803555,
+      "tags": {
+        "name": "Zugspitzplatt",
+        "ele": "2588",
+        "public_transport": "station",
+        "railway": "station",
+        "building": "yes",
+        "wikidata": "Q106486357"
+      }
+    },
+    {
+      "id": 476498599,
+      "lat": 47.4100105,
+      "lon": 11.012732,
+      "tags": {
+        "name": "Knorrhütte",
+        "tourism": "alpine_hut",
+        "ele": "2052",
+        "amenity": "restaurant",
+        "phone": "+4988212905",
+        "website": "http://www.knorrhuette.de/",
+        "wikidata": "Q1777433",
+        "wikipedia": "de:Knorrhütte"
+      }
+    },
+    {
+      "id": 173682244,
+      "lat": 47.4052637,
+      "lon": 11.0355503,
+      "tags": {
+        "name": "Reintalangerhütte",
+        "tourism": "alpine_hut",
+        "ele": "1366",
+        "amenity": "restaurant",
+        "building": "yes",
+        "contact:email": "reservierung@reintal.de",
+        "contact:phone": "+4988217089743",
+        "contact:website": "https://www.alpenverein-muenchen-oberland.de/huetten/alpenvereinshuetten/reintalangerhuette/",
+        "wikidata": "Q917130",
+        "wikipedia": "de:Reintalangerhütte"
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Starnberg - Munsing",
+  "description": "Hike from Starnberg to Munsing along Starnberger See.",
+  "image": "/images/projects/data-viz/hikes/starnberg_munsing.jpg",
+  "origin": {
+    "lat": 47.95475447940952,
+    "lon": 11.347819695655469
+  },
+  "height": 1024,
+  "checkpoints": [
+    [11.3438675, 47.9959377],
+    [11.3593591, 47.9957521],
+    [11.3507246, 47.9725315],
+    [11.3432341, 47.9558438],
+    [11.3338582, 47.9027054],
+    [11.3689893, 47.9032393]
+  ]
+}

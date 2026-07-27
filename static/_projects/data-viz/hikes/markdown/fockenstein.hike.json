@@ -1,0 +1,18 @@
+{
+  "name": "Fockenstein",
+  "description": "Hike from Lenggries to Bad Wiessee am Tegernsee via Fockenstein (1564 m).",
+  "image": "/images/projects/data-viz/hikes/fockenstein.jpg",
+  "origin": {
+    "lat": 47.69127688626756,
+    "lon": 11.658382415771484
+  },
+  "height": 1024,
+  "checkpoints": [
+    [11.5735467, 47.6802772],
+    [11.6273785, 47.664809],
+    [11.6610511, 47.6716794],
+    [11.6522131, 47.6843889],
+    [11.6731547, 47.6890187],
+    [11.7277939, 47.7020869]
+  ]
+}

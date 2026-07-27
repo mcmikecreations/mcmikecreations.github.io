@@ -1,0 +1,43 @@
+{
+  "name": "Neufahrn (Niederbayern) - Landshut",
+  "description": "Hike from Neufahrn (Niederbayern) to Landshut.",
+  "image": "/images/projects/data-viz/hikes/neufahrn_niederbayern_landshut.jpg",
+  "origin": {
+    "lat": 48.653325044758695,
+    "lon": 12.176971435546877
+  },
+  "height": 1408,
+  "checkpoints": [
+    [12.1903603, 48.7299318],
+    [12.2087026, 48.691649],
+    [12.2107392, 48.6379764],
+    [12.1961825, 48.6123931],
+    [12.1726803, 48.5774783],
+    [12.1360812, 48.5475468]
+  ],
+  "nodes": [
+    {
+      "id": 6956416906,
+      "lat": 48.691649,
+      "lon": 12.2087026,
+      "tags": {
+        "name": "Kapellenberg/Lourdes-Kapelle",
+        "natural": "peak",
+        "ele": "462"
+      }
+    },
+    {
+      "id": 185528411,
+      "lat": 48.6123931,
+      "lon": 12.1961825,
+      "tags": {
+        "name": "Schloss Mirskofen",
+        "building": "yes",
+        "historic": "castle",
+        "tourism": "attraction",
+        "wikidata": "Q18630555",
+        "wikipedia": "de:Schloss Mirskofen"
+      }
+    }
+  ]
+}

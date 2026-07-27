@@ -1,0 +1,17 @@
+{
+  "name": "Bayrischzell Hohenweg",
+  "description": "Hike from Bayrischzell and back along the Hohenweg.",
+  "image": "/images/projects/data-viz/hikes/bayrischzell_hohenweg.jpg",
+  "origin": {
+    "lat": 47.65694736788036,
+    "lon": 12.000585321656944
+  },
+  "height": 512,
+  "checkpoints": [
+    [12.010998, 47.6757044],
+    [12.0033278, 47.6581326],
+    [11.977947, 47.6587764],
+    [12.0111304, 47.6385934],
+    [12.010998, 47.6757044]
+  ]
+}

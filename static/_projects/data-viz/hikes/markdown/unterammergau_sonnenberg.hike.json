@@ -1,0 +1,50 @@
+{
+  "name": "Unterammergau to Sonnenberg",
+  "description": "Hike from Unterammergau and back via Sonnenberg (1622 m).",
+  "image": "/images/projects/data-viz/hikes/unterammergau_sonnenberg.jpg",
+  "origin": {
+    "lat": 47.60315376826435,
+    "lon": 11.012842388860308
+  },
+  "height": 512,
+  "checkpoints": [
+    [11.030423, 47.6172496],
+    [11.0155039, 47.6048137],
+    [11.0058173, 47.5859025],
+    [10.9924142, 47.5835506],
+    [11.016306, 47.5841989]
+  ],
+  "nodes": [
+    {
+      "id": 13197350872,
+      "lat": 47.5837771,
+      "lon": 10.9924948,
+      "tags": {
+        "name": "August-Schuster-Haus",
+        "alt_name": "Pürschlinghaus",
+        "tourism": "alpine_hut",
+        "ele": "1564",
+        "wikidata": "Q760644",
+        "amenity": "restaurant",
+        "building": "yes",
+        "email": "mail@august-schuster-haus.de",
+        "phone": "+4988223567",
+        "website": "https://august-schuster-haus.de"
+      }
+    },
+    {
+      "id": 344347709,
+      "lat": 47.5841989,
+      "lon": 11.016306,
+      "tags": {
+        "name": "Sonnenberg",
+        "natural": "peak",
+        "ele": "1622",
+        "wikidata": "Q86751135",
+        "wikipedia": "en:Sonnenspitze",
+        "summit:cross": "yes",
+        "summit:register": "yes"
+      }
+    }
+  ]
+}

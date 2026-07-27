@@ -1,12 +1,6 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
+import { loadHikes } from './load-hikes.js';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-const hikesPath = path.join(__dirname, '../src/lib/data/hikes.json');
-const hikesData = JSON.parse(fs.readFileSync(hikesPath, 'utf-8'));
+const hikesData = loadHikes();
 
 const uniqueNodesMap = new Map();
 

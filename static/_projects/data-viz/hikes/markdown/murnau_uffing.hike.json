@@ -1,0 +1,20 @@
+{
+  "name": "Murnau - Uffing",
+  "description": "Hike from Murnau to Uffing via Staffelsee Panoramaweg. The other way around, starting at Uffing, is more beautiful.",
+  "image": "/images/projects/data-viz/hikes/murnau_uffing.jpg",
+  "origin": {
+    "lat": 47.69913366604341,
+    "lon": 11.175413131713867
+  },
+  "height": 512,
+  "checkpoints": [
+    [11.1927787, 47.6822758],
+    [11.1869954, 47.6795786],
+    [11.1917029, 47.677203],
+    [11.1869954, 47.6795786],
+    [11.1793547, 47.6869127],
+    [11.1785492, 47.7049777],
+    [11.1612396, 47.7091501],
+    [11.158694, 47.7206021]
+  ]
+}

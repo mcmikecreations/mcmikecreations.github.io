@@ -1,0 +1,17 @@
+{
+  "name": "Seebergkopf",
+  "description": "Hike from Osterhofen to Bayrischzell via Seebergkopf (1538 m).",
+  "image": "/images/projects/data-viz/hikes/seebergkopf.jpg",
+  "origin": {
+    "lat": 47.669499369611074,
+    "lon": 11.99330612552111
+  },
+  "height": 512,
+  "checkpoints": [
+    [11.9864723, 47.6878397],
+    [11.977947, 47.6587764],
+    [11.9977464, 47.664361],
+    [12.0033278, 47.6581326],
+    [12.010998, 47.6757044]
+  ]
+}

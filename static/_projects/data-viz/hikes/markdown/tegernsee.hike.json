@@ -1,0 +1,20 @@
+{
+  "name": "Tegernsee Panoramaweg",
+  "description": "Hike from Tegernsee to Gmund (am Tegernsee) via Bad Wiessee.",
+  "image": "/images/projects/data-viz/hikes/tegernsee.jpg",
+  "origin": {
+    "lat": 47.722673178149414,
+    "lon": 11.737263344577908
+  },
+  "height": 576,
+  "checkpoints": [
+    [11.7569037, 47.7143662],
+    [11.7714181, 47.6937201],
+    [11.738382, 47.695728],
+    [11.7408013, 47.7049198],
+    [11.7277939, 47.7020869],
+    [11.7272574, 47.7132548],
+    [11.7267692, 47.7434127],
+    [11.7349962, 47.7496082]
+  ]
+}

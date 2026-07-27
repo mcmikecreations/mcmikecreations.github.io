@@ -1,0 +1,59 @@
+{
+  "name": "Soiernspitze",
+  "description": "Hike from Karwendel-Kaserne to Mittenwald via Soiernspitze (2253 m).",
+  "image": "/images/projects/data-viz/hikes/soiernspitze.jpg",
+  "origin": {
+    "lat": 47.464075716428574,
+    "lon": 11.31248474121094
+  },
+  "height": 768,
+  "checkpoints": [
+    [11.3571077, 47.4815666],
+    [11.3547209, 47.4671705],
+    [11.2893976, 47.4706208],
+    [11.2737778, 47.4556232],
+    [11.265749, 47.4399924]
+  ],
+  "nodes": [
+    {
+      "id": 121940390,
+      "lat": 47.4675002,
+      "lon": 11.3563005,
+      "tags": {
+        "name": "Krinner-Kofler-Hütte",
+        "tourism": "wilderness_hut",
+        "ele": "1407",
+        "building": "yes",
+        "email": "toni.gilg@t-online.de",
+        "phone": "+4988232480",
+        "website": "https://www.krinner-kofler-huette.de/",
+        "wikidata": "Q1789032",
+        "wikipedia": "de:Krinner-Kofler-Hütte"
+      }
+    },
+    {
+      "id": 272070518,
+      "lat": 47.474771,
+      "lon": 11.3628685,
+      "tags": {
+        "name": "Jöchel",
+        "natural": "saddle",
+        "mountain_pass": "yes",
+        "ele": "1787"
+      }
+    },
+    {
+      "id": 67233894,
+      "lat": 47.4815666,
+      "lon": 11.3571077,
+      "tags": {
+        "name": "Soiernspitze",
+        "natural": "peak",
+        "ele": "2253",
+        "summit:cross": "yes",
+        "wikidata": "Q316066",
+        "wikipedia": "de:Soiernspitze"
+      }
+    }
+  ]
+}

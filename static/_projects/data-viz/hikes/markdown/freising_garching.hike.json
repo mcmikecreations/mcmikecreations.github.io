@@ -1,0 +1,14 @@
+{
+  "name": "Freising - Garching",
+  "description": "Hike from Freising to Garching along Isar.",
+  "image": "/images/projects/data-viz/hikes/freising_garching.jpg",
+  "origin": {
+    "lat": 48.31996234037576,
+    "lon": 11.695632934570312
+  },
+  "height": 1408,
+  "checkpoints": [
+    [11.7445653, 48.3951508],
+    [11.6522822, 48.24932]
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Nokogiri",
+  "description": "Hike from Nokogiriyama Ropeway Mountain peak station (鋸山山頂駅) to Hota Station (保田駅) via the seaside.",
+  "image": "/images/projects/data-viz/hikes/nokogiri.jpg",
+  "origin": {
+    "lat": 35.15040701873966,
+    "lon": 139.83286494716577
+  },
+  "height": 256,
+  "checkpoints": [
+    [139.828853, 35.1585708],
+    [139.8338288, 35.1594494],
+    [139.830061, 35.1506382],
+    [139.8383441, 35.1410607]
+  ]
+}

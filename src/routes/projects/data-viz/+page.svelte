@@ -3,7 +3,7 @@
 	import AppMeta from '$lib/components/AppMeta.svelte';
 	import AppBreadcrumbs from '$lib/components/AppBreadcrumbs.svelte';
 	import AppJsonLd from '$lib/components/AppJsonLd.svelte';
-	import maps from '$lib/data/hikes.json';
+	import { hikes as maps } from '$lib/data/hikes-db';
 
 	const hikes = [...maps.filter(x =>
 		x.properties?.hidden !== true &&

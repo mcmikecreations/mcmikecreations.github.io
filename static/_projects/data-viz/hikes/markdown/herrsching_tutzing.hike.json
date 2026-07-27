@@ -1,0 +1,120 @@
+{
+  "name": "Herrsching - Tutzing",
+  "description": "Hike from Herrsching to Tutzing via Andechs, Erling, Machtlfing, and Traubing.",
+  "image": "/images/projects/data-viz/hikes/herrsching_tutzing.jpg",
+  "origin": {
+    "lat": 47.95774347215711,
+    "lon": 11.223907470703125
+  },
+  "height": 896,
+  "checkpoints": [
+    [11.1703947, 47.9984622],
+    [11.1666375, 47.997381],
+    [11.1827828, 47.9736348],
+    [11.2214892, 47.9470992],
+    [11.257084, 47.9431822],
+    [11.2728014, 47.9071073]
+  ],
+  "nodes": [
+    {
+      "id": 1207420,
+      "lat": 47.9742914,
+      "lon": 11.1830029,
+      "tags": {
+        "name": "Kloster Andechs",
+        "building": "yes",
+        "contact:website": "https://www.andechs.de/",
+        "wikidata": "Q259971",
+        "wikipedia": "de:Kloster Andechs"
+      }
+    },
+    {
+      "id": 72036146,
+      "lat": 47.9674567,
+      "lon": 11.1843369,
+      "tags": {
+        "name": "St. Vitus",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "denomination": "catholic",
+        "religion": "christian",
+        "wikidata": "Q24261947",
+        "wikipedia": "de:St. Vitus (Erling)"
+      }
+    },
+    {
+      "id": 79119143,
+      "lat": 47.9532409,
+      "lon": 11.2042345,
+      "tags": {
+        "name": "St. Stephan",
+        "amenity": "place_of_worship",
+        "building": "chapel",
+        "ele": "728",
+        "heritage": "4",
+        "heritage:operator": "BLfD",
+        "religion": "christian",
+        "ref:BLfD": "D-1-88-117-30",
+        "roof:shape": "gabled",
+        "wikidata": "Q41257659"
+      }
+    },
+    {
+      "id": 373662966,
+      "lat": 47.9480376,
+      "lon": 11.220928,
+      "tags": {
+        "name": "Unsere Liebe Frau",
+        "amenity": "place_of_worship",
+        "building": "church",
+        "religion": "christian",
+        "website": "https://www.pg-andechs.de/marienkirche_machtlfing.html",
+        "wikidata": "Q41257652",
+        "wikipedia": "de:Unsere Liebe Frau (Machtlfing)"
+      }
+    },
+    {
+      "id": 27365348,
+      "lat": 47.9480535,
+      "lon": 11.2232232,
+      "tags": {
+        "name": "St. Johannes Baptist",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "religion": "christian",
+        "wikidata": "Q24264911",
+        "wikipedia": "de:St. Johann Baptist (Machtlfing)"
+      }
+    },
+    {
+      "id": 261950928,
+      "lat": 47.9442462,
+      "lon": 11.2578042,
+      "tags": {
+        "name": "Mariä Geburt",
+        "amenity": "place_of_worship",
+        "building": "church",
+        "denomination": "roman_catholic",
+        "religion": "christian",
+        "wikidata": "Q41258292",
+        "wikipedia": "de:Mariä Geburt (Traubing)"
+      }
+    },
+    {
+      "id": 238463222,
+      "lat": 47.9108463,
+      "lon": 11.2777178,
+      "tags": {
+        "name": "St. Joseph",
+        "amenity": "place_of_worship",
+        "building": "church",
+        "denomination": "catholic",
+        "religion": "christian",
+        "start_date": "1929",
+        "website": "http://www.st-joseph-tutzing.de/st-joseph/",
+        "wikidata": "Q41258184",
+        "wikipedia": "de:St. Joseph (Tutzing)"
+      }
+    }
+  ]
+}

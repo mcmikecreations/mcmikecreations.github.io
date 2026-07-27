@@ -1,0 +1,34 @@
+{
+  "name": "Benediktenwand",
+  "description": "Hike from Lenggries to Kochel am See via Stangeneck (1646 m), Vorderer Kirchstein (1670 m), Latschenkopf (1712 m), Achselköpfe (1709 m), and Benediktenwand (1800 m).",
+  "image": "/images/projects/data-viz/hikes/benediktenwand.jpg",
+  "origin": {
+    "lat": 47.674866264152534,
+    "lon": 11.469383239746096
+  },
+  "height": 1280,
+  "checkpoints": [
+    [11.5735467, 47.6802772],
+    [11.5086377, 47.6606163],
+    [11.4990327, 47.6565948],
+    [11.4862838, 47.6531047],
+    [11.4655437, 47.6531721],
+    [11.4624037, 47.6576119],
+    [11.4631932, 47.6724586],
+    [11.3714592, 47.660793]
+  ],
+  "nodes": [
+    {
+      "id": 1261026316,
+      "lat": 47.6656433,
+      "lon": 11.5110664,
+      "tags": {
+        "name": "Kirchel",
+        "natural": "peak",
+        "ele": "1473",
+        "wikidata": "Q91133656",
+        "wikipedia": "de:Kirchel"
+      }
+    }
+  ]
+}

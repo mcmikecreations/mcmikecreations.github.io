@@ -2,7 +2,7 @@
 import { error, redirect } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
 import type { HttpError } from '@sveltejs/kit'
-import maps from '$lib/data/hikes.json';
+import { hikes as maps } from '$lib/data/hikes-db';
 import { geoMercator } from 'd3-geo';
 // @ts-ignore
 import { tile } from 'd3-tile';

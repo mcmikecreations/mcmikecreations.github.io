@@ -1,0 +1,15 @@
+{
+  "name": "Herzogstand",
+  "description": "Hike from Walchensee to Kochel via Herzogstand (1731 m).",
+  "image": "/images/projects/data-viz/hikes/herzogstand.jpg",
+  "origin": {
+    "lat": 47.60945578486503,
+    "lon": 11.324014154941546
+  },
+  "height": 320,
+  "checkpoints": [
+    [11.3161116, 47.5963793],
+    [11.3084925, 47.6134565],
+    [11.3458192, 47.6174472]
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "name": "Blauberge and Halserspitz",
+  "description": "Hike from Wildbad Kreuth and back via Predigtstuhl (1562 m), Wichtlplatte (1765 m), Blaubergschneid (1787 m), Blaubergkopf (1787 m), Karspitz (1801 m), and Halserspitze (1863 m).",
+  "image": "/images/projects/data-viz/hikes/blauberge.jpg",
+  "origin": {
+    "lat": 47.610213718421726,
+    "lon": 11.766700744628906
+  },
+  "height": 512,
+  "checkpoints": [
+    [11.7347044, 47.6230367],
+    [11.7347352, 47.5897362],
+    [11.7810799, 47.5911671],
+    [11.7969591, 47.6072676],
+    [11.7465657, 47.6267147]
+  ],
+  "nodes": [
+    {
+      "id": 440346596,
+      "lat": 47.5897362,
+      "lon": 11.7347352,
+      "tags": {
+        "name": "Predigtstuhl",
+        "natural": "peak",
+        "ele": "1562",
+        "wikidata": "Q130365161",
+        "wikipedia": "de:Predigtstuhl (Blauberge)"
+      }
+    },
+    {
+      "id": 294649757,
+      "lat": 47.5884175,
+      "lon": 11.7496419,
+      "tags": {
+        "name": "Wichtlplatte",
+        "natural": "peak",
+        "ele": "1765"
+      }
+    },
+    {
+      "id": 268973925,
+      "lat": 47.5891188,
+      "lon": 11.7532551,
+      "tags": {
+        "name": "Blaubergschneid",
+        "natural": "peak",
+        "ele": "1787"
+      }
+    },
+    {
+      "id": 268972719,
+      "lat": 47.5901574,
+      "lon": 11.7672996,
+      "tags": {
+        "name": "Blaubergkopf",
+        "natural": "peak",
+        "ele": "1787",
+        "wikidata": "Q21876511",
+        "wikipedia": "de:Blaubergkopf"
+      }
+    },
+    {
+      "id": 345807520,
+      "lat": 47.5906428,
+      "lon": 11.7760479,
+      "tags": {
+        "name": "Karspitz",
+        "natural": "peak",
+        "ele": "1801"
+      }
+    },
+    {
+      "id": 268974034,
+      "lat": 47.5911671,
+      "lon": 11.7810799,
+      "tags": {
+        "name": "Halserspitz",
+        "natural": "peak",
+        "ele": "1862",
+        "summit:cross": "yes",
+        "summit:register": "yes",
+        "wikidata": "Q21871544"
+      }
+    },
+    {
+      "id": 30907084,
+      "lat": 47.5881087,
+      "lon": 11.7904834,
+      "tags": {
+        "name": "Bayerische Wildalm",
+        "tourism": "wilderness_hut",
+        "ele": "1450",
+        "building": "yes",
+        "wikidata": "Q812314",
+        "wikipedia": "de:Bayerische Wildalm"
+      }
+    }
+  ]
+}

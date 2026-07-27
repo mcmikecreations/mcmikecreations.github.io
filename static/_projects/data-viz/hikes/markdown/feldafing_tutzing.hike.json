@@ -1,0 +1,15 @@
+{
+  "name": "Feldafing - Tutzing",
+  "description": "Hike from Feldafing to Tutzing along the hillside.",
+  "image": "/images/projects/data-viz/hikes/feldafing_tutzing.jpg",
+  "origin": {
+    "lat": 47.930261220288685,
+    "lon": 11.284581867948528
+  },
+  "height": 384,
+  "checkpoints": [
+    [11.2902416, 47.9469563],
+    [11.2728014, 47.9071073],
+    [11.2845855, 47.909703]
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Gindelalmschneid",
+  "description": "Hike from Schliersee to Tegernsee via Gindelalmschneid (1335 m).",
+  "image": "/images/projects/data-viz/hikes/gindelalmschneid.jpg",
+  "origin": {
+    "lat": 47.72427308309646,
+    "lon": 11.806826779744757
+  },
+  "height": 640,
+  "checkpoints": [
+    [11.8597632, 47.7355828],
+    [11.8507078, 47.7280518],
+    [11.8085692, 47.7160872],
+    [11.7956894, 47.7236176],
+    [11.7720937, 47.7284592],
+    [11.7569037, 47.7143662]
+  ]
+}

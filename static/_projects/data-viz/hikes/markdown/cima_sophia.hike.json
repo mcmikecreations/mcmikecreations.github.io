@@ -1,0 +1,57 @@
+{
+  "name": "Cima Sophia",
+  "description": "Hike from Molveno and back via Palon de Tovre (1913 m) and Cima Sophia (2360 m).",
+  "image": "/images/projects/data-viz/hikes/cima_sophia.jpg",
+  "origin": {
+    "lat": 46.15855073467609,
+    "lon": 10.95311164855957
+  },
+  "height": 512,
+  "checkpoints": [
+    [10.9653408, 46.1443855],
+    [10.9622329, 46.1523764],
+    [10.9535178, 46.1592023],
+    [10.9558687, 46.1635989],
+    [10.9528253, 46.1655181],
+    [10.9489756, 46.1688456],
+    [10.9434586, 46.1724942],
+    [10.9406454, 46.1710813]
+  ],
+  "nodes": [
+    {
+      "id": 5906629046,
+      "lat": 46.1710813,
+      "lon": 10.9406454,
+      "tags": {
+        "name": "Cima Sophia",
+        "natural": "peak",
+        "ele": "2360"
+      }
+    },
+    {
+      "id": 4097856091,
+      "lat": 46.1655181,
+      "lon": 10.9528253,
+      "tags": {
+        "name": "Palon de Tovre",
+        "natural": "peak",
+        "ele": "1913"
+      }
+    },
+    {
+      "id": 121789060,
+      "lat": 46.1571926,
+      "lon": 10.9544623,
+      "tags": {
+        "name": "Rifugio La Montanara",
+        "tourism": "alpine_hut",
+        "ele": "1575",
+        "email": "riflamontanara@virgilio.it",
+        "mobile": "+393487289560",
+        "phone": "+390461585603",
+        "website": "http://www.montanara.ea23.com",
+        "building": "yes"
+      }
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "name": "Buch-/Roßstein",
+  "description": "Hike from Kreuth to Lenggries via Buchstein (1701 m), Roßstein (1698 m), Mariaeck (1469 m), and Seekarkreuz (1601 m).",
+  "image": "/images/projects/data-viz/hikes/buchstein.jpg",
+  "origin": {
+    "lat": 47.657525492808574,
+    "lon": 11.659584045410158
+  },
+  "height": 1024,
+  "checkpoints": [
+    [11.7462209, 47.6469534],
+    [11.6931138, 47.6438242],
+    [11.6793681, 47.63307],
+    [11.6783355, 47.6326587],
+    [11.676304, 47.6326069],
+    [11.6783355, 47.6326587],
+    [11.6449773, 47.6433033],
+    [11.6431635, 47.6521541],
+    [11.5735467, 47.6802772]
+  ],
+  "nodes": [
+    {
+      "id": 26862641,
+      "lat": 47.63307,
+      "lon": 11.6793681,
+      "tags": {
+        "name": "Buchstein",
+        "natural": "peak",
+        "ele": "1701",
+        "summit:cross": "yes",
+        "wikidata": "Q31557989"
+      }
+    },
+    {
+      "id": 5340076821,
+      "lat": 47.632728,
+      "lon": 11.6783446,
+      "tags": {
+        "name": "Tegernseer Hütte",
+        "tourism": "alpine_hut",
+        "ele": "1650",
+        "wikidata": "Q2400327",
+        "wikipedia": "de:Tegernseer Hütte"
+      }
+    },
+    {
+      "id": 301642754,
+      "lat": 47.6326069,
+      "lon": 11.676304,
+      "tags": {
+        "name": "Roßstein",
+        "natural": "peak",
+        "ele": "1698",
+        "summit:cross": "yes",
+        "summit:register": "yes",
+        "wikidata": "Q31524990"
+      }
+    }
+  ]
+}

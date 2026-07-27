@@ -1,0 +1,20 @@
+{
+  "name": "Gmund - Neuhaus",
+  "description": "Hike from Gmund to Neuhaus via Neureuth, Gindelalmschneid (1335 m), and Schilersee.",
+  "image": "/images/projects/data-viz/hikes/gmund_neuhaus.jpg",
+  "origin": {
+    "lat": 47.73274268951562,
+    "lon": 11.803951263427734
+  },
+  "height": 832,
+  "checkpoints": [
+    [11.7349962, 47.7496082],
+    [11.7478632, 47.7323311],
+    [11.7720937, 47.7284592],
+    [11.7956894, 47.7236176],
+    [11.8507078, 47.7280518],
+    [11.8597632, 47.7355828],
+    [11.8507078, 47.7280518],
+    [11.8733766, 47.7062602]
+  ]
+}

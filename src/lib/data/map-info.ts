@@ -79,12 +79,33 @@ interface MapProperties {
 	dates: Array<MapDate>;
 	filePath: string;
 	draft: boolean | null;
+	hidden?: boolean | undefined;
+	/** Coarse `[lon, lat]` outline of the route, drawn by the Web graph. */
+	checkpoints?: Array<[number, number]> | undefined;
 	nodes?: MapNode[] | undefined | null;
+}
+
+/**
+ * The hand-authored half of a hike, stored per slug in
+ * `static/_projects/data-viz/hikes/markdown/<slug>.hike.json`. None of it is
+ * derivable from the route GeoJSON or from a post's front matter, so it lives
+ * beside the markdown rather than in `hikes.json`. See `hikes-db`.
+ */
+interface HikeMeta {
+	name: string;
+	description: string;
+	image: string;
+	/** Hand-picked map centre, unique per hike. */
+	origin: OriginData;
+	/** Hand-tuned render size of the map in pixels. */
+	height: number;
+	checkpoints: Array<[number, number]>;
+	nodes?: MapNode[];
 }
 
 interface Map {
 	name: string;
-	image?: string;
+	image: string;
 	description: string;
 	route: string;
 	height: number;
@@ -93,7 +114,7 @@ interface Map {
 }
 
 export type {
-	MapProvider, Map, MapProperties, Feature, GeometryData, TilesData, TilesMapsData, OriginData, Mode, MapDate
+	MapProvider, Map, MapProperties, MapNode, HikeMeta, Feature, GeometryData, TilesData, TilesMapsData, OriginData, Mode, MapDate
 };
 export {
 	getMapFeatures

@@ -1,0 +1,15 @@
+{
+  "name": "São Lourenço PR8 Partial",
+  "description": "Hike at Vereda da Ponta de São Lourenço, partial.",
+  "image": "/images/projects/data-viz/hikes/sao_lourenco_partial.jpg",
+  "origin": {
+    "lat": 32.74703805258418,
+    "lon": -16.695463657379154
+  },
+  "height": 256,
+  "checkpoints": [
+    [-16.701034, 32.7433482],
+    [-16.6976713, 32.7489718],
+    [-16.6885934, 32.7460475]
+  ]
+}

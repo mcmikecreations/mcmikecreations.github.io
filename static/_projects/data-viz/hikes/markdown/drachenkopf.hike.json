@@ -1,0 +1,129 @@
+{
+  "name": "Drachenkopf",
+  "description": "Hike from Ehrwald and back via Hoher Gang, Seebensee, Drachensee, Drachenkopf (2303 m), and Immensteig.",
+  "image": "/images/projects/data-viz/hikes/drachenkopf.jpg",
+  "origin": {
+    "lat": 47.37161708892748,
+    "lon": 10.93568801879883
+  },
+  "height": 512,
+  "checkpoints": [
+    [10.9385542, 47.3874899],
+    [10.9352297, 47.3775867],
+    [10.9370502, 47.3699135],
+    [10.933511, 47.3597467],
+    [10.9265357, 47.3577088],
+    [10.933511, 47.3597467],
+    [10.9370502, 47.3699135],
+    [10.95721, 47.3760445],
+    [10.9385542, 47.3874899]
+  ],
+  "nodes": [
+    {
+      "id": 5810277909,
+      "lat": 47.3775867,
+      "lon": 10.9352297,
+      "tags": {
+        "name": "Coburger Bank",
+        "leisure": "picnic_table",
+        "ele": "1493",
+        "tourism": "picnic_site"
+      }
+    },
+    {
+      "id": 17725549,
+      "lat": 47.36861,
+      "lon": 10.93464,
+      "tags": {
+        "name": "Seebensee",
+        "natural": "water",
+        "ele": "1657",
+        "water": "lake",
+        "wikidata": "Q2264576",
+        "wikipedia": "de:Seebensee"
+      }
+    },
+    {
+      "id": 154960992,
+      "lat": 47.358315,
+      "lon": 10.93462,
+      "tags": {
+        "name": "Drachensee",
+        "natural": "water",
+        "ele": "1874",
+        "water": "lake",
+        "wikidata": "Q21034656"
+      }
+    },
+    {
+      "id": 26954262,
+      "lat": 47.359922,
+      "lon": 10.9335123,
+      "tags": {
+        "name": "Coburger Hütte",
+        "amenity": "restaurant",
+        "ele": "1927",
+        "building": "yes",
+        "email": "office@coburgerhuette.at",
+        "phone": "+436643254714",
+        "tourism": "alpine_hut",
+        "website": "https://www.coburgerhuette.at/",
+        "wikidata": "Q1104821",
+        "wikipedia": "de:Coburger Hütte"
+      }
+    },
+    {
+      "id": 26955651,
+      "lat": 47.3735095,
+      "lon": 10.9426366,
+      "tags": {
+        "name": "Seeben Alm",
+        "amenity": "restaurant",
+        "ele": "1566",
+        "building": "yes",
+        "tourism": "alpine_hut"
+      }
+    },
+    {
+      "id": 430957208,
+      "lat": 47.3874743,
+      "lon": 10.9392006,
+      "tags": {
+        "name": "Brent Alm",
+        "amenity": "restaurant",
+        "building": "yes",
+        "email": "info@brentalm.at",
+        "fax": "+4356732208440",
+        "phone": "+43567320116",
+        "website": "https://www.brentalm.at/"
+      }
+    },
+    {
+      "id": 123125010,
+      "lat": 47.3875476,
+      "lon": 10.9383732,
+      "tags": {
+        "name": "Ehrwalder Almbahn Talstation",
+        "aerialway": "station",
+        "aerialway:station": "bottom",
+        "public_transport": "station",
+        "building": "transportation",
+        "ele": "1108"
+      }
+    },
+    {
+      "id": 310287862,
+      "lat": 47.3577088,
+      "lon": 10.9265357,
+      "tags": {
+        "name": "Drachenkopf",
+        "alt_name": "Vorderer Drachenkopf",
+        "ele": "2303",
+        "natural": "peak",
+        "summit:cross": "yes",
+        "wikidata": "Q14912302",
+        "wikipedia": "de:Vorderer Drachenkopf"
+      }
+    }
+  ]
+}

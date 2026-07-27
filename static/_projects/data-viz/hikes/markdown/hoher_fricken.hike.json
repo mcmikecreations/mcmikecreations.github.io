@@ -1,0 +1,49 @@
+{
+  "name": "Hoher Fricken",
+  "description": "Hike from Farchant to Garmisch-Partenkirchen via Kuhfluchtwasserfall and Hoher Fricken (1940 m).",
+  "image": "/images/projects/data-viz/hikes/hoher_fricken.jpg",
+  "origin": {
+    "lat": 47.51432904852429,
+    "lon": 11.126458152207123
+  },
+  "height": 512,
+  "checkpoints": [
+    [11.1148716, 47.5311056],
+    [11.1322409, 47.5257291],
+    [11.1531653, 47.5313452],
+    [11.1569445, 47.5167755],
+    [11.1496011, 47.5180125],
+    [11.1303762, 47.5214625],
+    [11.1110771, 47.5000794],
+    [11.1086752, 47.4952846],
+    [11.1134033, 47.490734],
+    [11.1086752, 47.4952846],
+    [11.0970176, 47.4915407]
+  ],
+  "nodes": [
+    {
+      "id": 519688895,
+      "lat": 47.5313452,
+      "lon": 11.1531653,
+      "tags": {
+        "name": "Hoher Fricken",
+        "natural": "peak",
+        "ele": "1940",
+        "summit:cross": "yes",
+        "summit:register": "yes",
+        "wikidata": "Q315767"
+      }
+    },
+    {
+      "id": 429259298,
+      "lat": 47.5238658,
+      "lon": 11.1485315,
+      "tags": {
+        "name": "Ochsenberg",
+        "natural": "peak",
+        "ele": "1694",
+        "wikidata": "Q31529062"
+      }
+    }
+  ]
+}

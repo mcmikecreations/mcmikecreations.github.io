@@ -1,0 +1,16 @@
+{
+  "name": "Starnberg - Tutzing",
+  "description": "Hike from Starnberg to Tutzing along Starnberger See.",
+  "image": "/images/projects/data-viz/hikes/starnberg_tutzing.jpg",
+  "origin": {
+    "lat": 47.95257010612972,
+    "lon": 11.306729134521248
+  },
+  "height": 896,
+  "checkpoints": [
+    [11.3438675, 47.9959377],
+    [11.3136209, 47.9564692],
+    [11.2845855, 47.909703],
+    [11.2728014, 47.9071073]
+  ]
+}

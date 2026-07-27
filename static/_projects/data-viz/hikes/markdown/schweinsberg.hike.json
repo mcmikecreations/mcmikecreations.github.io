@@ -1,0 +1,56 @@
+{
+  "name": "Schweinsberg and Türkenköpfl",
+  "description": "Hike from Geitau to Fischbachau via Türkenköpfl (1512 m) and Schweinsberg (1514 m).",
+  "image": "/images/projects/data-viz/hikes/schweinsberg.jpg",
+  "origin": {
+    "lat": 47.70693150460002,
+    "lon": 11.978187561035158
+  },
+  "height": 384,
+  "checkpoints": [
+    [11.9661809, 47.6939023],
+    [11.9992281, 47.7053102],
+    [11.9876722, 47.7110389],
+    [11.9637481, 47.7133234]
+  ],
+  "nodes": [
+    {
+      "id": 9895387909,
+      "lat": 47.7053102,
+      "lon": 11.9992281,
+      "tags": {
+        "name": "Türkenköpfl",
+        "natural": "peak",
+        "ele": "1512"
+      }
+    },
+    {
+      "id": 413585849,
+      "lat": 47.7110389,
+      "lon": 11.9876722,
+      "tags": {
+        "name": "Schweinsberg",
+        "natural": "peak",
+        "ele": "1514",
+        "summit:cross": "yes",
+        "summit:register": "no",
+        "wikidata": "Q31804517"
+      }
+    },
+    {
+      "id": 84097007,
+      "lat": 47.7141954,
+      "lon": 11.9799002,
+      "tags": {
+        "name": "Kesselalm",
+        "tourism": "alpine_hut",
+        "ele": "1278",
+        "amenity": "restaurant",
+        "building": "yes",
+        "mobile": "+491708493855",
+        "phone": "+4980282602",
+        "website": "https://kesselalm.com/"
+      }
+    }
+  ]
+}

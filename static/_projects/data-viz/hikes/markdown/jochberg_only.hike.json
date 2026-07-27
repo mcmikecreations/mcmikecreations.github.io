@@ -1,0 +1,14 @@
+{
+  "name": "Jochberg",
+  "description": "Hike from Kesselberg to Urfeld via Jochberg (1565 m).",
+  "image": "/images/projects/data-viz/hikes/jochberg_only.jpg",
+  "origin": {
+    "lat": 47.62195450772335,
+    "lon": 11.357999129116743
+  },
+  "height": 384,
+  "checkpoints": [
+    [11.3717213, 47.6258691],
+    [11.3458192, 47.6174472]
+  ]
+}

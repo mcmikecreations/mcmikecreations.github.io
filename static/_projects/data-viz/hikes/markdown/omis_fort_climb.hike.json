@@ -1,0 +1,42 @@
+{
+  "name": "Omiš Tvrđava \"Stari grad\" Via Ferrata",
+  "description": "Climb from Omiš and back via Tvrđava \"Stari grad\" (303 m).",
+  "image": "/images/projects/data-viz/hikes/omis_fort_climb.jpg",
+  "origin": {
+    "lat": 43.44216982407968,
+    "lon": 16.693468093872074
+  },
+  "height": 384,
+  "checkpoints": [
+    [16.6861604, 43.4447441],
+    [16.6914148, 43.4449119],
+    [16.703376, 43.4436037],
+    [16.6991156, 43.4447678]
+  ],
+  "nodes": [
+    {
+      "id": 4395226596,
+      "lat": 43.4448339,
+      "lon": 16.6982678,
+      "tags": {
+        "name": "Fortica",
+        "natural": "peak",
+        "ele": "303"
+      }
+    },
+    {
+      "id": 145033136,
+      "lat": 43.4447968,
+      "lon": 16.6996614,
+      "tags": {
+        "name": "Tvrđava \"Stari grad\"",
+        "alt_name": "Fortica",
+        "historic": "castle",
+        "ruins": "yes",
+        "castle_type": "fortress",
+        "tourism": "attraction",
+        "wikidata": "Q7601914"
+      }
+    }
+  ]
+}

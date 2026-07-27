@@ -1,0 +1,16 @@
+{
+  "name": "Sonnenspitz & Jochberg",
+  "description": "Hike from Kochel am See and back via Sonnenspitz (1269 m) and Jochberg (1565 m). Shorter route was closed.",
+  "image": "/images/projects/data-viz/hikes/jochberg.jpg",
+  "origin": {
+    "lat": 47.63977413918012,
+    "lon": 11.365787921240647
+  },
+  "height": 512,
+  "checkpoints": [
+    [11.3714592, 47.660793],
+    [11.3760576, 47.6393841],
+    [11.3717213, 47.6258691],
+    [11.3458192, 47.6174472]
+  ]
+}

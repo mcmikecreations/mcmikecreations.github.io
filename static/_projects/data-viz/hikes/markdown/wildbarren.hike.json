@@ -1,0 +1,17 @@
+{
+  "name": "Wildbarren",
+  "description": "Hike from Oberaudorf to Flintsbach am Inn via Wildbarren (1448 m).",
+  "image": "/images/projects/data-viz/hikes/wildbarren.jpg",
+  "origin": {
+    "lat": 47.692663462837984,
+    "lon": 12.138004302978516
+  },
+  "height": 1024,
+  "checkpoints": [
+    [12.1752506, 47.6526185],
+    [12.1382447, 47.6811906],
+    [12.1218655, 47.6753047],
+    [12.1179449, 47.7012422],
+    [12.1280624, 47.7241358]
+  ]
+}

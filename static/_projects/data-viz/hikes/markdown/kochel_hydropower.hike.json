@@ -1,0 +1,20 @@
+{
+  "name": "Kochel Walchenseekraftwerk",
+  "description": "Hike from Walchenseekraftwerk down to the Kesselbach waterfalls and around Kochelsee.",
+  "image": "/images/projects/data-viz/hikes/kochel_hydropower.jpg",
+  "origin": {
+    "lat": 47.64694479333218,
+    "lon": 11.341323852539064
+  },
+  "height": 512,
+  "checkpoints": [
+    [11.3512873, 47.6375811],
+    [11.3391836, 47.6343063],
+    [11.3415459, 47.6258998],
+    [11.3509952, 47.6327823],
+    [11.3391836, 47.6343063],
+    [11.3274703, 47.6376961],
+    [11.3178218, 47.6528362],
+    [11.3714592, 47.660793]
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "name": "Laber Hauptgipfel",
+  "description": "Hike from Oberammergau and back via Schartenkopf (1636 m) Laber Hauptgipfel (1686 m).",
+  "image": "/images/projects/data-viz/hikes/laber_hauptgipfel.jpg",
+  "origin": {
+    "lat": 47.59180955803043,
+    "lon": 11.08898162841797
+  },
+  "height": 512,
+  "checkpoints": [
+    [11.056387, 47.5999017],
+    [11.0802376, 47.5964637],
+    [11.10044, 47.5849787],
+    [11.1177609, 47.5993189],
+    [11.0802376, 47.5964637]
+  ],
+  "nodes": [
+    {
+      "id": 446758934,
+      "lat": 47.5831408,
+      "lon": 11.0975734,
+      "tags": {
+        "name": "Schartenkopf",
+        "natural": "peak",
+        "ele": "1636"
+      }
+    },
+    {
+      "id": 5997401874,
+      "lat": 47.5849787,
+      "lon": 11.10044,
+      "tags": {
+        "name": "Laber Hauptgipfel",
+        "natural": "peak",
+        "ele": "1686",
+        "summit:cross": "no",
+        "summit:register": "no"
+      }
+    },
+    {
+      "id": 452941377,
+      "lat": 47.5858442,
+      "lon": 11.102169,
+      "tags": {
+        "name": "Laber",
+        "natural": "peak",
+        "ele": "1682",
+        "summit:cross": "yes",
+        "summit:register": "yes",
+        "wikidata": "Q1799411"
+      }
+    }
+  ]
+}

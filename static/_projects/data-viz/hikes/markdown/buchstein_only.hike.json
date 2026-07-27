@@ -1,0 +1,45 @@
+{
+  "name": "Buchstein via Bayerwald",
+  "description": "Hike from Bayerwald to Scharling via Buchstein (1701 m).",
+  "image": "/images/projects/data-viz/hikes/buchstein_only.jpg",
+  "origin": {
+    "lat": 47.64758085221801,
+    "lon": 11.71142578125
+  },
+  "height": 684,
+  "checkpoints": [
+    [11.6757052, 47.6156095],
+    [11.6757671, 47.6309637],
+    [11.6783355, 47.6326587],
+    [11.6793681, 47.63307],
+    [11.6931138, 47.6438242],
+    [11.7462209, 47.6469534],
+    [11.7477276, 47.6662618]
+  ],
+  "nodes": [
+    {
+      "id": 26862641,
+      "lat": 47.63307,
+      "lon": 11.6793681,
+      "tags": {
+        "name": "Buchstein",
+        "natural": "peak",
+        "ele": "1701",
+        "summit:cross": "yes",
+        "wikidata": "Q31557989"
+      }
+    },
+    {
+      "id": 5340076821,
+      "lat": 47.632728,
+      "lon": 11.6783446,
+      "tags": {
+        "name": "Tegernseer Hütte",
+        "tourism": "alpine_hut",
+        "ele": "1650",
+        "wikidata": "Q2400327",
+        "wikipedia": "de:Tegernseer Hütte"
+      }
+    }
+  ]
+}

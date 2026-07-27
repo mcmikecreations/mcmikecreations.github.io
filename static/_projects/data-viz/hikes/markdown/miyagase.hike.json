@@ -1,0 +1,18 @@
+{
+  "name": "Miyagase Dam",
+  "description": "Hike from Aikawa Bridge (愛川大橋) and back via the Miyagase Dam (宮ヶ瀬ダム).",
+  "image": "/images/projects/data-viz/hikes/miyagase.jpg",
+  "origin": {
+    "lat": 35.54106151953002,
+    "lon": 139.2542738052721
+  },
+  "height": 256,
+  "checkpoints": [
+    [139.2618586, 35.5427344],
+    [139.2595189, 35.5406738],
+    [139.2473937, 35.5401603],
+    [139.249344, 35.543752],
+    [139.2571289, 35.5411346],
+    [139.2595189, 35.5406738]
+  ]
+}

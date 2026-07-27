@@ -1,0 +1,14 @@
+{
+  "name": "Kloster Andechs",
+  "description": "Hike from Herrsching to Kloster Andechs.",
+  "image": "/images/projects/data-viz/hikes/herrsching_andechs.jpg",
+  "origin": {
+    "lat": 47.986417515729,
+    "lon": 11.17686189390908
+  },
+  "height": 384,
+  "checkpoints": [
+    [11.1703947, 47.9984622],
+    [11.1827828, 47.9736348]
+  ]
+}

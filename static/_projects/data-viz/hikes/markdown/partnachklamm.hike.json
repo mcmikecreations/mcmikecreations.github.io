@@ -1,0 +1,16 @@
+{
+  "name": "Partnachklamm",
+  "description": "Hike from Garmisch and back via Partnachklamm.",
+  "image": "/images/projects/data-viz/hikes/partnachklamm.jpg",
+  "origin": {
+    "lat": 47.47916032149417,
+    "lon": 11.109043243049138
+  },
+  "height": 384,
+  "checkpoints": [
+    [11.0970176, 47.4915407],
+    [11.1122847, 47.4831679],
+    [11.1193623, 47.4695861],
+    [11.1234968, 47.459858]
+  ]
+}

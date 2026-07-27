@@ -1,0 +1,15 @@
+{
+  "name": "Garching - München",
+  "description": "Hike from Garching to München along Isar.",
+  "image": "/images/projects/data-viz/hikes/garching_munchen.jpg",
+  "origin": {
+    "lat": 48.193098793553624,
+    "lon": 11.62834167480469
+  },
+  "height": 1024,
+  "checkpoints": [
+    [11.6522822, 48.24932],
+    [11.5944693, 48.1418543],
+    [11.5569426, 48.1407253]
+  ]
+}

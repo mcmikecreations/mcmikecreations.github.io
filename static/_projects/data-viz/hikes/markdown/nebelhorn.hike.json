@@ -1,0 +1,101 @@
+{
+  "name": "Nebelhorn",
+  "description": "Hike from Oberstdorf and back via Nebelhorn (2224 m).",
+  "image": "/images/projects/data-viz/hikes/nebelhorn.jpg",
+  "origin": {
+    "lat": 47.4038754027396,
+    "lon": 10.316559709977405
+  },
+  "height": 512,
+  "checkpoints": [
+    [10.3423461, 47.4218727],
+    [10.3469499, 47.4139757],
+    [10.27825, 47.4112728],
+    [10.2946136, 47.3910809],
+    [10.3363002, 47.388556],
+    [10.3412682, 47.4007239],
+    [10.3469499, 47.4139757]
+  ],
+  "nodes": [
+    {
+      "id": 13114781686,
+      "lat": 47.3977864,
+      "lon": 10.3399694,
+      "tags": {
+        "natural": "saddle",
+        "ele": "1629"
+      }
+    },
+    {
+      "id": 274823204,
+      "lat": 47.4092371,
+      "lon": 10.3476872,
+      "tags": {
+        "name": "Zeigersattel",
+        "natural": "saddle",
+        "mountain_pass": "yes",
+        "ele": "1922",
+        "wikidata": "Q130483487"
+      }
+    },
+    {
+      "id": 75922177,
+      "lat": 47.4134741,
+      "lon": 10.3469394,
+      "tags": {
+        "name": "Edmund-Probst-Haus",
+        "tourism": "alpine_hut",
+        "ele": "1932",
+        "amenity": "restaurant",
+        "building": "yes",
+        "phone": "+4983224795",
+        "website": "https://www.edmund-probst-haus.de/",
+        "wikidata": "Q1285911",
+        "wikipedia": "de:Edmund-Probst-Haus"
+      }
+    },
+    {
+      "id": 276270971,
+      "lat": 47.4218727,
+      "lon": 10.3423461,
+      "tags": {
+        "name": "Nebelhorn",
+        "natural": "peak",
+        "ele": "2224",
+        "summit:cross": "yes",
+        "summit:register": "no",
+        "wikidata": "Q696067",
+        "wikipedia": "de:Nebelhorn (Allgäuer Alpen)"
+      }
+    },
+    {
+      "id": 102542595,
+      "lat": 47.4088164,
+      "lon": 10.3236963,
+      "tags": {
+        "name": "Vordere Seealpe",
+        "amenity": "biergarten",
+        "start_date": "1886",
+        "building": "farm_auxiliary",
+        "operator": "Nebelhornbahn AG",
+        "pasture": "galt",
+        "wikidata": "Q131350734",
+        "ref:dadlo": "386.1"
+      }
+    },
+    {
+      "id": 99203628,
+      "lat": 47.4086956,
+      "lon": 10.3130841,
+      "tags": {
+        "name": "Berggasthof Seealpe",
+        "amenity": "restaurant",
+        "ele": "1280",
+        "building": "retail",
+        "operator": "Nebelhornbahn AG",
+        "pasture": "none",
+        "ref:dadlo": "385"
+      }
+    }
+  ]
+}

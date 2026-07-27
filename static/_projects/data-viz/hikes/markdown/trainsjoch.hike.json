@@ -1,0 +1,47 @@
+{
+  "name": "Trainsjoch",
+  "description": "Hike from Kiefersfelden to Bayrischzell via Trainsjoch (1707 m) and Nesselberg (1363 m).",
+  "image": "/images/projects/data-viz/hikes/trainsjoch.jpg",
+  "origin": {
+    "lat": 47.64434265359565,
+    "lon": 12.092170715332033
+  },
+  "height": 1280,
+  "checkpoints": [
+    [12.1905026, 47.6098511],
+    [12.1630281, 47.6138359],
+    [12.0965184, 47.6292935],
+    [12.0543473, 47.615268],
+    [12.0378767, 47.6174517],
+    [12.0191196, 47.6218073],
+    [12.0111304, 47.6385934],
+    [12.010998, 47.6757044]
+  ],
+  "nodes": [
+    {
+      "id": 264035398,
+      "lat": 47.615268,
+      "lon": 12.0543473,
+      "tags": {
+        "name": "Trainsjoch",
+        "natural": "peak",
+        "ele": "1707",
+        "summit:cross": "yes",
+        "summit:register": "yes",
+        "wikidata": "Q15132489",
+        "wikipedia": "de:Trainsjoch"
+      }
+    },
+    {
+      "id": 1913686966,
+      "lat": 47.6174517,
+      "lon": 12.0378767,
+      "tags": {
+        "name": "Nesselberg",
+        "natural": "peak",
+        "ele": "1363",
+        "wikidata": "Q21873217"
+      }
+    }
+  ]
+}

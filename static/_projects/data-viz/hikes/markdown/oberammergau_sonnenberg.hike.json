@@ -1,0 +1,62 @@
+{
+  "name": "Oberammergau to Sonnenberg",
+  "description": "Hike from Oberammergau to Unterammergau via Zahn (1483 m) and Sonnenberg (1622 m).",
+  "image": "/images/projects/data-viz/hikes/oberammergau_sonnenberg.jpg",
+  "origin": {
+    "lat": 47.59079656251042,
+    "lon": 11.02954387664795
+  },
+  "height": 512,
+  "checkpoints": [
+    [11.056387, 47.5999017],
+    [11.0267772, 47.5840874],
+    [11.016306, 47.5841989],
+    [11.0058173, 47.5859025],
+    [10.9924142, 47.5835506]
+  ],
+  "nodes": [
+    {
+      "id": 3662166614,
+      "lat": 47.5840874,
+      "lon": 11.0267772,
+      "tags": {
+        "name": "Am Zahn",
+        "natural": "peak",
+        "ele": "1615",
+        "wikidata": "Q31557182",
+        "summit:cross": "yes"
+      }
+    },
+    {
+      "id": 344347709,
+      "lat": 47.5841989,
+      "lon": 11.016306,
+      "tags": {
+        "name": "Sonnenberg",
+        "natural": "peak",
+        "ele": "1622",
+        "wikidata": "Q86751135",
+        "wikipedia": "en:Sonnenspitze",
+        "summit:cross": "yes",
+        "summit:register": "yes"
+      }
+    },
+    {
+      "id": 13197350872,
+      "lat": 47.5837771,
+      "lon": 10.9924948,
+      "tags": {
+        "name": "August-Schuster-Haus",
+        "alt_name": "Pürschlinghaus",
+        "tourism": "alpine_hut",
+        "ele": "1564",
+        "wikidata": "Q760644",
+        "amenity": "restaurant",
+        "building": "yes",
+        "email": "mail@august-schuster-haus.de",
+        "phone": "+4988223567",
+        "website": "https://august-schuster-haus.de"
+      }
+    }
+  ]
+}

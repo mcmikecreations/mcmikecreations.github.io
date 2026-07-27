@@ -1,0 +1,38 @@
+{
+  "name": "Spitzingsee Schlitten",
+  "description": "Hike from Spitzingsee to Neuhaus visiting the Suttenstein viewpoint and going down from Firstalm with a sledge.",
+  "image": "/images/projects/data-viz/hikes/spitzingsee_schlittenfahrt.jpg",
+  "origin": {
+    "lat": 47.68757916850813,
+    "lon": 11.87021255493164
+  },
+  "height": 512,
+  "checkpoints": [
+    [11.8880556, 47.6618854],
+    [11.8538258, 47.670256],
+    [11.8474276, 47.6632572],
+    [11.8538258, 47.670256],
+    [11.8860019, 47.6722099],
+    [11.8836539, 47.686114],
+    [11.8733766, 47.7062602]
+  ],
+  "nodes": [
+    {
+      "id": 60315210,
+      "lat": 47.6701495,
+      "lon": 11.8542289,
+      "tags": {
+        "name": "Obere Firstalm",
+        "tourism": "alpine_hut",
+        "ele": "1369",
+        "building": "yes",
+        "amenity": "restaurant",
+        "email": "info@firstalm.de",
+        "phone": "+4980267302",
+        "website": "https://firstalm.de/",
+        "wikidata": "Q27926449",
+        "wikipedia": "de:Firstalm"
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Bad Tölz - Lenggries",
+  "description": "Hike from Bad Tölz to Lenggries via Isar.",
+  "image": "/images/projects/data-viz/hikes/bad_tolz_lenggries.jpg",
+  "origin": {
+    "lat": 47.72196955175255,
+    "lon": 11.557750768074579
+  },
+  "height": 768,
+  "checkpoints": [
+    [11.5739418, 47.7605841],
+    [11.5620381, 47.7096589],
+    [11.5735467, 47.6802772]
+  ]
+}

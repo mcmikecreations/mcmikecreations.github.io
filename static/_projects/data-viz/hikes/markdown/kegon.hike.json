@@ -1,0 +1,17 @@
+{
+  "name": "Kegon falls",
+  "description": "Hike from Okunikko Yumoto Onsen source (奥日光湯元温泉源泉) to the Kegon Waterfall (華厳滝) via Lake Chūzenji (中禅寺湖).",
+  "image": "/images/projects/data-viz/hikes/kegon.jpg",
+  "origin": {
+    "lat": 36.77532999484222,
+    "lon": 139.45267791539462
+  },
+  "height": 768,
+  "checkpoints": [
+    [139.423019, 36.8067697],
+    [139.4284689, 36.7958985],
+    [139.4502222, 36.7771996],
+    [139.4551012, 36.75123],
+    [139.5019683, 36.7380094]
+  ]
+}

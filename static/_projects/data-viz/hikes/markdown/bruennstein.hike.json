@@ -1,0 +1,75 @@
+{
+  "name": "Brünnstein",
+  "description": "Hike from Tatzelwurmwasserfälle to Oberaudorf via Brünnstein (1619 m).",
+  "image": "/images/projects/data-viz/hikes/bruennstein.jpg",
+  "origin": {
+    "lat": 47.66157218807329,
+    "lon": 12.131069223310062
+  },
+  "height": 768,
+  "checkpoints": [
+    [12.0834884, 47.6751751],
+    [12.0816908, 47.6712336],
+    [12.1037928, 47.6473627],
+    [12.0989204, 47.6447033],
+    [12.0971096, 47.6473418],
+    [12.0948462, 47.6469439],
+    [12.0989204, 47.6447033],
+    [12.1752506, 47.6526185]
+  ],
+  "nodes": [
+    {
+      "id": 313207153,
+      "lat": 47.6712336,
+      "lon": 12.0816908,
+      "tags": {
+        "name": "Oberer Tatzelwurmwasserfall",
+        "waterway": "waterfall",
+        "height": "30"
+      }
+    },
+    {
+      "id": 1277556865,
+      "lat": 47.6608705,
+      "lon": 12.091175,
+      "tags": {
+        "name": "Schneelahner Hütte",
+        "alt_name": "Schneelahnerhütte",
+        "tourism": "alpine_hut",
+        "ele": "970",
+        "building": "yes",
+        "email": "schneelahner@alpenverein-grafing.de",
+        "website": "https://www.alpenverein-grafing.de/huetten/schneelahner-huette"
+      }
+    },
+    {
+      "id": 811044030,
+      "lat": 47.6446513,
+      "lon": 12.0984905,
+      "tags": {
+        "name": "Brünnsteinhaus",
+        "tourism": "alpine_hut",
+        "ele": "1342",
+        "wikidata": "Q997098",
+        "wikipedia": "de:Brünnsteinhaus",
+        "building": "yes",
+        "phone": "+4980331431",
+        "website": "http://www.bruennsteinhaus.de/"
+      }
+    },
+    {
+      "id": 304317008,
+      "lat": 47.6473418,
+      "lon": 12.0971096,
+      "tags": {
+        "name": "Brünnstein",
+        "natural": "peak",
+        "ele": "1619",
+        "wikidata": "Q882165",
+        "wikipedia": "de:Brünnstein",
+        "summit:cross": "yes",
+        "summit:register": "yes"
+      }
+    }
+  ]
+}

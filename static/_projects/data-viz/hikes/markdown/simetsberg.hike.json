@@ -1,0 +1,57 @@
+{
+  "name": "Simetsberg",
+  "description": "Hike from Einsiedl and back to Walchensee via Simetsberg (1840 m) with a swim in the lake.",
+  "image": "/images/projects/data-viz/hikes/simetsberg.jpg",
+  "origin": {
+    "lat": 47.5685925661014,
+    "lon": 11.279954910278322
+  },
+  "height": 384,
+  "checkpoints": [
+    [11.2537283, 47.5665209],
+    [11.301275, 47.5697947],
+    [11.3064766, 47.5716255]
+  ],
+  "nodes": [
+    {
+      "id": 12762897023,
+      "lat": 47.5671264,
+      "lon": 11.2881699,
+      "tags": {
+        "name": "Vorderfallbachhöhle",
+        "natural": "cave_entrance"
+      }
+    },
+    {
+      "id": 117389463,
+      "lat": 47.5616581,
+      "lon": 11.2780258,
+      "tags": {
+        "name": "Tiroler Hütte",
+        "building": "cabin"
+      }
+    },
+    {
+      "id": 96258180,
+      "lat": 47.5640375,
+      "lon": 11.2597325,
+      "tags": {
+        "name": "Simetsberg Diensthütte",
+        "building": "cabin"
+      }
+    },
+    {
+      "id": 268949226,
+      "lat": 47.5665209,
+      "lon": 11.2537283,
+      "tags": {
+        "name": "Simetsberg",
+        "natural": "peak",
+        "ele": "1840",
+        "summit:cross": "yes",
+        "wikidata": "Q315741",
+        "wikipedia": "de:Simetsberg (Estergebirge)"
+      }
+    }
+  ]
+}

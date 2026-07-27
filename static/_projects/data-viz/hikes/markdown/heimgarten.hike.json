@@ -1,0 +1,15 @@
+{
+  "name": "Heimgarten",
+  "description": "Hike from Walchensee to Ohlstadt via Heimgarten (1791 m).",
+  "image": "/images/projects/data-viz/hikes/heimgarten.jpg",
+  "origin": {
+    "lat": 47.617735565265804,
+    "lon": 11.265192043227701
+  },
+  "height": 768,
+  "checkpoints": [
+    [11.3161116, 47.5963793],
+    [11.2806617, 47.6125791],
+    [11.2174508, 47.6332855]
+  ]
+}

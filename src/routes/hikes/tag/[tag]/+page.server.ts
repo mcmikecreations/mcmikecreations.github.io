@@ -1,6 +1,6 @@
 import { getAllPosts, getPosts } from '$lib/hikes/hikes-info';
 import { error } from '@sveltejs/kit';
-import hikes from '$lib/data/hikes.json';
+import { hikes } from '$lib/data/hikes-db';
 import type { Map as HikeMap, GeometryData } from '$lib/data/map-info';
 import { getMapFeatures } from '$lib/data/map-info';
 import { providerFolder } from '$lib/data/map-providers';

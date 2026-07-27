@@ -1,0 +1,74 @@
+{
+  "name": "Bischof and Krottenkopf",
+  "description": "Hike from Farchant to Eschenlohe via Bischof (2033 m) and Krottenkopf (2086 m).",
+  "image": "/images/projects/data-viz/hikes/krottenkopf_bischof.jpg",
+  "origin": {
+    "lat": 47.56992449234948,
+    "lon": 11.17464065551758
+  },
+  "height": 768,
+  "checkpoints": [
+    [11.1148716, 47.5311056],
+    [11.1757851, 47.5404528],
+    [11.1885939, 47.547173],
+    [11.1914281, 47.5443752],
+    [11.1885939, 47.547173],
+    [11.2107325, 47.5601514],
+    [11.187959, 47.6017819]
+  ],
+  "nodes": [
+    {
+      "id": 449491364,
+      "lat": 47.5404528,
+      "lon": 11.1757851,
+      "tags": {
+        "name": "Bischof",
+        "natural": "peak",
+        "ele": "2033",
+        "summit:cross": "yes",
+        "summit:register": "yes",
+        "wikidata": "Q866104"
+      }
+    },
+    {
+      "id": 2526645264,
+      "lat": 47.5460461,
+      "lon": 11.1748876,
+      "tags": {
+        "name": "Henneneck",
+        "natural": "peak",
+        "ele": "1964",
+        "wikidata": "Q31541397",
+        "wikipedia": "de:Henneneck"
+      }
+    },
+    {
+      "id": 38173874,
+      "lat": 47.5471087,
+      "lon": 11.1888231,
+      "tags": {
+        "name": "Weilheimer Hütte",
+        "alt_name": "Krottenkopfhütte",
+        "tourism": "alpine_hut",
+        "ele": "1946",
+        "building": "yes",
+        "phone": "+491702708052",
+        "url": "http://www.dav-weilheim.de/",
+        "website": "https://dav-weilheim.de/huetten/weilheimer-huette/",
+        "wikidata": "Q2555668"
+      }
+    },
+    {
+      "id": 26863440,
+      "lat": 47.5443752,
+      "lon": 11.1914281,
+      "tags": {
+        "name": "Krottenkopf",
+        "natural": "peak",
+        "ele": "2086",
+        "summit:cross": "yes",
+        "wikidata": "Q565442"
+      }
+    }
+  ]
+}

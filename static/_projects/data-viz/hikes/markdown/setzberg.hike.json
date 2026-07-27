@@ -1,0 +1,44 @@
+{
+  "name": "Setzberg",
+  "description": "Hike from Kreuth to Rottach-Egern via Setzberg (1706 m).",
+  "image": "/images/projects/data-viz/hikes/setzberg.jpg",
+  "origin": {
+    "lat": 47.66891324873771,
+    "lon": 11.768261988119518
+  },
+  "height": 512,
+  "checkpoints": [
+    [11.7462209, 47.6469534],
+    [11.7854616, 47.6408063],
+    [11.7846084, 47.6512206],
+    [11.7905444, 47.6566799],
+    [11.7760724, 47.6752184],
+    [11.7714181, 47.6937201]
+  ],
+  "nodes": [
+    {
+      "id": 909747952,
+      "lat": 47.6408897,
+      "lon": 11.785572,
+      "tags": {
+        "name": "Gams-Beobachtungspunkt",
+        "amenity": "shelter",
+        "ele": "1595",
+        "shelter_type": "weather_shelter"
+      }
+    },
+    {
+      "id": 260692620,
+      "lat": 47.6512206,
+      "lon": 11.7846084,
+      "tags": {
+        "name": "Setzberg",
+        "natural": "peak",
+        "ele": "1706",
+        "summit:cross": "yes",
+        "summit:register": "no",
+        "wikidata": "Q15059993"
+      }
+    }
+  ]
+}

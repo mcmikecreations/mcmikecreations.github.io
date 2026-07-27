@@ -1,0 +1,86 @@
+{
+  "name": "Fockenstein and Geierstein",
+  "description": "Hike from Bad Wiessee to Lenggries via Zwergelberg (1113 m), Fockenstein (1564 m), Schlagkopf (1330 m), and Geierstein (1491 m).",
+  "image": "/images/projects/data-viz/hikes/fockenstein_geierstein.jpg",
+  "origin": {
+    "lat": 47.69451217425042,
+    "lon": 11.645851135253908
+  },
+  "height": 1024,
+  "checkpoints": [
+    [11.7277939, 47.7020869],
+    [11.7045932, 47.6988794],
+    [11.6731547, 47.6890187],
+    [11.6522131, 47.6843889],
+    [11.6358042, 47.6765339],
+    [11.6190828, 47.6796515],
+    [11.5735467, 47.6802772]
+  ],
+  "nodes": [
+    {
+      "id": 440952232,
+      "lat": 47.6988794,
+      "lon": 11.7045932,
+      "tags": {
+        "name": "Zwergelberg",
+        "natural": "peak",
+        "ele": "1113"
+      }
+    },
+    {
+      "id": 37452163,
+      "lat": 47.6890187,
+      "lon": 11.6731547,
+      "tags": {
+        "name": "Aueralm",
+        "tourism": "alpine_hut",
+        "ele": "1269",
+        "contact:phone": "+49802283600",
+        "contact:website": "https://www.aueralm.de/",
+        "email": "mail@aueralm.de",
+        "building": "cabin",
+        "wikidata": "Q100256552",
+        "wikipedia": "de:Aueralm"
+      }
+    },
+    {
+      "id": 1276074774,
+      "lat": 47.6843889,
+      "lon": 11.6522131,
+      "tags": {
+        "name": "Fockenstein",
+        "natural": "peak",
+        "ele": "1564",
+        "summit:cross": "yes",
+        "summit:register": "yes",
+        "wikidata": "Q880217",
+        "wikipedia": "de:Fockenstein"
+      }
+    },
+    {
+      "id": 1427134777,
+      "lat": 47.6765339,
+      "lon": 11.6358042,
+      "tags": {
+        "name": "Schlagkopf",
+        "natural": "peak",
+        "ele": "1330",
+        "wikidata": "Q31522896"
+      }
+    },
+    {
+      "id": 264055806,
+      "lat": 47.6796515,
+      "lon": 11.6190828,
+      "tags": {
+        "name": "Geierstein",
+        "natural": "peak",
+        "ele": "1491",
+        "summit:cross": "yes",
+        "summit:register": "yes",
+        "wikidata": "Q1498712",
+        "wikipedia": "de:Geierstein"
+      }
+    }
+  ]
+}

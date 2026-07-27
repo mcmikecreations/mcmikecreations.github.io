@@ -1,0 +1,78 @@
+{
+  "name": "Eggmühl to Köfering",
+  "description": "Hike from Eggmühl to Köfering via Rogging, Einhausen, Höhenberg, Untersanding, Neueglofsheim, and Alteglofsheim.",
+  "image": "/images/projects/data-viz/hikes/eggmuehl_koefering.jpg",
+  "origin": {
+    "lat": 48.88052184622007,
+    "lon": 12.196712493896484
+  },
+  "height": 768,
+  "checkpoints": [
+    [12.1833286, 48.8370777],
+    [12.2182478, 48.8514791],
+    [12.1716017, 48.8918695],
+    [12.1827045, 48.9017822],
+    [12.180635, 48.9019593],
+    [12.1827045, 48.9017822],
+    [12.2050617, 48.9185889],
+    [12.2084954, 48.9320665]
+  ],
+  "nodes": [
+    {
+      "id": 2273005201,
+      "lat": 48.8378723,
+      "lon": 12.183366,
+      "tags": {
+        "name": "Löwendenkmal",
+        "historic": "memorial",
+        "memorial": "statue",
+        "heritage": "4",
+        "heritage:operator": "BLfD",
+        "ref:BLfD": "D-3-75-196-29"
+      }
+    },
+    {
+      "id": 1802818,
+      "lat": 48.9022551,
+      "lon": 12.179567,
+      "tags": {
+        "name": "Schloss Haus",
+        "building": "yes",
+        "historic": "castle",
+        "heritage": "4",
+        "heritage:operator": "BLfD",
+        "ref:BLfD": "D-3-75-205-8",
+        "wikidata": "Q2241466",
+        "wikipedia": "de:Schloss Haus (Neueglofsheim)"
+      }
+    },
+    {
+      "id": 297564020,
+      "lat": 48.9017822,
+      "lon": 12.1827045,
+      "tags": {
+        "name": "Wolfgangseiche",
+        "denotation": "natural_monument",
+        "leaf_cycle": "deciduous",
+        "leaf_type": "broadleaved",
+        "natural": "tree",
+        "species": "Quercus robur",
+        "wikidata": "Q2222131",
+        "wikipedia": "de:Sankt-Wolfgangs-Eiche"
+      }
+    },
+    {
+      "id": 28963332,
+      "lat": 48.9182167,
+      "lon": 12.2044987,
+      "tags": {
+        "name": "Schloß Alteglofsheim",
+        "building": "yes",
+        "castle_type": "manor",
+        "historic": "castle",
+        "wikidata": "Q2239998",
+        "wikipedia": "de:Schloss Alteglofsheim"
+      }
+    }
+  ]
+}

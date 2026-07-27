@@ -1,0 +1,95 @@
+{
+  "name": "Wasserspitz",
+  "description": "Hike from Tegernsee to Spitzingsee via Wasserspitz (1552 m) and Stümpfling (1506 m).",
+  "image": "/images/projects/data-viz/hikes/wasserspitz.jpg",
+  "origin": {
+    "lat": 47.677871412038485,
+    "lon": 11.825666427612305
+  },
+  "height": 512,
+  "checkpoints": [
+    [11.8046984, 47.6848001],
+    [11.8454605, 47.6911654],
+    [11.8448536, 47.6830911],
+    [11.8386653, 47.6834388],
+    [11.8359142, 47.6803875],
+    [11.8333429, 47.6763233],
+    [11.8386618, 47.6777261],
+    [11.8538258, 47.670256],
+    [11.8474276, 47.6632572],
+    [11.8563377, 47.6622252],
+    [11.8570706, 47.6601797]
+  ],
+  "nodes": [
+    {
+      "id": 1579437934,
+      "lat": 47.6803875,
+      "lon": 11.8359142,
+      "tags": {
+        "name": "Wasserspitz",
+        "natural": "peak",
+        "ele": "1552",
+        "summit:cross": "yes",
+        "wikidata": "Q31515706",
+        "wikipedia": "de:Wasserspitz"
+      }
+    },
+    {
+      "id": 60310929,
+      "lat": 47.677766,
+      "lon": 11.8390339,
+      "tags": {
+        "name": "Bodenschneidhaus",
+        "tourism": "alpine_hut",
+        "ele": "1365",
+        "building": "yes",
+        "contact:email": "info@bodenschneidhaus.de",
+        "contact:mobile": "+491723735798",
+        "contact:phone": "+4980264692",
+        "contact:website": "https://bodenschneidhaus.de/",
+        "wikidata": "Q889655",
+        "wikipedia": "de:Bodenschneidhaus"
+      }
+    },
+    {
+      "id": 60315210,
+      "lat": 47.6701495,
+      "lon": 11.8542289,
+      "tags": {
+        "name": "Obere Firstalm",
+        "tourism": "alpine_hut",
+        "ele": "1369",
+        "building": "yes",
+        "amenity": "restaurant",
+        "email": "info@firstalm.de",
+        "phone": "+4980267302",
+        "website": "https://firstalm.de/",
+        "wikidata": "Q27926449",
+        "wikipedia": "de:Firstalm"
+      }
+    },
+    {
+      "id": 2338028258,
+      "lat": 47.6622252,
+      "lon": 11.8563377,
+      "tags": {
+        "name": "Stümpfling",
+        "natural": "peak",
+        "ele": "1506",
+        "wikidata": "Q15060197",
+        "wikipedia": "de:Stümpfling"
+      }
+    },
+    {
+      "id": 60309009,
+      "lat": 47.6601797,
+      "lon": 11.8570706,
+      "tags": {
+        "name": "Jagahütt'n",
+        "amenity": "restaurant",
+        "ele": "1506",
+        "building": "yes"
+      }
+    }
+  ]
+}

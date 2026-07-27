@@ -1,0 +1,27 @@
+{
+  "name": "München - Starnberg",
+  "description": "Hike from München to Starnberg via Forstenrieder Park.",
+  "image": "/images/projects/data-viz/hikes/muenchen_starnberg.jpg",
+  "origin": {
+    "lat": 48.06832937569165,
+    "lon": 11.463575699809981
+  },
+  "height": 1280,
+  "checkpoints": [
+    [11.5569426, 48.1407253],
+    [11.3593591, 47.9957521],
+    [11.3438675, 47.9959377]
+  ],
+  "nodes": [
+    {
+      "id": 7686984944,
+      "lat": 48.0053418,
+      "lon": 11.3922679,
+      "tags": {
+        "name": "Schloßberg",
+        "natural": "peak",
+        "ele": "656"
+      }
+    }
+  ]
+}

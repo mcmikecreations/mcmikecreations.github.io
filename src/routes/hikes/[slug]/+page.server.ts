@@ -1,5 +1,5 @@
 import { error } from '@sveltejs/kit';
-import hikes from '$lib/data/hikes.json';
+import { hikes } from '$lib/data/hikes-db';
 import { readingTime } from 'reading-time-estimator';
 import resume from '$lib/data/resume.json';
 import { defaultPageSize, getAllPosts, parseMarkdown } from '$lib/hikes/hikes-info';

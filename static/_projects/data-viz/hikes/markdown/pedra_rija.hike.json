@@ -1,0 +1,38 @@
+{
+  "name": "Pedra Rija PR1",
+  "description": "Hike from Pico do Areeiro to Pedra Rija and back.",
+  "image": "/images/projects/data-viz/hikes/pedra_rija.jpg",
+  "origin": {
+    "lat": 32.73729195625725,
+    "lon": -16.932892799377445
+  },
+  "height": 256,
+  "checkpoints": [
+    [-16.9368891, 32.7391717],
+    [-16.9285859, 32.7350716]
+  ],
+  "nodes": [
+    {
+      "id": 1832777816,
+      "lat": 32.7355733,
+      "lon": -16.9286501,
+      "tags": {
+        "name": "Arieiro",
+        "natural": "peak",
+        "ele": "1818",
+        "wikidata": "Q1192102",
+        "wikipedia": "pt:Pico do Areeiro (Madeira)"
+      }
+    },
+    {
+      "id": 3995319667,
+      "lat": 32.7352344,
+      "lon": -16.9248409,
+      "tags": {
+        "name": "Juncal",
+        "natural": "peak",
+        "ele": "1718"
+      }
+    }
+  ]
+}

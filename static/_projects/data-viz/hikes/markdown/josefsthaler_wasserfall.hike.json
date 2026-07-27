@@ -1,0 +1,16 @@
+{
+  "name": "Josefsthaler Wasserfälle",
+  "description": "Hike from Schliersee to Neuhaus via the Josefstaler Wasserfall.",
+  "image": "/images/projects/data-viz/hikes/josefsthaler_wasserfall.jpg",
+  "origin": {
+    "lat": 47.71391968715959,
+    "lon": 11.865221937477509
+  },
+  "height": 512,
+  "checkpoints": [
+    [11.8597632, 47.7355828],
+    [11.8507078, 47.7280518],
+    [11.8733766, 47.7062602],
+    [11.8836539, 47.686114]
+  ]
+}

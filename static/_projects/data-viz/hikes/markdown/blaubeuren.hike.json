@@ -1,0 +1,15 @@
+{
+  "name": "Blaubeuren",
+  "description": "Hike from Blaubeuren to the Günzelburg ruins and back.",
+  "image": "/images/projects/data-viz/hikes/blaubeuren.jpg",
+  "origin": {
+    "lat": 48.410801560200944,
+    "lon": 9.77989196777344
+  },
+  "height": 384,
+  "checkpoints": [
+    [9.7913032, 48.4037943],
+    [9.7684239, 48.4081653],
+    [9.7838103, 48.4162875]
+  ]
+}

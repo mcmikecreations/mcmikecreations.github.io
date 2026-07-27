@@ -1,0 +1,62 @@
+{
+  "name": "Hochstaufen",
+  "description": "Hike from Piding to Bad Reichenhall via Fuderheustein (1321 m) and Hochstaufen (1771 m).",
+  "image": "/images/projects/data-viz/hikes/hochstaufen.jpg",
+  "origin": {
+    "lat": 47.74648034083308,
+    "lon": 12.875289916992188
+  },
+  "height": 512,
+  "checkpoints": [
+    [12.9115963, 47.7596347],
+    [12.8761479, 47.7537784],
+    [12.8487577, 47.7549634],
+    [12.8395427, 47.7529102],
+    [12.8740908, 47.718428],
+    [12.8818914, 47.7313761]
+  ],
+  "nodes": [
+    {
+      "id": 1141059170,
+      "lat": 47.7537784,
+      "lon": 12.8761479,
+      "tags": {
+        "name": "Fuderheustein",
+        "natural": "peak",
+        "ele": "1321",
+        "summit:cross": "yes",
+        "summit:register": "yes"
+      }
+    },
+    {
+      "id": 80751554,
+      "lat": 47.7550497,
+      "lon": 12.8494729,
+      "tags": {
+        "name": "Reichenhaller Haus",
+        "alt_name": "Staufenhaus",
+        "tourism": "alpine_hut",
+        "ele": "1750",
+        "building": "yes",
+        "phone": "+4986515566",
+        "website": "https://www.dav-badreichenhall.de/huetten-kletteranlagen/reichenhaller-haus",
+        "wikidata": "Q1565094",
+        "wikipedia": "de:Reichenhaller Haus"
+      }
+    },
+    {
+      "id": 304238134,
+      "lat": 47.7549634,
+      "lon": 12.8487577,
+      "tags": {
+        "name": "Hochstaufen",
+        "natural": "peak",
+        "ele": "1771",
+        "summit:cross": "yes",
+        "summit:register": "no",
+        "wikidata": "Q571702",
+        "wikipedia": "de:Hochstaufen"
+      }
+    }
+  ]
+}

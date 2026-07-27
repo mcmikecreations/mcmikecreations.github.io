@@ -1,0 +1,50 @@
+{
+  "name": "Frau Hitt",
+  "description": "Hike from Scharnitz to Innsbruck via Frau Hitt (2270 m).",
+  "image": "/images/projects/data-viz/hikes/frau_hitt.jpg",
+  "origin": {
+    "lat": 47.331813491093165,
+    "lon": 11.324269986715631
+  },
+  "height": 1280,
+  "checkpoints": [
+    [11.2668145, 47.3918701],
+    [11.308784, 47.3747646],
+    [11.342905, 47.3374962],
+    [11.3504655, 47.3051777],
+    [11.3666171, 47.2984077],
+    [11.3941984, 47.2656731],
+    [11.4010207, 47.2632966]
+  ],
+  "nodes": [
+    {
+      "id": 99318407,
+      "lat": 47.3374513,
+      "lon": 11.3428627,
+      "tags": {
+        "name": "Möslalm",
+        "alt_name": "Arzler Kristenalm",
+        "tourism": "alpine_hut",
+        "ele": "1262",
+        "building": "yes",
+        "email": "info@moeslalm.tirol",
+        "phone": "+43512275783",
+        "website": "https://www.moeslalm.tirol/",
+        "wikidata": "Q1763579",
+        "wikipedia": "de:Möslalm"
+      }
+    },
+    {
+      "id": 1627270003,
+      "lat": 47.3051777,
+      "lon": 11.3504655,
+      "tags": {
+        "name": "Frau Hitt",
+        "natural": "peak",
+        "ele": "2270",
+        "wikidata": "Q877602",
+        "wikipedia": "de:Frau Hitt"
+      }
+    }
+  ]
+}

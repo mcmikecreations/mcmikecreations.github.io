@@ -1,0 +1,14 @@
+{
+  "name": "Wimbachklamm",
+  "description": "Hike from Wimbachbrücke and back via Wimbachklamm and Wimbachschloss (930 m). An extended version of <a href=\"https://www.alltrails.com/explore/trail/germany/bavaria/wanderung-durch-die-wimbachklamm\">this</a>.",
+  "image": "/images/projects/data-viz/hikes/future.jpg",
+  "origin": {
+    "lat": 47.58879945676844,
+    "lon": 12.911553382873537
+  },
+  "height": 384,
+  "checkpoints": [
+    [12.9243631, 47.6033111],
+    [12.8965199, 47.5723295]
+  ]
+}

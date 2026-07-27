@@ -1,0 +1,17 @@
+{
+  "name": "Himmelschrofen",
+  "description": "Hike from Oberstdorf and back via Himmelschrofen (1790 m).",
+  "image": "/images/projects/data-viz/hikes/himmelschrofen.jpg",
+  "origin": {
+    "lat": 47.38242779259871,
+    "lon": 10.288262200337856
+  },
+  "height": 576,
+  "checkpoints": [
+    [10.27825, 47.4112728],
+    [10.2923397, 47.3805571],
+    [10.2826693, 47.3627552],
+    [10.3015467, 47.3579323],
+    [10.2923397, 47.3805571]
+  ]
+}

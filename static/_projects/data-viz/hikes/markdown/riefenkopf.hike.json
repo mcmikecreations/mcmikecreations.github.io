@@ -1,0 +1,21 @@
+{
+  "name": "Riefenkopf & Hahnenköpfle",
+  "description": "Hike from Oberstdorf and back via Riefenkopf (1749 m) and Hahnenköpfle (1735 m).",
+  "image": "/images/projects/data-viz/hikes/riefenkopf.jpg",
+  "origin": {
+    "lat": 47.39439835079049,
+    "lon": 10.303271768206532
+  },
+  "height": 512,
+  "checkpoints": [
+    [10.3173758, 47.37928],
+    [10.3218202, 47.3788964],
+    [10.3248794, 47.3792591],
+    [10.3363002, 47.388556],
+    [10.2946136, 47.3910809],
+    [10.27825, 47.4112728],
+    [10.2946136, 47.3910809],
+    [10.3125545, 47.3696454],
+    [10.3218202, 47.3788964]
+  ]
+}

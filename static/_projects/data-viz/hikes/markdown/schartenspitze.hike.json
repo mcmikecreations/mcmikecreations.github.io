@@ -1,0 +1,15 @@
+{
+  "name": "Schärtenspitze",
+  "description": "Hike from Hintersee to Ramsau bei Berchtesgaden via Schärtenspitze (2153 m). An extended version of <a href=\"https://www.alltrails.com/explore/trail/germany/bavaria/auf-die-schartenspitze-uber-die-blaueishutte\">this</a>.",
+  "image": "/images/projects/data-viz/hikes/future.jpg",
+  "origin": {
+    "lat": 47.59429854945577,
+    "lon": 12.879066467285158
+  },
+  "height": 384,
+  "checkpoints": [
+    [12.8619922, 47.6056924],
+    [12.8746816, 47.5822],
+    [12.891486, 47.6072395]
+  ]
+}

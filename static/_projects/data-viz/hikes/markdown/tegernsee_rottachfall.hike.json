@@ -1,0 +1,18 @@
+{
+  "name": "Tegernsee Rottachfall",
+  "description": "Hike from Tegernsee and back via Rottach Wasserfall.",
+  "image": "/images/projects/data-viz/hikes/tegernsee_rottachfall.jpg",
+  "origin": {
+    "lat": 47.69324119219487,
+    "lon": 11.784385533537876
+  },
+  "height": 512,
+  "checkpoints": [
+    [11.7569037, 47.7143662],
+    [11.7714181, 47.6937201],
+    [11.7914732, 47.6839885],
+    [11.8175335, 47.6671473],
+    [11.804703, 47.6848412],
+    [11.7714181, 47.6937201]
+  ]
+}

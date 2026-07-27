@@ -1,0 +1,54 @@
+{
+  "name": "Caldeirão Verde PR9",
+  "description": "Hike from Parque das Queimadas to Caldeirão Verde and back.",
+  "image": "/images/projects/data-viz/hikes/caldeirao_verde.jpg",
+  "origin": {
+    "lat": 32.78085234570831,
+    "lon": -16.92074775695801
+  },
+  "height": 256,
+  "checkpoints": [
+    [-16.9060003, 32.7838419],
+    [-16.9218614, 32.7789972],
+    [-16.9354954, 32.77445]
+  ],
+  "nodes": [
+    {
+      "id": 2319315497,
+      "lat": 32.77445,
+      "lon": -16.9354954,
+      "tags": {
+        "name": "Caldeirão Verde",
+        "waterway": "waterfall"
+      }
+    },
+    {
+      "id": 6513058893,
+      "lat": 32.7789972,
+      "lon": -16.9218614,
+      "tags": {
+        "waterway": "waterfall"
+      }
+    },
+    {
+      "id": 6556491409,
+      "lat": 32.7828182,
+      "lon": -16.9135953,
+      "tags": {
+        "waterway": "waterfall"
+      }
+    },
+    {
+      "id": 365253728,
+      "lat": 32.7836487,
+      "lon": -16.9061557,
+      "tags": {
+        "amenity": "cafe",
+        "building": "yes",
+        "roof:material": "thatch",
+        "roof:shape": "gabled",
+        "toilets": "no"
+      }
+    }
+  ]
+}

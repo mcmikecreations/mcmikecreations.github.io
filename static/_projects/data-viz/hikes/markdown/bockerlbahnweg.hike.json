@@ -1,0 +1,36 @@
+{
+  "name": "Bockerlbahn-Weg",
+  "description": "Hike near Spitzingsee through the Bockerlbahn-Weg.",
+  "image": "/images/projects/data-viz/hikes/bockerlbahnweg.jpg",
+  "origin": {
+    "lat": 47.678622670466915,
+    "lon": 11.880340576171877
+  },
+  "height": 768,
+  "checkpoints": [
+    [11.8954411, 47.6393151],
+    [11.8940537, 47.6507907],
+    [11.8879367, 47.6563143],
+    [11.8880556, 47.6618854],
+    [11.8860019, 47.6722099],
+    [11.8836539, 47.686114],
+    [11.8733766, 47.7062602]
+  ],
+  "nodes": [
+    {
+      "id": 96257994,
+      "lat": 47.6481236,
+      "lon": 11.8905576,
+      "tags": {
+        "name": "Blecksteinhaus",
+        "tourism": "alpine_hut",
+        "ele": "1022",
+        "building": "yes",
+        "amenity": "restaurant",
+        "contact:website": "http://www.blecksteinhaus.de/",
+        "phone": "+49802671204",
+        "wikidata": "Q883386"
+      }
+    }
+  ]
+}

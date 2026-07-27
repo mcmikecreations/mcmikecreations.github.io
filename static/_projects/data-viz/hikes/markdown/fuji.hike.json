@@ -1,0 +1,18 @@
+{
+  "name": "Fujisan",
+  "description": "Hike from Fujisan 5th Station (富士山五合目) to the public toilet near the toll gate (料金所下公衆トイレ), because the road was closed for the night, via Fujisan (富士山) (3776 m) 8.5th Station Goraikokan (御来光館) (3450 m).",
+  "image": "/images/projects/data-viz/hikes/fuji.jpg",
+  "origin": {
+    "lat": 35.40823878609355,
+    "lon": 138.7219919858139
+  },
+  "height": 768,
+  "checkpoints": [
+    [138.7372814, 35.368165],
+    [138.7477964, 35.3890384],
+    [138.7336151, 35.3936898],
+    [138.6925714, 35.3741001],
+    [138.701853, 35.415658],
+    [138.7556007, 35.4474037]
+  ]
+}

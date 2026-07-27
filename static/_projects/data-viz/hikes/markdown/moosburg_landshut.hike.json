@@ -1,0 +1,120 @@
+{
+  "name": "Moosburg to Landshut",
+  "description": "Hike from Moosburg an der Isar to Landshut via Berghofen, Kronwinkl, Ast, and Tiefenbach.",
+  "image": "/images/projects/data-viz/hikes/moosburg_landshut.jpg",
+  "origin": {
+    "lat": 48.51034996749526,
+    "lon": 12.04050064086914
+  },
+  "height": 1536,
+  "checkpoints": [
+    [11.9304961, 48.470011],
+    [12.0330994, 48.4817297],
+    [12.0347533, 48.4880016],
+    [12.0389841, 48.4925078],
+    [12.0887735, 48.4827198],
+    [12.1048297, 48.5131292],
+    [12.1133482, 48.5165877],
+    [12.1308078, 48.5207204],
+    [12.1510479, 48.5272906],
+    [12.1524932, 48.5317029],
+    [12.1360812, 48.5475468]
+  ],
+  "nodes": [
+    {
+      "id": 7329438513,
+      "lat": 48.4817297,
+      "lon": 12.0330994,
+      "tags": {
+        "name": "Kuhberg",
+        "natural": "peak",
+        "ele": "487"
+      }
+    },
+    {
+      "id": 7329558590,
+      "lat": 48.4880016,
+      "lon": 12.0347533,
+      "tags": {
+        "name": "Steinbuckel",
+        "natural": "peak",
+        "ele": "474"
+      }
+    },
+    {
+      "id": 1965417,
+      "lat": 48.4925078,
+      "lon": 12.0389841,
+      "tags": {
+        "name": "Schloss Kronwinkl",
+        "historic": "castle",
+        "wikidata": "Q2241958",
+        "building": "yes"
+      }
+    },
+    {
+      "id": 150573146,
+      "lat": 48.4827198,
+      "lon": 12.0887735,
+      "tags": {
+        "name": "Schloß Ast",
+        "historic": "castle",
+        "wikidata": "Q41229775",
+        "building": "yes"
+      }
+    },
+    {
+      "id": 2770577404,
+      "lat": 48.5131292,
+      "lon": 12.1048297,
+      "tags": {
+        "name": "Ringwall Tiefenbach",
+        "historic": "ruins"
+      }
+    },
+    {
+      "id": 7563799011,
+      "lat": 48.5165877,
+      "lon": 12.1133482,
+      "tags": {
+        "name": "Burgstall Schlossberg",
+        "historic": "archaeological_site",
+        "archaeological_site": "earthwork",
+        "historic:civilization": "medieval",
+        "wikidata": "Q98398064"
+      }
+    },
+    {
+      "id": 7306641852,
+      "lat": 48.5207204,
+      "lon": 12.1308078,
+      "tags": {
+        "name": "Birkenberg",
+        "natural": "peak",
+        "ele": "473"
+      }
+    },
+    {
+      "id": 8042266343,
+      "lat": 48.5272906,
+      "lon": 12.1510479,
+      "tags": {
+        "name": "Annaberg",
+        "natural": "peak",
+        "ele": "463"
+      }
+    },
+    {
+      "id": 25206339,
+      "lat": 48.5317029,
+      "lon": 12.1524932,
+      "tags": {
+        "name": "Burg Trausnitz",
+        "historic": "castle",
+        "ele": "500",
+        "wikidata": "Q512271",
+        "wikipedia": "de:Burg Trausnitz"
+      }
+    }
+  ]
+}

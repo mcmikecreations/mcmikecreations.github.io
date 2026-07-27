@@ -1,0 +1,14 @@
+{
+  "name": "St. Bartholomä Eiskapelle",
+  "description": "Hike from St. Bartholomä and back via the Eiskapelle. An extended version of <a href=\"https://www.alltrails.com/explore/trail/germany/bavaria/von-sankt-bartholoma-zur-eiskapelle-am-konigssee\">this</a>.",
+  "image": "/images/projects/data-viz/hikes/future.jpg",
+  "origin": {
+    "lat": 47.544249993378145,
+    "lon": 12.952623367309572
+  },
+  "height": 384,
+  "checkpoints": [
+    [12.9727283, 47.5437613],
+    [12.9351461, 47.5435439]
+  ]
+}

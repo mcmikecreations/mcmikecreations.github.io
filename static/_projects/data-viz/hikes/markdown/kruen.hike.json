@@ -1,0 +1,63 @@
+{
+  "name": "Krün",
+  "description": "Hike from Krün and back via Barmsee, Geroldsee, and Grubsee.",
+  "image": "/images/projects/data-viz/hikes/kruen.jpg",
+  "origin": {
+    "lat": 47.49636,
+    "lon": 11.24264
+  },
+  "height": 512,
+  "checkpoints": [
+    [11.2781513, 47.5061647],
+    [11.2684429, 47.5081606],
+    [11.2438353, 47.5032428],
+    [11.2135015, 47.4924818],
+    [11.2389084, 47.4821822],
+    [11.2415215, 47.4915837],
+    [11.2684429, 47.5081606]
+  ],
+  "nodes": [
+    {
+      "id": 313172002,
+      "lat": 47.4913807,
+      "lon": 11.2139174,
+      "tags": {
+        "name": "Kapelle Gerold",
+        "amenity": "place_of_worship",
+        "building": "chapel",
+        "religion": "christian",
+        "roof:shape": "gabled"
+      }
+    },
+    {
+      "id": 1147768588,
+      "lat": 47.4819651,
+      "lon": 11.2387374,
+      "tags": {
+        "name": "Klaiser Kapelle",
+        "amenity": "place_of_worship",
+        "building": "chapel",
+        "denomination": "roman_catholic",
+        "historic": "chapel",
+        "religion": "christian",
+        "wikidata": "Q41218008",
+        "wikipedia": "de:Kapelle Klais"
+      }
+    },
+    {
+      "id": 339247249,
+      "lat": 47.4962891,
+      "lon": 11.2531423,
+      "tags": {
+        "name": "Alpengasthof Barmsee",
+        "amenity": "restaurant",
+        "contact:email": "hotel@barmsee.de",
+        "cuisine": "local",
+        "internet_access": "yes",
+        "internet_access:fee": "no",
+        "phone": "+4988252034",
+        "website": "https://www.barmsee.de"
+      }
+    }
+  ]
+}

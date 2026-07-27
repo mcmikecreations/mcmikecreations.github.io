@@ -1,0 +1,19 @@
+{
+  "name": "Wallberg",
+  "description": "Hike from Rottach-Egern and back via Wallberg (1722 m). An extended version of <a href=\"https://www.alltrails.com/explore/trail/germany/bavaria/wallbergtrail\">this</a>.",
+  "image": "/images/projects/data-viz/hikes/wallberg.jpg",
+  "origin": {
+    "lat": 47.67388377441822,
+    "lon": 11.794767379760744
+  },
+  "height": 384,
+  "checkpoints": [
+    [11.7714181, 47.6937201],
+    [11.7760724, 47.6752184],
+    [11.7905444, 47.6566799],
+    [11.7967506, 47.6658847],
+    [11.8175335, 47.6671473],
+    [11.804703, 47.6848412],
+    [11.7714181, 47.6937201]
+  ]
+}

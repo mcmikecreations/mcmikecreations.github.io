@@ -1,6 +1,8 @@
-import hikes from '../src/lib/data/hikes.json' with { type: "json" };
+import { loadHikes } from './load-hikes.js';
 import resume from '../src/lib/data/resume.json' with { type: "json" };
 import { writeFile } from 'fs';
+
+const hikes = loadHikes();
 
 const rssFilePath = '../static/hikes/feed.xml';
 const atomFilePath = '../static/hikes/atom.xml';

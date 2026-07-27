@@ -1,5 +1,5 @@
 import { json } from '@sveltejs/kit';
-import hikes from '$lib/data/hikes.json';
+import { hikes } from '$lib/data/hikes-db';
 
 export const prerender = true;
 

@@ -1,0 +1,47 @@
+{
+  "name": "Geißwand",
+  "description": "Hike from Traunkirchen Ort to Traunkirchen via Baalstein (800 m) and Geißwand (872 m).",
+  "image": "/images/projects/data-viz/hikes/geisswand.jpg",
+  "origin": {
+    "lat": 47.84859079803738,
+    "lon": 13.779730796813965
+  },
+  "height": 384,
+  "checkpoints": [
+    [13.7871447, 47.8427673],
+    [13.7761018, 47.8446972],
+    [13.7776313, 47.8416273],
+    [13.776766, 47.8426523],
+    [13.7776313, 47.8416273],
+    [13.7771705, 47.840867],
+    [13.7776313, 47.8416273],
+    [13.7761018, 47.8446972],
+    [13.7771341, 47.8552628]
+  ],
+  "nodes": [
+    {
+      "id": 1781859543,
+      "lat": 47.8426523,
+      "lon": 13.776766,
+      "tags": {
+        "name": "Baalstein",
+        "natural": "peak",
+        "ele": "800",
+        "summit:cross": "yes",
+        "summit:register": "yes"
+      }
+    },
+    {
+      "id": 1781859544,
+      "lat": 47.840867,
+      "lon": 13.7771705,
+      "tags": {
+        "name": "Geißwand",
+        "natural": "peak",
+        "ele": "872",
+        "summit:cross": "yes",
+        "summit:register": "yes"
+      }
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "name": "Breitensteinfensterl",
+  "description": "Hike from Hammer and back via Breitensteinfensterl (1350 m), Breitenstein Westgipfel (1575 m), and Breitenstein (1622 m).",
+  "image": "/images/projects/data-viz/hikes/breitensteinfensterl.jpg",
+  "origin": {
+    "lat": 47.712995683722205,
+    "lon": 11.958892828925716
+  },
+  "height": 512,
+  "checkpoints": [
+    [11.933214, 47.7056945],
+    [11.9637481, 47.7133234],
+    [11.9776495, 47.7187677],
+    [11.9828363, 47.7211575],
+    [11.9877728, 47.7210941],
+    [11.9864452, 47.7156792],
+    [11.9795573, 47.7144418],
+    [11.9637481, 47.7133234]
+  ],
+  "nodes": [
+    {
+      "id": 1679600826,
+      "lat": 47.7187677,
+      "lon": 11.9776495,
+      "tags": {
+        "name": "Breitensteinfensterl",
+        "natural": "peak",
+        "ele": "1350",
+        "summit:cross": "yes",
+        "summit:register": "yes"
+      }
+    },
+    {
+      "id": 283733455,
+      "lat": 47.7211575,
+      "lon": 11.9828363,
+      "tags": {
+        "name": "Breitenstein Westgipfel",
+        "natural": "peak",
+        "ele": "1575",
+        "wikidata": "Q31551984",
+        "summit:cross": "yes",
+        "summit:register": "yes"
+      }
+    },
+    {
+      "id": 260979669,
+      "lat": 47.7210941,
+      "lon": 11.9877728,
+      "tags": {
+        "name": "Breitenstein",
+        "natural": "peak",
+        "ele": "1622",
+        "wikidata": "Q879983",
+        "wikipedia": "de:Breitenstein (Bayerische Voralpen)",
+        "summit:cross": "yes",
+        "summit:register": "yes"
+      }
+    },
+    {
+      "id": 3233329679,
+      "lat": 47.7156792,
+      "lon": 11.9864452,
+      "tags": {
+        "natural": "saddle",
+        "ele": "1351"
+      }
+    },
+    {
+      "id": 84097007,
+      "lat": 47.7142465,
+      "lon": 11.9799945,
+      "tags": {
+        "name": "Kesselalm",
+        "tourism": "alpine_hut",
+        "ele": "1278",
+        "amenity": "restaurant",
+        "building": "yes",
+        "mobile": "+491708493855",
+        "phone": "+4980282602",
+        "website": "https://kesselalm.com/"
+      }
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "name": "Rotwand",
+  "description": "Hike from Spitzingsee and back via Rotwand (1884 m). An extended version of <a href=\"https://www.alltrails.com/explore/trail/germany/bavaria/spitzingsee-taubenstein-rotwandhaus\">this</a>.",
+  "image": "/images/projects/data-viz/hikes/rotwand.jpg",
+  "origin": {
+    "lat": 47.65475043477393,
+    "lon": 11.909780502319338
+  },
+  "height": 512,
+  "checkpoints": [
+    [11.9344203, 47.6502104],
+    [11.9354246, 47.6461036],
+    [11.9218715, 47.6584409],
+    [11.8880556, 47.6618854],
+    [11.8879367, 47.6563143],
+    [11.9354246, 47.6461036]
+  ],
+  "nodes": [
+    {
+      "id": 93450441,
+      "lat": 47.6651508,
+      "lon": 11.9062683,
+      "tags": {
+        "name": "Schönfeldhütte",
+        "tourism": "alpine_hut",
+        "ele": "1410",
+        "amenity": "restaurant",
+        "building": "yes",
+        "phone": "+4980267496",
+        "website": "https://www.alpenverein-muenchen-oberland.de/huetten/alpenvereinshuetten/schoenfeldhuette",
+        "wikidata": "Q16294589",
+        "wikipedia": "de:Schönfeldhütte"
+      }
+    },
+    {
+      "id": 5469566999,
+      "lat": 47.6606654,
+      "lon": 11.920228,
+      "tags": {
+        "name": "Lochgrabensattel",
+        "natural": "saddle",
+        "ele": "1580"
+      }
+    },
+    {
+      "id": 10676465928,
+      "lat": 47.6584409,
+      "lon": 11.9218715,
+      "tags": {
+        "name": "Taubensteinsattel",
+        "natural": "saddle",
+        "ele": "1660"
+      }
+    },
+    {
+      "id": 2874807218,
+      "lat": 47.6479779,
+      "lon": 11.9260025,
+      "tags": {
+        "name": "Kirchstein",
+        "natural": "peak",
+        "wikidata": "Q55489734"
+      }
+    },
+    {
+      "id": 91920694,
+      "lat": 47.6462348,
+      "lon": 11.9352992,
+      "tags": {
+        "name": "Rotwandhaus",
+        "tourism": "alpine_hut",
+        "ele": "1737",
+        "amenity": "restaurant",
+        "building": "yes",
+        "phone": "+4980267683; +436641645290",
+        "website": "https://www.rotwandhaus.de",
+        "wikidata": "Q2169123",
+        "wikipedia": "de:Rotwandhaus"
+      }
+    },
+    {
+      "id": 26864487,
+      "lat": 47.6502104,
+      "lon": 11.9344203,
+      "tags": {
+        "name": "Rotwand",
+        "natural": "peak",
+        "ele": "1884",
+        "summit:cross": "yes",
+        "summit:register": "no",
+        "wikidata": "Q458097",
+        "wikipedia": "de:Rotwand (Bayern)"
+      }
+    }
+  ]
+}
