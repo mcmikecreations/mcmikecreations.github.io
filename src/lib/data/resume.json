@@ -120,6 +120,14 @@
   ],
   "publications": [
     {
+      "url": "https://doi.org/10.1145/3789237.3809127",
+      "mirror": "https://drive.google.com/file/d/1zuAiSWIE_Xx1-KTtmM3xFZ7X76wTiMLo/view?usp=sharing",
+      "name": "A. Beischl*, M. Morozov*, M. Jungmair, L. Haussmann, T. Neumann, \"Evaluating Apple Silicon for Data Processing,\"",
+      "publisher": "22nd International Workshop on Data Management on New Hardware",
+      "releaseDate": "2026-06-01",
+      "summary": "ISBN: 979-8-4007-2455-8"
+    },
+    {
       "url": "https://dx.doi.org/10.1109/CSIT61576.2023.10324223",
       "mirror": "https://drive.google.com/file/d/1sQb3jcutiUQqYuzFUFYk4vZL4g_PHFyp/view?usp=sharing",
       "name": "Y. Levus, P. Pustelnyk, R. Moravskyi and M. Morozov, \"Cloud-Based Distributed Approach for Procedural Terrain Generation with Enhanced Performance,\"",
@@ -365,6 +373,13 @@
       "name": "Standardkurs A2 Zertifikat",
       "issuer": "Sprachlernzentrum Lwiw",
       "date": "2019-06-12"
+    },
+    {
+      "name": "EF SET English Certificate",
+      "issuer": "EFSET",
+      "date": "2019-03-15",
+      "url": "https://cert.efset.org/ujc8RC",
+      "mirror": "https://drive.google.com/file/d/1q009OQ_QCPQdZHwJ1GjizVoLxDKXuLKL/view?usp=sharing"
     },
     {
       "name": "Standardkurs A1 Zertifikat",

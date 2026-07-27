@@ -10,4 +10,4 @@
 	let { href = '', title = undefined, text = '' }: Props = $props();
 </script>
 
-<Img src={href} {title} alt={text} size="max-w-sm md:max-w-md" figClass="mx-auto" imgClass="mx-auto" />
+<Img src={href} {title} alt={text} size="max-w-sm md:max-w-md" figClass="mx-auto" />

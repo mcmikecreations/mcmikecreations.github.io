@@ -159,9 +159,126 @@ Note the units: the GeoJSON stores km and seconds, but front matter is canonical
 metres and minutes. `duration: 369` is 6h 09m. Omit these entirely to let the GeoJSON
 speak; write them only to correct it.
 
-For the full list of keys, including the rarely-needed `origin`, `height`,
-`checkpoints`, `nodes`, `draft`, `hidden`, `filePath` and `metaPath`, see the
-[front matter schema](removing-hikes-json.md#front-matter-schema).
+Those are the keys you will actually write. For the rest, see
+[Full front matter reference](#full-front-matter-reference) below.
+
+## Full front matter reference
+
+Front matter is **flat**: one key per field, no nested `properties`, `dates` or
+`standardFeatures` blocks. Every key is optional, and each is routed to a fixed level -
+this post, or the hike as a whole.
+
+```yaml
+---
+# ---- this post ----
+title: Drying up on Drachenkopf
+description: Scorching summer hike to the peak.
+image: /images/projects/data-viz/hikes/drachenkopf_2026.jpg
+tags:
+  - Climb
+people:
+  - Stanislav Kidalau
+author: Mykola Morozov
+gpx: /_projects/data-viz/hikes/gpx/drachenkopf.gpx
+distance: 14853          # metres
+duration: 369            # minutes
+ascent: 1566             # metres
+descent: 1549            # metres
+filePath: /_projects/data-viz/hikes/geojson/drachenkopf.json
+metaPath: /_projects/data-viz/hikes/markdown/drachenkopf.hike.json
+
+# ---- the hike, overriding its sidecar ----
+name: Drachenkopf
+height: 512
+origin: { lat: 47.37161708892748, lon: 10.93568801879883 }
+checkpoints:
+  - [10.9385542, 47.3874899]
+  - [10.9352297, 47.3775867]
+nodes:
+  - id: 264056175
+    lat: 47.6521541
+    lon: 11.6431635
+    tags: { name: Drachenkopf, natural: peak, ele: '2302' }
+draft: false
+hidden: false
+
+# ---- display only ----
+contacts:
+  - name: Ada Lovelace
+    avatar: /images/hikes/people/ada.jpg
+    links:
+      - { network: Strava, url: 'https://www.strava.com/athletes/1' }
+      - { label: Blog, url: 'https://example.com' }
+---
+```
+
+### Keys that set this post
+
+| Key | Type | Effect |
+| --- | --- | --- |
+| `title` | string | post title; falls back to the hike's `name` |
+| `description` | string | prepended to the hike's `description`, so write it to read as a continuation |
+| `image` | string | this post's photo; falls back to the hike's. Write it only when it differs |
+| `tags` | string[] | tag chips, and membership of `/hikes/tag/<tag>/` |
+| `people` | string[] | participant cards, matched against `src/lib/data/contacts.json` |
+| `author` | string | defaults to the site owner |
+| `gpx` | string | served path of the track; also what puts a GPX link in the Web graph popup |
+| `distance` | number | **metres** |
+| `duration` | number | **minutes** |
+| `ascent`, `descent` | number | **metres** |
+| `filePath` | string | a different route GeoJSON for this date; defaults to `<slug>.json` |
+| `metaPath` | string | a different sidecar for this date; defaults to `<slug>.hike.json` |
+
+### Keys that set the hike
+
+These override the `<slug>.hike.json` sidecar for this post only. You will rarely want
+them - if a value is wrong for every date on the route, fix the sidecar instead.
+
+| Key | Type | Effect |
+| --- | --- | --- |
+| `name` | string | the hike's name |
+| `height` | number | rendered map size in pixels |
+| `origin` | `{ lat, lon }` | map centre; replaces the sidecar's |
+| `checkpoints` | `[[lon, lat], ...]` | the coarse Web-graph outline |
+| `nodes` | object[] | OSM points of interest |
+| `draft`, `hidden` | boolean | see the caveat below |
+
+### Rules
+
+- **Omitted or `null` falls back.** No key can clear a value back to null, so there is
+  no way to say "this post has no description" other than letting the hike's stand.
+- **Units are canonical, not the GeoJSON's.** The GeoJSON stores km and seconds; front
+  matter is metres and minutes. `duration: 369` is 6h 09m.
+- **Paths are served paths** (`/_projects/...`), not filesystem paths.
+- **`route`, `date` and `path` have no key.** They are identity: the route comes from
+  the slug and the date from the filename, and overriding them would desync the URL from
+  the file.
+- **Unrecognised keys are ignored**, not merged, so a typo cannot reach the page. That
+  includes the old nested `properties:` / `dates:` / `standardFeatures:` blocks, which
+  are inert - a file written before the flattening will silently stop applying.
+- **A malformed `origin` throws.** It must be `{ lat: <number>, lon: <number> }`. The
+  same goes for a `metaPath` naming a sidecar that does not exist. Note what a throw
+  costs here: the build still exits 0 and simply omits the page, so watch the log.
+- **Precedence**, for the keys that also exist in `hikes.json`: front matter first, then
+  the date's entry, then the hike's. `metaPath` is resolved *before* the merge, so a
+  post that swaps in a sidecar and also sets one of that sidecar's own fields by hand
+  keeps its own value.
+
+### What reaches where
+
+Post-level keys are folded into the model when the site is built, so they reach
+everything: the post page, listings, feeds, the search index and the Web graph.
+
+Hike-level keys are resolved per post and reach less far:
+
+- `name` shows on the post page, listings and feeds, but **not** the search index, which
+  reads the sidecar's name.
+- `height`, `origin`, `checkpoints` and `nodes` affect only the post page's own map.
+  They are not in `/hikes/index.json`, so the Web graph and the search index still use
+  the sidecar's.
+- `draft` and `hidden` are **inert in front matter**. Every consumer reads them from
+  `hikes.json`, so setting them here will not hide a post. To hide one, remove the post
+  or mark its hike in `hikes.json`.
 
 ## Fetch the map tiles
 

@@ -56,7 +56,7 @@
 			before:transition-all before:duration-200
 			before:blur-xl before:contrast-200 before:opacity-0 before:hover:opacity-25"
 		>
-			<Img src={resume.basics.image} imgClass="aspect-crt object-cover object-center" alt="Profile" />
+			<Img src={resume.basics.image} alt="Profile" />
 		</div>
 		<div class="w-full md:w-auto md:min-w-[24rem] max-w-md flex flex-col p-4">
 			<Heading tag="h3">About Me</Heading>

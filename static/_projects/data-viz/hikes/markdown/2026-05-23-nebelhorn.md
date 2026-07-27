@@ -5,6 +5,7 @@ image: /images/projects/data-viz/hikes/nebelhorn_2026.jpg
 people:
   - Pavlo Pustelnyk
 gpx: /_projects/data-viz/hikes/gpx/nebelhorn_2026.gpx
+filePath: /_projects/data-viz/hikes/geojson/nebelhorn_2026.json
 ascent: 1279
 descent: 165
 ---

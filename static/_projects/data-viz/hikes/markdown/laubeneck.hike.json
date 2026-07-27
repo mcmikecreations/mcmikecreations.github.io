@@ -1,0 +1,103 @@
+{
+  "name": "Laubeneck",
+  "description": "Hike from Linderhof to Unterammergau via Dreisäuler Kopf (1545 m), Hennen-Kopf (1796 m), Laubeneck (1520 m), and Latschenkopf (1634 m).",
+  "image": "/images/projects/data-viz/hikes/laubeneck.jpg",
+  "origin": {
+    "lat": 47.594819486167566,
+    "lon": 10.979633331298828
+  },
+  "height": 768,
+  "checkpoints": [
+    [10.9567960, 47.5696010],
+    [10.9624922, 47.5736696],
+    [10.9520247, 47.5780462],
+    [10.9440361, 47.5851125],
+    [10.9603882, 47.5863533],
+    [10.9793405, 47.5867478],
+    [10.9848614, 47.5857524],
+    [10.9924142, 47.5835506],
+    [11.0058173, 47.5859025],
+    [11.0304230, 47.6172496]
+  ],
+  "nodes": [
+    {
+      "id": 843412150,
+      "lat": 47.5715028,
+      "lon": 10.9606253,
+      "tags": {
+        "name": "Schloss Linderhof",
+        "building": "yes",
+        "building:architecture": "historicism",
+        "castle_type": "palace",
+        "historic": "castle",
+        "tourism": "attraction",
+        "website": "https://schlosslinderhof.de/",
+        "wikidata": "Q162052",
+        "wikipedia": "de:Schloss Linderhof"
+      }
+    },
+    {
+      "id": 522603014,
+      "lat": 47.5851125,
+      "lon": 10.9440361,
+      "tags": {
+        "name": "Dreisäuler Kopf",
+        "natural": "peak",
+        "ele": "1629",
+        "wikidata": "Q31549130"
+      }
+    },
+    {
+      "id": 418778317,
+      "lat": 47.5863533,
+      "lon": 10.9603882,
+      "tags": {
+        "name": "Hennenkopf",
+        "natural": "peak",
+        "ele": "1768",
+        "summit:cross": "yes",
+        "summit:register": "yes",
+        "wikidata": "Q31541365"
+      }
+    },
+    {
+      "id": 522603016,
+      "lat": 47.5867478,
+      "lon": 10.9793405,
+      "tags": {
+        "name": "Laubeneck",
+        "natural": "peak",
+        "ele": "1758",
+        "wikidata": "Q31557266"
+      }
+    },
+    {
+      "id": 13197350872,
+      "lat": 47.5837771,
+      "lon": 10.9924948,
+      "tags": {
+        "name": "August-Schuster-Haus",
+        "alt_name": "Pürschlinghaus",
+        "tourism": "alpine_hut",
+        "ele": "1564",
+        "wikidata": "Q760644",
+        "amenity": "restaurant",
+        "building": "yes",
+        "email": "mail@august-schuster-haus.de",
+        "phone": "+4988223567",
+        "website": "https://august-schuster-haus.de"
+      }
+    },
+    {
+      "id": 522603018,
+      "lat": 47.5857524,
+      "lon": 10.9848614,
+      "tags": {
+        "name": "Latschenkopf",
+        "natural": "peak",
+        "ele": "1740",
+        "wikidata": "Q31557250"
+      }
+    }
+  ]
+}

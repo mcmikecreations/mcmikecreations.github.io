@@ -107,7 +107,7 @@ fracturing my finger, I was still happy with the adventure overall. We even
 got to see Brünnstein (1619 m), which [I climbed last summer](/hikes/2025-07-06-bruennstein/)
 with David.
 
-![Trainsjoch (1707 m) from above](/images/projects/data-viz/hikes/stories/trainsjoch/2026-01-18-24.mp4)
+![Trainsjoch (1707 m) from above](/images/projects/data-viz/hikes/stories/trainsjoch/2026-01-18-24.mp4 "autoplay")
 
 After relaxing for a bit and getting cold from the wind, we decided to start
 heading down to Bayrischzell. The descent was much easier than the ascent, as

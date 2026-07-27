@@ -10,6 +10,9 @@
 	let { href = '', title = undefined, text = '' }: Props = $props();
 	let openModal = $state(false);
 	const isYoutubeLink = $derived(href.includes('youtube.com'));
+	const shouldAutoplay = $derived(
+		typeof title === 'string' && title.split(',').map((f) => f.trim().toLowerCase()).includes('autoplay')
+	);
 
 	// Track open modal to prevent scrolling the content behind it.
 	$effect(() => {
@@ -37,19 +40,28 @@
 	{@const url = new URL(href)}
 	{@const videoId = url.searchParams.get('v')}
 	<figure class="w-full xl:w-3/4 mx-auto flex flex-col justify-center">
-		<a {href} target="_blank" rel="noopener noreferrer">
+		<a {href} target="_blank" rel="noopener noreferrer" class="group relative flex justify-center">
 			<img
 				src={`https://img.youtube.com/vi/${videoId}/0.jpg`}
 				{title}
 				alt={text}
 				class="pointer-events-none !my-0"
 			/>
+			<span
+				aria-hidden="true"
+				class="pointer-events-none absolute top-1/2 left-1/2 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-gray-900/50 text-white/85 transition group-hover:scale-105 group-hover:bg-gray-900/75"
+			>
+				<svg viewBox="0 0 24 24" fill="currentColor" class="h-7 w-7">
+					<path d="M5.5 4.5v15L18.5 12 5.5 4.5Z" />
+				</svg>
+			</span>
 		</a>
 		<figcaption class="text-center">{text}</figcaption>
 	</figure>
 {:else if href.trimEnd().endsWith('.mp4')}
 	<figure class="w-full xl:w-3/4 mx-auto flex-col justify-center">
-		<video controls {title}>
+		<!-- Muted is what makes browsers allow the autoplay; these clips carry no audio. -->
+		<video controls autoplay={shouldAutoplay} muted loop playsinline {title}>
 			<source src={href} type="video/mp4">
 		</video>
 		<figcaption class="text-center">{text}</figcaption>

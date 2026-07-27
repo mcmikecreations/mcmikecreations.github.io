@@ -89,7 +89,7 @@ way to Scharling (where I ended my hike to [Hirschberg (1668 m)](/hikes/2024-11-
 warm myself up, where the bus finally caught up with me and I headed home.
 
 ![View onto Kreuth near 47.641778, 11.734758](/images/projects/data-viz/hikes/stories/buchstein_only/2025-10-05-14.jpg)
-![Compilation of the Buchstein (1701 m) hike by [David Bilan](https://bilandavid.com/)](/images/projects/data-viz/hikes/stories/buchstein_only/2025-10-05-15.mp4)
+![Compilation of the Buchstein (1701 m) hike](/images/projects/data-viz/hikes/stories/buchstein_only/2025-10-05-15.mp4)
 
 ![The climb itself](/404/)
 
