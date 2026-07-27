@@ -1,4 +1,8 @@
 ---
+title: Free Solo of Breitensteinfensterl
+description: Going for a real via ferrata climb with no gear.
+tags:
+  - Climb
 ascent: 860
 descent: 730
 ---

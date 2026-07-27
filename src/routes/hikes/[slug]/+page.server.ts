@@ -1,15 +1,20 @@
 import { error } from '@sveltejs/kit';
-import { hikes } from '$lib/data/hikes-db';
+import { hikes } from '$lib/hikes/hikes.server';
 import { readingTime } from 'reading-time-estimator';
 import resume from '$lib/data/resume.json';
-import { defaultPageSize, getAllPosts, parseMarkdown } from '$lib/hikes/hikes-info';
-import type { PageServerLoad } from './$types';
+import { parseMarkdown } from '$lib/hikes/hikes-info';
+import { defaultPageSize, getAllPosts } from '$lib/hikes/hikes-info.server';
+import type { EntryGenerator, PageServerLoad } from './$types';
 import type { Map, MapDate, MapProperties } from '$lib/data/map-info';
 import { mergeMetrics } from '$lib/hikes/hike-metrics';
 import { applyPostOverrides, readHikeFrontmatter } from '$lib/hikes/frontmatter.server';
 import { readHikeContacts } from '$lib/hikes/frontmatter';
 import { buildHikeContacts } from '$lib/hikes/contacts';
 import contactsBook from '$lib/data/contacts.json';
+
+export const entries: EntryGenerator = () => {
+	return getAllPosts().map((p) => ({ slug: p.anchor }));
+};
 
 export const load: PageServerLoad = async ({ fetch, params, locals }) => {
 	try {

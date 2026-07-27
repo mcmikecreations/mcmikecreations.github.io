@@ -1,4 +1,4 @@
-import { getAllPosts, getPosts } from '$lib/hikes/hikes-info';
+import { getAllPosts, getPosts } from '$lib/hikes/hikes-info.server';
 import { error } from '@sveltejs/kit';
 
 export const prerender = true;

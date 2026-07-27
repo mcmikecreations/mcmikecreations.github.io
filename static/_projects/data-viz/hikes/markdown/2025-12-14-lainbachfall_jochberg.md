@@ -1,4 +1,10 @@
 ---
+title: A Homely Hike to Jochberg
+description: Joining a group of Ukrainians on a social hike.
+tags:
+  - Wandern für glückliche Menschen
+people:
+  - Natalia Kushch
 ascent: 1020
 descent: 810
 ---

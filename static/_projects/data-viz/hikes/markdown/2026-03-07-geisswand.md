@@ -1,4 +1,9 @@
 ---
+title: 'Geißwand: Relaxing Spring Views at Traunsee'
+description: Letting Pavlo recover on a nice walk.
+people:
+  - Pavlo Pustelnyk
+gpx: /_projects/data-viz/hikes/gpx/geisswand.gpx
 ascent: 462
 descent: 481
 ---

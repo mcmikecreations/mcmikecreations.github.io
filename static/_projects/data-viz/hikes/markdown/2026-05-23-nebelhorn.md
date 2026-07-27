@@ -1,4 +1,10 @@
 ---
+title: Annual Visit to Nebelhorn
+description: Taking a friend on a trip with unforgettable views.
+image: /images/projects/data-viz/hikes/nebelhorn_2026.jpg
+people:
+  - Pavlo Pustelnyk
+gpx: /_projects/data-viz/hikes/gpx/nebelhorn_2026.gpx
 ascent: 1279
 descent: 165
 ---

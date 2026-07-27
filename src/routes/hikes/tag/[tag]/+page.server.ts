@@ -1,11 +1,10 @@
-import { getAllPosts, getPosts } from '$lib/hikes/hikes-info';
+import { getAllPosts, getPosts } from '$lib/hikes/hikes-info.server';
 import { error } from '@sveltejs/kit';
-import { hikes } from '$lib/data/hikes-db';
+import { hikes, resolveHikeForPost } from '$lib/hikes/hikes.server';
 import type { Map as HikeMap, GeometryData } from '$lib/data/map-info';
 import { getMapFeatures } from '$lib/data/map-info';
 import { providerFolder } from '$lib/data/map-providers';
 import { mergeMetrics } from '$lib/hikes/hike-metrics';
-import { resolveHikeForPost } from '$lib/hikes/hike-posts.server';
 
 export const prerender = true;
 

@@ -1,4 +1,9 @@
 ---
+title: Forest Walk to Starnberg
+description: Completing my route from Freising to Tutzing.
+tags:
+  - Web
+gpx: /_projects/data-viz/hikes/gpx/muenchen_starnberg.gpx
 ascent: 190
 descent: 110
 ---

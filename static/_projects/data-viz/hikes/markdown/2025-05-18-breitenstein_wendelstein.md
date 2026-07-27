@@ -1,4 +1,8 @@
 ---
+title: Breitenstein and Wendelstein During Rainfall
+description: Despite the rainy weather, we set out to conquer both Breitenstein and Wendelstein and finish off with some Bayrischzell cake.
+people:
+  - David Bilan
 ascent: 1290
 descent: 1240
 ---

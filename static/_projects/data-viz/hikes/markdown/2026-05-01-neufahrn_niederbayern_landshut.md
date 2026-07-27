@@ -1,4 +1,9 @@
 ---
+title: Finishing the Neufahrn - Neufahrn Trail
+description: Taking a casual stroll after getting my wisdom teeth removed.
+tags:
+  - Web
+gpx: /_projects/data-viz/hikes/gpx/neufahrn_niederbayern_landshut.gpx
 ascent: 332
 descent: 339
 ---

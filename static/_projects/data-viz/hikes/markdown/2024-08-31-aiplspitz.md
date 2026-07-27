@@ -1,4 +1,10 @@
 ---
+title: Cloudy Trek to Aiplspitz
+description: Fantastic views on the Spitzingsee panorama with premium photo spots.
+tags:
+  - DAAD FK
+people:
+  - Maksym Honcharko
 ascent: 1030
 descent: 740
 ---

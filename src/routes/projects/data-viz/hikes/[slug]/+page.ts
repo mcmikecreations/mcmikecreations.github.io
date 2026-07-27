@@ -2,7 +2,6 @@
 import { error, redirect } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
 import type { HttpError } from '@sveltejs/kit'
-import { hikes as maps } from '$lib/data/hikes-db';
 import { geoMercator } from 'd3-geo';
 // @ts-ignore
 import { tile } from 'd3-tile';
@@ -12,14 +11,11 @@ import { buildGeometry, loadGeometry, loadProperties } from '$lib/hikes/build-ge
 import { buildTiles, getPixelsPerMeter } from '$lib/hikes/build-tiles';
 import { buildStatistics } from '$lib/hikes/build-statistics';
 
-export const load: PageLoad = async ({ fetch, params }) => {
+export const load: PageLoad = async ({ data, fetch, params }) => {
 	try {
-		const meta : Map | undefined = maps.find((x) => x.route.split('/').pop() === params.slug);
-
-		if (!meta) {
-			console.log(`Failed to fetch /maps/${params.slug} metadata.`);
-			error(404, { message: `Failed to fetch "${params.slug}"` });
-		}
+		// The hike itself is looked up server-side; everything below stays here
+		// because it builds THREE objects, which cannot cross a server boundary.
+		const meta : Map = data.meta;
 
 		let gpxPath = meta.properties.filePath.replace('geojson', 'gpx').replace('json', 'gpx');
 

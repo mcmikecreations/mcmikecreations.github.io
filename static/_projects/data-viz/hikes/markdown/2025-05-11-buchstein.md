@@ -1,4 +1,10 @@
 ---
+title: First Buchstein Climb
+description: My first cliff climbing experience, extended to a full day hike.
+tags:
+  - Climb
+people:
+  - David Bilan
 ascent: 1250
 descent: 1350
 ---

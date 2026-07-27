@@ -1,5 +1,6 @@
 import { json } from '@sveltejs/kit';
-import { hikes, resolveHikeForDate } from '$lib/data/hikes-db';
+import { resolveHikeForDate } from '$lib/data/hikes-db';
+import { hikes } from '$lib/hikes/hikes.server';
 import type { Map } from '$lib/data/map-info';
 import { hashPeople } from '$lib/hikes/name-hash';
 

@@ -1,4 +1,9 @@
 ---
+title: Ukrainian Hike to Fockenstein and Geierstein
+description: Joining a Ukrainian group to Fockenstein, then taking on Geierstein alone.
+tags:
+  - Wandern für glückliche Menschen
+gpx: /_projects/data-viz/hikes/gpx/fockenstein_geierstein.gpx
 ascent: 1287
 descent: 1365
 ---

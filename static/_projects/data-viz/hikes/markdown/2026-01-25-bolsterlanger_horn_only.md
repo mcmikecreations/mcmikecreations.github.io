@@ -1,4 +1,11 @@
 ---
+title: A Very Social Hike to Bolsterlanger Horn
+description: Scouting out the ridges around Fischen im Allgäu.
+tags:
+  - Wandern für glückliche Menschen
+people:
+  - Natalia Kushch
+gpx: /_projects/data-viz/hikes/gpx/bolsterlanger_horn_only.gpx
 ascent: 660
 descent: 780
 ---

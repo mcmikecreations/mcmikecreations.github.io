@@ -1,4 +1,9 @@
 ---
+title: Bischof and Krottenkopf Trial
+description: Catching the last warm days of the year and finishing off my to-do list.
+people:
+  - Bohdan Pryshchenko
+gpx: /_projects/data-viz/hikes/gpx/krottenkopf_bischof.gpx
 ascent: 1660
 descent: 1670
 ---

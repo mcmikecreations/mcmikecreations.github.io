@@ -1,4 +1,9 @@
 ---
+title: All Peaks from Bichl to Bad Tölz
+description: Checking off all easy hikes in the area at once.
+tags:
+  - Web
+gpx: /_projects/data-viz/hikes/gpx/bichl_blomberg.gpx
 ascent: 1665
 descent: 1592
 ---

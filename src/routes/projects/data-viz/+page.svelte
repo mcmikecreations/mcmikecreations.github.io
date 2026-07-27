@@ -3,23 +3,25 @@
 	import AppMeta from '$lib/components/AppMeta.svelte';
 	import AppBreadcrumbs from '$lib/components/AppBreadcrumbs.svelte';
 	import AppJsonLd from '$lib/components/AppJsonLd.svelte';
-	import { hikes as maps } from '$lib/data/hikes-db';
+	import type { PageData } from './$types';
 
-	const hikes = [...maps.filter(x =>
-		x.properties?.hidden !== true &&
-		x.properties?.dates?.some(d => !d.path)
-	)];
-	hikes.sort((a, b) =>
-		a.properties.dates[0].date > b.properties.dates[0].date
-		? -1
-		: a.properties.dates[0].date < b.properties.dates[0].date
-			? 1
-			: 0);
+	let { data }: { data: PageData } = $props();
+
+	// Newest first by the hike's most recent date. The load already drops hidden
+	// hikes and those whose every date is blogged.
+	const hikes = $derived(
+		[...data.maps].sort((a, b) =>
+			a.properties.dates[0].date > b.properties.dates[0].date
+			? -1
+			: a.properties.dates[0].date < b.properties.dates[0].date
+				? 1
+				: 0)
+	);
 </script>
 
 <AppMeta title="Data Viz" description="Data visualization projects I have personally developed." type="website" />
 <AppBreadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'Projects', href: '/projects/' }, { name: 'Data Viz', href: '/projects/data-viz/' }]} />
-<AppJsonLd variant="collection" name="Data Viz" description="Data visualization projects I have personally developed." url="/projects/data-viz/" items={hikes.filter(m => !m.properties?.hidden).map(m => ({ name: m.name, url: m.route, image: m.image }))} />
+<AppJsonLd variant="collection" name="Data Viz" description="Data visualization projects I have personally developed." url="/projects/data-viz/" items={hikes.map(m => ({ name: m.name, url: m.route, image: m.image }))} />
 
 <main>
 	<Heading tag="h2" id="hikes">Hikes</Heading>
@@ -38,7 +40,7 @@
 				<Card
 						href={map.route}
 						img={map.image.replace('/hikes/', '/hikes/thumb/')}
-						class="{map.properties?.draft === true ? 'hidden' : ''}"
+						class={map.properties?.draft === true ? 'hidden' : ''}
 				>
 					<div class="m-4 sm:m-6">
 						<Heading tag="h3" class="break-words">{(map.properties.draft ? '⏳ ' : '') + map.name}</Heading>

@@ -1,4 +1,9 @@
 ---
+title: Großer Traithen Ridge in Winter
+description: Crossing the ridge of the highest mountain in the Rosenheim district.
+people:
+  - Mikuláš Netík
+  - Maksym Honcharko
 ascent: 1050
 descent: 1420
 ---

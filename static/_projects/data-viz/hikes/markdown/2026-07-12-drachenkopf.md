@@ -1,4 +1,13 @@
 ---
+title: Drying up on Drachenkopf
+description: Scorching summer hike to the peak, paired with a social hike back.
+tags:
+  - Climb
+people:
+  - Stanislav Kidalau
+  - Myroslava Shkilniuk
+  - Julia Krat
+gpx: /_projects/data-viz/hikes/gpx/drachenkopf.gpx
 ascent: 1566
 descent: 1549
 ---

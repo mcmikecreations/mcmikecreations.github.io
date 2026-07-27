@@ -1,4 +1,9 @@
 ---
+title: 'Cima Sophia: First Trip to the Dolomites'
+description: Attempting a rocky peak at the cold of winter.
+people:
+  - Serhii Ivanenko
+  - Pavlo Pustelnyk
 ascent: 820
 descent: 1410
 ---

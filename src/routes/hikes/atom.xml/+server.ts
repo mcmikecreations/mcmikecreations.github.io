@@ -1,4 +1,4 @@
-import { getAllPosts } from '$lib/hikes/hikes-info';
+import { getAllPosts } from '$lib/hikes/hikes-info.server';
 import resume from '$lib/data/resume.json';
 
 export const prerender = true;

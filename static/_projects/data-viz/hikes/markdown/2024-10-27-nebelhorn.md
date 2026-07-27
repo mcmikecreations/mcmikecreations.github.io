@@ -1,4 +1,9 @@
 ---
+title: Finishing Up Nebelhorn
+description: My first successful attempt at getting to the top of Nebelhorn and back.
+image: /images/projects/data-viz/hikes/nebelhorn_2024.jpg
+people:
+  - Veronica Vitez
 ascent: 1460
 descent: 1460
 ---

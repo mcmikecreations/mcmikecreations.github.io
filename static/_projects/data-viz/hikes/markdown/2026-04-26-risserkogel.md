@@ -1,4 +1,7 @@
 ---
+title: Revenge Against Risserkogel
+description: Returning to reach the goal of my failed winter hike.
+gpx: /_projects/data-viz/hikes/gpx/risserkogel.gpx
 ascent: 1253
 descent: 1238
 ---

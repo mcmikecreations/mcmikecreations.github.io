@@ -1,4 +1,10 @@
 ---
+title: 'Zugspitze via Höllental: Catch the Cable Car'
+description: An unlikely via ferrata climb to the top of Zugspitze before the last cable car down.
+tags:
+  - Climb
+people:
+  - David Bilan
 ascent: 2160
 descent: 20
 ---

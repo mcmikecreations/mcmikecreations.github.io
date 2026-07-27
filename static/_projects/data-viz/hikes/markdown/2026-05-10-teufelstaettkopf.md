@@ -1,4 +1,9 @@
 ---
+title: Climbing and More Climbing at Teufelstättkopf
+description: Doing a Pürschling loop across all the fancy cliffs nearby.
+people:
+  - Bohdan Pryshchenko
+gpx: /_projects/data-viz/hikes/gpx/teufelstaettkopf.gpx
 ascent: 1255
 descent: 1251
 ---

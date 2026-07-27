@@ -1,4 +1,10 @@
 ---
+title: Returning to Höhenglücksteig
+description: Getting stuck on the same via ferrata.
+tags:
+  - Climb
+people:
+  - David Bilan
 ascent: 360
 descent: 310
 ---

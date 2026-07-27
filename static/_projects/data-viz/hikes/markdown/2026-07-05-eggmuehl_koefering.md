@@ -1,4 +1,9 @@
 ---
+title: Exploring Köfering Castles
+description: Walking between two historic settlements and visiting local castles.
+tags:
+  - Web
+gpx: /_projects/data-viz/hikes/gpx/eggmuehl_koefering.gpx
 ascent: 258
 descent: 288
 ---

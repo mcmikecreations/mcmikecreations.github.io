@@ -1,4 +1,6 @@
 ---
+title: Hot Pursuit of Brecherspitz
+description: Hiking with a fewer has never been so fun.
 ascent: 540
 descent: 820
 ---

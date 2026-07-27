@@ -1,4 +1,9 @@
 ---
+title: Hoher Fricken with Alcoholics
+description: A goodbye hike for Mikuláš Netík, meeting German housewives downing schnapps at the top.
+people:
+  - Mikuláš Netík
+  - Viktor Lebruška
 ascent: 1260
 descent: 1230
 ---

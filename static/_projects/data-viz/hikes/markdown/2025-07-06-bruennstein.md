@@ -1,4 +1,10 @@
 ---
+title: 'First Outdoor Via Ferrata: Brünnstein'
+description: Starting off with an easy route.
+tags:
+  - Climb
+people:
+  - David Bilan
 ascent: 940
 descent: 1260
 ---

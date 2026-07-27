@@ -1,4 +1,9 @@
 ---
+title: Via Nova Pilgrimage to Eggmühl
+description: Chasing rainy clouds and wild deer towards Regensburg.
+tags:
+  - Web
+gpx: /_projects/data-viz/hikes/gpx/neufahrn_niederbayern_eggmuehl.gpx
 ascent: 310
 descent: 331
 ---

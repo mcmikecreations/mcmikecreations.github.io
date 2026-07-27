@@ -1,4 +1,8 @@
 ---
+title: Seekarkreuz DAAD Tour 2025
+description: Annette organized a DAAD hike to the summit going down to the Hirschbachstüberl restaurant.
+tags:
+  - DAAD FK
 ascent: 880
 descent: 880
 ---

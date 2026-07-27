@@ -1,4 +1,8 @@
 ---
+title: Sunbathing at Simetsberg
+description: Enjoying the lakeside and the summits of Walchensee.
+tags:
+  - DAAD FK
 ascent: 970
 descent: 990
 ---

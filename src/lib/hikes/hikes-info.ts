@@ -1,5 +1,11 @@
-import { hikes, resolveHikeForDate } from '$lib/data/hikes-db';
-import type { Map } from '$lib/data/map-info';
+/**
+ * Browser-safe hike post helpers: the shape a listing renders, and the markdown
+ * renderer the post page re-runs on client-side navigation.
+ *
+ * Enumerating posts needs the markdown glob, so `getAllPosts` / `getPosts` live
+ * in the server-only `hikes-info.server`.
+ */
+
 import { stripFrontmatter } from '$lib/hikes/frontmatter';
 
 export interface ProcessedPost {
@@ -14,73 +20,6 @@ export interface ProcessedPost {
     tags: string[];
     people: string[] | null;
     anchor: string;
-}
-
-interface HikeParams {
-    page?: number;
-    tag?: string;
-    year?: number;
-    limit?: number;
-}
-
-export function getAllPosts(): ProcessedPost[] {
-    const posts = (hikes as Map[]).flatMap(h => h.properties.dates
-        .filter(d => !h.properties.draft && d.path)
-        .map(d => {
-            const date = new Date(d.date);
-            const slug = h.route.substring(h.route.lastIndexOf('/') + 1);
-            // A date may name its own sidecar, so read name/image/description
-            // through the hike as that date sees it.
-            const hike = resolveHikeForDate(h, d);
-            return {
-                year: date.getFullYear(),
-                month: date.getMonth() + 1,
-                day: date.getDate(),
-                date: date,
-                url: `/hikes/${d.date}-${slug}/`,
-                title: d.title ?? hike.name,
-                image: (d.image ?? hike.image)?.replace('/hikes/', '/hikes/thumb/'),
-                description: (d.description ? (d.description + ' ') : '') + hike.description,
-                tags: d.tags,
-                people: d.people,
-                anchor: `${d.date}-${slug}`
-            };
-        }));
-    posts.sort((a, b) => a.date > b.date ? -1 : (a.date < b.date ? 1 : 0));
-    return posts;
-}
-
-export const defaultPageSize = 10;
-
-export function getPosts({ page = 1, tag, year, limit = defaultPageSize }: HikeParams) {
-    let posts = getAllPosts();
-
-    if (tag) {
-        posts = posts.filter(p => p.tags.includes(tag));
-    }
-
-    if (year) {
-        posts = posts.filter(p => p.year === year);
-    }
-
-    const totalPosts = posts.length;
-    const totalPages = Math.ceil(totalPosts / limit);
-    const startIndex = (page - 1) * limit;
-    const endIndex = startIndex + limit;
-    const visiblePosts = posts.slice(startIndex, endIndex);
-
-    return {
-        posts: visiblePosts,
-        pagination: {
-            currentPage: page,
-            totalPages,
-            totalPosts,
-            hasNext: page < totalPages,
-            hasPrev: page > 1,
-            nextPage: page < totalPages ? page + 1 : null,
-            prevPage: page > 1 ? page - 1 : null
-        }
-    };
 }
 
 export async function parseMarkdown(postRaw: string): Promise<string> {

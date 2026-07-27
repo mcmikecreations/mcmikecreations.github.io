@@ -1,4 +1,10 @@
 ---
+title: São Lourenço PR8 Intro
+description: A great oceanside hike cut short by a plane ride.
+tags:
+  - Portugal
+people:
+  - Serhii Ivanenko
 ascent: 130
 descent: 130
 ---

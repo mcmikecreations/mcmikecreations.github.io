@@ -1,4 +1,11 @@
 ---
+title: Seebensee and Drachensee
+description: Via ferrata hunting and lake sightseeing with an injured friend.
+tags:
+  - Climb
+people:
+  - Stanislav Kidalau
+gpx: /_projects/data-viz/hikes/gpx/drachensee.gpx
 ascent: 1013
 descent: 995
 ---

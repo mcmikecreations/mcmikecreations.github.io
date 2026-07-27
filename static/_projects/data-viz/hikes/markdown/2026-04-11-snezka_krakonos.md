@@ -1,4 +1,12 @@
 ---
+title: On Top of the World on Sněžka
+description: Visiting the highest peak on the Czech-Polish border.
+tags:
+  - Czechia
+  - Poland
+people:
+  - Mikuláš Netík
+gpx: /_projects/data-viz/hikes/gpx/snezka_krakonos.gpx
 ascent: 1004
 descent: 1060
 ---

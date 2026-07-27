@@ -1,4 +1,9 @@
 ---
+title: Thierberg to Kufstein Christmas Market
+description: Socializing on a nice relaxing hike in Austria.
+tags:
+  - DAAD FK
+gpx: /_projects/data-viz/hikes/gpx/thierberg.gpx
 ascent: 330
 descent: 190
 ---

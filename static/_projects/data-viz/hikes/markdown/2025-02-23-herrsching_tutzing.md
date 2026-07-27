@@ -1,4 +1,8 @@
 ---
+title: Herrsching to Tutzing
+description: One morning I was bored and decided to walk from one popular Bavarian lake to another.
+tags:
+  - Web
 ascent: 310
 descent: 240
 ---

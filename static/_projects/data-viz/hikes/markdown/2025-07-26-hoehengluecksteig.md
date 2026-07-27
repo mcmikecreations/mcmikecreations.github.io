@@ -1,4 +1,11 @@
 ---
+title: Exploring Höhenglücksteig
+description: Trying out via ferrata climbing in the wild.
+image: /images/projects/data-viz/hikes/hoehengluecksteig_mikulas.jpg
+tags:
+  - Climb
+people:
+  - Mikuláš Netík
 ascent: 360
 descent: 310
 ---

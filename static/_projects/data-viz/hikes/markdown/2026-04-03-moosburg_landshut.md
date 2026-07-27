@@ -1,4 +1,9 @@
 ---
+title: 'Moosburg to Landshut: A Handful of Castles'
+description: Visiting cool castles and ruins between Moosburg and Landshut.
+tags:
+  - Web
+gpx: /_projects/data-viz/hikes/gpx/moosburg_landshut.gpx
 ascent: 615
 descent: 623
 ---

@@ -1,4 +1,8 @@
 ---
+title: Rampoldplatte as a First
+description: Testing the fitness of a new friend on a moderate winter route.
+people:
+  - David Bilan
 ascent: 940
 descent: 940
 ---

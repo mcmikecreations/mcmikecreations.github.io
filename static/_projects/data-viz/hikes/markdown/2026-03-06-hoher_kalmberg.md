@@ -1,4 +1,9 @@
 ---
+title: 'Hoher Kalmberg: First Hike Near Linz'
+description: Taking Pavlo for a tour near Hallstätter See.
+people:
+  - Pavlo Pustelnyk
+gpx: /_projects/data-viz/hikes/gpx/hoher_kalmberg.gpx
 ascent: 1107
 descent: 1229
 ---

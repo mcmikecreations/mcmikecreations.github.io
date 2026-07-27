@@ -1,4 +1,8 @@
 ---
+title: Laber Hauptgipfel DAAD Tour
+description: Organized group hike for DAAD scholars.
+tags:
+  - DAAD FK
 ascent: 760
 descent: 800
 ---

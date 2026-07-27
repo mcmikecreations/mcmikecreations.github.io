@@ -1,4 +1,10 @@
 ---
+title: Schweinsberg Easter DAAD Tour
+description: Annette organized a group hike with Easter egg hunting for DAAD scholars.
+tags:
+  - DAAD FK
+people:
+  - Annette Schörner
 ascent: 750
 descent: 670
 ---

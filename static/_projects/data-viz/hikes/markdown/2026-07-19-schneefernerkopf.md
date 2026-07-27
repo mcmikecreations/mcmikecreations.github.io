@@ -1,4 +1,10 @@
 ---
+title: Sleepless Hike for the Scheefernerkopf Sunrise
+description: Fighting insomnia by ascending the second highest German peak.
+tags:
+  - Climb
+  - Work
+gpx: /_projects/data-viz/hikes/gpx/schneefernerkopf.gpx
 distance: 26600
 duration: 706
 ascent: 2449

@@ -102,7 +102,7 @@ function hash(str: string): number {
 
 async function startLoading() {
     hasStartedLoading = true;
-    const { hikes: maps } = await import('$lib/data/hikes-db');
+    const maps = await (await fetch('/hikes/index.json')).json();
 
     const features: object[] = [];
     const mapsToProcess = (maps as any[]).filter(mapInfo => mapInfo.properties?.hidden !== true);

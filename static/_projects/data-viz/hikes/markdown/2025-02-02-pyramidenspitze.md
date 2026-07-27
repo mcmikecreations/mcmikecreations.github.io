@@ -1,4 +1,10 @@
 ---
+title: Pushing for Pyramidenspitze DAAD Tour
+description: A winter rendition of the route I organized for DAAD with the group dwindling down.
+tags:
+  - DAAD FK
+people:
+  - Mikuláš Netík
 ascent: 1600
 descent: 1600
 ---

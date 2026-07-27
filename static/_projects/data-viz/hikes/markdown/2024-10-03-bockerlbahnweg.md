@@ -1,4 +1,6 @@
 ---
+title: 'Bockerlbahn-Weg: I am the Train'
+description: Following a 1919 railway path near Spitzingsee.
 ascent: 280
 descent: 570
 ---

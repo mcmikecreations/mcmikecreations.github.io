@@ -1,4 +1,8 @@
 ---
+title: Wasserspitz and Mountain Carts
+description: Going up Wasserspitz on foot. Going down Stümpfling on mountain carts.
+people:
+  - David Bilan
 ascent: 1030
 descent: 300
 ---

@@ -1,21 +1,27 @@
 /**
- * The hike database: `hikes.json` — which now holds only routes, dates and
- * fallback metrics — recombined with the per-slug `<slug>.hike.json` sidecars
- * that carry the hand-authored map fields (`name`, `description`, `image`,
- * `origin`, `height`, `checkpoints`, `nodes`).
+ * Sidecar helpers: the per-slug `<slug>.hike.json` files that carry each hike's
+ * hand-authored map fields (`name`, `description`, `image`, `origin`, `height`,
+ * `checkpoints`, `nodes`), plus the conventions for locating a hike's files.
  *
- * The sidecars live next to the hike markdown under `static/` and are inlined
- * at build time, so this module stays safe in the client bundle.
+ * The sidecars are the definitive list of which hikes exist — one per hike,
+ * whether or not it has been blogged. Assembling whole hikes needs the markdown
+ * as well, so that lives in the server-only `hikes.server`.
+ *
+ * Two things are addressable rather than derived, so a hike (or a single post on
+ * it) can point somewhere other than the slug-named default:
+ *
+ *  - `metaPath` — which sidecar supplies the fields above.
+ *  - `filePath` — which GeoJSON supplies the route geometry.
+ *
+ * Both may be set on a hike, on a single date, or in a post's front matter; see
+ * `resolveHikeForDate` and `frontmatter.server`.
  */
 
-import rawRoutes from './hikes.json';
 import type { HikeMeta, Map, MapDate, MapProperties } from './map-info';
 
-/** `hikes.json` carries no sidecar fields, so it is not a `Map` on its own. */
-const routes = rawRoutes as unknown as Array<{ route: string; properties: MapProperties }>;
-
-/** Sidecars sit beside the markdown, and are referenced by served path. */
 const metaFolder = '/_projects/data-viz/hikes/markdown';
+const geoFolder = '/_projects/data-viz/hikes/geojson';
+const routeFolder = '/projects/data-viz/hikes';
 
 const sidecars = import.meta.glob('/static/_projects/data-viz/hikes/markdown/*.hike.json', {
 	eager: true,
@@ -27,10 +33,25 @@ export function hikeSlug(route: string): string {
 	return route.substring(route.lastIndexOf('/') + 1);
 }
 
-/** Where a route's sidecar lives unless something says otherwise. */
+/** The page a hike lives at. */
+export function hikeRoute(slug: string): string {
+	return `${routeFolder}/${slug}`;
+}
+
+/** Where a hike's sidecar lives unless something says otherwise. */
 export function defaultMetaPath(slug: string): string {
 	return `${metaFolder}/${slug}.hike.json`;
 }
+
+/** Where a hike's route GeoJSON lives unless something says otherwise. */
+export function defaultFilePath(slug: string): string {
+	return `${geoFolder}/${slug}.json`;
+}
+
+/** Every hike's slug, taken from the sidecars on disk. */
+export const hikeSlugs: string[] = Object.keys(sidecars)
+	.map((key) => key.substring(key.lastIndexOf('/') + 1).replace(/\.hike\.json$/, ''))
+	.sort();
 
 /**
  * The sidecar at a served path such as
@@ -70,7 +91,7 @@ const DATE_METRICS = ['distance', 'duration', 'ascent', 'descent'] as const;
  * Promote a date's own `filePath` / metric overrides into a hike's properties.
  *
  * Returns `properties` unchanged (same reference) when the date overrides
- * nothing, which is the case for every date today.
+ * nothing.
  */
 export function applyDateOverrides(properties: MapProperties, date: MapDate): MapProperties {
 	let out: MapProperties | null = null;
@@ -88,9 +109,9 @@ export function applyDateOverrides(properties: MapProperties, date: MapDate): Ma
  * The hike as one of its dates sees it: the date's `metaPath` sidecar swapped in
  * and its `filePath` / metric overrides promoted.
  *
- * This covers overrides written in `hikes.json` only. A post's front matter can
- * override the same fields, but reading it needs the markdown, so that path runs
- * server-side in `hikes/[slug]/+page.server.ts`.
+ * A blogged date already carries its post's front-matter fields, folded in when
+ * the model was built, so this covers front matter too for everything at date
+ * level. Hike-level front-matter keys still need `applyPostOverrides`.
  */
 export function resolveHikeForDate(hike: Map, date: MapDate): Map {
 	let base = hike;
@@ -108,13 +129,3 @@ export function resolveHikeForDate(hike: Map, date: MapDate): Map {
 	const properties = applyDateOverrides(base.properties, date);
 	return properties === base.properties ? base : { ...base, properties };
 }
-
-/** Every hike, in `hikes.json` order, with its sidecar folded back in. */
-export const hikes: Map[] = routes.map((entry) => {
-	const metaPath = entry.properties.metaPath ?? defaultMetaPath(hikeSlug(entry.route));
-	const meta = getHikeMeta(metaPath);
-	if (!meta) {
-		throw new Error(`Missing sidecar "${metaPath}" for hike route "${entry.route}"`);
-	}
-	return withHikeMeta({ route: entry.route, properties: entry.properties } as Map, meta);
-});

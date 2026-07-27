@@ -1,4 +1,8 @@
 ---
+title: Blauberge Ridge Loop
+description: A summer trip along the Germany-Austria border.
+people:
+  - David Bilan
 ascent: 1150
 descent: 1170
 ---

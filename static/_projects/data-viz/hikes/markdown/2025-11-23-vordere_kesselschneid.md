@@ -1,4 +1,9 @@
 ---
+title: Steep Price for a Steep Hike to Vordere Kesselschneid
+description: Extending the old route to a new peak with a broken finger.
+people:
+  - Bohdan Pryshchenko
+gpx: /_projects/data-viz/hikes/gpx/vordere_kesselschneid.gpx
 ascent: 1780
 descent: 1730
 ---

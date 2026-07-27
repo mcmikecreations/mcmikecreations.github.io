@@ -100,6 +100,21 @@ export function readMetaPathOverride(
 }
 
 /**
+ * The date-level fields a post's front matter declares, used to fold a post into
+ * the model so downstream code can read `date.title`, `date.tags` and friends
+ * without knowing front matter exists.
+ */
+export function readDateFields(frontmatter: Dict | null | undefined): Partial<MapDate> {
+	const out: Dict = {};
+	if (!isPlainObject(frontmatter)) return out;
+	for (const [key, value] of Object.entries(frontmatter)) {
+		if (value === null || value === undefined) continue;
+		if (DATE_KEYS.has(key)) out[key] = value;
+	}
+	return out as Partial<MapDate>;
+}
+
+/**
  * Validate a front-matter `origin`. Throws rather than letting a malformed one
  * through, since a bad centre silently mis-projects the whole map.
  */

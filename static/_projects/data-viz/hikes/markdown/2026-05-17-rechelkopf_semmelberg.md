@@ -1,4 +1,9 @@
 ---
+title: Checking Off Obergries
+description: Recovering from 3 vaccines 2 days before while visiting 15 peaks on the way.
+tags:
+  - Web
+gpx: /_projects/data-viz/hikes/gpx/rechelkopf_semmelberg.gpx
 ascent: 1796
 descent: 1708
 ---

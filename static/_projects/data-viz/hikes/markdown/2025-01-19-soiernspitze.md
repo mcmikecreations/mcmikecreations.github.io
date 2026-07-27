@@ -1,4 +1,8 @@
 ---
+title: Slipping Down Soiernspitze
+description: A no equipment hike with some men left behind.
+people:
+  - Mikuláš Netík
 ascent: 1360
 descent: 1350
 ---

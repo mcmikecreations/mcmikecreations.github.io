@@ -1,4 +1,10 @@
 ---
+title: 'Altmühltal: Riedenburg to Kelheim'
+description: A historical walk along river Prunn through Celtic settlements.
+tags:
+  - Altmühltal
+people:
+  - Mikuláš Netík
 ascent: 690
 descent: 710
 ---

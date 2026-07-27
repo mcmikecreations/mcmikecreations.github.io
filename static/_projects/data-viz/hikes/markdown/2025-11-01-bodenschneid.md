@@ -1,4 +1,8 @@
 ---
+title: DAAD Trip to Bodenschneid
+description: A medium difficulty muddy walk to the peak and down to Bodenschneidhaus.
+tags:
+  - DAAD FK
 ascent: 510
 descent: 830
 ---

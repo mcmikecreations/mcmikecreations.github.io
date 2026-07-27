@@ -1,4 +1,9 @@
 ---
+title: Retrieving a Hiking Stick at Sonnenberg
+description: Going back to the place I failed to take back what's mine.
+people:
+  - Stanislav Kidalau
+gpx: /_projects/data-viz/hikes/gpx/unterammergau_sonnenberg.gpx
 ascent: 947
 descent: 947
 ---

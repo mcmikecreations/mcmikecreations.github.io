@@ -1,4 +1,9 @@
 ---
+title: Buried in Snow at Kampen
+description: Doing a cliffside climb of the Kampen ridge after heavy snowfall.
+people:
+  - Bohdan Pryshchenko
+gpx: /_projects/data-viz/hikes/gpx/lenggries_auerkamp.gpx
 ascent: 968
 descent: 1127
 ---

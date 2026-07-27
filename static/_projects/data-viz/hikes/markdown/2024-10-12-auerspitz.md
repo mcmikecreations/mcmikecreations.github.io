@@ -1,4 +1,8 @@
 ---
+title: Cinematic Trip to Auerspitz
+description: Going on a trip across Alps with a group of photographers.
+tags:
+  - DAAD FK
 ascent: 840
 descent: 1160
 ---

@@ -1,4 +1,9 @@
 ---
+title: Brauneck Bonfire Celebration
+description: Enjoying a fire show with rock music on a peak at sunset.
+people:
+  - David Bilan
+gpx: /_projects/data-viz/hikes/gpx/brauneck_only.gpx
 ascent: 900
 descent: 82
 ---

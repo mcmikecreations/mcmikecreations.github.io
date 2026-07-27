@@ -1,4 +1,10 @@
 ---
+title: Hochstaufen DAAD Tour
+description: A DAAD tour I organized as a change of pace from the usual destinations.
+tags:
+  - DAAD FK
+people:
+  - Mikuláš Netík
 ascent: 1330
 descent: 1310
 ---

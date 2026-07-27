@@ -1,4 +1,8 @@
 ---
+title: Zugspitze Reintal Loop in a Day
+description: A non-stop 22 hour hike to the top of Germany's highest mountain and back.
+people:
+  - David Bilan
 ascent: 2430
 descent: 2430
 ---

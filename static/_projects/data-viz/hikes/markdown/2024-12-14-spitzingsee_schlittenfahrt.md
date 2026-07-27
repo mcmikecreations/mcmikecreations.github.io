@@ -1,4 +1,10 @@
 ---
+title: Sleds and Views at Spitzingsee
+description: Racing downhill from Firstalm to the lake.
+tags:
+  - DAAD FK
+people:
+  - Mikuláš Netík
 ascent: 400
 descent: 680
 ---

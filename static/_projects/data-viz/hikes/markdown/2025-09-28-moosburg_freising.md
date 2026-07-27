@@ -1,4 +1,8 @@
 ---
+title: Moosburg Mental Health Walk to Freising
+description: Flat walk between two local towns.
+tags:
+  - Web
 ascent: 70
 descent: 50
 ---

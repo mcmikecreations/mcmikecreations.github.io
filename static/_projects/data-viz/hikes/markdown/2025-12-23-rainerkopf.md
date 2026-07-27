@@ -1,4 +1,8 @@
 ---
+title: Slippery Rainerkopf
+description: Going down a slippery slope with a friend.
+people:
+  - Serhii Ivanenko
 ascent: 810
 descent: 530
 ---

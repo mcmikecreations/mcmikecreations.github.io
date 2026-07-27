@@ -1,4 +1,10 @@
 ---
+title: Bridging Countries via Trainsjoch
+description: Trailing the border line between Germany and Austria on a winter trip.
+people:
+  - Bohdan Pryshchenko
+  - Stanislav Kidalau
+gpx: /_projects/data-viz/hikes/gpx/trainsjoch.gpx
 ascent: 1230
 descent: 910
 ---

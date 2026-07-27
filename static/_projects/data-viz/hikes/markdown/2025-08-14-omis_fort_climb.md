@@ -1,4 +1,9 @@
 ---
+title: Via Ferrata Climb to Omiš Fort
+description: Taking the straight way up this time.
+tags:
+  - Climb
+  - Croatia
 ascent: 280
 descent: 300
 ---

@@ -1,4 +1,10 @@
 ---
+title: Taking Newbies to Hirschberg
+description: Exploring a new mountain with a fresh group.
+tags:
+  - DAAD FK
+people:
+  - Mikuláš Netík
 ascent: 900
 descent: 940
 ---

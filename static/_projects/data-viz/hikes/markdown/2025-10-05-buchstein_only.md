@@ -1,4 +1,8 @@
 ---
+title: Buchstein Free Solo
+description: A climb of Buchstein (1701 m) during a snowstorm starting at Bayerwald.
+tags:
+  - Climb
 ascent: 1000
 descent: 1110
 ---

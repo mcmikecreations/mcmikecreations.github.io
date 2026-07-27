@@ -1,4 +1,10 @@
 ---
+title: Pedra Rija PR1 Start
+description: What was supposed to be a full-day hike turned to be a 15-minute walk due to a landslide.
+tags:
+  - Portugal
+people:
+  - Serhii Ivanenko
 ascent: 380
 descent: 410
 ---
