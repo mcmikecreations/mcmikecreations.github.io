@@ -66,7 +66,7 @@
 	}
 	const filePrimary: File = $derived({
 		path: data.display.filePrimary,
-		type: data.map.properties.fileType
+		type: 'GeoJSON'
 	});
 	const fileGpx: File = $derived({
 		path: data.display.fileGpx,

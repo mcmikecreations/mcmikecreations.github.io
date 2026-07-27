@@ -223,7 +223,7 @@ async function startLoading() {
     return `<a href="${targetRoute}">${new Date(x.date).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"})}` + `</a>`;
 }).join('; ')}</li>
 <li>${feature.properties.dates.map((x: MapDate) => !!x.path).includes(true) ? '' : `<a href="${feature.properties.route}">Map Link</a>, `}
-<a href="${feature.properties.filePath}">${feature.properties.fileType}</a>${gpxSuffix}
+<a href="${feature.properties.filePath}">GeoJSON</a>${gpxSuffix}
 </li>
 </ul>`);
             }

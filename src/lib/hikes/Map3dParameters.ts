@@ -3,8 +3,6 @@ import type { OriginData, Map } from '$lib/data/map-info';
 import * as THREE from 'three';
 
 export interface Map3dParameters {
-	attrMapbox: boolean;
-	attrOSM: boolean;
 	origin: OriginData;
 	projection: GeoProjection;
 	map: Map;

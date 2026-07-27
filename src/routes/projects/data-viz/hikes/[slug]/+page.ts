@@ -92,8 +92,6 @@ export const load: PageLoad = async ({ fetch, params }) => {
 			}
 		}
 
-		meta.features = features;
-
 		const posts: { date: string, post: string }[] = [];
 		/*for (const date of properties.dates) {
 			if (!date.path) continue;

@@ -11,7 +11,6 @@
 	import DefaultImage from '$lib/renderers/DefaultImage.svelte';
 	import Map3d from '$lib/hikes/Map3d.svelte';
 	import type { Map3dParameters } from '$lib/hikes/Map3dParameters';
-	import { getMapFeatures, type Feature, type TilesData } from '$lib/data/map-info';
 	import { providerFolder, providers } from '$lib/data/map-providers';
 	import type { GeoJsonObject, Geometry, Feature as F } from 'geojson';
 	import { secondaryGeometryColor, secondaryIndicatorColor } from '$lib/hikes/build-geometry';
@@ -28,10 +27,6 @@
 	let { data }: Props = $props();
 
 	const statsIndicatorVerticalWidth = 1.0;
-
-	const features = $derived(getMapFeatures(data.map) as Feature[]);
-	const attrMapbox = $derived(features.some((x) => x.type === 'Tiles' && (x.data as TilesData)!.provider!.includes('mapbox')));
-	const attrOSM = $derived(features.some((x) => x.type === 'Tiles' && (x.data as TilesData)!.provider!.includes('osm')));
 
 	let statsIndicatorInteractive : any;
 	let lastStatsIndicatorTarget : HTMLElement | undefined = $state();
@@ -256,8 +251,6 @@
 	});
 
 	const map3dParameters : Map3dParameters = $derived({
-		attrMapbox,
-		attrOSM,
 		origin: data.origin,
 		projection: data.projection,
 		map: data.map,
@@ -290,7 +283,7 @@
 						<li>Ascent: {getDistance(data.properties.ascent ?? 0)}</li>
 						<li>Descent: {getDistance(data.properties.descent ?? 0)}</li>
 						<li>Dates: {data.properties.dates.map((x) => new Date(x.date).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"})).join('; ')}</li>
-						<li><a href={data.properties.filePath}>{data.properties.fileType}</a>, <a href={data.gpxPath}>GPX</a></li>
+						<li><a href={data.properties.filePath}>GeoJSON</a>, <a href={data.gpxPath}>GPX</a></li>
 					</ul>
 					<span>
 						* The duration of the hike is pure walking time with above average speed.
@@ -319,7 +312,8 @@
 						{@html data.data2d}
 						<circle id="statsIndicator2d" r={data.map.height * 0.125 * 0.125 * 0.5} fill={secondaryIndicatorColor} class="hidden" />
 					</svg>
-					<Attribution attrMapbox={false} {attrOSM} />
+					<!-- The 2D map is OSM raster tiles only. -->
+					<Attribution attrOSM />
 				</TabItem>
 				<TabItem title="Interactive" onclick={async () => await attachInteractive()}>
 					<div class="overflow-hidden aspect-square">

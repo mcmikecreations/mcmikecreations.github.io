@@ -44,8 +44,8 @@ export function initMap3d(container: HTMLElement, geojson: any, hike: Map): Map3
     const coords: number[][] = geometry?.coordinates ?? [];
     if (!geometry || !coords?.length) return noop;
 
-		const originLon = hike.standardFeatures?.origin.lon ?? 0;
-		const originLat = hike.standardFeatures?.origin.lat ?? 0;
+		const originLon = hike.standardFeatures.origin.lon;
+		const originLat = hike.standardFeatures.origin.lat;
 
 		const projection = geoMercator()
 				.center([originLon, originLat])

@@ -24,7 +24,7 @@ import { isPlainObject } from '$lib/hikes/frontmatter';
  *    override). Spreading them raw would clobber the whole nested object.
  *
  * Everything not listed here IS overrideable, including
- * distance/duration/ascent/descent/filePath/fileType/nodes/draft in `properties`
+ * distance/duration/ascent/descent/filePath/nodes/draft in `properties`
  * and title/description/tags/people/image/gpx/author in the date entry.
  */
 const HIKE_BLOCKED = new Set(['route', 'properties', 'dates']);

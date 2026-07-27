@@ -41,13 +41,13 @@ interface Feature {
 	data: OriginData | TilesData | GeometryData;
 }
 
+/**
+ * Per-hike map inputs. Everything else about the map stack (tile providers,
+ * geometry provider and source, statistics) is identical for every hike and
+ * lives in `map-get-features`.
+ */
 interface StandardFeatures {
 	origin: OriginData;
-	tiles2d: string | null;
-	tiles3d: string | null;
-	geometry: GeometryData[] | null;
-	geometrySource: string | string[] | null;
-	statistics: boolean;
 }
 
 interface MapNode {
@@ -78,7 +78,6 @@ interface MapProperties {
 	descent: number | null;
 	dates: Array<MapDate>;
 	filePath: string;
-	fileType: string;
 	draft: boolean | null;
 	nodes?: MapNode[] | undefined | null;
 }
@@ -89,8 +88,7 @@ interface Map {
 	description: string;
 	route: string;
 	height: number;
-	standardFeatures: StandardFeatures | null;
-	features: Feature[] | null;
+	standardFeatures: StandardFeatures;
 	properties: MapProperties;
 }
 

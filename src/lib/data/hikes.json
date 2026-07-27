@@ -91,7 +91,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/seekarkreuz.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.5735467, 47.6802772],
         [11.6273785, 47.6648090],
@@ -107,18 +106,8 @@
       "origin": {
         "lat": 47.6677,
         "lon": 11.6126
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "seekarkreuz.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Wendelstein",
@@ -249,7 +238,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/wendelstein.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.9864723, 47.6878397],
         [12.0120520, 47.7034760],
@@ -264,18 +252,8 @@
       "origin": {
         "lat": 47.689890272830304,
         "lon": 12.00668417765189
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "wendelstein.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Bad Tölz - Lenggries",
@@ -297,7 +275,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/bad_tolz_lenggries.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.5739418, 47.7605841],
         [11.5620381, 47.7096589],
@@ -312,18 +289,8 @@
       "origin": {
         "lat": 47.72196955175255,
         "lon": 11.557750768074579
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "bad_tolz_lenggries.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Furnas",
@@ -345,7 +312,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/furnas.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [-25.3106707, 37.7725985],
         [-25.3322401, 37.7681991],
@@ -360,18 +326,8 @@
       "origin": {
         "lat": 37.77060760698926,
         "lon": -25.3225223579699
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "furnas.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Seebergkopf",
@@ -402,7 +358,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/seebergkopf.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.9864723, 47.6878397],
         [11.9779470, 47.6587764],
@@ -419,18 +374,8 @@
       "origin": {
         "lat": 47.669499369611074,
         "lon": 11.99330612552111
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "seebergkopf.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Tegernsee Panoramaweg",
@@ -452,7 +397,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/tegernsee.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.7569037, 47.7143662],
         [11.7714181, 47.6937201],
@@ -472,18 +416,8 @@
       "origin": {
         "lat": 47.722673178149414,
         "lon": 11.737263344577908
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "tegernsee.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Gindelalmschneid",
@@ -541,7 +475,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/gindelalmschneid.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.8597632, 47.7355828],
         [11.8507078, 47.7280518],
@@ -559,18 +492,8 @@
       "origin": {
         "lat": 47.72427308309646,
         "lon": 11.806826779744757
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "gindelalmschneid.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Laimbachfall",
@@ -592,7 +515,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/laimbachfall.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.3714592, 47.6607930],
         [11.3819654, 47.6498367],
@@ -607,18 +529,8 @@
       "origin": {
         "lat": 47.65376837021519,
         "lon": 11.365191215057575
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "laimbachfall.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Herzogstand",
@@ -640,7 +552,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/herzogstand.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.3161116, 47.5963793],
         [11.3084925, 47.6134565],
@@ -655,18 +566,8 @@
       "origin": {
         "lat": 47.60945578486503,
         "lon": 11.324014154941546
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "herzogstand.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Nebelhorn",
@@ -798,7 +699,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/nebelhorn.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [10.3423461, 47.4218727],
         [10.3469499, 47.4139757],
@@ -817,18 +717,8 @@
       "origin": {
         "lat": 47.4038754027396,
         "lon": 10.316559709977405
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "nebelhorn.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Jenner",
@@ -850,7 +740,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/jenner.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [12.9949553, 47.5910381],
         [13.0139178, 47.5657334],
@@ -870,18 +759,8 @@
       "origin": {
         "lat": 47.580462888194106,
         "lon": 13.01320715137937
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "jenner.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Bayrischzell Hohenweg",
@@ -903,7 +782,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/bayrischzell_hohenweg.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [12.0109980, 47.6757044],
         [12.0033278, 47.6581326],
@@ -920,18 +798,8 @@
       "origin": {
         "lat": 47.65694736788036,
         "lon": 12.000585321656944
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "bayrischzell_hohenweg.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Starnberg - Tutzing",
@@ -962,7 +830,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/starnberg_tutzing.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.3438675, 47.9959377],
         [11.3136209, 47.9564692],
@@ -978,18 +845,8 @@
       "origin": {
         "lat": 47.95257010612972,
         "lon": 11.306729134521248
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "starnberg_tutzing.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Feldafing - Tutzing",
@@ -1011,7 +868,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/feldafing_tutzing.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.2902416, 47.9469563],
         [11.2728014, 47.9071073],
@@ -1026,18 +882,8 @@
       "origin": {
         "lat": 47.930261220288685,
         "lon": 11.284581867948528
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "feldafing_tutzing.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Starnberg - Munsing",
@@ -1059,7 +905,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/starnberg_munsing.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.3438675, 47.9959377],
         [11.3593591, 47.9957521],
@@ -1077,18 +922,8 @@
       "origin": {
         "lat": 47.95475447940952,
         "lon": 11.347819695655469
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "starnberg_munsing.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Kegon falls",
@@ -1110,7 +945,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/kegon.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [139.4230190, 36.8067697],
         [139.4284689, 36.7958985],
@@ -1127,18 +961,8 @@
       "origin": {
         "lat": 36.77532999484222,
         "lon": 139.45267791539462
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "kegon.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Kloster Andechs",
@@ -1160,7 +984,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/herrsching_andechs.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.1703947, 47.9984622],
         [11.1827828, 47.9736348]
@@ -1174,18 +997,8 @@
       "origin": {
         "lat": 47.986417515729,
         "lon": 11.17686189390908
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "herrsching_andechs.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Takao",
@@ -1207,7 +1020,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/takao.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [139.2699078, 35.6325002],
         [139.2436878, 35.6252267],
@@ -1223,18 +1035,8 @@
       "origin": {
         "lat": 35.62768655665466,
         "lon": 139.2574978803166
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "takao.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Nokogiri",
@@ -1256,7 +1058,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/nokogiri.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [139.8288530, 35.1585708],
         [139.8338288, 35.1594494],
@@ -1272,18 +1073,8 @@
       "origin": {
         "lat": 35.15040701873966,
         "lon": 139.83286494716577
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "nokogiri.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Oyama",
@@ -1305,7 +1096,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/oyama.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [139.2313338, 35.4408317],
         [139.2379321, 35.4314913],
@@ -1322,18 +1112,8 @@
       "origin": {
         "lat": 35.43231633328529,
         "lon": 139.24084817830578
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "oyama.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Miura",
@@ -1355,7 +1135,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/miura.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [139.6330533, 35.1778307],
         [139.6044781, 35.1986717],
@@ -1378,18 +1157,8 @@
       "origin": {
         "lat": 35.164055671241385,
         "lon": 139.61941165704067
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "miura.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Fujisan",
@@ -1411,7 +1180,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/fuji.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [138.7372814, 35.3681650],
         [138.7477964, 35.3890384],
@@ -1429,18 +1197,8 @@
       "origin": {
         "lat": 35.40823878609355,
         "lon": 138.7219919858139
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "fuji.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Josefsthaler Wasserfälle",
@@ -1462,7 +1220,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/josefsthaler_wasserfall.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.8597632, 47.7355828],
         [11.8507078, 47.7280518],
@@ -1478,18 +1235,8 @@
       "origin": {
         "lat": 47.71391968715959,
         "lon": 11.865221937477509
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "josefsthaler_wasserfall.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Tegernsee Rottachfall",
@@ -1511,7 +1258,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/tegernsee_rottachfall.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.7569037, 47.7143662],
         [11.7714181, 47.6937201],
@@ -1529,18 +1275,8 @@
       "origin": {
         "lat": 47.69324119219487,
         "lon": 11.784385533537876
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "tegernsee_rottachfall.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Himmelschrofen",
@@ -1562,7 +1298,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/himmelschrofen.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [10.2782500, 47.4112728],
         [10.2923397, 47.3805571],
@@ -1579,18 +1314,8 @@
       "origin": {
         "lat": 47.38242779259871,
         "lon": 10.288262200337856
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "himmelschrofen.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Wank",
@@ -1612,7 +1337,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/wank.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.0970176, 47.4915407],
         [11.1086752, 47.4952846],
@@ -1632,18 +1356,8 @@
       "origin": {
         "lat": 47.50560594251366,
         "lon": 11.125975251052337
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "wank.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Kramerspitz",
@@ -1665,7 +1379,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/kramerspitz.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.0970176, 47.4915407],
         [11.0914529, 47.4945584],
@@ -1686,18 +1399,8 @@
       "origin": {
         "lat": 47.501663142150775,
         "lon": 11.058738178106545
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "kramerspitz.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Eibsee",
@@ -1728,7 +1431,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/eibsee.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [10.9910094, 47.4574009],
         [10.9880085, 47.4568421],
@@ -1748,18 +1450,8 @@
       "origin": {
         "lat": 47.45766344816063,
         "lon": 10.974007578406415
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "eibsee.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Sonnenspitz & Jochberg",
@@ -1781,7 +1473,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/jochberg.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.3714592, 47.6607930],
         [11.3760576, 47.6393841],
@@ -1797,18 +1488,8 @@
       "origin": {
         "lat": 47.63977413918012,
         "lon": 11.365787921240647
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "jochberg.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Riefenkopf & Hahnenköpfle",
@@ -1830,7 +1511,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/riefenkopf.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [10.3173758, 47.3792800],
         [10.3218202, 47.3788964],
@@ -1851,18 +1531,8 @@
       "origin": {
         "lat": 47.39439835079049,
         "lon": 10.303271768206532
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "riefenkopf.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Neuschwanstein & Tegelberg",
@@ -1884,7 +1554,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/tegelberg.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [10.7401371, 47.5567196],
         [10.7504319, 47.5578726],
@@ -1907,18 +1576,8 @@
       "origin": {
         "lat": 47.56760807710435,
         "lon": 10.741207474493931
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "tegelberg.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Partnachklamm",
@@ -1940,7 +1599,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/partnachklamm.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.0970176, 47.4915407],
         [11.1122847, 47.4831679],
@@ -1956,18 +1614,8 @@
       "origin": {
         "lat": 47.47916032149417,
         "lon": 11.109043243049138
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "partnachklamm.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Miyagase Dam",
@@ -1989,7 +1637,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/miyagase.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [139.2618586, 35.5427344],
         [139.2595189, 35.5406738],
@@ -2007,18 +1654,8 @@
       "origin": {
         "lat": 35.54106151953002,
         "lon": 139.2542738052721
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "miyagase.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Murnau",
@@ -2040,7 +1677,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/murnau.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.1927787, 47.6822758],
         [11.1965473, 47.6745402],
@@ -2057,18 +1693,8 @@
       "origin": {
         "lat": 47.67899829787426,
         "lon": 11.194680276275825
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "murnau.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Lisboa Monsanto",
@@ -2090,7 +1716,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/monsanto.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [-9.1500263, 38.7252919],
         [-9.1558141, 38.7372996],
@@ -2111,18 +1736,8 @@
       "origin": {
         "lat": 38.72636714120497,
         "lon": -9.17257057910392
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "monsanto.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Vorderskopf",
@@ -2144,7 +1759,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/vorderskopf.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.4375320, 47.4970916],
         [11.4583059, 47.4915784],
@@ -2159,18 +1773,8 @@
       "origin": {
         "lat": 47.49440007670227,
         "lon": 11.449449062347414
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "vorderskopf.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Älpelesattel",
@@ -2192,7 +1796,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/alpelesattel.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [10.2946136, 47.3910809],
         [10.3363002, 47.3885560],
@@ -2212,18 +1815,8 @@
       "origin": {
         "lat": 47.38033557132068,
         "lon": 10.323028564453127
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "alpelesattel.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Schrecksee",
@@ -2245,7 +1838,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/schrecksee.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [10.4387397, 47.4550670],
         [10.4683537, 47.4392410],
@@ -2261,18 +1853,8 @@
       "origin": {
         "lat": 47.45303334256455,
         "lon": 10.478081677535556
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "schrecksee.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Branderschrofen",
@@ -2294,7 +1876,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/branderschrofen.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [10.7560762, 47.5684258],
         [10.7809350, 47.5681512],
@@ -2317,18 +1898,8 @@
       "origin": {
         "lat": 47.55810970349157,
         "lon": 10.766301155090334
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "branderschrofen.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Klammspitz",
@@ -2350,7 +1921,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/klammspitz.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [10.9093563, 47.5806072],
         [10.9274318, 47.5819559],
@@ -2370,18 +1940,8 @@
       "origin": {
         "lat": 47.57626515499256,
         "lon": 10.933413505554201
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "klammspitz.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Kranzberg",
@@ -2403,7 +1963,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/kranzberg.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.2657490, 47.4399924],
         [11.2620799, 47.4414263],
@@ -2421,18 +1980,8 @@
       "origin": {
         "lat": 47.44440120899903,
         "lon": 11.238842010498049
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "kranzberg.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Rotwand",
@@ -2532,7 +2081,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/rotwand.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.9344203, 47.6502104],
         [11.9354246, 47.6461036],
@@ -2550,18 +2098,8 @@
       "origin": {
         "lat": 47.65475043477393,
         "lon": 11.909780502319338
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "rotwand.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Schärtenspitze",
@@ -2583,7 +2121,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/schartenspitze.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [12.8619922, 47.6056924],
         [12.8746816, 47.5822000],
@@ -2598,18 +2135,8 @@
       "origin": {
         "lat": 47.59429854945577,
         "lon": 12.879066467285158
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "schartenspitze.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Wimbachklamm",
@@ -2631,7 +2158,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/wimbachklamm.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [12.9243631, 47.6033111],
         [12.8965199, 47.5723295]
@@ -2645,18 +2171,8 @@
       "origin": {
         "lat": 47.58879945676844,
         "lon": 12.911553382873537
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "wimbachklamm.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "St. Bartholomä Eiskapelle",
@@ -2678,7 +2194,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/bartholoma_eiskapelle.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [12.9727283, 47.5437613],
         [12.9351461, 47.5435439]
@@ -2692,18 +2207,8 @@
       "origin": {
         "lat": 47.544249993378145,
         "lon": 12.952623367309572
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "bartholoma_eiskapelle.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Röthbachfall",
@@ -2725,7 +2230,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/rothbachfall.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [12.9727401, 47.5251534],
         [13.0111689, 47.5080529],
@@ -2742,18 +2246,8 @@
       "origin": {
         "lat": 47.511055796571725,
         "lon": 12.986741065979004
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "rothbachfall.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Altmühltal Panoramaweg",
@@ -2775,7 +2269,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/altmuhltal_panoramaweg.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [10.9082493, 48.9612820],
         [10.9640940, 48.9262769]
@@ -2789,18 +2282,8 @@
       "origin": {
         "lat": 48.94657521916045,
         "lon": 10.938777923583986
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "altmuhltal_panoramaweg.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Murnau - Uffing",
@@ -2822,7 +2305,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/murnau_uffing.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.1927787, 47.6822758],
         [11.1869954, 47.6795786],
@@ -2842,18 +2324,8 @@
       "origin": {
         "lat": 47.69913366604341,
         "lon": 11.175413131713867
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "murnau_uffing.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Wallberg",
@@ -2875,7 +2347,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/wallberg.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.7714181, 47.6937201],
         [11.7760724, 47.6752184],
@@ -2894,18 +2365,8 @@
       "origin": {
         "lat": 47.67388377441822,
         "lon": 11.794767379760744
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "wallberg.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Gmund - Neuhaus",
@@ -2927,7 +2388,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/gmund_neuhaus.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.7349962, 47.7496082],
         [11.7478632, 47.7323311],
@@ -2947,18 +2407,8 @@
       "origin": {
         "lat": 47.73274268951562,
         "lon": 11.803951263427734
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "gmund_neuhaus.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Kochel Walchenseekraftwerk",
@@ -2980,7 +2430,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/kochel_hydropower.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.3512873, 47.6375811],
         [11.3391836, 47.6343063],
@@ -3000,18 +2449,8 @@
       "origin": {
         "lat": 47.64694479333218,
         "lon": 11.341323852539064
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "kochel_hydropower.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Jochberg",
@@ -3033,7 +2472,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/jochberg_only.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.3717213, 47.6258691],
         [11.3458192, 47.6174472]
@@ -3047,18 +2485,8 @@
       "origin": {
         "lat": 47.62195450772335,
         "lon": 11.357999129116743
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "jochberg_only.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Blaubeuren",
@@ -3080,7 +2508,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/blaubeuren.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [9.7913032, 48.4037943],
         [9.7684239, 48.4081653],
@@ -3096,18 +2523,8 @@
       "origin": {
         "lat": 48.410801560200944,
         "lon": 9.77989196777344
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "blaubeuren.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Freising - Garching",
@@ -3129,7 +2546,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/freising_garching.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.7445653, 48.3951508],
         [11.6522822, 48.2493200]
@@ -3143,18 +2559,8 @@
       "origin": {
         "lat": 48.31996234037576,
         "lon": 11.695632934570312
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "freising_garching.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Garching - München",
@@ -3176,7 +2582,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/garching_munchen.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.6522822, 48.2493200],
         [11.5944693, 48.1418543],
@@ -3191,18 +2596,8 @@
       "origin": {
         "lat": 48.193098793553624,
         "lon": 11.62834167480469
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "garching_munchen.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Fockenstein",
@@ -3224,7 +2619,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/fockenstein.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.5735467, 47.6802772],
         [11.6273785, 47.6648090],
@@ -3242,18 +2636,8 @@
       "origin": {
         "lat": 47.69127688626756,
         "lon": 11.658382415771484
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "fockenstein.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Wildbarren",
@@ -3275,7 +2659,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/wildbarren.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [12.1752506, 47.6526185],
         [12.1382447, 47.6811906],
@@ -3292,18 +2675,8 @@
       "origin": {
         "lat": 47.692663462837984,
         "lon": 12.138004302978516
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "wildbarren.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Heimgarten",
@@ -3325,7 +2698,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/heimgarten.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.3161116, 47.5963793],
         [11.2806617, 47.6125791],
@@ -3340,18 +2712,8 @@
       "origin": {
         "lat": 47.617735565265804,
         "lon": 11.265192043227701
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "heimgarten.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Benediktenwand",
@@ -3387,7 +2749,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/benediktenwand.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.5735467, 47.6802772],
         [11.5086377, 47.6606163],
@@ -3407,18 +2768,8 @@
       "origin": {
         "lat": 47.674866264152534,
         "lon": 11.469383239746096
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "benediktenwand.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Aiplspitz",
@@ -3507,7 +2858,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/aiplspitz.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.9864723, 47.6878397],
         [11.9661809, 47.6939023],
@@ -3526,18 +2876,8 @@
       "origin": {
         "lat": 47.676253276991204,
         "lon": 11.936044692993166
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "aiplspitz.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Simetsberg",
@@ -3601,7 +2941,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/simetsberg.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.2537283, 47.5665209],
         [11.3012750, 47.5697947],
@@ -3616,18 +2955,8 @@
       "origin": {
         "lat": 47.5685925661014,
         "lon": 11.279954910278322
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "simetsberg.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Roßkopf",
@@ -3740,7 +3069,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/rosskopf.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.8880556, 47.6618854],
         [11.8879367, 47.6563143],
@@ -3759,18 +3087,8 @@
       "origin": {
         "lat": 47.65411446320232,
         "lon": 11.872787475585938
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "rosskopf.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Bockerlbahn-Weg",
@@ -3809,7 +3127,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/bockerlbahnweg.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.8954411, 47.6393151],
         [11.8940537, 47.6507907],
@@ -3828,18 +3145,8 @@
       "origin": {
         "lat": 47.678622670466915,
         "lon": 11.880340576171877
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "bockerlbahnweg.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Auerspitz",
@@ -3909,7 +3216,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/auerspitz.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.8880556, 47.6618854],
         [11.8879367, 47.6563143],
@@ -3931,18 +3237,8 @@
       "origin": {
         "lat": 47.667338673431075,
         "lon": 11.932364571863449
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "auerspitz.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Krün",
@@ -4008,7 +3304,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/kruen.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.2781513, 47.5061647],
         [11.2684429, 47.5081606],
@@ -4027,18 +3322,8 @@
       "origin": {
         "lat": 47.49636,
         "lon": 11.24264
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "kruen.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Hirschberg",
@@ -4129,7 +3414,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/hirschberg.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.7462209, 47.6469534],
         [11.7032747, 47.6595256],
@@ -4147,18 +3431,8 @@
       "origin": {
         "lat": 47.66677462110549,
         "lon": 11.730909347534181
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "hirschberg.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Spitzingsee Schlitten",
@@ -4199,7 +3473,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/spitzingsee_schlittenfahrt.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.8880556, 47.6618854],
         [11.8538258, 47.6702560],
@@ -4218,18 +3491,8 @@
       "origin": {
         "lat": 47.68757916850813,
         "lon": 11.87021255493164
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "spitzingsee_schlittenfahrt.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Soiernspitze",
@@ -4293,7 +3556,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/soiernspitze.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.3571077, 47.4815666],
         [11.3547209, 47.4671705],
@@ -4310,18 +3572,8 @@
       "origin": {
         "lat": 47.464075716428574,
         "lon": 11.31248474121094
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "soiernspitze.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Großer Traithen",
@@ -4410,7 +3662,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/grosser_traithen.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [12.0111304, 47.6385934],
         [12.0390564, 47.6509419],
@@ -4429,18 +3680,8 @@
       "origin": {
         "lat": 47.645557001604324,
         "lon": 12.09199905395508
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "grosser_traithen.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Pyramidenspitze",
@@ -4585,7 +3826,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/pyramidenspitze.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [12.2400625, 47.6055566],
         [12.2463971, 47.6089803],
@@ -4606,18 +3846,8 @@
       "origin": {
         "lat": 47.597366213216866,
         "lon": 12.214221954345705
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "pyramidenspitze.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Rampoldplatte",
@@ -4683,7 +3913,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/rampoldplatte.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [12.1069038, 47.7410763],
         [12.0436119, 47.7239405]
@@ -4697,18 +3926,8 @@
       "origin": {
         "lat": 47.733031332912894,
         "lon": 12.074747085571289
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "rampoldplatte.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Herrsching - Tutzing",
@@ -4832,7 +4051,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/herrsching_tutzing.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.1703947, 47.9984622],
         [11.1666375, 47.9973810],
@@ -4850,18 +4068,8 @@
       "origin": {
         "lat": 47.95774347215711,
         "lon": 11.223907470703125
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "herrsching_tutzing.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Hochstaufen",
@@ -4927,7 +4135,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/hochstaufen.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [12.9115963, 47.7596347],
         [12.8761479, 47.7537784],
@@ -4945,18 +4152,8 @@
       "origin": {
         "lat": 47.74648034083308,
         "lon": 12.875289916992188
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "hochstaufen.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Riedenburg - Kelheim",
@@ -5007,7 +4204,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/riedenburg_kelheim.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.6814183, 48.9573690],
         [11.6822098, 48.9606218],
@@ -5029,18 +4225,8 @@
       "origin": {
         "lat": 48.92791313673253,
         "lon": 11.806182861328127
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "riedenburg_kelheim.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Frau Hitt",
@@ -5093,7 +4279,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/frau_hitt.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.2668145, 47.3918701],
         [11.3087840, 47.3747646],
@@ -5112,18 +4297,8 @@
       "origin": {
         "lat": 47.331813491093165,
         "lon": 11.324269986715631
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "frau_hitt.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Hoher Fricken",
@@ -5171,7 +4346,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/hoher_fricken.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.1148716, 47.5311056],
         [11.1322409, 47.5257291],
@@ -5194,18 +4368,8 @@
       "origin": {
         "lat": 47.51432904852429,
         "lon": 11.126458152207123
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "hoher_fricken.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Caldeirão Verde PR9",
@@ -5266,7 +4430,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/caldeirao_verde.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [-16.9060003, 32.7838419],
         [-16.9218614, 32.7789972],
@@ -5281,18 +4444,8 @@
       "origin": {
         "lat": 32.78085234570831,
         "lon": -16.92074775695801
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "caldeirao_verde.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Pedra Rija PR1",
@@ -5338,7 +4491,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/pedra_rija.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [-16.9368891, 32.7391717],
         [-16.9285859, 32.7350716]
@@ -5352,18 +4504,8 @@
       "origin": {
         "lat": 32.73729195625725,
         "lon": -16.932892799377445
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "pedra_rija.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "São Lourenço PR8 Partial",
@@ -5385,7 +4527,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/sao_lourenco_partial.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [-16.7010340, 32.7433482],
         [-16.6976713, 32.7489718],
@@ -5400,18 +4541,8 @@
       "origin": {
         "lat": 32.74703805258418,
         "lon": -16.695463657379154
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "sao_lourenco_partial.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Schweinsberg and Türkenköpfl",
@@ -5473,7 +4604,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/schweinsberg.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.9661809, 47.6939023],
         [11.9992281, 47.7053102],
@@ -5489,18 +4619,8 @@
       "origin": {
         "lat": 47.70693150460002,
         "lon": 11.978187561035158
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "schweinsberg.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Laber Hauptgipfel",
@@ -5559,7 +4679,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/laber_hauptgipfel.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.0563870, 47.5999017],
         [11.0802376, 47.5964637],
@@ -5576,18 +4695,8 @@
       "origin": {
         "lat": 47.59180955803043,
         "lon": 11.08898162841797
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "laber_hauptgipfel.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Buch-/Roßstein",
@@ -5648,7 +4757,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/buchstein.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.7462209, 47.6469534],
         [11.6931138, 47.6438242],
@@ -5669,18 +4777,8 @@
       "origin": {
         "lat": 47.657525492808574,
         "lon": 11.659584045410158
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "buchstein.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Breitenstein and Wendelstein",
@@ -5780,7 +4878,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/breitenstein_wendelstein.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.9332140, 47.7056945],
         [11.9637481, 47.7133234],
@@ -5800,18 +4897,8 @@
       "origin": {
         "lat": 47.70242622904483,
         "lon": 11.979045867919922
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "breitenstein_wendelstein.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Blauberge and Halserspitz",
@@ -5915,7 +5002,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/blauberge.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.7347044, 47.6230367],
         [11.7347352, 47.5897362],
@@ -5932,18 +5018,8 @@
       "origin": {
         "lat": 47.610213718421726,
         "lon": 11.766700744628906
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "blauberge.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Zugspitze über Reintal",
@@ -6040,7 +5116,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/zugspitze_reintal.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.1177715, 47.4825277],
         [11.1193623, 47.4695861],
@@ -6059,18 +5134,8 @@
       "origin": {
         "lat": 47.44480754169437,
         "lon": 11.057820862664295
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "zugspitze_reintal.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Zugspitze über Höllental",
@@ -6151,7 +5216,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/zugspitze_hoellental.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.0463946, 47.4660396],
         [11.0251958, 47.4380793],
@@ -6166,18 +5230,8 @@
       "origin": {
         "lat": 47.441324588172975,
         "lon": 11.01705551147461
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "zugspitze_hoellental.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Buchstein via Bayerwald",
@@ -6225,7 +5279,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/buchstein_only.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.6757052, 47.6156095],
         [11.6757671, 47.6309637],
@@ -6244,18 +5297,8 @@
       "origin": {
         "lat": 47.64758085221801,
         "lon": 11.71142578125
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "buchstein_only.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Gindelalmschneid and Auer Berg",
@@ -6328,7 +5371,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/auer_berg.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.7569037, 47.7143662],
         [11.7940329, 47.7181107],
@@ -6347,18 +5389,8 @@
       "origin": {
         "lat": 47.7305489474114,
         "lon": 11.804981231689455
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "auer_berg.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Moosburg to Freising",
@@ -6380,7 +5412,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/moosburg_freising.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.9304961, 48.4700110],
         [11.7445653, 48.3951508]
@@ -6394,18 +5425,8 @@
       "origin": {
         "lat": 48.430681299655106,
         "lon": 11.852703094482424
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "moosburg_freising.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Bodenschneid",
@@ -6489,7 +5510,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/bodenschneid.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.8860019, 47.6722099],
         [11.8538258, 47.6702560],
@@ -6509,18 +5529,8 @@
       "origin": {
         "lat": 47.68879251104638,
         "lon": 11.860427856445314
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "bodenschneid.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Bischof and Krottenkopf",
@@ -6598,7 +5608,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/krottenkopf_bischof.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.1148716, 47.5311056],
         [11.1757851, 47.5404528],
@@ -6617,18 +5626,8 @@
       "origin": {
         "lat": 47.56992449234948,
         "lon": 11.17464065551758
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "krottenkopf_bischof.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Vordere Kesselschneid",
@@ -6763,7 +5762,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/vordere_kesselschneid.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [12.2400625, 47.6055566],
         [12.2463971, 47.6089803],
@@ -6785,18 +5783,8 @@
       "origin": {
         "lat": 47.597366213216866,
         "lon": 12.214221954345705
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "vordere_kesselschneid.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Thierberg",
@@ -6849,7 +5837,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/thierberg.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [12.1905026, 47.6098511],
         [12.1630281, 47.6138359],
@@ -6867,18 +5854,8 @@
       "origin": {
         "lat": 47.60020219518782,
         "lon": 12.17216491699219
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "thierberg.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Wasserspitz",
@@ -6972,7 +5949,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/wasserspitz.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.8046984, 47.6848001],
         [11.8454605, 47.6911654],
@@ -6995,18 +5971,8 @@
       "origin": {
         "lat": 47.677871412038485,
         "lon": 11.825666427612305
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "wasserspitz.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Brecherspitz",
@@ -7072,7 +6038,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/brecherspitz.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.8880556, 47.6618854],
         [11.8538258, 47.6702560],
@@ -7089,18 +6054,8 @@
       "origin": {
         "lat": 47.68769472615646,
         "lon": 11.86746597290039
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "brecherspitz.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Lainbachfall and Jochberg",
@@ -7151,7 +6106,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/lainbachfall_jochberg.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.3714592, 47.6607930],
         [11.3819654, 47.6498367],
@@ -7168,18 +6122,8 @@
       "origin": {
         "lat": 47.64237650648966,
         "lon": 11.363725662231445
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "lainbachfall_jochberg.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Omiš Tvrđava \"Stari grad\"",
@@ -7217,7 +6161,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/omis_fort.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [16.6861604, 43.4447441],
         [16.6914148, 43.4449119],
@@ -7233,18 +6176,8 @@
       "origin": {
         "lat": 43.44216982407968,
         "lon": 16.693468093872074
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "omis_fort.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Omiš Tvrđava \"Stari grad\" Via Ferrata",
@@ -7292,7 +6225,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/omis_fort_climb.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [16.6861604, 43.4447441],
         [16.6914148, 43.4449119],
@@ -7308,18 +6240,8 @@
       "origin": {
         "lat": 43.44216982407968,
         "lon": 16.693468093872074
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "omis_fort_climb.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Rainerkopf",
@@ -7388,7 +6310,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/rainerkopf.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.8733766, 47.7062602],
         [11.8448536, 47.6830911],
@@ -7410,18 +6331,8 @@
       "origin": {
         "lat": 47.68313000437364,
         "lon": 11.86351776123047
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "rainerkopf.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Cima Sophia",
@@ -7480,7 +6391,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/cima_sophia.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [10.9653408, 46.1443855],
         [10.9622329, 46.1523764],
@@ -7500,18 +6410,8 @@
       "origin": {
         "lat": 46.15855073467609,
         "lon": 10.95311164855957
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "cima_sophia.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Setzberg",
@@ -7560,7 +6460,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/setzberg.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.7462209, 47.6469534],
         [11.7854616, 47.6408063],
@@ -7578,18 +6477,8 @@
       "origin": {
         "lat": 47.66891324873771,
         "lon": 11.768261988119518
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "setzberg.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Höhenglücksteig",
@@ -7701,7 +6590,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/hoehengluecksteig.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.5077442, 49.5428551],
         [11.5229667, 49.5464154],
@@ -7722,18 +6610,8 @@
       "origin": {
         "lat": 49.53813224724326,
         "lon": 11.547290883722177
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "hoehengluecksteig.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Trainsjoch",
@@ -7783,7 +6661,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/trainsjoch.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [12.1905026, 47.6098511],
         [12.1630281, 47.6138359],
@@ -7803,18 +6680,8 @@
       "origin": {
         "lat": 47.64434265359565,
         "lon": 12.092170715332033
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "trainsjoch.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Brünnstein",
@@ -7891,7 +6758,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/bruennstein.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [12.0834884, 47.6751751],
         [12.0816908, 47.6712336],
@@ -7911,18 +6777,8 @@
       "origin": {
         "lat": 47.66157218807329,
         "lon": 12.131069223310062
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "bruennstein.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Breitensteinfensterl",
@@ -8009,7 +6865,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/breitensteinfensterl.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.9332140, 47.7056945],
         [11.9637481, 47.7133234],
@@ -8029,18 +6884,8 @@
       "origin": {
         "lat": 47.712995683722205,
         "lon": 11.958892828925716
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "breitensteinfensterl.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "München - Starnberg",
@@ -8075,7 +6920,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/muenchen_starnberg.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.5569426, 48.1407253],
         [11.3593591, 47.9957521],
@@ -8090,18 +6934,8 @@
       "origin": {
         "lat": 48.06832937569165,
         "lon": 11.463575699809981
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "muenchen_starnberg.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Bolsterlanger Horn",
@@ -8152,7 +6986,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/bolsterlanger_horn_only.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [10.2717254, 47.4559694],
         [10.2333699, 47.4602479],
@@ -8169,18 +7002,8 @@
       "origin": {
         "lat": 47.45902720869878,
         "lon": 10.238142013549806
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "bolsterlanger_horn_only.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Oberammergau to Sonnenberg",
@@ -8248,7 +7071,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/oberammergau_sonnenberg.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.0563870, 47.5999017],
         [11.0267772, 47.5840874],
@@ -8265,18 +7087,8 @@
       "origin": {
         "lat": 47.59079656251042,
         "lon": 11.02954387664795
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "oberammergau_sonnenberg.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Hoher Kalmberg",
@@ -8327,7 +7139,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/hoher_kalmberg.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [13.5401183, 47.5869637],
         [13.5615707, 47.6208792],
@@ -8344,18 +7155,8 @@
       "origin": {
         "lat": 47.61761985489538,
         "lon": 13.583049774169924
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "hoher_kalmberg.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Geißwand",
@@ -8404,7 +7205,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/geisswand.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [13.7871447, 47.8427673],
         [13.7761018, 47.8446972],
@@ -8425,18 +7225,8 @@
       "origin": {
         "lat": 47.84859079803738,
         "lon": 13.779730796813965
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "geisswand.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Bichl to Blomberg",
@@ -8613,7 +7403,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/bichl_blomberg.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.4087090, 47.7238031],
         [11.4448587, 47.7194665],
@@ -8639,18 +7428,8 @@
       "origin": {
         "lat": 47.74105497889003,
         "lon": 11.494789123535158
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "bichl_blomberg.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Unterammergau to Sonnenberg",
@@ -8706,7 +7485,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/unterammergau_sonnenberg.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.0304230, 47.6172496],
         [11.0155039, 47.6048137],
@@ -8723,18 +7501,8 @@
       "origin": {
         "lat": 47.60315376826435,
         "lon": 11.012842388860308
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "unterammergau_sonnenberg.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Lenggries Auerkamp",
@@ -8825,7 +7593,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/lenggries_auerkamp.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.7143687, 47.6223463],
         [11.6931138, 47.6438242],
@@ -8848,18 +7615,8 @@
       "origin": {
         "lat": 47.649893728326944,
         "lon": 11.635894775390627
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "lenggries_auerkamp.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Moosburg to Landshut",
@@ -8979,7 +7736,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/moosburg_landshut.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.9304961, 48.4700110],
         [12.0330994, 48.4817297],
@@ -9002,18 +7758,8 @@
       "origin": {
         "lat": 48.51034996749526,
         "lon": 12.04050064086914
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "moosburg_landshut.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Fockenstein and Geierstein",
@@ -9103,7 +7849,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/fockenstein_geierstein.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.7277939, 47.7020869],
         [11.7045932, 47.6988794],
@@ -9122,18 +7867,8 @@
       "origin": {
         "lat": 47.69451217425042,
         "lon": 11.645851135253908
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "fockenstein_geierstein.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Sněžka and Krakonoš",
@@ -9253,7 +7988,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/snezka_krakonos.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [15.7351998, 50.6946436],
         [15.7312645, 50.7078507],
@@ -9275,18 +8009,8 @@
       "origin": {
         "lat": 50.71896042963921,
         "lon": 15.669765472412111
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "snezka_krakonos.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Risserkogel",
@@ -9370,7 +8094,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/risserkogel.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.7462209, 47.6469534],
         [11.7806027, 47.6424542],
@@ -9391,18 +8114,8 @@
       "origin": {
         "lat": 47.635870345156,
         "lon": 11.774039268493654
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "risserkogel.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Neufahrn (Niederbayern) - Landshut",
@@ -9450,7 +8163,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/neufahrn_niederbayern_landshut.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [12.1903603, 48.7299318],
         [12.2087026, 48.6916490],
@@ -9468,18 +8180,8 @@
       "origin": {
         "lat": 48.653325044758695,
         "lon": 12.176971435546877
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "neufahrn_niederbayern_landshut.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Kofel",
@@ -9529,7 +8231,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/kofel.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.0563870, 47.5999017],
         [11.0595271, 47.5868607],
@@ -9545,18 +8246,8 @@
       "origin": {
         "lat": 47.59110046322524,
         "lon": 11.059792796605473
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "kofel.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Teufelstättkopf",
@@ -9691,7 +8382,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/teufelstaettkopf.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.0304230, 47.6172496],
         [11.0155039, 47.6048137],
@@ -9717,18 +8407,8 @@
       "origin": {
         "lat": 47.59979706431779,
         "lon": 11.00527116370992
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "teufelstaettkopf.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Neufahrn (Niederbayern) to Eggmühl",
@@ -9781,7 +8461,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/neufahrn_niederbayern_eggmuehl.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [12.1903603, 48.7299318],
         [12.1900676, 48.7370986],
@@ -9798,18 +8477,8 @@
       "origin": {
         "lat": 48.77859147884576,
         "lon": 12.200832366943361
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "neufahrn_niederbayern_eggmuehl.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Obergries to Bad Wiessee",
@@ -10030,7 +8699,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/rechelkopf_semmelberg.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.5620381, 47.7096589],
         [11.5636091, 47.7074613],
@@ -10061,18 +8729,8 @@
       "origin": {
         "lat": 47.7097615426664,
         "lon": 11.640186309814453
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "rechelkopf_semmelberg.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Ehrwald to Drachensee",
@@ -10247,7 +8905,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/drachensee.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [10.9385542, 47.3874899],
         [10.9352297, 47.3775867],
@@ -10267,18 +8924,8 @@
       "origin": {
         "lat": 47.372492444536164,
         "lon": 10.951314158625715
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "drachensee.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Brauneck Cable Car",
@@ -10373,7 +9020,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/brauneck_only.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [11.5735467, 47.6802772],
         [11.5544942, 47.6762969],
@@ -10390,18 +9036,8 @@
       "origin": {
         "lat": 47.67284347100743,
         "lon": 11.54817581176758
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "brauneck_only.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Eggmühl to Köfering",
@@ -10482,7 +9118,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/eggmuehl_koefering.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [12.1833286, 48.8370777],
         [12.2182478, 48.8514791],
@@ -10502,18 +9137,8 @@
       "origin": {
         "lat": 48.88052184622007,
         "lon": 12.196712493896484
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "eggmuehl_koefering.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Drachenkopf",
@@ -10644,7 +9269,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/drachenkopf.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [10.9385542, 47.3874899],
         [10.9352297, 47.3775867],
@@ -10665,18 +9289,8 @@
       "origin": {
         "lat": 47.37161708892748,
         "lon": 10.93568801879883
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "drachenkopf.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   },
   {
     "name": "Schneefernerkopf",
@@ -10890,7 +9504,6 @@
         }
       ],
       "filePath": "/_projects/data-viz/hikes/geojson/schneefernerkopf.json",
-      "fileType": "GeoJSON",
       "checkpoints": [
         [10.9135899, 47.4095595],
         [10.9385542, 47.3874899],
@@ -10912,17 +9525,7 @@
       "origin": {
         "lat": 47.40009212805469,
         "lon": 10.967960357666017
-      },
-      "tiles2d": "osm",
-      "tiles3d": "mapboxDEM",
-      "geometry": [{
-        "provider": "hikes/geojson",
-        "modes": [ "2d", "3d" ],
-        "path": "schneefernerkopf.json#/features/0"
-      }],
-      "geometrySource": "https://maps.openrouteservice.org/",
-      "statistics": true
-    },
-    "features": null
+      }
+    }
   }
 ]

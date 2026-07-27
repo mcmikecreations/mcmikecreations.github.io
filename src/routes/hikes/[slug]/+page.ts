@@ -1,7 +1,7 @@
 import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
 import type { HttpError } from '@sveltejs/kit'
-import { type Feature, type GeometryData, getMapFeatures, type Map, type OriginData } from '$lib/data/map-info';
+import type { Map } from '$lib/data/map-info';
 import hikes from '$lib/data/hikes.json';
 import { getAllPosts, parseMarkdown } from '$lib/hikes/hikes-info';
 import type { EntryGenerator } from './$types';

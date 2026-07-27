@@ -28,8 +28,6 @@
 		updateIndicator = $bindable(),
 	}: Props = $props();
 	let {
-		attrMapbox,
-		attrOSM,
 		origin,
 		projection,
 		map,
@@ -341,4 +339,5 @@
 </script>
 
 <div bind:this={container} class="w-full aspect-square container3d"></div>
-<Attribution {attrMapbox} {attrOSM} />
+<!-- The 3D map is always Mapbox Terrain-DEM textured with Mapbox Satellite, over OSM data. -->
+<Attribution attrMapbox attrOSM />
