@@ -1,5 +1,5 @@
 import { json } from '@sveltejs/kit';
-import { hikes } from '$lib/data/hikes-db';
+import { hikes, resolveHikeForDate } from '$lib/data/hikes-db';
 import type { Map } from '$lib/data/map-info';
 import { hashPeople } from '$lib/hikes/name-hash';
 
@@ -22,21 +22,24 @@ export async function GET() {
 
 	for (const h of hikes as Map[]) {
 		const slug = h.route.substring(h.route.lastIndexOf('/') + 1);
-		const nodeNames = (h.properties.nodes ?? [])
-			.map((n) => n.tags?.name)
-			.filter((name): name is string => !!name);
 
 		for (const d of h.properties.dates) {
 			if (h.properties.draft || !d.path) continue;
+			// A date may name its own sidecar, which carries its own POIs.
+			const hike = resolveHikeForDate(h, d);
+			const nodeNames = (hike.properties.nodes ?? [])
+				.map((n) => n.tags?.name)
+				.filter((name): name is string => !!name);
+
 			entries.push({
 				url: `/hikes/${d.date}-${slug}/`,
-				title: d.title ?? h.name,
-				hikeName: h.name,
+				title: d.title ?? hike.name,
+				hikeName: hike.name,
 				nodeNames,
 				tags: d.tags,
-				description: ((d.description ?? '') + ' ' + h.description).trim(),
+				description: ((d.description ?? '') + ' ' + hike.description).trim(),
 				date: d.date,
-				image: (d.image ?? h.image)?.replace('/hikes/', '/hikes/thumb/') ?? undefined,
+				image: (d.image ?? hike.image)?.replace('/hikes/', '/hikes/thumb/') ?? undefined,
 				peopleHashes: await hashPeople(d.people ?? [])
 			});
 		}

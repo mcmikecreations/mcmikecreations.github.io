@@ -1,3 +1,7 @@
+---
+ascent: 1050
+descent: 1420
+---
 Back in September 2024, I posted a list of hiking ideas, including
 [Nebelhorn (2224 m)](/hikes/2024-10-27-nebelhorn/) and
 [Simetsberg (1840 m)](/404/). This ridge got on

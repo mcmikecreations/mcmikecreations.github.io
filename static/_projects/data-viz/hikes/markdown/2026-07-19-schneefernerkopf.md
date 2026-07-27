@@ -1,3 +1,9 @@
+---
+distance: 26600
+duration: 706
+ascent: 2449
+descent: 851
+---
 Our chair organizes yearly "scientific retreats" (where they isolate us and
 force us to be productive). This year it was happening at Schneefernerhaus,
 a research station on the slope of [Zugspitze (2962 m)](/hikes/2025-09-18-zugspitze_hoellental/),

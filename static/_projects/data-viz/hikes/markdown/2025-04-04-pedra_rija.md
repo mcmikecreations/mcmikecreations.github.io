@@ -1,3 +1,7 @@
+---
+ascent: 380
+descent: 410
+---
 As soon as I and Serhii landed at the Madeira airport, we immediately took
 a taxi and drove to Pico do Areeiro (1818 m). The taxi driver was really confused where
 we were headed to, but we managed to convince him to drive us to the specified

@@ -1,3 +1,7 @@
+---
+ascent: 1360
+descent: 1350
+---
 After my November hike to [Hirschberg (1668 m)](/hikes/2024-11-17-hirschberg/),
 I was looking for adventures. Mikuláš and I were eyeing Signalkopf (1895 m) as
 a potential hike for a really long time. Given the season and the unknown snow

@@ -1,3 +1,7 @@
+---
+ascent: 2160
+descent: 20
+---
 Topo from [bergsteigen.com](https://www.bergsteigen.com/touren/klettersteig/hoellental-klettersteig-zugspitze/):
 ![Topo of the climb](/images/hikes/topo/zugspitze_hoellental.png)
 

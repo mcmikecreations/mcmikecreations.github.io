@@ -1,3 +1,7 @@
+---
+ascent: 1030
+descent: 740
+---
 When I was on a hike to [Seebergkopf (1538 m)](/404/),
 I noticed a very nice mountain in the distance. It was even visible from the
 train to Bayrischzell. That mountain was Aiplspitz (1759 m). Although it's

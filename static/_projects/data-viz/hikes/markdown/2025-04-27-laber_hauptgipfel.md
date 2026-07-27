@@ -1,3 +1,7 @@
+---
+ascent: 760
+descent: 800
+---
 I organized this hike with the DAAD scholars and David as a way to ease more
 people into hiking, as many participants from before have finished their
 studies and left Germany. We started off pretty rough with getting stuck on the

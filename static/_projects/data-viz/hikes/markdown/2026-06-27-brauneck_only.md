@@ -1,3 +1,7 @@
+---
+ascent: 900
+descent: 82
+---
 After I learned that I'll miss all summer solstice celebration events when the
 holiday actually happens, I was really disappointed. To my surprise, Lenggries
 decided to postpone their event a week due to the heat wave pressing on

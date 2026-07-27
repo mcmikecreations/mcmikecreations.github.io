@@ -1,3 +1,7 @@
+---
+ascent: 462
+descent: 481
+---
 To recover from the [Hoher Kalmberg (1833 m)](/hikes/2026-03-06-hoher_kalmberg)
 hike, I and Pavlo decided to take it easy and do a shorter hike. After a lot of
 negotiating, I lowered the difficulty level further, and we chose to hike up

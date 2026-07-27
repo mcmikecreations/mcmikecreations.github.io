@@ -1,3 +1,7 @@
+---
+ascent: 280
+descent: 300
+---
 Topo from [bergsteigen.com](https://www.bergsteigen.com/touren/klettersteig/ferrata-fortica-omis/):
 ![Topo of the climb](/images/hikes/topo/omis_fort_climb.png)
 

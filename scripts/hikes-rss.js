@@ -1,4 +1,4 @@
-import { loadHikes } from './load-hikes.js';
+import { loadHikes, resolveHikeForDate } from './load-hikes.js';
 import resume from '../src/lib/data/resume.json' with { type: "json" };
 import { writeFile } from 'fs';
 
@@ -26,15 +26,16 @@ let posts = hikes.flatMap(h => h.properties.dates
 		const date = new Date(d.date);
 		date.setHours(16);
 		const slug = h.route.substring(h.route.lastIndexOf('/') + 1);
+		const hike = resolveHikeForDate(h, d);
 		return {
 			year: date.getFullYear(),
 			month: date.getMonth() + 1,
 			day: date.getDate(),
 			date: date,
 			url: `/${d.date}-${slug}/`,
-			title: escapeXml(d.title ?? h.name),
-			image: (d.image ?? h.image)?.replace('/hikes/', '/hikes/thumb/'),
-			description: escapeXml((d.description ? (d.description + ' ') : '') + h.description),
+			title: escapeXml(d.title ?? hike.name),
+			image: (d.image ?? hike.image)?.replace('/hikes/', '/hikes/thumb/'),
+			description: escapeXml((d.description ? (d.description + ' ') : '') + hike.description),
 			tags: d.tags,
 			people: d.people
 		};

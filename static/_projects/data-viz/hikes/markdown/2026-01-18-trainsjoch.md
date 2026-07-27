@@ -1,3 +1,7 @@
+---
+ascent: 1230
+descent: 910
+---
 After a long discussion about where to go for the next hike, Stanislav and
 Bohdan settled on Trainsjoch (1707 m). I was rock climbing in a gym at the time
 of discussion, so I didn't have much say in the matter. The plan was to

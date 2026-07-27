@@ -1,3 +1,7 @@
+---
+ascent: 1260
+descent: 1230
+---
 After the demanding [Frau Hitt (2270 m) hike](/hikes/2025-03-23-frau_hitt/)
 the next route we chose had to be lighter and preferably with a stop at a local
 cafe or restaurant, so the Hoher Fricken (1940 m) was chosen as one of the best

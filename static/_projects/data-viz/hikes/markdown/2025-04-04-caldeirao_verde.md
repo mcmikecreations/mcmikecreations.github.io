@@ -1,3 +1,7 @@
+---
+ascent: 700
+descent: 710
+---
 After going on the [PR1 hike](/hikes/2025-04-04-pedra_rija/), because of
 bad weather forecasts for the rest
 of our stay, I and Serhii decided to tackle another hike

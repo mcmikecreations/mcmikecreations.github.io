@@ -1,3 +1,7 @@
+---
+ascent: 332
+descent: 339
+---
 I got two of my wisdom teeth pulled out three days ago, so I wasn't allowed to
 do any real hikes yet. But with the public holiday and the good weather, I just
 couldn't pass up the opportunity to go out and do some hiking. I was really

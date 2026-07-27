@@ -1,3 +1,7 @@
+---
+ascent: 1796
+descent: 1708
+---
 Ever since I did the [trip to Blomberg (1248 m)](/hikes/2026-03-15-bichl_blomberg/),
 I wanted to do another hike in the same area, since there were so many small
 summits to choose from. I chose them all! I decided to do a hike from

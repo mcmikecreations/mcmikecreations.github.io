@@ -1,3 +1,7 @@
+---
+ascent: 615
+descent: 623
+---
 With an extra holiday at hand, I decided to visit some interesting spots near
 Moosburg an der Isar. Although I didn't plan the route too carefully, I think I
 made it work at the end. Continuing the [Hiking Web](/hikes/tag/Web/)

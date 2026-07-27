@@ -1,3 +1,7 @@
+---
+ascent: 1660
+descent: 1670
+---
 I had Krottenkopf (2086 m) on my list of future hikes for quite some time,
 ever since my hike to [Aiplspitz (1759 m)](/hikes/2024-08-31-aiplspitz/). Scrolling through the list
 on Thursday evening, I

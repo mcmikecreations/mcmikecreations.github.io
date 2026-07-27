@@ -1,3 +1,7 @@
+---
+ascent: 1004
+descent: 1060
+---
 Mikuláš and I took off in a giant continuous line of tourists going up the
 asphalt road to the bottom of the mountain. It was a lush mixed forest, mostly
 covered in various pines. Some of the people on the trail were the same ones we

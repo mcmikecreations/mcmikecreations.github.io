@@ -1,3 +1,7 @@
+---
+ascent: 900
+descent: 940
+---
 The idea of the hike came up when I was exploring the area around Tegernsee,
 realizing that there were many interesting ridges I've never considered
 visiting before. One of them was Hirschberg (1668 m), the highest peak on

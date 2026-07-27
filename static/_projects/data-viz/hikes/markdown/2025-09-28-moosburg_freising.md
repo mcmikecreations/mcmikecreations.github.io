@@ -1,3 +1,7 @@
+---
+ascent: 70
+descent: 50
+---
 After the [Zugspitze Höllental hike](/hikes/2025-09-18-zugspitze_hoellental/)
 and a tough week, I was too tired to do a
 difficult hike. As a solution, I opted for a more relaxed hike from Moosburg

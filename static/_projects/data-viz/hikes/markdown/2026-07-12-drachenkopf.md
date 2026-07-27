@@ -1,3 +1,7 @@
+---
+ascent: 1566
+descent: 1549
+---
 During the [outing to Drachensee](/hikes/2026-06-21-drachensee/)
 I've been to recently, the original plan was to gather a small group with
 hikers from Nuremberg and explore the lakes on a chill social hike. That time

@@ -1,3 +1,7 @@
+---
+ascent: 1279
+descent: 165
+---
 As Pavlo, who joined me for the Italian and Austrian hikes, came to visit me in
 Munich, I proposed a few possible destinations with picturesque views and
 complex routes. They included Ehrwald to Knörrhütte, Karwendel,

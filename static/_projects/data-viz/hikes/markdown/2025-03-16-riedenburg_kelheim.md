@@ -1,3 +1,7 @@
+---
+ascent: 690
+descent: 710
+---
 I had to cancel the planned hike to [Scharnitz](/404/) due to bad weather conditions,
 so I and Mikuláš quickly came up with an alternative route near Regensburg,
 where the weather was much nicer. We set out to walk along Altmühltal

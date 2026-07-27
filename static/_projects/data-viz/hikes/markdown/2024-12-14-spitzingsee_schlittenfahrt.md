@@ -1,3 +1,7 @@
+---
+ascent: 400
+descent: 680
+---
 In the middle of the week, Annette posted an invite to a sledding trip at
 Spitzingsee. I haven't done any sledding in years, so I was excited to join.
 The weather was perfect for it, with clear skies and a good amount of snow on

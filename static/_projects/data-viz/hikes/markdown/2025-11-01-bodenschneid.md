@@ -1,3 +1,7 @@
+---
+ascent: 510
+descent: 830
+---
 This hike was organized by Annette from DAAD-Freundeskreis after quite a long
 break. I decided to tag along, since I hadn't made any plans due to the public
 holiday. The weather was insanely good too, 16.7°C in November, so I couldn't

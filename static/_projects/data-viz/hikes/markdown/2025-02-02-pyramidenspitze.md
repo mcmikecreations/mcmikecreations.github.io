@@ -1,3 +1,7 @@
+---
+ascent: 1600
+descent: 1600
+---
 The track for this hike wasn't set in stone, since me and the other hikers
 didn't know the trail conditions and wanted to decide on the route as we went
 on. While Vordere Kesselschneid (2002 m) was (and still is) in my backlog, the concrete

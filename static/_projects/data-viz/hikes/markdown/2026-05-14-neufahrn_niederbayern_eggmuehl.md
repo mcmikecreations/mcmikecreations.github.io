@@ -1,3 +1,7 @@
+---
+ascent: 310
+descent: 331
+---
 The next stop on my way to Regensburg was Eggmühl, the place of the famous
 1809 Napoleon Battle. I was a bit sore after playing tennis and table tennis
 the day before, so I was planning to do an easier hike. Besides, the forecast

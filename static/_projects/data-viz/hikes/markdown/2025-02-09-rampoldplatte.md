@@ -1,3 +1,7 @@
+---
+ascent: 940
+descent: 940
+---
 After the previous exhausting hikes I've done this route came as a breath of
 fresh air. I could wake up a bit later, come to München Hbf at a reasonable
 time without a hurry, board a half-empty train and go on my way with David, a

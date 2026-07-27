@@ -1,3 +1,7 @@
+---
+ascent: 2430
+descent: 2430
+---
 After much consideration, I and David decided to choose the Reintal route to
 hike up Zugspitze, the highest mountain in Germany at 2962 m. We chose the
 earliest train and bus connection to Garmisch Olympia-Skistadion, which

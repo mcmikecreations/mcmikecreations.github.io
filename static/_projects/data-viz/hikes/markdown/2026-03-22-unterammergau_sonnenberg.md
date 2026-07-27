@@ -1,3 +1,7 @@
+---
+ascent: 947
+descent: 947
+---
 I checked the weather on Saturday as usual and saw that next week was filled
 with snowstorms and cold weather. The obvious conclusion was that this weekend
 was my last chance to retrieve the hiking stick I lost on the way down from

@@ -1,3 +1,7 @@
+---
+ascent: 1293
+descent: 573
+---
 Yet another fall from a cliff. If you've read my story about fracturing my
 finger on [Vordere Kesselschneid (2002 m)](/hikes/2025-11-23-vordere_kesselschneid/),
 or getting a giant bruise on [Soiernspitze (2253 m)](/hikes/2025-01-19-soiernspitze/),

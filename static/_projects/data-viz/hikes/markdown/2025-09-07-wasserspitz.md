@@ -1,3 +1,7 @@
+---
+ascent: 1030
+descent: 300
+---
 There were a lot of medium-sized mountains in the Tegernsee area that I didn't
 visit, unlike [Gindelalmschneid (1335 m)](/404/) and [Wallberg (1722 m)](/404/).
 Under the premise of going mountain carting to Spitzingsee, I took David,

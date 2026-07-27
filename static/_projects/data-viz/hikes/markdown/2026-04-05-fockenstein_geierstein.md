@@ -1,3 +1,7 @@
+---
+ascent: 1287
+descent: 1365
+---
 After my [trip to Landshut](/hikes/2026-04-03-moosburg_landshut/) that took
 around 30 kilometers, I was ready to do an easier hike. Thus, I was looking
 for a group that would focus on socializing and not just speeding through the

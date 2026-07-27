@@ -1,3 +1,7 @@
+---
+ascent: 1150
+descent: 1170
+---
 I got the hike route from Mikuláš, who did it solo in winter, finding and helping a fellow
 solo hiker on the way. I and David weren't crazy enough to do it in a cold season, so we
 trained and waited until now to get it off our bucket list.

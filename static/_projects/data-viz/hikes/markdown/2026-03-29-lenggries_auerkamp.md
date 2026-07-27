@@ -1,3 +1,7 @@
+---
+ascent: 968
+descent: 1127
+---
 This adventure started off slow and sad. The whole sky was covered in clouds
 and the weather forecast promised rain and snow for the entire day, even a
 snowstorm in some places. When I and Bohdan boarded the bus to the ravine,

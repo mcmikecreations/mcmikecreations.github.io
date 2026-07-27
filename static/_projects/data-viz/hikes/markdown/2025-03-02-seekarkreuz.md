@@ -1,3 +1,7 @@
+---
+ascent: 880
+descent: 880
+---
 This event came to be as an invitation to a group hike from Annette without
 many additional details. I've already been on the mountain alone, but reliving
 the experience in a group seemed appealing enough for me to go there again.

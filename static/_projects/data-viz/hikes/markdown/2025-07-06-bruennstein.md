@@ -1,3 +1,7 @@
+---
+ascent: 940
+descent: 1260
+---
 Topo from [bergsteigen.com](https://www.bergsteigen.com/touren/klettersteig/dr-julius-mayr-weg/):
 ![Topo of the climb](/images/hikes/topo/bruennstein.png)
 

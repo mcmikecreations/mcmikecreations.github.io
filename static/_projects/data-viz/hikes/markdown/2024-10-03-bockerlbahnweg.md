@@ -1,3 +1,7 @@
+---
+ascent: 280
+descent: 570
+---
 Every time I [walked near the Josefsthaler Wasserfälle](/404/),
 I was intrigued by the wide shallow road going downhill. After some online
 exploration, it turned out that the road was [part of a narrow railway](https://www.gamssteig.de/touren/bockerlbahnweg-spitzingsee)

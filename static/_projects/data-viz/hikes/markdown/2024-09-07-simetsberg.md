@@ -1,3 +1,7 @@
+---
+ascent: 970
+descent: 990
+---
 When I was browsing OsmAnd for cool hikes around Walchensee, I kept looking at
 [Krottenkopf (2086 m)](/hikes/2025-11-16-krottenkopf_bischof/),
 but at the time it seemed like too difficult of a hike. When I looked around

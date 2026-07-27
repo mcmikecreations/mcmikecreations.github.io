@@ -1,3 +1,7 @@
+---
+ascent: 360
+descent: 310
+---
 Topo from bergsteigen.com for [Norissteig](https://www.bergsteigen.com/touren/klettersteig/norissteig-klettersteig/)
 and [Höhenglücksteig](https://www.bergsteigen.com/touren/klettersteig/hoehengluecksteig-klettersteig/):
 ![Topo of Norissteig](/images/hikes/topo/norissteig.png)

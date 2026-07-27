@@ -1,8 +1,6 @@
 [
   {
     "properties": {
-      "distance": null,
-      "duration": null,
       "ascent": 880,
       "descent": 880,
       "dates": [
@@ -34,8 +32,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
       "ascent": 990,
       "descent": 990,
       "dates": [
@@ -77,10 +73,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2024-03-31",
@@ -95,14 +87,10 @@
       "filePath": "/_projects/data-viz/hikes/geojson/bad_tolz_lenggries.json",
       "draft": false
     },
-    "route": "/projects/data-viz/hikes/bad-tolz-lenggries"
+    "route": "/projects/data-viz/hikes/bad_tolz_lenggries"
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2024-03-09",
@@ -121,10 +109,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2024-04-06",
@@ -152,10 +136,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2024-02-03",
@@ -174,10 +154,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2024-01-01",
@@ -232,10 +208,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2023-08-19",
@@ -254,10 +226,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2023-07-16",
@@ -276,8 +244,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
       "ascent": 1460,
       "descent": 1460,
       "dates": [
@@ -330,10 +296,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2023-06-28",
@@ -352,10 +314,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2023-06-17",
@@ -374,10 +332,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2024-03-30",
@@ -407,10 +361,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2022-05-19",
@@ -429,10 +379,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2023-04-29",
@@ -451,10 +397,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2023-03-04",
@@ -473,10 +415,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2023-03-25",
@@ -495,10 +433,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2023-02-18",
@@ -517,10 +451,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2023-02-26",
@@ -539,10 +469,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2022-12-02",
@@ -561,10 +487,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2022-12-07",
@@ -583,10 +505,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2022-11-04",
@@ -605,10 +523,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2023-12-09",
@@ -627,10 +541,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2023-11-25",
@@ -649,10 +559,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2023-10-07",
@@ -671,10 +577,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2023-10-21",
@@ -693,10 +595,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2023-10-28",
@@ -715,10 +613,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2023-10-29",
@@ -746,10 +640,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2023-09-09",
@@ -768,10 +658,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2023-09-30",
@@ -790,10 +676,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2023-07-06",
@@ -812,10 +694,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2022-08-22",
@@ -834,10 +712,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2022-11-30",
@@ -856,10 +730,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2022-06-18",
@@ -878,10 +748,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2022-03-22",
@@ -900,10 +766,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2023-09-16",
@@ -922,10 +784,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2024-12-31",
@@ -944,10 +802,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2024-12-31",
@@ -966,10 +820,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2024-06-30",
@@ -988,10 +838,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2024-05-20",
@@ -1010,10 +856,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2024-05-01",
@@ -1032,10 +874,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 810,
-      "descent": 810,
       "dates": [
         {
           "date": "2024-09-29",
@@ -1054,10 +892,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2024-12-31",
@@ -1076,10 +910,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2024-12-31",
@@ -1098,10 +928,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2024-12-31",
@@ -1120,10 +946,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2024-12-31",
@@ -1142,10 +964,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2024-04-14",
@@ -1164,10 +982,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2024-04-14",
@@ -1186,10 +1000,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2024-06-22",
@@ -1208,10 +1018,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2024-04-28",
@@ -1230,10 +1036,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2024-05-06",
@@ -1252,10 +1054,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2024-05-11",
@@ -1274,10 +1072,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2024-05-26",
@@ -1297,10 +1091,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2024-06-08",
@@ -1321,10 +1111,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2024-06-16",
@@ -1345,10 +1131,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2024-07-06",
@@ -1367,10 +1149,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2024-07-13",
@@ -1389,10 +1167,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2024-07-20",
@@ -1411,10 +1185,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": null,
-      "descent": null,
       "dates": [
         {
           "date": "2024-07-21",
@@ -1433,10 +1203,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 1030,
-      "descent": 740,
       "dates": [
         {
           "date": "2024-08-31",
@@ -1459,10 +1225,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 970,
-      "descent": 990,
       "dates": [
         {
           "date": "2024-09-07",
@@ -1483,10 +1245,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 590,
-      "descent": 170,
       "dates": [
         {
           "date": "2024-09-21",
@@ -1509,10 +1267,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 280,
-      "descent": 570,
       "dates": [
         {
           "date": "2024-10-03",
@@ -1531,10 +1285,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 840,
-      "descent": 1160,
       "dates": [
         {
           "date": "2024-10-12",
@@ -1555,10 +1305,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 180,
-      "descent": 180,
       "dates": [
         {
           "date": "2024-10-20",
@@ -1577,10 +1323,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 900,
-      "descent": 940,
       "dates": [
         {
           "date": "2024-11-17",
@@ -1603,10 +1345,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 400,
-      "descent": 680,
       "dates": [
         {
           "date": "2024-12-14",
@@ -1629,10 +1367,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 1360,
-      "descent": 1350,
       "dates": [
         {
           "date": "2025-01-19",
@@ -1653,10 +1387,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 1050,
-      "descent": 1420,
       "dates": [
         {
           "date": "2025-01-26",
@@ -1678,10 +1408,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 1600,
-      "descent": 1600,
       "dates": [
         {
           "date": "2025-02-02",
@@ -1704,10 +1430,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 940,
-      "descent": 940,
       "dates": [
         {
           "date": "2025-02-09",
@@ -1728,10 +1450,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 310,
-      "descent": 240,
       "dates": [
         {
           "date": "2025-02-23",
@@ -1752,10 +1470,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 1330,
-      "descent": 1310,
       "dates": [
         {
           "date": "2025-03-09",
@@ -1778,10 +1492,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 690,
-      "descent": 710,
       "dates": [
         {
           "date": "2025-03-16",
@@ -1804,10 +1514,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 1340,
-      "descent": 1720,
       "dates": [
         {
           "date": "2025-03-23",
@@ -1828,10 +1534,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 1260,
-      "descent": 1230,
       "dates": [
         {
           "date": "2025-03-30",
@@ -1853,10 +1555,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 700,
-      "descent": 710,
       "dates": [
         {
           "date": "2025-04-04",
@@ -1879,10 +1577,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 380,
-      "descent": 410,
       "dates": [
         {
           "date": "2025-04-04",
@@ -1905,10 +1599,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 130,
-      "descent": 130,
       "dates": [
         {
           "date": "2025-04-06",
@@ -1931,10 +1621,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 750,
-      "descent": 670,
       "dates": [
         {
           "date": "2025-04-21",
@@ -1957,10 +1643,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 760,
-      "descent": 800,
       "dates": [
         {
           "date": "2025-04-27",
@@ -1981,10 +1663,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 1250,
-      "descent": 1350,
       "dates": [
         {
           "date": "2025-05-11",
@@ -2007,10 +1685,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 1290,
-      "descent": 1240,
       "dates": [
         {
           "date": "2025-05-18",
@@ -2031,10 +1705,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 1150,
-      "descent": 1170,
       "dates": [
         {
           "date": "2025-06-01",
@@ -2055,10 +1725,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 2430,
-      "descent": 2430,
       "dates": [
         {
           "date": "2025-06-21",
@@ -2079,10 +1745,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 2160,
-      "descent": 20,
       "dates": [
         {
           "date": "2025-09-18",
@@ -2105,10 +1767,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 1000,
-      "descent": 1110,
       "dates": [
         {
           "date": "2025-10-05",
@@ -2129,10 +1787,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 590,
-      "descent": 580,
       "dates": [
         {
           "date": "2025-10-27",
@@ -2151,10 +1805,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 70,
-      "descent": 50,
       "dates": [
         {
           "date": "2025-09-28",
@@ -2175,10 +1825,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 510,
-      "descent": 830,
       "dates": [
         {
           "date": "2025-11-01",
@@ -2199,10 +1845,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 1660,
-      "descent": 1670,
       "dates": [
         {
           "date": "2025-11-16",
@@ -2224,10 +1866,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 1780,
-      "descent": 1730,
       "dates": [
         {
           "date": "2025-11-23",
@@ -2249,10 +1887,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 330,
-      "descent": 190,
       "dates": [
         {
           "date": "2025-11-29",
@@ -2274,10 +1908,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 1030,
-      "descent": 300,
       "dates": [
         {
           "date": "2025-09-07",
@@ -2298,10 +1928,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 540,
-      "descent": 820,
       "dates": [
         {
           "date": "2025-08-31",
@@ -2320,10 +1946,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 1020,
-      "descent": 810,
       "dates": [
         {
           "date": "2025-12-14",
@@ -2346,10 +1968,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 280,
-      "descent": 280,
       "dates": [
         {
           "date": "2025-08-13",
@@ -2372,10 +1990,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 280,
-      "descent": 300,
       "dates": [
         {
           "date": "2025-08-14",
@@ -2397,10 +2011,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 810,
-      "descent": 530,
       "dates": [
         {
           "date": "2025-12-23",
@@ -2421,10 +2031,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 820,
-      "descent": 1410,
       "dates": [
         {
           "date": "2025-12-29",
@@ -2446,10 +2052,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 950,
-      "descent": 990,
       "dates": [
         {
           "date": "2026-01-11",
@@ -2469,10 +2071,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 360,
-      "descent": 310,
       "dates": [
         {
           "date": "2025-07-26",
@@ -2508,10 +2106,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 1230,
-      "descent": 910,
       "dates": [
         {
           "date": "2026-01-18",
@@ -2534,10 +2128,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 940,
-      "descent": 1260,
       "dates": [
         {
           "date": "2025-07-06",
@@ -2560,10 +2150,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 860,
-      "descent": 730,
       "dates": [
         {
           "date": "2025-07-20",
@@ -2584,10 +2170,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 190,
-      "descent": 110,
       "dates": [
         {
           "date": "2025-06-29",
@@ -2609,10 +2191,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 660,
-      "descent": 780,
       "dates": [
         {
           "date": "2026-01-25",
@@ -2636,10 +2214,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 1293,
-      "descent": 573,
       "dates": [
         {
           "date": "2026-02-15",
@@ -2659,10 +2233,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 1107,
-      "descent": 1229,
       "dates": [
         {
           "date": "2026-03-06",
@@ -2684,10 +2254,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 462,
-      "descent": 481,
       "dates": [
         {
           "date": "2026-03-07",
@@ -2709,10 +2275,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 1665,
-      "descent": 1592,
       "dates": [
         {
           "date": "2026-03-15",
@@ -2734,10 +2296,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 947,
-      "descent": 947,
       "dates": [
         {
           "date": "2026-03-22",
@@ -2759,10 +2317,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 968,
-      "descent": 1127,
       "dates": [
         {
           "date": "2026-03-29",
@@ -2784,10 +2338,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 615,
-      "descent": 623,
       "dates": [
         {
           "date": "2026-04-03",
@@ -2809,10 +2359,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 1287,
-      "descent": 1365,
       "dates": [
         {
           "date": "2026-04-05",
@@ -2834,10 +2380,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 1004,
-      "descent": 1060,
       "dates": [
         {
           "date": "2026-04-11",
@@ -2862,10 +2404,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 1253,
-      "descent": 1238,
       "dates": [
         {
           "date": "2026-04-26",
@@ -2885,10 +2423,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 332,
-      "descent": 339,
       "dates": [
         {
           "date": "2026-05-01",
@@ -2910,10 +2444,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 581,
-      "descent": 580,
       "dates": [
         {
           "date": "2026-05-03",
@@ -2937,10 +2467,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 1255,
-      "descent": 1251,
       "dates": [
         {
           "date": "2026-05-10",
@@ -2962,10 +2488,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 310,
-      "descent": 331,
       "dates": [
         {
           "date": "2026-05-14",
@@ -2987,10 +2509,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 1796,
-      "descent": 1708,
       "dates": [
         {
           "date": "2026-05-17",
@@ -3012,10 +2530,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 1013,
-      "descent": 995,
       "dates": [
         {
           "date": "2026-06-21",
@@ -3039,10 +2553,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 900,
-      "descent": 82,
       "dates": [
         {
           "date": "2026-06-27",
@@ -3064,10 +2574,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 258,
-      "descent": 288,
       "dates": [
         {
           "date": "2026-07-05",
@@ -3089,10 +2595,6 @@
   },
   {
     "properties": {
-      "distance": null,
-      "duration": null,
-      "ascent": 1566,
-      "descent": 1549,
       "dates": [
         {
           "date": "2026-07-12",
@@ -3118,10 +2620,6 @@
   },
   {
     "properties": {
-      "distance": 26600,
-      "duration": 706,
-      "ascent": 2449,
-      "descent": 851,
       "dates": [
         {
           "date": "2026-07-19",

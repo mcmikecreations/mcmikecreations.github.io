@@ -1,3 +1,7 @@
+---
+ascent: 330
+descent: 190
+---
 The main and only goal of this hike organized by Annette from DAAD FK was to
 have a chill walk to Kufstein from a nearby train stop. After I fractured my
 finger a week ago on the [last hike to Vordere Kesselschneid (2002 m)](/hikes/2025-11-23-vordere_kesselschneid/)

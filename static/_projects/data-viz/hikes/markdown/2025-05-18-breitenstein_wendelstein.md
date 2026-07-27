@@ -1,3 +1,7 @@
+---
+ascent: 1290
+descent: 1240
+---
 As the weather forecast was looking quite grim, I and David doubted if we
 should go hiking or skip this weekend. The choices were either to visit
 Hirschbichel (1935 m), which I saw on the way to

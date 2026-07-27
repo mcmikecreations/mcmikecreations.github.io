@@ -1,3 +1,7 @@
+---
+ascent: 820
+descent: 1410
+---
 For my reunion with Serhii and Pavlo from Ukraine (and Sviatoslav who didn't
 join us on this hike), I was designated as the hike planner. I wanted to find
 a peak that would challenge us a bit, but not be too difficult. After looking

@@ -1,3 +1,7 @@
+---
+ascent: 310
+descent: 240
+---
 I enrolled in a driving school to finally get a driving license I've been
 meaning to get since I turned 18 6 years ago. First, I was busy grinding for
 grades and learning German to enroll at TUM, then I was busy grinding for

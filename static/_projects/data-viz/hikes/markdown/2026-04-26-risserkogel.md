@@ -1,3 +1,7 @@
+---
+ascent: 1253
+descent: 1238
+---
 The original plan when I [hiked to Setzberg (1706 m)](/hikes/2026-01-11-setzberg/) was to attempt
 Risserkogel (1826 m). Back then, when I got to the emergency shelter on the
 saddle, the route forward seemed too risky. Knowing myself and my inability to

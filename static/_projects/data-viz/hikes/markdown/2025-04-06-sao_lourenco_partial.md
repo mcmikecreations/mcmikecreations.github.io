@@ -1,3 +1,7 @@
+---
+ascent: 130
+descent: 130
+---
 On the last day after hiking to [Pedra Rija](/hikes/2025-04-04-pedra_rija/) and [Caldeirão Verde](/hikes/2025-04-04-caldeirao_verde/)
 I and Serhii decided to hop on a short hike before the airport.
 Out of the options we had, the one that made most sense time- and location-wise

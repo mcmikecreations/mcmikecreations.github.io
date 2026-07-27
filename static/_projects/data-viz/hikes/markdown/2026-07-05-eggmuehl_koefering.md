@@ -1,3 +1,7 @@
+---
+ascent: 258
+descent: 288
+---
 On Thursday before the hike I had my other two wisdom teeth taken out. I was
 feeling under the weather, and I was forbidden from doing active sports, so
 taking a stroll across some fields was my only option.

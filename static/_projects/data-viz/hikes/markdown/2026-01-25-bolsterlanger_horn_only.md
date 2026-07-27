@@ -1,3 +1,7 @@
+---
+ascent: 660
+descent: 780
+---
 I planned to do a Hausham gauntlet, visiting all named peaks around the town
 to check them off my to-do list. As I was going to sleep, I checked my messages
 and saw the invite in the "Wandern für glückliche Menschen" group for a hike to

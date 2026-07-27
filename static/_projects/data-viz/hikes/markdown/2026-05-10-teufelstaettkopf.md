@@ -1,3 +1,7 @@
+---
+ascent: 1255
+descent: 1251
+---
 I love the Ammergau region. But the connection to get there, especially from my
 small town near Freising, is horrendous. This didn't stop me though. I called
 Bohdan, who supervised me [breaking my finger](/hikes/2025-11-23-vordere_kesselschneid/)

@@ -1,3 +1,7 @@
+---
+ascent: 1780
+descent: 1730
+---
 With the previous spontaneous [hike to Pyramidenspitze (1997 m)](/hikes/2025-02-02-pyramidenspitze/)
 still fresh in my mind, I was eager to reach the next mountain peak of
 Vordere Kesselschneid (2002 m) in the Kaisergebirge range and cross the 2 km

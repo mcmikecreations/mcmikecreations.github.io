@@ -1,3 +1,7 @@
+---
+ascent: 810
+descent: 530
+---
 When my Ukrainian friend Serhii, who lives in Lisbon, approached me for an easy
 hike near Munich, I decided to offer a peak I haven't done before. Out of the
 easily accessible ones, the area between Tegernsee and Spitzingsee seemed to

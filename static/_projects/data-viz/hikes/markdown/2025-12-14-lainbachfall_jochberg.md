@@ -1,3 +1,7 @@
+---
+ascent: 1020
+descent: 810
+---
 The group of Ukrainians I've met at the end of my recent hike to
 [Auer Berg (1252 m)](/hikes/2025-10-27-auer_berg/)
 invited me to an outing up Jochberg, which I visited a couple of times before.

@@ -1,3 +1,7 @@
+---
+ascent: 750
+descent: 670
+---
 When we started the route together with Annette and DAAD scholars she assembled,
 I didn't know where exactly we were going, only that it's close to Bayrischzell
 and that we will be hunting for Easter eggs. I assumed the hike would be quite

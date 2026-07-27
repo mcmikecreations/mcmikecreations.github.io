@@ -5,6 +5,7 @@ import type { Map as HikeMap, GeometryData } from '$lib/data/map-info';
 import { getMapFeatures } from '$lib/data/map-info';
 import { providerFolder } from '$lib/data/map-providers';
 import { mergeMetrics } from '$lib/hikes/hike-metrics';
+import { resolveHikeForPost } from '$lib/hikes/hike-posts.server';
 
 export const prerender = true;
 
@@ -77,30 +78,48 @@ async function computeWebData(fetchFn: typeof fetch): Promise<WebData> {
         allWeeks.push(...yearsData.get(year)!);
     }
 
-    // Compute stats and per-hike properties by fetching geometry files in parallel
+    // Compute stats and per-hike properties by fetching geometry files in parallel.
+    // Measured per date, not per hike: a post's front matter can pin its own
+    // metrics or point at its own geometry, so sibling dates on one route need
+    // not agree. With uniform dates this is the same as one hike's figures times
+    // its date count, which is what it used to be.
     let totalDistance = 0, totalTime = 0, totalHikes = 0, totalAscent = 0, totalDescent = 0;
     const hikeStats: Record<string, { distance: number | null; duration: number | null; ascent: number | null; descent: number | null }> = {};
     await Promise.all(
         maps
             .filter(m => (m.properties as any)?.hidden !== true)
             .map(async (mapInfo) => {
-                const layer = getMapFeatures(mapInfo as any).find((x: any) => x.type === 'Geometry');
-                if (!layer) return;
-                try {
-                    const geo = await fetchGeometry(fetchFn, layer.data as GeometryData);
-                    if (!geo) return;
-                    const p = mapInfo.properties;
-                    const { distance, duration, ascent, descent } = mergeMetrics(p, geo.properties);
-                    hikeStats[mapInfo.route] = { distance, duration, ascent, descent };
-                    if (p.draft !== true) {
-                        totalHikes += p.dates.length;
-                        totalDistance += (distance ?? 0) * p.dates.length;
-                        totalTime += (duration ?? 0) * p.dates.length;
-                        totalAscent += (ascent ?? 0) * p.dates.length;
-                        totalDescent += (descent ?? 0) * p.dates.length;
+                const p = mapInfo.properties;
+                const measured = (await Promise.all(
+                    [...p.dates]
+                        .sort((a, b) => (a.date > b.date ? -1 : 1))
+                        .map(async (dateObj) => {
+                            const { hike, properties } = resolveHikeForPost(mapInfo, dateObj);
+                            const layer = getMapFeatures({ ...hike, properties } as any)
+                                .find((x: any) => x.type === 'Geometry');
+                            if (!layer) return null;
+                            try {
+                                const geo = await fetchGeometry(fetchFn, layer.data as GeometryData);
+                                if (!geo) return null;
+                                return mergeMetrics(properties, geo.properties);
+                            } catch {
+                                // geometry unavailable, skip this date
+                                return null;
+                            }
+                        })
+                )).filter((m): m is NonNullable<typeof m> => m !== null);
+
+                if (measured.length === 0) return;
+                // The Web graph shows one figure per route: its newest date's.
+                hikeStats[mapInfo.route] = measured[0];
+                if (p.draft !== true) {
+                    for (const m of measured) {
+                        totalHikes += 1;
+                        totalDistance += m.distance ?? 0;
+                        totalTime += m.duration ?? 0;
+                        totalAscent += m.ascent ?? 0;
+                        totalDescent += m.descent ?? 0;
                     }
-                } catch {
-                    // geometry unavailable, skip hike
                 }
             })
     );

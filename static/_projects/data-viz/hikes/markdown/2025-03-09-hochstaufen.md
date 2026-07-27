@@ -1,3 +1,7 @@
+---
+ascent: 1330
+descent: 1310
+---
 I planned to have a hike in the Bad Reichenhall area going through a deeper
 mountain, but destiny decided otherwise. Between waking up at a reasonable
 time of 04:30 and running to the train barely in time before departure, I

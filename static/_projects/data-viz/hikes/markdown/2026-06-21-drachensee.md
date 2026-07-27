@@ -1,3 +1,7 @@
+---
+ascent: 1013
+descent: 995
+---
 After my hike to X, I needed some time to recover and take it easy. Although I
 have a backlog of boring hikes for the ["Web"](/hikes/tag/Web/) category, I
 found an invitation from Stanislav from my [Trainsjoch (1707 m) hike](/hikes/2026-01-18-trainsjoch/)

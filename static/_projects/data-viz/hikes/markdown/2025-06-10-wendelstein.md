@@ -1,3 +1,7 @@
+---
+ascent: 990
+descent: 990
+---
 This trip was done as the annual team-building exercise with the Chair for
 Database Systems (and others). I was responsible for the organization, with
 some strict rules to determine the route. It had to have a cable car, a

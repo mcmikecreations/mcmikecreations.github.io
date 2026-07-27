@@ -1,3 +1,7 @@
+---
+ascent: 840
+descent: 1160
+---
 The hike that Annette from DAAD FK organized started off disastrously, because
 most of the group got confused on how to commute to Spitzingsee and either left
 at the wrong train station or missed the bus. While the organizer was dealing

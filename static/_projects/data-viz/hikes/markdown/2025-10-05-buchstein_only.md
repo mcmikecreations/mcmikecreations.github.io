@@ -1,3 +1,7 @@
+---
+ascent: 1000
+descent: 1110
+---
 Topo from [bergsteigen.com](https://www.bergsteigen.com/touren/klettern/sahnestueckchen-buchstein/):
 ![Topo of the climb](/images/hikes/topo/buchstein.jpg)
 

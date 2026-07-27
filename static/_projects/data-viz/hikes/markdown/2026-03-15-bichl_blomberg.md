@@ -1,3 +1,7 @@
+---
+ascent: 1665
+descent: 1592
+---
 After the semi-successful hike to [Sonnenberg (1622 m)](/hikes/2026-02-15-oberammergau_sonnenberg/)
 where I lost my hiking
 pole, I was on the lookout for a sunny weekend to go back and retrieve it.

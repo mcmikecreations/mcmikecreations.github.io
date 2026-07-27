@@ -1,4 +1,4 @@
-import { hikes } from '$lib/data/hikes-db';
+import { hikes, resolveHikeForDate } from '$lib/data/hikes-db';
 import type { Map } from '$lib/data/map-info';
 import { stripFrontmatter } from '$lib/hikes/frontmatter';
 
@@ -29,15 +29,18 @@ export function getAllPosts(): ProcessedPost[] {
         .map(d => {
             const date = new Date(d.date);
             const slug = h.route.substring(h.route.lastIndexOf('/') + 1);
+            // A date may name its own sidecar, so read name/image/description
+            // through the hike as that date sees it.
+            const hike = resolveHikeForDate(h, d);
             return {
                 year: date.getFullYear(),
                 month: date.getMonth() + 1,
                 day: date.getDate(),
                 date: date,
                 url: `/hikes/${d.date}-${slug}/`,
-                title: d.title ?? h.name,
-                image: (d.image ?? h.image)?.replace('/hikes/', '/hikes/thumb/'),
-                description: (d.description ? (d.description + ' ') : '') + h.description,
+                title: d.title ?? hike.name,
+                image: (d.image ?? hike.image)?.replace('/hikes/', '/hikes/thumb/'),
+                description: (d.description ? (d.description + ' ') : '') + hike.description,
                 tags: d.tags,
                 people: d.people,
                 anchor: `${d.date}-${slug}`

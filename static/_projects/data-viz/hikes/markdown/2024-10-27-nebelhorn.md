@@ -1,3 +1,7 @@
+---
+ascent: 1460
+descent: 1460
+---
 Having the last two unsuccessful attempts to climb to the top of
 Nebelhorn (2224 m) [in 2023](/404/)
 and [in 2022](/404/),

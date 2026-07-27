@@ -69,15 +69,34 @@ interface MapDate {
 	path?: string | undefined | null;
 	gpx?: string | undefined | null;
 	author?: string | undefined | null;
+	/**
+	 * Per-post overrides of the hike's own fields, for dates that walked a
+	 * different route or need their own numbers. All are optional and fall back
+	 * to the hike level; see `hikes-db`'s `resolveHikeForDate`.
+	 */
+	metaPath?: string | undefined | null;
+	filePath?: string | undefined | null;
+	distance?: number | undefined | null;
+	duration?: number | undefined | null;
+	ascent?: number | undefined | null;
+	descent?: number | undefined | null;
 }
 
 interface MapProperties {
-	distance: number | null;
-	duration: number | null;
-	ascent: number | null;
-	descent: number | null;
+	/**
+	 * Fallback metrics for the whole route. Absent on most hikes: they now live
+	 * per post in front matter, and only routes with an unblogged date still keep
+	 * them here. An explicit value always beats the GeoJSON's — see `mergeMetrics`.
+	 */
+	distance?: number | null;
+	duration?: number | null;
+	ascent?: number | null;
+	descent?: number | null;
 	dates: Array<MapDate>;
+	/** Served path of the route GeoJSON. */
 	filePath: string;
+	/** Served path of the `<slug>.hike.json` sidecar, if not the slug-named one. */
+	metaPath?: string | undefined;
 	draft: boolean | null;
 	hidden?: boolean | undefined;
 	/** Coarse `[lon, lat]` outline of the route, drawn by the Web graph. */

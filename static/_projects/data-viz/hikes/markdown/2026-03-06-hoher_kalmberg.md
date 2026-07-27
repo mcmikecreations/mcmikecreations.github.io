@@ -1,3 +1,7 @@
+---
+ascent: 1107
+descent: 1229
+---
 The experience started all the way in Bad Goisern, where I approached a local
 older ski enjoyer on the train station and had a lengthy conversation about the
 local area and the best mountains to visit. After noting down his choices, the

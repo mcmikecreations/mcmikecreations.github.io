@@ -1,3 +1,7 @@
+---
+ascent: 860
+descent: 730
+---
 Topo from [stadler-markus.de](https://www.stadler-markus.de/klettern/breitenstein-und-schwarzwand.html):
 ![Topo of the climb](/images/hikes/topo/breitensteinfensterl.png)
 

@@ -6,7 +6,7 @@ import { defaultPageSize, getAllPosts, parseMarkdown } from '$lib/hikes/hikes-in
 import type { PageServerLoad } from './$types';
 import type { Map, MapDate, MapProperties } from '$lib/data/map-info';
 import { mergeMetrics } from '$lib/hikes/hike-metrics';
-import { applyHikeOverrides, readHikeFrontmatter } from '$lib/hikes/frontmatter.server';
+import { applyPostOverrides, readHikeFrontmatter } from '$lib/hikes/frontmatter.server';
 import { readHikeContacts } from '$lib/hikes/frontmatter';
 import { buildHikeContacts } from '$lib/hikes/contacts';
 import contactsBook from '$lib/data/contacts.json';
@@ -44,7 +44,12 @@ export const load: PageServerLoad = async ({ fetch, params, locals }) => {
 		// `content` is the body with the fence removed so the
 		// header outline and reading time ignore the metadata block.
 		const { data: frontmatter, content: postBody } = readHikeFrontmatter(postRaw);
-		const { hike: mergedHike, date: mergedDate } = applyHikeOverrides(hike as unknown as Map, date, frontmatter);
+
+		const {
+			hike: mergedHike,
+			date: mergedDate,
+			properties: mergedProperties
+		} = applyPostOverrides(hike as unknown as Map, date, frontmatter);
 		const fmContacts = readHikeContacts(frontmatter);
 		const contacts = buildHikeContacts(mergedDate.people, contactsBook, fmContacts);
 
@@ -61,22 +66,22 @@ export const load: PageServerLoad = async ({ fetch, params, locals }) => {
 		let showFilePrimary: string | null = null;
 		let showFileGpx: string | null = null;
 
-		const gpxUrl = mergedDate.gpx ?? mergedHike.properties.filePath.replace('geojson', 'gpx').replace('json', 'gpx');
+		const gpxUrl = mergedDate.gpx ?? mergedProperties.filePath.replace('geojson', 'gpx').replace('json', 'gpx');
 		const [gpx, geojsonRes] = await Promise.all([
 			fetch(gpxUrl, { method: 'OPTIONS' }),
-			fetch(mergedHike.properties.filePath),
+			fetch(mergedProperties.filePath),
 		]);
 		showFileGpx = gpx.ok ? gpxUrl : null;
 
-		let mapProperties = mergedHike.properties as MapProperties;
+		let mapProperties = mergedProperties;
 		if (geojsonRes.ok) {
 			const geojson = await geojsonRes.json();
 			const fp = geojson?.features?.[0]?.properties;
 			if (fp) {
-				showFilePrimary = mergedHike.properties.filePath;
+				showFilePrimary = mergedProperties.filePath;
 				mapProperties = <MapProperties>{
-					...mergedHike.properties,
-					...mergeMetrics(mergedHike.properties, fp),
+					...mergedProperties,
+					...mergeMetrics(mergedProperties, fp),
 				};
 			}
 		}

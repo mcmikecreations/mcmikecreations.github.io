@@ -1,3 +1,7 @@
+---
+ascent: 540
+descent: 820
+---
 Although I managed to avoid getting sick during my vacation, I could resist the
 disease after my trip to GamesCom 2025. Having a 38.6°C fever and a clogged
 nose, I had a brilliant idea to ignore my symptoms and go hiking with a mask
