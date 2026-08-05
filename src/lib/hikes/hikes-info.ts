@@ -7,6 +7,7 @@
  */
 
 import { stripFrontmatter } from '$lib/hikes/frontmatter';
+import { parseMediaFlags } from '$lib/renderers/media-flags';
 
 export interface ProcessedPost {
     year: number;
@@ -72,11 +73,16 @@ export async function parseMarkdown(postRaw: string): Promise<string> {
     <figcaption class="mk-figcaption">${renderedText}</figcaption>
 </figure>`;
                 } else if (href.trimEnd().endsWith('.mp4')) {
-                    // Autoplay silently and loop: these clips carry no audio, so the muted
-                    // attribute is what makes browsers allow autoplay at all.
+                    // The title doubles as a flag list. Only clips flagged `autoplay`
+                    // start on their own, and only those are muted, since muting is what
+                    // makes browsers allow autoplay at all. An unflagged clip may carry
+                    // audio, so it is left for the reader to start.
+                    const { flags, title: mediaTitle } = parseMediaFlags(title);
+                    const autoplayAttrs = flags.has('autoplay') ? ' autoplay muted' : '';
+                    const safeMediaTitle = mediaTitle.replace(/"/g, '&quot;');
                     return `
 <figure class="mk-figure">
-    <video controls autoplay muted loop playsinline ${safeTitle ? `title="${safeTitle}"` : ''}>
+    <video controls${autoplayAttrs} loop playsinline ${safeMediaTitle ? `title="${safeMediaTitle}"` : ''}>
         <source src="${safeHref}" type="video/mp4">
     </video>
     <figcaption class="mk-figcaption">${renderedText}</figcaption>

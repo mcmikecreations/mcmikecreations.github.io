@@ -1,0 +1,101 @@
+{
+  "name": "Schafreuter and Baumgartenjoch",
+  "description": "Hike from Kaiserhütte and back via Schafreuter (2102 m), Delpsjoch (1945 m), and Baumgartenjoch (1939 m).",
+  "image": "/images/projects/data-viz/hikes/baumgartenjoch.jpg",
+  "origin": {
+    "lat": 47.501199263815415,
+    "lon": 11.4847469329834
+  },
+  "height": 768,
+  "checkpoints": [
+    [11.4578438, 47.4986470],
+    [11.4927589, 47.5040869],
+    [11.4876000, 47.5090130],
+    [11.4927589, 47.5040869],
+    [11.4958072, 47.5008212],
+    [11.5134143, 47.5015183],
+    [11.5255896, 47.4944623],
+    [11.5190347, 47.4922492],
+    [11.5070241, 47.4939897],
+    [11.4911524, 47.4994910],
+    [11.4927589, 47.5040869]
+  ],
+  "nodes": [
+    {
+      "id": 100510700,
+      "lat": 47.5040869,
+      "lon": 11.4927589,
+      "tags": {
+        "name": "Tölzer Hütte",
+        "building": "yes",
+        "cuisine": "regional",
+        "ele": "1825",
+        "electricity": "solar",
+        "email": "info@toelzer-huette.at",
+        "mobile": "+491601450618",
+        "phone": "+436641801790",
+        "tourism": "alpine_hut",
+        "website": "https://www.toelzer-huette.at/",
+        "wikidata": "Q2464003",
+        "wikipedia": "de:Tölzer Hütte"
+      }
+    },
+    {
+      "id": 1621410767,
+      "lat": 47.5090130,
+      "lon": 11.4876000,
+      "tags": {
+        "name": "Schafreuter",
+        "natural": "peak",
+        "ele": "2102",
+        "wikidata": "Q315887",
+        "wikipedia": "de:Schafreuter"
+      }
+    },
+    {
+      "id": 304168699,
+      "lat": 47.5008212,
+      "lon": 11.4958072,
+      "tags": {
+        "name": "Delpsjoch",
+        "natural": "peak",
+        "ele": "1945",
+        "wikidata": "Q15055797",
+        "wikipedia": "de:Delpsjoch"
+      }
+    },
+    {
+      "id": 616751711,
+      "lat": 47.5015183,
+      "lon": 11.5134143,
+      "tags": {
+        "name": "Baumgartenjoch",
+        "natural": "peak",
+        "ele": "1939",
+        "wikidata": "Q21876558"
+      }
+    },
+    {
+      "id": 136652067,
+      "lat": 47.4922492,
+      "lon": 11.5190347,
+      "tags": {
+        "name": "Jagdhütte Roßangerl",
+        "building": "shooting_lodge",
+        "tourism": "chalet"
+      }
+    },
+    {
+      "id": 1482567406,
+      "lat": 47.4939897,
+      "lon": 11.5070241,
+      "tags": {
+        "name": "Jagdhütte Roßangerl",
+        "building": "shooting_lodge",
+        "mountain_pass": "yes",
+        "ele": "1554",
+        "natural": "saddle"
+      }
+    }
+  ]
+}

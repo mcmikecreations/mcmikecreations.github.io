@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { Modal } from 'flowbite-svelte';
+	import { parseMediaFlags } from '$lib/renderers/media-flags';
 
 	interface Props {
 		href?: string;
@@ -10,9 +11,8 @@
 	let { href = '', title = undefined, text = '' }: Props = $props();
 	let openModal = $state(false);
 	const isYoutubeLink = $derived(href.includes('youtube.com'));
-	const shouldAutoplay = $derived(
-		typeof title === 'string' && title.split(',').map((f) => f.trim().toLowerCase()).includes('autoplay')
-	);
+	const media = $derived(parseMediaFlags(title));
+	const shouldAutoplay = $derived(media.flags.has('autoplay'));
 
 	// Track open modal to prevent scrolling the content behind it.
 	$effect(() => {
@@ -60,8 +60,17 @@
 	</figure>
 {:else if href.trimEnd().endsWith('.mp4')}
 	<figure class="w-full xl:w-3/4 mx-auto flex-col justify-center">
-		<!-- Muted is what makes browsers allow the autoplay; these clips carry no audio. -->
-		<video controls autoplay={shouldAutoplay} muted loop playsinline {title}>
+		<!-- Only clips flagged `autoplay` start on their own, and only those are
+		     muted, since muting is what makes browsers allow autoplay at all.
+		     An unflagged clip may carry audio, so it is left alone. -->
+		<video
+			controls
+			autoplay={shouldAutoplay}
+			muted={shouldAutoplay}
+			loop
+			playsinline
+			title={media.title || undefined}
+		>
 			<source src={href} type="video/mp4">
 		</video>
 		<figcaption class="text-center">{text}</figcaption>
