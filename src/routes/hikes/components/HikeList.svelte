@@ -31,7 +31,7 @@
                 <Span class="flex-grow pt-4">{@html p.description}</Span>
                 <div class="pt-4 w-full flex flex-row items-center">
                     <div class="relative z-20 hover:text-primary-600 dark:hover:text-primary-500 transition-colors">
-                        <a href={`/hikes/year/${p.year}`}>
+                        <a href={`/hikes/year/${p.year}/`}>
                             <DateBadge date={p.date} dateEnd={undefined} />
                         </a>
                     </div>
@@ -46,7 +46,7 @@
                             {/each}
                         {/if}
                         {#each p.tags as t}
-                            <a href={`/hikes/tag/${t}`}>
+                            <a href={`/hikes/tag/${encodeURIComponent(t)}/`}>
                                 <Badge class="cursor-pointer hover:bg-primary-200 dark:hover:bg-primary-800 transition-colors">{t}</Badge>
                             </a>
                         {/each}

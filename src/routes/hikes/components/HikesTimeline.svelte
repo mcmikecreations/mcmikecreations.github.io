@@ -94,7 +94,7 @@
 		<ul class="list-disc pl-4 m-0 space-y-1 text-left">
 			{#each activeWeek.hikes as hike}
 				<li class="break-words">
-					<a href={hike.route} class="text-primary-600 dark:text-primary-500 hover:underline">{hike.name}</a>
+					<a href={`${hike.route}/`} class="text-primary-600 dark:text-primary-500 hover:underline">{hike.name}</a>
 				</li>
 			{/each}
 		</ul>

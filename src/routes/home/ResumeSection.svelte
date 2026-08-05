@@ -8,7 +8,7 @@
 </script>
 
 <section id="resume">
-	<Heading tag="h2" class="text-center mt-8">Latest <A href="/resume">Résumé</A> Highlights</Heading>
+	<Heading tag="h2" class="text-center mt-8">Latest <A href="/resume/">Résumé</A> Highlights</Heading>
 	<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 mx-4 2xl:mx-0">
 		<Heading tag="h3" class="ps-4 sm:ps-6">Education</Heading>
 		<Heading tag="h3" class="hidden sm:block ps-4 sm:ps-6">Experience</Heading>
@@ -64,7 +64,7 @@
 			<div class="flex-grow"></div>
 			<div class="flex flex-row">
 				<Button href="#contact" class="uppercase" pill>Contact me</Button>
-				<Button href="/resume" color="alternative" class="uppercase ms-2" pill>Résumé</Button>
+				<Button href="/resume/" color="alternative" class="uppercase ms-2" pill>Résumé</Button>
 			</div>
 		</div>
 	</div>

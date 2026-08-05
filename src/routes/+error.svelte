@@ -1,7 +1,10 @@
 <script>
 	import { page } from '$app/state';
 	import AppFooter from '$lib/components/AppFooter.svelte';
+	import AppMeta from '$lib/components/AppMeta.svelte';
 </script>
+
+<AppMeta title={page.status === 404 ? 'Page not found' : 'Something went wrong'} shouldIndex={false} />
 
 <section class="absolute bottom-0 top-0 start-0 end-0 -z-10 w-full flex flex-col justify-center">
 	<div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 flex justify-center">

@@ -49,7 +49,7 @@
 			<CustomPagination
 				currentPage={pagination.currentPage}
 				totalPages={pagination.totalPages}
-				baseUrl={`/hikes/tag/${tag}`}
+				baseUrl={`/hikes/tag/${encodeURIComponent(tag)}`}
 			/>
 		</div>
 	</div>

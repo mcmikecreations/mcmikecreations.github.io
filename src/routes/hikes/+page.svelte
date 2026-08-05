@@ -138,7 +138,7 @@
                     Currently, most of the South Bavarian hikes have been connected.
                 </p>
             </ShowcaseCard>
-            <ShowcaseCard x={1} y={1} href="/hikes/tag/Climb" img="/images/hikes/hero/viaferrata.jpg">
+            <ShowcaseCard x={1} y={1} href="/hikes/tag/Climb/" img="/images/hikes/hero/viaferrata.jpg">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pb-4">
                     Via Ferrata
                 </h5>

@@ -11,6 +11,7 @@
 		shouldIndex?: boolean;
 		type?: string | 'website' | 'article';
 		tags?: string[];
+		canonical?: string;
 	}
 
 	let {
@@ -21,11 +22,15 @@
 		shouldIndex = true,
 		type = 'website',
 		tags = [],
+		canonical,
 		...otherProps
 	}: Props = $props();
 	const oldUrl = page.url;
 	let fullImageUrl = $derived(image ? (image.startsWith('http') ? image : page.url.origin + image) : image);
 	let canonicalUrl = $state(new URL(oldUrl.origin.replace('www.', '') + oldUrl.pathname));
+	const canonicalHref = $derived(
+		canonical ? oldUrl.origin.replace('www.', '') + canonical : canonicalUrl.toString()
+	);
 	const titleBase = resume.basics.name;
 
 	onMount(() => {
@@ -35,7 +40,7 @@
 
 <svelte:head>
 	<title>{hasBaseTitle ? ((title ? (title + ' | ') : '') + titleBase) : (title ? title : titleBase)}</title>
-	<link rel="canonical" href={canonicalUrl.toString()} />
+	<link rel="canonical" href={canonicalHref} />
 	{#if description}
 		<meta name="description" content={description}>
 	{/if}

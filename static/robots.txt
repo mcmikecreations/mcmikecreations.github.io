@@ -1,4 +1,14 @@
 User-agent: *
 Allow: /
 
+# Basemap tiles: thousands of images with no standalone value.
+Disallow: /_projects/data-viz/maps/
+
+# Search UI and the indexes behind it.
+Disallow: /blog/search
+Disallow: /hikes/search
+Disallow: /blog/search-index.json
+Disallow: /hikes/search-index.json
+Disallow: /hikes/suggestions.php
+
 Sitemap: https://mykolamor.com/sitemap.xml

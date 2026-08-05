@@ -260,15 +260,15 @@
 	});
 </script>
 
-<AppMeta title={data.map.name} description={data.map.description} image={data.map.image} type="website" />
-<AppBreadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'Projects', href: '/projects/' }, { name: 'Data Viz', href: '/projects/data-viz/' }, { name: data.map.name, href: data.map.route }]} />
-<AppJsonLd variant="creative-work" name={data.map.name} description={data.map.description} image={data.map.image} url={data.map.route} />
+<AppMeta title={data.map.name} description={data.map.description} image={data.map.image} type="website" canonical={data.canonical} />
+<AppBreadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'Projects', href: '/projects/' }, { name: 'Data Viz', href: '/projects/data-viz/' }, { name: data.map.name, href: `${data.map.route}/` }]} />
+<AppJsonLd variant="creative-work" name={data.map.name} description={data.map.description} image={data.map.image} url={`${data.map.route}/`} />
 
 <main>
 	<Breadcrumb class="mb-4" aria-label="Route" solid>
 		<BreadcrumbItem href="/" home>Home</BreadcrumbItem>
-		<BreadcrumbItem href="/projects">Projects</BreadcrumbItem>
-		<BreadcrumbItem href="/projects/data-viz">Data Viz</BreadcrumbItem>
+		<BreadcrumbItem href="/projects/">Projects</BreadcrumbItem>
+		<BreadcrumbItem href="/projects/data-viz/">Data Viz</BreadcrumbItem>
 		<BreadcrumbItem>{(data.map.properties.draft ? '⏳ ' : '') + data.map.name}</BreadcrumbItem>
 	</Breadcrumb>
 	<div class="flex flex-row flex-wrap gap-4">
@@ -283,7 +283,7 @@
 						<li>Ascent: {getDistance(data.properties.ascent ?? 0)}</li>
 						<li>Descent: {getDistance(data.properties.descent ?? 0)}</li>
 						<li>Dates: {data.properties.dates.map((x) => new Date(x.date).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"})).join('; ')}</li>
-						<li><a href={data.properties.filePath}>GeoJSON</a>, <a href={data.gpxPath}>GPX</a></li>
+						<li><a href={data.properties.filePath}>GeoJSON</a>{#if data.gpxPath}, <a href={data.gpxPath}>GPX</a>{/if}</li>
 					</ul>
 					<span>
 						* The duration of the hike is pure walking time with above average speed.

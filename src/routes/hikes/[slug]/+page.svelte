@@ -40,6 +40,32 @@
 	let modalHref = $state('');
 	let modalTitle = $state<string | undefined>('');
 	let modalText = $state('');
+	// Low resolution stand-in shown until the full resolution modal image has loaded.
+	let modalPlaceholder = $state<string | undefined>(undefined);
+	let modalLoaded = $state(false);
+
+	function openImageModal(href: string, text: string, title?: string, placeholder?: string) {
+		modalHref = href;
+		modalTitle = title;
+		modalText = text;
+		modalPlaceholder = placeholder && placeholder !== href ? placeholder : undefined;
+		modalLoaded = false;
+		openModal = true;
+	}
+
+	function openMainImageModal() {
+		// The full resolution image is only fetched lazily (and never on small screens),
+		// so fall back to the thumb as a placeholder while it loads.
+		if (data.post.imageFull && !fullResImageSrc) {
+			fullResImageSrc = data.post.imageFull;
+		}
+		openImageModal(
+			data.post.imageFull ?? data.post.image,
+			data.post.title,
+			undefined,
+			data.post.image
+		);
+	}
 
 	// Track open modal to prevent scrolling the content behind it.
 	$effect(() => {
@@ -113,10 +139,7 @@
 			images.forEach((img) => {
 				img.addEventListener('click', (e) => {
 					const target = e.target as HTMLImageElement;
-					modalHref = target.src;
-					modalTitle = target.title;
-					modalText = target.alt;
-					openModal = true;
+					openImageModal(target.src, target.alt, target.title);
 				});
 			});
 
@@ -246,13 +269,13 @@
 					·
 					<span>{data.post.time}</span>
 					·
-					<a class="no-underline hover:underline" href="/hikes/year/{new Date(data.post.date).getFullYear()}">{new Date(data.post.date).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"})}</a>
+					<a class="no-underline hover:underline" href="/hikes/year/{new Date(data.post.date).getFullYear()}/">{new Date(data.post.date).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"})}</a>
 					{#if data.post.tags?.length}
 						·
 						<div class="flex flex-row flex-wrap justify-end gap-2 items-center" aria-details="tags">
 							<span aria-label="tags" class="sr-only"></span>
 							{#each data.post.tags as t}
-								<a class="bg-primary-100 text-primary-800 dark:bg-primary-900 dark:text-primary-300 px-2.5 py-0.5 rounded-sm no-underline hover:bg-primary-200 dark:hover:bg-primary-800" href="/hikes/tag/{t}">{t}</a>
+								<a class="bg-primary-100 text-primary-800 dark:bg-primary-900 dark:text-primary-300 px-2.5 py-0.5 rounded-sm no-underline hover:bg-primary-200 dark:hover:bg-primary-800" href="/hikes/tag/{encodeURIComponent(t)}/">{t}</a>
 							{/each}
 						</div>
 					{/if}
@@ -268,6 +291,12 @@
 										<img src={data.post.image} alt={data.post.title} class="w-full h-full object-cover m-0 transition-opacity duration-500 {fullImageLoaded ? 'opacity-100' : 'opacity-0'}" onload={() => fullImageLoaded = true} />
 									</picture>
 								{/if}
+								<button
+									type="button"
+									aria-label="Expand image"
+									onclick={openMainImageModal}
+									class="absolute inset-0 w-full h-full cursor-pointer bg-transparent border-0 p-0 focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-primary-500 focus-visible:outline-hidden"
+								></button>
 							</div>
 						{/if}
 						<div class="flex w-full flex-col justify-center">
@@ -343,18 +372,28 @@
 	<!-- svelte-ignore a11y_click_events_have_key_events -->
 	<!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
 	<div
-		class="flex min-h-[calc(100vh-5rem)] h-full w-full items-center justify-center outline-hidden overscroll-contain"
+		class="relative flex min-h-[calc(100vh-5rem)] h-full w-full items-center justify-center outline-hidden overscroll-contain"
 		role="dialog"
 		tabindex="-1"
 		onclick={(e) => {
 			if (e.target === e.currentTarget) openModal = false;
 		}}
 	>
+		{#if modalPlaceholder}
+			<!-- Blurred thumb fills the same contained rectangle as the full image until it arrives. -->
+			<img
+				src={modalPlaceholder}
+				alt=""
+				aria-hidden="true"
+				class="absolute inset-0 w-full h-full object-contain blur-sm pointer-events-none transition-opacity duration-500 {modalLoaded ? 'opacity-0' : 'opacity-100'}"
+			/>
+		{/if}
 		<img
 			src={modalHref}
 			title={modalTitle}
 			alt={modalText}
-			class="max-h-full max-w-full object-contain cursor-default"
+			class="max-h-full max-w-full object-contain cursor-default transition-opacity duration-500 {modalPlaceholder && !modalLoaded ? 'opacity-0' : 'opacity-100'}"
+			onload={() => (modalLoaded = true)}
 			onclick={(e) => e.stopPropagation()}
 		/>
 	</div>

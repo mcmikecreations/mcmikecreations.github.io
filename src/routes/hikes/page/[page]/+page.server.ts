@@ -5,7 +5,7 @@ export const prerender = 'auto';
 
 export function entries() {
 	const { pagination } = getPosts({ page: 1 });
-	return Array.from({ length: pagination.totalPages - 1 }, (_, i) => ({ page: String(i + 2) }));
+	return Array.from({ length: pagination.totalPages }, (_, i) => ({ page: String(i + 1) }));
 }
 
 export function load({ params }) {

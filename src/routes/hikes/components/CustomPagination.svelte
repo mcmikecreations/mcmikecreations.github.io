@@ -1,6 +1,7 @@
 <script lang="ts">
   import { ArrowLeftOutline, ArrowRightOutline } from 'flowbite-svelte-icons';
   import { page } from '$app/state';
+  import { getPageUrl as pageUrl } from '$lib/pagination';
 
   interface Props {
     currentPage: number;
@@ -10,10 +11,7 @@
 
   let { currentPage, totalPages, baseUrl }: Props = $props();
 
-  function getPageUrl(page: number) {
-    const base = baseUrl.replace(/\/$/, '');
-    return page === 1 ? (base || '/') : `${base}/page/${page}`;
-  }
+  const getPageUrl = (page: number) => pageUrl(baseUrl, page);
 
   const visiblePages = 5;
   const halfVisible = $derived(Math.floor(visiblePages / 2));

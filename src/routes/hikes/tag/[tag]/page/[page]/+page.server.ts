@@ -8,7 +8,7 @@ export function entries() {
 	const tags = [...new Set(posts.flatMap(p => p.tags))];
 	return tags.flatMap(tag => {
 		const { pagination } = getPosts({ page: 1, tag });
-		return Array.from({ length: pagination.totalPages - 1 }, (_, i) => ({ tag, page: String(i + 2) }));
+		return Array.from({ length: pagination.totalPages }, (_, i) => ({ tag, page: String(i + 1) }));
 	});
 }
 

@@ -90,7 +90,7 @@ there's the famous Hindelanger Klettersteig with a C- difficulty grade at
 around 2235 m of elevation. We saw two guys climb it towards Nebelhorn (2224 m)
 and take the cable car down. While it does look sketchy from the ground below,
 I'm sure that taking a cable car to it and then doing the climb is a cool
-experience. I might do it for my [via ferrata climbing project](/hikes/tag/Climb).
+experience. I might do it for my [via ferrata climbing project](/hikes/tag/Climb/).
 
 ![The view from Nebelhorn (2224 m) onto Entschenkopf (2043 m)](/images/projects/data-viz/hikes/stories/nebelhorn/2024-10-27-07.jpg)
 

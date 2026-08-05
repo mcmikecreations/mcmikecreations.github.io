@@ -15,7 +15,7 @@
 
 {#if hasPosts}
 	<section id="blog">
-		<Heading tag="h2" class="text-center mt-8">Latest <A href="/blog">Blog</A> Posts</Heading>
+		<Heading tag="h2" class="text-center mt-8">Latest <A href="/blog/">Blog</A> Posts</Heading>
 		<div class="flex flex-wrap justify-center gap-4 mt-8 mx-4 2xl:mx-0">
 			{#each posts as p}
 				<Card

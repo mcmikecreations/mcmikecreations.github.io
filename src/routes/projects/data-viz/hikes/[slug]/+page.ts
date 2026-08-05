@@ -17,18 +17,17 @@ export const load: PageLoad = async ({ data, fetch, params }) => {
 		// because it builds THREE objects, which cannot cross a server boundary.
 		const meta : Map = data.meta;
 
-		let gpxPath = meta.properties.filePath.replace('geojson', 'gpx').replace('json', 'gpx');
+		const dates = [...meta.properties.dates].sort((a, b) => a.date > b.date ? -1 : 1);
+
+		let gpxPath: string | null =
+			dates[0]?.gpx ?? meta.properties.filePath.replace('geojson', 'gpx').replace('json', 'gpx');
 
 		do {
 			// Only redirect if every date has a blog post (markdown).
-			const allDates = meta.properties.dates;
-			if (allDates.length == 0) break;
-			if (!allDates.every(d => d.path)) break;
+			if (dates.length == 0) break;
+			if (!dates.every(d => d.path)) break;
 
-			const dates = [...allDates].sort((a, b) => a.date > b.date ? -1 : 1);
 			const date = dates[0];
-
-			if (date.gpx) gpxPath = date.gpx;
 
 			const markdownFile = await fetch(date.path!, { method: 'OPTIONS' });
 			if (!markdownFile.ok) break;
@@ -36,6 +35,16 @@ export const load: PageLoad = async ({ data, fetch, params }) => {
 			const url = `/hikes/${date.date}-${params.slug}/`;
 			redirect(301, url);
 		} while (false);
+
+		if (!(await fetch(gpxPath, { method: 'OPTIONS' })).ok) {
+			gpxPath = null;
+		}
+
+		// Fully-blogged hikes redirected above, so anything still here has at most
+		// some dates blogged. Where one is, its post carries this route's prose, so
+		// point the canonical at it rather than competing with it.
+		const bloggedDate = dates.find(d => d.path);
+		const canonical = bloggedDate ? `/hikes/${bloggedDate.date}-${params.slug}/` : undefined;
 
 		const features: Feature[] = getMapFeatures(meta);
 
@@ -106,6 +115,7 @@ export const load: PageLoad = async ({ data, fetch, params }) => {
 			map: meta,
 			properties: properties,
 			gpxPath: gpxPath,
+			canonical: canonical,
 			origin: originData,
 			statistics: statistics
 				? ((await buildStatistics(fetch, statistics, height, undefined, properties))?.layers2d?.join(''))

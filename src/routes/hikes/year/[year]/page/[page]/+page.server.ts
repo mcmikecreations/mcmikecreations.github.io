@@ -7,7 +7,7 @@ export function entries() {
 	const years = [...new Set(getAllPosts().map(p => p.year))];
 	return years.flatMap(year => {
 		const { pagination } = getPosts({ page: 1, year });
-		return Array.from({ length: pagination.totalPages - 1 }, (_, i) => ({ year: String(year), page: String(i + 2) }));
+		return Array.from({ length: pagination.totalPages }, (_, i) => ({ year: String(year), page: String(i + 1) }));
 	});
 }
 

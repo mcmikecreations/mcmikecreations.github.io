@@ -29,7 +29,7 @@
 		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-8">
 			<Card
 					class=""
-					href="/projects/data-viz/hikes/all"
+					href="/projects/data-viz/hikes/all/"
 					img="/images/projects/data-viz/hikes/thumb/all.jpg"
 			>
 				<div class="m-4 sm:m-6">
@@ -38,7 +38,7 @@
 			</Card>
 			{#each hikes as map}
 				<Card
-						href={map.route}
+						href={`${map.route}/`}
 						img={map.image.replace('/hikes/', '/hikes/thumb/')}
 						class={map.properties?.draft === true ? 'hidden' : ''}
 				>

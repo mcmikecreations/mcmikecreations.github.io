@@ -41,7 +41,6 @@ and recovered my mood.
 
 ![Bohdan standing on top of Pürschling (1566 m) west peak](/images/projects/data-viz/hikes/stories/teufelstaettkopf/2026-05-10-06.jpg)
 ![Mykola climbing down Pürschling (1566 m) east peak](/images/projects/data-viz/hikes/stories/teufelstaettkopf/2026-05-10-07.jpg)
-![Looking down onto the August-Schuster-Haus](/images/projects/data-viz/hikes/stories/teufelstaettkopf/2026-05-10-08.jpg)
 
 Near the hut, I met back with Bohdan and we did a small detour to
 Pürschling (1566 m). It's a cool cliff overseeing the Linder valley, but
@@ -58,7 +57,6 @@ my fall though. The route towards Teufelstättkopf (1758 m) was pretty nice,
 with some steeper sections in the shade of spruce trees and some shallow
 sections with wooden bridges across muddy spots.
 
-![Multiple mountain flowers at Laubeneck (1520 m)](/images/projects/data-viz/hikes/stories/teufelstaettkopf/2026-05-10-09.jpg)
 ![Gentiana orbicularis near Laubeneck (1520 m)](/images/projects/data-viz/hikes/stories/teufelstaettkopf/2026-05-10-11.jpg)
 
 We again did a detour to Latschenkopf (1634 m) for completeness sake, spending

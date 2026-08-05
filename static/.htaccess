@@ -2,3 +2,22 @@
 ErrorDocument 404 /404.html
 DirectoryIndex index.html
 #KONSOLEH AREA END - PLEASE ADD MANUAL CHANGES BELOW
+
+# http -> https is already handled upstream by the host, so there is no rule for
+# it here; adding one risks a loop where TLS is terminated by a proxy.
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+
+	# www -> apex. Without this, www. serves a full duplicate of the site with a
+	# 200, leaving canonical tags as the only thing pointing at the real host.
+	RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+	RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+<IfModule mod_headers.c>
+	# Post sources, tracks and LaTeX artifacts: still fetchable — the maps read
+	# some of these at runtime — but never worth indexing on their own.
+	<FilesMatch "\.(tex|log|aux|out|sty)$"> # md|gpx|
+		Header set X-Robots-Tag "noindex"
+	</FilesMatch>
+</IfModule>

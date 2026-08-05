@@ -12,3 +12,6 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 /svelte-sitemap.config.ts
 /deploy.sh
+
+# Python bytecode from scripts/plots
+__pycache__/

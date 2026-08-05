@@ -1,6 +1,15 @@
 import { error } from '@sveltejs/kit';
+import { hikeSlugs } from '$lib/data/hikes-db';
 import { hikes } from '$lib/hikes/hikes.server';
 import type { PageServerLoad } from './$types';
+
+/**
+ * Emitting every slug keeps the redirect
+ * reachable for as long as the hike exists.
+ */
+export function entries() {
+	return hikeSlugs.map((slug) => ({ slug }));
+}
 
 /**
  * Just this hike, handed to the universal load.
