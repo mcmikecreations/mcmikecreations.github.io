@@ -3,9 +3,10 @@ import { geoMercator } from 'd3-geo';
 import { tile } from 'd3-tile';
 // noinspection ES6PreferShortImport
 import { loadHikes } from './load-hikes.js';
-import { existsSync } from 'fs';
-import { mkdir, writeFile } from 'fs/promises';
+import { existsSync, statSync } from 'fs';
+import { mkdir, readFile, unlink, writeFile } from 'fs/promises';
 import { resolve } from 'path';
+import { createHash } from 'crypto';
 // noinspection ES6PreferShortImport
 import { providers, providerFolder, providerFile } from '../src/lib/data/map-providers.js';
 // noinspection ES6PreferShortImport
@@ -23,15 +24,52 @@ const verifyFolder = async (path) => {
 	}
 }
 
+// Tile servers can refuse a request with a perfectly valid 256x256 PNG that says so in
+// words - OSM serves its "403 Access blocked" placeholder with HTTP 200 and
+// content-type image/png. Neither the status code nor the signature check below catches those,
+// and once written they are indistinguishable from a real tile to `existsSync`, so we match
+// them by content hash. Size is checked first to avoid hashing every cached tile.
+const rejectedTiles = [
+	{ size: 6987, md5: 'c069a15b2cc2d6b6f527ad09eb93c61a', reason: 'OSM "403 Access blocked" placeholder' },
+];
+const rejectedTileSizes = new Set(rejectedTiles.map((x) => x.size));
+
+// Mapbox answers its `.png` satellite endpoint with JPEG, so accept either signature.
+const imageSignatures = [
+	Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]), // PNG
+	Buffer.from([0xff, 0xd8, 0xff]),                               // JPEG
+];
+const isImage = (/** @type {Buffer} */ buffer) =>
+	imageSignatures.some((signature) => buffer.subarray(0, signature.length).equals(signature));
+
+const rejectedTile = (/** @type {Buffer} */ buffer) => {
+	if (!rejectedTileSizes.has(buffer.length)) return undefined;
+	const md5 = createHash('md5').update(buffer).digest('hex');
+	return rejectedTiles.find((x) => x.md5 === md5);
+};
+
 const downloadFile = async (address, fileName, requestInit = undefined) => {
 	const destination = resolve(mapFolder, fileName);
-	if (existsSync(destination)) return 0;
-	
+	if (existsSync(destination)) {
+		// Re-fetch tiles a previous run cached before we knew to reject them.
+		if (!rejectedTileSizes.has(statSync(destination).size)) return 0;
+		const cached = rejectedTile(await readFile(destination));
+		if (!cached) return 0;
+		console.warn(`Replacing ${fileName}: cached ${cached.reason}.`);
+		await unlink(destination);
+	}
+
 	// Wait a second between downloads to prevent rate-limiting
 	await new Promise(resolve => setTimeout(resolve, 1000));
-	
+
 	//console.log(`Downloading ${address}`);
 	const response = await fetch(address, requestInit);
+
+	// OSM flags a refused request with this header even though it answers 200.
+	if (response.headers.has('x-blocked')) {
+		console.error(`Blocked by ${new URL(address).host}: ${response.headers.get('x-blocked')}`);
+		process.exit(1);
+	}
 
 	if (response.status === 429) {
 		const interval = response.headers.get('X-Rate-Limit-Interval');
@@ -50,11 +88,18 @@ const downloadFile = async (address, fileName, requestInit = undefined) => {
 	}
 
 	const buffer = Buffer.from(await response.arrayBuffer());
-	if (!response.ok || buffer.length < 1024) {
+	if (!response.ok || !isImage(buffer)) {
 		const decoder = new TextDecoder("utf-8");
 		console.error(`Failed to download ${address}: ${response.status} ${response.statusText}`, decoder.decode(buffer));
 		return 0;
 	}
+
+	const rejected = rejectedTile(buffer);
+	if (rejected) {
+		console.error(`Refusing to save ${fileName}: ${new URL(address).host} returned ${rejected.reason}.`);
+		process.exit(1);
+	}
+
 	await writeFile(destination, buffer);
 
 	return buffer.length;
@@ -68,6 +113,12 @@ const slug = process.argv.at(2);
 // We replicate that handshake so no manual cookie copying is needed. The result is
 // cached and transparently refreshed shortly before it expires.
 const mapyUserAgent = "Mozilla/5.0 (X11; Linux x86_64; rv:120.0) Gecko/20100101 Firefox/120.0";
+
+// OSM's tile usage policy requires a User-Agent that identifies the application; requests
+// sent with a generic library UA (Node's default is `node`) are answered with the
+// "403 Access blocked" placeholder image instead of a tile, and the one-second delay above
+// keeps us inside the policy's limits. https://operations.osmfoundation.org/policies/tiles/
+const osmUserAgent = "ligmapper-tile-prefetch/1.0 (https://github.com/Evenfall-Tech/LigMapper)";
 let mapyCookie = null;
 let mapyCookieExpiry = 0;
 
@@ -186,7 +237,12 @@ async function downloadMeta(meta) {
 		await downloadFile(
 			providers.osm.url(x, y, z),
 			providerFile(x, y, z, providers.osm.tileset, providers.osm.format),
-			undefined
+			{
+				method: 'GET',
+				headers: {
+					"User-Agent": osmUserAgent,
+				},
+			}
 		);
 		url = `${skuMapboxSatellite}`.length > 0 ? `sku=${skuMapboxSatellite}&access_token=${tokenMapboxSatellite}` : `access_token=${tokenMapboxSatellite}`;
 		await downloadFile(

@@ -9,7 +9,7 @@ export const providers = {
 		tileset: 'osm-mapnik',
 		source: 'https://www.openstreetmap.org/',
 		origin: null,
-		url: (/** @type {number} */ x, /** @type {number} */ y, /** @type {number} */ z) => `https://${"abc"[Math.abs(x + y) % 3]}.tile.osm.org/${z}/${x}/${y}.png`,
+		url: (/** @type {number} */ x, /** @type {number} */ y, /** @type {number} */ z) => `https://tile.openstreetmap.org/${z}/${x}/${y}.png`,
 	},
 	mapyOutdoor: {
 		format: 'png',

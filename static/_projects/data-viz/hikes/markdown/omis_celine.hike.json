@@ -1,0 +1,70 @@
+{
+  "name": "Čeline",
+  "description": "Hike from Omiš and back via Babnjača (334 m) and Čeline (455 m).",
+  "image": "/images/projects/data-viz/hikes/omis_celine.jpg",
+  "origin": {
+    "lat": 43.45017728339725,
+    "lon": 16.677932739257816
+  },
+  "height": 384,
+  "checkpoints": [
+    [16.6861604, 43.4447441],
+    [16.6779666, 43.4459370],
+    [16.6697645, 43.4489050],
+    [16.6658171, 43.4501249],
+    [16.6697645, 43.4489050],
+    [16.6795182, 43.4542915],
+    [16.6914148, 43.4449119]
+  ],
+  "nodes": [
+    {
+      "id": 1214651798,
+      "lat": 43.4459370,
+      "lon": 16.6779666,
+      "tags": {
+        "name": "Babnjača",
+        "natural": "peak",
+        "ele": "334.5"
+      }
+    },
+    {
+      "id": 168972370,
+      "lat": 43.4459370,
+      "lon": 16.6779666,
+      "tags": {
+        "name": "Crkva Gospe Snježne",
+        "name:en": "Church of Our Lady of the Snows",
+        "amenity": "place_of_worship",
+        "building": "church",
+        "denomination": "roman_catholic",
+        "religion": "christian",
+        "roof:material": "roof_tiles",
+        "roof:shape": "gabled",
+        "website": "https://www.smn.hr/nadbiskupija/44-poljicki-dekanat/474-duce"
+      }
+    },
+    {
+      "id": 9510889687,
+      "lat": 43.4501249,
+      "lon": 16.6658171,
+      "tags": {
+        "name": "Čeline",
+        "natural": "peak",
+        "ele": "455.6"
+      }
+    },
+    {
+      "id": 258604435,
+      "lat": 43.4542915,
+      "lon": 16.6795182,
+      "tags": {
+        "name": "Crkva sv. Ante",
+        "amenity": "place_of_worship",
+        "building": "church",
+        "religion": "christian",
+        "roof:material": "roof_tiles",
+        "roof:shape": "gabled"
+      }
+    }
+  ]
+}
