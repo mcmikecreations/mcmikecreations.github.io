@@ -102,7 +102,7 @@ still thanked them for the feedback.
 
 As I reached the summit, there was nobody there, and the sunset was in full
 force. I didn't linger for too long and went down to another viewing spot
-to see a better panorama of Lenggries and [Benediktenwand (1800 m)](/404/),
+to see a better panorama of Lenggries and [Benediktenwand (1800 m)](/hikes/2024-07-21-benediktenwand/),
 where I spent some time to catch my breath. I messaged the group to say that
 I should be down in Lenggries in about 1.5 hours, but didn't hear anything
 back from them, assuming they would wait for me.

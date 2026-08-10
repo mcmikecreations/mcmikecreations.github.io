@@ -1,6 +1,6 @@
 {
   "name": "Lainbachfall and Jochberg",
-  "description": "Hike from Kochelsee to Walchensee via Laimbachfall, Sonnenspitz (1259 m), and Jochberg (1565 m).",
+  "description": "Hike from Kochelsee to Walchensee via Lainbachfall, Sonnenspitz (1259 m), and Jochberg (1565 m).",
   "image": "/images/projects/data-viz/hikes/lainbachfall_jochberg.jpg",
   "origin": {
     "lat": 47.64237650648966,
@@ -15,6 +15,16 @@
     [11.3458192, 47.6174472]
   ],
   "nodes": [
+    {
+      "id": 1711924736,
+      "lat": 47.6498367,
+      "lon": 11.3819654,
+      "tags": {
+        "name": "Lainbachfall",
+        "waterway": "waterfall",
+        "ele": "748"
+      }
+    },
     {
       "id": 748804706,
       "lat": 47.6393841,

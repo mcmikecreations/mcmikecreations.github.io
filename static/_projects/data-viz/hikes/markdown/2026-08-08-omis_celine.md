@@ -1,5 +1,5 @@
 ---
-title: Scratching my way up Čeline
+title: Scratching My Way up Čeline
 description: Finding trails among cliffs and spiky ferns at the Adriatic seaside.
 gpx: /_projects/data-viz/hikes/gpx/omis_celine.gpx
 tags:

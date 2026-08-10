@@ -81,7 +81,7 @@ We started the final section and reached the peak just 20 minutes later. The
 vista from the top was mind-blowing. The clouds in the Kochel region contrast
 the clear skies of Walchensee, [Simetsberg (1840 m)](/404/)
 in the distance in front of [Zugspitze (2962 m)](/hikes/2025-06-21-zugspitze_reintal/),
-and [Benediktenwand (1800 m)](/404/)
+and [Benediktenwand (1800 m)](/hikes/2024-07-21-benediktenwand/)
 in the other direction add up to an amazing panorama. The tourists were also
 really kind, patiently stomaching our chatter the whole time we stayed there.
 

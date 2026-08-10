@@ -11,7 +11,7 @@ After I learned that I'll miss all summer solstice celebration events when the
 holiday actually happens, I was really disappointed. To my surprise, Lenggries
 decided to postpone their event a week due to the heat wave pressing on
 Bavaria. They announced that the event will be held on Brauneck (1555 m), which
-I conveniently skipped during my [Benediktenwand (1800 m) hike](/404/).
+I conveniently skipped during my [Benediktenwand (1800 m) hike](/hikes/2024-07-21-benediktenwand/).
 The danger of fire was still there (and the temperature got even
 worse). So the venue made the decision to replace the actual bonfire with a LED
 installation, having a fire show with professional showmen instead. With the
@@ -65,7 +65,7 @@ opened up in front of us. To the east, we got to see
 [Seekarkreuz (1601 m)](/hikes/2025-03-02-seekarkreuz/) and
 [Buchstein (1701 m)](/hikes/2025-10-05-buchstein_only/).
 To the west, we saw the continuation of the ridge towards Kochel, including
-[Benediktenwand (1800 m)](/404/).
+[Benediktenwand (1800 m)](/hikes/2024-07-21-benediktenwand/).
 
 ![View from Brauneck (1555 m) towards Benediktenwand (1800 m)](/images/projects/data-viz/hikes/stories/brauneck_only/2026-06-27-10.jpg)
 ![Paragliders preparing at Brauneck (1555 m)](/images/projects/data-viz/hikes/stories/brauneck_only/2026-06-27-11.jpg)

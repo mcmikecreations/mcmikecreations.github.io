@@ -84,7 +84,7 @@ The ladies wanted to take yet another break at one of the huts, the
 ![A piano inside the hut](/images/projects/data-viz/hikes/stories/bolsterlanger_horn_only/2026-01-25-15.jpg)
 
 I remembered the Tutzinger Hütte near Benediktenwand (1801 m), which I
-[visited in 2024](/404/). They sold tons of merchandise there, including huts,
+[visited in 2024](/hikes/2024-07-21-benediktenwand/). They sold tons of merchandise there, including huts,
 keychains, T-shirts, and local drinks and food. Since I was waiting anyway, I
 asked around for any souvenirs they may have. Unfortunately, this hut didn't
 have anything of the sort, so I headed back to rejoin the ladies. As we exited

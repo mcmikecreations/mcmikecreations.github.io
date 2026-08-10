@@ -29,6 +29,122 @@
         "wikidata": "Q91133656",
         "wikipedia": "de:Kirchel"
       }
+    },
+    {
+      "id": 1254353419,
+      "lat": 47.6606163,
+      "lon": 11.5086377,
+      "tags": {
+        "name": "Stangeneck",
+        "natural": "peak",
+        "ele": "1646",
+        "wikidata": "Q31558358"
+      }
+    },
+    {
+      "id": 449238477,
+      "lat": 47.6597349,
+      "lon": 11.5015440,
+      "tags": {
+        "name": "Vorderer Kirchstein",
+        "natural": "peak",
+        "ele": "1670",
+        "summit:cross": "yes",
+        "wikidata": "Q31516270"
+      }
+    },
+    {
+      "id": 269134696,
+      "lat": 47.6565948,
+      "lon": 11.4990327,
+      "tags": {
+        "name": "Latschenkopf",
+        "natural": "peak",
+        "ele": "1712",
+        "summit:cross": "yes",
+        "summit:register": "no",
+        "wikidata": "Q1399069",
+        "wikipedia": "de:Latschenkopf (Benediktenwand)"
+      }
+    },
+    {
+      "id": 269132073,
+      "lat": 47.6554914,
+      "lon": 11.4948924,
+      "tags": {
+        "name": "Probstalmsattel",
+        "natural": "saddle",
+        "ele": "1628",
+        "mountain_pass": "yes"
+      }
+    },
+    {
+      "id": 1411465448,
+      "lat": 47.6531047,
+      "lon": 11.4862838,
+      "tags": {
+        "name": "Achselköpfe",
+        "natural": "peak",
+        "ele": "1710",
+        "wikidata": "Q15050743",
+        "wikipedia": "de:Achselköpfe"
+      }
+    },
+    {
+      "id": 778231935,
+      "lat": 47.6540337,
+      "lon": 11.4776478,
+      "tags": {
+        "name": "Rotöhrsattel",
+        "natural": "saddle",
+        "mountain_pass": "yes"
+      }
+    },
+    {
+      "id": 26862546,
+      "lat": 47.6531721,
+      "lon": 11.4655437,
+      "tags": {
+        "name": "Benediktenwand",
+        "natural": "peak",
+        "ele": "1800",
+        "summit:cross": "yes",
+        "summit:register": "yes",
+        "wikidata": "Q456783",
+        "wikipedia": "de:Benediktenwand"
+      }
+    },
+    {
+      "id": 97575267,
+      "lat": 47.6576176,
+      "lon": 11.4623110,
+      "tags": {
+        "name": "Tutzinger Hütte",
+        "amenity": "restaurant",
+        "tourism": "alpine_hut",
+        "ele": "1327",
+        "building": "yes",
+        "building:levels": "1",
+        "building:material": "wood",
+        "roof:levels": "1",
+        "roof:material": "metal",
+        "contact:mobile": "+491751641690",
+        "contact:website": "https://tutzinger-huette.de/",
+        "email": "kontakt@tutzinger-huette.de",
+        "wikidata": "Q2461881",
+        "wikipedia": "de:Tutzinger Hütte"
+      }
+    },
+    {
+      "id": 4732623385,
+      "lat": 47.6739314,
+      "lon": 11.4430379,
+      "tags": {
+        "name": "Lainbachwasserfälle",
+        "height": "25",
+        "width": "10",
+        "waterway": "waterfall"
+      }
     }
   ]
 }

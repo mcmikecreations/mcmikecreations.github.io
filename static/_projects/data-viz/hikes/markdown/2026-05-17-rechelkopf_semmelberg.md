@@ -69,7 +69,7 @@ trail running, so that was something.
 
 The view from the Rechelkopf (1330 m) peak is much greater than from the
 previous summits. You can see Benediktenwand (1801 m), which
-[I visited with Maksym a while ago](/404/),
+[I visited with Maksym a while ago](/hikes/2024-07-21-benediktenwand/),
 and even further beyond! For some reason it snowed the day before in the middle
 of May, covering all the mountains in quite a thick layer of snow. I was hoping
 that the lower mountains I was visiting on this trip were safe from the frost,
