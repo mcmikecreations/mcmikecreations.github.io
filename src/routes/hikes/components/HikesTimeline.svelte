@@ -3,7 +3,7 @@
 
 	const GRID_ROWS = 6;
 
-	type WeekHike = { name: string; route: string };
+	type WeekHike = { name: string; route: string; hasBlog: boolean };
 	type WeekData = { year: number; weekIndex: number; label: string; hikes: WeekHike[] };
 
 	export let weeks: WeekData[];
@@ -18,8 +18,10 @@
 
 	$: allColumns = generateColumns(weeks);
 
-	function getIntensityClass(count: number) {
+	function getIntensityClass(hikes: WeekHike[]) {
+		const count = hikes.length;
 		if (count === 0) return 'bg-gray-200 dark:bg-gray-700';
+		if (!hikes.some(h => h.hasBlog)) return 'bg-sky-400 dark:bg-sky-700';
 		if (count === 1) return 'bg-emerald-300 dark:bg-emerald-800';
 		if (count === 2) return 'bg-emerald-400 dark:bg-emerald-600';
 		if (count === 3) return 'bg-emerald-600 dark:bg-emerald-500';
@@ -70,7 +72,7 @@
 				{#each col as week}
 					<div
 						id="week-{week.year}-{week.weekIndex}"
-						class="w-4 h-4 rounded-xs {getIntensityClass(week.hikes.length)} transition-colors hover:ring-2 hover:ring-gray-400 dark:hover:ring-gray-500 cursor-pointer"
+						class="w-4 h-4 rounded-xs {getIntensityClass(week.hikes)} transition-colors hover:ring-2 hover:ring-gray-400 dark:hover:ring-gray-500 cursor-pointer"
 						role="button"
 						tabindex="0"
 						aria-label="{week.label}: {week.hikes.length} hikes"

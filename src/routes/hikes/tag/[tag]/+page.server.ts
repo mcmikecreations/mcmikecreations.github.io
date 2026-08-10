@@ -14,7 +14,7 @@ export function entries() {
     return tags.map(tag => ({ tag }));
 }
 
-type WeekHike = { name: string; route: string };
+type WeekHike = { name: string; route: string; hasBlog: boolean };
 export type WeekData = { year: number; weekIndex: number; label: string; hikes: WeekHike[] };
 export type WebStats = {
     totalDistance: number;
@@ -68,7 +68,7 @@ async function computeWebData(fetchFn: typeof fetch): Promise<WebData> {
             const targetRoute = filename ? `/hikes/${filename}/` : hike.route;
             const weeks = yearsData.get(year)!;
             if (weeks[weekIndex]) {
-                weeks[weekIndex].hikes.push({ name: hike.name, route: targetRoute });
+                weeks[weekIndex].hikes.push({ name: hike.name, route: targetRoute, hasBlog: !!dateObj.path });
             }
         }
     }

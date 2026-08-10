@@ -11,7 +11,7 @@ import { type MapDate } from '$lib/data/map-info';
 import { getNodeIconDetails, formatTags } from '$lib/hikes/map-utils';
 import { onMount } from 'svelte';
 
-type WeekHike = { name: string; route: string };
+type WeekHike = { name: string; route: string; hasBlog: boolean };
 type WeekData = { year: number; weekIndex: number; label: string; hikes: WeekHike[] };
 type WebStats = {
 	totalDistance: number;
