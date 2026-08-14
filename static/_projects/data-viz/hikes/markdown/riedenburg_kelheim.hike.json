@@ -46,6 +46,26 @@
         "wikidata": "Q1931200",
         "wikipedia": "de:Michelsberg (Kelheim)"
       }
+    },
+    {
+      "id": 3722861040,
+      "lat": 48.9542413,
+      "lon": 11.7323485,
+      "tags": {
+        "name": "Prunner Wand",
+        "natural": "peak",
+        "visited": "yes"
+      }
+    },
+    {
+      "id": 3722861051,
+      "lat": 48.9544219,
+      "lon": 11.7318403,
+      "tags": {
+        "name": "Prunner Turm",
+        "natural": "peak",
+        "visited": "yes"
+      }
     }
   ]
 }

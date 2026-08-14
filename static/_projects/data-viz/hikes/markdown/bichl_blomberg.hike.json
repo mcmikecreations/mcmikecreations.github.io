@@ -134,7 +134,8 @@
         "natural": "peak",
         "ele": "1205",
         "man_made": "cross",
-        "summit:register": "yes"
+        "summit:register": "yes",
+        "visited": "missing"
       }
     },
     {
@@ -173,7 +174,8 @@
         "ele": "1248",
         "wikidata": "Q244660",
         "wikipedia": "de:Blomberg (Bayerische Voralpen)",
-        "access": "private"
+        "access": "private",
+        "visited": "no"
       }
     }
   ]

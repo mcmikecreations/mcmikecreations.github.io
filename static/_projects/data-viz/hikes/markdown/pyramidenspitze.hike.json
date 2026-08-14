@@ -82,6 +82,21 @@
       }
     },
     {
+      "id": 266412097,
+      "lat": 47.6094070,
+      "lon": 12.2426926,
+      "tags": {
+        "name": "Naunspitze",
+        "natural": "peak",
+        "ele": "1633",
+        "summit:cross": "yes",
+        "summit:register": "yes",
+        "wikidata": "Q875491",
+        "wikipedia": "de:Naunspitze",
+        "visited": "yes"
+      }
+    },
+    {
       "id": 256041995,
       "lat": 47.6089803,
       "lon": 12.2463971,

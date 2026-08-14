@@ -1,32 +1,20 @@
 {
-  "name": "Čeline",
-  "description": "Hike from Omiš and back via Babnjača (334 m) and Čeline (455 m).",
-  "image": "/images/projects/data-viz/hikes/omis_celine.jpg",
+  "name": "Omiš - Duće",
+  "description": "Hike from Omiš and back via the Church of Our Lady of the Snows.",
+  "image": "/images/projects/data-viz/hikes/omis_duce.jpg",
   "origin": {
-    "lat": 43.45017728339725,
-    "lon": 16.677932739257816
+    "lat": 43.44833908881062,
+    "lon": 16.674928665161136
   },
   "height": 384,
   "checkpoints": [
     [16.6861604, 43.4447441],
-    [16.6779666, 43.4459370],
-    [16.6697645, 43.4489050],
-    [16.6658171, 43.4501249],
+    [16.6744262, 43.4392690],
     [16.6697645, 43.4489050],
     [16.6795182, 43.4542915],
     [16.6914148, 43.4449119]
   ],
   "nodes": [
-    {
-      "id": 1214651798,
-      "lat": 43.4459370,
-      "lon": 16.6779666,
-      "tags": {
-        "name": "Babnjača",
-        "natural": "peak",
-        "ele": "334.5"
-      }
-    },
     {
       "id": 168972370,
       "lat": 43.4489878,

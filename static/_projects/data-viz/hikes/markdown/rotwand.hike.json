@@ -43,6 +43,21 @@
       }
     },
     {
+      "id": 266993268,
+      "lat": 47.6584811,
+      "lon": 11.9211109,
+      "tags": {
+        "name": "Taubenstein",
+        "natural": "peak",
+        "ele": "1693",
+        "summit:cross": "yes",
+        "summit:register": "no",
+        "wikidata": "Q15060298",
+        "wikipedia": "de:Taubenstein",
+        "visited": "yes"
+      }
+    },
+    {
       "id": 10676465928,
       "lat": 47.6584409,
       "lon": 11.9218715,
@@ -76,6 +91,19 @@
         "website": "https://www.rotwandhaus.de",
         "wikidata": "Q2169123",
         "wikipedia": "de:Rotwandhaus"
+      }
+    },
+    {
+      "id": 3859294830,
+      "lat": 47.6494437,
+      "lon": 11.9313898,
+      "tags": {
+        "name": "Rotwandkopf",
+        "natural": "peak",
+        "ele": "1858",
+        "summit:cross": "no",
+        "summit:register": "no",
+        "visited": "yes"
       }
     },
     {

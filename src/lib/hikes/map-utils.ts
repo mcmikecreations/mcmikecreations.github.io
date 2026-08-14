@@ -1,5 +1,14 @@
+const peakColor = (visited: string | undefined) => {
+    switch (visited) {
+        case 'yes': return '#16a34a'; // I'm 95% sure I haven't visited it, but Komoot counted it
+        case 'no': return '#6b7280'; // I probably haven't visited it
+        case 'missing': return '#7dd3fc'; // I definitely visited it, but Komoot doesn't have this peak
+        default: return '#dc2626'; // Present for me and Komoot
+    }
+};
+
 export const getNodeIconDetails = (tags: any) => {
-    if (tags.natural === 'peak') return { emoji: '⛰️', color: '#6b7280' };
+    if (tags.natural === 'peak') return { emoji: '⛰️', color: peakColor(tags.visited) };
     if (tags.natural === 'saddle') return { emoji: '〰️', color: '#16a34a' };
     if (tags.tourism === 'alpine_hut' || tags.tourism === 'wilderness_hut' || tags.building === 'hut') return { emoji: '🛖', color: '#b45309' };
     if (tags.amenity === 'restaurant' || tags.amenity === 'cafe' || tags.amenity === 'fast_food' || tags.amenity === 'pub') return { emoji: '🍽️', color: '#ea580c' };

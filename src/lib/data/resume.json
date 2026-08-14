@@ -121,7 +121,7 @@
   "publications": [
     {
       "url": "https://doi.org/10.1145/3789237.3809127",
-      "mirror": "https://drive.google.com/file/d/1zuAiSWIE_Xx1-KTtmM3xFZ7X76wTiMLo/view?usp=sharing",
+      "mirror": "/cv/Evaluating_Apple_Silicon_for_Data_Processing.pdf",
       "name": "A. Beischl*, M. Morozov*, M. Jungmair, L. Haussmann, T. Neumann, \"Evaluating Apple Silicon for Data Processing,\"",
       "publisher": "22nd International Workshop on Data Management on New Hardware",
       "releaseDate": "2026-06-01",

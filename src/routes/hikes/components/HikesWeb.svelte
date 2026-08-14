@@ -21,6 +21,8 @@ type WebStats = {
 	totalDescent: number;
 };
 type HikeStats = { distance: number | null; duration: number | null; ascent: number | null; descent: number | null };
+type PeakNode = { id: any; lat: number; lon: number; tags: Record<string, string> };
+type Peak = { node: PeakNode; name: string | null; elevation: number | null; color: string; emoji: string };
 
 interface Props {
 	webData: { stats: WebStats; weeks: WeekData[]; hikeStats: Record<string, HikeStats> };
@@ -31,6 +33,59 @@ let { webData }: Props = $props();
 let loadingProgress = $state(0);
 let isLoading = $state(true);
 let hasStartedLoading = $state(false);
+
+let peaks = $state<Peak[]>([]);
+let selectedPeakId = $state<any>(null);
+
+let leaflet: any = null;
+let mapInstance: any = null;
+let rerenderNodes: (() => void) | null = null;
+
+const nodeName = (tags: Record<string, string>) => tags.name || tags['name:de'] || tags['name:en'] || null;
+
+function nodeElevation(tags: Record<string, string>): number | null {
+    const raw = tags.ele;
+    if (raw === undefined || raw === null) return null;
+    const parsed = Number.parseFloat(String(raw).replace(',', '.'));
+    return Number.isFinite(parsed) ? parsed : null;
+}
+
+const formatElevation = (elevation: number) => `${Math.round(elevation).toLocaleString('en-US')} m`;
+
+function nodePopupContent(node: PeakNode): string {
+    const tags = node.tags || {};
+    const name = nodeName(tags) || tags.natural || 'POI';
+    const ele = tags.ele ? ` (${tags.ele}m)` : '';
+
+    let popupContent = `<div style="margin-bottom: 8px;"><b>${name}</b>${ele}</div>`;
+    const tagsList = formatTags(tags)
+        .map(([k, v]) => `<tr><td style="padding-right: 8px; font-weight: 600; font-size: 11px; color: #6b7280; vertical-align: top; white-space: nowrap;">${k}</td><td style="font-size: 11px; word-break: break-word;">${v}</td></tr>`)
+        .join('');
+
+    if (tagsList) {
+        popupContent += `<div style="max-height: 150px; overflow-y: auto;"><table style="min-width: 100%; border-spacing: 0;">${tagsList}</table></div>`;
+    }
+
+    return popupContent;
+}
+
+function focusPeak(peak: Peak) {
+    if (!leaflet || !mapInstance) return;
+
+    selectedPeakId = peak.node.id;
+    const latlng: [number, number] = [peak.node.lat, peak.node.lon];
+    mapInstance.setView(latlng, Math.max(mapInstance.getZoom(), 13), { animate: false });
+    rerenderNodes?.();
+
+    leaflet.popup({ maxWidth: 300 })
+        .setLatLng(latlng)
+        .setContent(nodePopupContent(peak.node))
+        .openOn(mapInstance);
+
+    if (window.matchMedia('(max-width: 767px)').matches) {
+        document.getElementById('map')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+}
 
 /// blended Catmull-Rom cubic spline
 function smoothCoords(pts: number[][], pointsPerSegment = 10, smoothing = 0.5): number[][] {
@@ -140,10 +195,12 @@ async function startLoading() {
     }
 
     const { L } = await import('$lib/components/leaflet.almostover.js');
+    leaflet = L;
     const map = L.map('map', {
         almostOnMouseMove: false,
         almostDistance: 15,
     } as any).setView([47.694653017305036, 11.799241670256336], 10);
+    mapInstance = map;
 
     const isStatic = {
         isStatic: false,
@@ -242,10 +299,31 @@ async function startLoading() {
     const uniqueNodes = Array.from(new Map(nodesData.map(node => [node.id, node])).values());
     const nodesLayer = L.layerGroup().addTo(map);
 
+    peaks = uniqueNodes
+        .filter(node => node.tags?.natural === 'peak' && node.tags.visited !== 'no' && node.tags.visited !== 'missing')
+        .map(node => {
+            const tags = node.tags || {};
+            const iconDetails = getNodeIconDetails(tags);
+            return {
+                node,
+                name: nodeName(tags),
+                elevation: nodeElevation(tags),
+                color: iconDetails.color,
+                emoji: iconDetails.emoji
+            };
+        })
+        .sort((a, b) =>
+            (b.elevation ?? -Infinity) - (a.elevation ?? -Infinity) ||
+            (a.name ?? '').localeCompare(b.name ?? '')
+        );
+
     const renderNodes = () => {
         nodesLayer.clearLayers();
         const filteredNodes: any[] = [];
         const minPixelDistance = 24;
+
+        const selectedNode = uniqueNodes.find(node => node.id === selectedPeakId);
+        if (selectedNode) filteredNodes.push(selectedNode);
 
         uniqueNodes.forEach(node => {
             const p1 = map.project([node.lat, node.lon], map.getZoom());
@@ -260,8 +338,6 @@ async function startLoading() {
         });
 
         filteredNodes.forEach(node => {
-            const name = node.tags?.name || node.tags?.natural || "POI";
-            const ele = node.tags?.ele ? ` (${node.tags.ele}m)` : '';
             const iconDetails = getNodeIconDetails(node.tags || {});
 
             const icon = L.divIcon({
@@ -272,23 +348,13 @@ async function startLoading() {
                 popupAnchor: [0, -12]
             });
 
-            let popupContent = `<div style="margin-bottom: 8px;"><b>${name}</b>${ele}</div>`;
-            const formattedTags = formatTags(node.tags || {});
-
-            const tagsList = formattedTags
-                .map(([k, v]) => `<tr><td style="padding-right: 8px; font-weight: 600; font-size: 11px; color: #6b7280; vertical-align: top; white-space: nowrap;">${k}</td><td style="font-size: 11px; word-break: break-word;">${v}</td></tr>`)
-                .join('');
-
-            if (tagsList) {
-                popupContent += `<div style="max-height: 150px; overflow-y: auto;"><table style="min-width: 100%; border-spacing: 0;">${tagsList}</table></div>`;
-            }
-
             const marker = L.marker([node.lat, node.lon], { icon })
-            .bindPopup(popupContent);
+            .bindPopup(nodePopupContent(node));
             nodesLayer.addLayer(marker);
         });
     };
 
+    rerenderNodes = renderNodes;
     renderNodes();
     map.on('zoomend', renderNodes);
 
@@ -395,9 +461,45 @@ onMount(() => {
             <HikesTimeline weeks={webData.weeks} />
         </div>
     </article>
-    <div class="w-full bg-gray-50 rounded-lg overflow-hidden dark:bg-gray-800 relative z-0 aspect-[4/3] md:aspect-[21/9]">
-        <div class="w-full h-full transition-opacity duration-500 {isLoading ? 'opacity-0' : 'opacity-100'}">
-            <div id="map" class="w-full h-full relative z-0"></div>
+    <div class="flex flex-col md:flex-row gap-4">
+        <aside class="w-full md:w-72 lg:w-80 shrink-0 order-last md:order-none relative bg-gray-50 rounded-lg dark:bg-gray-800">
+            <div class="md:absolute md:inset-0 flex flex-col p-4 transition-opacity duration-500 {isLoading ? 'opacity-0 pointer-events-none' : 'opacity-100'}">
+                <div class="shrink-0 mb-3 text-xl font-semibold text-gray-900 dark:text-white">
+                    {peaks.length} bagged peaks
+                </div>
+                <ul class="overflow-y-auto max-h-72 md:max-h-none md:flex-1 md:min-h-0 -mx-1 px-1">
+                    {#each peaks as peak (peak.node.id)}
+                        <li>
+                            <button
+                                type="button"
+                                onclick={() => focusPeak(peak)}
+                                class="w-full flex items-center gap-2 text-left px-2 py-1.5 rounded-md
+                                    hover:bg-gray-100 dark:hover:bg-gray-700
+                                    {selectedPeakId === peak.node.id ? 'bg-gray-100 dark:bg-gray-700' : ''}"
+                            >
+                                <span
+                                    class="shrink-0 w-4 h-4 rounded-full border border-white shadow-sm flex items-center justify-center text-[9px] leading-none"
+                                    style="background-color: {peak.color};"
+                                    aria-hidden="true"
+                                >{peak.emoji}</span>
+                                <span class="min-w-0 truncate text-sm text-gray-900 dark:text-white">
+                                    {peak.name ?? 'Unnamed peak'}
+                                </span>
+                                {#if peak.elevation !== null}
+                                    <span class="ml-auto shrink-0 text-xs text-gray-500 dark:text-gray-400 whitespace-nowrap">
+                                        {formatElevation(peak.elevation)}
+                                    </span>
+                                {/if}
+                            </button>
+                        </li>
+                    {/each}
+                </ul>
+            </div>
+        </aside>
+        <div class="w-full min-w-0 md:flex-1 bg-gray-50 rounded-lg overflow-hidden dark:bg-gray-800 relative z-0 aspect-[4/3] md:aspect-[21/9]">
+            <div class="w-full h-full transition-opacity duration-500 {isLoading ? 'opacity-0' : 'opacity-100'}">
+                <div id="map" class="w-full h-full relative z-0"></div>
+            </div>
         </div>
     </div>
 </div>

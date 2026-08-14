@@ -26,6 +26,19 @@
       }
     },
     {
+      "id": 2081253533,
+      "lat": 47.6443372,
+      "lon": 11.3727532,
+      "tags": {
+        "name": "Kienstein",
+        "natural": "peak",
+        "ele": "968",
+        "summit:cross": "yes",
+        "summit:register": "no",
+        "visited": "yes"
+      }
+    },
+    {
       "id": 748804706,
       "lat": 47.6393841,
       "lon": 11.3760576,

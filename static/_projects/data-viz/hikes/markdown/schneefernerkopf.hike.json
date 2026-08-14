@@ -194,7 +194,8 @@
       "lon": 10.9684542,
       "tags": {
         "ele": "2836",
-        "natural": "peak"
+        "natural": "peak",
+        "visited": "missing"
       }
     },
     {

@@ -6,6 +6,7 @@ ascent: 1211
 descent: 1317
 people:
   - David Bilan
+  - Dmytro Servetnyk
 ---
 David from my [Brauneck (1555 m) Bonfire Celebration](/hikes/2026-06-27-brauneck_only/)
 messaged me saying he borrowed a drone and wanted to get some cool shots in the

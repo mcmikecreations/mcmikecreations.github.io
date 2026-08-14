@@ -29,6 +29,29 @@
       }
     },
     {
+      "id": 1142708301,
+      "lat": 47.7535170,
+      "lon": 12.8709902,
+      "tags": {
+        "name": "Fuderheuberg",
+        "natural": "peak",
+        "ele": "1350",
+        "wikidata": "Q879480",
+        "wikipedia": "de:Fuderheuberg",
+        "visited": "yes"
+      }
+    },
+    {
+      "id": 942283724,
+      "lat": 47.7532079,
+      "lon": 12.8636617,
+      "tags": {
+        "name": "Steinerne Jäger",
+        "natural": "peak",
+        "visited": "yes"
+      }
+    },
+    {
       "id": 80751554,
       "lat": 47.7550497,
       "lon": 12.8494729,

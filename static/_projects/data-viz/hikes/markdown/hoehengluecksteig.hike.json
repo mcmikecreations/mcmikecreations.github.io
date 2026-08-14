@@ -35,7 +35,8 @@
       "tags": {
         "name": "Azelstein",
         "natural": "peak",
-        "ele": "564"
+        "ele": "564",
+        "visited": "no"
       }
     },
     {
@@ -44,7 +45,8 @@
       "lon": 11.5416089,
       "tags": {
         "name": "Weiße Wand",
-        "natural": "peak"
+        "natural": "peak",
+        "visited": "no"
       }
     },
     {
@@ -96,6 +98,38 @@
         "name": "Prellstein",
         "natural": "peak",
         "ele": "544"
+      }
+    },
+    {
+      "id": 10946117709,
+      "lat": 49.5379721,
+      "lon": 11.5470498,
+      "tags": {
+        "name": "Gemeindeberg",
+        "natural": "peak",
+        "ele": "517",
+        "visited": "yes"
+      }
+    },
+    {
+      "id": 275515277,
+      "lat": 49.5509361,
+      "lon": 11.5366231,
+      "tags": {
+        "name": "Schmiedberg",
+        "natural": "peak",
+        "ele": "496"
+      }
+    },
+    {
+      "id": 403080335,
+      "lat": 49.5505647,
+      "lon": 11.5277691,
+      "tags": {
+        "name": "Mittelbergwand",
+        "natural": "peak",
+        "ele": "450",
+        "summit:cross": "yes"
       }
     }
   ]

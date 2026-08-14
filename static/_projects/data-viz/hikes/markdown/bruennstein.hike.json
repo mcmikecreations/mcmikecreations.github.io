@@ -70,6 +70,19 @@
         "summit:cross": "yes",
         "summit:register": "yes"
       }
+    },
+    {
+      "id": 885182782,
+      "lat": 47.6482196,
+      "lon": 12.1489342,
+      "tags": {
+        "name": "Gletscherblick",
+        "natural": "peak",
+        "ele": "824",
+        "summit:cross": "yes",
+        "summit:register": "no",
+        "visited": "yes"
+      }
     }
   ]
 }
