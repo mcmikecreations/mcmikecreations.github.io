@@ -1,0 +1,56 @@
+{
+  "name": "Annapurna Base Camp Day 1",
+  "description": "Hike from Kochelsee to Walchensee via Lainbachfall, Sonnenspitz (1259 m), and Jochberg (1565 m).",
+  "image": "/images/projects/data-viz/hikes/annapurna_bc_1.jpg",
+  "origin": {
+    "lat": 47.64237650648966,
+    "lon": 11.363725662231445
+  },
+  "height": 512,
+  "checkpoints": [
+    [11.3714592, 47.660793],
+    [11.3819654, 47.6498367],
+    [11.3760576, 47.6393841],
+    [11.3718596, 47.625939],
+    [11.3458192, 47.6174472]
+  ],
+  "nodes": [
+    {
+      "id": 1711924736,
+      "lat": 47.6498367,
+      "lon": 11.3819654,
+      "tags": {
+        "name": "Lainbachfall",
+        "waterway": "waterfall",
+        "ele": "748"
+      }
+    },
+    {
+      "id": 748804706,
+      "lat": 47.6393841,
+      "lon": 11.3760576,
+      "tags": {
+        "name": "Sonnenspitz",
+        "natural": "peak",
+        "ele": "1269",
+        "summit:cross": "yes",
+        "wikidata": "Q109019807",
+        "wikipedia": "de:Sonnenspitz (Kochel)"
+      }
+    },
+    {
+      "id": 1841764370,
+      "lat": 47.625939,
+      "lon": 11.3718596,
+      "tags": {
+        "name": "Jochberg",
+        "natural": "peak",
+        "ele": "1565",
+        "summit:cross": "yes",
+        "summit:register": "yes",
+        "wikidata": "Q322506",
+        "wikipedia": "de:Jochberg (Berg)"
+      }
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import { error } from '@sveltejs/kit';
+import { error, isHttpError } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
 import type { HttpError } from '@sveltejs/kit'
 import { parseMarkdown } from '$lib/hikes/hikes-info';
@@ -27,7 +27,7 @@ export const load: PageLoad = async ({ data, fetch, params }) => {
 				const res = await fetch(path);
 				if (res.ok) {
 					const postRaw = await res.text();
-					clientHtml = await parseMarkdown(postRaw);
+					clientHtml = (await parseMarkdown(postRaw)).html;
 				}
 			} else {
 				hasHydrated = true;
@@ -42,11 +42,11 @@ export const load: PageLoad = async ({ data, fetch, params }) => {
 			clientHtml,
 		};
 	} catch (ex) {
-		if ((ex as HttpError) !== undefined) {
+		if (isHttpError(ex)) {
 			throw ex;
-		} else {
-			console.log(ex);
-			error(500);
 		}
+
+		console.log(ex);
+		error(500);
 	}
 };

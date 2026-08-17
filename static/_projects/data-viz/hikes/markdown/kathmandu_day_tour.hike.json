@@ -1,0 +1,72 @@
+{
+  "name": "Kathmandu Day Tour",
+  "description": "Hike from Paknajol and back via Swayambhu Mahachaitya, Durbar Square, Boudha Stupa, and Pashupatinath Temple.",
+  "image": "/images/projects/data-viz/hikes/kathmandu_day_tour.jpg",
+  "origin": {
+    "lat": 27.712254349383514,
+    "lon": 85.3242874145508
+  },
+  "height": 512,
+  "checkpoints": [
+    [85.2895639, 27.7158495],
+    [85.3104935, 27.7157296],
+    [85.3063461, 27.7041617],
+    [85.3488943, 27.7100237],
+    [85.3613765, 27.7213390]
+  ],
+  "nodes": [
+    {
+      "id": 201223707,
+      "lat": 27.7149219,
+      "lon": 85.2903959,
+      "tags": {
+        "name": "Swayambhunath",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "historic": "yes",
+        "man_made": "tower",
+        "tower:type": "stupa",
+        "religion": "buddhist",
+        "wikipedia": "en:Swayambhunath"
+      }
+    },
+    {
+      "id": 1414600808,
+      "lat": 27.7048846,
+      "lon": 85.3079745,
+      "tags": {
+        "name": "Taleju Temple",
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "wikidata": "Q83776242",
+        "wikipedia": "en:Taleju Temple, Kathmandu"
+      }
+    },
+    {
+      "id": 56688296,
+      "lat": 27.7214508,
+      "lon": 85.3619819,
+      "tags": {
+        "name": "Boudhanāth Stupa",
+        "alt_name": "Boudha Stupa",
+        "amenity": "place_of_worship",
+        "barrier": "wall",
+        "email": "lotusbazra@boudhanathstupa.org",
+        "phone": "+977014471908",
+        "website": "http://boudhanathstupa.org/#_home",
+        "religion": "buddhist",
+        "tourism": "attraction"
+      }
+    },
+    {
+      "id": 913170315,
+      "lat": 27.7103428,
+      "lon": 85.3486834,
+      "tags": {
+        "name": "Pashupatinath Temple",
+        "building": "temple",
+        "tourism": "attraction"
+      }
+    }
+  ]
+}

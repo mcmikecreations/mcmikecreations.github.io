@@ -8,6 +8,7 @@
 
 import { stripFrontmatter } from '$lib/hikes/frontmatter';
 import { parseMediaFlags } from '$lib/renderers/media-flags';
+import type { GalleryItem } from '$lib/renderers/gallery-item';
 
 export interface ProcessedPost {
     year: number;
@@ -23,12 +24,24 @@ export interface ProcessedPost {
     anchor: string;
 }
 
-export async function parseMarkdown(postRaw: string): Promise<string> {
+export interface ParsedPost {
+    /** Rendered post body, including the appended <style> block. */
+    html: string;
+    /** Gallery entries in document order; the index matches `data-media-index`. */
+    media: GalleryItem[];
+}
+
+export async function parseMarkdown(postRaw: string): Promise<ParsedPost> {
     // Drop any leading YAML front matter before rendering. Uses the
     // dependency-free stripper so this stays safe in the client bundle, which
     // re-renders the body on navigation. Files without front matter are unchanged.
     const post = stripFrontmatter(postRaw);
     const { Marked } = await import('marked');
+
+    // Filled by the `image` renderer below. Marked invokes renderers in document
+    // order, so this ends up in reading order and its indices are the
+    // `data-media-index` values stamped into the HTML.
+    const media: GalleryItem[] = [];
 
     const markedInstance = new Marked();
     markedInstance.use({
@@ -62,9 +75,18 @@ export async function parseMarkdown(postRaw: string): Promise<string> {
                     } catch (e) {
                         // ignore invalid url
                     }
+                    const mediaIndex = media.length;
+                    media.push({
+                        kind: 'youtube',
+                        videoId,
+                        href: href.trim(),
+                        alt: text,
+                        title: title || undefined,
+                        captionHtml: renderedText
+                    });
                     return `
 <figure class="mk-figure">
-    <a class="mk-video-link" href="${safeHref}" target="_blank" rel="noopener noreferrer">
+    <a class="mk-video-link" href="${safeHref}" target="_blank" rel="noopener noreferrer" data-media-index="${mediaIndex}">
         <img src="https://img.youtube.com/vi/${videoId}/0.jpg" ${safeTitle ? `title="${safeTitle}"` : ''} alt="${safeText}" class="mk-img-no-pointer" />
         <span class="mk-play-badge" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.5 4.5v15L18.5 12 5.5 4.5Z"/></svg>
@@ -80,17 +102,34 @@ export async function parseMarkdown(postRaw: string): Promise<string> {
                     const { flags, title: mediaTitle } = parseMediaFlags(title);
                     const autoplayAttrs = flags.has('autoplay') ? ' autoplay muted' : '';
                     const safeMediaTitle = mediaTitle.replace(/"/g, '&quot;');
+                    const mediaIndex = media.length;
+                    media.push({
+                        kind: 'video',
+                        src: href.trim(),
+                        autoplay: flags.has('autoplay'),
+                        alt: text,
+                        title: mediaTitle || undefined,
+                        captionHtml: renderedText
+                    });
                     return `
 <figure class="mk-figure">
-    <video controls${autoplayAttrs} loop playsinline ${safeMediaTitle ? `title="${safeMediaTitle}"` : ''}>
+    <video controls${autoplayAttrs} loop playsinline data-media-index="${mediaIndex}" ${safeMediaTitle ? `title="${safeMediaTitle}"` : ''}>
         <source src="${safeHref}" type="video/mp4">
     </video>
     <figcaption class="mk-figcaption">${renderedText}</figcaption>
 </figure>`;
                 } else {
+                    const mediaIndex = media.length;
+                    media.push({
+                        kind: 'image',
+                        src: href.trim(),
+                        alt: text,
+                        title: title || undefined,
+                        captionHtml: renderedText
+                    });
                     return `
 <figure class="mk-figure">
-    <img src="${safeHref}" ${safeTitle ? `title="${safeTitle}"` : ''} alt="${safeText}" class="mk-img-pointer marked-image" />
+    <img src="${safeHref}" ${safeTitle ? `title="${safeTitle}"` : ''} alt="${safeText}" class="mk-img-pointer marked-image" data-media-index="${mediaIndex}" />
     <figcaption class="mk-figcaption">${renderedText}</figcaption>
 </figure>`;
                 }
@@ -111,5 +150,5 @@ export async function parseMarkdown(postRaw: string): Promise<string> {
 .mk-play-badge svg { width: 1.75rem; height: 1.75rem; }
 .mk-video-link:hover .mk-play-badge, .mk-video-link:focus-visible .mk-play-badge { background-color: rgb(17 24 39 / 0.75); transform: translate(-50%, -50%) scale(1.08); }
 </style>`;
-    return result.replace(/<p>\s*<\/p>/g, '') + styles;
+    return { html: result.replace(/<p>\s*<\/p>/g, '') + styles, media };
 }

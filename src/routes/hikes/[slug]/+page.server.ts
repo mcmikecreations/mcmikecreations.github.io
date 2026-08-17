@@ -1,4 +1,4 @@
-import { error } from '@sveltejs/kit';
+import { error, isHttpError } from '@sveltejs/kit';
 import { hikes } from '$lib/hikes/hikes.server';
 import { readingTime } from 'reading-time-estimator';
 import resume from '$lib/data/resume.json';
@@ -35,7 +35,7 @@ export const load: PageServerLoad = async ({ fetch, params, locals }) => {
 		}
 		const date = hike.properties.dates.find(d => d.date === dateStr) as MapDate;
 		if (!date || !date.path) {
-			error(404, { message: `Failed to find date "${dateStr}"` });
+			error(404, { message: `Failed to find post "${dateStr}"` });
 		}
 		
 		const res = await fetch(date.path);
@@ -65,7 +65,8 @@ export const load: PageServerLoad = async ({ fetch, params, locals }) => {
 		const postIndex = allPosts.findIndex(p => p.anchor === slug);
 		const page = postIndex !== -1 ? Math.floor(postIndex / defaultPageSize) + 1 : 1;
 
-		locals.postContent = await parseMarkdown(postRaw);
+		const { html: postHtml, media } = await parseMarkdown(postRaw);
+		locals.postContent = postHtml;
 
 		let showStatistics = false;
 		let showFilePrimary: string | null = null;
@@ -104,6 +105,7 @@ export const load: PageServerLoad = async ({ fetch, params, locals }) => {
 				author: mergedDate.author ?? resume.basics.name,
 				anchor: slug ?? '',
 				page,
+				media,
 			},
 			map: { ...mergedHike, properties: mapProperties },
 			contacts,
@@ -114,7 +116,10 @@ export const load: PageServerLoad = async ({ fetch, params, locals }) => {
 			},
 		};
 	} catch (ex) {
+		if (isHttpError(ex)) {
+			throw ex;
+		}
 		console.log(ex);
-		error(500);
+		error(500, { message: `An error happened processing "${params.slug}"` });
 	}
 };

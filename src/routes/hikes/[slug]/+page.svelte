@@ -10,13 +10,13 @@
 		ArrowLeftOutline
 	} from 'flowbite-svelte-icons';
 	import ToTopButton from '$lib/components/ToTopButton.svelte';
-	import DefaultImage from '$lib/renderers/DefaultImage.svelte';
+	import MediaGallery from '$lib/components/MediaGallery.svelte';
+	import type { GalleryItem } from '$lib/renderers/gallery-item';
 	import { getDistance, getTime } from '$lib/hikes/build-statistics';
 	import { onMount } from 'svelte';
 	import 'leaflet/dist/leaflet.css';
 	import AppMeta from '$lib/components/AppMeta.svelte';
 	import resume from '$lib/data/resume.json';
-	import { Modal } from 'flowbite-svelte';
 	import HikeJsonLd from '../components/HikeJsonLd.svelte';
 	import { hikePostTitle } from '$lib/hikes/hikes-meta';
 	import AppBreadcrumbs from '$lib/components/AppBreadcrumbs.svelte';
@@ -36,54 +36,38 @@
 	let fullResImageSrc = $state<string | undefined>(undefined);
 	let fullImageLoaded = $state(false);
 
-	let openModal = $state(false);
-	let modalHref = $state('');
-	let modalTitle = $state<string | undefined>('');
-	let modalText = $state('');
-	// Low resolution stand-in shown until the full resolution modal image has loaded.
-	let modalPlaceholder = $state<string | undefined>(undefined);
-	let modalLoaded = $state(false);
+	let galleryOpen = $state(false);
+	let galleryIndex = $state(0);
 
-	function openImageModal(href: string, text: string, title?: string, placeholder?: string) {
-		modalHref = href;
-		modalTitle = title;
-		modalText = text;
-		modalPlaceholder = placeholder && placeholder !== href ? placeholder : undefined;
-		modalLoaded = false;
-		openModal = true;
+	// The header image takes slide 0 when the post has one, so the markdown items start one slide later.
+	const headerOffset = $derived(data.post.imageFull ? 1 : 0);
+	const galleryItems = $derived(buildGalleryItems());
+
+	function buildGalleryItems(): GalleryItem[] {
+		const full = data.post.imageFull;
+		if (!full) return data.post.media;
+		const header: GalleryItem = {
+			kind: 'image',
+			src: full,
+			// The thumb doubles as the blurred stand-in while the full image loads.
+			placeholder: data.post.image !== full ? data.post.image : undefined,
+			alt: data.post.title
+		};
+		return [header, ...data.post.media];
 	}
 
-	function openMainImageModal() {
-		// The full resolution image is only fetched lazily (and never on small screens),
-		// so fall back to the thumb as a placeholder while it loads.
+	function openGallery(slide: number) {
+		galleryIndex = slide;
+		galleryOpen = true;
+	}
+
+	function openHeaderImage() {
+		// The full resolution image is fetched lazily and never on small screens,
+		// so make sure its request is under way before slide 0 appears.
 		if (data.post.imageFull && !fullResImageSrc) {
 			fullResImageSrc = data.post.imageFull;
 		}
-		openImageModal(
-			data.post.imageFull ?? data.post.image,
-			data.post.title,
-			undefined,
-			data.post.image
-		);
-	}
-
-	// Track open modal to prevent scrolling the content behind it.
-	$effect(() => {
-		if (openModal) {
-			document.body.style.overflow = 'hidden';
-		} else {
-			document.body.style.overflow = '';
-		}
-		return () => {
-			document.body.style.overflow = '';
-		};
-	});
-
-	function handleKeydown(e: KeyboardEvent) {
-		if (openModal && (e.key === 'Escape' || e.key === 'Esc')) {
-			openModal = false;
-			e.stopPropagation();
-		}
+		openGallery(0);
 	}
 
 	interface File {
@@ -126,7 +110,7 @@
 						if (res.ok) {
 							const postRaw = await res.text();
 							// @ts-ignore
-							data.clientHtml = await parseMarkdown(postRaw);
+							data.clientHtml = (await parseMarkdown(postRaw)).html;
 						}
 					}
 				}
@@ -135,11 +119,12 @@
 				contentEl.innerHTML = data.clientHtml;
 			}
 
-			const images = contentEl.querySelectorAll('.marked-image');
+			// Only images open the gallery.
+			const images = contentEl.querySelectorAll<HTMLImageElement>('img[data-media-index]');
 			images.forEach((img) => {
-				img.addEventListener('click', (e) => {
-					const target = e.target as HTMLImageElement;
-					openImageModal(target.src, target.alt, target.title);
+				img.addEventListener('click', () => {
+					const mediaIndex = Number(img.dataset.mediaIndex);
+					if (Number.isInteger(mediaIndex)) openGallery(mediaIndex + headerOffset);
 				});
 			});
 
@@ -173,7 +158,7 @@
 				const map2dWrapper = document.createElement('div');
 				map2dWrapper.className = 'w-full mx-auto not-prose my-4';
 				const map2dInner = document.createElement('div');
-				map2dInner.style.cssText = 'position: relative; width: 100%; aspect-ratio: 1 / 1; overflow: hidden;';
+				map2dInner.style.cssText = 'position: relative; isolation: isolate; width: 100%; aspect-ratio: 1 / 1; overflow: hidden;';
 				const map2dEl = document.createElement('div');
 				map2dEl.style.cssText = 'position: absolute; inset: 0;';
 				map2dInner.appendChild(map2dEl);
@@ -198,9 +183,7 @@
 					map3dHandle.hideIndicator?.();
 				};
 
-				// Each chart updates the maps and the OTHER chart (not itself - its cursor
-				// is already correct from handlePointerAction, and a round-trip through
-				// setIndicator would mis-hit the outward-journey duplicate on out-and-back routes).
+				// Each chart updates the maps and the OTHER chart.
 				elev3dHandle = initElevationChart(map3dElevWrapper, geojson, (lat, lon, ele, dist) => {
 					map2dHandle.setIndicator(lat, lon);
 					map3dHandle.setIndicator(lat, lon, ele);
@@ -215,8 +198,6 @@
 		}
 	});
 </script>
-
-<svelte:window onkeydown={handleKeydown} />
 
 <AppMeta
 	title={hikePostTitle(data.post.title)}
@@ -294,7 +275,7 @@
 								<button
 									type="button"
 									aria-label="Expand image"
-									onclick={openMainImageModal}
+									onclick={openHeaderImage}
 									class="absolute inset-0 w-full h-full cursor-pointer bg-transparent border-0 p-0 focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-primary-500 focus-visible:outline-hidden"
 								></button>
 							</div>
@@ -368,35 +349,6 @@
 	</div>
 </div>
 
-<Modal bind:open={openModal} fullscreen size="none" classes={{ close: 'bg-white dark:bg-gray-900' }}>
-	<!-- svelte-ignore a11y_click_events_have_key_events -->
-	<!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
-	<div
-		class="relative flex min-h-[calc(100vh-5rem)] h-full w-full items-center justify-center outline-hidden overscroll-contain"
-		role="dialog"
-		tabindex="-1"
-		onclick={(e) => {
-			if (e.target === e.currentTarget) openModal = false;
-		}}
-	>
-		{#if modalPlaceholder}
-			<!-- Blurred thumb fills the same contained rectangle as the full image until it arrives. -->
-			<img
-				src={modalPlaceholder}
-				alt=""
-				aria-hidden="true"
-				class="absolute inset-0 w-full h-full object-contain blur-sm pointer-events-none transition-opacity duration-500 {modalLoaded ? 'opacity-0' : 'opacity-100'}"
-			/>
-		{/if}
-		<img
-			src={modalHref}
-			title={modalTitle}
-			alt={modalText}
-			class="max-h-full max-w-full object-contain cursor-default transition-opacity duration-500 {modalPlaceholder && !modalLoaded ? 'opacity-0' : 'opacity-100'}"
-			onload={() => (modalLoaded = true)}
-			onclick={(e) => e.stopPropagation()}
-		/>
-	</div>
-</Modal>
+<MediaGallery items={galleryItems} bind:open={galleryOpen} index={galleryIndex} />
 
 <ToTopButton />
