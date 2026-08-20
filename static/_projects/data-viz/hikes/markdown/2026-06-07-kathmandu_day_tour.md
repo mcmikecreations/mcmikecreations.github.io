@@ -21,9 +21,9 @@ arrange a trip to the mountains and to some iconic tourist attractions in the
 region.
 
 Check out [other hikes](/hikes/tag/Nepal/) from this trip:
-- Kathmandu Day Tour (you're here)
+- _Kathmandu Day Tour_ (you're here)
 - [Annapurna Base Camp (ABC) Day 1](/hikes/2026-06-09-annapurna_bc_1/)
-- Annapurna Base Camp (ABC) Day 2
+- [Annapurna Base Camp (ABC) Day 2](/hikes/2026-06-10-annapurna_bc_2/)
 - Annapurna Base Camp (ABC) Day 3
 - Annapurna Base Camp (ABC) Day 4
 - Annapurna Base Camp (ABC) Day 5

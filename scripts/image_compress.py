@@ -218,6 +218,8 @@ Examples:
 
         stem = input_path.stem
         output_path = output_dir / f"{stem}_wa.jpg"
+        if input_path.suffix == '.heic':
+            output_path = output_dir / f"{stem}.jpg"
 
         # Avoid overwriting: append suffix if exists
         counter = 1

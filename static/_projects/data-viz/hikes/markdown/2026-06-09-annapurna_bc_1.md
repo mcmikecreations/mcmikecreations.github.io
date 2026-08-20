@@ -26,8 +26,8 @@ an experienced local base camp guide.
 
 Check out [other hikes](/hikes/tag/Nepal/) from this trip:
 - [Kathmandu Day Tour](/hikes/2026-06-07-kathmandu_day_tour/)
-- Annapurna Base Camp (ABC) Day 1 (you're here)
-- Annapurna Base Camp (ABC) Day 2
+- _Annapurna Base Camp (ABC) Day 1_ (you're here)
+- [Annapurna Base Camp (ABC) Day 2](/hikes/2026-06-10-annapurna_bc_2/)
 - Annapurna Base Camp (ABC) Day 3
 - Annapurna Base Camp (ABC) Day 4
 - Annapurna Base Camp (ABC) Day 5
@@ -80,6 +80,9 @@ you're pretty screwed.
 In June the monsoons cover most of the region. In the morning, the sky gets
 completely clear with views far into the distance, but around 16:00 the
 humidity accumulates and the downpour starts, lasting until late evening.
+Thanks to the rains, the local nature is thriving. Lush forests, waterfalls,
+moss and ferns, bushes of all kinds with birds hiding among them. It reminded
+me of my trip to Madeira, especially the [Caldeirão Verde hike](/hikes/2025-04-04-caldeirao_verde/).
 
 ![Mules carrying supplies around the villages](/images/projects/data-viz/hikes/stories/annapurna_bc_1/2026-06-09-04.jpg)
 
