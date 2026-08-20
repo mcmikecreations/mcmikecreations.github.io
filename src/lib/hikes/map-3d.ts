@@ -73,12 +73,25 @@ export function initMap3d(container: HTMLElement, geojson: any, hike: Map): Map3
 		const diagDist = Math.sqrt(tiles.length) * tiles.scale;
 		const center = projection([originLon, originLat]) ?? [0, 0];
 		const cameraPos = diagDist * 0.15625;
+
+		// Aim at the route's elevation so the camera doesn't sit below the terrain.
+		// Elevation is placed on local Z (ele * pixelsPerMeter) and mapped to world Y
+		// by the group's -PI/2 X-rotation and SCENE_SCALE_VERTICAL scaling.
+		const elevations = coords
+				.map((c) => c?.[2])
+				.filter((v): v is number => typeof v === 'number');
+		const refElevation = elevations.length
+				? elevations.reduce((a, b) => a + b, 0) / elevations.length
+				: 0;
+		const refWorldY = refElevation * pixelsPerMeter * SCENE_SCALE_VERTICAL;
+
     const camera = new THREE.PerspectiveCamera(45, 1, 1, diagDist);
     // camera.position.set(cameraPos[0] - diagDist * 0.25, coords[coords.length / 2][2] + diagDist * 0.55, cameraPos[1] + diagDist * 0.85);
-		camera.position.set(-cameraPos, cameraPos, cameraPos);
+		camera.position.set(-cameraPos, cameraPos + refWorldY, cameraPos);
 
     const controls = new OrbitControls(camera, renderer.domElement);
 		controls.screenSpacePanning = true;
+		controls.target.set(0, refWorldY, 0);
 		//controls.target.set(center[0] * SCENE_SCALE * 0.5, 0.0, -center[1] * SCENE_SCALE * 0.5);
 		//controls.target.set(center[0] * SCENE_SCALE, 0, -center[1] * SCENE_SCALE);
     controls.update();

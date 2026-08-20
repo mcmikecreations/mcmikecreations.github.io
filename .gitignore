@@ -16,3 +16,4 @@ vite.config.ts.timestamp-*
 # Python bytecode from scripts/plots
 __pycache__/
 /.deploy-assets.hash
+.venv

@@ -618,15 +618,5 @@
       ]
     },
     "route": "/projects/data-viz/hikes/heimgarten"
-  },
-  {
-    "properties": {
-      "dates": [
-        {
-          "date": "2026-06-09"
-        }
-      ]
-    },
-    "route": "/projects/data-viz/hikes/annapurna_bc_1"
   }
 ]

@@ -25,6 +25,13 @@
 			{ "network": "Komoot", "url": "https://www.komoot.com/user/463758237069" }
 		]
 	},
+	"Parlad Dharel": {
+		"avatar": "/images/hikes/people/parlad_dharel.jpg",
+		"links": [
+			{ "network": "Instagram", "url": "https://www.instagram.com/parlad_dharel/" },
+			{ "network": "Facebook", "url": "https://www.facebook.com/parlad.dharel" }
+		]
+	},
 	"Mikuláš Netík": {
 		"avatar": "/images/hikes/people/mikulas_netik.jpg",
 		"links": [

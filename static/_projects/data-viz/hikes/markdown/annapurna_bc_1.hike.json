@@ -1,10 +1,10 @@
 {
   "name": "Annapurna Base Camp Day 1",
-  "description": "Hike from Kochelsee to Walchensee via Lainbachfall, Sonnenspitz (1259 m), and Jochberg (1565 m).",
+  "description": "Hike from Samrung to Chhomrong.",
   "image": "/images/projects/data-viz/hikes/annapurna_bc_1.jpg",
   "origin": {
-    "lat": 47.64237650648966,
-    "lon": 11.363725662231445
+    "lat": 28.412861058591496,
+    "lon": 83.82044363362216
   },
   "height": 512,
   "checkpoints": [
@@ -16,40 +16,42 @@
   ],
   "nodes": [
     {
-      "id": 1711924736,
-      "lat": 47.6498367,
-      "lon": 11.3819654,
+      "id": 11581492069,
+      "lat": 28.4040108,
+      "lon": 83.8229485,
       "tags": {
-        "name": "Lainbachfall",
-        "waterway": "waterfall",
-        "ele": "748"
+        "name": "Jhinu Danda jeep station",
+        "amenity": "restaurant"
       }
     },
     {
-      "id": 748804706,
-      "lat": 47.6393841,
-      "lon": 11.3760576,
+      "id": 6047606998,
+      "lat": 28.4095174,
+      "lon": 83.8240430,
       "tags": {
-        "name": "Sonnenspitz",
-        "natural": "peak",
-        "ele": "1269",
-        "summit:cross": "yes",
-        "wikidata": "Q109019807",
-        "wikipedia": "de:Sonnenspitz (Kochel)"
+        "name": "Jhini Guest House",
+        "amenity": "restaurant"
       }
     },
     {
-      "id": 1841764370,
-      "lat": 47.625939,
-      "lon": 11.3718596,
+      "id": 219995240,
+      "lat": 28.4189768,
+      "lon": 83.8178193,
       "tags": {
-        "name": "Jochberg",
-        "natural": "peak",
-        "ele": "1565",
-        "summit:cross": "yes",
-        "summit:register": "yes",
-        "wikidata": "Q322506",
-        "wikipedia": "de:Jochberg (Berg)"
+        "name": "Lucky Guest House and Restaurant",
+        "building": "yes",
+        "tourism": "hotel",
+        "phone": "+9779746068008, +9779846054685"
+      }
+    },
+    {
+      "id": 5141185722,
+      "lat": 28.4171240,
+      "lon": 83.8168528,
+      "tags": {
+        "name": "Real chhomrong lodge and restaurant",
+        "tourism": "alpine_hut",
+        "phone": "+9779846359659"
       }
     }
   ]
