@@ -15,6 +15,7 @@ import { MeshLineHikeMaterial } from '$lib/hikes/meshline/MeshLineHikeMaterial';
 export interface Map3dHandle {
     setIndicator: (lat: number, lon: number, ele: number) => void;
     hideIndicator?: () => void;
+    destroy?: () => void;
 }
 
 const ZOOM = 13;
@@ -289,6 +290,27 @@ export function initMap3d(container: HTMLElement, geojson: any, hike: Map): Map3
         hideIndicator: () => {
             statsIndicator3d.visible = false;
             render();
+        },
+        // Releases the WebGL context and the window listener so navigating between
+        // hike posts (which doesn't remount this component) doesn't leak either.
+        destroy: () => {
+            window.removeEventListener('resize', onResize);
+            controls.dispose();
+            scene.traverse((obj) => {
+                if (!(obj instanceof THREE.Mesh)) return;
+                obj.geometry?.dispose();
+                const materials = Array.isArray(obj.material) ? obj.material : [obj.material];
+                for (const material of materials) {
+                    for (const value of Object.values(material)) {
+                        if (value instanceof THREE.Texture) value.dispose();
+                    }
+                    material.dispose();
+                }
+            });
+            renderer.dispose();
+            if (renderer.domElement.parentElement === container) {
+                container.removeChild(renderer.domElement);
+            }
         },
     };
 }

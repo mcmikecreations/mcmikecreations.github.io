@@ -28,9 +28,9 @@ Check out [other hikes](/hikes/tag/Nepal/) from this trip:
 - [Kathmandu Day Tour](/hikes/2026-06-07-kathmandu_day_tour/)
 - _Annapurna Base Camp (ABC) Day 1_ (you're here)
 - [Annapurna Base Camp (ABC) Day 2](/hikes/2026-06-10-annapurna_bc_2/)
-- Annapurna Base Camp (ABC) Day 3
-- Annapurna Base Camp (ABC) Day 4
-- Annapurna Base Camp (ABC) Day 5
+- [Annapurna Base Camp (ABC) Day 3](/hikes/2026-06-11-annapurna_bc_3/)
+- [Annapurna Base Camp (ABC) Day 4](/hikes/2026-06-12-annapurna_bc_4/)
+- [Annapurna Base Camp (ABC) Day 5](/hikes/2026-06-13-annapurna_bc_5/)
 - Pokhara World Peace Stupa 71
 
 The trip to Annapurna Base Camp starts off in Samrung, a small village deep in
@@ -106,6 +106,7 @@ tell you about the subtle notes of Buddhist culture in the drink, but it tasted
 good to me.
 
 ![Final view for the day at the road towards Annapurna](/images/projects/data-viz/hikes/stories/annapurna_bc_1/2026-06-09-06.jpg)
+![Compilation of the first day of the Annapurna Base Camp hike](/images/projects/data-viz/hikes/stories/annapurna_bc_1/2026-06-09-07.mp4)
 
 This marks the end of the easy section of the hike, named by a passer-by
 Australian hiker as the warm-up. From the next day onwards, the hikes get

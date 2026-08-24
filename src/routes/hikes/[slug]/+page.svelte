@@ -13,7 +13,8 @@
 	import MediaGallery from '$lib/components/MediaGallery.svelte';
 	import type { GalleryItem } from '$lib/renderers/gallery-item';
 	import { getDistance, getTime } from '$lib/hikes/build-statistics';
-	import { onMount } from 'svelte';
+	import { onDestroy, tick } from 'svelte';
+	import { afterNavigate } from '$app/navigation';
 	import 'leaflet/dist/leaflet.css';
 	import AppMeta from '$lib/components/AppMeta.svelte';
 	import resume from '$lib/data/resume.json';
@@ -22,9 +23,9 @@
 	import AppBreadcrumbs from '$lib/components/AppBreadcrumbs.svelte';
 	import { parseMarkdown } from '$lib/hikes/hikes-info';
 	import HikeContacts from '../components/HikeContacts.svelte';
-	import { initMap2d } from '$lib/hikes/map-2d';
+	import { initMap2d, type Map2dHandle } from '$lib/hikes/map-2d';
 	import { initElevationChart } from '$lib/hikes/map-elevation';
-	import { initMap3d } from '$lib/hikes/map-3d';
+	import { initMap3d, type Map3dHandle } from '$lib/hikes/map-3d';
 
 	interface Props {
 		data: PageData;
@@ -83,119 +84,172 @@
 		type: 'GPX'
 	});
 
-	onMount(async () => {
+	// Handles to the currently-mounted 3D/2D maps, so a later navigation (or the
+	// component unmounting) can dispose them instead of leaking a WebGL context
+	// and a window resize listener per hike post visited.
+	let map3dHandle: Map3dHandle | undefined;
+	let map2dHandle: Map2dHandle | undefined;
+	// Bumped on every navigation so a stale, still-in-flight setup from a post the
+	// reader has already navigated away from can tell it's been superseded and
+	// back off instead of racing the current one.
+	let contentRunId = 0;
+
+	function teardownContent() {
+		map3dHandle?.destroy?.();
+		map2dHandle?.destroy?.();
+		map3dHandle = undefined;
+		map2dHandle = undefined;
+	}
+
+	onDestroy(teardownContent);
+
+	// SvelteKit reuses this component across client-side navigations between hike
+	// posts (only `data` changes), so this can't be onMount - it has to rerun on
+	// every navigation, not just the first, or the second post's images stay
+	// unclickable and its 3D/2D map and elevation charts never appear.
+	afterNavigate(async () => {
+		const runId = ++contentRunId;
+		teardownContent();
+
 		// Delay loading of the full resolution image to allow other assets to finish loading first
+		fullResImageSrc = undefined;
+		fullImageLoaded = false;
 		if (data.post.imageFull) {
-			window.addEventListener('load', () => {
+			const scheduleFullImage = () => {
 				setTimeout(() => {
-					fullResImageSrc = data.post.imageFull;
+					if (runId === contentRunId) fullResImageSrc = data.post.imageFull;
 				}, 100);
-			});
-			// Fallback in case window load already fired
-			setTimeout(() => {
-				if (!fullResImageSrc) {
-					fullResImageSrc = data.post.imageFull;
-				}
-			}, 1000);
+			};
+			// `load` only fires once per full page load, never again on a client-side
+			// navigation, so on the second+ hike post the page is already complete.
+			if (document.readyState === 'complete') {
+				scheduleFullImage();
+			} else {
+				window.addEventListener('load', scheduleFullImage, { once: true });
+				// Fallback in case window load already fired
+				setTimeout(() => {
+					if (runId === contentRunId && !fullResImageSrc) {
+						fullResImageSrc = data.post.imageFull;
+					}
+				}, 1000);
+			}
 		}
+
+		// Let Svelte finish applying this navigation's `{@html data.clientHtml}`
+		// before touching the DOM it produced.
+		await tick();
 
 		const contentEl = document.getElementById('content');
-		if (contentEl) {
-			if (contentEl.children.length == 0) {
-				if (!data.clientHtml) {
-					const dateStr = data.post.date;
-					const date = data.map.properties.dates.find((d: any) => d.date === dateStr);
-					if (date && date.path) {
-						const res = await fetch(date.path);
-						if (res.ok) {
-							const postRaw = await res.text();
-							// @ts-ignore
-							data.clientHtml = (await parseMarkdown(postRaw)).html;
-						}
+		if (!contentEl) return;
+
+		if (contentEl.children.length == 0) {
+			if (!data.clientHtml) {
+				const dateStr = data.post.date;
+				const date = data.map.properties.dates.find((d: any) => d.date === dateStr);
+				if (date && date.path) {
+					const res = await fetch(date.path);
+					if (runId !== contentRunId) return;
+					if (res.ok) {
+						const postRaw = await res.text();
+						// @ts-ignore
+						data.clientHtml = (await parseMarkdown(postRaw)).html;
 					}
 				}
-
-				// @ts-ignore
-				contentEl.innerHTML = data.clientHtml;
 			}
 
-			// Only images open the gallery.
-			const images = contentEl.querySelectorAll<HTMLImageElement>('img[data-media-index]');
-			images.forEach((img) => {
-				img.addEventListener('click', () => {
-					const mediaIndex = Number(img.dataset.mediaIndex);
-					if (Number.isInteger(mediaIndex)) openGallery(mediaIndex + headerOffset);
-				});
-			});
-
-			const geojsonRes = await fetch(data.map.properties.filePath);
-			if (geojsonRes.ok) {
-				const geojson = await geojsonRes.json();
-				const paragraphs = contentEl.querySelectorAll('p');
-
-				const anchorEl = (index: number): Element =>
-					paragraphs[index] ?? paragraphs[paragraphs.length - 1] ?? contentEl;
-
-				const offset = data.post.tags.includes('Climb') ? 1 : 0;
-
-				// 3D map (Three.js) - after 1st paragraph
-				const map3dWrapper = document.createElement('div');
-				map3dWrapper.className = 'w-full mx-auto not-prose my-4';
-				const map3dInner = document.createElement('div');
-				map3dInner.style.cssText = 'position: relative; width: 100%; aspect-ratio: 1 / 1; overflow: hidden;';
-				const map3dEl = document.createElement('div');
-				map3dEl.style.cssText = 'position: absolute; inset: 0;';
-				map3dInner.appendChild(map3dEl);
-				map3dWrapper.appendChild(map3dInner);
-				anchorEl(offset).insertAdjacentElement('afterend', map3dWrapper);
-
-				// Elevation chart - directly below the 3D map
-				const map3dElevWrapper = document.createElement('div');
-				map3dElevWrapper.className = 'w-full mx-auto not-prose';
-				map3dWrapper.insertAdjacentElement('afterend', map3dElevWrapper);
-
-				// 2D interactive map (Leaflet.js) - after 2nd paragraph
-				const map2dWrapper = document.createElement('div');
-				map2dWrapper.className = 'w-full mx-auto not-prose my-4';
-				const map2dInner = document.createElement('div');
-				map2dInner.style.cssText = 'position: relative; isolation: isolate; width: 100%; aspect-ratio: 1 / 1; overflow: hidden;';
-				const map2dEl = document.createElement('div');
-				map2dEl.style.cssText = 'position: absolute; inset: 0;';
-				map2dInner.appendChild(map2dEl);
-				map2dWrapper.appendChild(map2dInner);
-				anchorEl(offset + 1).insertAdjacentElement('afterend', map2dWrapper);
-
-				// Elevation chart - directly below the 2D map
-				const elevWrapper = document.createElement('div');
-				elevWrapper.className = 'w-full mx-auto not-prose';
-				map2dWrapper.insertAdjacentElement('afterend', elevWrapper);
-
-				const map3dHandle = initMap3d(map3dEl, geojson, data.map);
-				const map2dHandle = await initMap2d(map2dEl, geojson, data.map.properties.nodes);
-
-				let elev3dHandle: { setIndicator: (lat: number, lon: number, preferredDist?: number) => void; hideIndicator: () => void };
-				let elev2dHandle: { setIndicator: (lat: number, lon: number, preferredDist?: number) => void; hideIndicator: () => void };
-
-				const hideAllIndicators = () => {
-					elev3dHandle?.hideIndicator();
-					elev2dHandle?.hideIndicator();
-					map2dHandle.hideIndicator?.();
-					map3dHandle.hideIndicator?.();
-				};
-
-				// Each chart updates the maps and the OTHER chart.
-				elev3dHandle = initElevationChart(map3dElevWrapper, geojson, (lat, lon, ele, dist) => {
-					map2dHandle.setIndicator(lat, lon);
-					map3dHandle.setIndicator(lat, lon, ele);
-					elev2dHandle?.setIndicator(lat, lon, dist);
-				}, hideAllIndicators, data.map.properties);
-				elev2dHandle = initElevationChart(elevWrapper, geojson, (lat, lon, ele, dist) => {
-					map2dHandle.setIndicator(lat, lon);
-					map3dHandle.setIndicator(lat, lon, ele);
-					elev3dHandle?.setIndicator(lat, lon, dist);
-				}, hideAllIndicators, data.map.properties);
-			}
+			// @ts-ignore
+			contentEl.innerHTML = data.clientHtml;
 		}
+
+		// Only images open the gallery.
+		const images = contentEl.querySelectorAll<HTMLImageElement>('img[data-media-index]');
+		images.forEach((img) => {
+			img.addEventListener('click', () => {
+				const mediaIndex = Number(img.dataset.mediaIndex);
+				if (Number.isInteger(mediaIndex)) openGallery(mediaIndex + headerOffset);
+			});
+		});
+
+		const geojsonRes = await fetch(data.map.properties.filePath);
+		if (runId !== contentRunId || !geojsonRes.ok) return;
+
+		const geojson = await geojsonRes.json();
+		if (runId !== contentRunId) return;
+
+		const paragraphs = contentEl.querySelectorAll('p');
+
+		const anchorEl = (index: number): Element =>
+			paragraphs[index] ?? paragraphs[paragraphs.length - 1] ?? contentEl;
+
+		const offset = data.post.tags.includes('Climb') ? 1 : 0;
+
+		// 3D map (Three.js) - after 1st paragraph
+		const map3dWrapper = document.createElement('div');
+		map3dWrapper.className = 'w-full mx-auto not-prose my-4';
+		const map3dInner = document.createElement('div');
+		map3dInner.style.cssText = 'position: relative; width: 100%; aspect-ratio: 1 / 1; overflow: hidden;';
+		const map3dEl = document.createElement('div');
+		map3dEl.style.cssText = 'position: absolute; inset: 0;';
+		map3dInner.appendChild(map3dEl);
+		map3dWrapper.appendChild(map3dInner);
+		anchorEl(offset).insertAdjacentElement('afterend', map3dWrapper);
+
+		// Elevation chart - directly below the 3D map
+		const map3dElevWrapper = document.createElement('div');
+		map3dElevWrapper.className = 'w-full mx-auto not-prose';
+		map3dWrapper.insertAdjacentElement('afterend', map3dElevWrapper);
+
+		// 2D interactive map (Leaflet.js) - after 2nd paragraph
+		const map2dWrapper = document.createElement('div');
+		map2dWrapper.className = 'w-full mx-auto not-prose my-4';
+		const map2dInner = document.createElement('div');
+		map2dInner.style.cssText = 'position: relative; isolation: isolate; width: 100%; aspect-ratio: 1 / 1; overflow: hidden;';
+		const map2dEl = document.createElement('div');
+		map2dEl.style.cssText = 'position: absolute; inset: 0;';
+		map2dInner.appendChild(map2dEl);
+		map2dWrapper.appendChild(map2dInner);
+		anchorEl(offset + 1).insertAdjacentElement('afterend', map2dWrapper);
+
+		// Elevation chart - directly below the 2D map
+		const elevWrapper = document.createElement('div');
+		elevWrapper.className = 'w-full mx-auto not-prose';
+		map2dWrapper.insertAdjacentElement('afterend', elevWrapper);
+
+		const newMap3dHandle = initMap3d(map3dEl, geojson, data.map);
+		const newMap2dHandle = await initMap2d(map2dEl, geojson, data.map.properties.nodes);
+
+		if (runId !== contentRunId) {
+			// A newer navigation started while these were being created: they were
+			// never assigned to map3dHandle/map2dHandle, so teardownContent() above
+			// won't reach them - dispose them directly instead of leaking.
+			newMap3dHandle.destroy?.();
+			newMap2dHandle.destroy?.();
+			return;
+		}
+		map3dHandle = newMap3dHandle;
+		map2dHandle = newMap2dHandle;
+
+		let elev3dHandle: { setIndicator: (lat: number, lon: number, preferredDist?: number) => void; hideIndicator: () => void };
+		let elev2dHandle: { setIndicator: (lat: number, lon: number, preferredDist?: number) => void; hideIndicator: () => void };
+
+		const hideAllIndicators = () => {
+			elev3dHandle?.hideIndicator();
+			elev2dHandle?.hideIndicator();
+			newMap2dHandle.hideIndicator?.();
+			newMap3dHandle.hideIndicator?.();
+		};
+
+		// Each chart updates the maps and the OTHER chart.
+		elev3dHandle = initElevationChart(map3dElevWrapper, geojson, (lat, lon, ele, dist) => {
+			newMap2dHandle.setIndicator(lat, lon);
+			newMap3dHandle.setIndicator(lat, lon, ele);
+			elev2dHandle?.setIndicator(lat, lon, dist);
+		}, hideAllIndicators, data.map.properties);
+		elev2dHandle = initElevationChart(elevWrapper, geojson, (lat, lon, ele, dist) => {
+			newMap2dHandle.setIndicator(lat, lon);
+			newMap3dHandle.setIndicator(lat, lon, ele);
+			elev3dHandle?.setIndicator(lat, lon, dist);
+		}, hideAllIndicators, data.map.properties);
 	});
 </script>
 

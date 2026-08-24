@@ -5,6 +5,7 @@ import { getNodeIconDetails, formatTags } from '$lib/hikes/map-utils';
 export interface Map2dHandle {
     setIndicator: (lat: number, lon: number) => void;
     hideIndicator?: () => void;
+    destroy?: () => void;
 }
 
 function getRouteCenter(geojson: any): [number, number] {
@@ -157,6 +158,11 @@ export async function initMap2d(
         },
         hideIndicator: () => {
             indicator.getElement()?.classList.add('hidden');
+        },
+        // Leaflet registers its own window/document listeners internally;
+        // map.remove() is what tears those down.
+        destroy: () => {
+            map.remove();
         },
     };
 }

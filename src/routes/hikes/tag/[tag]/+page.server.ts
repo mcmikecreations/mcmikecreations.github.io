@@ -65,7 +65,7 @@ async function computeWebData(fetchFn: typeof fetch): Promise<WebData> {
             const startOfYear = new Date(Date.UTC(year, 0, 1));
             const weekIndex = Math.floor((d.getTime() - startOfYear.getTime()) / (86400000 * 7));
             const filename = dateObj.path ? dateObj.path.split('/').pop()?.replace('.md', '') : null;
-            const targetRoute = filename ? `/hikes/${filename}/` : hike.route;
+            const targetRoute = filename ? `/hikes/${filename}/` : `${hike.route}/`;
             const weeks = yearsData.get(year)!;
             if (weeks[weekIndex]) {
                 weeks[weekIndex].hikes.push({ name: hike.name, route: targetRoute, hasBlog: !!dateObj.path });

@@ -26,9 +26,9 @@ Check out [other hikes](/hikes/tag/Nepal/) from this trip:
 - [Kathmandu Day Tour](/hikes/2026-06-07-kathmandu_day_tour/)
 - [Annapurna Base Camp (ABC) Day 1](/hikes/2026-06-09-annapurna_bc_1/)
 - _Annapurna Base Camp (ABC) Day 2_ (you're here)
-- Annapurna Base Camp (ABC) Day 3
-- Annapurna Base Camp (ABC) Day 4
-- Annapurna Base Camp (ABC) Day 5
+- [Annapurna Base Camp (ABC) Day 3](/hikes/2026-06-11-annapurna_bc_3/)
+- [Annapurna Base Camp (ABC) Day 4](/hikes/2026-06-12-annapurna_bc_4/)
+- [Annapurna Base Camp (ABC) Day 5](/hikes/2026-06-13-annapurna_bc_5/)
 - Pokhara World Peace Stupa 71
 
 ![Flower pots at the Lucky Guest House Hotel in Chhomrong](/images/projects/data-viz/hikes/stories/annapurna_bc_2/2026-06-10-01.jpg)
@@ -156,6 +156,8 @@ photo spot if it wasn't for the weather.
 The rest of the road was uneventful but difficult, covering a forest and some
 small waterfalls we crossed. It was nice, but by the time we finished I was
 very tired.
+
+![Compilation of the second day of the Annapurna Base Camp hike](/images/projects/data-viz/hikes/stories/annapurna_bc_2/2026-06-10-17.mp4)
 
 Once in the Himalaya village, I had dinner, rested, and took a cold shower with
 a bucket. My phone was completely soaked from the rain and refused to turn on
