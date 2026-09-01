@@ -20,8 +20,10 @@ import routes from '$lib/data/hikes.json';
 import {
 	applyDateOverrides,
 	defaultFilePath,
+	defaultGpxPath,
 	defaultMetaPath,
 	getHikeMeta,
+	hasGpxFile,
 	hikeRoute,
 	hikeSlug,
 	hikeSlugs,
@@ -80,6 +82,17 @@ function normaliseDate(date: MapDate): MapDate {
 	return { ...date, tags: date.tags ?? [], people: date.people ?? [] };
 }
 
+/**
+ * A date's GPX link: whatever front matter or `hikes.json` named, or else the
+ * conventional path next to the route GeoJSON — but only when that file
+ * actually exists, so a hike with no track recorded doesn't get a dead link.
+ */
+function withDefaultGpx(date: MapDate, hikeFilePath: string): MapDate {
+	if (date.gpx) return date;
+	const gpxPath = defaultGpxPath(date.filePath ?? hikeFilePath);
+	return hasGpxFile(gpxPath) ? { ...date, gpx: gpxPath } : date;
+}
+
 function buildHike(slug: string): Map {
 	const props = overrideBySlug[slug] ?? {};
 
@@ -89,16 +102,17 @@ function buildHike(slug: string): Map {
 		throw new Error(`Missing sidecar "${metaPath}" for hike "${slug}"`);
 	}
 
-	const dates = [...(postsBySlug[slug] ?? []), ...(props.dates ?? []).map(normaliseDate)].sort(
-		(a, b) => (a.date > b.date ? -1 : a.date < b.date ? 1 : 0)
-	);
+	const filePath = props.filePath ?? defaultFilePath(slug);
+	const dates = [...(postsBySlug[slug] ?? []), ...(props.dates ?? []).map(normaliseDate)]
+		.map((date) => withDefaultGpx(date, filePath))
+		.sort((a, b) => (a.date > b.date ? -1 : a.date < b.date ? 1 : 0));
 	if (dates.length === 0) {
 		throw new Error(`Hike "${slug}" has no dates: no post, and none in hikes.json`);
 	}
 
 	const properties: MapProperties = {
 		...props,
-		filePath: props.filePath ?? defaultFilePath(slug),
+		filePath,
 		draft: props.draft ?? false,
 		dates
 	};

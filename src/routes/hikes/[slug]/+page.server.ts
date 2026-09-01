@@ -8,6 +8,7 @@ import type { EntryGenerator, PageServerLoad } from './$types';
 import type { Map, MapDate, MapProperties } from '$lib/data/map-info';
 import { mergeMetrics } from '$lib/hikes/hike-metrics';
 import { applyPostOverrides, readHikeFrontmatter } from '$lib/hikes/frontmatter.server';
+import { defaultGpxPath } from '$lib/data/hikes-db';
 import { readHikeContacts } from '$lib/hikes/frontmatter';
 import { buildHikeContacts } from '$lib/hikes/contacts';
 import contactsBook from '$lib/data/contacts.json';
@@ -72,7 +73,7 @@ export const load: PageServerLoad = async ({ fetch, params, locals }) => {
 		let showFilePrimary: string | null = null;
 		let showFileGpx: string | null = null;
 
-		const gpxUrl = mergedDate.gpx ?? mergedProperties.filePath.replace('geojson', 'gpx').replace('json', 'gpx');
+		const gpxUrl = mergedDate.gpx ?? defaultGpxPath(mergedProperties.filePath);
 		const [gpx, geojsonRes] = await Promise.all([
 			fetch(gpxUrl, { method: 'OPTIONS' }),
 			fetch(mergedProperties.filePath),

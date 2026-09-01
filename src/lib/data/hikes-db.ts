@@ -28,6 +28,11 @@ const sidecars = import.meta.glob('/static/_projects/data-viz/hikes/markdown/*.h
 	import: 'default'
 }) as Record<string, HikeMeta>;
 
+// Only the paths matter here, not the contents, so this stays lazy — Vite still
+// resolves the key set at build time without inlining every GPX file.
+const gpxFiles = import.meta.glob('/static/_projects/data-viz/hikes/**/*.gpx', { query: '?url' });
+const gpxPaths = new Set(Object.keys(gpxFiles).map((key) => key.replace(/^\/static/, '')));
+
 /** Route slug, e.g. `/projects/data-viz/hikes/seekarkreuz` -> `seekarkreuz`. */
 export function hikeSlug(route: string): string {
 	return route.substring(route.lastIndexOf('/') + 1);
@@ -46,6 +51,16 @@ export function defaultMetaPath(slug: string): string {
 /** Where a hike's route GeoJSON lives unless something says otherwise. */
 export function defaultFilePath(slug: string): string {
 	return `${geoFolder}/${slug}.json`;
+}
+
+/** Where a route's GPX track lives by convention, derived from its GeoJSON path. */
+export function defaultGpxPath(filePath: string): string {
+	return filePath.replace('geojson', 'gpx').replace('json', 'gpx');
+}
+
+/** Whether a GPX file actually exists at the given served path. */
+export function hasGpxFile(path: string): boolean {
+	return gpxPaths.has(path);
 }
 
 /** Every hike's slug, taken from the sidecars on disk. */
