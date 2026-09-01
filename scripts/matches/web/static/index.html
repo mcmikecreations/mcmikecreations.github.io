@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hike image matcher</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+  <h1>Hike image matcher</h1>
+  <div class="spacer"></div>
+  <span id="conn" class="pill">checking…</span>
+  <button id="settings-btn">Settings</button>
+</header>
+
+<main>
+  <aside id="hikes-panel">
+    <div class="panel-head">
+      <strong>Hikes</strong>
+      <button id="refresh-btn" title="Re-scan the posts directory">Refresh</button>
+    </div>
+    <input id="hike-filter" type="search" placeholder="Filter hikes…">
+    <ul id="hikes" class="list"></ul>
+  </aside>
+
+  <aside id="media-panel">
+    <div class="panel-head">
+      <strong id="post-name">No hike selected</strong>
+    </div>
+    <div id="post-meta" class="meta"></div>
+    <ul id="media" class="list"></ul>
+    <ul class="legend">
+      <li><i style="background:#1a7f37"></i>matched</li>
+      <li><i style="background:#9a6700"></i>ambiguous</li>
+      <li><i style="background:#cf222e"></i>unmatched / missing</li>
+      <li><i style="background:#8c959f"></i>video / youtube</li>
+      <li><i style="background:#1f2328"></i>not in JSON</li>
+    </ul>
+  </aside>
+
+  <section id="compare">
+    <div class="toolbar">
+      <button id="add-btn" disabled>Add media…</button>
+      <button id="rerun-btn" disabled>Re-run match for this hike</button>
+      <a id="open-site" class="btn-link" target="_blank" rel="noopener noreferrer"
+         title="Open this hike on the deployed site">Open on site ↗</a>
+      <span id="entry-status" class="pill"></span>
+      <div class="spacer"></div>
+      <span id="msg"></span>
+    </div>
+
+    <div class="panes">
+      <div class="pane">
+        <div class="pane-head">
+          <label>Local</label>
+          <input id="local-path" type="text" spellcheck="false" disabled>
+          <button id="local-apply" disabled>Apply</button>
+        </div>
+        <div class="caption" id="local-caption"></div>
+        <div class="frame" id="local-frame"><span class="hint">Select a media item</span></div>
+      </div>
+      <div class="pane">
+        <div class="pane-head">
+          <label>Immich</label>
+          <input id="remote-path" type="text" spellcheck="false"
+                 placeholder="filename or asset id — empty clears the match" disabled>
+          <button id="remote-apply" disabled>Apply</button>
+          <button id="pick-btn" disabled title="Browse this hike's candidates">Pick…</button>
+        </div>
+        <div class="caption" id="remote-caption"></div>
+        <div class="frame" id="remote-frame"><span class="hint"></span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<dialog id="settings-dlg">
+  <form method="dialog">
+    <h2>Settings</h2>
+    <label>Immich URL</label>
+    <input id="set-url" type="text" spellcheck="false" autocomplete="off"
+           placeholder="https://immich.example.com">
+    <label>API key</label>
+    <input id="set-key" type="password" placeholder="paste your Immich API key"
+           autocomplete="off" spellcheck="false">
+    <div class="row">
+      <label class="inline"><input id="set-remember" type="checkbox"> Remember on this machine</label>
+      <span id="set-hint" class="muted"></span>
+    </div>
+    <div class="paths muted" id="set-paths"></div>
+    <menu>
+      <button value="cancel">Cancel</button>
+      <button id="set-test" type="button">Test connection</button>
+      <button id="set-save" value="save" class="primary">Save</button>
+    </menu>
+  </form>
+</dialog>
+
+<dialog id="add-dlg">
+  <form method="dialog">
+    <h2>Add media</h2>
+    <div class="modes">
+      <label class="inline"><input type="radio" name="mode" value="local" checked>
+        A local image — find its Immich original</label>
+      <label class="inline"><input type="radio" name="mode" value="remote">
+        An Immich asset — download and compress it locally</label>
+      <label class="inline"><input type="radio" name="mode" value="both">
+        Both — just record the mapping</label>
+    </div>
+    <label>Local file (absolute path)</label>
+    <input id="add-local" type="text" spellcheck="false">
+    <label>Immich asset (filename or id)</label>
+    <div class="row">
+      <input id="add-asset" type="text" spellcheck="false">
+      <button id="add-pick" type="button">Pick…</button>
+    </div>
+    <div class="row">
+      <div style="flex:1">
+        <label>Save as</label>
+        <input id="add-out" type="text" spellcheck="false" placeholder="2025-08-13-12.jpg">
+      </div>
+      <div>
+        <label>Compression</label>
+        <select id="add-mode"><option>hd</option><option>standard</option></select>
+      </div>
+    </div>
+    <p class="muted" id="add-hint"></p>
+    <menu>
+      <button value="cancel">Cancel</button>
+      <button id="add-go" value="add" class="primary">Add</button>
+    </menu>
+  </form>
+</dialog>
+
+<dialog id="pick-dlg">
+  <form method="dialog">
+    <h2>Select Immich asset</h2>
+    <input id="pick-filter" type="search" placeholder="Filter by filename…">
+    <ul id="pick-list" class="list picker"></ul>
+    <menu><button value="cancel">Close</button></menu>
+  </form>
+</dialog>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

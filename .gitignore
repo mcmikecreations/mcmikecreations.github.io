@@ -17,3 +17,6 @@ vite.config.ts.timestamp-*
 __pycache__/
 /.deploy-assets.hash
 .venv
+
+# Immich image-match output and thumbnail cache (scripts/matches is tracked)
+/scripts/matches/hikes/

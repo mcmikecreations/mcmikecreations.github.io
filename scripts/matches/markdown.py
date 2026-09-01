@@ -1,0 +1,100 @@
+"""Extract media references from a hike post.
+
+The URL is matched directly rather than the whole `![alt](url)` construct.
+A naive `!\\[[^\\]]*\\]\\(...\\)` breaks on nested links in alt text, which do
+occur in this corpus, e.g.
+
+    ![Compilation ... by [David Bilan](https://bilandavid.com/)](/images/...)
+"""
+
+import re
+from dataclasses import dataclass
+from datetime import date
+from pathlib import Path
+
+from . import config
+
+STORY_PREFIX = "/images/projects/data-viz/hikes/stories/"
+# Either a story asset or a YouTube embed. Both use image syntax in this
+# corpus, so one pass keeps them in document order relative to each other.
+MEDIA_URL_RE = re.compile(
+    r"\((" + re.escape(STORY_PREFIX) + r"[^)\s]+?"
+    r"|https?://(?:www\.)?(?:youtube\.com|youtu\.be)/[^)\s]+?)"
+    r"(?:\s+\"[^\"]*\")?\)"
+)
+DATE_PREFIX_RE = re.compile(r"^(\d{4})-(\d{2})-(\d{2})")
+
+
+@dataclass
+class MediaRef:
+    """One media file referenced by a post, in document order."""
+
+    index: int
+    web_path: str
+    local_path: Path | None   # None for YouTube, which has no local file
+    kind: str
+    capture_date: date | None
+    exists: bool
+
+
+def parse_capture_date(filename: str) -> date | None:
+    """Capture date encoded in a `YYYY-MM-DD-NN.ext` filename, if present."""
+    m = DATE_PREFIX_RE.match(filename)
+    if not m:
+        return None
+    try:
+        return date(int(m.group(1)), int(m.group(2)), int(m.group(3)))
+    except ValueError:
+        return None
+
+
+def post_slug(post_path: Path) -> str:
+    """`2024-08-31-aiplspitz.md` -> `aiplspitz`."""
+    stem = Path(post_path).stem
+    m = DATE_PREFIX_RE.match(stem)
+    return stem[len(m.group(0)) + 1:] if m else stem
+
+
+def _classify(url: str) -> str:
+    """One of "youtube", "video", "image" or "other"."""
+    if url.startswith("http"):
+        host = url.split("/")[2].lower() if "//" in url else ""
+        if any(host.endswith(h) for h in config.YOUTUBE_HOSTS):
+            return "youtube"
+        return "other"
+    s = Path(url).suffix.lower()
+    if s in config.VIDEO_EXTENSIONS:
+        return "video"
+    if s in config.IMAGE_EXTENSIONS:
+        return "image"
+    return "other"
+
+
+def find_media_refs(post_path: Path, static_root: Path) -> list[MediaRef]:
+    """All story media referenced by the post, deduplicated, in document order."""
+    text = Path(post_path).read_text(encoding="utf-8")
+    static_root = Path(static_root)
+    refs: list[MediaRef] = []
+    seen: set[str] = set()
+    for web_path in MEDIA_URL_RE.findall(text):
+        if web_path in seen:
+            continue
+        seen.add(web_path)
+        kind = _classify(web_path)
+        if kind == "youtube":
+            local = None
+            capture_date = None
+        else:
+            local = static_root / web_path.lstrip("/")
+            capture_date = parse_capture_date(Path(web_path).name)
+        refs.append(
+            MediaRef(
+                index=len(refs),
+                web_path=web_path,
+                local_path=local,
+                kind=kind,
+                capture_date=capture_date,
+                exists=bool(local and local.is_file()),
+            )
+        )
+    return refs
