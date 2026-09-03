@@ -101,13 +101,17 @@ class Remote:
         return lo.date().isoformat(), hi.date().isoformat()
 
     def find_asset(self, post, text: str) -> Asset | None:
-        """Resolve a filename or an asset id against the post's candidates."""
+        """Resolve a filename, an asset id, or an Immich web/app URL
+
+        (e.g. `.../albums/<id>/photos/<asset-id>`) against the post's candidates.
+        """
         text = (text or "").strip()
         if not text:
             return None
-        needle = text.rsplit("/", 1)[-1].lower()
+        path = text.split("?", 1)[0].split("#", 1)[0].rstrip("/")
+        needle = path.rsplit("/", 1)[-1].lower()
         for a in self.candidates_for(post):
-            if a.id == text:
+            if a.id == text or a.id.lower() == needle:
                 return a
             if a.original_file_name.lower() == needle:
                 return a
@@ -134,4 +138,5 @@ def asset_to_dict(asset: Asset) -> dict:
         "height": asset.height,
         "latitude": asset.latitude,
         "longitude": asset.longitude,
+        "file_size": asset.file_size,
     }

@@ -10,7 +10,8 @@ from matches.report import build_report, report_path, write_report
 
 def _result():
     asset = Asset("id1", "/lib/IMG_1.jpg", "IMG_1.jpg", "2024-08-31T09:28:34.331Z",
-                  "2024-08-31T11:28:34.331Z", 4640, 3472, 47.66, 11.88)
+                  "2024-08-31T11:28:34.331Z", 4640, 3472, 47.66, 11.88,
+                  file_size=7654321)
     ref_img = MediaRef(0, "/images/a/2024-08-31-00.jpg",
                        Path("/s/images/a/2024-08-31-00.jpg"), "image", None, True)
     ref_vid = MediaRef(1, "/images/a/2024-08-31-01.mp4",
@@ -47,6 +48,7 @@ def test_matched_entry_carries_original_path():
     e = r["entries"][0]
     assert e["status"] == "matched"
     assert e["match"]["original_path"] == "/lib/IMG_1.jpg"
+    assert e["match"]["file_size"] == 7654321
     assert e["match"]["scores"]["blockmean"] == 0.0012
     assert e["match"]["scores"]["mae"] is None
 

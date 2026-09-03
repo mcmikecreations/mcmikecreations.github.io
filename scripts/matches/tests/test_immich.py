@@ -14,7 +14,7 @@ ASSET_JSON = {
     "localDateTime": "2024-08-31T11:28:34.331Z",
     "width": 4640,
     "height": 3472,
-    "exifInfo": {"latitude": 47.661086, "longitude": 11.885},
+    "exifInfo": {"latitude": 47.661086, "longitude": 11.885, "fileSizeInByte": 7654321},
 }
 
 
@@ -83,6 +83,7 @@ def test_asset_parses_exif_and_aspect(tmp_path):
     assert a.original_file_name == "IMG_20240831_112834.jpg"
     assert a.latitude == pytest.approx(47.661086)
     assert a.aspect == pytest.approx(4640 / 3472)
+    assert a.file_size == 7654321
 
 
 def test_asset_without_exif_has_none_coords(tmp_path):
@@ -90,6 +91,18 @@ def test_asset_without_exif_has_none_coords(tmp_path):
     c = _client(tmp_path, StubSession([payload]))
     a = c.search_assets()[0]
     assert a.latitude is None and a.longitude is None
+    assert a.file_size == 0
+
+
+def test_get_asset_fetches_by_id(tmp_path):
+    session = StubSession([])
+    calls = []
+    session.get = lambda url, timeout=None: (calls.append(url), StubSession._R(payload=ASSET_JSON))[1]
+    c = _client(tmp_path, session)
+    a = c.get_asset("8b1b2166")
+    assert a.id == "8b1b2166"
+    assert a.file_size == 7654321
+    assert calls[0].endswith("/api/assets/8b1b2166")
 
 
 def test_thumbnail_is_cached_and_downloaded_once(tmp_path):

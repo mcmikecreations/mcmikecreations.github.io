@@ -66,6 +66,26 @@ def stories_dir(settings: config.Settings, slug: str) -> Path:
     return settings.static_root / "images/projects/data-viz/hikes/stories" / slug
 
 
+def next_out_name(settings: config.Settings, slug: str, date: str,
+                  ext: str = ".jpg") -> str:
+    """Suggest `<date>-<NN><ext>`, one past the highest index already on disk
+
+    for that date in the hike's folder - the naming convention every existing
+    story image already follows.
+    """
+    prefix = f"{date}-"
+    next_index = 0
+    folder = stories_dir(settings, slug)
+    if folder.is_dir():
+        for f in folder.iterdir():
+            if not f.name.startswith(prefix):
+                continue
+            num = f.name[len(prefix):].split(".", 1)[0]
+            if num.isdigit():
+                next_index = max(next_index, int(num) + 1)
+    return f"{prefix}{next_index:02d}{ext}"
+
+
 def match_single(settings, remote, post, local_path: Path) -> dict:
     """Run the cascade for one local image and return a report entry."""
     assets = remote.candidates_for(post)
@@ -129,8 +149,13 @@ def apply_add_spec(settings, remote, post, spec: AddSpec) -> dict:
         return match_single(settings, remote, post, spec.local_path)
 
     if spec.mode == MODE_REMOTE:
+        asset = remote.find_asset(post, spec.asset_id or spec.asset_name)
+        if asset is None:
+            raise ValueError(
+                f"No Immich asset found for {spec.asset_id or spec.asset_name!r}"
+            )
         _, entry = download_and_compress(
-            settings, remote, post, spec.asset_id, spec.out_name, spec.compress_mode
+            settings, remote, post, asset.id, spec.out_name, spec.compress_mode
         )
         return entry
 

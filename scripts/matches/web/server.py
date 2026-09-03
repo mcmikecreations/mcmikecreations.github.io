@@ -124,6 +124,8 @@ class Handler(BaseHTTPRequestHandler):
                 self._json(api.set_local_path(state, body)); return True
             if path == "/api/entry/remote":
                 self._json(api.set_remote_match(state, body)); return True
+            if path == "/api/entry/suggest_name":
+                self._json(api.suggest_out_name(state, body)); return True
             if path == "/api/add":
                 self._json(api.start_add(state, jobs, body)); return True
             if path == "/api/rerun":

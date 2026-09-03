@@ -38,6 +38,7 @@ def _match_block(cand: Candidate) -> dict:
         "height": a.height,
         "latitude": a.latitude,
         "longitude": a.longitude,
+        "file_size": a.file_size,
         "scores": _scores(cand),
     }
 

@@ -114,6 +114,17 @@ def test_build_entry_without_asset_has_null_match():
     assert e["resolved_by"] is None
 
 
+def test_build_entry_carries_file_size_through():
+    e = build_entry("/w/x.jpg", Path("/l/x.jpg"),
+                     {"asset_id": "a1", "file_size": 123456}, "matched")
+    assert e["match"]["file_size"] == 123456
+
+
+def test_build_entry_defaults_file_size_when_asset_lacks_it():
+    e = build_entry("/w/x.jpg", Path("/l/x.jpg"), {"asset_id": "a1"}, "matched")
+    assert e["match"]["file_size"] == 0
+
+
 def test_index_lists_every_post(workspace):
     settings, _, _ = workspace
     assert [p.name for p in HikeIndex(settings).refresh()] == ["2024-08-31-demo.md"]

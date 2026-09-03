@@ -34,6 +34,7 @@ class Asset:
     height: int
     latitude: float | None
     longitude: float | None
+    file_size: int = 0
 
     @property
     def aspect(self) -> float:
@@ -54,6 +55,7 @@ class Asset:
             height=int(raw.get("height") or 0),
             latitude=exif.get("latitude"),
             longitude=exif.get("longitude"),
+            file_size=int(exif.get("fileSizeInByte") or 0),
         )
 
 
@@ -83,6 +85,11 @@ class ImmichClient:
             Album(id=a["id"], name=a["albumName"], asset_count=a.get("assetCount", 0))
             for a in r.json()
         ]
+
+    def get_asset(self, asset_id: str) -> Asset:
+        r = self.session.get(f"{self.base}/api/assets/{asset_id}", timeout=self.settings.timeout)
+        r.raise_for_status()
+        return Asset.from_json(r.json())
 
     def search_assets(
         self,

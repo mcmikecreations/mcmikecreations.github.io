@@ -117,7 +117,7 @@ but the lake was hidden behind Croz dell'Altissimo (2339 m). I took a bunch of
 photos, signed the summit book, and started heading back down. There was no time
 to waste, as the sun was already starting to set and I started to freeze too.
 
-![View from Cima Sophia (2360 m) towards Croz dell'Altissimo (2339 m)](/images/projects/data-viz/hikes/stories/cima_sophia/2025-12-29-12.jpg)
+![View from Cima Sophia (2360 m) towards Croz dell'Altissimo (2339 m)](/images/projects/data-viz/hikes/stories/cima_sophia/2025-12-29-13.jpg)
 
 It took me around 30 minutes from the place I left Serhii and Pavlo to reach
 the summit, but the descent was much faster. I managed to backtrack my steps,

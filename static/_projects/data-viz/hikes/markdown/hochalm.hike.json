@@ -1,0 +1,119 @@
+{
+  "name": "Hochalm",
+  "description": "Hike from Sylvensteintalsperre to Lenggries via Brandkopf (1258 m), Geißkopf (1352 m), Gerstenrieder Kopf (1451 m), Hochalm (1427 m), Rosskopf (1403 m), Breitenkopf (1347 m), Saurüsselkopf (1364 m), and Schmickerstein (861 m).",
+  "image": "/images/projects/data-viz/hikes/hochalm.jpg",
+  "origin": {
+    "lat": 47.634858202796934,
+    "lon": 11.590747833251955
+  },
+  "height": 768,
+  "checkpoints": [
+    [11.5486579, 47.5860966],
+    [11.5795593, 47.5947188],
+    [11.6041553, 47.6090032],
+    [11.6511951, 47.6225673],
+    [11.6109811, 47.6413769],
+    [11.5735467, 47.6802772]
+  ],
+  "nodes": [
+    {
+      "id": 1279771713,
+      "lat": 47.5947188,
+      "lon": 11.5795593,
+      "tags": {
+        "name": "Brandkopf",
+        "ele": "1258",
+        "natural": "peak",
+        "wikidata": "Q25393050"
+      }
+    },
+    {
+      "id": 442710826,
+      "lat": 47.6013397,
+      "lon": 11.5956652,
+      "tags": {
+        "name": "Geißkopf",
+        "ele": "1352",
+        "natural": "peak",
+        "wikidata": "Q31545762"
+      }
+    },
+    {
+      "id": 442710825,
+      "lat": 47.6047848,
+      "lon": 11.6005233,
+      "tags": {
+        "name": "Gerstenrieder Kopf",
+        "ele": "1421",
+        "natural": "peak",
+        "wikidata": "Q31545414"
+      }
+    },
+    {
+      "id": 268964586,
+      "lat": 47.6090032,
+      "lon": 11.6041553,
+      "tags": {
+        "name": "Hochalm",
+        "ele": "1427",
+        "natural": "peak",
+        "summit:cross": "yes",
+        "summit:register": "yes",
+        "wikidata": "Q22675136"
+      }
+    },
+    {
+      "id": 1279756154,
+      "lat": 47.6138500,
+      "lon": 11.6100560,
+      "tags": {
+        "name": "Rosskopf",
+        "ele": "1403",
+        "natural": "peak"
+      }
+    },
+    {
+      "id": 1279756195,
+      "lat": 47.6162849,
+      "lon": 11.6244428,
+      "tags": {
+        "ele": "1212",
+        "natural": "peak",
+        "visited": "missing"
+      }
+    },
+    {
+      "id": 442345031,
+      "lat": 47.6180237,
+      "lon": 11.6332571,
+      "tags": {
+        "name": "Breitenkopf",
+        "ele": "1347",
+        "natural": "peak",
+        "wikidata": "Q31551357"
+      }
+    },
+    {
+      "id": 1279771735,
+      "lat": 47.6225673,
+      "lon": 11.6511951,
+      "tags": {
+        "name": "Saurüsselkopf",
+        "ele": "1364",
+        "natural": "peak",
+        "wikidata": "Q30539486",
+        "wikipedia": "de:Saurüsselkopf (Tegernseer Berge)"
+      }
+    },
+    {
+      "id": 1279756210,
+      "lat": 47.6413769,
+      "lon": 11.6109811,
+      "tags": {
+        "name": "Schmickerstein",
+        "ele": "861",
+        "natural": "peak"
+      }
+    }
+  ]
+}

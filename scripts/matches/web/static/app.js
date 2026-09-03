@@ -119,7 +119,9 @@ function selectItem(m, keepMessage) {
   } else {
     showFrame("local", `/api/media?path=${encodeURIComponent(m.web_path)}`, "");
   }
-  $("local-caption").textContent = m.web_path;
+  $("local-caption").textContent =
+    [m.web_path, m.local_size != null && humanSize(m.local_size)]
+      .filter(Boolean).join(" · ");
 
   if (!m.match) {
     showFrame("remote", null, m.in_report ? "no Immich match recorded"
@@ -132,11 +134,20 @@ function selectItem(m, keepMessage) {
       .filter(([, v]) => v !== null && v !== undefined)
       .map(([k, v]) => `${k}=${v}`);
     $("remote-caption").textContent =
-      [m.match.original_path, m.confidence && `confidence=${m.confidence}`,
+      [m.match.original_path, m.match.file_size && humanSize(m.match.file_size),
+       m.confidence && `confidence=${m.confidence}`,
        m.resolved_by && `via ${m.resolved_by}`, parts.join(" ")]
         .filter(Boolean).join(" · ");
   }
   if (!keepMessage) msg("");
+}
+
+function humanSize(bytes) {
+  if (!bytes) return "";
+  const units = ["B", "KB", "MB", "GB"];
+  let n = bytes, i = 0;
+  while (n >= 1024 && i < units.length - 1) { n /= 1024; i++; }
+  return `${n.toFixed(i === 0 ? 0 : 1)} ${units[i]}`;
 }
 
 function renderSelection() {
@@ -237,7 +248,7 @@ async function checkConnection() {
   }
 }
 
-async function openPicker(targetInput) {
+async function openPicker(targetInput, onPick) {
   const dlg = $("pick-dlg");
   const list = $("pick-list");
   list.innerHTML = "<li>Loading…</li>";
@@ -259,7 +270,7 @@ async function openPicker(targetInput) {
       const li = document.createElement("li");
       li.innerHTML = `<span class="name"></span><span class="sub">${a.taken} · ${a.size}</span>`;
       li.querySelector(".name").textContent = a.name;
-      li.onclick = () => { targetInput.value = a.name; dlg.close(); };
+      li.onclick = () => { targetInput.value = a.name; dlg.close(); onPick?.(); };
       list.appendChild(li);
     }
   };
@@ -283,6 +294,17 @@ function syncAddDialog() {
     remote: "The original is downloaded and compressed with image_compress.py into the hike's folder.",
     both: "Nothing is downloaded or matched — the mapping is written straight into the JSON.",
   }[mode];
+  suggestOutName();
+}
+
+async function suggestOutName() {
+  if (addMode() !== "remote") return;
+  const asset = $("add-asset").value.trim();
+  if (!asset) return;
+  try {
+    const { name } = await post("/api/entry/suggest_name", { post: state.post, asset });
+    $("add-out").value = name;
+  } catch (e) { /* best-effort prefill; leave whatever is there */ }
 }
 
 async function submitAdd() {
@@ -327,7 +349,8 @@ $("remote-apply").onclick = applyRemote;
 $("local-path").onkeydown = (e) => { if (e.key === "Enter") { e.preventDefault(); applyLocal(); } };
 $("remote-path").onkeydown = (e) => { if (e.key === "Enter") { e.preventDefault(); applyRemote(); } };
 $("pick-btn").onclick = () => openPicker($("remote-path"));
-$("add-pick").onclick = () => openPicker($("add-asset"));
+$("add-pick").onclick = () => openPicker($("add-asset"), suggestOutName);
+$("add-asset").onchange = suggestOutName;
 $("settings-btn").onclick = openSettings;
 $("add-btn").onclick = () => { syncAddDialog(); $("add-dlg").showModal(); };
 $("rerun-btn").onclick = rerun;

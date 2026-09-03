@@ -54,6 +54,13 @@ def test_list_and_detail(app):
     assert d["album"]["name"] == "Demo_Album"
 
 
+def test_detail_reports_local_and_remote_file_sizes(app):
+    d = api.hike_detail(app, "2024-08-31-demo.md")
+    matched, youtube = d["media"]
+    assert matched["local_size"] == len(b"\xff\xd8\xff\xd9")
+    assert youtube["local_size"] is None  # has_local is False for a YouTube ref
+
+
 def test_unknown_post_is_404(app):
     with pytest.raises(api.ApiError) as exc:
         api.hike_detail(app, "nope.md")
@@ -127,6 +134,32 @@ def test_add_rejects_an_invalid_spec(app):
     with pytest.raises(api.ApiError):
         api.start_add(app, JobRegistry(), {"post": "2024-08-31-demo.md",
                                            "mode": "bogus"})
+
+
+def test_suggest_name_requires_credentials(app):
+    with pytest.raises(api.ApiError) as exc:
+        api.suggest_out_name(app, {"post": "2024-08-31-demo.md", "asset": "IMG_1.jpg"})
+    assert exc.value.status == 409
+
+
+def test_suggest_name_builds_a_dated_index(app, monkeypatch):
+    from matches.immich import Asset
+
+    asset = Asset(id="a9", original_path="/o/IMG_9.jpg", original_file_name="IMG_9.jpg",
+                 file_created_at="2024-08-31T10:00:00Z",
+                 local_date_time="2024-08-31T10:00:00",
+                 width=10, height=10, latitude=None, longitude=None)
+    monkeypatch.setattr(app.remote, "find_asset", lambda post, text: asset)
+    r = api.suggest_out_name(app, {"post": "2024-08-31-demo.md", "asset": "IMG_9.jpg"})
+    # 2024-08-31-00.jpg is already on disk for this post (see the `app` fixture).
+    assert r["name"] == "2024-08-31-01.jpg"
+
+
+def test_suggest_name_404s_for_an_unresolvable_asset(app, monkeypatch):
+    monkeypatch.setattr(app.remote, "find_asset", lambda post, text: None)
+    with pytest.raises(api.ApiError) as exc:
+        api.suggest_out_name(app, {"post": "2024-08-31-demo.md", "asset": "nope.jpg"})
+    assert exc.value.status == 404
 
 
 def test_rerun_requires_a_key(app):

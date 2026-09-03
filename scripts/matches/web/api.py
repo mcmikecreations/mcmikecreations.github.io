@@ -43,6 +43,27 @@ def list_hikes(state) -> dict:
     ]}
 
 
+def _media_row(m) -> dict:
+    local_path = Path(m.local_path) if m.local_path else None
+    has_local = bool(local_path and local_path.is_file())
+    return {
+        "order": m.order,
+        "label": m.label,
+        "web_path": m.web_path,
+        "kind": m.kind,
+        "status": m.status,
+        "color": status_color(m.status),
+        "matched_name": m.matched_name,
+        "has_local": has_local,
+        "local_size": local_path.stat().st_size if has_local else None,
+        "match": (m.entry or {}).get("match"),
+        "confidence": (m.entry or {}).get("confidence"),
+        "resolved_by": (m.entry or {}).get("resolved_by"),
+        "alternatives": (m.entry or {}).get("alternatives", []),
+        "in_report": m.entry is not None,
+    }
+
+
 def hike_detail(state, name: str) -> dict:
     post = _post(state, name).load()
     report = post.report or {}
@@ -55,24 +76,7 @@ def hike_detail(state, name: str) -> dict:
         "album": report.get("album"),
         "date_window": report.get("date_window"),
         "candidate_count": report.get("candidate_count", 0),
-        "media": [
-            {
-                "order": m.order,
-                "label": m.label,
-                "web_path": m.web_path,
-                "kind": m.kind,
-                "status": m.status,
-                "color": status_color(m.status),
-                "matched_name": m.matched_name,
-                "has_local": bool(m.local_path and Path(m.local_path).is_file()),
-                "match": (m.entry or {}).get("match"),
-                "confidence": (m.entry or {}).get("confidence"),
-                "resolved_by": (m.entry or {}).get("resolved_by"),
-                "alternatives": (m.entry or {}).get("alternatives", []),
-                "in_report": m.entry is not None,
-            }
-            for m in post.media
-        ],
+        "media": [_media_row(m) for m in post.media],
     }
 
 
@@ -163,6 +167,24 @@ def set_remote_match(state, body: dict) -> dict:
     post.recount()
     post.save()
     return {"ok": True, "detail": hike_detail(state, post.name)}
+
+
+def suggest_out_name(state, body: dict) -> dict:
+    """Suggest `<capture-date>-<NN>.jpg`, following this hike's existing naming."""
+    post = _post(state, body["post"])
+    text = (body.get("asset") or "").strip()
+    if not text:
+        raise ApiError("No asset given")
+    try:
+        asset = state.remote.find_asset(post, text)
+    except RemoteUnavailable as exc:
+        raise ApiError(str(exc), 409)
+    if asset is None:
+        raise ApiError(f"No asset named {text!r} among this hike's candidates", 404)
+    date = (asset.local_date_time or asset.file_created_at or "")[:10]
+    if not date:
+        raise ApiError("Asset has no capture date")
+    return {"name": actions.next_out_name(state.settings, post.slug, date)}
 
 
 def start_add(state, jobs, body: dict) -> dict:

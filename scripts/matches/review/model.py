@@ -232,6 +232,7 @@ def build_entry(web_path: str, local_path: Path, asset: dict | None,
             "height": asset.get("height", 0),
             "latitude": asset.get("latitude"),
             "longitude": asset.get("longitude"),
+            "file_size": asset.get("file_size", 0),
             "scores": asset.get("scores") or {
                 "phash": None, "blockmean": None, "mae": None,
                 "ncc": None, "inliers": None, "coverage": None,
